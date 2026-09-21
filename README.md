@@ -1,9 +1,9 @@
-# 🏛️ 实战 KOL 推文全景收录大典 (Master Trading & Investing Codex)
+# 🏛️ Trader-Archives · 实战 KOL 推文全景收录大典
 
 > **推特顶级实战派交易员与周期投资导师 · 全量推文工程化重构 · JEV 四维智能分拣 · 巅峰思维模型萃取**  
 > 告别碎片化水推噪音，沉淀真金白银实盘公开认知体系。永久开源、零构建门槛、纯静态极速阅读。
 
-🌐 **全球在线总门户**：[https://suoha888.github.io/CJ-DeFi-Handbook/](https://suoha888.github.io/CJ-DeFi-Handbook/)
+🌐 **全球在线总门户**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)
 
 ---
 
@@ -11,8 +11,8 @@
 
 | 导师 | 称号 / 标签 | 核心战法与代表作 | 收录推文 | 思维模型 | 在线阅读入口 | 数据湖开源目录 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **C J** ([@gch_enbsbxbs](https://x.com/gch_enbsbxbs)) | 集中流动性做市高手 | 《CJ DeFi 做市与套利实战手册》 | **502 篇** | 28 条做市顶层心智 | [进入手册 (cj/)](https://suoha888.github.io/CJ-DeFi-Handbook/cj/) | [`/cj/data/`](./cj/data/) |
-| **憨厚的麦总** ([@Michael_Liu93](https://x.com/Michael_Liu93)) | 实战交易与周期投资导师 | 《憨厚的麦总 · 实战交易与周期投资全书》 | **5,344 篇** | 291 条二次认知模型 | [进入全书 (michael-liu/)](https://suoha888.github.io/CJ-DeFi-Handbook/michael-liu/) | [`/michael-liu/data/`](./michael-liu/data/) |
+| **C J** ([@gch_enbsbxbs](https://x.com/gch_enbsbxbs)) | 集中流动性做市高手 | 《CJ DeFi 做市与套利实战手册》 | **502 篇** | 28 条做市顶层心智 | [进入手册 (cj/)](https://suoha888.github.io/Trader-Archives/cj/) | [`/cj/data/`](./cj/data/) |
+| **憨厚的麦总** ([@Michael_Liu93](https://x.com/Michael_Liu93)) | 实战交易与周期投资导师 | 《憨厚的麦总 · 实战交易与周期投资全书》 | **5,344 篇** | 291 条二次认知模型 | [进入全书 (michael-liu/)](https://suoha888.github.io/Trader-Archives/michael-liu/) | [`/michael-liu/data/`](./michael-liu/data/) |
 | **未来实战高手** | 持续推荐收录中... | 推特顶级实战派推文体系化解构 | 敬请期待 | 持续沉淀 | 开放社区共建 | 欢迎提 Issue 推荐 |
 
 ---
@@ -37,7 +37,7 @@
 本项目采用**完全无耦合的平移式子目录架构**。每个收录的 KOL 都是一个自洽的完整单元，互不冲突，便于无限横向扩展：
 
 ```tree
-CJ-DeFi-Handbook/
+Trader-Archives/
 ├── index.html                   # 🏛️【总门户】实战 KOL 推文收录大典主页
 ├── README.md                    # 📖 本开源仓库总览与架构白皮书
 ├── LICENSE                      # ⚖️ MIT 开源许可
