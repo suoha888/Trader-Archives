@@ -1,81 +1,49 @@
-# 🏛️ Trader-Archives · 实战 KOL 推文全景收录大典
+# Trader-Archives
 
-> **推特顶级实战派交易员与周期投资导师 · 全量推文工程化重构 · JEV 四维智能分拣 · 巅峰思维模型萃取**  
-> 告别碎片化水推噪音，沉淀真金白银实盘公开认知体系。永久开源、零构建门槛、纯静态极速阅读。
+> **推特顶级实战派交易员与周期投资导师 · 全量推文公开收录 · 开源共享**
+> 告别碎片化噪音，沉淀真金白银实盘公开认知体系。永久开源、零构建门槛、纯静态极速阅读。
 
-🌐 **全球在线总门户**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)
-
----
-
-## 🧭 收录导师与子手册速查
-
-| 导师 | 称号 / 标签 | 核心战法与代表作 | 收录推文 | 思维模型 | 在线阅读入口 | 数据湖开源目录 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **C J** ([@gch_enbsbxbs](https://x.com/gch_enbsbxbs)) | 集中流动性做市高手 | 《CJ DeFi 做市与套利实战手册》 | **502 篇** | 28 条做市顶层心智 | [进入手册 (cj/)](https://suoha888.github.io/Trader-Archives/cj/) | [`/cj/data/`](./cj/data/) |
-| **憨厚的麦总** ([@Michael_Liu93](https://x.com/Michael_Liu93)) | 实战交易与周期投资导师 | 《憨厚的麦总 · 实战交易与周期投资全书》 | **5,344 篇** | 291 条二次认知模型 | [进入全书 (michael-liu/)](https://suoha888.github.io/Trader-Archives/michael-liu/) | [`/michael-liu/data/`](./michael-liu/data/) |
-| **未来实战高手** | 持续推荐收录中... | 推特顶级实战派推文体系化解构 | 敬请期待 | 持续沉淀 | 开放社区共建 | 欢迎提 Issue 推荐 |
+**在线总门户**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)
 
 ---
 
-## 🌟 核心特色与工程化标准
+## 收录导师与子手册速查
 
-1. **JEV 四维智能决策去噪**：
-   - 彻底剔除碎片互动、抽奖、情绪水推与短期噪音；
-   - 严格依据 **J** (Judgement 独立判断) / **E** (Experience 实盘可复制) / **V** (Value 长期半衰期) 打分，只萃取沉淀高含金量内容。
-2. **二次认知顶层思维模型沉淀**：
-   - 不止机械抄录推文，更提炼博主在最极端行情、最关键决策点的【底层思维模型】与决策公式。
-3. **原生 14-Key 专属 AI 导师注入**：
-   - 支持在网页端直接调用专属配置的大模型导师（如麦总 AI 导师），零门槛随时进行沙盒对练与推演。
-4. **纯粹双层建站与开源数据湖**：
-   - **前台**：暖色象牙白经典研报风 SPA（双击即开，纯自包含，毫秒级响应，内嵌高精图床）；
-   - **后台**：提供标准 JSON / CSV / JSONL / Markdown 全量数据湖，可供投研团队导入向量数据库、RAG 与量化回测。
+| 导师 | 推特 | 手册 | 收录推文 | 在线阅读 |
+| :--- | :--- | :--- | :--- | :--- |
+| **C J** | [@gch_enbsbxbs](https://x.com/gch_enbsbxbs) | CJ DeFi 做市与套利实战手册 | **502 篇** | [进入](https://suoha888.github.io/Trader-Archives/cj/) |
+| **憨厚的麦总** | [@Michael_Liu93](https://x.com/Michael_Liu93) | 实战交易与周期投资全书 | **5,344 篇** | [进入](https://suoha888.github.io/Trader-Archives/michael-liu/) |
+
+> 更多实战 KOL 持续收录中，敬请关注。
 
 ---
 
-## 📂 极简平移架构 (Ultra-Clean Directory Layout)
+## 目录结构
 
-本项目采用**完全无耦合的平移式子目录架构**。每个收录的 KOL 都是一个自洽的完整单元，互不冲突，便于无限横向扩展：
-
-```tree
+```
 Trader-Archives/
-├── index.html                   # 🏛️【总门户】实战 KOL 推文收录大典主页
-├── README.md                    # 📖 本开源仓库总览与架构白皮书
-├── LICENSE                      # ⚖️ MIT 开源许可
-│
-├── cj/                          # 🃏【子栏目 1】CJ 老师《DeFi 做市与套利实战手册》
-│   ├── index.html               # CJ 专属阅读 SPA 研报站（自包含 7 卷 28 专题）
-│   ├── images/                  # CJ 实盘高清图床（123 张截图）
-│   ├── data/                    # CJ 结构化数据湖 (JSON / CSV)
-│   └── docs/                    # CJ 核心方法论 Markdown 电子书
-│
-├── michael-liu/                 # 👑【子栏目 2】憨厚的麦总《实战交易与周期投资全书》
-│   ├── index.html               # 麦总专属阅读 SPA 站（291 条模型 + 1055 篇精选 + AI 导师）
-│   ├── images/                  # 麦总实盘高清图床（729 张截图）
-│   ├── data/                    # 麦总 7 大垂类数据湖 + 5344 全量推文 (JSON / JSONL / CSV)
-│   └── docs/                    # 麦总 Markdown 研报与方法论电子书
-│
-└── [new-kol]/                   # 🚀【扩展槽】任意新 KOL 只要平移放进子文件夹即可！
+├── index.html               # 总门户导航首页
+├── cj/                      # CJ 老师做市手册
+│   ├── index.html
+│   ├── data/
+│   ├── docs/
+│   └── images/
+├── michael-liu/             # 憨厚的麦总全书
+│   ├── index.html
+│   ├── data/
+│   ├── docs/
+│   └── images/
+└── ...                      # 后续新增 KOL
 ```
 
 ---
 
-## 🛠️ 如何新增收录一位 KOL？
+## 免责声明
 
-只需遵循 3 步平移规范：
-
-1. **产出专属资料库**：使用 `KOL--ziliao` 技能流水线完成该博主推文的抓取清洗、JEV 分拣打分、思维模型提炼与 SPA 生成。
-2. **复制子文件夹**：将生成的文件夹平移放入根目录（如 `/chen-xiao/` 或 `/teng-shao/`）。
-3. **总门户挂载卡片**：在根目录 `index.html` 的导师名录中添加一个展示卡片，指向该子目录。
+1. 本项目所有内容均来自推特博主公开推文的整理与收录。
+2. 所有内容仅供学习交流，**不构成任何投资建议（Not Financial Advice）**。
+3. 加密资产与金融衍生品交易存在极高风险，请独立思考并自行承担风险（DYOR）。
 
 ---
 
-## ⚖️ 免责声明 (Disclaimer)
-
-1. 本项目所有内容均来自推特博主公开推文的数据工程化整理与学术/研究性重构。
-2. 本大典所有内容、思维模型与数据仅供量化研究与个人学习交流，**不构成任何投资建议（Not Financial Advice）**。
-3. 加密资产与金融衍生品交易存在极高风险，请务必保持理性，独立思考并自行承担风险（DYOR）。
-
----
-
-> 以上内容由研究员 **梭哈.AI**（[@SUOHA_AI](https://x.com/SUOHA_AI)）整理收录与开源维护  
-> 纯开源分享 · 保持求真务实 · 致敬所有真金白银耕耘的实战交易员
+> 由 [@SUOHA_AI](https://x.com/SUOHA_AI) 收录整理与开源维护
