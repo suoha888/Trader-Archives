@@ -1,0 +1,291 @@
+﻿id,date,jev_domain,jev_domain_name,jev_depth,jev_is_substantive,jev_has_rule,is_mental_model,is_featured,likes,retweets,replies,views,text,images_count,local_images,url
+2025842396718825954,2026-02-23 07:57:20,onchain_flow,巨鲸链上,2.0,0.94,0.12,🧠 核心思维,⭐ JEV精选,46,1,6,14982,这就是我抄底三条件中说的第一条（投降式的换手量），而对于BTC，CEX内虽然还没看到这样的投降式换手，但ETF中却有出现（IBIT占了BTC ETF 60%左右的AUM，二级换手有出巨量），这也比较符合这轮机构+ETF驱动BTC周期的特点。 https://t.co/Cn28zYTaHc,2,images/2025842396718825954_0.png;images/2025842396718825954_1.png,https://x.com/Michael_Liu93/status/2025842396718825954
+2071911289522401476,2026-06-30 10:58:40,onchain_flow,巨鲸链上,1.98,0.74,0.02,,⭐ JEV精选,23,0,1,2367,@PhyrexNi 如果是跨境用途的的，我觉得这种客户更不会接受银行稳定币了。境外客户要的是最终变成美金的兑付能力和兑付便捷性，usdt和usdc对于一个境外用户远比一个jpm发的稳定币要靠谱，我要换还得找个jpm的分行。而如果本身双方都已经是jpm的客户，直接jpm汇款就好了，也就不需要稳定币了。,0,,https://x.com/Michael_Liu93/status/2071911289522401476
+2071743936998375533,2026-06-29 23:53:40,onchain_flow,巨鲸链上,1.97,0.89,0.01,🧠 核心思维,⭐ JEV精选,295,30,80,125076,"最近有朋友问我，怎么看银行巨头们自己下场做稳定币？会不会颠覆Circle的生意，我来回答一下。
+
+稳定币生意的护城河是仅次于BTC的存在，这是一个又要铺渠道，又要搞定用户心智，又要搞定合规的生意，先发玩家的优势巨大，因为从用户的角度几乎没有任何切换的理由。
+
+这么多年下来，最终跑出来的只有USDT和USDC两家，一个依托早期crypto爆发带来的先发优势，一个依托美国合规体系和链上defi后崛起。
+
+- 币安扶持过三次新的稳定币，BUSD, FDUSD, TUSD，都没做起来
+- Hyperliquid做了USDH，没做起来
+- 火币做了HUSD，没做起来
+- OKX早期通过oklink做过USDK，没做起来
+- Gemini做了GUSD，没做起来
+- Kraken做了USDG，没做起来
+- Tron做了USDD，没做起来
+- 其他的稳定币更不用说了，算稳要么已经暴雷，要么存量一直在萎缩的过程中
+
+币圈里拥有最多流动性，最大分销网络，最多交易场景，现成的用户的最大的几家交易所和公链都尝试无数次且失败的事情，你觉得JP morgan下场做能做好？这些老牌金融机构上上轮周期的叙事是要做crypto交易所，做明白一点了吗？",0,,https://x.com/Michael_Liu93/status/2071743936998375533
+1855617942106615903,2024-11-10 14:26:07,onchain_flow,巨鲸链上,1.95,0.89,0.02,🧠 核心思维,⭐ JEV精选,144,3,10,25401,链上从来都是魔高一尺道高一丈的地方，我不指望某个工具可以把dev的所有脏手段都揭开，但这本质是个成本问题，当散户都给自己武装了侦察能力，那dev起盘子的成本就会越来越高，流水盘和rug盘就会在经济上不再有意义，而剩下的则是愿意长期做盘子的格局项目方。在此也感谢所有给散户们武装的工具商们。,0,,https://x.com/Michael_Liu93/status/1855617942106615903
+1836284558184190279,2024-09-18 06:02:09,onchain_flow,巨鲸链上,1.95,0.61,0.02,🧠 核心思维,⭐ JEV精选,46,1,15,26297,Sato阴毛庄骚操作真有意思，汇集了4%的筹码发给币安，然后找一堆号推上宣传sato持币第一是币安，制造Sato要上币安的假象，仔细爬一爬地址就能知道全部是早期庄自己狙击地址的筹码，不明所以的人看到第一时间梭满了.....其实用常识想想就知道，上币安这种消息庄会让你知道吗？（参考大Neiro先砸盘90%+） https://t.co/qhnIpxIYFn,1,images/1836284558184190279_0.png,https://x.com/Michael_Liu93/status/1836284558184190279
+2075235592800276926,2026-07-09 15:08:15,onchain_flow,巨鲸链上,1.93,0.87,0.02,,⭐ JEV精选,0,0,0,0,"Why USDT and USDC are Harder to Kill than Crypto Twitter Thinks: My last Thoughts on Open USD
+
+The launch of OUSD has taken Twitter by storm. Many people are now convinced @circle  is doomed because a consortium of 150 companies spanning payments, fintech, banks, crypto infrastructure, and consumer technology is somehow going to crush the competition and launch a stablecoin that rivals USDC, and potentially even USDT.
+
+I already wrote a tweet on why people are vastly overestimating this initiative and why consortiums are poor organizational structures to conquer anything, let alone a market with an established duopoly. In this short piece, I want to focus on one thing only: the true network effects of stablecoins. Instead of rehashing every argument, I want to walk through a tangible example that everyone is ignoring, because I believe both USDT and USDC have liquidity moats that are vastly misunderstood and underappreciated.
+
+Stablecoin network effects are not created by a long list of logos. They are created by liquidity, habit, collateral acceptance, integrations, brand recognition, market depth, settlement flows, and the fear of breaking what already works.
+
+This is why I think @tether  and @circle  are companies that are vastly misunderstood.
+
+First, the obvious: OUSD will be GENIUS compliant, which means it cannot share yield directly with users. This isn’t news, yet people are screaming at Circle to pay stablecoin holders, as if OUSD were going to be able to do that. The reality is the opposite: Circle is probably the issuer that passes on the most yield to platforms, and by extension to users, of anyone in the market.
+
+This matters because a lot of people are talking as if OUSD will create a fundamentally different yield product for end users. That is not the model. The model is not “pay stablecoin holders.” The model is “share the reserve economics with the platforms and businesses that distribute and use the stablecoin.
+
+This is an important distinction.
+
+The strongest argument I’ve seen for OUSD is that consortium members will be highly incentivized to entrench it in their businesses because they get a revenue share from the structure. Without knowing the details, let’s assume the economics resemble previous consortiums we’ve seen: Open Standard, the operating company, keeps a 25 bps management fee while each participant keeps 100% of the NIM on any OUSD sitting on their platform, network, or protocol.
+
+On paper, that’s a deal anyone signs immediately. But it completely discounts the fact that these companies accrue value in other ways, and in many cases their core businesses depend on the existing liquidity and network effects of USDT, USDC, other stablecoins or simply other FIAT currencies.
+
+The NIM from stablecoin reserves is attractive only if pursuing it does not jeopardize a much larger revenue stream.
+
+That is the key point.
+
+The best case study in the industry, and probably the strongest counterexample to OUSD, is Binance.
+
+Binance as the best Case Study
+
+@binance  is the largest exchange in the industry by several miles. It initially had its own branded stablecoin, BUSD, which peaked at roughly $23B in supply before NYDFS ordered Paxos, the issuer, to shut the product down in February 2023.
+
+Look at the three biggest Asian exchanges and you get three clean case studies. Today @binance  holds about $45B of USDT, @Bybit_Official  about $4B, and @okx  about $9B. Binance has been, and remains, Tether’s fortress and crown jewel. USDT is the most liquid counterpair on the biggest exchange in the world. Today, if you want to buy BTC, ETH, SOL, or open a perp position in size, USDT is still the dominant quote currency across much of the offshore exchange complex. Binance helped make that true. USDT is embedded into the deepest order books, the most liquid pairs, the most active derivatives markets, and the workflows of the most important market makers and traders.
+
+That is a real network effect.
+
+Now many of you must be thinking: why is CZ so naive? Why hasn’t he called Paolo and Giancarlo and demanded at least a portion of the USDT yield, if not most of it? Binance knows it has extreme leverage here.
+
+There is an extremely simple reason this has never happened: Binance’s crown jewel, from a revenue and enterprise value perspective, is its trading business. And that trading business is cemented by USDT liquidity.
+
+Running the math
+
+So let’s run the rough numbers and see why it is entirely rational for CZ not to chase the NIM, or try to replace USDT with a more “aligned” stablecoin. The back-of-the-envelope math below is based on on-chain data and assumptions; none of it is confirmed information.
+
+Building it bottom-up:
+
+Derivatives (the core engine). Binance runs roughly 40% of global crypto derivatives volume. Call it $40-50B per day on average through the cycle, so $10-15T annually. Blended taker/maker take rate after VIP discounts and BNB rebates is maybe 5 bps. That’s roughly $5B from perps and futures alone.
+
+Spot. Maybe $8-10B per day on average, around $3T annually, at a blended 15 bps (much lower than Coinbase’s retail take rate, because Binance’s mix skews heavily VIP and they run zero-fee promos). Call it another $5B.
+
+Everything else. Earn and lending spread, margin interest, Launchpool and listing economics, Binance Pay, staking commissions, plus the float: they sit on roughly $46B in customer stablecoins, and while they don’t sweep it like a broker-dealer, the corporate treasury and interest-bearing products around it are meaningful at these rates. Add BNB ecosystem economics and you’re conservatively looking at another $5-7B.
+
+And remember, these are bear market numbers. Very conservatively, Binance is a business generating close to $17-20B in bear markets and probably closer to $25B in bull markets. A business of that scale and quality is plausibly worth north of $200B.
+
+So why isn’t CZ in a rush to replace USDT or demand better economics from the Tether team?
+
+Because the whole reason Binance is what it is today, the reason 300M+ customers keep returning to the platform, is that it is the most liquid venue on earth. Let’s price the trade Binance would actually be making.
+
+Binance has $45B of USDT on its platform. Say it struck a deal with OUSD handing Binance 90% of the yield. At an average T-bill yield of 3.8%, that’s about $1.55B a year. Very appealing, until you frame it properly: risking a $25B revenue engine for $1.5B of upside is something only a madman would do.
+
+The glue holding Binance’s trading castle together is precisely USDT. There is no incentive in the world that would make CZ rethink which stablecoin to entrench.
+
+And we don’t need to speculate, because it has already been tried. Over a year ago, Circle reportedly paid Binance a one-time $60M plus ongoing monthly incentives tied to USDC balances held on the platform. Despite all of that, USDC supply on Binance has been essentially flat at $5B.
+
+People are vastly underestimating the network effects these stablecoins generate for the businesses that host them. In most cases, the upside is simply not worth jeopardizing your core revenue engine.
+
+For an exchange, the stablecoin is not just cash. It is the quote asset, the collateral asset, the risk-management asset, the working-capital asset, and the unit of account for millions of traders. Switching that substrate is not free.
+
+Not All Consortium Members Have the Same Incentives
+
+The final point is that the OUSD consortium includes very different types of businesses. They do not all monetize stablecoins in the same way.
+
+Broadly, there are two models.
+
+The first model is AUM monetization. These are companies and protocols that benefit from idle balances, deposits, or float. For them, reserve economics are directly relevant. A lending protocol, wallet, neobank, or exchange with large customer balances may care a lot about the NIM attached to stablecoin supply.
+
+The second model is turnover monetization. These are payments networks, processors, remittance companies, and commerce platforms that monetize transaction flow rather than idle balances. For them, the stablecoin is more of a rail than a balance-sheet asset. They may care more about reliability, cost, compliance, speed, reach, and customer experience than about reserve yield.
+
+An @aave  and a @WesternUnion do not bring the same thing to OUSD.
+
+A DeFi protocol can help create supply by making OUSD useful as collateral or as a yield-bearing venue for liquidity. A payments company may instead move OUSD through its system and burn it quickly at the edge. That can be valuable for volume, but it is very different from creating persistent supply.
+
+This is why the consortium structure is less powerful than it appears. The members may all like the idea of shared economics, but their incentives are not identical. Some will create supply. Some will create turnover. Some will integrate deeply. Some will experiment. Some may do very little once the press cycle is over.
+
+In equilibrium, it is hard to believe all members will be equally motivated to push OUSD. Some will do the hard work of adoption. Others will coast.
+
+That is the classic consortium problem.
+
+Conclusion
+
+OUSD is not irrelevant. It is one of the more interesting stablecoin experiments we have seen, and the economic model is clearly designed to attack the reserve-income advantage of the incumbents.
+
+But the market is overestimating how quickly shared economics can overcome embedded liquidity.
+
+Stablecoins are not won by press releases. They are won through deep, repeated, high-trust usage across the venues where money actually moves.
+
+That is why USDT remains so powerful. That is why USDC has proven resilient and is growing so fast. And that is why OUSD, despite the impressive consortium behind it, faces a much harder path than the market currently assumes.
+
+The core question is not whether OUSD can offer better economics to partners.
+
+The core question is whether those economics are valuable enough for partners to risk disrupting businesses that are already built around other currencies or stablecoins.
+
+In many cases, the answer will be no.",0,,https://x.com/Michael_Liu93/status/2075235592800276926
+1905341829190750663,2025-03-27 19:31:06,onchain_flow,巨鲸链上,1.92,0.85,0.04,,⭐ JEV精选,9,1,3,3092,@thecryptoskanda 个人觉得为了吸引中腰部dev，不需要这么吸引，bsc流动性足够强自然会吸引他们进来，而吸引散户流动性的方式是一个接一个的打造mubarak和tst这种造富故事。但现在cex这么上bsc现货，40m如果都成硬顶了，就会大大压低链上的“预期”空间，这样链上会很p，p几天流动性都跑了。下次散户看到某币20m了在做投票,0,,https://x.com/Michael_Liu93/status/1905341829190750663
+2071906508816916702,2026-06-30 10:39:40,onchain_flow,巨鲸链上,1.91,0.74,0.01,🧠 核心思维,⭐ JEV精选,28,0,3,6328,@PhyrexNi 银行稳定币的问题是，如果本身就在自身体系里流转，就没有做成稳定币的必要，成熟的结算、支付体系、机构客户，为什么要把客户的钱换成稳定币？有点脱裤子放屁的感觉。如果要出去流转，自己做的稳定币又很难脱离自身的体系。,0,,https://x.com/Michael_Liu93/status/2071906508816916702
+2083924656101470667,2026-08-02 14:35:30,onchain_flow,巨鲸链上,1.89,0.9,0.02,,⭐ JEV精选,39,2,3,8532,这几天看了一遍lorenzo发的帖子（木头姐基金的加密负责人），发现我们看好稳定币的原因竟然出奇的一致，都认为rwa会是撬动更大的70万亿的美股资金的关键，而随着这些资产上链并在crypto infra里交易、借贷、套娃，货币层（usdc）、网络层（eth）的需求都会指数级的被变大。,0,,https://x.com/Michael_Liu93/status/2083924656101470667
+2067887880182362588,2026-06-19 08:31:04,onchain_flow,巨鲸链上,1.89,0.85,0.03,,⭐ JEV精选,10,0,0,2454,@0xcryptowizard 同意，看这波如何收场了，如果市场无法让strc自然回锚，mstr持续低位卖币还债的话就会是一个比较漫长的去杠杆过程。,0,,https://x.com/Michael_Liu93/status/2067887880182362588
+1866002296389488667,2024-12-09 06:09:50,onchain_flow,巨鲸链上,1.87,0.58,0.02,🧠 核心思维,⭐ JEV精选,25,2,3,6152,@Mooncat_lz 背后团队完全一样的不多，但这些大项目请的dev和早期做市商都是那一批人，也没多少选择，就像二级都选wintermute似的。他们的钱包很多时候会是复用的，所以链上会有像一个团队做的似的蛛丝马迹。,0,,https://x.com/Michael_Liu93/status/1866002296389488667
+2075137194675847244,2026-07-09 08:37:16,onchain_flow,巨鲸链上,1.87,0.79,0.02,,⭐ JEV精选,0,0,0,0,"🔥 BIG: Tokenized stock transfers surge 105% in a month to $8.4B, with holders up 17% to over 409,000.",0,,https://x.com/Michael_Liu93/status/2075137194675847244
+1988195634273546332,2025-11-11 10:42:32,onchain_flow,巨鲸链上,1.86,0.68,0.02,,⭐ JEV精选,16,0,1,7315,@brc20niubi Pump确实很多刷的，不过pumpswap今年年中才出来的，现在占fee的一半了，相当于把raydium的蛋糕给吃掉了。,0,,https://x.com/Michael_Liu93/status/1988195634273546332
+2095111714861932757,2026-09-02 11:28:52,onchain_flow,巨鲸链上,1.85,0.75,0.02,,⭐ JEV精选,20,1,2,3654,@luffyokkk 想下币安为什么cex不打通robinhood链的转账就能明白为什么币安不可能会跟fomo合作了。fomo这种多链平台在链上业务和合约上对币安都是很大的威胁，而且只会吸血币安的流动性和用户不会反哺，因为国外的fomo用户用不了币安，但国内的币安用户可以去fomo。,0,,https://x.com/Michael_Liu93/status/2095111714861932757
+1988031857653674417,2025-11-10 23:51:45,onchain_flow,巨鲸链上,1.83,0.74,0.03,🧠 核心思维,⭐ JEV精选,251,43,63,109339,"争吵了两轮周期的事情终于尘埃落定，uniswap打开fee switch，币价也终于和业务挂钩了，简单解释下这个回购，然后跟大家算几个数字吧。
+
+1. 烧了1亿枚币，占总量10%，大约9.5亿美元（为之前没有烧做弥补）
+
+2.",0,,https://x.com/Michael_Liu93/status/1988031857653674417
+2087411666589974801,2026-08-12 05:31:38,onchain_flow,巨鲸链上,1.83,0.86,0.09,🧠 核心思维,⭐ JEV精选,212,32,111,44730,"有小伙伴问我之前说过的周期抄底三个信号现在出现了几个？来复盘一下。
+1. 投降式换手量（capitulation volume）
+2. 投降事件
+3. MVRV跌倒0
+
+目前前两个已经出现，第三个暂时还没有
+
+1. https://t.co/s7pnGiu9kY",4,images/2087411666589974801_0.jpg;images/2087411666589974801_1.jpg;images/2087411666589974801_2.jpg;images/2087411666589974801_3.jpg,https://x.com/Michael_Liu93/status/2087411666589974801
+1988034631497822666,2025-11-11 00:02:46,onchain_flow,巨鲸链上,1.83,0.74,0.02,,⭐ JEV精选,3,0,1,4889,@Wuhuoqiu 对长尾资产可能会有，不过uni的fee构成还是eth dai usdc usdt这些pair占比比较大，感觉这里的LP流动性稍微少一点并不太会影响用户的选择。,0,,https://x.com/Michael_Liu93/status/1988034631497822666
+1939902798839099604,2025-07-01 04:24:03,onchain_flow,巨鲸链上,1.82,0.86,0.03,🧠 核心思维,⭐ JEV精选,241,35,54,68948,预测一下，美股到链上这波最大的受益者不会是蓝筹股，这点增量流动性连点水花都起不来，但在美股里没有流动性的资产，一旦到了链上脱离了监管，各种金融工具和骚操作就来了。最直接的，股东在美股没法减持出来的股票，通过期现联动合约出货，大批炒山寨的要转去炒垃圾链上股了。,0,,https://x.com/Michael_Liu93/status/1939902798839099604
+1898452028768366751,2025-03-08 19:13:29,onchain_flow,巨鲸链上,1.81,0.74,0.04,,⭐ JEV精选,9,0,1,2464,@crypandapto 之前没注意过这个现象，我研究下。我是一方面看链上，一方面靠打听，机构解锁没，空投给的多不多，然后有没有OTC出去很多，有没有给利益方币，看盘面很多时候也能看出来。,0,,https://x.com/Michael_Liu93/status/1898452028768366751
+2072029586926534976,2026-06-30 18:48:44,onchain_flow,巨鲸链上,1.8,0.83,0.02,,⭐ JEV精选,145,11,56,52056,举个最简单的例子为什么是利好而不是利空。visa的全球卡数近50亿张，mastercard有三十多亿张，暂且估算俩家全球有30亿的客户，这里大部分都是稳定币支付的增量客户，只要传统金融机构开了crypto的支付口子，最终一定是多个稳定币并行让用户选择，用usdt，usdc，还是ousd则是用户自己决定，就像现在stri,0,,https://x.com/Michael_Liu93/status/2072029586926534976
+1863142672627793942,2024-12-01 08:46:43,onchain_flow,巨鲸链上,1.77,0.46,0.02,,⭐ JEV精选,2,0,1,2175,@Xuelihappy 要不先研究下？外国tg比中国tg大了三倍多，天天冲推的都是老外。一周多点五千多个持币地址了,0,,https://x.com/Michael_Liu93/status/1863142672627793942
+2094783028782572028,2026-09-01 13:42:47,onchain_flow,巨鲸链上,1.74,0.64,0.02,🧠 核心思维,⭐ JEV精选,138,3,66,23564,"AI确实改变了链上，也就一年多前，dev稍微写点代码搓点垃圾产品，哥们看到就说“这产品牛逼”，现在哥们自己也能搓产品了，看到再精美的网站和产品也只会说“Codex搓的没用玩意”
+
+Pons能成为robinhood上的市值第一名，说明链上群体不再只是追情绪，开始认收入，认市场份额，认估值，认逻辑了，这样也才能良币驱除劣币，这难道不比谁接痰速度快好多了吗。",0,,https://x.com/Michael_Liu93/status/2094783028782572028
+1895126359913169218,2025-02-27 14:58:28,onchain_flow,巨鲸链上,1.73,0.48,0.03,,⭐ JEV精选,67,10,28,48960,"Freya今天迁移到sol链上并做了完整的rebranding，别忘了去领取sol上的代币
+
+这次迁移用usdc池子完美避开了sol这波大跌，迁移后前几个小时的交易量就超过了原来在base上日交易量的五倍了。最近这行情大部分上一波的AI",0,,https://x.com/Michael_Liu93/status/1895126359913169218
+1852271244114334008,2024-11-01 08:47:32,onchain_flow,巨鲸链上,1.73,0.74,0.03,,⭐ JEV精选,22,2,11,15146,今天跟@timotimoqi 讨论eth上的harris这个币，这个币应该是换庄了，这个换庄在链上体现的很清晰，大家可以试着爬一下，尤其是去看底部谁在接，然后上去了谁在砸，说实在的politifi harris阵营的龙头概念，但凡是第一波庄稍微能搞事点或者早点把位置让出来，也不至于马上大选了还一直在5m附近晃荡。 https://t.co/yLOLUFjptU,1,images/1852271244114334008_0.jpg,https://x.com/Michael_Liu93/status/1852271244114334008
+2034621998710784458,2026-03-19 13:24:20,onchain_flow,巨鲸链上,1.7,0.74,0.03,,⭐ JEV精选,16,0,1,4829,@CryptoRounder 可以拉一下bmnr的市值跟他持有的eth的nav折扣率就知道如果真正熊了会不会有源源不断的买盘支持市值了。这才熊了半年，如果是三年呢？,0,,https://x.com/Michael_Liu93/status/2034621998710784458
+1905336615742144935,2025-03-27 19:10:23,onchain_flow,巨鲸链上,1.69,0.8,0.02,,⭐ JEV精选,4,0,1,566,@MNson11 龙头fdv越高就会吸引越多sol的流动性进bsc和更多牛逼的发币集团进来玩，市场自会“拆分”。吸引不来外部流动性，内部流动性拆的越碎越快，生态就会越差，因为越来越p，上限越来越低,0,,https://x.com/Michael_Liu93/status/1905336615742144935
+2063943417865048260,2026-06-08 11:17:11,onchain_flow,巨鲸链上,1.69,0.87,0.12,,⭐ JEV精选,0,532,0,1,"I love the cadence of this chart
+
+Bitcoin % of Supply in Profit/Loss
+
+As I said previously, you start looking for major market cycle bottoms *after* they cross, not before.
+
+They just crossed.
+
+Such a great chart for keeping people on the right side of the market in midterm years",0,,https://x.com/Michael_Liu93/status/2063943417865048260
+1834097952698384652,2024-09-12 05:13:22,onchain_flow,巨鲸链上,1.67,0.83,0.03,,⭐ JEV精选,31,3,6,15482,现在一级市场的庄盘的操盘手法越来越专业了，后面一级会越来越二级化。之前评论区问我怎么做链上分析去找庄的数据的，可以去拿主网的Cate做个练习，有54个已知的庄的囤货钱包，然后有2个主操盘钱包，看看你能不能找出来。,0,,https://x.com/Michael_Liu93/status/1834097952698384652
+2083922287343149442,2026-08-02 14:26:05,onchain_flow,巨鲸链上,1.66,0.88,0.02,🧠 核心思维,⭐ JEV精选,171,22,47,54339,"半年时间，hyperliquid上75%的交易量已经是RWA资产了（美股、贵金属、原油），我估计这个趋势在其他cex上也差不多。
+
+我估计这个数字这轮周期应该会去90%以上，而增量全部来源于吸血传统券商的用户。
+
+很多人可能还没理解，光是能24/7小时交易这一件事对比还在用传统券商的交易者是多么大的相对优势。",0,,https://x.com/Michael_Liu93/status/2083922287343149442
+1888062080785465550,2025-02-08 03:07:33,onchain_flow,巨鲸链上,1.65,0.31,0.02,,⭐ JEV精选,18,2,35,17333,之前一直没用过Kaito，但推上讨论度很高，因为可以撸分卖币。不过我想调研一下真实需求，炒币的用户和项目方会看Kaito来决定关注哪个Kol或者跟哪个Kol合作吗？,0,,https://x.com/Michael_Liu93/status/1888062080785465550
+1867141128463720659,2024-12-12 09:35:09,onchain_flow,巨鲸链上,1.61,0.74,0.02,,⭐ JEV精选,7,1,6,1558,@luckybb88 这轮流动性往链上流是大趋势，banana是eth上最大的bot，链上赌场的核心服务商，现金牛业务，币价也有跟现金流挂钩的机制。,0,,https://x.com/Michael_Liu93/status/1867141128463720659
+2044697902782800121,2026-04-16 08:42:23,onchain_flow,巨鲸链上,1.6,0.89,0.03,,⭐ JEV精选,512,120,71,523569,"说个观点，rwa+rwa perp+把传统金融资产上链交易，会是币圈下个5-10年机会最大且最清晰的主线，最近在币圈交易了各种传统资产后这个感受愈发强烈。
+
+币圈rwa相较于传统券商的模式：
+1. 注册账户和出入金极度便捷
+2. 永续合约模式极度散户友好
+3. 24小时交易，只要有流动性，没任何交易限制
+4.",0,,https://x.com/Michael_Liu93/status/2044697902782800121
+1872627073585668161,2024-12-27 12:54:20,onchain_flow,巨鲸链上,1.6,0.55,0.02,🧠 核心思维,⭐ JEV精选,426,100,97,210244,有没有发现一个很有趣的现象，AI从一开始GOAT这样的纯meme，发展到了能聊天的AI Agent的，又发展到ai16z这样的链上基金，然后到Virtual、Spore这样的新型资产发型平台，每一步都在离应用越来越近，而这一切发生在两个月时间内。,0,,https://x.com/Michael_Liu93/status/1872627073585668161
+1755270716306657653,2024-02-07 16:42:04,onchain_flow,巨鲸链上,1.6,0.83,0.02,,⭐ JEV精选,3,0,0,1376,@BTCdayu 不只是blur，未来nft发行方肯定都会用erc404去捕获更多用户和流动性，这几百亿的nft+nftfi基础设施未来只能切到一些稀有属性的nft交易了，估计投这些nft设施的VC们现在也挺慌的,0,,https://x.com/Michael_Liu93/status/1755270716306657653
+1840010506406637720,2024-09-28 12:47:45,onchain_flow,巨鲸链上,1.56,0.74,0.06,,⭐ JEV精选,4,0,0,665,@txnl618 这种就是老盘子被捡起来了，你就去看都到底了还有啥钱包在收就是囤货钱包，然后第一根大阳线谁在画，基本就是操盘钱包,0,,https://x.com/Michael_Liu93/status/1840010506406637720
+1859211805148754351,2024-11-20 12:26:51,onchain_flow,巨鲸链上,1.56,0.45,0.04,,⭐ JEV精选,3,0,1,654,@vegan2025 @web3foxcn @gmgnai @haze0x 因为人家不是去按照一个机器人算收益的，人家是二三十个地址同时跑，只盯一个肯定看不到收益全貌,0,,https://x.com/Michael_Liu93/status/1859211805148754351
+2006480215103689134,2025-12-31 21:38:56,onchain_flow,巨鲸链上,1.55,0.42,0.08,,⭐ JEV精选,44,0,3,29333,@Vida_BWE 同样埋伏了714的现货，中途卖飞了，然后看到你说黑客在拉币安现货，就去盯链上的价格了，链上开始砸就合约空进去了,0,,https://x.com/Michael_Liu93/status/2006480215103689134
+1867142679332868461,2024-12-12 09:41:19,onchain_flow,巨鲸链上,1.52,0.85,0.03,,⭐ JEV精选,1,0,0,1225,@Grimmzer1 牛市上杠杆是刚需，tvl肯定会暴涨，aave是eth defi的龙头基础设施，币价也有跟take rate挂钩，而不是空气,0,,https://x.com/Michael_Liu93/status/1867142679332868461
+1831877625218060312,2024-09-06 02:10:35,onchain_flow,巨鲸链上,1.52,0.87,0.13,,⭐ JEV精选,0,0,1,797,@Zhengxiang14452 以后炒山寨前都先看看筹码分布，把最大几个地址的转账盯住,0,,https://x.com/Michael_Liu93/status/1831877625218060312
+1844989385491742906,2024-10-12 06:32:02,onchain_flow,巨鲸链上,1.51,0.72,0.04,,⭐ JEV精选,5,1,1,3164,@_eat_apple_ 看top 20持仓地址基本都能发现庄，然后去沿着蛛丝马迹去找它的收筹钱包和小钱包,0,,https://x.com/Michael_Liu93/status/1844989385491742906
+2063869765576450461,2026-06-08 06:24:31,onchain_flow,巨鲸链上,1.5,0.65,0.02,,⭐ JEV精选,73,1,9,28139,"股票上链，半年市场扩大了5倍；现在十几亿，明年这个时候应该就是几百亿的规模了，我现在身边炒美股的朋友都开始用hyperliquid看盘前和周末。
+
+我不知道怎么对rwa bearish。",0,,https://x.com/Michael_Liu93/status/2063869765576450461
+1841541171174375564,2024-10-02 18:10:04,onchain_flow,巨鲸链上,1.48,0.4,0.04,,⭐ JEV精选,2,0,1,925,@Milady100x 这还没直接喊？你问我为什么我要发eth的这个，而不是sol的教学，因为poe喊的盘子的相关庄地址已经扒出来了。 https://t.co/RjthhtMJsL,1,images/1841541171174375564_0.png,https://x.com/Michael_Liu93/status/1841541171174375564
+1836244931868004463,2024-09-18 03:24:42,onchain_flow,巨鲸链上,1.45,0.25,0.02,,⭐ JEV精选,33,3,13,15247,有时候盯盘看合约清算图感觉挺无奈的，Uxlink的合约光是币安这一个所的每一个黄条代表的就是2亿美金左右的做空杠杆仓位被清算，这背后是多少个赌狗撸网贷换来的希望被破灭，又一批新韭菜永远的离开了这个圈子。 https://t.co/zAavwoY28B,1,images/1836244931868004463_0.jpg,https://x.com/Michael_Liu93/status/1836244931868004463
+2095775711718175020,2026-09-04 07:27:21,onchain_flow,巨鲸链上,1.42,0.81,0.02,,⭐ JEV精选,107,7,62,26898,你会发现，不管你在中心化交易所炒，还是链上用perp炒，还是去预测市场赌，还是去买rwa资产，还是去做defi池子，还是去做套利，还是去用fomo冲meme，你都在用usdc。稳定币是能吃到所有币圈native场景和这轮向圈外扩场景的应用。,0,,https://x.com/Michael_Liu93/status/2095775711718175020
+1856284494761762980,2024-11-12 10:34:46,onchain_flow,巨鲸链上,1.42,0.86,0.06,,⭐ JEV精选,4,0,0,1213,@4XJAIjHuP6m8FFm 主要看oi和合约的线与链上在发生什么 多空比例和现期价差做辅助,0,,https://x.com/Michael_Liu93/status/1856284494761762980
+1589544512074186752,2022-11-07 09:05:18,onchain_flow,巨鲸链上,1.39,0.13,0.01,,归档记录,16,1,2,0,"@FTX_Official you are an exchange, not a bank, why are our stables not in cold wallet but in banks??",0,,https://x.com/Michael_Liu93/status/1589544512074186752
+1859212309002076585,2024-11-20 12:28:51,onchain_flow,巨鲸链上,1.39,0.51,0.06,,⭐ JEV精选,3,1,1,800,@0xCryptoWing @web3foxcn @gmgnai @haze0x 最近已经有dev来骂我了😂😂，我告诉你们，就算追地址不行，线是不会骗人的，他能去找做市商进来洗早期自己钱包的筹码就意味着会继续拉,0,,https://x.com/Michael_Liu93/status/1859212309002076585
+1907722722022666616,2025-04-03 09:11:55,onchain_flow,巨鲸链上,1.38,0.71,0.02,,⭐ JEV精选,170,18,69,122129,"USDC跟USDT的利率差有一倍多了，先知先觉的内幕资金已经选择去做避险了。想清楚几个问题就明白为什么我说usdt可能会被搞了：
+1. 阿布扎比主权基金为什么会选择在这个时点投币安？
+2. https://t.co/v2xte5uraR",1,images/1907722722022666616_0.jpg,https://x.com/Michael_Liu93/status/1907722722022666616
+2094667248451694734,2026-09-01 06:02:43,onchain_flow,巨鲸链上,1.37,0.52,0.03,,⭐ JEV精选,13,0,3,5779,@Hovz0217 买不了一点marscoin，现在属于，robinhood的流动性溢出不到bsc，但bsc的流动性可以通过fomo溢出到robinhood,0,,https://x.com/Michael_Liu93/status/2094667248451694734
+1884365220401012944,2025-01-28 22:17:33,onchain_flow,巨鲸链上,1.33,0.56,0.02,,⭐ JEV精选,6,0,2,6844,@jjfrees1 freya他们sol上的池子已经很大了，我后面可能会建议项目方直接迁移到sol上去,0,,https://x.com/Michael_Liu93/status/1884365220401012944
+1834611951986745850,2024-09-13 15:15:49,onchain_flow,巨鲸链上,1.33,0.45,0.06,,⭐ JEV精选,2,0,2,391,@AlexLau01508216 感谢啊，不过我的主要交易策略还用不上algo，几个钱包监控起来有异动直接发我email提醒我，我打开合约结合着orderbook找entry就够了,0,,https://x.com/Michael_Liu93/status/1834611951986745850
+2075138224247443527,2026-07-09 08:41:21,onchain_flow,巨鲸链上,1.3,0.71,0.02,,⭐ JEV精选,41,4,41,19081,RWA的数据是在以每月20-40%的速度增长，目前40万个RWA股票的持币地址，这个数字保守估计还有100倍的空间。,0,,https://x.com/Michael_Liu93/status/2075138224247443527
+1984759921901257177,2025-11-01 23:10:15,onchain_flow,巨鲸链上,1.29,0.63,0.04,,⭐ JEV精选,784,131,120,263927,"最近一段时间都在玩polymarket，我觉得这里会在未来一两年诞生出多个上亿营收的应用和工具，就像pump fun诞生出了axiom gmgn photon一样。
+
+我建议大家都应该去研究试一下，不是让你去当菠菜玩，而是把它当一个交易工具用，我举几个例子。
+
+假设我想在monad https://t.co/oLdhXSiooS",1,images/1984759921901257177_0.jpg,https://x.com/Michael_Liu93/status/1984759921901257177
+1956343364372083042,2025-08-15 13:12:59,onchain_flow,巨鲸链上,1.28,0.12,0.02,,归档记录,20,0,3,4174,@cryptopainter 我也很不理解，各个交易所的资金每天都有被冻的。资金被冻了要提交材料，那就提交材料抓紧走解冻程序就好了，需要上升到交易所要吞钱跑路吗。,0,,https://x.com/Michael_Liu93/status/1956343364372083042
+2001152581289304516,2025-12-17 04:48:49,onchain_flow,巨鲸链上,1.24,0.48,0.02,,归档记录,7,0,1,5365,这么看来，eth也是bsc的权力结构，但又没bsc的组织能力和cex流动性出口🤡,0,,https://x.com/Michael_Liu93/status/2001152581289304516
+2052473953772519514,2026-05-07 19:41:38,onchain_flow,巨鲸链上,1.22,0.28,0.08,,归档记录,70,0,31,34986,"tom lee说bmnr将要放慢买eth的速度了，再买马上就到5%了
+
+哥们发现整个房间就他一个在买，买不完，根本买不完😂",0,,https://x.com/Michael_Liu93/status/2052473953772519514
+1939905356484026510,2025-07-01 04:34:13,onchain_flow,巨鲸链上,1.21,0.29,0.03,,归档记录,2,0,1,1819,@Ri_Blockchain 是的 而且大股东明面上是锁着的 至少不像链上会出rug,0,,https://x.com/Michael_Liu93/status/1939905356484026510
+1996438728290820285,2025-12-04 04:37:39,onchain_flow,巨鲸链上,1.21,0.31,0.02,,归档记录,1,0,0,312,@gz3E8nb9VR11449 soon结束了，kol轮 nft 投资人们的筹码已经开始解锁了,0,,https://x.com/Michael_Liu93/status/1996438728290820285
+1841550032102948968,2024-10-02 18:45:16,onchain_flow,巨鲸链上,1.2,0.7,0.06,,⭐ JEV精选,3,0,3,455,@HeidiMarti54461 “所谓的拉盘地址”就是所有足够大的market mover在我这里都算是，都是要盯什么时候在出货的。,0,,https://x.com/Michael_Liu93/status/1841550032102948968
+1854384189971509579,2024-11-07 04:43:38,onchain_flow,巨鲸链上,1.18,0.78,0.31,,⭐ JEV精选,47,7,34,42671,Uxlink不太对劲了，盯着点，还有链上活动，之前发过这个策略，3个条件都check就是entry机会,0,,https://x.com/Michael_Liu93/status/1854384189971509579
+1873037265045471486,2024-12-28 16:04:17,onchain_flow,巨鲸链上,1.17,0.44,0.03,,归档记录,79,6,27,62164,这就是我说的，AI链上资产发行，任何一个人有想法，直接现搓MVP，发个币让市场给定价，产品行不行直接链上拉出来遛遛。这哥们在尝试直播搓一个AI版的gmgn，别瞎冲，纯粹讨论链上发行模式本身。,0,,https://x.com/Michael_Liu93/status/1873037265045471486
+1989918218295890014,2025-11-16 04:47:28,onchain_flow,巨鲸链上,1.16,0.56,0.02,,⭐ JEV精选,10,0,2,4772,@0xcryptowizard 确实zec那边资金外溢过来了，跟周期里的btc和eth接棒似的,0,,https://x.com/Michael_Liu93/status/1989918218295890014
+1905325839740535057,2025-03-27 18:27:34,onchain_flow,巨鲸链上,1.14,0.45,0.03,,归档记录,6,0,2,4992,@guhype 最近不是要大力搞bsc吗，流动性是bn最强的武器，这个时候做脱敏测试吗….,0,,https://x.com/Michael_Liu93/status/1905325839740535057
+1991454438129824183,2025-11-20 10:31:52,onchain_flow,巨鲸链上,1.13,0.27,0.03,,归档记录,5,0,0,1861,@Colasama zec赚了钱的资金去冲strk了，确实是资金有转换,0,,https://x.com/Michael_Liu93/status/1991454438129824183
+1930217519861903415,2025-06-04 10:58:13,onchain_flow,巨鲸链上,1.12,0.22,0.02,,归档记录,3,0,2,393,@MNson11 @0xDave852 @0xBanez eth这种影响因素太多了 光看合约数据看不出来 oi暴涨说明大家这次玩很大🤓,0,,https://x.com/Michael_Liu93/status/1930217519861903415
+1841087459721097315,2024-10-01 12:07:10,onchain_flow,巨鲸链上,1.11,0.16,0.03,,归档记录,12,1,7,2482,@mmssyy7324 我突然犹豫了一下是不是该从钱包是什么跟你说起。。。。。dev=项目方狗庄，sniper钱包=他用来买第一批筹码的钱包,0,,https://x.com/Michael_Liu93/status/1841087459721097315
+1834100347658494231,2024-09-12 05:22:53,onchain_flow,巨鲸链上,1.11,0.34,0.1,,归档记录,3,0,2,1259,@y1nt_ 这就是一眼看的明白的事儿，直接看开盘狙击的情况，然后看钱包,0,,https://x.com/Michael_Liu93/status/1834100347658494231
+1887766939466146228,2025-02-07 07:34:46,onchain_flow,巨鲸链上,1.1,0.23,0.03,,归档记录,4,1,2,2370,@cryp_orange 这波链上资产暴跌全靠空cex里的大卡车对冲了😵‍💫,0,,https://x.com/Michael_Liu93/status/1887766939466146228
+1876578732556824774,2025-01-07 10:36:49,onchain_flow,巨鲸链上,1.07,0.24,0.04,,归档记录,80,18,3,18498,然后项目方，你们以后塞假地址记得塞超过10u的，https://t.co/cHjb0SbnDA都能直接看出来的，交易所也不傻的😂,0,,https://x.com/Michael_Liu93/status/1876578732556824774
+1899814264241631705,2025-03-12 13:26:32,onchain_flow,巨鲸链上,1.06,0.13,0.02,,归档记录,56,10,31,25997,躺着不动的币都达标，迁移新链积极破局的币，被拿着老合约说不达标，binance wallet团队到底在干嘛啊，后台改一下这么难吗？,0,,https://x.com/Michael_Liu93/status/1899814264241631705
+1841091627223564456,2024-10-01 12:23:44,onchain_flow,巨鲸链上,1.05,0.1,0.03,,归档记录,19,0,3,13829,这种ca是0x88888开头的一看就是国人搞的，推一搜好多国人号在推，这下不装了收网了 https://t.co/mBwHf39V9f,1,images/1841091627223564456_0.png,https://x.com/Michael_Liu93/status/1841091627223564456
+2034611037316829452,2026-03-19 12:40:47,onchain_flow,巨鲸链上,1.05,0.54,0.07,,归档记录,4,0,0,3322,@fangkanyun 他需要卖币续命的时候就是恐慌崩盘的开始,0,,https://x.com/Michael_Liu93/status/2034611037316829452
+1923034320119173155,2025-05-15 15:14:44,onchain_flow,巨鲸链上,1.05,0.44,0.02,,归档记录,3,0,1,893,@leoLeo498458 没办法，链上在走下坡路，现在很像NFT那会儿，后opensea时代的开头,0,,https://x.com/Michael_Liu93/status/1923034320119173155
+1855620271253913788,2024-11-10 14:35:23,onchain_flow,巨鲸链上,1.04,0.56,0.02,,归档记录,8,0,0,7234,@ChinaWeb3 是的 链上如果成为了毫无悬念的收割场 也就离游戏结束不远了,0,,https://x.com/Michael_Liu93/status/1855620271253913788
+1856241621320511660,2024-11-12 07:44:24,onchain_flow,巨鲸链上,1.04,0.27,0.04,,归档记录,4,0,0,4432,@chaos_jerry 新钱包也没用，dev知道自己的钱包是什么，所有外部钱包都会被一一监控洗,0,,https://x.com/Michael_Liu93/status/1856241621320511660
+1977939697180746039,2025-10-14 03:29:06,onchain_flow,巨鲸链上,1.04,0.23,0.04,,归档记录,2,0,1,1332,@Ri_Blockchain @xingpt @allen_su1024 @Solomon_Nahhh 对 giggle都是链上为主 所内合约很少,0,,https://x.com/Michael_Liu93/status/1977939697180746039
+2095113058440053178,2026-09-02 11:34:13,onchain_flow,巨鲸链上,1.03,0.38,0.02,,归档记录,12,0,1,3060,@Cointelegraph 牛市一来，稳定币天天增发,0,,https://x.com/Michael_Liu93/status/2095113058440053178
+2034608575050555669,2026-03-19 12:31:00,onchain_flow,巨鲸链上,1.03,0.4,0.06,,归档记录,5,0,0,6306,@laicaipingan 他那个btc量分解不掉的，都要倒了为什么救他，等他爆了抄底不好吗,0,,https://x.com/Michael_Liu93/status/2034608575050555669
+1956203729692319905,2025-08-15 03:58:08,onchain_flow,巨鲸链上,1.02,0.09,0.01,,归档记录,6,0,1,2083,@web3foxcn 这种资金被冻结的事情出现，还闹的这么大，平台肯定跟用户一样想要快速解决问题，但最终还是司法机构说的算。,0,,https://x.com/Michael_Liu93/status/1956203729692319905
+1855614356240949643,2024-11-10 14:11:52,onchain_flow,巨鲸链上,1.01,0.34,0.03,,⭐ JEV精选,1540,373,290,455204,跟链上小伙伴们聊聊如何靠最基础的筛庄钱包去避坑的基础知识吧。最近给GMGN提的不少产品需求陆陆续续的上线了，正好昨天跟认识的几个国外Dev聊天，都跟我吐槽gmgn标记钱包转账过币的功能让他们开盘子又麻烦了一层，我说挺好的，是我提的功能，这样流水盘dev的成本和麻烦会越来越多，让更多有格局有能力 https://t.co/lQaP4ikZvD,4,images/1855614356240949643_0.jpg;images/1855614356240949643_1.jpg;images/1855614356240949643_2.jpg;images/1855614356240949643_3.png,https://x.com/Michael_Liu93/status/1855614356240949643
+1854140648607420697,2024-11-06 12:35:53,onchain_flow,巨鲸链上,1.01,0.31,0.04,,归档记录,49,1,18,31473,希望有救到人，二级上很多时候做一下简单的链上分析，能救你一命的。 https://t.co/XpRoMqBvse,1,images/1854140648607420697_0.jpg,https://x.com/Michael_Liu93/status/1854140648607420697
+1956192283994546202,2025-08-15 03:12:39,onchain_flow,巨鲸链上,1.0,0.42,0.04,,归档记录,2,0,2,865,@work0918 你要是打笔黑钱到交易所，也会被限制提现,0,,https://x.com/Michael_Liu93/status/1956192283994546202
+1677770009857392640,2023-07-08 20:01:56,onchain_flow,巨鲸链上,1.0,0.25,0.02,,归档记录,0,0,0,189,@jiji_eth 其实你看看链上数据就知道庄家在一直出货了。。。,0,,https://x.com/Michael_Liu93/status/1677770009857392640
+2091025961093587258,2026-08-22 04:53:33,onchain_flow,巨鲸链上,0.99,0.37,0.05,,归档记录,3,0,1,3311,@haishudriver 这个逻辑没太理解，为什么b端跟c端的流动性要分开啊,0,,https://x.com/Michael_Liu93/status/2091025961093587258
+1874527323707547862,2025-01-01 18:45:15,onchain_flow,巨鲸链上,0.97,0.11,0.02,,归档记录,271,34,27,190310,Sol黑客松一人团队，每天直播写代码手搓ai版gmgn，边写代码边拉盘的男人。产品和代码搞得咋样全部直播能看到，对自己coding技术没点自信都不敢干这事儿，有点巴基斯坦版A神的感觉了。产品mvp应该这周末就出来了，叙事慢慢步入下一阶段。对于我这种爱风险投资的人，我太享受这种链上疯狂寻找牛逼的人和,0,,https://x.com/Michael_Liu93/status/1874527323707547862
+2075039272651096138,2026-07-09 02:08:09,onchain_flow,巨鲸链上,0.97,0.13,0.02,,归档记录,72,7,47,18482,"Crypto最赚钱的20个应用
+
+polymarket数据增长的真好啊",1,images/2075039272651096138_0.jpg,https://x.com/Michael_Liu93/status/2075039272651096138
+1835555176599761064,2024-09-16 05:43:51,onchain_flow,巨鲸链上,0.97,0.37,0.02,,归档记录,5,0,0,1139,"@ohxiyu 如果你是一个艺术家/项目方，很看好以太坊生态，你会在以太坊主网上发你的项目，还是在arb和op上发你的项目？
+
+以太其实已经告诉你答案了。",0,,https://x.com/Michael_Liu93/status/1835555176599761064
+2071144965212963253,2026-06-28 08:13:34,onchain_flow,巨鲸链上,0.96,0.15,0.02,,归档记录,2,0,1,1615,@CryptoRyan777 害 crypto还剩下的巨鲸都贼的要死 想不出这个庄怎么回本,0,,https://x.com/Michael_Liu93/status/2071144965212963253
+1839579671417233481,2024-09-27 08:15:46,onchain_flow,巨鲸链上,0.96,0.17,0.04,,归档记录,1,2,2,741,@TheMemeLurker 都可以，我自己习惯gmgn标注+tg监控操盘钱包,0,,https://x.com/Michael_Liu93/status/1839579671417233481
+1988036768369963185,2025-11-11 00:11:16,onchain_flow,巨鲸链上,0.95,0.2,0.02,,归档记录,4,0,0,3126,@feifan7686 链上繁荣估计也不在eth上咯😅,0,,https://x.com/Michael_Liu93/status/1988036768369963185
+1887768052315660773,2025-02-07 07:39:11,onchain_flow,巨鲸链上,0.95,0.11,0.02,,归档记录,2,0,2,1271,@lindada42372578 链上这么跌没一个能护住的,0,,https://x.com/Michael_Liu93/status/1887768052315660773
+1956184970374078928,2025-08-15 02:43:35,onchain_flow,巨鲸链上,0.94,0.06,0.02,,归档记录,2,0,1,922,@LukeLiu26406547 司法冻结，怎么就流入他自己的钱包了？,0,,https://x.com/Michael_Liu93/status/1956184970374078928
+1834568338690933048,2024-09-13 12:22:31,onchain_flow,巨鲸链上,0.93,0.13,0.03,,归档记录,356,132,45,45151,"你们要的干货又又又又来了，之前评论区经常问这个图或者这个数据哪来的，今天我把我在一二级常用的所有工具分享给大家，相当于把我的兵器库全都搬出来给你了，大家记得收藏下，加油用好它，完全够你大杀四方了。
+
+🤠一级的：
+- 主交易的dashboard：https://t.co/lrMojLMV1H
+a. Photon: https://t.co/6ojQ5ZWb9t",1,images/1834568338690933048_0.jpg,https://x.com/Michael_Liu93/status/1834568338690933048
+1906581472150278204,2025-03-31 05:37:00,onchain_flow,巨鲸链上,0.93,0.23,0.02,,归档记录,23,0,4,32458,这块儿蛋糕太大了，trump肯定想要，不排除威逼利诱交易所们给usdt来个釜底抽薪,0,,https://x.com/Michael_Liu93/status/1906581472150278204
+1785058528383877194,2024-04-29 21:28:12,onchain_flow,巨鲸链上,0.88,0.16,0.02,,归档记录,2,0,3,184,@StableScarab @fraxfinance Where is that yield coming from?,0,,https://x.com/Michael_Liu93/status/1785058528383877194
+1941415010317816197,2025-07-05 08:33:02,onchain_flow,巨鲸链上,0.85,0.06,0.03,,归档记录,2,0,1,732,@0xCryptoWing @abyssofgambling 这就涉诈资金了啊,0,,https://x.com/Michael_Liu93/status/1941415010317816197
+1835246944400158721,2024-09-15 09:19:03,onchain_flow,巨鲸链上,0.82,0.08,0.03,,归档记录,9,0,0,849,@0xWeiGe123 啥都不用干？你要不要自己看看你在说些什么。你如果盯过链你就知道0xsun的作息有多恐怖。,0,,https://x.com/Michael_Liu93/status/1835246944400158721
+1841135713380893008,2024-10-01 15:18:55,onchain_flow,巨鲸链上,0.81,0.08,0.02,,归档记录,0,0,0,854,@OxAzir 好多聪明钱都在冲😂,0,,https://x.com/Michael_Liu93/status/1841135713380893008
+1975495779424084459,2025-10-07 09:37:51,onchain_flow,巨鲸链上,0.79,0.08,0.02,,归档记录,2,0,0,1271,@SJgU5kxTCHhMRMO 很多都有，比如coinglass、tradingview,0,,https://x.com/Michael_Liu93/status/1975495779424084459
+1864233096348094856,2024-12-04 08:59:40,onchain_flow,巨鲸链上,0.78,0.12,0.02,,归档记录,439,131,53,165874,麦总长篇Meme教学第二篇：今天不讲太干的了，教大家一个损招😂😂😂，有没有发现有时候BubbleMap卷成以下这种样子？有没有好奇过背后的逻辑是什么？为啥会卷成这傻样，哈哈哈哈 https://t.co/59fJnxfRKw,2,images/1864233096348094856_0.png;images/1864233096348094856_1.png,https://x.com/Michael_Liu93/status/1864233096348094856
+1912941383448670439,2025-04-17 18:49:01,onchain_flow,巨鲸链上,0.78,0.06,0.02,,归档记录,3,0,1,930,@ChinaWhaleETH 被背刺的事情太多了,0,,https://x.com/Michael_Liu93/status/1912941383448670439
+1834104867897614351,2024-09-12 05:40:51,onchain_flow,巨鲸链上,0.78,0.06,0.02,,归档记录,1,0,1,1021,@xiaoyan21374272 都是链上公开的数据，有啥找不出来的。。。。,0,,https://x.com/Michael_Liu93/status/1834104867897614351
+1852363011958464753,2024-11-01 14:52:11,onchain_flow,巨鲸链上,0.77,0.11,0.02,,归档记录,3,0,1,363,@blinkyoneth asked the team about why the liquidity pool isn't shown as burned or locked https://t.co/iaoGMaxjlF,1,images/1852363011958464753_0.png,https://x.com/Michael_Liu93/status/1852363011958464753
+1859988134001553839,2024-11-22 15:51:42,onchain_flow,巨鲸链上,0.77,0.12,0.03,,归档记录,0,2,2,2952,@web3foxcn 一看庄的囤货钱包,0,,https://x.com/Michael_Liu93/status/1859988134001553839
+2039394834306449690,2026-04-01 17:29:53,onchain_flow,巨鲸链上,0.73,0.08,0.04,,归档记录,9,0,1,3973,@nine_DeFi 5wu已经是可以定向收割的大户了😂,0,,https://x.com/Michael_Liu93/status/2039394834306449690
+1844742361697685691,2024-10-11 14:10:27,onchain_flow,巨鲸链上,0.72,0.1,0.02,,归档记录,5,0,3,10686,多问一句，大家在sui上交易用什么dashboard啊？除了dexscreener有好用的能分析筹码分布和地址的工具吗？像是sui上的gmgn和abot这种。,0,,https://x.com/Michael_Liu93/status/1844742361697685691
+1935174582878843271,2025-06-18 03:15:49,onchain_flow,巨鲸链上,0.72,0.05,0.03,,归档记录,3,0,0,2153,@0xAgata 拿了不到2%😑,0,,https://x.com/Michael_Liu93/status/1935174582878843271
+1845355153198809204,2024-10-13 06:45:28,onchain_flow,巨鲸链上,0.71,0.08,0.02,,归档记录,2,0,0,1143,@Float9933 哈哈 说明有资金进来了,0,,https://x.com/Michael_Liu93/status/1845355153198809204
+1935524207326285868,2025-06-19 02:25:05,onchain_flow,巨鲸链上,0.59,0.14,0.06,,归档记录,2,0,0,2656,@WEB3_furture coinglass这个就是异常，5分钟也可以调的,0,,https://x.com/Michael_Liu93/status/1935524207326285868
+1857982174974361893,2024-11-17 03:00:44,onchain_flow,巨鲸链上,0.58,0.04,0.02,,归档记录,81,3,43,33806,大家之前跟我提的最多的@gmgnai 两个问题，稳定性不足和聪明钱关注数太少他们都在搞了，大家还有什么需求和建议直接在这篇帖子里提，大家看到某个需求特别赞极需要的直接点赞，他们都会看到的。（看得出来最近给他们累坏了….3点多提了个需求，老板立马回复了，感觉24小时都在线😅） https://t.co/X8e62lvo2C,2,images/1857982174974361893_0.jpg;images/1857982174974361893_1.jpg,https://x.com/Michael_Liu93/status/1857982174974361893
+1924751364837851363,2025-05-20 08:57:40,onchain_flow,巨鲸链上,0.56,0.18,0.04,,归档记录,3,0,0,1480,@cryptodaoyi 对 成liquid fund的燃料了,0,,https://x.com/Michael_Liu93/status/1924751364837851363
+1953117673509793868,2025-08-06 15:35:15,onchain_flow,巨鲸链上,0.55,0.09,0.03,,归档记录,3,0,2,2465,@faster100x 他在链上买 我还空不了。。,0,,https://x.com/Michael_Liu93/status/1953117673509793868
+2007717478311571514,2026-01-04 07:35:23,onchain_flow,巨鲸链上,0.51,0.08,0.03,,归档记录,3,0,0,922,@ynonestop 搞了点aave 其他还在等,0,,https://x.com/Michael_Liu93/status/2007717478311571514
+1925865629552107866,2025-05-23 10:45:21,onchain_flow,巨鲸链上,0.48,0.13,0.04,,归档记录,1,0,1,1372,@guhype 是weth的窟窿，jump补上了,0,,https://x.com/Michael_Liu93/status/1925865629552107866
+1884372501431738428,2025-01-28 22:46:28,onchain_flow,巨鲸链上,0.45,0.07,0.03,,归档记录,11,0,4,19344,不是迁移，是跨链，纠正下自己哈,0,,https://x.com/Michael_Liu93/status/1884372501431738428
+1988038359873470542,2025-11-11 00:17:35,onchain_flow,巨鲸链上,0.37,0.08,0.02,,归档记录,2,0,1,1237,@dov_wo 被uni套着的中国巨鲸们估计这个点已经吃完早点了👴,0,,https://x.com/Michael_Liu93/status/1988038359873470542
+1605756434150748160,2022-12-22 02:45:42,onchain_flow,巨鲸链上,0.26,0.33,0.13,,归档记录,1,0,1,54,@WhaleChart EOS,0,,https://x.com/Michael_Liu93/status/1605756434150748160
+1915225557421420875,2025-04-24 02:05:30,onchain_flow,巨鲸链上,0.22,0.05,0.02,,归档记录,4,0,1,2471,@0Run_away 啊 不知道啊 你试试看coinglass,0,,https://x.com/Michael_Liu93/status/1915225557421420875
+1931404290566066685,2025-06-07 17:34:01,onchain_flow,巨鲸链上,0.21,0.09,0.05,,归档记录,11,3,1,1452,@Lambert_Leung arkham和solscan看,0,,https://x.com/Michael_Liu93/status/1931404290566066685
+1983181947032764561,2025-10-28 14:39:56,onchain_flow,巨鲸链上,0.18,0.04,0.02,,归档记录,7,0,3,6957,为什么我刷不出来空投呀 https://t.co/h32Y0u4Npt,2,images/1983181947032764561_0.jpg;images/1983181947032764561_1.jpg,https://x.com/Michael_Liu93/status/1983181947032764561
+1973251703270154434,2025-10-01 05:00:41,onchain_flow,巨鲸链上,0.13,0.03,0.03,,归档记录,1,0,1,1895,@0xNoNo_1 合约被爆了嘛🥲,0,,https://x.com/Michael_Liu93/status/1973251703270154434
+2074044153156296937,2026-07-06 08:13:54,onchain_flow,巨鲸链上,0.08,0.05,0.02,,归档记录,24,0,0,15698,说错了，是MVRV....群友们天天说MRVL，脑袋糊住了....,0,,https://x.com/Michael_Liu93/status/2074044153156296937
+1866070655109828897,2024-12-09 10:41:28,onchain_flow,巨鲸链上,0.05,0.03,0.03,,归档记录,3,0,1,1541,@lijiuer1 九儿你的持仓拆100个钱包吧 靠你了！,0,,https://x.com/Michael_Liu93/status/1866070655109828897
+2014679925748580811,2026-01-23 12:41:39,onchain_flow,巨鲸链上,0.02,0.04,0.03,,归档记录,7,0,1,3589,@0xCryptoWing 谢谢链上黄提醒🫡,0,,https://x.com/Michael_Liu93/status/2014679925748580811
