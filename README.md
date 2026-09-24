@@ -34,6 +34,11 @@ Trader-Archives/
 │   ├── data/
 │   ├── docs/
 │   └── images/
+├── agintender/             # 🚀【本次新增】danny 衍生品与暗流大典
+│   ├── index.html          # danny 独立自包含研报阅读站（含 23-Key 导师与 92 篇万字长文）
+│   ├── data/               # 完整数据湖（JSON / CSV / 5大垂类切片）
+│   ├── docs/articles/      # 92 篇 Twitter Article 独立 Markdown 文库
+│   └── images/             # 本地实盘图床
 ├── xiaomu/                  # 川沐实战交易全书
 │   ├── index.html
 │   ├── data/
