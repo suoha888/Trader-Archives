@@ -1,0 +1,11 @@
+[
+  {
+    "article_id": "2059987702708322304",
+    "tweet_id": "2059988548389093739",
+    "createdAt": "Thu May 28 13:21:57 +0000 2026",
+    "title": "不想租用GPU怎么用本地显卡挖 @prlnet（超详细步骤一步步来）",
+    "content": "1. win➕s 搜索“启用或关闭 Windows 功能”（或在控制面板里找）\n打开后，勾选下面两项：\n适用于 Linux 的 Windows 子系统 （Windows Subsystem for Linux）\n虚拟机平台 （Virtual Machine Platform）\n点击 确定 → 系统会自动下载组件 → 重启电脑\n2.前期准备（Windows 端）\n安装 WSL + Ubuntu\n以管理员身份打开 PowerShell，\n执行：wsl --install\n（有可能因为挂了VPN无法下载，需要关闭VPN）本人用的powershell7版本，建议单独再下一个。\n重启电脑，然后搜索打开 Ubuntu，设置用户名和密码\n（因为Ubuntu又需要挂梯子下载，所以重启后挂梯子直接在Win商城下载Ubuntu）\n3.在光标闪烁的位置输入用户名，然后按 Enter（回车）。\n建议：\n用英文和小写字母（推荐）\n简单好记，比如：magnolia、user、admin 等\n不要用中文，不要用太复杂的名字\n输入用户名后回车，系统会让你设置密码：\n输入密码（输入时不会显示，正常打就行）\n再输入一次确认密码\n回车\n设置完后，就会进入正常的 Ubuntu 命令行界面（出现 username@computer:\\~$ 这样的提示符）。\n4.先更新系统（非常重要）\n复制下面整行命令，粘贴到终端后按 Enter（  :不需要粘贴哦  ）\n：sudo apt update && sudo apt upgrade -y\n输入你的密码（输入时不会显示字符），然后回车\n这个过程可能会花几分钟，耐心等待它完成。\n更新完后，再运行\n：sudo apt install -y curl wget git vim unzip\n 换成国内软件源（推荐，速度会快很多）\n：sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak\nsudo sed -i 's|http://archive.ubuntu.com|https://mirrors.tuna.tsinghua.edu.cn|g' /etc/apt/sources.list\nsudo apt update\n5.启用 NVIDIA CUDA 支持\n更新系统\n：sudo apt update && sudo apt upgrade -y\n安装必要工具\n: sudo apt install -y build-essential cmake curl wget git\n配置 NVIDIA（关键步骤）\n：sudo cp /usr/lib/wsl/lib/nvidia-smi /usr/local/bin/nvidia-smi\nsudo chmod +x /usr/local/bin/nvidia-smi\necho 'export PATH=\"/usr/lib/wsl/lib:$PATH\"' >> \\~/.zshrc\nsource \\~/.zshrc\n验证显卡\n: nvidia-smi\n（必须要看到你的显卡型号才算成功 比如 RTX5090）\n6. 创建钱包 https://compute.pearlresearch.ai/wallet\n创建完后记得复制钱包地址\n7. 回到我们的Ubuntu，安装矿工\n下载 Alpha Miner（直接复制粘贴下面指令）\ncd \\~\ncurl -L -o alpha-miner https://github.com/AlphaMine-Tech/alpha-miner/releases/latest/download/alpha-miner\nchmod +x alpha-miner\n启动挖矿（香港节点推荐命令）\n./alpha-miner --pool stratum+tcp://sg1.alphapool.tech:5566 --address 这里是你的钱包地址记得粘贴进去我的这行中文要删除 --worker 4090hk\n出现图片里的内容就是在挖 $prl 了，按 Ctrl➕C就可以停止挖矿\n这是矿池网址，可以搜索你的钱包地址查询出块\nhttps://pearl.alphapool.tech/",
+    "char_count": 1774,
+    "tweet_preview": "https://t.co/uigZyx3NiL"
+  }
+]

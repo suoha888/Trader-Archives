@@ -1,0 +1,380 @@
+﻿id,createdAt,goldScore,domainId,favoriteCount,retweetCount,viewCount,hasArticle,url,text
+2071544241831194667,Mon Jun 29 10:40:09 +0000 2026,6.4,primary_pump_sniper,287,29,33278,False,https://x.com/0xmagnolia/status/2071544241831194667,"熊市一级还是很难玩的，必须要kol接力，一般流程如下:
+1.扫链达人内盘扫到好项目，跟单➕小群集力射出去，开到外盘会有狙击专门吃迁移这段时间的流动性，开到外盘瞬间推高，内盘流动性退出，狙击bot退出。因为一天能狙击几百上千个盘子，积少成多。
+2.外盘射出去后，项目概念好√ 官推蓝v√ Dev持续运营√  精品搜寻kol（粉丝5000以下）一般四五个会集中一段时间shill，一般会有不错的涨幅。开盘抄底的流动性开始退出。
+3.因为流动性不足，涨幅已经收紧了，但已经有小集群做市bot进场了。他们在等大kol买入跟单，以及喊单流动性。一旦等到就会跟着买单在一小时内拉高，只有这一小时的流动性退出。
+4.熊市想破10m，必须在前二个阶段前就吸收好筹码。各大中外kol接力喊单。
+5.阴谋集团勾兑。
+
+对一级不熟悉还是先别进入战壕，但可以观察他们的k线，积累经验，明年流动性更好的时候再操作。多看少动。"
+1921014030204104893,Sat May 10 01:26:50 +0000 2025,5.6,primary_pump_sniper,357,41,157302,False,https://x.com/0xmagnolia/status/1921014030204104893,"因为有很多内盘选手，习惯小市值PVP后，就很难把握市值上限了。对他们来说100k200k的时候就已经吃了十几倍了。而且你整天扫链也清楚ds有多快。所以很多时候v反你不愿意冒这个风险再去追高
+1.是被浇给多了 2.只赚预期内的钱 3.无法判断外盘确定性，风险高，外盘一点回调内盘赚的收益颗粒无收甚至倒赔。
+但你想要获得超额收益就要转换思路。
+交易是反人性的。你要进入下个阶段就要逼自己做二级。"
+1819180350054322185,Fri Aug 02 01:16:08 +0000 2024,5.2,primary_pump_sniper,224,54,75737,False,https://x.com/0xmagnolia/status/1819180350054322185,"ETH夹子王ae13究竟是何方神圣？（以及介绍MEV攻击方式）
+  地址:  0xae2fc483527b8ef99eb5d9b44875f005ba1fae13
+   通过https://t.co/vcWjrepYT6可以查到ae13的第一笔交易发生在2017年6月29日 。这表明该地址到今天为止已经存在了2591天，约7.1年。这需要什么条件呢？
+
+1. 技术稳定性：机器人需要稳定、高效的算法来分析区块链数据和执行交易。技术上的稳定性和长期优化是关键。
+（1.需要搭建自己的全节点或专用节点2.高性能服务器 3.超级稳定的网络连接4.数据储存和处理能力5.安全性保障 防止数据泄露跟恶意攻击）
+
+2. 低延迟和高性能：MEV机器人必须能够快速响应区块链网络中的变化，确保低延迟的交易执行，以捕捉到有利的交易机会。
+
+3. 风险管理：需要有完善的风险管理机制，包括防范市场波动、交易失败、前端攻击等风险。（避免其它夹子进行前置攻击比ae13先买入，大夹子夹小夹子，老母猪带胸罩一套又一套，但ae13是最快的还没见它被夹过，都是它夹别的夹子）
+
+4. 资金实力：长期运行的机器人需要充足的资金支持，以应对交易费用、网络手续费等开销，并有足够的流动性来执行策略。（以太堵的时候gas不是开玩笑的）
+
+5. 市场环境适应性：需要不断更新和调整策略，以适应区块链网络的变化、市场趋势的变化以及竞争对手（毕竟不止它一个夹子）的策略变化。
+
+6.技术维护和支持：长期运行需要持续的技术支持和维护，以解决可能出现的技术问题和进行系统升级。
+  能达成以上条件的说实话只能想到 @VitalikButerin  @gavofyork  @ethereumJoseph  @diiorioanthony   但ETH是于2015年7月30日正式上线的，且V神忙于奔走各个会议，应该没有时间精力去维护这个bot。其他三位也都是同期eth元老级人物，是不是他们也只是猜测。反正能维护ae13这个MEV机器人的人或者团体，技术跟财力至少也得跟他们一个水平。
+
+而ae13是怎么高频地进行MEV攻击（三明治攻击/夹子）呢？
+  首先MEV攻击原理有三种。
+1.就是ae13使用的三明治攻击
+2.前置攻击
+3.套利攻击
+
+  一.主要介绍ae13的三明治攻击:
+  三明治攻击是在目标交易的前后分别插入一笔买单和卖单，以利用目标交易引起的价格波动获利。
+
+步骤：
+1.监视链上交易池子，通过监视交易池中的未确认交易，寻找即将发生的高价值交易。
+2.前置买单：在目标交易之前插入一笔买单，以推高价格。
+3.目标交易：目标交易完成后，价格会被推高。
+4.后置卖单：在目标交易之后插入一笔卖单，以更高的价格卖出代币，获取利润。
+
+二.前置攻击
+  就是俗称的狙击，大部分大科就是用这个攻击。
+  前置攻击是一种常见的MEV攻击方式，攻击者在发现即将发生的大额交易时，通过支付更高的Gas费提前插入自己的交易，从而在目标交易之前完成交易。
+
+三.套利攻击
+  俗称的搬砖。
+  套利攻击利用不同交易所之间的价格差异进行快速交易，从而获利。或者链上与交易所的价格差（当初Luna就是通过合约进行Luna增发搬砖到币安进行搬砖砸盘，从100u砸到归零）
+
+怎么预防夹子呢？
+现在OK钱包以及各类电报bot都自带防夹功能，就不一一赘述了。
+主要是传统手动党
+除了个别机制特殊有税的币，其它币现在基本0税，所以把滑点设置在0.1%及以下基本不会被夹。高滑点容易被夹子检测到区块。
+
+再来粗略计算一下ae13一天可以夹多少钱
+因为ae13是全年无休夹子，排除掉gas费，就按正常的算4gwei，再算上它每天都能夹到5个左右的冤种（出动百e夹击每次利润1～2w刀的情况下）
+
+86400秒x3u（已减去gas）=259200u
+再➕5x1.5w（折中）
+＝334200u
+粗略估计ae13一天24小时可以赚334200u"
+1901829031781417149,Tue Mar 18 02:52:30 +0000 2025,5.2,primary_pump_sniper,101,13,102731,False,https://x.com/0xmagnolia/status/1901829031781417149,"老外这边什么情况？
+1. @100XCoinSniper 3.12号发布的置顶推文，列了一堆推断猜测pump用户 “now what”就是 @kanyewest ，所以他个狗逼直接内盘塞了3000w枚币进去。后续情况就是3.15 侃爷抽风转粉丝评论，顺带转发了这个ca。
+
+2. @taco_eth 跟 @deviscookin 在侃爷转发ca的后续调查发现，now what在侃爷删除转发前1小时，更新了pumpfun 简介为 ""Isaiah 43:2"" ，之后1h侃爷就删除了转发并发布了 “I AM THE PROPHET”的推文，更加佐证now what就是侃爷（因为 以赛亚是圣经里的先知）
+
+3. 这三个老外还在接着调查，但不排除他们“真人扮演”的可能性，但是确实只有这个ca侃爷有过转发，所以被当做背书。"
+1918011801889063413,Thu May 01 18:37:03 +0000 2025,4.7,primary_pump_sniper,134,24,62758,False,https://x.com/0xmagnolia/status/1918011801889063413,"先梳理下现在的逻辑
+1. @solana 已经明牌奶了两次，第一次奶冲到了0.0491历史新高，但第二次在0.024横了一天然后不护盘跌到现在0.015，所以 @solana 本身是有拉盘资金的，但就是没动
+2.mcp概念除了 $dark 基本死了，如果sol基金会还想造个链上ai牛，那么就要把dark做成龙头，没有其他标可以供他们选了
+3. 众所周知 $griffain 就是他们操盘的，从11.3号开盘到第一次高点35m用了24天，然后从35m洗到最低3m用了12天，之后就是一直冲600m，但得益于当时的流动性，你只要是框架就能打开3亿天花板。
+4.现在呢？dark第一波用了14天冲47m，这个双顶状态全部归为洗盘也是用了14天，如果sol基金会真想写剧本做那么明天必须收大阳线重回20
+5.大盘现在流动性行不行，大饼都快回9.8w，而且链上出了house这种100m级别的，还有昨天的速通gork，说明目前流动性还是充沛的，要做个ai龙头不难。就看他们想不想把 @edgarpavlovsky 打造成下个 @shawmakesmagic"
+1832800229399343352,Sun Sep 08 15:16:41 +0000 2024,4.5,primary_pump_sniper,76,0,19400,False,https://x.com/0xmagnolia/status/1832800229399343352,"大部分亏钱还是信任背书问题（以及怎么避免信用诈骗）
+  1.正规官方进行项目背书，觉得“卧槽xx都转发推特了，这不冲？”
+大家很喜欢强调反身性，但是因为有官方背书反而不理智了。因为一级节奏太快了，时间就是金钱，有时候你冲慢了反而错过黄金买点。那项目方呢？dev开项目就是为了赚快钱！
+  为什么总是强调“大热必死”？
+如果你是项目方你要怎么做？！只要吸引到足够的流动性就能赚钱。所以项目方在开盘前拼命营销 各种造势，把圈内能吸引的资金都吸引到了，那项目开盘后就没必要再做市运营了，反正基本是无成本砸盘，它要赚快钱，为什么要运营？更别说那些司马rug盘了（流动性不足的时候几百u都跑）
+
+  2.慕强心理 
+   举例:为什么 @machibigbrother 一二再而三的开项目，还是有人会义无反顾地打钱。不就冲着他有钱有经验，圈内知名度高。他为什么有钱？为自己营造知名度再进行收割积累财富。有时候大家因果倒置了。更别说 @justinsuntron 了，大家会因为一个人成功，而盲目崇拜，反而忘记他们做过恶。以为财富效应能辐射到自己，也能喝点汤。
+抱着侥幸心理:“万一这次不一样呢？”
+
+  3.如何避免信用诈骗？
+  抛开这些人不谈，就算是你亲朋好友说“我这边有非常赚钱的项目，你要不要看看？”要不要看？
+ 很简单，还是那句老话 “他凭什么带我赚钱？带我赚钱他有什么好处”。然后再把思维转到项目上，既然大家都说赚钱，那么他们有没有赚到钱，他们是不是就要赚我的钱？
+  我知道这样可能会错过某些金狗，但如果它真的是金狗，不用你cx我自然会买。"
+1823570086638342202,Wed Aug 14 03:59:23 +0000 2024,4.5,primary_pump_sniper,52,7,25481,False,https://x.com/0xmagnolia/status/1823570086638342202,"5月到6月的低gas出了多少金狗我就不赘述了，只要gas低就有人fud。现在又重复这一情形，大家怎么抉择呢。为什么低gas反而容易出金狗？
+  1. dev发币做市成本降低（同理作恶成本也降低，所以建议找些符合目前热点的且基本面好的老币比如ai概念）
+  2.链上低gas➕fud 大众情绪低迷，需要有新的旁氏来点燃情绪，有心的dev就会开始运作
+  3.怎么找老币看我置顶就行了，老粉都学成毕业了。"
+1912012694548599052,Tue Apr 15 05:18:44 +0000 2025,3.9,primary_pump_sniper,65,4,7359,False,https://x.com/0xmagnolia/status/1912012694548599052,@lifecrashsss4 可以关注一些新币每日总结博主。有什么新币先第一时间添加到观察列表，再根据1h 4h 日线 以及跟不跟大盘，判断主力资金量。先有k线再去扫链找庄。
+1850525120860914094,Sun Oct 27 13:09:04 +0000 2024,3.8,primary_pump_sniper,441,51,94507,False,https://x.com/0xmagnolia/status/1850525120860914094,"3.1 先说纯人工怎么逮地址需要什么条件
+  我知道大部分人不是大科也没有编程知识，没有所谓的扫链bot，我平常外出也就是靠手机纯人工盯盘扫链。
+  首先，你至少常备两台手机（我外出一般三台）一台纯挂着推特，电报，discord等web2信息渠道，另外一台用dex专门盯盘，我常用 @aveaiofficial（没办法三年了用习惯了）
+盯，看到可疑地址你再复制了 去  @iCryptoAI @gmgnai （ave有时候盈亏比显示不准，要二度筛选，但ave的观察钱包可以无上限添加）看他最近买卖记录情况，来判断是不是庄钱包or普通散户，
+庄地址怎么判断请看这条推文https://t.co/0gTgJJisuX
+
+🫧 @bubblemaps 的查庄比例使用方法，我推荐看四个币就行，然后你按图索骥来判断其他币（但具体币具体分析只是作参考，不能一味套用）$hoppy $moodeng $spx $pepecoin（不是pepe是pepecoin）典型四种操盘庄币（新币就看moodeng，其余三个就是反弹老币）
+
+这里是庄币判断推文https://t.co/gepy6Oyetj
+
+这里是 @iCryptoAI的使用方法 https://t.co/p3s74j71F4"
+2045794592101118203,Sun Apr 19 09:20:14 +0000 2026,3.8,primary_pump_sniper,247,35,104258,False,https://x.com/0xmagnolia/status/2045794592101118203,"从 $babydoge 开始是有专门的一批人，玩老马概念的。他们的特点是短时间内集中资金干出圈一个。如果老马不会在短时间内提及第二次，那么就会慢慢派发。
+你不确定买og还是买新的，很简单。
+1.像 $pnut $ani $gork 这样老马奶的新概念，就买流动性最强的新币。
+2.老马曾经反复提及的老概念，第一时间买og。
+3.最特殊的是 $vine 这样的 ，老马身边的人自己背书发币。"
+1797291043840508135,Sun Jun 02 15:35:51 +0000 2024,3.8,primary_pump_sniper,48,2,49980,False,https://x.com/0xmagnolia/status/1797291043840508135,现在sol因为 $bonk 和 $wif 已经从12月到现在开展了长达半年的meme季，pump这种pvp模式的出现，再到现在明星下场发币，说明这个赛道的容量已经很饱和了，这情况跟21年的bsc很像，但是sol上的meme做不了燃烧分红所以没有当初bsc那么多玩法（bsc的meme季差不多半年）所以sol你们想长拿就找创新应用币。
+2030853629440336187,Mon Mar 09 03:50:11 +0000 2026,3.7,primary_pump_sniper,341,55,56770,False,https://x.com/0xmagnolia/status/2030853629440336187,"币圈OpenClaw变现
+1.自动发币 2.自动塞内盘 3.聪明钱追踪 4.Alpha信号推送 5.自动量化策略 6.链上套利/MEV工具
+考虑到私钥泄露，要写好本地bot签名。
+
+举例
+# 多钱包支持：从环境变量或本地加密文件读取私钥
+PRIVATE_KEYS = os.environ.get(""BOT_PRIVATE_KEYS"", """").split("","")  # 多个私钥用逗号分隔
+WALLETS = [Account.from_key(k) for k in PRIVATE_KEYS]
+
+# Uniswap V2 Router
+UNISWAP_ROUTER = ""0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D""
+UNISWAP_ROUTER_ABI = json.loads(""""""[
+  {""inputs"":[{""internalType"":""uint256"",""name"":""amountOutMin"",""type"":""uint256""},
+             {""internalType"":""address[]"",""name"":""path"",""type"":""address[]""},
+             {""internalType"":""address"",""name"":""to"",""type"":""address""},
+             {""internalType"":""uint256"",""name"":""deadline"",""type"":""uint256""}],
+   ""name"":""swapExactETHForTokens"",
+   ""outputs"":[{""internalType"":""uint256[]"",""name"":""amounts"",""type"":""uint256[]""}],
+   ""stateMutability"":""payable"",
+   ""type"":""function""}
+]"""""")
+router_contract = w3.eth.contract(address=UNISWAP_ROUTER, abi=UNISWAP_ROUTER_ABI)
+
+# 最大并行交易数，防止 nonce 冲突
+MAX_CONCURRENT_TX = 5
+
+# ---------------------------
+# 签名交易函数
+# ---------------------------
+def swap_eth_for_token(wallet: Account, token_address: str, eth_amount: float, slippage: float = 0.01):
+    eth_wei = w3.toWei(eth_amount, ""ether"")
+    path = [w3.toChecksumAddress(""0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2""),  # WETH
+            w3.toChecksumAddress(token_address)]
+    # 简化滑点计算
+    amountOutMin = int(eth_wei * (1 - slippage))
+    deadline = w3.eth.get_block(""latest"")[""timestamp""] + 300  # 5分钟有效
+    nonce = w3.eth.get_transaction_count(wallet.address)
+    tx = router_contract.functions.swapExactETHForTokens(
+        amountOutMin, path, wallet.address, deadline
+    ).buildTransaction({
+        ""from"": wallet.address,
+        ""value"": eth_wei,
+        ""gas"": 250_000,
+        ""gasPrice"": w3.toWei('50', 'gwei'),
+        ""nonce"": nonce,
+        ""chainId"": 1
+    })
+    signed_tx = w3.eth.account.sign_transaction(tx, wallet.key)
+    tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
+    print(f""[INFO] {wallet.address} 交易发送成功: {tx_hash.hex()}"")
+    return tx_hash
+
+# ---------------------------
+# 信号队列管理（优先级队列，智能延迟控制）
+# ---------------------------
+class SignalQueue:
+    def __init__(self):
+        self.heap = []  # 使用 heapq 维护优先级队列
+    def push(self, signal):
+        # 优先级 = 交易金额 / 延迟，可按策略调整
+        priority = -float(signal.get(""eth_amount"", 0.0))  # 金额越大优先级越高
+        heapq.heappush(self.heap, (priority, signal))
+    def pop(self):
+        if self.heap:
+            return heapq.heappop(self.heap)[1]
+        return None
+    def empty(self):
+        return len(self.heap) == 0
+
+signal_queue = SignalQueue()
+
+# ---------------------------
+# 处理交易任务
+# ---------------------------
+async def process_signals():
+    sem = asyncio.Semaphore(MAX_CONCURRENT_TX)
+    while True:
+        if signal_queue.empty():
+            await asyncio.sleep(0.1)
+            continue
+        signal = signal_queue.pop()
+        token_address = signal.get(""token"")
+        eth_amount = float(signal.get(""eth_amount"", 0.0))
+        slippage = float(signal.get(""slippage"", 0.01))
+        # 轮询钱包
+        for wallet in WALLETS:
+            async with sem:
+                try:
+                    swap_eth_for_token(wallet, token_address, eth_amount, slippage)
+                except Exception as e:
+                    print(f""[ERROR] 交易失败 {wallet.address}: {e}"")
+
+# ---------------------------
+# 接收策略服务器信号
+# ---------------------------
+async def listen_trade_signals():
+    uri = ""ws://localhost:8765""  # 策略服务器 WebSocket
+    async with websockets.connect(uri) as websocket:
+        print(""[INFO] 已连接策略服务器，等待交易信号..."")
+        while True:
+            message = await websocket.recv()
+            signal = json.loads(message)
+            # 过滤非法信号
+            token_address = signal.get(""token"")"
+2038843352431702136,Tue Mar 31 04:58:29 +0000 2026,3.7,primary_pump_sniper,113,3,55560,False,https://x.com/0xmagnolia/status/2038843352431702136,"感兴趣的可以去看2025.4.24号labubu的线，当时能二次冲高是因为泡泡玛特股价拉了十倍品牌溢出，加上欧美明星带货。
+
+  这次1145114有人想做，是因为日文区跟英文区推文互通，加上日文区是全球第二大x使用地区，有人想借这个流量趋势。逻辑跟labubu那次差不多。
+
+但现在是熊市，流动性肯定比不了当时。谨慎考虑吧。"
+2080607974352159013,Fri Jul 24 10:56:11 +0000 2026,3.6,primary_pump_sniper,209,22,52355,False,https://x.com/0xmagnolia/status/2080607974352159013,"bsc你要赚只能装唐，但你不能把这套逻辑搬到sol，sol这些人已经标准化工厂流水线化了，这些狗东西23 24 25年把勾兑 发币 控筹 拉盘 社媒接力 贿赂手段全部体系化了, 你要不然好好赚内盘的钱，要不然玩二段，中间30k到100k的风险是最大的，控筹没做好直接给你浇给了。"
+1969482108386361805,Sat Sep 20 19:21:40 +0000 2025,3.3,primary_pump_sniper,252,12,164110,False,https://x.com/0xmagnolia/status/1969482108386361805,从下午4点开始到现在一共增加了405个新地址。4个月总共12次试盘插针。4次摸底50w位置（试出底）日成交量翻了20倍。1h线凌晨突破，集群bot及mmbot资金来源非国人，很像6月10号的 $aura。说白了庄的成本就是0，从开盘就一直在。上限有个 $mlg 可以做参考。风险就是因为他的成本是0，他还可以再砸回50w。 https://t.co/GpJo1j5T6t
+1802557650900852986,Mon Jun 17 04:23:28 +0000 2024,3.3,primary_pump_sniper,151,27,55235,False,https://x.com/0xmagnolia/status/1802557650900852986,"再说一遍一级就是黑暗森林
+    1.卖完任何币用cointool 或 revoke cash取消代币授权，图安全就直接换新钱包
+ 
+   2.不要用任何公开的链上bot，尤其是电报bot，即使他们收手续费能赚很多，但是你能保证他团队里没人动坏心思吗？ok都能出内鬼，你们是怎么敢把私钥给别人的？（我用的bot都是让现实中的朋友专门写的，我从来不信陌生人）
+   
+  3.不要用ave等看线软件做你的交互钱包，单纯就是用来看线的。钱包用tp okx 小狐狸 trustwallet ，sol的phantom也出过问题，solflare还行。"
+1925566447658631399,Thu May 22 14:56:31 +0000 2025,3.3,primary_pump_sniper,87,13,5783,False,https://x.com/0xmagnolia/status/1925566447658631399,@moment_eth @web3foxcn 慢慢把内盘思维从外盘过渡，现在这么多台子竞争很难出 arc jellyjelly这样的内盘速通了。你建个储蓄钱包，把你每次p到的钱放里面，攒到3000u寻找3m之内的二段机会。这段时期把近两个月出过10倍以上的币全部复盘一遍，自然会找到感觉。
+1835609408946278855,Mon Sep 16 09:19:21 +0000 2024,3.3,primary_pump_sniper,3,0,721,False,https://x.com/0xmagnolia/status/1835609408946278855,@lifecrashsss4 @X 只是简单讲一下不是普遍适用，首先pump开盘的人赚内盘外盘钱，没钱进行营销宣传，这个节骨眼敢自己部署合约的，一般有一定的资金实力去进行做市控盘
+2080573840695112112,Fri Jul 24 08:40:33 +0000 2026,3.2,primary_pump_sniper,235,10,90366,False,https://x.com/0xmagnolia/status/2080573840695112112,"我是21年4月17号进圈的，当时刷到微博热搜 $DOGE 几个月暴涨300倍我就心动了，逛贴吧知乎把狗狗币涨跌历程都看了一遍，刚好那时候他们在推荐 $SHIB ,就到处私信建立信息渠道。反正shib之后这批人也退圈了。
+  很典型知道自己的能力边界，吃到时代红利点到为止。甚至后面 $TRUMP 发币他们也不知道。 https://t.co/9XZdEEpYWy"
+2073665611687952759,Sun Jul 05 07:09:43 +0000 2026,3.2,primary_pump_sniper,164,24,663078,False,https://x.com/0xmagnolia/status/2073665611687952759,"想玩 @RobinhoodCrypto 链，直接用主网钱包/任意L2(比如arb)，使用 @Uniswap 的跨链swap就行。
+比如在arb先交换为robinhood的ETH，再用robinhood的ETH，去购买robinhood的代币。注意先提前查看是不是ETH池子。 https://t.co/PG7kiyPCgQ"
+1919778512648773806,Tue May 06 15:37:19 +0000 2025,3.1,primary_pump_sniper,302,14,141820,False,https://x.com/0xmagnolia/status/1919778512648773806,jeffy这波需要复盘吗？开盘到现在总共吃了四波，开盘那天一段拉升后抄底吃了两波，今天也是中午500k追进去，下午接着在2m接着抄底，最后一次波段就是刚才那波5m抄，你们都应该都看到了吧。我知道你们有我小号的，但我想着滚到1m再复盘全部来着。
+1635829877067894784,Wed Mar 15 02:26:49 +0000 2023,3.1,primary_pump_sniper,207,21,106998,False,https://x.com/0xmagnolia/status/1635829877067894784,土狗打法讲究一个快进快出，我一般是找pinksale或者绿马预售的土狗，排除三无项目，必须要上cmc/cg ，要有网站，一眼看过去不是PPT网站那种，然后等开盘破发，一般开盘十分钟内会触及底部，开始分仓位抄底，每次抄底不超过总u位十分之一，因为土狗砸盘没有底线，一旦盈利就开始分批出货，主打一个求稳
+2078787177174237626,Sun Jul 19 10:20:59 +0000 2026,3.1,primary_pump_sniper,198,21,71581,False,https://x.com/0xmagnolia/status/2078787177174237626,"止盈这块可以参考一下24年玩河马时候的策略。其实有点落后了，因为现在这些狗东西不会给你足够的时间去吸筹。放在流动性充足的牛市，其实不会太在意你一个单钱包拿比较多的筹码，但我还是建议1.5％真的差不多得了，在任何市值下都是比较多了。
+主要你得算除了你之外，其他散户的筹码可以拿多少，主力控筹一般至少95％，90％都是很少见的煞笔庄了，纯有钱，做慈善。"
+2001746449286267009,Thu Dec 18 20:08:38 +0000 2025,3.1,primary_pump_sniper,67,13,10744,False,https://x.com/0xmagnolia/status/2001746449286267009,"Sorry for the intrusion, but I believe you may be one of the very few market makers currently paying attention to the cat cult / meme space. I’d like to bring @oiiaoiiameme to your attention.
+
+This year, a single OIIAOIIA video on YouTube reached 420M views, making it the most-viewed cat music video in history, and very likely the #1 animal video overall.
+
+Elon Musk tweeted about it in both 2022 and 2023, which speaks to its long-term cultural relevance and meme longevity.
+https://t.co/pB0uWmMwjX
+
+Despite this, OIIAOIIA is currently sitting at only ~$600k market cap, which we believe is massively undervalued relative to its off-chain reach and cultural footprint.
+
+The community has remained highly committed, consistently building and even organizing cat-related public welfare initiatives, reinforcing a positive and sustainable meme narrative.
+
+We strongly believe OIIAOIIA has the potential to attract normies and non-crypto users far more effectively than memes like $AURA, with significantly stronger virality and cross-platform.
+
+Appreciate your time and hope it’s something worth keeping an eye on."
+2073696193465434296,Sun Jul 05 09:11:14 +0000 2026,3.1,primary_pump_sniper,19,1,2142,False,https://x.com/0xmagnolia/status/2073696193465434296,"X = 池子里 SOL 数量
+y = 池子里 Token 数量
+P=当前价格(SOL per Token)
+K = x × y （恒定不变）
+P = x / y （当前价格）
+买入后计算：
+新 x = 原来 x + 买入的 SOL
+新 y = K / 新 x
+收到的 Token = 原来 y - 新 y
+想达到目标价格需要的买入量：
+新 x = 平方根（目标 P × K）
+需要买入的 SOL = 新 x - 原来 x"
+1918174565664162188,Fri May 02 05:23:49 +0000 2025,2.9,primary_pump_sniper,64,4,23962,False,https://x.com/0xmagnolia/status/1918174565664162188,@879kensea @thedailymemes_ @OIIAOIIA_COIN_ @solana 回20了，这波拉盘没有利好纯市场行为。真想走剧本就快点，趁最近流动性充沛，没必要再洗了，再洗就别玩了。 https://t.co/PHAsFKxJ6Z
+1623121784588636160,Wed Feb 08 00:49:24 +0000 2023,2.9,primary_pump_sniper,52,3,92194,False,https://x.com/0xmagnolia/status/1623121784588636160,"–13：第七类土狗板块：闪崩盘
+其实跟暴跌貔貅盘有点像，但本质上是属于正常项目，可以买卖，比较熟知的就是bsc上的gala闪崩事件，闪崩了100多倍，2个小时被大众抄底抄回来40多倍，这种项目很多每天都有，有专门的闪崩群用bot每天自动抓取，但一般在圈子有点名声的项目还有点倍数，普通的几个点就没了"
+1955884095126560908,Thu Aug 14 06:48:01 +0000 2025,2.8,primary_pump_sniper,183,8,55974,False,https://x.com/0xmagnolia/status/1955884095126560908,$vvaifu → $send → $blink → $gfm → $launchcoin→$nobody→$useless → $Uranus →  发币平台风口搞了快一年，11月前你还有几次机会？ https://t.co/MEcj3im0iP
+1782654853451481155,Tue Apr 23 06:16:51 +0000 2024,2.7,primary_pump_sniper,381,94,304694,False,https://x.com/0xmagnolia/status/1782654853451481155,"《成为不了冲狗大师就当金狗猎人！！！》完全篇——主要包括以下内容:
+1.四链四狗经典案例分析
+2.如何从日成交量判断强庄入场
+3.k线技术分析、社区cx、项目方做事等对代币涨幅影响以及成为金狗最主要因素
+4.开盘冲狗与埋伏金狗利弊分析
+5.一级买狗仓位分配，如何拿到百倍收益"
+2049729428759220517,Thu Apr 30 05:55:52 +0000 2026,2.7,primary_pump_sniper,342,32,44224,False,https://x.com/0xmagnolia/status/2049729428759220517,@Pumpfun @donatedotgg 创作者费用就应该分给所有战壕的兄弟，一天天捐捐，以为炒币的一个二个比尔盖茨呢？战壕都要打没了，你他妈怎么不给在pump亏损的人捐款，就他妈应该把所有税分给买币的人，一天他妈装什么沟槽的慈善家，你拿老子们辛辛苦苦p来的钱去捐给慈善？我们要搞慈善了吗？战壕里的兄弟都快去要饭了。
+2067087039301095621,Wed Jun 17 03:28:49 +0000 2026,2.7,primary_pump_sniper,128,18,78974,False,https://x.com/0xmagnolia/status/2067087039301095621,a16z的背书概念从 $goat 开始，就有一批大户在玩， $spark 当时标记了一堆做市bot，昨天发现悄悄进了 @outsource_ ，估计要洗一下按他们的操盘风格
+1823189794702467571,Tue Aug 13 02:48:14 +0000 2024,2.6,primary_pump_sniper,46,12,20023,False,https://x.com/0xmagnolia/status/1823189794702467571,"Currently, the primary market is very thirsty and there is liquidity available. People are realizing that PVP isn’t profitable. There’s an urgent need for a strong, consensus-driven coin to boost excitement and attract attention.
+  
+  一级现在太饥渴了，流动性是有的，大家也清醒了PVP是挣不到钱的，急需一个共识强的强庄币来拉起一波热度，吸引注意力。"
+1628011915707564032,Tue Feb 21 12:41:02 +0000 2023,2.6,primary_pump_sniper,24,2,19467,False,https://x.com/0xmagnolia/status/1628011915707564032,1.首先何为彩票，就是二级市场里市值低，日成交量低，但有可能被野庄游资拉盘的币；所以野庄游资二级现货交易所首选币安成交量大深度高，方便拉盘出货；据此我们如何判断赛道，首先赛道确定是根据币圈重大利好、相关主要政策、重要项目发币以及美股主要科技公司及市场风向来判断；
+1790809346764665054,Wed May 15 18:19:54 +0000 2024,2.6,primary_pump_sniper,1,0,624,False,https://x.com/0xmagnolia/status/1790809346764665054,@sjf221100 @pepecoins @badmadrobots @frenpetonbase @TiFiToken 因为老盘都是有过知名度的，有群众基础，而且老盘子安全一点，大家也敢放心冲，像 $pepe $apu 这种是因为之前开过很多失败的盘子，所以庄家自己开了一个，这种是另外一种情况，我会单独开一贴分析
+1834827045739856314,Sat Sep 14 05:30:31 +0000 2024,2.5,primary_pump_sniper,75,10,36875,False,https://x.com/0xmagnolia/status/1834827045739856314,"热点在情绪就在，情绪在流动性就在。
+
+  我真的替你们着急，为什么不会变通呢。我亮点写的这些学前班都看得懂吧，为什么不去看呢。赚钱不需要太聪明，你只要会看情绪就行了。"
+1782641379912655123,Tue Apr 23 05:23:19 +0000 2024,2.5,primary_pump_sniper,53,7,29621,False,https://x.com/0xmagnolia/status/1782641379912655123,"《成为不了冲狗大师就当金狗猎人！！！》完全篇——主要包括以下内容:
+1.四链四狗经典案例分析
+2.如何从日成交量判断强庄入场
+3.k线技术分析、社区cx、项目方做事等对代币涨幅影响以及成为金狗最主要因素
+4.开盘冲狗与埋伏金狗利弊分析
+5.一级买狗仓位分配，如何拿到百倍收益"
+1947136263716208662,Mon Jul 21 03:27:15 +0000 2025,2.5,primary_pump_sniper,6,0,2025,False,https://x.com/0xmagnolia/status/1947136263716208662,@yourfavrice @Xwill0383 @lex_node @Gorbagana_chain @pumpdotfun 因为fomo过后就是调整期，调整期结束回调期，回调期结束，熊
+1932859174280704109,Wed Jun 11 17:55:12 +0000 2025,2.4,primary_pump_sniper,58,7,4968,False,https://x.com/0xmagnolia/status/1932859174280704109,@pumpdotfun spinning szn https://t.co/NV2R2rzzZl
+1914965105021992976,Wed Apr 23 08:50:34 +0000 2025,2.4,primary_pump_sniper,58,11,3780,False,https://x.com/0xmagnolia/status/1914965105021992976,@a1lon9 @Ga__ke Set @OIIAOIIA_COIN_ as the  @pumpdotfun mascot  got that? https://t.co/3956r2lms6
+1923392528407028116,Fri May 16 14:58:08 +0000 2025,2.4,primary_pump_sniper,52,6,3890,False,https://x.com/0xmagnolia/status/1923392528407028116,@Sprophet10 @a1lon9 @pumpdotfun @OIIAOIIA_COIN_ yo @a1lon9 https://t.co/5JBSdwrOlW
+1914966402781626504,Wed Apr 23 08:55:43 +0000 2025,2.4,primary_pump_sniper,30,0,2314,False,https://x.com/0xmagnolia/status/1914966402781626504,@OIIAOIIA_COIN_ @a1lon9 @Ga__ke @pumpdotfun https://t.co/8kOjqUFy0o
+2076462931089461405,Mon Jul 13 00:25:16 +0000 2026,2.3,primary_pump_sniper,302,45,141345,False,https://x.com/0xmagnolia/status/2076462931089461405,"一级赔率最高的操作
+1.抄别人不敢抄的底
+2.低位敢埋伏
+3.确定性概念早期大资金追高
+4.用AI找bug
+5. 发币
+6.盗钱包
+7.捆绑
+8.rug https://t.co/wV06Mcj642"
+2078965123730092287,Sun Jul 19 22:08:05 +0000 2026,2.3,primary_pump_sniper,141,1,31563,False,https://x.com/0xmagnolia/status/2078965123730092287,老畜生米莱 @JMilei 这就是你发币的报应 https://t.co/rkha2cdezZ
+1778369815146840121,Thu Apr 11 10:29:39 +0000 2024,2.2,primary_pump_sniper,394,84,412141,False,https://x.com/0xmagnolia/status/1778369815146840121,"如果你一.没有链上监控bot
+二.没有内部一手消息群
+三.没有神仙群友
+那该怎么寻找好的土狗项目呢？
+那就得靠推特 电报 Reddit
+先说推特
+1.先把能找到的各大项目方全关注了
+2.直接找最近一级胜率很高的kol，点开他关注列表，把能关注的全关注了
+3.从你关注列表里筛选项目，并不是共同关注的越多越好"
+1881931365677219952,Wed Jan 22 05:06:16 +0000 2025,2.1,primary_pump_sniper,27,3,86071,False,https://x.com/0xmagnolia/status/1881931365677219952,"@bitfalls @_caimeo @0xPolygon @sporedotfun @PhalaNetwork next AI to pump?
+https://t.co/vtX5lTDgyr https://t.co/KtPPh6goFv"
+1916789483653288162,Mon Apr 28 09:39:59 +0000 2025,2.1,primary_pump_sniper,10,2,2670,False,https://x.com/0xmagnolia/status/1916789483653288162,@nssbyjtjydr @yuan888287341 @Koicarrots99 @1bloops babydoge之前也搞了发射平台，除了第一个鲨狗之后全死了，现在也没动静了。玩个短期流动性就行。
+1901835043913519406,Tue Mar 18 03:16:23 +0000 2025,2.1,primary_pump_sniper,4,0,5468,False,https://x.com/0xmagnolia/status/1901835043913519406,"@elyzuim @100XCoinSniper @kanyewest @taco_eth @deviscookin 老外这边是这样想的
+ 1.阿根廷发币打乱了侃爷的计划，速通浇给计划行不通
+2.侃爷就是讨厌这些幼态人吸血砸盘，所以他也不想把自己的币掌控权交给悠太来砸自己粉丝
+如果是侃爷粉丝，就会比较理解侃爷的做法，当然这些只是老外的臆想"
+1835533842964439183,Mon Sep 16 04:19:05 +0000 2024,2.0,primary_pump_sniper,21,0,22092,False,https://x.com/0xmagnolia/status/1835533842964439183,"说真的ton链除了撸毛工作室跟发币dev赚了还有谁赚了？哦还有not抄底跟现在做空的永赚老师。
+  ton的一级完全没法玩dev跑路比投胎都快，本来redo那波破亿后可以很好引流拉人入场，再看看ton基金会在干什么？除了到处投小游戏，正儿八经的生态币没一个上大所，生态没建设好就靠撸毛引流，怎么成气候。"
+1947130359692550447,Mon Jul 21 03:03:48 +0000 2025,2.0,primary_pump_sniper,12,2,8272,False,https://x.com/0xmagnolia/status/1947130359692550447,@ChrisyFrmBLOCKS @lex_node @Gorbagana_chain @pumpdotfun @elonmusk might use trash as rocket fuel in the future. Gorbagio
+1947148954669629583,Mon Jul 21 04:17:41 +0000 2025,2.0,primary_pump_sniper,11,0,2963,False,https://x.com/0xmagnolia/status/1947148954669629583,@baggioblue802 @TXNL_618 @lex_node @Gorbagana_chain @pumpdotfun 拉起来才有热度，没拉全是废物。看是赚情绪的钱还是Hodl的钱
+1924640581873238441,Tue May 20 01:37:27 +0000 2025,2.0,primary_pump_sniper,11,1,3311,False,https://x.com/0xmagnolia/status/1924640581873238441,"@0xKawz @SolJakey @pumpdotfun @moolah Kawz , the Boy Who Shattered Time"
+1947126027819549070,Mon Jul 21 02:46:35 +0000 2025,2.0,primary_pump_sniper,7,0,1372,False,https://x.com/0xmagnolia/status/1947126027819549070,@Ericliu22335167 @Xwill0383 @lex_node @Gorbagana_chain @pumpdotfun 上个牛市积累经验，下个牛市积累财富
+1921038212425712029,Sat May 10 03:02:55 +0000 2025,2.0,primary_pump_sniper,7,1,3545,False,https://x.com/0xmagnolia/status/1921038212425712029,@MJ45888 内盘积累启动资金 外盘找确定性搏高收益
+2074865896397619697,Wed Jul 08 14:39:13 +0000 2026,2.0,primary_pump_sniper,5,0,2770,False,https://x.com/0xmagnolia/status/2074865896397619697,"@slingoorio @RobinhoodApp When the bubble starts forming, are you pumping it or popping it?"
+1947129417001545989,Mon Jul 21 03:00:03 +0000 2025,2.0,primary_pump_sniper,5,0,3710,False,https://x.com/0xmagnolia/status/1947129417001545989,@baggioblue802 @lex_node @Gorbagana_chain @pumpdotfun 还没到用二级思维去判断的时候
+1947156718108180569,Mon Jul 21 04:48:32 +0000 2025,2.0,primary_pump_sniper,3,0,2518,False,https://x.com/0xmagnolia/status/1947156718108180569,@coy26984587 @yourfavrice @Xwill0383 @lex_node @Gorbagana_chain @pumpdotfun 说的就是二级
+1802617227629269492,Mon Jun 17 08:20:12 +0000 2024,2.0,primary_pump_sniper,3,0,2397,False,https://x.com/0xmagnolia/status/1802617227629269492,"@bingan2888 首先同名代币太多分散资金
+2.没有看到有强庄，单纯这是这几天hoppy带动的资金溢出效应，散户买上去的
+3.池子这么小但已经走出了三浪你自己小心点，还需要我说什么吗"
+1806592252376203376,Fri Jun 28 07:35:32 +0000 2024,2.0,primary_pump_sniper,1,0,840,False,https://x.com/0xmagnolia/status/1806592252376203376,@404Nullnotfound 看你资金量，小钱完全没必要浪费在pork身上，赔率低，现在281e的池子，至少得流入50e才能翻倍，低市值小池子的好币多了就去了
+1837345921366999342,Sat Sep 21 04:19:38 +0000 2024,2.0,primary_pump_sniper,0,0,545,False,https://x.com/0xmagnolia/status/1837345921366999342,@TempleDDDD @MooDengSOL pump大舞台，有🐴你就来
+1947124028239479133,Mon Jul 21 02:38:38 +0000 2025,1.9,primary_pump_sniper,69,1,31698,False,https://x.com/0xmagnolia/status/1947124028239479133,@lex_node @Gorbagana_chain @pumpdotfun 关于前排车头，反正看到gake赚钱总比看到pow赚钱要好受些
+2070151492926054458,Thu Jun 25 14:25:52 +0000 2026,1.9,primary_pump_sniper,55,1,46838,False,https://x.com/0xmagnolia/status/2070151492926054458,笑死了，当初川普的做市bot全在bp里刷量
+1850422454763618325,Sun Oct 27 06:21:07 +0000 2024,1.9,primary_pump_sniper,42,1,10877,False,https://x.com/0xmagnolia/status/1850422454763618325,@cryp_orange 先分析现有的，不要yy未发生的，不如看看现在的小时线放量，跟扫链找庄，理性要大于感性
+1911466695350526203,Sun Apr 13 17:09:08 +0000 2025,1.9,primary_pump_sniper,33,1,5916,False,https://x.com/0xmagnolia/status/1911466695350526203,@lin_btc @alifarhat79 那就看4h线了，我还是建议你拿出部分盈利然后再继续买小市值滚仓，现在流动性很充沛，好币就那么个几个，可以滚起来的
+2080612562547212607,Fri Jul 24 11:14:25 +0000 2026,1.6,primary_pump_sniper,9,0,2671,False,https://x.com/0xmagnolia/status/2080612562547212607,@X_GOD_SPEED bsc逻辑还是二圣吐痰，哈基米是趁去年十月那段流动性极强出来的特例，不能拿特例来通用
+1922186619752251803,Tue May 13 07:06:17 +0000 2025,1.6,primary_pump_sniper,2,0,2816,False,https://x.com/0xmagnolia/status/1922186619752251803,@Sunwukong512 @ArfurRock @basedalexandoor 不就是因为这条评论拉的，他们开盘拿了至少95%筹码随便拉砸
+1771726306226717149,Sun Mar 24 02:30:43 +0000 2024,1.6,primary_pump_sniper,1,0,1287,False,https://x.com/0xmagnolia/status/1771726306226717149,"@CatizenAI 果然内购游戏才是最赚钱的（学到了腾讯米哈游的精髓），猫咪直接省掉了NFT这个环节，这样也就不用考虑NFT流动性问题，也不会有NFT价跌造成币价的循环下跌，只要玩家不停氪金就行，虽然具体的代币模式没公布，但后续打金你想获得更高的收益肯定得氪金，猫咪项目方拿到的钱也是ton，省去了其他项目还要代币转换这个步骤
+https://t.co/rDeOXHE1j8"
+1919788851607830790,Tue May 06 16:18:24 +0000 2025,1.5,primary_pump_sniper,39,2,28932,False,https://x.com/0xmagnolia/status/1919788851607830790,我发推就是要停用了，跟单多 不好，筹码结构都被打乱了，好多币就是买死了。
+1915001014421270626,Wed Apr 23 11:13:15 +0000 2025,1.5,primary_pump_sniper,26,1,8089,False,https://x.com/0xmagnolia/status/1915001014421270626,@maid_crypto @whalewatchdefi 这个号会推送热门代币池子加减，今天的 opaimu推得就很快，不是为了看鲸鱼的 是为了热点通知的
+1788228284087677237,Wed May 08 15:23:41 +0000 2024,1.5,primary_pump_sniper,25,0,11688,False,https://x.com/0xmagnolia/status/1788228284087677237,玩pump很简单啊，买完就去睡觉，醒来钱就没了
+1789049259045843440,Fri May 10 21:45:56 +0000 2024,1.5,primary_pump_sniper,19,0,8537,False,https://x.com/0xmagnolia/status/1789049259045843440,pump大舞台，有🐴你就来
+1915436723670294830,Thu Apr 24 16:04:36 +0000 2025,1.5,primary_pump_sniper,12,0,2898,False,https://x.com/0xmagnolia/status/1915436723670294830,@zxcnstx88 @jizhitangjiang6 丑是丑了，但sol转发把天花板打开了，这几天基金会的bot一直在刷量
+2099043319930319234,Sun Sep 13 07:51:40 +0000 2026,1.5,primary_pump_sniper,9,0,10724,False,https://x.com/0xmagnolia/status/2099043319930319234,@Pumpfun 学 @longdotxyz  呢，看半个月后能不能成功
+1947125617562120227,Mon Jul 21 02:44:57 +0000 2025,1.5,primary_pump_sniper,9,0,2432,False,https://x.com/0xmagnolia/status/1947125617562120227,@Xwill0383 @lex_node @Gorbagana_chain @pumpdotfun 11月前大撤退
+2099043974816395373,Sun Sep 13 07:54:16 +0000 2026,1.5,primary_pump_sniper,7,1,10048,False,https://x.com/0xmagnolia/status/2099043974816395373,@Rita88 @Pumpfun @longdotxyz 不是， 这个模式是 @longdotxyz 在 $Ai 4m的时候推出来的激励模式，pump在学
+2071588772865835281,Mon Jun 29 13:37:06 +0000 2026,1.5,primary_pump_sniper,7,0,2405,False,https://x.com/0xmagnolia/status/2071588772865835281,@0xPumpCoin 恭喜你啊早日a9，股票也在玩的但我股票还写不了教程
+1947125306499973514,Mon Jul 21 02:43:43 +0000 2025,1.5,primary_pump_sniper,7,1,6020,False,https://x.com/0xmagnolia/status/1947125306499973514,@0xWilllove @lex_node @Gorbagana_chain @pumpdotfun 相信阿路加
+2075137625183412322,Thu Jul 09 08:38:58 +0000 2026,1.5,primary_pump_sniper,6,0,3414,False,https://x.com/0xmagnolia/status/2075137625183412322,@The__Solstice The new on-chain drugs
+2078802630542065905,Sun Jul 19 11:22:24 +0000 2026,1.5,primary_pump_sniper,5,0,2276,False,https://x.com/0xmagnolia/status/2078802630542065905,@Null1thm @DL0868 底部筑底，流动性回归，激进做市
+2074864501019857248,Wed Jul 08 14:33:40 +0000 2026,1.5,primary_pump_sniper,4,0,2277,False,https://x.com/0xmagnolia/status/2074864501019857248,@a1lon9 @Pumpfun second
+1947130661413978263,Mon Jul 21 03:05:00 +0000 2025,1.5,primary_pump_sniper,4,0,2327,False,https://x.com/0xmagnolia/status/1947130661413978263,@baggioblue802 @lex_node @Gorbagana_chain @pumpdotfun Useless用了多久
+1947124792219636048,Mon Jul 21 02:41:40 +0000 2025,1.5,primary_pump_sniper,2,0,2245,False,https://x.com/0xmagnolia/status/1947124792219636048,@sadd_asd77675 @0x_HanS99 @lex_node @Gorbagana_chain @pumpdotfun 割以永治
+1817991482630094962,Mon Jul 29 18:32:00 +0000 2024,1.5,primary_pump_sniper,2,0,1705,False,https://x.com/0xmagnolia/status/1817991482630094962,@chigua810 救援猫 还去世了 没有知名度 kabosu去世了都涨不动，这种不就是pump流水盘
+1819013710679318894,Thu Aug 01 14:13:58 +0000 2024,1.5,primary_pump_sniper,2,0,854,False,https://x.com/0xmagnolia/status/1819013710679318894,@CryptoMaven0910 链上涨跌交易所的也涨跌，上了所只是增加了流动性相当于多加了一个池子
+1921030346704887970,Sat May 10 02:31:40 +0000 2025,1.5,primary_pump_sniper,1,0,2984,False,https://x.com/0xmagnolia/status/1921030346704887970,@520Starry 我是说外盘就是他们的二级
+1809746778658598966,Sun Jul 07 00:30:30 +0000 2024,1.1,primary_pump_sniper,29,0,5434,False,https://x.com/0xmagnolia/status/1809746778658598966,"@bitfish 如何避免错误
+1.自己开交易所让别人开杠杆
+2.rug别人
+3.自己造叙事喊人上车"
+2087799130328580184,Thu Aug 13 07:11:16 +0000 2026,1.1,primary_pump_sniper,22,0,5247,False,https://x.com/0xmagnolia/status/2087799130328580184,@airtightcat 有的，熊市流动性收紧，放弃以大博大，把大钱分成十份，小钱再分成十份。等待击球时刻
+2074771750441910683,Wed Jul 08 08:25:07 +0000 2026,1.1,primary_pump_sniper,15,0,3715,False,https://x.com/0xmagnolia/status/2074771750441910683,@badattrading_ 不捆绑，怎么拉新高
+2043721341774557596,Mon Apr 13 16:01:53 +0000 2026,1.1,primary_pump_sniper,15,0,12964,False,https://x.com/0xmagnolia/status/2043721341774557596,在真正启动前，都不会涨过开盘最高点。
+2078790065669722328,Sun Jul 19 10:32:28 +0000 2026,1.1,primary_pump_sniper,13,2,3834,False,https://x.com/0xmagnolia/status/2078790065669722328,@aolijin 任何能破亿的都是高控， cashcat都在94.8％，破亿后必须要交易所接盘增加二级流动性，或者遇到 fartcoin这样的超级大庄币。
+1979442151521161431,Sat Oct 18 06:59:19 +0000 2025,1.1,primary_pump_sniper,10,0,2405,False,https://x.com/0xmagnolia/status/1979442151521161431,@pidstat 出个100m就有流动性了，但不能等着出
+2059915155572773282,Thu May 28 08:30:19 +0000 2026,1.1,primary_pump_sniper,5,0,2201,False,https://x.com/0xmagnolia/status/2059915155572773282,@Clawnch_Bot 太🔥了
+2074866791512436787,Wed Jul 08 14:42:46 +0000 2026,1.1,primary_pump_sniper,4,0,2832,False,https://x.com/0xmagnolia/status/2074866791512436787,@Raydium @world_xyz @RobinhoodCrypto lmao
+2065092833502269613,Thu Jun 11 15:24:33 +0000 2026,1.1,primary_pump_sniper,4,0,41949,False,https://x.com/0xmagnolia/status/2065092833502269613,@armaniferrante @Backpack 加点流动性啊
+1952660821433344175,Tue Aug 05 09:19:53 +0000 2025,1.1,primary_pump_sniper,4,0,2805,False,https://x.com/0xmagnolia/status/1952660821433344175,@yelangqiu @LexaproTrader 没庄，小集群社区币，偶尔会有kol买点带点流动性，除非发展出韩国社区还有希望
+2078795730509275181,Sun Jul 19 10:54:58 +0000 2026,1.1,primary_pump_sniper,3,0,1794,False,https://x.com/0xmagnolia/status/2078795730509275181,@Danny250018 @aolijin 熊市上就是接盘。除非这个交易所能带来圈外流动性
+1838111069249892457,Mon Sep 23 07:00:04 +0000 2024,1.1,primary_pump_sniper,0,0,5494,False,https://x.com/0xmagnolia/status/1838111069249892457,@J567858442985 去交易所出货，流动性好
