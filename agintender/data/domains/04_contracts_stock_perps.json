@@ -3,7 +3,7 @@
   "title": "【二级合约】Stock Perps 股票永续合约的跨界降维打击",
   "description": "探讨 Crypto 永续合约机制对美股微盘股的降维打击、bStocks 定价逻辑及 7×24 高杠杆做空机制。",
   "articles_count": 2,
-  "tweets_count": 30,
+  "tweets_count": 59,
   "articles": [
     {
       "article_id": "2098408197916930049",
@@ -22,424 +22,1682 @@
   ],
   "tweets": [
     {
-      "id": "2102300309657960733",
-      "createdAt": "Tue Sep 22 07:33:47 +0000 2026",
-      "text": "上次说的 #stockperps 的流动性调查报告有个阶段性成果了 \n\n这次的对象找的是最难弄的，pre ipo标的：@openai 和 @AnthropicAI \n\n为什么难呢？因为它们两没有现货市场，也没有第三方指导价，全靠自己的盘口 - 假设这两个标的的流动性都能做得好，那剩下的估计就很厉害了～ \n\n也算是挑着软柿子来捏了 🤣 \n\n结果其实也不出意外，就是这两标的的流动性还是比较一般的（+/-20bps 20k美金），但是在binance上已经算是行业最好的流动性池了（至少大单还能成交）\n\n因为流动性比较薄 ，但市场叙事又很足 - 这看起来貌似比小盘股还好玩，但实际上，交易所上这类标的可能是亏钱？或者说是不赚钱的\n\n具体原因嘛？自己去看全文吧～ \n\n全文：https://agintender.substack.com/p/openai-anthropic-pre-ipo-stock-perps?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=web \n\nps：这篇文是各位substack群友贡献的经费，没拿交易所一分钱，所以还是比较客观独立的。 感谢各位啦～",
-      "clean_text": "上次说的 #stockperps 的流动性调查报告有个阶段性成果了 \n\n这次的对象找的是最难弄的，pre ipo标的：@openai 和 @AnthropicAI \n\n为什么难呢？因为它们两没有现货市场，也没有第三方指导价，全靠自己的盘口 - 假设这两个标的的流动性都能做得好，那剩下的估计就很厉害了～ \n\n也算是挑着软柿子来捏了 🤣 \n\n结果其实也不出意外，就是这两标的的流动性还是比较一般的（+/-20bps 20k美金），但是在binance上已经算是行业最好的流动性池了（至少大单还能成交）\n\n因为流动性比较薄 ，但市场叙事又很足 - 这看起来貌似比小盘股还好玩，但实际上，交易所上这类标的可能是亏钱？或者说是不赚钱的\n\n具体原因嘛？自己去看全文吧～ \n\n全文： \n\nps：这篇文是各位substack群友贡献的经费，没拿交易所一分钱，所以还是比较客观独立的。 感谢各位啦～",
-      "favoriteCount": 0,
-      "viewCount": 0,
-      "has_article": false,
-      "j_score": 0.2,
-      "e_score": 0.24,
-      "v_score": 0.6,
-      "composite_score": 0.314,
-      "domain_id": "mm_liquidity"
-    },
-    {
-      "id": "2102234686252875905",
-      "createdAt": "Tue Sep 22 03:13:01 +0000 2026",
-      "text": "上次说的 #stockperps 的流动性调查报告有个阶段性成果了 \n\n这次的对象找的是最难弄的，pre ipo标的：@openai 和 @AnthropicAI \n\n为什么难呢？因为它们两没有现货市场，也没有第三方指导价，全靠自己的盘口 - 假设这两个标的的流动性都能做得好，那剩下的估计就很厉害了～ \n\n也算是挑着软柿子来捏了 🤣 \n\n结果其实也不出意外，就是这两标的的流动性还是比较一般的（+/-20bps 20k美金），但是在binance上已经算是行业最好的流动性池了（至少大单还能成交）\n\n因为流动性比较薄 ，但市场叙事又很足 - 这看起来貌似比小盘股还好玩，但实际上，交易所上这类标的可能是亏钱？或者说是不赚钱的\n\n具体原因嘛？自己去看全文吧～ \n\n全文：https://agintender.substack.com/p/openai-anthropic-pre-ipo-stock-perps?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=web \n\nps：这篇文是各位substack群友贡献的经费，没拿交易所一分钱，所以还是比较客观独立的。 感谢各位啦～",
-      "clean_text": "上次说的 #stockperps 的流动性调查报告有个阶段性成果了 \n\n这次的对象找的是最难弄的，pre ipo标的：@openai 和 @AnthropicAI \n\n为什么难呢？因为它们两没有现货市场，也没有第三方指导价，全靠自己的盘口 - 假设这两个标的的流动性都能做得好，那剩下的估计就很厉害了～ \n\n也算是挑着软柿子来捏了 🤣 \n\n结果其实也不出意外，就是这两标的的流动性还是比较一般的（+/-20bps 20k美金），但是在binance上已经算是行业最好的流动性池了（至少大单还能成交）\n\n因为流动性比较薄 ，但市场叙事又很足 - 这看起来貌似比小盘股还好玩，但实际上，交易所上这类标的可能是亏钱？或者说是不赚钱的\n\n具体原因嘛？自己去看全文吧～ \n\n全文： \n\nps：这篇文是各位substack群友贡献的经费，没拿交易所一分钱，所以还是比较客观独立的。 感谢各位啦～",
-      "favoriteCount": 5,
-      "viewCount": 4147,
-      "has_article": false,
-      "j_score": 0.2,
-      "e_score": 0.24,
-      "v_score": 0.6,
-      "composite_score": 0.314,
-      "domain_id": "mm_liquidity"
-    },
-    {
-      "id": "2094276253541106024",
-      "createdAt": "Mon Aug 31 04:09:03 +0000 2026",
-      "text": "请各位原谅啦，我忍不住要“晒单”一下啦～～～～\n\n我的substack的arr超过10k usd了 （🎉）\n虽然这在币圈就是毛毛雨（而且还是arr）\n\n但认真的，这个可比我自己做交易赚1m还开心啊\n感谢各位的抬爱、认可和支持\n\n当交易所、协议都不愿意花预算来支持的时候，没想到还真的是有人愿意付费看独立调研内容 - 看我在哪里神神叨叨 🤣🤣🤣\n\n好了，我稍微从bstocks那篇文回血了一点，现在有更多的弹药去“摧残”和“挑战”各家交易所的算法和orderbook了，各位准备面对疾风吧～ 哇哈哈哈哈哈🤣\n\n争取给大家带来更多好文\n\n对stock perp，合约交易，交易所数据感兴趣的，欢迎订阅：\nhttps://t.co/oWfm2IKoZs",
-      "clean_text": "请各位原谅啦，我忍不住要“晒单”一下啦～～～～\n\n我的substack的arr超过10k usd了 （🎉）\n虽然这在币圈就是毛毛雨（而且还是arr）\n\n但认真的，这个可比我自己做交易赚1m还开心啊\n感谢各位的抬爱、认可和支持\n\n当交易所、协议都不愿意花预算来支持的时候，没想到还真的是有人愿意付费看独立调研内容 - 看我在哪里神神叨叨 🤣🤣🤣\n\n好了，我稍微从bstocks那篇文回血了一点，现在有更多的弹药去“摧残”和“挑战”各家交易所的算法和orderbook了，各位准备面对疾风吧～ 哇哈哈哈哈哈🤣\n\n争取给大家带来更多好文\n\n对stock perp，合约交易，交易所数据感兴趣的，欢迎订阅：",
-      "favoriteCount": 65,
-      "viewCount": 17644,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.24,
-      "v_score": 0.7,
-      "composite_score": 0.299,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2083744773354184822",
-      "createdAt": "Sun Aug 02 02:40:42 +0000 2026",
-      "text": "感谢okx的邀请，让我感受了一把“流动性”流动的感觉\n\n作为一个伪球迷，我甚至连球徽都看不明白，但是作为一个老韭菜，场内的流动性的流动可是看得明明白白\n\n不是什么资金流入美股，理财之类的，而是信任 - 不管牛熊，不管外面有多少交易所关张，新人小白还是大户都还在往okx冲- 信任，才是流动性的底色\n\n除了熟知的品牌合规产品界面之外，okx最不为人知的是对于产品的执着- 我举个例子：你能想象一个marketing的人对各大交易所美股资金费率的算法和预测市场的盘口流动性和结算方式都如数家珍吗？ 我差点都要去投诉了，感情这几个家伙一天天不干正事，都跑去炒币了 😂😂\n\n员工对于产品的执着和自驱力，才是okx的对于信任的诠释",
-      "clean_text": "感谢okx的邀请，让我感受了一把“流动性”流动的感觉\n\n作为一个伪球迷，我甚至连球徽都看不明白，但是作为一个老韭菜，场内的流动性的流动可是看得明明白白\n\n不是什么资金流入美股，理财之类的，而是信任 - 不管牛熊，不管外面有多少交易所关张，新人小白还是大户都还在往okx冲- 信任，才是流动性的底色\n\n除了熟知的品牌合规产品界面之外，okx最不为人知的是对于产品的执着- 我举个例子：你能想象一个marketing的人对各大交易所美股资金费率的算法和预测市场的盘口流动性和结算方式都如数家珍吗？ 我差点都要去投诉了，感情这几个家伙一天天不干正事，都跑去炒币了 😂😂\n\n员工对于产品的执着和自驱力，才是okx的对于信任的诠释",
-      "favoriteCount": 8,
-      "viewCount": 6576,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.24,
-      "v_score": 0.7,
-      "composite_score": 0.299,
-      "domain_id": "mm_liquidity"
-    },
-    {
-      "id": "2069666692582748170",
-      "createdAt": "Wed Jun 24 06:19:26 +0000 2026",
-      "text": "揭秘一下这篇文的research是怎么做的\n\n好几个小伙伴pm，问这篇文的怎么做 @okx 和ICE 的资料汇总和研究的。因为资料很分散，除了是在各大媒体站外，okx/ice自己的披露之外，大部分有价值的信息都在x上，尤其是 @star_okx 近期发的内容\n\n你需要结合着ice的历史、职能、近期的战略部署，以及okx近半年的变化来看（首先你可能得对ice是干什么的有一个大致的了解），而这些事情要串联起来就要一遍遍的关照着x、官媒、法规变化以及市场变化一起来看，才能稍微看出一些端倪。\n\n最直观的就是在各家交易所都有美股现货的基础上，为什么okx 不上自己的美股现货（永续和xstock不算）？是没有渠道吗？是没有牌照吗？ \n\nAI工具时代，最有价值的是能把信息串起来看成一个整体的思维框架\n\ngrok反正回答点问题还可以，要深入分析和研究，就呵呵了。。而其他的AI 工具，不是没办法拿到x的内容，就是分析框架有点一言难尽\n\n我就不说我用的是哪家了（免得你们说我打广告，然后我又没收广告费 🤣）我相信聪明的各位，真的想试用的话会自己找到的",
-      "clean_text": "揭秘一下这篇文的research是怎么做的\n\n好几个小伙伴pm，问这篇文的怎么做 @okx 和ICE 的资料汇总和研究的。因为资料很分散，除了是在各大媒体站外，okx/ice自己的披露之外，大部分有价值的信息都在x上，尤其是 @star_okx 近期发的内容\n\n你需要结合着ice的历史、职能、近期的战略部署，以及okx近半年的变化来看（首先你可能得对ice是干什么的有一个大致的了解），而这些事情要串联起来就要一遍遍的关照着x、官媒、法规变化以及市场变化一起来看，才能稍微看出一些端倪。\n\n最直观的就是在各家交易所都有美股现货的基础上，为什么okx 不上自己的美股现货（永续和xstock不算）？是没有渠道吗？是没有牌照吗？ \n\nAI工具时代，最有价值的是能把信息串起来看成一个整体的思维框架\n\ngrok反正回答点问题还可以，要深入分析和研究，就呵呵了。。而其他的AI 工具，不是没办法拿到x的内容，就是分析框架有点一言难尽\n\n我就不说我用的是哪家了（免得你们说我打广告，然后我又没收广告费 🤣）我相信聪明的各位，真的想试用的话会自己找到的",
-      "favoriteCount": 46,
-      "viewCount": 14342,
-      "has_article": false,
-      "j_score": 0.2,
-      "e_score": 0.12,
-      "v_score": 0.7,
-      "composite_score": 0.297,
-      "domain_id": "derivatives_options"
-    },
-    {
-      "id": "2044593849503559736",
-      "createdAt": "Thu Apr 16 01:48:55 +0000 2026",
-      "text": "写给alpha项目方们的反攻信号\n\n1792-1840年代，那是一个属于华尔街的蛮荒时代——那是一个只能做多的原始市场。\n\n当时的市场和今天的山寨币市场相似：只能买入，持有，等庄家，等过年。没有杠杆，没有做空，没有标准化的交割流程。\n\n个股的日均交易额可能不到50万美元，参与者不过几十人。市场极小，因为能做的事太少了。\n￼\n价格波动完全由多头情绪驱动。好消息来了，所有人买入，价格飙涨。坏消息来了，所有人想卖，但因为市场太浅，卖不出去，价格崩盘。没有空头在下跌时回补买入，所以市场没有自然支撑，底部完全取决于最后一个多头什么时候认输。\n\n这就是2024~2025年的Meme，alpha的山寨币市场 - 不是说alpha的机制不好，而是红利期已过了，以前的套路都不好使了\n\n这么说吧：汇旺都倒了，陈志都被抓了，cz都出狱出书了，而alpha的机制还是这样 - 你们上了alpha之后，交易大赛之后，然后呢？说好的只要有对手方，就有流动性 呢？结果就只有羊毛党\n\n当年花了大价钱上alpha，说好的流动性？说好的perp？ alpha项目方们，你们真的就愿意这么躺平吗？碌碌无为吗？\n\n现在 @youcanshortit 就有这个机会 - 只要你上了交易所的alpha（不关是binance还是okx），只要你还不认命，还不想躺平 - 欢迎pm我 或@youcanshortit \n\n我自讨腰包100万美金的奖池跟你（们）一起把“做空权”归还市场\n\nbinance和okx不理你的，我来～\n\n名额不多哈 等你",
-      "clean_text": "写给alpha项目方们的反攻信号\n\n1792-1840年代，那是一个属于华尔街的蛮荒时代——那是一个只能做多的原始市场。\n\n当时的市场和今天的山寨币市场相似：只能买入，持有，等庄家，等过年。没有杠杆，没有做空，没有标准化的交割流程。\n\n个股的日均交易额可能不到50万美元，参与者不过几十人。市场极小，因为能做的事太少了。\n￼\n价格波动完全由多头情绪驱动。好消息来了，所有人买入，价格飙涨。坏消息来了，所有人想卖，但因为市场太浅，卖不出去，价格崩盘。没有空头在下跌时回补买入，所以市场没有自然支撑，底部完全取决于最后一个多头什么时候认输。\n\n这就是2024~2025年的Meme，alpha的山寨币市场 - 不是说alpha的机制不好，而是红利期已过了，以前的套路都不好使了\n\n这么说吧：汇旺都倒了，陈志都被抓了，cz都出狱出书了，而alpha的机制还是这样 - 你们上了alpha之后，交易大赛之后，然后呢？说好的只要有对手方，就有流动性 呢？结果就只有羊毛党\n\n当年花了大价钱上alpha，说好的流动性？说好的perp？ alpha项目方们，你们真的就愿意这么躺平吗？碌碌无为吗？\n\n现在 @youcanshortit 就有这个机会 - 只要你上了交易所的alpha（不关是binance还是okx），只要你还不认命，还不想躺平 - 欢迎pm我 或@youcanshortit \n\n我自讨腰包100万美金的奖池跟你（们）一起把“做空权”归还市场\n\nbinance和okx不理你的，我来～\n\n名额不多哈 等你",
-      "favoriteCount": 22,
-      "viewCount": 8412,
-      "has_article": false,
-      "j_score": 0.2,
-      "e_score": 0.12,
-      "v_score": 0.7,
-      "composite_score": 0.297,
-      "domain_id": "mm_liquidity"
-    },
-    {
-      "id": "2098364569559441546",
-      "createdAt": "Fri Sep 11 10:54:33 +0000 2026",
-      "text": "如果你对这篇《stock perps将成为小盘股的主力战场》文章感兴趣的\n\n第二部曲上新啦！\n上次说的是资金流向，这一次说的是机制\n\n为什么合约的机制能让小盘股获得更多博弈空间？\n\nsubstack：\nhttps://t.co/cecmR1wjDH https://t.co/ZLm3GvEu7F",
-      "clean_text": "如果你对这篇《stock perps将成为小盘股的主力战场》文章感兴趣的\n\n第二部曲上新啦！\n上次说的是资金流向，这一次说的是机制\n\n为什么合约的机制能让小盘股获得更多博弈空间？\n\nsubstack：",
-      "favoriteCount": 19,
-      "viewCount": 11340,
-      "has_article": false,
-      "j_score": 0.3,
-      "e_score": 0.12,
-      "v_score": 0.5,
-      "composite_score": 0.287,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2087373744922865878",
-      "createdAt": "Wed Aug 12 03:00:56 +0000 2026",
-      "text": "今天被 @bc1qDave 把旧文翻出来了 😂\n\n说几个之前没提到的事：\n\n1. 为什么文章标题叫“永续十年，幕还未谢” \n\n那时候刚好听到Bitmex被收购的事情受阻，撑不下去的消息 - 觉得有点唏嘘\n\n7月就出来这个消息\n\n2.为什么封面是袁泉的回眸图？\n\n建议你去看《大上海》，你就只能体会这个心情了\n\n当年的恋人分隔，再见只能是路人 - 就跟当年一眼见到合约陷进去的自己一样\n\n这篇文从流量上来说确实有点可惜 - 可以说是系统性对永续合约十年的周期变化的体系化总结，对于接下来的股票合约有很多借鉴意义（我的很多策略都是在这个基础上形成的）\n\n只可惜因为x的算法，内容质量和市场原因没办法出圈\n\n今天看回来，什么出不出圈，能够收获两三知音，足矣",
-      "clean_text": "今天被 @bc1qDave 把旧文翻出来了 😂\n\n说几个之前没提到的事：\n\n1. 为什么文章标题叫“永续十年，幕还未谢” \n\n那时候刚好听到Bitmex被收购的事情受阻，撑不下去的消息 - 觉得有点唏嘘\n\n7月就出来这个消息\n\n2.为什么封面是袁泉的回眸图？\n\n建议你去看《大上海》，你就只能体会这个心情了\n\n当年的恋人分隔，再见只能是路人 - 就跟当年一眼见到合约陷进去的自己一样\n\n这篇文从流量上来说确实有点可惜 - 可以说是系统性对永续合约十年的周期变化的体系化总结，对于接下来的股票合约有很多借鉴意义（我的很多策略都是在这个基础上形成的）\n\n只可惜因为x的算法，内容质量和市场原因没办法出圈\n\n今天看回来，什么出不出圈，能够收获两三知音，足矣",
-      "favoriteCount": 13,
-      "viewCount": 4506,
-      "has_article": false,
-      "j_score": 0.2,
-      "e_score": 0.12,
-      "v_score": 0.6,
-      "composite_score": 0.272,
-      "domain_id": "derivatives_options"
-    },
-    {
-      "id": "2088884735334666296",
-      "createdAt": "Sun Aug 16 07:05:05 +0000 2026",
-      "text": "这篇文有好多有意思的事情了\n\n你看下这张图表：\n你可以看到（美股）在早上4点 premarket的时候，方向准确率是在64%；到了8点（距离开盘时间90分钟前）就是84%，误差在66bp\n\n各位都知道polymarket吧？开盘前的预测在15分钟都没这么准，而且误差控制在100bp以内。。你知道这意味着什么吗？？ \n\n聪明的你会怎么做呢？以binance/币圈的价格为reference然后去其他交易所/券商xxx\n\n我在文章里特别提了一句：流动性深度的前提是要能反映市场价值。。。\n流动性/深度固然重要，但不是越深越厚越好",
-      "clean_text": "这篇文有好多有意思的事情了\n\n你看下这张图表：\n你可以看到（美股）在早上4点 premarket的时候，方向准确率是在64%；到了8点（距离开盘时间90分钟前）就是84%，误差在66bp\n\n各位都知道polymarket吧？开盘前的预测在15分钟都没这么准，而且误差控制在100bp以内。。你知道这意味着什么吗？？ \n\n聪明的你会怎么做呢？以binance/币圈的价格为reference然后去其他交易所/券商xxx\n\n我在文章里特别提了一句：流动性深度的前提是要能反映市场价值。。。\n流动性/深度固然重要，但不是越深越厚越好",
-      "favoriteCount": 27,
-      "viewCount": 9894,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.12,
-      "v_score": 0.7,
-      "composite_score": 0.257,
-      "domain_id": "mm_liquidity"
-    },
-    {
-      "id": "2058095287156265089",
-      "createdAt": "Sat May 23 07:58:48 +0000 2026",
-      "text": "现在在想着怎么买kyc去开户转移美股、那些买号去开api中转站的、允许买kyc开交易所账户的交易所的…. 建议你一定要读下这篇文，太重要了\n\n都不是省钱，而是让你怎么不进去\n\n这篇合规之路的长文（https://t.co/4j69ng2UZb）里有一个很重要的教训：正义也许不会到，但惩罚一定会来的，不外乎是你是否够肥了….\n\n你们难道不知道吗？租借别人的账号都是违法的，更何况是买kyc开账户（或者平台允许用他人kyc来开账户的）来交易/过桥/链接API\n\n你要嘛实在无路可走，或者肯定能赚去暴利，要不然到头来你赚的都不够你赔的\n\n假设还不起这43亿，就没有后来的xx人生了",
-      "clean_text": "现在在想着怎么买kyc去开户转移美股、那些买号去开api中转站的、允许买kyc开交易所账户的交易所的…. 建议你一定要读下这篇文，太重要了\n\n都不是省钱，而是让你怎么不进去\n\n这篇合规之路的长文（\n\n你们难道不知道吗？租借别人的账号都是违法的，更何况是买kyc开账户（或者平台允许用他人kyc来开账户的）来交易/过桥/链接API\n\n你要嘛实在无路可走，或者肯定能赚去暴利，要不然到头来你赚的都不够你赔的\n\n假设还不起这43亿，就没有后来的xx人生了",
-      "favoriteCount": 26,
-      "viewCount": 9258,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.12,
-      "v_score": 0.7,
-      "composite_score": 0.257,
-      "domain_id": "trader_mindset_essays"
+      "id": "2097659773282119978",
+      "text": "那啥， $牛来 上了bn spot的这个我真没有内幕消息\n就是单纯从bstocks的角度出发看问题\n\n这两周现货应该就是这两个bstocks的meme了，后续如果效果火爆那就是另说\n\n与其苦苦寻找其他跟stock相关的meme，倒不如就好好看看 $牛来 和 marscoin-4:native 就好\n\n再不然今晚 的 solana:6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN vs $laptop 的脸面之争也会很好玩 🤣",
+      "createdAt": "Wed Sep 09 12:13:57 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 18,
+      "replyCount": 49,
+      "viewCount": 9121,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2097659773282119978",
+      "isQuote": true,
+      "quoteId": "2096608193204158785",
+      "clean_text": "那啥， $牛来 上了bn spot的这个我真没有内幕消息\n就是单纯从bstocks的角度出发看问题\n\n这两周现货应该就是这两个bstocks的meme了，后续如果效果火爆那就是另说\n\n与其苦苦寻找其他跟stock相关的meme，倒不如就好好看看 $牛来 和 marscoin-4:native 就好\n\n再不然今晚 的 solana:6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN vs $laptop 的脸面之争也会很好玩 🤣",
+      "gold_score": 6.5,
+      "domain_id": "04_contracts_stock_perps"
     },
     {
       "id": "2097606003126935617",
-      "createdAt": "Wed Sep 09 08:40:17 +0000 2026",
       "text": "有一说一，虽然 $BNC 是个很适合stock perp反馈现货市场的标的，但是美股市场对这个标的真的很不感冒\n\n根据10-K （4月30日）的披露，CEA （ binancecoin:native  的DAT） 持有515,544个 binancecoin:native ，按照750u算，今天的价值差不多在386m \n\n按照9月8日的收盘价5.25（涨了50%），41,263,850 股普通股流通， CEA这家公司的mc是 216.6 m \n\n有意思的地方来了：如果你把 Market Cap / BNB Value ，你会发现只有216.6/386 =0.56x\n就是这个公司的资产价值 > 市值\n\n你只要花大约 2.166 亿美元，就可以买下一家账上持有约 3.88 亿美元 BNB 的上市公司哦～ 也就是大约 42% NAV discount。 \n\n问题就是，这么明显的“套利机会” - 难道华尔街们不知道？p小将们不知道？为什么还是差了这么远？ \n\n这中间难道有什么猫腻？有什么暗箱条款？难道是投资者在跑路抛售？还是解锁期限到了？成本价很低？还是说市场对现在的公司领导班子不信任？\n\n是人性的崩坏？还是道德的沦丧？\n\n欲知后事如何，还请听下回分解～",
-      "clean_text": "有一说一，虽然 $BNC 是个很适合stock perp反馈现货市场的标的，但是美股市场对这个标的真的很不感冒\n\n根据10-K （4月30日）的披露，CEA （ binancecoin:native  的DAT） 持有515,544个 binancecoin:native ，按照750u算，今天的价值差不多在386m \n\n按照9月8日的收盘价5.25（涨了50%），41,263,850 股普通股流通， CEA这家公司的mc是 216.6 m \n\n有意思的地方来了：如果你把 Market Cap / BNB Value ，你会发现只有216.6/386 =0.56x\n就是这个公司的资产价值 > 市值\n\n你只要花大约 2.166 亿美元，就可以买下一家账上持有约 3.88 亿美元 BNB 的上市公司哦～ 也就是大约 42% NAV discount。 \n\n问题就是，这么明显的“套利机会” - 难道华尔街们不知道？p小将们不知道？为什么还是差了这么远？ \n\n这中间难道有什么猫腻？有什么暗箱条款？难道是投资者在跑路抛售？还是解锁期限到了？成本价很低？还是说市场对现在的公司领导班子不信任？\n\n是人性的崩坏？还是道德的沦丧？\n\n欲知后事如何，还请听下回分解～",
+      "createdAt": "Wed Sep 09 08:40:17 +0000 2026",
       "favoriteCount": 33,
+      "replyCount": 47,
       "viewCount": 8202,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.7,
-      "composite_score": 0.25,
-      "domain_id": "derivatives_options"
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 35987,
+      "retweetCount": 6,
+      "quoteCount": 1,
+      "language": "zh",
+      "conversationId": "2097606003126935617",
+      "clean_text": "有一说一，虽然 $BNC 是个很适合stock perp反馈现货市场的标的，但是美股市场对这个标的真的很不感冒\n\n根据10-K （4月30日）的披露，CEA （ binancecoin:native  的DAT） 持有515,544个 binancecoin:native ，按照750u算，今天的价值差不多在386m \n\n按照9月8日的收盘价5.25（涨了50%），41,263,850 股普通股流通， CEA这家公司的mc是 216.6 m \n\n有意思的地方来了：如果你把 Market Cap / BNB Value ，你会发现只有216.6/386 =0.56x\n就是这个公司的资产价值 > 市值\n\n你只要花大约 2.166 亿美元，就可以买下一家账上持有约 3.88 亿美元 BNB 的上市公司哦～ 也就是大约 42% NAV discount。 \n\n问题就是，这么明显的“套利机会” - 难道华尔街们不知道？p小将们不知道？为什么还是差了这么远？ \n\n这中间难道有什么猫腻？有什么暗箱条款？难道是投资者在跑路抛售？还是解锁期限到了？成本价很低？还是说市场对现在的公司领导班子不信任？\n\n是人性的崩坏？还是道德的沦丧？\n\n欲知后事如何，还请听下回分解～",
+      "gold_score": 7.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2097580488563253738",
+      "text": "首先抱歉给各位朋友在8月份带来的substack骚扰～ 真的是抱歉\n\n经过这一个月的吆喝和努力，我的substack的订阅人数突破1000 （此处应该有撒花🎉和掌声👏 ） ，也算是账号的新里程碑\n\n我打算在来临的新加坡token 2049搞一个substack的书友会，请大家过来聚聚，吹吹水，听老登说说自己被stock perp干得体无完肤的故事 🤣🤣🤣  要不我在现场也给大家爆几个大料？～\n\n至于怎么参与？！ 为了维持“尊贵感”\n我会私底下发邮件给付费订阅用户们，到时候请各位不要屏蔽substack的邮件就行啦～  而且，各位放心，我不会跟你收费或者借钱的\n\n至于免费的订阅用户因为场地等原因就暂时不好意思啦～ 而且2049这么多活动，我估计各位一定有其他好玩的事情，就别浪费时间在我这个无聊的老登书友会啦\n\np/s：招商广告：我会在书友会上讲stock perp，如果有人要赞助的，要欢迎pm啦",
+      "createdAt": "Wed Sep 09 06:58:54 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 21,
+      "replyCount": 77,
+      "quoteCount": 1,
+      "viewCount": 20451,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2097580488563253738",
+      "isQuote": true,
+      "quoteId": "2094276253541106024",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2097580488563253738/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HRwVlw5bIAAFy-2.png"
+        }
+      ],
+      "clean_text": "首先抱歉给各位朋友在8月份带来的substack骚扰～ 真的是抱歉\n\n经过这一个月的吆喝和努力，我的substack的订阅人数突破1000 （此处应该有撒花🎉和掌声👏 ） ，也算是账号的新里程碑\n\n我打算在来临的新加坡token 2049搞一个substack的书友会，请大家过来聚聚，吹吹水，听老登说说自己被stock perp干得体无完肤的故事 🤣🤣🤣  要不我在现场也给大家爆几个大料？～\n\n至于怎么参与？！ 为了维持“尊贵感”\n我会私底下发邮件给付费订阅用户们，到时候请各位不要屏蔽substack的邮件就行啦～  而且，各位放心，我不会跟你收费或者借钱的\n\n至于免费的订阅用户因为场地等原因就暂时不好意思啦～ 而且2049这么多活动，我估计各位一定有其他好玩的事情，就别浪费时间在我这个无聊的老登书友会啦\n\np/s：招商广告：我会在书友会上讲stock perp，如果有人要赞助的，要欢迎pm啦",
+      "gold_score": 8.3,
+      "domain_id": "04_contracts_stock_perps"
     },
     {
       "id": "2097528759083790788",
-      "createdAt": "Wed Sep 09 03:33:21 +0000 2026",
       "text": "好几个小伙伴都不约而同给我发消息：stock perp真的有这么厉害吗？！ 😂 我对于meme反向挤压华尔街的态度大概是25:75，但我真的认为stock perp 100%可以反向带货\n\n接下来就是：stock perp要怎么操作？要上什么标的？怎么利用休市的算法？\n\n大家如果对stock perp的底层算法感兴趣的，可以看看我的substack上对于stock perp算法的三部曲，x上不太合适太技术的东西：\n\nhttps://t.co/d7rGiysgWg\nhttps://t.co/3RJj9q3iwd\nhttps://t.co/hV8x86o6of\n\n友情提醒：substack的内容对新手非常不友好，就是深入深出，觉得自己没耐心，不愿意自己拿纸笔作计算的人就不要订阅了，别浪费这个钱了",
-      "clean_text": "好几个小伙伴都不约而同给我发消息：stock perp真的有这么厉害吗？！ 😂 我对于meme反向挤压华尔街的态度大概是25:75，但我真的认为stock perp 100%可以反向带货\n\n接下来就是：stock perp要怎么操作？要上什么标的？怎么利用休市的算法？\n\n大家如果对stock perp的底层算法感兴趣的，可以看看我的substack上对于stock perp算法的三部曲，x上不太合适太技术的东西：\n\n\n\n\n\n友情提醒：substack的内容对新手非常不友好，就是深入深出，觉得自己没耐心，不愿意自己拿纸笔作计算的人就不要订阅了，别浪费这个钱了",
+      "createdAt": "Wed Sep 09 03:33:21 +0000 2026",
+      "language": "zh",
+      "retweetCount": 6,
       "favoriteCount": 44,
+      "replyCount": 34,
       "viewCount": 12181,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.7,
-      "composite_score": 0.25,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2094627670827098369",
-      "createdAt": "Tue Sep 01 03:25:27 +0000 2026",
-      "text": "如果你吃透了binance和https://t.co/hnWBQ12p9P 的stock perp在休市的算法，并且开始了解其他所的机制\n\n你会发现，外边的雨云是这里飘过去的\n\n恭喜你，除了可以每天吃到开盘前的“理财收益”，你还可以在 @okx @MEXC @Gate @Bybit_Official 吃到开市和闭市的收敛收益…\n\n一篇关于 @Bybit_Official @MEXC @tradexyz @Gate @okx 的stock perp算法解析：\n\nhttps://t.co/pKaxcbcM0z",
-      "clean_text": "如果你吃透了binance和 的stock perp在休市的算法，并且开始了解其他所的机制\n\n你会发现，外边的雨云是这里飘过去的\n\n恭喜你，除了可以每天吃到开盘前的“理财收益”，你还可以在 @okx @MEXC @Gate @Bybit_Official 吃到开市和闭市的收敛收益…\n\n一篇关于 @Bybit_Official @MEXC @tradexyz @Gate @okx 的stock perp算法解析：",
-      "favoriteCount": 45,
-      "viewCount": 16880,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.7,
-      "composite_score": 0.25,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2062490423617261630",
-      "createdAt": "Thu Jun 04 11:03:30 +0000 2026",
-      "text": "关于中国国务院发的837号令《关于对外投资的规定》\n\n有鉴于太多pm了，我在这里统一说下吧\n\n这个837号行政令应该是这几年最严格的对外投资行政令\n\n首先它把主体扩展到居民个人的层面（不再是组织/企业） - 对，就是在屏幕前的你\n\n2. 资产类别基本包括了你知道的一切，什么股票（美股，未上市），基金，加密货币，银行账户的外汇等等\n\n3. 要你干啥呢？要披露和备案… （涉及国家安全的还要批准…）\n\n4. 处罚是啥：没收违法所得 + 投资额的0.1-0.5%\n\n5. 里面还加了个涉及国家安全的条款，至于啥是国家安全？ \n\n基本的我就不多说了- 什么在之前在futu老虎开过户买美股的，这类信息一定会同步到的… \n\n而那些在新加坡拿着EP开户（或者香港身份）买美股的… 新加坡是CRS参与国…同步就是时间问题\n\n除非你很专业，要不然从资产端很难做账的，从税务身份可能还有点戏\n\n7月1号开跑",
-      "clean_text": "关于中国国务院发的837号令《关于对外投资的规定》\n\n有鉴于太多pm了，我在这里统一说下吧\n\n这个837号行政令应该是这几年最严格的对外投资行政令\n\n首先它把主体扩展到居民个人的层面（不再是组织/企业） - 对，就是在屏幕前的你\n\n2. 资产类别基本包括了你知道的一切，什么股票（美股，未上市），基金，加密货币，银行账户的外汇等等\n\n3. 要你干啥呢？要披露和备案… （涉及国家安全的还要批准…）\n\n4. 处罚是啥：没收违法所得 + 投资额的0.1-0.5%\n\n5. 里面还加了个涉及国家安全的条款，至于啥是国家安全？ \n\n基本的我就不多说了- 什么在之前在futu老虎开过户买美股的，这类信息一定会同步到的… \n\n而那些在新加坡拿着EP开户（或者香港身份）买美股的… 新加坡是CRS参与国…同步就是时间问题\n\n除非你很专业，要不然从资产端很难做账的，从税务身份可能还有点戏\n\n7月1号开跑",
-      "favoriteCount": 41,
-      "viewCount": 25797,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.7,
-      "composite_score": 0.25,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2054734332971864147",
-      "createdAt": "Thu May 14 01:23:34 +0000 2026",
-      "text": "😄 有小伙伴问我，你咋不写下美股？大宗？ 期权？\n\n加密都不行了，你就别只写合约和crypto了…\n\n我就说有没有可能我原来就是“看表”写故事的老灯（aka 你要看我是买方还是卖方，并且在什么阶段）",
-      "clean_text": "😄 有小伙伴问我，你咋不写下美股？大宗？ 期权？\n\n加密都不行了，你就别只写合约和crypto了…\n\n我就说有没有可能我原来就是“看表”写故事的老灯（aka 你要看我是买方还是卖方，并且在什么阶段）",
-      "favoriteCount": 14,
-      "viewCount": 5818,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.24,
-      "v_score": 0.5,
-      "composite_score": 0.249,
-      "domain_id": "derivatives_options"
-    },
-    {
-      "id": "2100584307274502403",
-      "createdAt": "Thu Sep 17 13:55:00 +0000 2026",
-      "text": "虽然是tokenized stock已经开跑一段时间内。但是SEC这个order也算是正名了tokenized stock\n\ntokenized stock amm + lending 的基础，这就让 stock perps就更加好玩了\n\n小盘股的链上发行和流通，加上perps - 而且还是隔着两个市场，这套利的传导会更加好玩\n\n友情提示：很多penny stock可以一直增发股票的哦～ 玩得时候要注意",
-      "clean_text": "虽然是tokenized stock已经开跑一段时间内。但是SEC这个order也算是正名了tokenized stock\n\ntokenized stock amm + lending 的基础，这就让 stock perps就更加好玩了\n\n小盘股的链上发行和流通，加上perps - 而且还是隔着两个市场，这套利的传导会更加好玩\n\n友情提示：很多penny stock可以一直增发股票的哦～ 玩得时候要注意",
-      "favoriteCount": 11,
-      "viewCount": 4250,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.6,
-      "composite_score": 0.225,
-      "domain_id": "mm_liquidity"
-    },
-    {
-      "id": "2098629734209122419",
-      "createdAt": "Sat Sep 12 04:28:13 +0000 2026",
-      "text": "永续合约的意义，在于让更多人以不同的理由参与到这场博弈当中。\n\n有人看好公司，有人质疑估值，也有人对股价方向没有意见，只关心资金费能不能覆盖持仓成本、现货与合约的价差有没有机会。\n\n他们不需要相信同一个故事，甚至不是一路人，也可以成为彼此的交易对手。\n\nstock perps的意义：就在于把华尔街、币圈、项目方、公司、机构、银行、券商... 等等主体的博弈点，在永续合约上一一配对 \n\nhttps://agintender.substack.com/p/stock-perpsg?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=post%20viewer",
-      "clean_text": "永续合约的意义，在于让更多人以不同的理由参与到这场博弈当中。\n\n有人看好公司，有人质疑估值，也有人对股价方向没有意见，只关心资金费能不能覆盖持仓成本、现货与合约的价差有没有机会。\n\n他们不需要相信同一个故事，甚至不是一路人，也可以成为彼此的交易对手。\n\nstock perps的意义：就在于把华尔街、币圈、项目方、公司、机构、银行、券商... 等等主体的博弈点，在永续合约上一一配对",
-      "favoriteCount": 11,
-      "viewCount": 5307,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.12,
-      "v_score": 0.5,
-      "composite_score": 0.207,
-      "domain_id": "derivatives_options"
-    },
-    {
-      "id": "2099710553409323377",
-      "createdAt": "Tue Sep 15 04:03:01 +0000 2026",
-      "text": "现在 bstocks支持 $BNC bncb 这个底层逻辑就不一样了\n现在看看 @flapdotsh 能多快打出第一个金狗\n然后能把 bncb 反馈到 $BNC 上 https://x.com/agintender/status/2098644830184505521",
-      "clean_text": "现在 bstocks支持 $BNC bncb 这个底层逻辑就不一样了\n现在看看 @flapdotsh 能多快打出第一个金狗\n然后能把 bncb 反馈到 $BNC 上",
-      "favoriteCount": 8,
-      "viewCount": 5949,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.5,
-      "composite_score": 0.2,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2095754147945693225",
-      "createdAt": "Fri Sep 04 06:01:40 +0000 2026",
-      "text": "嗯嗯 有小伙伴问我，昨天那篇说 @bitget 的stock perp算法的文呢？\n\n嗯，是的，你猜的没错了，我隐藏起来了哈\n\n好东西就是这样，转瞬即逝 😂🤣 - 吃透这篇文的话，你就能理解为什么好多人能同时在 @binance @bitget @tradexyz 跑lead lag的策略，而且长期有效\n\n 现在要看的话（温故而知新的话），就要去substack啦～ \nhttps://t.co/WMAeeYWUh7",
-      "clean_text": "嗯嗯 有小伙伴问我，昨天那篇说 @bitget 的stock perp算法的文呢？\n\n嗯，是的，你猜的没错了，我隐藏起来了哈\n\n好东西就是这样，转瞬即逝 😂🤣 - 吃透这篇文的话，你就能理解为什么好多人能同时在 @binance @bitget @tradexyz 跑lead lag的策略，而且长期有效\n\n 现在要看的话（温故而知新的话），就要去substack啦～",
-      "favoriteCount": 11,
-      "viewCount": 5997,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.5,
-      "composite_score": 0.2,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2059305082534150570",
-      "createdAt": "Tue May 26 16:06:06 +0000 2026",
-      "text": "难道整个ct就只有我一个人在空 $mu ？！\n\n我的逻辑很简单：\nmicron 美光无疑是很好的标的，但是这次破万亿就是特朗普周末喊出来的，然后周一美股不开市，周二开始“补涨”\n\n美光，存储都有美好的未来，但是是靠业绩打出来的\nearning call在6月尾呢～ \n\n我蚂蚁仓试试水温，大家当看个笑话就好 https://t.co/FRYZcaMQfx",
-      "clean_text": "难道整个ct就只有我一个人在空 $mu ？！\n\n我的逻辑很简单：\nmicron 美光无疑是很好的标的，但是这次破万亿就是特朗普周末喊出来的，然后周一美股不开市，周二开始“补涨”\n\n美光，存储都有美好的未来，但是是靠业绩打出来的\nearning call在6月尾呢～ \n\n我蚂蚁仓试试水温，大家当看个笑话就好",
-      "favoriteCount": 29,
-      "viewCount": 70734,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.5,
-      "composite_score": 0.2,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2052274986790875155",
-      "createdAt": "Thu May 07 06:31:00 +0000 2026",
-      "text": "看到推上各种美股新高，AI无敌，加密回暖，sat0机制创新…\n\n不敢说一片祥和，说是人声鼎沸都不过分好伐….\n\n立夏已致，小满不远\n芒种不雨，夏至踏来\n大暑之后，必有大寒 https://t.co/2Qh1ESsNRF",
-      "clean_text": "看到推上各种美股新高，AI无敌，加密回暖，sat0机制创新…\n\n不敢说一片祥和，说是人声鼎沸都不过分好伐….\n\n立夏已致，小满不远\n芒种不雨，夏至踏来\n大暑之后，必有大寒",
-      "favoriteCount": 24,
-      "viewCount": 7200,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.5,
-      "composite_score": 0.2,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2004791782505394221",
-      "createdAt": "Sat Dec 27 05:49:42 +0000 2025",
-      "text": "我个人觉得25年加密行业里十件最具有里程碑意义的事件\n\n大家看看是不是老灯所见略同 😂\n\n25年的主旋律就围绕着\n\n一个人展开 - 特朗普\n两个资金池 - 美股和国家战略储备\n三个管辖权 - Genius MiCA 香港稳定币\n四次大血洗 - 10.11， Bybit 15亿被盗， $Trump 和DATs的大逃杀",
-      "clean_text": "我个人觉得25年加密行业里十件最具有里程碑意义的事件\n\n大家看看是不是老灯所见略同 😂\n\n25年的主旋律就围绕着\n\n一个人展开 - 特朗普\n两个资金池 - 美股和国家战略储备\n三个管辖权 - Genius MiCA 香港稳定币\n四次大血洗 - 10.11， Bybit 15亿被盗， $Trump 和DATs的大逃杀",
-      "favoriteCount": 35,
-      "viewCount": 9629,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.5,
-      "composite_score": 0.2,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2098947096544223621",
-      "createdAt": "Sun Sep 13 01:29:19 +0000 2026",
-      "text": "永续合约的意义，在于让更多人以不同的理由参与到这场博弈当中。\n\n有人看好公司，有人质疑估值，也有人对股价方向没有意见，只关心资金费能不能覆盖持仓成本、现货与合约的价差有没有机会。\n\n他们不需要相信同一个故事，甚至不是一路人，也可以成为彼此的交易对手。\n\nstock perps的意义：就在于把华尔街、币圈、项目方、公司、机构、银行、券商... 等等主体的博弈点，在永续合约上一一配对 \n\nhttps://agintender.substack.com/p/stock-perpsg?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=post%20viewer",
-      "clean_text": "永续合约的意义，在于让更多人以不同的理由参与到这场博弈当中。\n\n有人看好公司，有人质疑估值，也有人对股价方向没有意见，只关心资金费能不能覆盖持仓成本、现货与合约的价差有没有机会。\n\n他们不需要相信同一个故事，甚至不是一路人，也可以成为彼此的交易对手。\n\nstock perps的意义：就在于把华尔街、币圈、项目方、公司、机构、银行、券商... 等等主体的博弈点，在永续合约上一一配对",
-      "favoriteCount": 0,
-      "viewCount": 0,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.12,
-      "v_score": 0.4,
-      "composite_score": 0.182,
-      "domain_id": "derivatives_options"
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2097528759083790788",
+      "isQuote": true,
+      "quoteId": "2097276244341792817",
+      "clean_text": "好几个小伙伴都不约而同给我发消息：stock perp真的有这么厉害吗？！ 😂 我对于meme反向挤压华尔街的态度大概是25:75，但我真的认为stock perp 100%可以反向带货\n\n接下来就是：stock perp要怎么操作？要上什么标的？怎么利用休市的算法？\n\n大家如果对stock perp的底层算法感兴趣的，可以看看我的substack上对于stock perp算法的三部曲，x上不太合适太技术的东西：\n\nhttps://t.co/d7rGiysgWg\nhttps://t.co/3RJj9q3iwd\nhttps://t.co/hV8x86o6of\n\n友情提醒：substack的内容对新手非常不友好，就是深入深出，觉得自己没耐心，不愿意自己拿纸笔作计算的人就不要订阅了，别浪费这个钱了",
+      "gold_score": 7.9,
+      "domain_id": "04_contracts_stock_perps"
     },
     {
       "id": "2095029811622334868",
-      "createdAt": "Wed Sep 02 06:03:25 +0000 2026",
       "text": "我今晚会发个关于 @bitget 的休市期间stock perp的mark price算法的文章（简版）\n\n看下有没有媒体/平台的朋友感兴趣谈合作的\n\n本文这次是未经许可，不得转载了 😄",
-      "clean_text": "我今晚会发个关于 @bitget 的休市期间stock perp的mark price算法的文章（简版）\n\n看下有没有媒体/平台的朋友感兴趣谈合作的\n\n本文这次是未经许可，不得转载了 😄",
+      "createdAt": "Wed Sep 02 06:03:25 +0000 2026",
       "favoriteCount": 26,
+      "replyCount": 46,
       "viewCount": 4779,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.4,
-      "composite_score": 0.175,
-      "domain_id": "trader_mindset_essays"
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 35820,
+      "language": "zh",
+      "conversationId": "2095029811622334868",
+      "mentions": [
+        {
+          "screenName": "bitget",
+          "name": "Bitget",
+          "userId": "1098881129057112064"
+        }
+      ],
+      "clean_text": "我今晚会发个关于 @bitget 的休市期间stock perp的mark price算法的文章（简版）\n\n看下有没有媒体/平台的朋友感兴趣谈合作的\n\n本文这次是未经许可，不得转载了 😄",
+      "gold_score": 6.6,
+      "domain_id": "04_contracts_stock_perps"
     },
     {
       "id": "2094998387502535070",
-      "createdAt": "Wed Sep 02 03:58:33 +0000 2026",
       "text": "冷知识： $sndk 的衍生品交易量已超过1/3发生在stock perp了，发生在币圈了\n\nnasdaq/nyse开启7*24之后，只会更加利好stock perp的发展，交易量会持续上升，定价权的venue也会逐步偏移\n\nsweet spot不是mag7这种巨无霸，而是2-3000美金的高波动性股。或者100亿以下的小盘股，专心扶持这些，比你盲目上100个都好",
-      "clean_text": "冷知识： $sndk 的衍生品交易量已超过1/3发生在stock perp了，发生在币圈了\n\nnasdaq/nyse开启7*24之后，只会更加利好stock perp的发展，交易量会持续上升，定价权的venue也会逐步偏移\n\nsweet spot不是mag7这种巨无霸，而是2-3000美金的高波动性股。或者100亿以下的小盘股，专心扶持这些，比你盲目上100个都好",
+      "createdAt": "Wed Sep 02 03:58:33 +0000 2026",
       "favoriteCount": 9,
+      "replyCount": 7,
       "viewCount": 4317,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.4,
-      "composite_score": 0.175,
-      "domain_id": "derivatives_options"
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 35816,
+      "language": "zh",
+      "conversationId": "2094998387502535070",
+      "clean_text": "冷知识： $sndk 的衍生品交易量已超过1/3发生在stock perp了，发生在币圈了\n\nnasdaq/nyse开启7*24之后，只会更加利好stock perp的发展，交易量会持续上升，定价权的venue也会逐步偏移\n\nsweet spot不是mag7这种巨无霸，而是2-3000美金的高波动性股。或者100亿以下的小盘股，专心扶持这些，比你盲目上100个都好",
+      "gold_score": 6.2,
+      "domain_id": "04_contracts_stock_perps"
     },
     {
-      "id": "2052194090733748639",
-      "createdAt": "Thu May 07 01:09:33 +0000 2026",
-      "text": "美股涨的越高，crypto就越欢\n你说这中间有什么直接联系？因果关系？\n\n有人说这是流动性溢出？风险资产抬头？机构进入？\n\n怎么说呢？\n就跟川普当选总统后，川大智胜直接涨停一样",
-      "clean_text": "美股涨的越高，crypto就越欢\n你说这中间有什么直接联系？因果关系？\n\n有人说这是流动性溢出？风险资产抬头？机构进入？\n\n怎么说呢？\n就跟川普当选总统后，川大智胜直接涨停一样",
-      "favoriteCount": 15,
-      "viewCount": 4684,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.4,
-      "composite_score": 0.175,
-      "domain_id": "mm_liquidity"
+      "id": "2059495726263275574",
+      "text": "昨晚的单子给我打止损了，950接着来 $mu \n\n存储的利润率确实很夸张，也确实是AI瓶颈，但这两天的新闻也太不寻常了，感觉短期内都是情绪盘和获利盘，等着今晚美股开盘看看 🤣🤣 \n\n我是蚂蚁仓验证想法+吃费率而已，现货没动，各位别跟 https://t.co/RYWHseXWYg",
+      "createdAt": "Wed May 27 04:43:39 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 11,
+      "replyCount": 7,
+      "quoteCount": 1,
+      "viewCount": 14559,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2059495726263275574",
+      "isQuote": true,
+      "quoteId": "2059305082534150570",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2059495726263275574/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HJTLIrZa4AAy2qo.png"
+        }
+      ],
+      "clean_text": "昨晚的单子给我打止损了，950接着来 $mu \n\n存储的利润率确实很夸张，也确实是AI瓶颈，但这两天的新闻也太不寻常了，感觉短期内都是情绪盘和获利盘，等着今晚美股开盘看看 🤣🤣 \n\n我是蚂蚁仓验证想法+吃费率而已，现货没动，各位别跟 https://t.co/RYWHseXWYg",
+      "gold_score": 7.2,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2069666692582748170",
+      "text": "揭秘一下这篇文的research是怎么做的\n\n好几个小伙伴pm，问这篇文的怎么做 @okx 和ICE 的资料汇总和研究的。因为资料很分散，除了是在各大媒体站外，okx/ice自己的披露之外，大部分有价值的信息都在x上，尤其是 @star_okx 近期发的内容\n\n你需要结合着ice的历史、职能、近期的战略部署，以及okx近半年的变化来看（首先你可能得对ice是干什么的有一个大致的了解），而这些事情要串联起来就要一遍遍的关照着x、官媒、法规变化以及市场变化一起来看，才能稍微看出一些端倪。\n\n最直观的就是在各家交易所都有美股现货的基础上，为什么okx 不上自己的美股现货（永续和xstock不算）？是没有渠道吗？是没有牌照吗？ \n\nAI工具时代，最有价值的是能把信息串起来看成一个整体的思维框架\n\ngrok反正回答点问题还可以，要深入分析和研究，就呵呵了。。而其他的AI 工具，不是没办法拿到x的内容，就是分析框架有点一言难尽\n\n我就不说我用的是哪家了（免得你们说我打广告，然后我又没收广告费 🤣）我相信聪明的各位，真的想试用的话会自己找到的",
+      "createdAt": "Wed Jun 24 06:19:26 +0000 2026",
+      "language": "zh",
+      "retweetCount": 6,
+      "favoriteCount": 46,
+      "replyCount": 62,
+      "viewCount": 14342,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2069666692582748170",
+      "isQuote": true,
+      "quoteId": "2069370399935369542",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2069666692582748170/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HLjsiA2XsAAQXP5.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2069666692582748170/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HLjsiAhaEAA8yFl.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2069666692582748170/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HLjsiA1bEAA3uwf.jpg"
+        }
+      ],
+      "mentions": [
+        {
+          "screenName": "okx",
+          "name": "OKX",
+          "userId": "867617849208037377"
+        },
+        {
+          "screenName": "star_okx",
+          "name": "Star_OKX",
+          "userId": "2985599460"
+        }
+      ],
+      "clean_text": "揭秘一下这篇文的research是怎么做的\n\n好几个小伙伴pm，问这篇文的怎么做 @okx 和ICE 的资料汇总和研究的。因为资料很分散，除了是在各大媒体站外，okx/ice自己的披露之外，大部分有价值的信息都在x上，尤其是 @star_okx 近期发的内容\n\n你需要结合着ice的历史、职能、近期的战略部署，以及okx近半年的变化来看（首先你可能得对ice是干什么的有一个大致的了解），而这些事情要串联起来就要一遍遍的关照着x、官媒、法规变化以及市场变化一起来看，才能稍微看出一些端倪。\n\n最直观的就是在各家交易所都有美股现货的基础上，为什么okx 不上自己的美股现货（永续和xstock不算）？是没有渠道吗？是没有牌照吗？ \n\nAI工具时代，最有价值的是能把信息串起来看成一个整体的思维框架\n\ngrok反正回答点问题还可以，要深入分析和研究，就呵呵了。。而其他的AI 工具，不是没办法拿到x的内容，就是分析框架有点一言难尽\n\n我就不说我用的是哪家了（免得你们说我打广告，然后我又没收广告费 🤣）我相信聪明的各位，真的想试用的话会自己找到的",
+      "gold_score": 7.9,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2064560988784062647",
+      "text": "如果你觉得美国的杠杆产品有点夸张的话\n\n我今晚发的韩国杠杆使用情况将会打开你的眼界\n\n美股至少还能capex内循环一下，韩股的波段就靠外资",
+      "createdAt": "Wed Jun 10 04:11:12 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 11,
+      "replyCount": 4,
+      "viewCount": 6532,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2064560988784062647",
+      "isQuote": true,
+      "quoteId": "2064466175195504700",
+      "clean_text": "如果你觉得美国的杠杆产品有点夸张的话\n\n我今晚发的韩国杠杆使用情况将会打开你的眼界\n\n美股至少还能capex内循环一下，韩股的波段就靠外资",
+      "gold_score": 5.0,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2082371338673791437",
+      "text": "不要只盯着AI半导体\n美股这么大，资金这么多 —— 看看下一个资金流向的地方吧 ，你值得更好的\n\n医疗、金融和能源有好多好玩，未被x上的大神喊的\n你真有兴趣的，先让AI帮你分析： $LLY $TMO $EQT $UNH \n\n什么时候走？当你看到x上喊得铺天盖地的时候～ https://t.co/9HoGQgk1nh",
+      "createdAt": "Wed Jul 29 07:43:10 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 11,
+      "replyCount": 2,
+      "viewCount": 2852,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2082371338673791437",
+      "isQuote": true,
+      "quoteId": "2078764171265724655",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2082371338673791437/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HOYOoYYaUAA8HnE.png"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2082371338673791437/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HOYQjVFaAAAn3Fd.png"
+        }
+      ],
+      "clean_text": "不要只盯着AI半导体\n美股这么大，资金这么多 —— 看看下一个资金流向的地方吧 ，你值得更好的\n\n医疗、金融和能源有好多好玩，未被x上的大神喊的\n你真有兴趣的，先让AI帮你分析： $LLY $TMO $EQT $UNH \n\n什么时候走？当你看到x上喊得铺天盖地的时候～ https://t.co/9HoGQgk1nh",
+      "gold_score": 6.6,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2087373744922865878",
+      "text": "今天被 @bc1qDave 把旧文翻出来了 😂\n\n说几个之前没提到的事：\n\n1. 为什么文章标题叫“永续十年，幕还未谢” \n\n那时候刚好听到Bitmex被收购的事情受阻，撑不下去的消息 - 觉得有点唏嘘\n\n7月就出来这个消息\n\n2.为什么封面是袁泉的回眸图？\n\n建议你去看《大上海》，你就只能体会这个心情了\n\n当年的恋人分隔，再见只能是路人 - 就跟当年一眼见到合约陷进去的自己一样\n\n这篇文从流量上来说确实有点可惜 - 可以说是系统性对永续合约十年的周期变化的体系化总结，对于接下来的股票合约有很多借鉴意义（我的很多策略都是在这个基础上形成的）\n\n只可惜因为x的算法，内容质量和市场原因没办法出圈\n\n今天看回来，什么出不出圈，能够收获两三知音，足矣",
+      "createdAt": "Wed Aug 12 03:00:56 +0000 2026",
+      "language": "zh",
+      "retweetCount": 3,
+      "favoriteCount": 13,
+      "replyCount": 100,
+      "viewCount": 4506,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2087373744922865878",
+      "isQuote": true,
+      "quoteId": "2047556448562073604",
+      "mentions": [
+        {
+          "screenName": "bc1qDave",
+          "name": "Dave.𝟎𝐱U",
+          "userId": "1713112485082050560"
+        }
+      ],
+      "clean_text": "今天被 @bc1qDave 把旧文翻出来了 😂\n\n说几个之前没提到的事：\n\n1. 为什么文章标题叫“永续十年，幕还未谢” \n\n那时候刚好听到Bitmex被收购的事情受阻，撑不下去的消息 - 觉得有点唏嘘\n\n7月就出来这个消息\n\n2.为什么封面是袁泉的回眸图？\n\n建议你去看《大上海》，你就只能体会这个心情了\n\n当年的恋人分隔，再见只能是路人 - 就跟当年一眼见到合约陷进去的自己一样\n\n这篇文从流量上来说确实有点可惜 - 可以说是系统性对永续合约十年的周期变化的体系化总结，对于接下来的股票合约有很多借鉴意义（我的很多策略都是在这个基础上形成的）\n\n只可惜因为x的算法，内容质量和市场原因没办法出圈\n\n今天看回来，什么出不出圈，能够收获两三知音，足矣",
+      "gold_score": 7.3,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2102300309657960733",
+      "text": "上次说的 #stockperps 的流动性调查报告有个阶段性成果了 \n\n这次的对象找的是最难弄的，pre ipo标的：@openai 和 @AnthropicAI \n\n为什么难呢？因为它们两没有现货市场，也没有第三方指导价，全靠自己的盘口 - 假设这两个标的的流动性都能做得好，那剩下的估计就很厉害了～ \n\n也算是挑着软柿子来捏了 🤣 \n\n结果其实也不出意外，就是这两标的的流动性还是比较一般的（+/-20bps 20k美金），但是在binance上已经算是行业最好的流动性池了（至少大单还能成交）\n\n因为流动性比较薄 ，但市场叙事又很足 - 这看起来貌似比小盘股还好玩，但实际上，交易所上这类标的可能是亏钱？或者说是不赚钱的\n\n具体原因嘛？自己去看全文吧～ \n\n全文：https://agintender.substack.com/p/openai-anthropic-pre-ipo-stock-perps?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=web \n\nps：这篇文是各位substack群友贡献的经费，没拿交易所一分钱，所以还是比较客观独立的。 感谢各位啦～",
+      "createdAt": "Tue Sep 22 07:33:47 +0000 2026",
+      "retweetCount": 2,
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "viewCount": 0,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 36086,
+      "isQuote": true,
+      "retweetedStatus": {
+        "id": "2102234686252875905",
+        "text": "上次说的 #stockperps 的流动性调查报告有个阶段性成果了 \n\n这次的对象找的是最难弄的，pre ipo标的：@openai 和 @AnthropicAI \n\n为什么难呢？因为它们两没有现货市场，也没有第三方指导价，全靠自己的盘口 - 假设这两个标的的流动性都能做得好，那剩下的估计就很厉害了～ \n\n也算是挑着软柿子来捏了 🤣 \n\n结果其实也不出意外，就是这两标的的流动性还是比较一般的（+/-20bps 20k美金），但是在binance上已经算是行业最好的流动性池了（至少大单还能成交）\n\n因为流动性比较薄 ，但市场叙事又很足 - 这看起来貌似比小盘股还好玩，但实际上，交易所上这类标的可能是亏钱？或者说是不赚钱的\n\n具体原因嘛？自己去看全文吧～ \n\n全文：https://agintender.substack.com/p/openai-anthropic-pre-ipo-stock-perps?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=web \n\nps：这篇文是各位substack群友贡献的经费，没拿交易所一分钱，所以还是比较客观独立的。 感谢各位啦～",
+        "createdAt": "Tue Sep 22 03:13:01 +0000 2026",
+        "favoriteCount": 0,
+        "replyCount": 0,
+        "viewCount": 0,
+        "userScreenName": "agintender",
+        "userName": "danny",
+        "userIdStr": "913320844411019265",
+        "userFollowers": 36084,
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://x.com/agintender/status/2102234686252875905/photo/1",
+            "thumbUrl": "https://pbs.twimg.com/media/HSyht3tbwAA6x9A.jpg"
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://t.co/cg0sjhME1h",
+            "displayUrl": "x.com/agintender/sta…"
+          }
+        ]
+      },
+      "quotedStatus": {
+        "id": "2093612696906400063",
+        "text": "🤣 各位大佬们别催了哈\n\n这篇研究各家stocks和stock perp流动性的文因为没有人愿意赞助，所以进展得比较慢一些\n\n但是就目前看起来的情况…. 还真的是一言难尽\n\n看样子就算是调研完了，也不敢在x上发出来，会得罪好多人\n\n等不及的小伙伴，先去看算法吧 - https://agintender.substack.com/p/nasdaqstock-perporacle247?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=post%20viewer\n\n我把stock perp弄成一个三部曲的结构：\n架构 - 算法 - 流动性",
+        "createdAt": "Sat Aug 29 08:12:19 +0000 2026",
+        "favoriteCount": 0,
+        "replyCount": 0,
+        "viewCount": 0,
+        "userScreenName": "agintender",
+        "userName": "danny",
+        "userIdStr": "913320844411019265",
+        "userFollowers": 35560,
+        "urls": [
+          {
+            "url": "https://t.co/vgnbgbTbCk",
+            "displayUrl": "agintender.substack.com/p/nasdaqstock-…"
+          },
+          {
+            "url": "https://t.co/5w2FzHOIsH",
+            "displayUrl": "x.com/agintender/sta…"
+          }
+        ]
+      },
+      "clean_text": "上次说的 #stockperps 的流动性调查报告有个阶段性成果了 \n\n这次的对象找的是最难弄的，pre ipo标的：@openai 和 @AnthropicAI \n\n为什么难呢？因为它们两没有现货市场，也没有第三方指导价，全靠自己的盘口 - 假设这两个标的的流动性都能做得好，那剩下的估计就很厉害了～ \n\n也算是挑着软柿子来捏了 🤣 \n\n结果其实也不出意外，就是这两标的的流动性还是比较一般的（+/-20bps 20k美金），但是在binance上已经算是行业最好的流动性池了（至少大单还能成交）\n\n因为流动性比较薄 ，但市场叙事又很足 - 这看起来貌似比小盘股还好玩，但实际上，交易所上这类标的可能是亏钱？或者说是不赚钱的\n\n具体原因嘛？自己去看全文吧～ \n\n全文：https://agintender.substack.com/p/openai-anthropic-pre-ipo-stock-perps?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=web \n\nps：这篇文是各位substack群友贡献的经费，没拿交易所一分钱，所以还是比较客观独立的。 感谢各位啦～",
+      "gold_score": 7.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2102234686252875905",
+      "text": "上次说的 #stockperps 的流动性调查报告有个阶段性成果了 \n\n这次的对象找的是最难弄的，pre ipo标的：@openai 和 @AnthropicAI \n\n为什么难呢？因为它们两没有现货市场，也没有第三方指导价，全靠自己的盘口 - 假设这两个标的的流动性都能做得好，那剩下的估计就很厉害了～ \n\n也算是挑着软柿子来捏了 🤣 \n\n结果其实也不出意外，就是这两标的的流动性还是比较一般的（+/-20bps 20k美金），但是在binance上已经算是行业最好的流动性池了（至少大单还能成交）\n\n因为流动性比较薄 ，但市场叙事又很足 - 这看起来貌似比小盘股还好玩，但实际上，交易所上这类标的可能是亏钱？或者说是不赚钱的\n\n具体原因嘛？自己去看全文吧～ \n\n全文：https://agintender.substack.com/p/openai-anthropic-pre-ipo-stock-perps?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=web \n\nps：这篇文是各位substack群友贡献的经费，没拿交易所一分钱，所以还是比较客观独立的。 感谢各位啦～",
+      "createdAt": "Tue Sep 22 03:13:01 +0000 2026",
+      "retweetCount": 2,
+      "favoriteCount": 5,
+      "replyCount": 1,
+      "viewCount": 4147,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 36084,
+      "isQuote": true,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2102234686252875905/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HSyht3tbwAA6x9A.jpg"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://t.co/cg0sjhME1h",
+          "displayUrl": "x.com/agintender/sta…"
+        }
+      ],
+      "quotedStatus": {
+        "id": "2093612696906400063",
+        "text": "🤣 各位大佬们别催了哈\n\n这篇研究各家stocks和stock perp流动性的文因为没有人愿意赞助，所以进展得比较慢一些\n\n但是就目前看起来的情况…. 还真的是一言难尽\n\n看样子就算是调研完了，也不敢在x上发出来，会得罪好多人\n\n等不及的小伙伴，先去看算法吧 - https://agintender.substack.com/p/nasdaqstock-perporacle247?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=post%20viewer\n\n我把stock perp弄成一个三部曲的结构：\n架构 - 算法 - 流动性",
+        "createdAt": "Sat Aug 29 08:12:19 +0000 2026",
+        "retweetCount": 3,
+        "favoriteCount": 28,
+        "replyCount": 37,
+        "quoteCount": 1,
+        "viewCount": 19657,
+        "userScreenName": "agintender",
+        "userName": "danny",
+        "userIdStr": "913320844411019265",
+        "userFollowers": 35560,
+        "urls": [
+          {
+            "url": "https://t.co/vgnbgbTbCk",
+            "displayUrl": "agintender.substack.com/p/nasdaqstock-…"
+          },
+          {
+            "url": "https://t.co/5w2FzHOIsH",
+            "displayUrl": "x.com/agintender/sta…"
+          }
+        ]
+      },
+      "language": "zh",
+      "conversationId": "2102234686252875905",
+      "quoteId": "2093612696906400063",
+      "hashtags": [
+        "stockperps"
+      ],
+      "mentions": [
+        {
+          "screenName": "OpenAI",
+          "name": "OpenAI",
+          "userId": "4398626122"
+        },
+        {
+          "screenName": "AnthropicAI",
+          "name": "Anthropic",
+          "userId": "1353836358901501952"
+        }
+      ],
+      "clean_text": "上次说的 #stockperps 的流动性调查报告有个阶段性成果了 \n\n这次的对象找的是最难弄的，pre ipo标的：@openai 和 @AnthropicAI \n\n为什么难呢？因为它们两没有现货市场，也没有第三方指导价，全靠自己的盘口 - 假设这两个标的的流动性都能做得好，那剩下的估计就很厉害了～ \n\n也算是挑着软柿子来捏了 🤣 \n\n结果其实也不出意外，就是这两标的的流动性还是比较一般的（+/-20bps 20k美金），但是在binance上已经算是行业最好的流动性池了（至少大单还能成交）\n\n因为流动性比较薄 ，但市场叙事又很足 - 这看起来貌似比小盘股还好玩，但实际上，交易所上这类标的可能是亏钱？或者说是不赚钱的\n\n具体原因嘛？自己去看全文吧～ \n\n全文：https://agintender.substack.com/p/openai-anthropic-pre-ipo-stock-perps?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=web \n\nps：这篇文是各位substack群友贡献的经费，没拿交易所一分钱，所以还是比较客观独立的。 感谢各位啦～",
+      "gold_score": 8.6,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2099710553409323377",
+      "text": "现在 bstocks支持 $BNC bncb 这个底层逻辑就不一样了\n现在看看 @flapdotsh 能多快打出第一个金狗\n然后能把 bncb 反馈到 $BNC 上 https://x.com/agintender/status/2098644830184505521",
+      "createdAt": "Tue Sep 15 04:03:01 +0000 2026",
+      "retweetCount": 1,
+      "favoriteCount": 8,
+      "replyCount": 2,
+      "viewCount": 5949,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 36054,
+      "isQuote": true,
+      "urls": [
+        {
+          "url": "https://t.co/WABkpZIN3K",
+          "displayUrl": "x.com/agintender/sta…"
+        }
+      ],
+      "quotedStatus": {
+        "id": "2098644830184505521",
+        "text": "well 为什么说，我现在不是很建议大家看到 $BNC 的折价就冲进去，主要是因为\n\n1. 从架构上，10X 创始合伙人 Hans Thomas在 2026 年 3 月 20 日正式辞任董事了，但是BNC 与 10X Capital Partners 签了那份 20 年 Asset Management Agreement（AMA)的纠纷还没完结  - 那是一份按照现价价值18m美金的管理费合同。。。  （是cea市值的1/10 ） \n\n2.  10x capital关联的实体（10X LLC、10X Capital Partners LLC 和 10X BNB Cayman Sponsor）应该持有不少的 $bnc 股票（至于为什么名字不在5%的披露名单上，因为10x已经把股票和warrant都分散在不同的实体了）\n\n至少，0X LLC 最后公开确认持有 831,683 股 BNC （warrant暂时不重要，因为行权价在10美金左右）\n\n3. BNC的飞轮在defi/meme侧 目前还没办法转起来 -懂得都懂 \n\n4. BNC 在 Nasdaq GEMX 的指定做市 allocation 给了 Jane Street；在 Nasdaq ISE 则给了 Susquehanna Securities，他们二位的仓位在近7日还没有增长 ， 说明华尔街/散户还不是很认可\n\n5. DAT的飞轮在于nav - 你已知·到了10美金，就有人拿老股砸你，现在的价格是5美金左右，流动性还一般，还有内部打架，nav还折价成这个样子。。 \n\n给你的话，你会咋办？ \n\n题外话，4stock 和 bnt4 的操盘我也是醉了。。是怎么做到这样的，都不是脱节，而是连节都没有装好就上的。。。\n \n好好的DAT nav飞轮，只剩下DAT",
+        "createdAt": "Sat Sep 12 05:28:13 +0000 2026",
+        "favoriteCount": 0,
+        "replyCount": 0,
+        "viewCount": 0,
+        "userScreenName": "agintender",
+        "userName": "danny",
+        "userIdStr": "913320844411019265",
+        "userFollowers": 36030
+      },
+      "language": "zh",
+      "conversationId": "2099710553409323377",
+      "quoteId": "2098644830184505521",
+      "mentions": [
+        {
+          "screenName": "flapdotsh",
+          "name": "Flap 🦋",
+          "userId": "1749114887807320064"
+        }
+      ],
+      "clean_text": "现在 bstocks支持 $BNC bncb 这个底层逻辑就不一样了\n现在看看 @flapdotsh 能多快打出第一个金狗\n然后能把 bncb 反馈到 $BNC 上 https://x.com/agintender/status/2098644830184505521",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2094627670827098369",
+      "text": "如果你吃透了binance和https://t.co/hnWBQ12p9P 的stock perp在休市的算法，并且开始了解其他所的机制\n\n你会发现，外边的雨云是这里飘过去的\n\n恭喜你，除了可以每天吃到开盘前的“理财收益”，你还可以在 @okx @MEXC @Gate @Bybit_Official 吃到开市和闭市的收敛收益…\n\n一篇关于 @Bybit_Official @MEXC @tradexyz @Gate @okx 的stock perp算法解析：\n\nhttps://t.co/pKaxcbcM0z",
+      "createdAt": "Tue Sep 01 03:25:27 +0000 2026",
+      "language": "zh",
+      "retweetCount": 10,
+      "favoriteCount": 45,
+      "replyCount": 24,
+      "quoteCount": 1,
+      "viewCount": 16880,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2094627670827098369",
+      "isQuote": true,
+      "quoteId": "2094364548362805637",
+      "urls": [
+        {
+          "url": "https://trade.xyz",
+          "displayUrl": "trade.xyz"
+        }
+      ],
+      "mentions": [
+        {
+          "screenName": "okx",
+          "name": "OKX",
+          "userId": "867617849208037377"
+        },
+        {
+          "screenName": "MEXC",
+          "name": "MEXC",
+          "userId": "978566222282444800"
+        },
+        {
+          "screenName": "Gate",
+          "name": "Gate",
+          "userId": "912539725071777792"
+        },
+        {
+          "screenName": "Bybit_Official",
+          "name": "Bybit",
+          "userId": "999947328621395968"
+        },
+        {
+          "screenName": "Bybit_Official",
+          "name": "Bybit",
+          "userId": "999947328621395968"
+        },
+        {
+          "screenName": "MEXC",
+          "name": "MEXC",
+          "userId": "978566222282444800"
+        }
+      ],
+      "clean_text": "如果你吃透了binance和https://t.co/hnWBQ12p9P 的stock perp在休市的算法，并且开始了解其他所的机制\n\n你会发现，外边的雨云是这里飘过去的\n\n恭喜你，除了可以每天吃到开盘前的“理财收益”，你还可以在 @okx @MEXC @Gate @Bybit_Official 吃到开市和闭市的收敛收益…\n\n一篇关于 @Bybit_Official @MEXC @tradexyz @Gate @okx 的stock perp算法解析：\n\nhttps://t.co/pKaxcbcM0z",
+      "gold_score": 7.9,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2059305082534150570",
+      "text": "难道整个ct就只有我一个人在空 $mu ？！\n\n我的逻辑很简单：\nmicron 美光无疑是很好的标的，但是这次破万亿就是特朗普周末喊出来的，然后周一美股不开市，周二开始“补涨”\n\n美光，存储都有美好的未来，但是是靠业绩打出来的\nearning call在6月尾呢～ \n\n我蚂蚁仓试试水温，大家当看个笑话就好 https://t.co/FRYZcaMQfx",
+      "createdAt": "Tue May 26 16:06:06 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 29,
+      "replyCount": 36,
+      "quoteCount": 1,
+      "viewCount": 70734,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2059305082534150570",
+      "isQuote": true,
+      "quoteId": "2059282660355154356",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2059305082534150570/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HJQe0o_bEAAU1WH.png"
+        }
+      ],
+      "clean_text": "难道整个ct就只有我一个人在空 $mu ？！\n\n我的逻辑很简单：\nmicron 美光无疑是很好的标的，但是这次破万亿就是特朗普周末喊出来的，然后周一美股不开市，周二开始“补涨”\n\n美光，存储都有美好的未来，但是是靠业绩打出来的\nearning call在6月尾呢～ \n\n我蚂蚁仓试试水温，大家当看个笑话就好 https://t.co/FRYZcaMQfx",
+      "gold_score": 7.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1922153064271585373",
+      "text": "@BrianChiu1108 @ethsign @sign 为了保持分析的客观性 反正仓位也不大 赚了就行\n\n另外，我应该是近期第一个拿数据喊 $sign 的账号吧\n\n等今晚美股看盘后，再决定是不是冲进去",
+      "createdAt": "Tue May 13 04:52:57 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "viewCount": 85,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1922127623213482026",
+      "isReply": true,
+      "replyId": "1922148846009790546",
+      "mentions": [
+        {
+          "screenName": "BrianChiu1108",
+          "name": "Briaj Djj",
+          "userId": "2098168305286832128"
+        },
+        {
+          "screenName": "ethsign",
+          "name": "EthSign",
+          "userId": "1703825859788828672"
+        },
+        {
+          "screenName": "sign",
+          "name": "Sign",
+          "userId": "1366569623303254021"
+        }
+      ],
+      "clean_text": "@BrianChiu1108 @ethsign @sign 为了保持分析的客观性 反正仓位也不大 赚了就行\n\n另外，我应该是近期第一个拿数据喊 $sign 的账号吧\n\n等今晚美股看盘后，再决定是不是冲进去",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
     },
     {
       "id": "2054249396183740464",
-      "createdAt": "Tue May 12 17:16:36 +0000 2026",
       "text": "给那些现在看到美股新高想冲进去的小伙伴看看\n\n虽然写的是预测市场，当算法和逻辑适用于各行各业\n\n期望值\n基础概率\n贝叶斯\n…..",
-      "clean_text": "给那些现在看到美股新高想冲进去的小伙伴看看\n\n虽然写的是预测市场，当算法和逻辑适用于各行各业\n\n期望值\n基础概率\n贝叶斯\n…..",
+      "createdAt": "Tue May 12 17:16:36 +0000 2026",
+      "language": "zh",
+      "retweetCount": 9,
       "favoriteCount": 54,
+      "replyCount": 4,
       "viewCount": 18256,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.3,
-      "composite_score": 0.15,
-      "domain_id": "trader_mindset_essays"
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2054249396183740464",
+      "isQuote": true,
+      "quoteId": "2031005130925982116",
+      "clean_text": "给那些现在看到美股新高想冲进去的小伙伴看看\n\n虽然写的是预测市场，当算法和逻辑适用于各行各业\n\n期望值\n基础概率\n贝叶斯\n…..",
+      "gold_score": 6.0,
+      "domain_id": "04_contracts_stock_perps"
     },
     {
-      "id": "2100823049205649918",
-      "createdAt": "Fri Sep 18 05:43:40 +0000 2026",
-      "text": "留给stock perps的机会就更多了 🤣 https://x.com/cointelegraph/status/2100738361992315117",
-      "clean_text": "留给stock perps的机会就更多了 🤣",
+      "id": "1939934619761078478",
+      "text": "同感，只有大池子兼容小池子，反不过来的\n\n链上美股没有波动性就是渣渣，所以归宿还是要perp/循环贷的打法",
+      "createdAt": "Tue Jul 01 06:30:30 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 4,
+      "replyCount": 1,
+      "viewCount": 1766,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1939934619761078478",
+      "isQuote": true,
+      "quoteId": "1939911394977321245",
+      "clean_text": "同感，只有大池子兼容小池子，反不过来的\n\n链上美股没有波动性就是渣渣，所以归宿还是要perp/循环贷的打法",
+      "gold_score": 5.4,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1939924388083622029",
+      "text": "@Michael_Liu93 我猜会涌现一批专业机构mm入场\n\n非蓝筹美股流动性不好，那在链上流动性就更差了；如果流动性不足，上永续合约估计就不容易，所以第一波应该还是那些好一点的标的\n\n至于那些好的美股都有mm，等这些机构进来提供流动性，才会更刺激\n\n盲猜这也是之前Jump强势回归的原因吧\n\n赞同炒山寨的会炒链上美股",
+      "createdAt": "Tue Jul 01 05:49:50 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 7,
+      "replyCount": 1,
+      "viewCount": 2049,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1939902798839099604",
+      "isReply": true,
+      "replyId": "1939902798839099604",
+      "mentions": [
+        {
+          "screenName": "Michael_Liu93",
+          "name": "憨厚的麦总",
+          "userId": "1525742352006287361"
+        }
+      ],
+      "clean_text": "@Michael_Liu93 我猜会涌现一批专业机构mm入场\n\n非蓝筹美股流动性不好，那在链上流动性就更差了；如果流动性不足，上永续合约估计就不容易，所以第一波应该还是那些好一点的标的\n\n至于那些好的美股都有mm，等这些机构进来提供流动性，才会更刺激\n\n盲猜这也是之前Jump强势回归的原因吧\n\n赞同炒山寨的会炒链上美股",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2100584307274502403",
+      "text": "虽然是tokenized stock已经开跑一段时间内。但是SEC这个order也算是正名了tokenized stock\n\ntokenized stock amm + lending 的基础，这就让 stock perps就更加好玩了\n\n小盘股的链上发行和流通，加上perps - 而且还是隔着两个市场，这套利的传导会更加好玩\n\n友情提示：很多penny stock可以一直增发股票的哦～ 玩得时候要注意",
+      "createdAt": "Thu Sep 17 13:55:00 +0000 2026",
+      "retweetCount": 1,
+      "favoriteCount": 11,
+      "replyCount": 2,
+      "viewCount": 4250,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 36026,
+      "isQuote": true,
+      "urls": [
+        {
+          "url": "https://t.co/AJCIdHmTRr",
+          "displayUrl": "x.com/secgov/status/…"
+        }
+      ],
+      "quotedStatus": {
+        "id": "2100571317128888364",
+        "text": "🚨 TODAY: The SEC issued an order granting temporary, conditional exemptive relief to Tokenized Securities Venues from the definition of “exchange” in the Exchange Act to trade tokenized NMS stock using innovative permissioned automated market makers and liquidity pools.  ",
+        "createdAt": "Thu Sep 17 13:03:23 +0000 2026",
+        "retweetCount": 2503,
+        "favoriteCount": 10482,
+        "replyCount": 814,
+        "quoteCount": 1244,
+        "viewCount": 3440483,
+        "userScreenName": "SECGov",
+        "userName": "U.S. Securities and Exchange Commission",
+        "userIdStr": "18481050",
+        "userFollowers": 808106,
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://x.com/SECGov/status/2100571317128888364/photo/1",
+            "thumbUrl": "https://pbs.twimg.com/media/HSa4Wa1WIAESzaq.jpg"
+          }
+        ]
+      },
+      "language": "zh",
+      "conversationId": "2100584307274502403",
+      "quoteId": "2100571317128888364",
+      "clean_text": "虽然是tokenized stock已经开跑一段时间内。但是SEC这个order也算是正名了tokenized stock\n\ntokenized stock amm + lending 的基础，这就让 stock perps就更加好玩了\n\n小盘股的链上发行和流通，加上perps - 而且还是隔着两个市场，这套利的传导会更加好玩\n\n友情提示：很多penny stock可以一直增发股票的哦～ 玩得时候要注意",
+      "gold_score": 7.3,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1983737482819858875",
+      "text": "@0xcryptowizard 不，是只剩下咱们在这里 p 了，人家都回美股了 - 扎心了",
+      "createdAt": "Thu Oct 30 03:27:26 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 5,
+      "replyCount": 0,
+      "viewCount": 2125,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1983715080790536425",
+      "isReply": true,
+      "replyId": "1983715080790536425",
+      "mentions": [
+        {
+          "screenName": "0xcryptowizard",
+          "name": "0xWizard",
+          "userId": "1195728139898376193"
+        }
+      ],
+      "clean_text": "@0xcryptowizard 不，是只剩下咱们在这里 p 了，人家都回美股了 - 扎心了",
+      "gold_score": 5.0,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1922874807256825928",
+      "text": "@OwenJin12 如果pre trump era 10y4.5% 肯定空进去了 管他什么美股加密货币\n\n小仓位去试试水\n\n但是e多军永不为奴 😂",
+      "createdAt": "Thu May 15 04:40:53 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 1,
+      "replyCount": 1,
+      "viewCount": 566,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1922860615741133298",
+      "isReply": true,
+      "replyId": "1922860615741133298",
+      "mentions": [
+        {
+          "screenName": "OwenJin12",
+          "name": "Owen.btc 🟧",
+          "userId": "1530518795508363267"
+        }
+      ],
+      "clean_text": "@OwenJin12 如果pre trump era 10y4.5% 肯定空进去了 管他什么美股加密货币\n\n小仓位去试试水\n\n但是e多军永不为奴 😂",
+      "gold_score": 5.0,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2054995060135961087",
+      "text": "嗯 看样子美股涨的差不多了，分歧也开始出现了，掐指一算，时间也差不多了\n\n@youcanshortit 下周会上一批美股供大家做空\n\n大家有想做空的标的吗？ \n\n你说做空为啥不去合约？开玩笑，你为啥要怼着这么高的费率去做？ 反正我是怕了….",
+      "createdAt": "Thu May 14 18:39:36 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 8,
+      "replyCount": 6,
+      "viewCount": 3104,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2054995060135961087",
+      "mentions": [
+        {
+          "screenName": "youcanshortit",
+          "name": "You Can Short It",
+          "userId": "1496754976181583872"
+        }
+      ],
+      "clean_text": "嗯 看样子美股涨的差不多了，分歧也开始出现了，掐指一算，时间也差不多了\n\n@youcanshortit 下周会上一批美股供大家做空\n\n大家有想做空的标的吗？ \n\n你说做空为啥不去合约？开玩笑，你为啥要怼着这么高的费率去做？ 反正我是怕了….",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2054734332971864147",
+      "text": "😄 有小伙伴问我，你咋不写下美股？大宗？ 期权？\n\n加密都不行了，你就别只写合约和crypto了…\n\n我就说有没有可能我原来就是“看表”写故事的老灯（aka 你要看我是买方还是卖方，并且在什么阶段）",
+      "createdAt": "Thu May 14 01:23:34 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 14,
+      "replyCount": 6,
+      "viewCount": 5818,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2054734332971864147",
+      "isQuote": true,
+      "quoteId": "1991890344653570186",
+      "clean_text": "😄 有小伙伴问我，你咋不写下美股？大宗？ 期权？\n\n加密都不行了，你就别只写合约和crypto了…\n\n我就说有没有可能我原来就是“看表”写故事的老灯（aka 你要看我是买方还是卖方，并且在什么阶段）",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2052274986790875155",
+      "text": "看到推上各种美股新高，AI无敌，加密回暖，sat0机制创新…\n\n不敢说一片祥和，说是人声鼎沸都不过分好伐….\n\n立夏已致，小满不远\n芒种不雨，夏至踏来\n大暑之后，必有大寒 https://t.co/2Qh1ESsNRF",
+      "createdAt": "Thu May 07 06:31:00 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 24,
+      "replyCount": 7,
+      "viewCount": 7200,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2052274986790875155",
+      "isQuote": true,
+      "quoteId": "2018357168895135902",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2052274986790875155/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HHslOD8X0AEC4gT.jpg"
+        }
+      ],
+      "clean_text": "看到推上各种美股新高，AI无敌，加密回暖，sat0机制创新…\n\n不敢说一片祥和，说是人声鼎沸都不过分好伐….\n\n立夏已致，小满不远\n芒种不雨，夏至踏来\n大暑之后，必有大寒 https://t.co/2Qh1ESsNRF",
+      "gold_score": 6.6,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2052194090733748639",
+      "text": "美股涨的越高，crypto就越欢\n你说这中间有什么直接联系？因果关系？\n\n有人说这是流动性溢出？风险资产抬头？机构进入？\n\n怎么说呢？\n就跟川普当选总统后，川大智胜直接涨停一样",
+      "createdAt": "Thu May 07 01:09:33 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 15,
+      "replyCount": 6,
+      "viewCount": 4684,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2052194090733748639",
+      "clean_text": "美股涨的越高，crypto就越欢\n你说这中间有什么直接联系？因果关系？\n\n有人说这是流动性溢出？风险资产抬头？机构进入？\n\n怎么说呢？\n就跟川普当选总统后，川大智胜直接涨停一样",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2062490423617261630",
+      "text": "关于中国国务院发的837号令《关于对外投资的规定》\n\n有鉴于太多pm了，我在这里统一说下吧\n\n这个837号行政令应该是这几年最严格的对外投资行政令\n\n首先它把主体扩展到居民个人的层面（不再是组织/企业） - 对，就是在屏幕前的你\n\n2. 资产类别基本包括了你知道的一切，什么股票（美股，未上市），基金，加密货币，银行账户的外汇等等\n\n3. 要你干啥呢？要披露和备案… （涉及国家安全的还要批准…）\n\n4. 处罚是啥：没收违法所得 + 投资额的0.1-0.5%\n\n5. 里面还加了个涉及国家安全的条款，至于啥是国家安全？ \n\n基本的我就不多说了- 什么在之前在futu老虎开过户买美股的，这类信息一定会同步到的… \n\n而那些在新加坡拿着EP开户（或者香港身份）买美股的… 新加坡是CRS参与国…同步就是时间问题\n\n除非你很专业，要不然从资产端很难做账的，从税务身份可能还有点戏\n\n7月1号开跑",
+      "createdAt": "Thu Jun 04 11:03:30 +0000 2026",
+      "language": "zh",
+      "retweetCount": 6,
+      "favoriteCount": 41,
+      "replyCount": 33,
+      "quoteCount": 2,
+      "viewCount": 25797,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2062490423617261630",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2062490423617261630/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HJ9wGvmb0AArxNU.jpg"
+        }
+      ],
+      "clean_text": "关于中国国务院发的837号令《关于对外投资的规定》\n\n有鉴于太多pm了，我在这里统一说下吧\n\n这个837号行政令应该是这几年最严格的对外投资行政令\n\n首先它把主体扩展到居民个人的层面（不再是组织/企业） - 对，就是在屏幕前的你\n\n2. 资产类别基本包括了你知道的一切，什么股票（美股，未上市），基金，加密货币，银行账户的外汇等等\n\n3. 要你干啥呢？要披露和备案… （涉及国家安全的还要批准…）\n\n4. 处罚是啥：没收违法所得 + 投资额的0.1-0.5%\n\n5. 里面还加了个涉及国家安全的条款，至于啥是国家安全？ \n\n基本的我就不多说了- 什么在之前在futu老虎开过户买美股的，这类信息一定会同步到的… \n\n而那些在新加坡拿着EP开户（或者香港身份）买美股的… 新加坡是CRS参与国…同步就是时间问题\n\n除非你很专业，要不然从资产端很难做账的，从税务身份可能还有点戏\n\n7月1号开跑",
+      "gold_score": 7.9,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1945851583507656956",
+      "text": "2个月多的时间  \n美股的eth 循环贷来了，btcs 看一下",
+      "createdAt": "Thu Jul 17 14:22:24 +0000 2025",
+      "language": "zh",
+      "retweetCount": 1,
       "favoriteCount": 3,
-      "viewCount": 3102,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.2,
-      "composite_score": 0.125,
-      "domain_id": "trader_mindset_essays"
+      "replyCount": 2,
+      "viewCount": 2746,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1945851583507656956",
+      "isQuote": true,
+      "quoteId": "1919293660849692779",
+      "clean_text": "2个月多的时间  \n美股的eth 循环贷来了，btcs 看一下",
+      "gold_score": 5.0,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2016883932399104006",
+      "text": "当我们在说“加密不行了”？我们到底想表达什么？\n\n是价格不行了？还是打开方式错了？\n\n致敬 @0xPickleCati 的雄文，写了一篇项目方视角的熊市自high指南（也算是给自己打打气～）\n\n没有项目方，没有协议，哪来的行业\n对于二级交易员来说，交易标的可以是无所谓，不喜欢的话，就换下一个，快进快出\n\n但是项目方不是这样的，兢兢业业，吭哧吭哧做了2年，写代码，做宣发，融资，跑会等等，结果等到项目成熟了，发现市场不好，交易所各种刁难，二级不买账 、agency砍菜头etc \n加上meme当道，如果不是韧性和信仰，在熊市要怎么能扛下去？\n\n不是大家都想low float，high fdv - 这个是大部分人没得选，投入了这么多时间，精力和金钱，你能怎么就放弃吗？尤其是在越过一个熊市后，发现还是一轮熊市。。。你是散户/交易员，你能去美股，贵金属，etc，但我们不能～ \n\n我不指望这篇文章会有什么大反响，毕竟我做的项目就一塌糊涂，没什么说服力，但除了算法和角度，身为人，我们还有情绪 （被 @hongkongdoll 的文感染了）和那一口气\n\n愿我们始终能为自己的主权一直做抗争",
+      "createdAt": "Thu Jan 29 14:39:36 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 18,
+      "replyCount": 4,
+      "viewCount": 4341,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2016883932399104006",
+      "isQuote": true,
+      "quoteId": "2016813024451907974",
+      "mentions": [
+        {
+          "screenName": "0xPickleCati",
+          "name": "Pickle Cat",
+          "userId": "1651961782208954373"
+        }
+      ],
+      "clean_text": "当我们在说“加密不行了”？我们到底想表达什么？\n\n是价格不行了？还是打开方式错了？\n\n致敬 @0xPickleCati 的雄文，写了一篇项目方视角的熊市自high指南（也算是给自己打打气～）\n\n没有项目方，没有协议，哪来的行业\n对于二级交易员来说，交易标的可以是无所谓，不喜欢的话，就换下一个，快进快出\n\n但是项目方不是这样的，兢兢业业，吭哧吭哧做了2年，写代码，做宣发，融资，跑会等等，结果等到项目成熟了，发现市场不好，交易所各种刁难，二级不买账 、agency砍菜头etc \n加上meme当道，如果不是韧性和信仰，在熊市要怎么能扛下去？\n\n不是大家都想low float，high fdv - 这个是大部分人没得选，投入了这么多时间，精力和金钱，你能怎么就放弃吗？尤其是在越过一个熊市后，发现还是一轮熊市。。。你是散户/交易员，你能去美股，贵金属，etc，但我们不能～ \n\n我不指望这篇文章会有什么大反响，毕竟我做的项目就一塌糊涂，没什么说服力，但除了算法和角度，身为人，我们还有情绪 （被 @hongkongdoll 的文感染了）和那一口气\n\n愿我们始终能为自己的主权一直做抗争",
+      "gold_score": 6.9,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1955880748457865550",
+      "text": "币股的关键是“币”- 你hold着什么币\n\n不是每个币做成币股后都有买盘和流动性的\n\n币给的是叙事，是这个model \n股给你的是上T台的机会\n模特不行，你上了台又咋样？！\n\n哦.. 不，当然还有一些模特背后是总统的，首富的，那另当别论\n\n另，别想着让大佬给你抬轿子\n站台发推就是给你最大的面子了，出钱？！ 呵呵\n\n华尔街这帮人也不知道自己买的是啥？\n主要是看谁买了？ 谁买了比这个产品是什么更重要\n\nbitcoin 是saylor喊的 - 他nb，所以我也买btc \n这里面哪有什么复杂的算法 - 人云亦云而已\n\n就跟meme一样，0xsun等p元帅买了这个meme，这个meme一定好\n\n美股特么就跟链上meme一样，甚至段位还更低一些\n\n都祛魅吧 我的韭菜朋友们",
+      "createdAt": "Thu Aug 14 06:34:43 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 4,
+      "replyCount": 2,
+      "viewCount": 1539,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1955880748457865550",
+      "clean_text": "币股的关键是“币”- 你hold着什么币\n\n不是每个币做成币股后都有买盘和流动性的\n\n币给的是叙事，是这个model \n股给你的是上T台的机会\n模特不行，你上了台又咋样？！\n\n哦.. 不，当然还有一些模特背后是总统的，首富的，那另当别论\n\n另，别想着让大佬给你抬轿子\n站台发推就是给你最大的面子了，出钱？！ 呵呵\n\n华尔街这帮人也不知道自己买的是啥？\n主要是看谁买了？ 谁买了比这个产品是什么更重要\n\nbitcoin 是saylor喊的 - 他nb，所以我也买btc \n这里面哪有什么复杂的算法 - 人云亦云而已\n\n就跟meme一样，0xsun等p元帅买了这个meme，这个meme一定好\n\n美股特么就跟链上meme一样，甚至段位还更低一些\n\n都祛魅吧 我的韭菜朋友们",
+      "gold_score": 6.9,
+      "domain_id": "04_contracts_stock_perps"
     },
     {
       "id": "2099135407451742227",
-      "createdAt": "Sun Sep 13 13:57:35 +0000 2026",
       "text": "@PundiXLabs 虽迟但到， pundi x basket要来了\n大的要来了\n\ntokenized stock + stock perps 的螺旋组合拳",
-      "clean_text": "@PundiXLabs 虽迟但到， pundi x basket要来了\n大的要来了\n\ntokenized stock + stock perps 的螺旋组合拳",
+      "createdAt": "Sun Sep 13 13:57:35 +0000 2026",
       "favoriteCount": 2,
+      "replyCount": 0,
       "viewCount": 603,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.2,
-      "composite_score": 0.125,
-      "domain_id": "trader_mindset_essays"
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 36050,
+      "isReply": true,
+      "replyStatus": {
+        "id": "2099102668019163602",
+        "text": "Wall Street tokenized stocks.  \n\nSoon we’re letting anyone tokenize an investment thesis.  \n\nPick from 438 US stocks. Build your own basket. Set the weights. Mint it on-chain. Trade it 24/7.  \n\nBacked 1:1 by real stocks. Self-custodied. \n\nYour thesis. Your basket. Coming soon.\n\n$PUNDIX",
+        "createdAt": "Sun Sep 13 11:47:30 +0000 2026",
+        "retweetCount": 5,
+        "favoriteCount": 33,
+        "replyCount": 12,
+        "quoteCount": 1,
+        "viewCount": 8749,
+        "userScreenName": "PundiXLabs",
+        "userName": "Pundi X Labs",
+        "userIdStr": "910043982306041856",
+        "userFollowers": 152837,
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://x.com/PundiXLabs/status/2099102668019163602/photo/1",
+            "thumbUrl": "https://pbs.twimg.com/media/HSGCslwa0AAkEXG.jpg"
+          }
+        ]
+      },
+      "language": "zh",
+      "conversationId": "2099102668019163602",
+      "replyId": "2099102668019163602",
+      "mentions": [
+        {
+          "screenName": "PundiXLabs",
+          "name": "Pundi X Labs",
+          "userId": "910043982306041856"
+        }
+      ],
+      "clean_text": "@PundiXLabs 虽迟但到， pundi x basket要来了\n大的要来了\n\ntokenized stock + stock perps 的螺旋组合拳",
+      "gold_score": 5.4,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2098947096544223621",
+      "text": "永续合约的意义，在于让更多人以不同的理由参与到这场博弈当中。\n\n有人看好公司，有人质疑估值，也有人对股价方向没有意见，只关心资金费能不能覆盖持仓成本、现货与合约的价差有没有机会。\n\n他们不需要相信同一个故事，甚至不是一路人，也可以成为彼此的交易对手。\n\nstock perps的意义：就在于把华尔街、币圈、项目方、公司、机构、银行、券商... 等等主体的博弈点，在永续合约上一一配对 \n\nhttps://agintender.substack.com/p/stock-perpsg?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=post%20viewer",
+      "createdAt": "Sun Sep 13 01:29:19 +0000 2026",
+      "retweetCount": 1,
+      "favoriteCount": 0,
+      "replyCount": 0,
+      "viewCount": 0,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 36036,
+      "isQuote": true,
+      "retweetedStatus": {
+        "id": "2098629734209122419",
+        "text": "永续合约的意义，在于让更多人以不同的理由参与到这场博弈当中。\n\n有人看好公司，有人质疑估值，也有人对股价方向没有意见，只关心资金费能不能覆盖持仓成本、现货与合约的价差有没有机会。\n\n他们不需要相信同一个故事，甚至不是一路人，也可以成为彼此的交易对手。\n\nstock perps的意义：就在于把华尔街、币圈、项目方、公司、机构、银行、券商... 等等主体的博弈点，在永续合约上一一配对 \n\nhttps://agintender.substack.com/p/stock-perpsg?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=post%20viewer",
+        "createdAt": "Sat Sep 12 04:28:13 +0000 2026",
+        "favoriteCount": 0,
+        "replyCount": 0,
+        "viewCount": 0,
+        "userScreenName": "agintender",
+        "userName": "danny",
+        "userIdStr": "913320844411019265",
+        "userFollowers": 36030,
+        "urls": [
+          {
+            "url": "https://t.co/y9hioVHiL9",
+            "displayUrl": "x.com/agintender/sta…"
+          }
+        ]
+      },
+      "quotedStatus": {
+        "id": "2098364569559441546",
+        "text": "如果你对这篇《stock perps将成为小盘股的主力战场》文章感兴趣的\n\n第二部曲上新啦！\n上次说的是资金流向，这一次说的是机制\n\n为什么合约的机制能让小盘股获得更多博弈空间？\n\nsubstack：\nhttps://open.substack.com/pub/agintender/p/stock-perpsg?r=8gs9xi&utm_medium=ios&shareImageVariant=split https://x.com/agintender/status/2097276244341792817  ",
+        "createdAt": "Fri Sep 11 10:54:33 +0000 2026",
+        "favoriteCount": 0,
+        "replyCount": 0,
+        "viewCount": 0,
+        "userScreenName": "agintender",
+        "userName": "danny",
+        "userIdStr": "913320844411019265",
+        "userFollowers": 36027,
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://x.com/agintender/status/2098364569559441546/photo/1",
+            "thumbUrl": "https://pbs.twimg.com/media/HR7jc8UbwAAvhD2.jpg"
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://t.co/cecmR1wjDH",
+            "displayUrl": "open.substack.com/pub/agintender…"
+          },
+          {
+            "url": "https://t.co/ci6RVXjBFi",
+            "displayUrl": "x.com/agintender/sta…"
+          }
+        ]
+      },
+      "clean_text": "永续合约的意义，在于让更多人以不同的理由参与到这场博弈当中。\n\n有人看好公司，有人质疑估值，也有人对股价方向没有意见，只关心资金费能不能覆盖持仓成本、现货与合约的价差有没有机会。\n\n他们不需要相信同一个故事，甚至不是一路人，也可以成为彼此的交易对手。\n\nstock perps的意义：就在于把华尔街、币圈、项目方、公司、机构、银行、券商... 等等主体的博弈点，在永续合约上一一配对 \n\nhttps://agintender.substack.com/p/stock-perpsg?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=post%20viewer",
+      "gold_score": 7.3,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2096608193204158785",
+      "text": "就这个数据 $牛来 不上现货的概率太小了。。 \n\n”1.42M worth of QQQB to 牛来 holders.“ \n\nbn上的不只是bsc上的meme，而是套着meme外衣的bstocks应用。。。 \n\n跟着bstocks的脚步寻找方向，而不是meme",
+      "createdAt": "Sun Sep 06 14:35:21 +0000 2026",
+      "language": "zh",
+      "retweetCount": 5,
+      "favoriteCount": 41,
+      "replyCount": 57,
+      "quoteCount": 1,
+      "viewCount": 26242,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2096608193204158785",
+      "isQuote": true,
+      "quoteId": "2096282560183624151",
+      "clean_text": "就这个数据 $牛来 不上现货的概率太小了。。 \n\n”1.42M worth of QQQB to 牛来 holders.“ \n\nbn上的不只是bsc上的meme，而是套着meme外衣的bstocks应用。。。 \n\n跟着bstocks的脚步寻找方向，而不是meme",
+      "gold_score": 6.4,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1995057043187884182",
+      "text": "实在是受不了了那些RWA的广告了。。。。。。\n\n给那些做美股/美国rwa的项目/小伙伴，如果你不能解决 30% 的预提税 withholding tax的问题，你的rwa产品收益率永远打不过 DeFi 原生协议\n\n我说的",
+      "createdAt": "Sun Nov 30 09:07:20 +0000 2025",
+      "language": "zh",
+      "retweetCount": 2,
+      "favoriteCount": 83,
+      "replyCount": 25,
+      "viewCount": 13611,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1995057043187884182",
+      "clean_text": "实在是受不了了那些RWA的广告了。。。。。。\n\n给那些做美股/美国rwa的项目/小伙伴，如果你不能解决 30% 的预提税 withholding tax的问题，你的rwa产品收益率永远打不过 DeFi 原生协议\n\n我说的",
+      "gold_score": 6.4,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2060912536598524361",
+      "text": "就这么说吧，按照binance的用户规模，资产沉淀和合规框架，做美股现货上链（可能是什么bMSTL ，bGOOG）就是水到渠成的事情\n\n这里面厉害的是，把perp和现货做成carry trade的结构化产品\n\n类似Ethena，持有eth现货然后开空仓吃费率（但不做稳定币） - 对ibkr实施降维打击… 当你在bn持 $MU 就能带来20% 的apy…\n\n不多说了， @youcanshortit 已经准备好这个产品结构了，赶紧的",
+      "createdAt": "Sun May 31 02:33:33 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 27,
+      "replyCount": 2,
+      "viewCount": 9911,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2060912536598524361",
+      "clean_text": "就这么说吧，按照binance的用户规模，资产沉淀和合规框架，做美股现货上链（可能是什么bMSTL ，bGOOG）就是水到渠成的事情\n\n这里面厉害的是，把perp和现货做成carry trade的结构化产品\n\n类似Ethena，持有eth现货然后开空仓吃费率（但不做稳定币） - 对ibkr实施降维打击… 当你在bn持 $MU 就能带来20% 的apy…\n\n不多说了， @youcanshortit 已经准备好这个产品结构了，赶紧的",
+      "gold_score": 6.9,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2060905124290302064",
+      "text": "在咖啡店惊闻隔壁的uncle 在讨论存储和芯片了…\n\n兄弟们，我们的六月份还能好起来吗？\n\n现在美股已经到了把beta当alpha的地步了吗？ 如果你fomo，要不等七月再瞅瞅？",
+      "createdAt": "Sun May 31 02:04:06 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 31,
+      "replyCount": 8,
+      "quoteCount": 2,
+      "viewCount": 14383,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2060905124290302064",
+      "clean_text": "在咖啡店惊闻隔壁的uncle 在讨论存储和芯片了…\n\n兄弟们，我们的六月份还能好起来吗？\n\n现在美股已经到了把beta当alpha的地步了吗？ 如果你fomo，要不等七月再瞅瞅？",
+      "gold_score": 6.4,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2012791372923965572",
+      "text": "看到大家都在说x怎么鼓励长文创作，怎么吸引流量，怎么起号，该怎么写，标题该怎么搞等等… 😂\n\n我就不讨论具体的风格了和呈现方式了…也不重复造轮子了，核心在我quote的内容里，有兴趣自己看\n\nwell，如果你是刚想写文章/长推的中文CT的话，方式方法你直接抄我跟 @thecryptoskanda 的文章结构/细节就行，包括但不限于文章的标题，内容 ，封面图，发布时间（对的，不同内容/群众），后quote的时机，怎么写文案trailer，什么时候放图，怎么互动 etc\n\n这些细节都是反复打磨，试验过的 - 说一个细节，以我的受众为例，如果发中文交易相关的文章，最好在周一美股盘前交易（如果翻红）就顺延到周二美股盘前，再不然就是周五盘前，前4h的流量是不同的\n\n还有一个就是不是我们要写得跟AI一样，或者跟AI近似…. 这是因为算法就是AI判定的，你要让AI能了解啊….\n\n再说一个细节，为什么官方会“建议”怎么写长文？ 因为这更符合grok的训练语料标准….\n\n先写到这里，这个贴文过100k的我再写个文章吧 😂",
+      "createdAt": "Sun Jan 18 07:37:13 +0000 2026",
+      "language": "zh",
+      "retweetCount": 2,
+      "favoriteCount": 38,
+      "replyCount": 10,
+      "viewCount": 7357,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2012791372923965572",
+      "isQuote": true,
+      "quoteId": "2005489945516118404",
+      "mentions": [
+        {
+          "screenName": "thecryptoskanda",
+          "name": "加密韋馱｜Skanda 🔶",
+          "userId": "1298668226155442176"
+        }
+      ],
+      "clean_text": "看到大家都在说x怎么鼓励长文创作，怎么吸引流量，怎么起号，该怎么写，标题该怎么搞等等… 😂\n\n我就不讨论具体的风格了和呈现方式了…也不重复造轮子了，核心在我quote的内容里，有兴趣自己看\n\nwell，如果你是刚想写文章/长推的中文CT的话，方式方法你直接抄我跟 @thecryptoskanda 的文章结构/细节就行，包括但不限于文章的标题，内容 ，封面图，发布时间（对的，不同内容/群众），后quote的时机，怎么写文案trailer，什么时候放图，怎么互动 etc\n\n这些细节都是反复打磨，试验过的 - 说一个细节，以我的受众为例，如果发中文交易相关的文章，最好在周一美股盘前交易（如果翻红）就顺延到周二美股盘前，再不然就是周五盘前，前4h的流量是不同的\n\n还有一个就是不是我们要写得跟AI一样，或者跟AI近似…. 这是因为算法就是AI判定的，你要让AI能了解啊….\n\n再说一个细节，为什么官方会“建议”怎么写长文？ 因为这更符合grok的训练语料标准….\n\n先写到这里，这个贴文过100k的我再写个文章吧 😂",
+      "gold_score": 6.9,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2088884735334666296",
+      "text": "这篇文有好多有意思的事情了\n\n你看下这张图表：\n你可以看到（美股）在早上4点 premarket的时候，方向准确率是在64%；到了8点（距离开盘时间90分钟前）就是84%，误差在66bp\n\n各位都知道polymarket吧？开盘前的预测在15分钟都没这么准，而且误差控制在100bp以内。。你知道这意味着什么吗？？ \n\n聪明的你会怎么做呢？以binance/币圈的价格为reference然后去其他交易所/券商xxx\n\n我在文章里特别提了一句：流动性深度的前提是要能反映市场价值。。。\n流动性/深度固然重要，但不是越深越厚越好",
+      "createdAt": "Sun Aug 16 07:05:05 +0000 2026",
+      "language": "zh",
+      "retweetCount": 2,
+      "favoriteCount": 27,
+      "replyCount": 50,
+      "viewCount": 9894,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2088884735334666296",
+      "isQuote": true,
+      "quoteId": "2088240935276876180",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2088884735334666296/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HP0cVjLbIAENhQP.png"
+        }
+      ],
+      "clean_text": "这篇文有好多有意思的事情了\n\n你看下这张图表：\n你可以看到（美股）在早上4点 premarket的时候，方向准确率是在64%；到了8点（距离开盘时间90分钟前）就是84%，误差在66bp\n\n各位都知道polymarket吧？开盘前的预测在15分钟都没这么准，而且误差控制在100bp以内。。你知道这意味着什么吗？？ \n\n聪明的你会怎么做呢？以binance/币圈的价格为reference然后去其他交易所/券商xxx\n\n我在文章里特别提了一句：流动性深度的前提是要能反映市场价值。。。\n流动性/深度固然重要，但不是越深越厚越好",
+      "gold_score": 7.7,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2083744773354184822",
+      "text": "感谢okx的邀请，让我感受了一把“流动性”流动的感觉\n\n作为一个伪球迷，我甚至连球徽都看不明白，但是作为一个老韭菜，场内的流动性的流动可是看得明明白白\n\n不是什么资金流入美股，理财之类的，而是信任 - 不管牛熊，不管外面有多少交易所关张，新人小白还是大户都还在往okx冲- 信任，才是流动性的底色\n\n除了熟知的品牌合规产品界面之外，okx最不为人知的是对于产品的执着- 我举个例子：你能想象一个marketing的人对各大交易所美股资金费率的算法和预测市场的盘口流动性和结算方式都如数家珍吗？ 我差点都要去投诉了，感情这几个家伙一天天不干正事，都跑去炒币了 😂😂\n\n员工对于产品的执着和自驱力，才是okx的对于信任的诠释",
+      "createdAt": "Sun Aug 02 02:40:42 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 8,
+      "replyCount": 17,
+      "quoteCount": 1,
+      "viewCount": 6576,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2083744773354184822",
+      "isQuote": true,
+      "quoteId": "2083562911059136964",
+      "clean_text": "感谢okx的邀请，让我感受了一把“流动性”流动的感觉\n\n作为一个伪球迷，我甚至连球徽都看不明白，但是作为一个老韭菜，场内的流动性的流动可是看得明明白白\n\n不是什么资金流入美股，理财之类的，而是信任 - 不管牛熊，不管外面有多少交易所关张，新人小白还是大户都还在往okx冲- 信任，才是流动性的底色\n\n除了熟知的品牌合规产品界面之外，okx最不为人知的是对于产品的执着- 我举个例子：你能想象一个marketing的人对各大交易所美股资金费率的算法和预测市场的盘口流动性和结算方式都如数家珍吗？ 我差点都要去投诉了，感情这几个家伙一天天不干正事，都跑去炒币了 😂😂\n\n员工对于产品的执着和自驱力，才是okx的对于信任的诠释",
+      "gold_score": 7.7,
+      "domain_id": "04_contracts_stock_perps"
     },
     {
       "id": "2098733830014414923",
-      "createdAt": "Sat Sep 12 11:21:52 +0000 2026",
       "text": "哇哦哦 独立研究机构赛道的退出模式又多了新的案例和方向\n \ncrypto+stock和stock perps的研究机构应该也会很好玩 https://x.com/panewscn/status/2098666677756207289",
-      "clean_text": "哇哦哦 独立研究机构赛道的退出模式又多了新的案例和方向\n \ncrypto+stock和stock perps的研究机构应该也会很好玩",
+      "createdAt": "Sat Sep 12 11:21:52 +0000 2026",
       "favoriteCount": 6,
+      "replyCount": 1,
       "viewCount": 3919,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.2,
-      "composite_score": 0.125,
-      "domain_id": "trader_mindset_essays"
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 36038,
+      "isQuote": true,
+      "urls": [
+        {
+          "url": "https://t.co/4n1NBkIduI",
+          "displayUrl": "x.com/panewscn/statu…"
+        }
+      ],
+      "quotedStatus": {
+        "id": "2098666677756207289",
+        "text": "SemiAnalysis已收购Citrini Research，创始人将继续担任CEO\n\n独立投资研究机构 Citrini Research 创始人 James van Geelen 已将该机构出售给半导体与人工智能研究公司 SemiAnalysis。Van Geelen 暂时将继续担任 Citrini Research 的首席执行官，Citrini 将保持一定程度的运营独立性，而非完全并入 SemiAnalysis 品牌。目前尚无法获悉交易价格。",
+        "createdAt": "Sat Sep 12 06:55:01 +0000 2026",
+        "favoriteCount": 5,
+        "replyCount": 7,
+        "quoteCount": 2,
+        "viewCount": 8189,
+        "userScreenName": "PANewsCN",
+        "userName": "PANews丨APP全面升级",
+        "userIdStr": "1416680666184306689",
+        "userFollowers": 99887,
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://x.com/PANewsCN/status/2098666677756207289/photo/1",
+            "thumbUrl": "https://pbs.twimg.com/media/HR_2MPaaIAATrFK.jpg"
+          }
+        ]
+      },
+      "language": "zh",
+      "conversationId": "2098733830014414923",
+      "quoteId": "2098666677756207289",
+      "clean_text": "哇哦哦 独立研究机构赛道的退出模式又多了新的案例和方向\n \ncrypto+stock和stock perps的研究机构应该也会很好玩 https://x.com/panewscn/status/2098666677756207289",
+      "gold_score": 6.2,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2098629734209122419",
+      "text": "永续合约的意义，在于让更多人以不同的理由参与到这场博弈当中。\n\n有人看好公司，有人质疑估值，也有人对股价方向没有意见，只关心资金费能不能覆盖持仓成本、现货与合约的价差有没有机会。\n\n他们不需要相信同一个故事，甚至不是一路人，也可以成为彼此的交易对手。\n\nstock perps的意义：就在于把华尔街、币圈、项目方、公司、机构、银行、券商... 等等主体的博弈点，在永续合约上一一配对 \n\nhttps://agintender.substack.com/p/stock-perpsg?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=post%20viewer",
+      "createdAt": "Sat Sep 12 04:28:13 +0000 2026",
+      "retweetCount": 1,
+      "favoriteCount": 11,
+      "replyCount": 3,
+      "viewCount": 5307,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 36030,
+      "isQuote": true,
+      "urls": [
+        {
+          "url": "https://t.co/y9hioVHiL9",
+          "displayUrl": "x.com/agintender/sta…"
+        }
+      ],
+      "quotedStatus": {
+        "id": "2098364569559441546",
+        "text": "如果你对这篇《stock perps将成为小盘股的主力战场》文章感兴趣的\n\n第二部曲上新啦！\n上次说的是资金流向，这一次说的是机制\n\n为什么合约的机制能让小盘股获得更多博弈空间？\n\nsubstack：\nhttps://open.substack.com/pub/agintender/p/stock-perpsg?r=8gs9xi&utm_medium=ios&shareImageVariant=split https://x.com/agintender/status/2097276244341792817  ",
+        "createdAt": "Fri Sep 11 10:54:33 +0000 2026",
+        "retweetCount": 6,
+        "favoriteCount": 19,
+        "replyCount": 38,
+        "quoteCount": 1,
+        "viewCount": 11340,
+        "userScreenName": "agintender",
+        "userName": "danny",
+        "userIdStr": "913320844411019265",
+        "userFollowers": 36027,
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://x.com/agintender/status/2098364569559441546/photo/1",
+            "thumbUrl": "https://pbs.twimg.com/media/HR7jc8UbwAAvhD2.jpg"
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://t.co/cecmR1wjDH",
+            "displayUrl": "open.substack.com/pub/agintender…"
+          },
+          {
+            "url": "https://t.co/ci6RVXjBFi",
+            "displayUrl": "x.com/agintender/sta…"
+          }
+        ]
+      },
+      "language": "zh",
+      "conversationId": "2098629734209122419",
+      "quoteId": "2098364569559441546",
+      "clean_text": "永续合约的意义，在于让更多人以不同的理由参与到这场博弈当中。\n\n有人看好公司，有人质疑估值，也有人对股价方向没有意见，只关心资金费能不能覆盖持仓成本、现货与合约的价差有没有机会。\n\n他们不需要相信同一个故事，甚至不是一路人，也可以成为彼此的交易对手。\n\nstock perps的意义：就在于把华尔街、币圈、项目方、公司、机构、银行、券商... 等等主体的博弈点，在永续合约上一一配对 \n\nhttps://agintender.substack.com/p/stock-perpsg?r=8gs9xi&utm_campaign=post-expanded-share&utm_medium=post%20viewer",
+      "gold_score": 7.3,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1994657149944041526",
+      "text": "@hongkongdoll 我感觉就是boros的初心就是为了服务ena 这类型的“理财稳定币”锁定资金费率的敞口，但是这个需求现在就很一般\n\n什么时候能爆发呢？\n当美股开始有永续合约交易的时候\n\nhohoho，boros就会爆炸了 💥",
+      "createdAt": "Sat Nov 29 06:38:18 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 3,
+      "replyCount": 1,
+      "viewCount": 667,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1994646783075783075",
+      "isReply": true,
+      "replyId": "1994653607053201725",
+      "mentions": [
+        {
+          "screenName": "hongkongdoll",
+          "name": "HongKongDoll",
+          "userId": "1390560341227020291"
+        }
+      ],
+      "clean_text": "@hongkongdoll 我感觉就是boros的初心就是为了服务ena 这类型的“理财稳定币”锁定资金费率的敞口，但是这个需求现在就很一般\n\n什么时候能爆发呢？\n当美股开始有永续合约交易的时候\n\nhohoho，boros就会爆炸了 💥",
+      "gold_score": 6.2,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2060578622470324455",
+      "text": "hohoho 这下有好戏看了\n看网络的文案宣传和坐标地点，应该是本周日晚间和下周的computex，跟microsoft $MSFT 会发布一个pc新品\n\n难怪lenovo联想、dell、hp 涨了这么多。。 🤣 \n\n盲猜应该是把ai/ai agent装到pc里\n\n你说美股休市了不能交易？ 哈哈哈\n这不，币圈交易所7/24的优势就出来了吗？！",
+      "createdAt": "Sat May 30 04:26:41 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 7,
+      "replyCount": 2,
+      "viewCount": 3964,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2060578622470324455",
+      "isQuote": true,
+      "quoteId": "2060390710797328574",
+      "clean_text": "hohoho 这下有好戏看了\n看网络的文案宣传和坐标地点，应该是本周日晚间和下周的computex，跟microsoft $MSFT 会发布一个pc新品\n\n难怪lenovo联想、dell、hp 涨了这么多。。 🤣 \n\n盲猜应该是把ai/ai agent装到pc里\n\n你说美股休市了不能交易？ 哈哈哈\n这不，币圈交易所7/24的优势就出来了吗？！",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2058095287156265089",
+      "text": "现在在想着怎么买kyc去开户转移美股、那些买号去开api中转站的、允许买kyc开交易所账户的交易所的…. 建议你一定要读下这篇文，太重要了\n\n都不是省钱，而是让你怎么不进去\n\n这篇合规之路的长文（https://t.co/4j69ng2UZb）里有一个很重要的教训：正义也许不会到，但惩罚一定会来的，不外乎是你是否够肥了….\n\n你们难道不知道吗？租借别人的账号都是违法的，更何况是买kyc开账户（或者平台允许用他人kyc来开账户的）来交易/过桥/链接API\n\n你要嘛实在无路可走，或者肯定能赚去暴利，要不然到头来你赚的都不够你赔的\n\n假设还不起这43亿，就没有后来的xx人生了",
+      "createdAt": "Sat May 23 07:58:48 +0000 2026",
+      "language": "zh",
+      "retweetCount": 4,
+      "favoriteCount": 26,
+      "replyCount": 7,
+      "viewCount": 9258,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2058095287156265089",
+      "isQuote": true,
+      "quoteId": "2057748342323732583",
+      "clean_text": "现在在想着怎么买kyc去开户转移美股、那些买号去开api中转站的、允许买kyc开交易所账户的交易所的…. 建议你一定要读下这篇文，太重要了\n\n都不是省钱，而是让你怎么不进去\n\n这篇合规之路的长文（https://t.co/4j69ng2UZb）里有一个很重要的教训：正义也许不会到，但惩罚一定会来的，不外乎是你是否够肥了….\n\n你们难道不知道吗？租借别人的账号都是违法的，更何况是买kyc开账户（或者平台允许用他人kyc来开账户的）来交易/过桥/链接API\n\n你要嘛实在无路可走，或者肯定能赚去暴利，要不然到头来你赚的都不够你赔的\n\n假设还不起这43亿，就没有后来的xx人生了",
+      "gold_score": 6.5,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2080862453672648957",
+      "text": "什么，你说下周长鑫的IPO会吸血美股的存储/内存股？！会影响韩国？ \n🤣 长鑫大概率上了之后会涨好几天的，不过不是因为叙事和产能，而是因为fomo带来的换仓\n\n同一个标的 $skhy 和 skhynix 的差价都还没收敛，你怕不同市场不同标的之间的资金吸血？！",
+      "createdAt": "Sat Jul 25 03:47:24 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 12,
+      "replyCount": 35,
+      "quoteCount": 1,
+      "viewCount": 18977,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2080862453672648957",
+      "clean_text": "什么，你说下周长鑫的IPO会吸血美股的存储/内存股？！会影响韩国？ \n🤣 长鑫大概率上了之后会涨好几天的，不过不是因为叙事和产能，而是因为fomo带来的换仓\n\n同一个标的 $skhy 和 skhynix 的差价都还没收敛，你怕不同市场不同标的之间的资金吸血？！",
+      "gold_score": 6.4,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2017430631622565970",
+      "text": "老表，你这个真的不是来搞笑的嘛？！\n\n先不说从时间点来看，明显就是Trump说要加关税— 》美股崩 -—〉再传导到币圈\n\n而且Usde的闪崩从时间线上是在Btc之后才开始的，而且就这体量还不够带崩其他币种的\n\n另外你暗指usde这个存款活动是binancet策划的，发布？所以要负全责？\n\n来，Repeat after me：Binance自己出钱补贴Ethena的Usde？\n\n说出来，你自己都不信吧\n\ncome on，怎么可能？ 你也是交易所的老大，这个活动极大概率就是Ethena支付一笔巨大的活动费用来让Binance支持这个活动的（看看usdc） ，至于活动方式你觉得Ethena会不会也参与设计和允许了？\n\n有点仙人板板那味儿了",
+      "createdAt": "Sat Jan 31 02:51:59 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 18,
+      "replyCount": 15,
+      "viewCount": 9742,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2017430631622565970",
+      "isQuote": true,
+      "quoteId": "2017411129501426064",
+      "clean_text": "老表，你这个真的不是来搞笑的嘛？！\n\n先不说从时间点来看，明显就是Trump说要加关税— 》美股崩 -—〉再传导到币圈\n\n而且Usde的闪崩从时间线上是在Btc之后才开始的，而且就这体量还不够带崩其他币种的\n\n另外你暗指usde这个存款活动是binancet策划的，发布？所以要负全责？\n\n来，Repeat after me：Binance自己出钱补贴Ethena的Usde？\n\n说出来，你自己都不信吧\n\ncome on，怎么可能？ 你也是交易所的老大，这个活动极大概率就是Ethena支付一笔巨大的活动费用来让Binance支持这个活动的（看看usdc） ，至于活动方式你觉得Ethena会不会也参与设计和允许了？\n\n有点仙人板板那味儿了",
+      "gold_score": 6.5,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2004791782505394221",
+      "text": "我个人觉得25年加密行业里十件最具有里程碑意义的事件\n\n大家看看是不是老灯所见略同 😂\n\n25年的主旋律就围绕着\n\n一个人展开 - 特朗普\n两个资金池 - 美股和国家战略储备\n三个管辖权 - Genius MiCA 香港稳定币\n四次大血洗 - 10.11， Bybit 15亿被盗， $Trump 和DATs的大逃杀",
+      "createdAt": "Sat Dec 27 05:49:42 +0000 2025",
+      "language": "zh",
+      "retweetCount": 2,
+      "favoriteCount": 35,
+      "replyCount": 17,
+      "viewCount": 9629,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2004791782505394221",
+      "isQuote": true,
+      "quoteId": "2004726164443771021",
+      "clean_text": "我个人觉得25年加密行业里十件最具有里程碑意义的事件\n\n大家看看是不是老灯所见略同 😂\n\n25年的主旋律就围绕着\n\n一个人展开 - 特朗普\n两个资金池 - 美股和国家战略储备\n三个管辖权 - Genius MiCA 香港稳定币\n四次大血洗 - 10.11， Bybit 15亿被盗， $Trump 和DATs的大逃杀",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2053864432946614469",
+      "text": "@0xsexybanana 买完了美股就会回来山寨的，安心啦\n\n现在每个人都觉得自己是股神\n自信心一膨胀，啥都会碰的\n\n错把beta当alpha是人性，什么资产类别都一样的",
+      "createdAt": "Mon May 11 15:46:54 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 14,
+      "replyCount": 0,
+      "viewCount": 2538,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2053833419747135893",
+      "isReply": true,
+      "replyId": "2053833419747135893",
+      "mentions": [
+        {
+          "screenName": "0xsexybanana",
+          "name": "郡主Christine (✱,✱)",
+          "userId": "769370647"
+        }
+      ],
+      "clean_text": "@0xsexybanana 买完了美股就会回来山寨的，安心啦\n\n现在每个人都觉得自己是股神\n自信心一膨胀，啥都会碰的\n\n错把beta当alpha是人性，什么资产类别都一样的",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2066559308884521239",
+      "text": "是我错过了什么吗？为什么crypto和美股都涨了啊？\n\n不能是霍尔木兹海峡的破事吧",
+      "createdAt": "Mon Jun 15 16:31:48 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 13,
+      "replyCount": 21,
+      "viewCount": 13211,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2066559308884521239",
+      "clean_text": "是我错过了什么吗？为什么crypto和美股都涨了啊？\n\n不能是霍尔木兹海峡的破事吧",
+      "gold_score": 5.6,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2076523213467840959",
+      "text": "同感，我也觉得美股的DAT大有可为，波动率制造机\n\n把币（+合约）拉起来 - DAT正股涨 - 质押DAT正股借出稳定币 - 把币再拉起来 - DAT正股再涨 - 如此反复循环\n\n一个操作，两个涨幅\n拉到差不多了，币+股一起放\n一个跌幅，三个螺旋🌀\n想想都high",
+      "createdAt": "Mon Jul 13 04:24:48 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 15,
+      "replyCount": 10,
+      "viewCount": 8968,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2076523213467840959",
+      "isQuote": true,
+      "quoteId": "2076236473465254365",
+      "clean_text": "同感，我也觉得美股的DAT大有可为，波动率制造机\n\n把币（+合约）拉起来 - DAT正股涨 - 质押DAT正股借出稳定币 - 把币再拉起来 - DAT正股再涨 - 如此反复循环\n\n一个操作，两个涨幅\n拉到差不多了，币+股一起放\n一个跌幅，三个螺旋🌀\n想想都high",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2094276253541106024",
+      "text": "请各位原谅啦，我忍不住要“晒单”一下啦～～～～\n\n我的substack的arr超过10k usd了 （🎉）\n虽然这在币圈就是毛毛雨（而且还是arr）\n\n但认真的，这个可比我自己做交易赚1m还开心啊\n感谢各位的抬爱、认可和支持\n\n当交易所、协议都不愿意花预算来支持的时候，没想到还真的是有人愿意付费看独立调研内容 - 看我在哪里神神叨叨 🤣🤣🤣\n\n好了，我稍微从bstocks那篇文回血了一点，现在有更多的弹药去“摧残”和“挑战”各家交易所的算法和orderbook了，各位准备面对疾风吧～ 哇哈哈哈哈哈🤣\n\n争取给大家带来更多好文\n\n对stock perp，合约交易，交易所数据感兴趣的，欢迎订阅：\nhttps://t.co/oWfm2IKoZs",
+      "createdAt": "Mon Aug 31 04:09:03 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 65,
+      "replyCount": 31,
+      "quoteCount": 2,
+      "viewCount": 17644,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2094276253541106024",
+      "isQuote": true,
+      "quoteId": "2093353710072320178",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2094276253541106024/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HRBXB-mbkAAg3Qr.png"
+        }
+      ],
+      "clean_text": "请各位原谅啦，我忍不住要“晒单”一下啦～～～～\n\n我的substack的arr超过10k usd了 （🎉）\n虽然这在币圈就是毛毛雨（而且还是arr）\n\n但认真的，这个可比我自己做交易赚1m还开心啊\n感谢各位的抬爱、认可和支持\n\n当交易所、协议都不愿意花预算来支持的时候，没想到还真的是有人愿意付费看独立调研内容 - 看我在哪里神神叨叨 🤣🤣🤣\n\n好了，我稍微从bstocks那篇文回血了一点，现在有更多的弹药去“摧残”和“挑战”各家交易所的算法和orderbook了，各位准备面对疾风吧～ 哇哈哈哈哈哈🤣\n\n争取给大家带来更多好文\n\n对stock perp，合约交易，交易所数据感兴趣的，欢迎订阅：\nhttps://t.co/oWfm2IKoZs",
+      "gold_score": 8.7,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2100823049205649918",
+      "text": "留给stock perps的机会就更多了 🤣 https://x.com/cointelegraph/status/2100738361992315117",
+      "createdAt": "Fri Sep 18 05:43:40 +0000 2026",
+      "favoriteCount": 3,
+      "replyCount": 0,
+      "viewCount": 3102,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 36035,
+      "isQuote": true,
+      "urls": [
+        {
+          "url": "https://t.co/vkTaGTl907",
+          "displayUrl": "x.com/cointelegraph/…"
+        }
+      ],
+      "quotedStatus": {
+        "id": "2100738361992315117",
+        "text": "🇪🇺 JUST IN: ECB's Christine Lagarde personally stepped in to stop Binance from securing an EU-wide license, per WSJ.  ",
+        "createdAt": "Fri Sep 18 00:07:09 +0000 2026",
+        "retweetCount": 347,
+        "favoriteCount": 2083,
+        "replyCount": 258,
+        "quoteCount": 91,
+        "viewCount": 290896,
+        "userScreenName": "Cointelegraph",
+        "userName": "Cointelegraph",
+        "userIdStr": "2207129125",
+        "userFollowers": 2934919,
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://x.com/Cointelegraph/status/2100738361992315117/photo/1",
+            "thumbUrl": "https://pbs.twimg.com/media/HSdSZ3nWEAAZrK-.png"
+          },
+          {
+            "type": "photo",
+            "url": "https://x.com/Cointelegraph/status/2100738361992315117/photo/1",
+            "thumbUrl": "https://pbs.twimg.com/media/HSdSaErWQAA--Uj.png"
+          }
+        ]
+      },
+      "language": "zh",
+      "conversationId": "2100823049205649918",
+      "quoteId": "2100738361992315117",
+      "clean_text": "留给stock perps的机会就更多了 🤣 https://x.com/cointelegraph/status/2100738361992315117",
+      "gold_score": 5.4,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2098364569559441546",
+      "text": "如果你对这篇《stock perps将成为小盘股的主力战场》文章感兴趣的\n\n第二部曲上新啦！\n上次说的是资金流向，这一次说的是机制\n\n为什么合约的机制能让小盘股获得更多博弈空间？\n\nsubstack：\nhttps://t.co/cecmR1wjDH https://t.co/ZLm3GvEu7F",
+      "createdAt": "Fri Sep 11 10:54:33 +0000 2026",
+      "language": "zh",
+      "retweetCount": 6,
+      "favoriteCount": 19,
+      "replyCount": 38,
+      "quoteCount": 1,
+      "viewCount": 11340,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2098364569559441546",
+      "isQuote": true,
+      "quoteId": "2097276244341792817",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2098364569559441546/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HR7jc8UbwAAvhD2.jpg"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://open.substack.com/pub/agintender/p/stock-perpsg?r=8gs9xi&utm_medium=ios&shareImageVariant=split",
+          "displayUrl": "open.substack.com/pub/agintender…"
+        }
+      ],
+      "clean_text": "如果你对这篇《stock perps将成为小盘股的主力战场》文章感兴趣的\n\n第二部曲上新啦！\n上次说的是资金流向，这一次说的是机制\n\n为什么合约的机制能让小盘股获得更多博弈空间？\n\nsubstack：\nhttps://t.co/cecmR1wjDH https://t.co/ZLm3GvEu7F",
+      "gold_score": 7.6,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2095754147945693225",
+      "text": "嗯嗯 有小伙伴问我，昨天那篇说 @bitget 的stock perp算法的文呢？\n\n嗯，是的，你猜的没错了，我隐藏起来了哈\n\n好东西就是这样，转瞬即逝 😂🤣 - 吃透这篇文的话，你就能理解为什么好多人能同时在 @binance @bitget @tradexyz 跑lead lag的策略，而且长期有效\n\n 现在要看的话（温故而知新的话），就要去substack啦～ \nhttps://t.co/WMAeeYWUh7",
+      "createdAt": "Fri Sep 04 06:01:40 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 11,
+      "replyCount": 18,
+      "viewCount": 5997,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2095754147945693225",
+      "isQuote": true,
+      "quoteId": "2095470259264491696",
+      "mentions": [
+        {
+          "screenName": "bitget",
+          "name": "Bitget",
+          "userId": "1098881129057112064"
+        },
+        {
+          "screenName": "binance",
+          "name": "Binance",
+          "userId": "877807935493033984"
+        },
+        {
+          "screenName": "bitget",
+          "name": "Bitget",
+          "userId": "1098881129057112064"
+        },
+        {
+          "screenName": "tradexyz",
+          "name": "trade.xyz",
+          "userId": "1764725210761031681"
+        }
+      ],
+      "clean_text": "嗯嗯 有小伙伴问我，昨天那篇说 @bitget 的stock perp算法的文呢？\n\n嗯，是的，你猜的没错了，我隐藏起来了哈\n\n好东西就是这样，转瞬即逝 😂🤣 - 吃透这篇文的话，你就能理解为什么好多人能同时在 @binance @bitget @tradexyz 跑lead lag的策略，而且长期有效\n\n 现在要看的话（温故而知新的话），就要去substack啦～ \nhttps://t.co/WMAeeYWUh7",
+      "gold_score": 7.3,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "2060320435280195827",
+      "text": "给看腻了各种美股，AI内容的各位，来点不一样的内容\n\n今晚给各位说下HTX为何被英国政府纳入“制裁”名单的始末\n\n这个事情有好多细节值得深思，有些事情也有些耐人寻味，毕竟这个时间点，对吧…. \n\n也给各位交易所老板们提个醒",
+      "createdAt": "Fri May 29 11:20:45 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 28,
+      "replyCount": 6,
+      "viewCount": 13924,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2060320435280195827",
+      "clean_text": "给看腻了各种美股，AI内容的各位，来点不一样的内容\n\n今晚给各位说下HTX为何被英国政府纳入“制裁”名单的始末\n\n这个事情有好多细节值得深思，有些事情也有些耐人寻味，毕竟这个时间点，对吧…. \n\n也给各位交易所老板们提个醒",
+      "gold_score": 6.4,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1918188058635321671",
+      "text": "看你的rwa是什么资产类型的？ 在哪一个管辖权的？会计准则和当地税务？\n假设是什么房地产/美股/美债之类的- 这种没什么必要的资产上链，那就有一堆，随便搞个spv，把里面的股份代币化一下就可以了\n\n但是如果你要说是消费贷等资产证券化的衍生品- 这种需要实操经验，而又愿意分享的那推上基本没有- 这些都是花钱咨询给的方案啊，能卖钱啊",
+      "createdAt": "Fri May 02 06:17:26 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 2,
+      "replyCount": 3,
+      "viewCount": 417,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1918038272925942189",
+      "isReply": true,
+      "replyId": "1918038272925942189",
+      "mentions": [
+        {
+          "screenName": "BTCBruce1",
+          "name": "Bruce J",
+          "userId": "1676484342821040129"
+        },
+        {
+          "screenName": "Arya_web3",
+          "name": "Arya@羊姐社区🦅",
+          "userId": "1455430318412820481"
+        },
+        {
+          "screenName": "thecryptoskanda",
+          "name": "加密韋馱｜Skanda 🔶",
+          "userId": "1298668226155442176"
+        },
+        {
+          "screenName": "YekaiMeta",
+          "name": "叶开",
+          "userId": "1531478970260426753"
+        }
+      ],
+      "clean_text": "看你的rwa是什么资产类型的？ 在哪一个管辖权的？会计准则和当地税务？\n假设是什么房地产/美股/美债之类的- 这种没什么必要的资产上链，那就有一堆，随便搞个spv，把里面的股份代币化一下就可以了\n\n但是如果你要说是消费贷等资产证券化的衍生品- 这种需要实操经验，而又愿意分享的那推上基本没有- 这些都是花钱咨询给的方案啊，能卖钱啊",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1943530794703573369",
+      "text": "这轮 $btc 的ATH 总感觉哪里怪怪的\n\n不是因为美股市值也新高了\n不是因为u的借贷利率只有5-6%\n不是因为pump/linear要发币了\n更不是因为ethereum也跟着涨了\n\n而是因为时间线和各种群居然没有各种\nkol ： “牛回速归”的po\n\n太奇怪了\n\n这个情绪不对啊\n难道都亏完啦？！退圈啦？ https://t.co/WbFNd5OLQb",
+      "createdAt": "Fri Jul 11 04:40:25 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 5,
+      "replyCount": 6,
+      "quoteCount": 1,
+      "viewCount": 4239,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1943530794703573369",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1943530794703573369/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/GvjO61aX0AABSpR.jpg"
+        }
+      ],
+      "clean_text": "这轮 $btc 的ATH 总感觉哪里怪怪的\n\n不是因为美股市值也新高了\n不是因为u的借贷利率只有5-6%\n不是因为pump/linear要发币了\n更不是因为ethereum也跟着涨了\n\n而是因为时间线和各种群居然没有各种\nkol ： “牛回速归”的po\n\n太奇怪了\n\n这个情绪不对啊\n难道都亏完啦？！退圈啦？ https://t.co/WbFNd5OLQb",
+      "gold_score": 6.6,
+      "domain_id": "04_contracts_stock_perps"
+    },
+    {
+      "id": "1956369990694957091",
+      "text": "如果不是为了蹭空投… 其实真没必要去买美股的wrap，说白了，你买的就是店家给你的凭证而已\n\n你只要不是本拉登，美股账户还是很好开的… 而且现在的券商都只是稳定币充值了",
+      "createdAt": "Fri Aug 15 14:58:48 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 7,
+      "replyCount": 2,
+      "viewCount": 2363,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1956369990694957091",
+      "clean_text": "如果不是为了蹭空投… 其实真没必要去买美股的wrap，说白了，你买的就是店家给你的凭证而已\n\n你只要不是本拉登，美股账户还是很好开的… 而且现在的券商都只是稳定币充值了",
+      "gold_score": 5.8,
+      "domain_id": "04_contracts_stock_perps"
     }
   ]
 }

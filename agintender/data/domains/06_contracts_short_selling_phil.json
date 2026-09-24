@@ -3,7 +3,7 @@
   "title": "【二级合约】山寨币卖空权正义与流动性自救机制",
   "description": "从机制第一性原理证明：为什么归还卖空权才是山寨牛市的真正起点？项目方如何在熊市通过合约机制自救。",
   "articles_count": 6,
-  "tweets_count": 10,
+  "tweets_count": 53,
   "articles": [
     {
       "article_id": "2050582990816960512",
@@ -50,144 +50,1398 @@
   ],
   "tweets": [
     {
-      "id": "2058867514088812772",
-      "createdAt": "Mon May 25 11:07:21 +0000 2026",
-      "text": "一刷推，都在说 $sive  涨爆了…\n\n真的是叙事打开了？要双上市？才不是，人家的AI相关pe到了230x…\n\n今天这轮暴涨我盲猜是因为逼空，有点类似 gamestop当年（不过这次不是期权，而是现货卖空） 有博主说是2sigma开的大仓位，我没去查证，但即使不是它，也是其他人\n\n如果要类比币圈的资产， $myx $coai $rave 那可太多了… 你可以理解就是“机制”造成的 ，空头燃料\n\n长期不好说（我也不懂技术原理）但短期就是博弈之源（多空较量）驱动的，到哪儿都一样\n\n这不就到了我们的舒适区啦？ 🤣🤣\n这玩意儿有了资金费率只会更high\n\n@Binance @okx @bitget @MEXC - 别看了啊，赶紧的",
-      "clean_text": "一刷推，都在说 $sive  涨爆了…\n\n真的是叙事打开了？要双上市？才不是，人家的AI相关pe到了230x…\n\n今天这轮暴涨我盲猜是因为逼空，有点类似 gamestop当年（不过这次不是期权，而是现货卖空） 有博主说是2sigma开的大仓位，我没去查证，但即使不是它，也是其他人\n\n如果要类比币圈的资产， $myx $coai $rave 那可太多了… 你可以理解就是“机制”造成的 ，空头燃料\n\n长期不好说（我也不懂技术原理）但短期就是博弈之源（多空较量）驱动的，到哪儿都一样\n\n这不就到了我们的舒适区啦？ 🤣🤣\n这玩意儿有了资金费率只会更high\n\n@Binance @okx @bitget @MEXC - 别看了啊，赶紧的",
+      "id": "1968213472279400647",
+      "text": "啊哈 说得真好\n\n我其实跟你一样，我是相信perp dex能承载10b、100/500b的市值，毕竟dex的交易量相比与20/21年已经有了有了很大的进步，也占到20%的份额，未来的交易量大分庭抗礼，甚至有有赶超cex之势\n\n不是perp dex没有押注的价值，而是对现阶段的方盘别fomo\n\n多说一句，照搬cex现有模式去做perp dex迟早出事\n\nps：我持有市面上绝大部分的dex token，$pendle / $hype / $gmx $dydx $uni etc",
+      "createdAt": "Wed Sep 17 07:20:34 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 11,
+      "replyCount": 1,
+      "viewCount": 2799,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1968202135960686911",
+      "isReply": true,
+      "replyId": "1968202135960686911",
+      "mentions": [
+        {
+          "screenName": "Web3Feng",
+          "name": "风无向🦅",
+          "userId": "1391080697037656064"
+        }
+      ],
+      "clean_text": "啊哈 说得真好\n\n我其实跟你一样，我是相信perp dex能承载10b、100/500b的市值，毕竟dex的交易量相比与20/21年已经有了有了很大的进步，也占到20%的份额，未来的交易量大分庭抗礼，甚至有有赶超cex之势\n\n不是perp dex没有押注的价值，而是对现阶段的方盘别fomo\n\n多说一句，照搬cex现有模式去做perp dex迟早出事\n\nps：我持有市面上绝大部分的dex token，$pendle / $hype / $gmx $dydx $uni etc",
+      "gold_score": 6.9,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1980846617948483875",
+      "text": "各位观众 比起什么alpha 这个才是要学习的点啊（看懂的话值至少值1万u）\n\n我段子翻译一下：\n\n1.不做空小币，尤其是有庄的\n2.玩小币（有庄）的时候- 买现货\n3.启动的时候，根据流动性情况择机用合约出货，有磨损但是能出去\n\n现货-合约混合食用，要根据不同的流动性环境来交替使用\n\n这个操作方式直接决定了盈亏（工具要能串起来用）\n\n同样的一套独孤九剑，令狐冲和风青杨用起来的威力就是不一样的；\n\n同样的一柄桃木剑，风青杨和张天师打出的效果也不一样\n\n在白骨尸堆前，屠龙少年哪里缺的是剑，是看懂-下注-重仓-拿得住的心境\n\n不说了，我再去翻译下一篇",
+      "createdAt": "Wed Oct 22 04:00:10 +0000 2025",
+      "language": "zh",
+      "retweetCount": 30,
+      "favoriteCount": 205,
+      "replyCount": 23,
+      "viewCount": 65468,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1980846617948483875",
+      "isQuote": true,
+      "quoteId": "1980703984328544406",
+      "clean_text": "各位观众 比起什么alpha 这个才是要学习的点啊（看懂的话值至少值1万u）\n\n我段子翻译一下：\n\n1.不做空小币，尤其是有庄的\n2.玩小币（有庄）的时候- 买现货\n3.启动的时候，根据流动性情况择机用合约出货，有磨损但是能出去\n\n现货-合约混合食用，要根据不同的流动性环境来交替使用\n\n这个操作方式直接决定了盈亏（工具要能串起来用）\n\n同样的一套独孤九剑，令狐冲和风青杨用起来的威力就是不一样的；\n\n同样的一柄桃木剑，风青杨和张天师打出的效果也不一样\n\n在白骨尸堆前，屠龙少年哪里缺的是剑，是看懂-下注-重仓-拿得住的心境\n\n不说了，我再去翻译下一篇",
+      "gold_score": 7.7,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1975954787440185456",
+      "text": "@33_labs 这里的负（-）资金费率指的是付出去，与负费率negative funding rate不一样，你说的对，我改一下",
+      "createdAt": "Wed Oct 08 16:01:47 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 3,
+      "replyCount": 0,
+      "viewCount": 1291,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1975473753560916009",
+      "isReply": true,
+      "replyId": "1975952604590129457",
+      "mentions": [
+        {
+          "screenName": "33_labs",
+          "name": "lanford33",
+          "userId": "1481505509484429312"
+        }
+      ],
+      "clean_text": "@33_labs 这里的负（-）资金费率指的是付出去，与负费率negative funding rate不一样，你说的对，我改一下",
+      "gold_score": 5.4,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1973333395683025309",
+      "text": "只要策略对了，什么时候都是牛市\n\n做空有做空的牛市\n做多有做多的牛市\n网格有网格的牛市\n\n总有人一直赢，为什么不是你？ \n是因为你看不清市场吗？\n还是因为你不会p图吗？ 😂",
+      "createdAt": "Wed Oct 01 10:25:18 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 4,
+      "replyCount": 3,
+      "viewCount": 2526,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1973333395683025309",
+      "isQuote": true,
+      "quoteId": "1972889829068476676",
+      "clean_text": "只要策略对了，什么时候都是牛市\n\n做空有做空的牛市\n做多有做多的牛市\n网格有网格的牛市\n\n总有人一直赢，为什么不是你？ \n是因为你看不清市场吗？\n还是因为你不会p图吗？ 😂",
+      "gold_score": 5.8,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2034179466226979203",
+      "text": "话说你如果觉得这些在binance alpha的币凭什么今天涨了这么多？你又不知道该去哪里short /卖空这些token\n\nhttps://t.co/VCAbx1q9aL 了解一下\n\n以前你是不知道在哪里空，现在给你机会了，看你能不能把握了～\n\n今天在alpha上涨超过10%的都在这里了\n\n留言转发跟我拿邀请码 https://t.co/nPsNSBCgd3",
+      "createdAt": "Wed Mar 18 08:05:52 +0000 2026",
+      "language": "zh",
+      "retweetCount": 9,
+      "favoriteCount": 34,
+      "replyCount": 17,
+      "quoteCount": 2,
+      "viewCount": 29824,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2034179466226979203",
+      "isQuote": true,
+      "quoteId": "2033477865803841661",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2034179466226979203/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HDrai5kbcAAD5Ri.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2034179466226979203/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HDrbMOkbAAAJ_KQ.jpg"
+        }
+      ],
+      "urls": [
+        {
+          "url": "http://youcanshortit.com",
+          "displayUrl": "youcanshortit.com"
+        }
+      ],
+      "clean_text": "话说你如果觉得这些在binance alpha的币凭什么今天涨了这么多？你又不知道该去哪里short /卖空这些token\n\nhttps://t.co/VCAbx1q9aL 了解一下\n\n以前你是不知道在哪里空，现在给你机会了，看你能不能把握了～\n\n今天在alpha上涨超过10%的都在这里了\n\n留言转发跟我拿邀请码 https://t.co/nPsNSBCgd3",
+      "gold_score": 7.2,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2034111103555539147",
+      "text": "经小伙伴提醒，今天新上的一个meme $surge\n纯纯的cabal，阴谋集团\n\n市值17m（ath mc是160m），24h的交易量760k，top10 hold93%的币。liq差不多400k。。。\n\n怎么说呢？你明知哪里不对，但是以前苦于没有机会，你没办法做空？\n\n但是现在给你机会了，你敢不敢？\n\nhttps://t.co/HJByC2ahKH - 你不看好，可以卖空啊",
+      "createdAt": "Wed Mar 18 03:34:13 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
       "favoriteCount": 8,
-      "viewCount": 10564,
-      "has_article": false,
-      "j_score": 0.3,
-      "e_score": 0.24,
-      "v_score": 0.7,
-      "composite_score": 0.379,
-      "domain_id": "derivatives_options"
+      "replyCount": 6,
+      "quoteCount": 1,
+      "viewCount": 5896,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2034111103555539147",
+      "isQuote": true,
+      "quoteId": "2033477865803841661",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2034111103555539147/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HDqcal3aAAAn3uh.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2034111103555539147/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HDqcalubEAACS6A.jpg"
+        }
+      ],
+      "urls": [
+        {
+          "url": "http://youcanshortit.com",
+          "displayUrl": "youcanshortit.com"
+        }
+      ],
+      "clean_text": "经小伙伴提醒，今天新上的一个meme $surge\n纯纯的cabal，阴谋集团\n\n市值17m（ath mc是160m），24h的交易量760k，top10 hold93%的币。liq差不多400k。。。\n\n怎么说呢？你明知哪里不对，但是以前苦于没有机会，你没办法做空？\n\n但是现在给你机会了，你敢不敢？\n\nhttps://t.co/HJByC2ahKH - 你不看好，可以卖空啊",
+      "gold_score": 6.6,
+      "domain_id": "06_contracts_short_selling_phil"
     },
     {
-      "id": "2068560935158161435",
-      "createdAt": "Sun Jun 21 05:05:33 +0000 2026",
-      "text": "又到了榴莲季节，今年的猫山王榴莲大丰收（尤其是文东高山区）\n\n各位路过路过新加坡和马来西亚的，欢迎品尝，价格应该是covid之后最便宜的（指的是猫山王，其他的品种基本没什么变化）\n\n为什么会这样呢？因为猫山王产量过剩\n事情要说回到covid之后，猫山王榴莲获准出口到中国大陆，所以好多人在covid之后看到这个商机，扎堆嫁接猫山王种（新树猫山王），而今年呢？ 刚好到了成熟期，万树齐开\n\n所以造就了只有猫山王榴莲价格下降的奇景\n\n这个时候吃老树猫山王就很爽了，因为整体价格下来了，连带老树价格也下来了\n\n此情此景- 就要吃点好的\n\n怎么看老树呢？\n刺相对来说没这么扎手\n果柄比较粗，有点沙沙感\nplus 果肉有点“黑青色”的 -恭喜你\n口感苦甜绵密（拉丝的基本就呵呵呵了）\n有点类似吃冰淇淋的感觉\n最后：产地请认准彭亨劳勿 Pahang Raub （20年以上）\n\n风险提示\n吃老树猫山王有一个后遗症：\n就是吃了老树以后，你就回不去了🤣",
-      "clean_text": "又到了榴莲季节，今年的猫山王榴莲大丰收（尤其是文东高山区）\n\n各位路过路过新加坡和马来西亚的，欢迎品尝，价格应该是covid之后最便宜的（指的是猫山王，其他的品种基本没什么变化）\n\n为什么会这样呢？因为猫山王产量过剩\n事情要说回到covid之后，猫山王榴莲获准出口到中国大陆，所以好多人在covid之后看到这个商机，扎堆嫁接猫山王种（新树猫山王），而今年呢？ 刚好到了成熟期，万树齐开\n\n所以造就了只有猫山王榴莲价格下降的奇景\n\n这个时候吃老树猫山王就很爽了，因为整体价格下来了，连带老树价格也下来了\n\n此情此景- 就要吃点好的\n\n怎么看老树呢？\n刺相对来说没这么扎手\n果柄比较粗，有点沙沙感\nplus 果肉有点“黑青色”的 -恭喜你\n口感苦甜绵密（拉丝的基本就呵呵呵了）\n有点类似吃冰淇淋的感觉\n最后：产地请认准彭亨劳勿 Pahang Raub （20年以上）\n\n风险提示\n吃老树猫山王有一个后遗症：\n就是吃了老树以后，你就回不去了🤣",
-      "favoriteCount": 19,
-      "viewCount": 3937,
-      "has_article": false,
-      "j_score": 0.2,
-      "e_score": 0.1,
-      "v_score": 0.6,
-      "composite_score": 0.265,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "1913791489500696942",
-      "createdAt": "Sun Apr 20 03:07:02 +0000 2025",
-      "text": "推上有好多不同类型的交易博主，每个人都有自己的三板斧，门道和擅长的领域，\n\n看k线趋势的 @Paris13Jeanne @CryptosLaowai  , 有看机制的 @thecryptoskanda , 有看宏观的 @phyrexni  @CryptoHayes , 有看链上的 @cishanjia @wolfyxbt , 也有玄学的 @kunlunstar   看事件驱动型的 @dotyyds1234 @brc20niubi  看市场情绪和市场情报的 @Elizabethofyou 等等 - 反正各式各样的都有，唯一的共同点就是深耕\n\n我从17年就跟交易所打交道（亚洲/欧洲/美国/拉美，离岸/合规，白/黑/黄种人），自己也做项目，所以对交易所的公告和项目方发的信息比较敏感，加上喜欢看一下历史类的书籍，就逐步形成了“事件驱动型”的交易体系\n\n比如昨晚动静比较大的 $voxel, 在4月10日的时候就出现在binance 的delisting投票里，当时市值只有不到10m，然后昨晚看到binance出的一个关于调整资金费率的公告（从8-》4-〉2），24h的费率达到24%，而且voxel当时的市值不到15m，我就知道机会来了，睡前做了一波多仓就跑了\n\n今早看到趋势还在上涨，估计是要庄家要集体扎空大家，所以就开了个多仓，还能吃费率，吃了个早餐回来发现果然涨了不少。\n\n我不是要说自己有多厉害，交易有多牛，事实上我也是小韭菜一名；只是想说一个事情，就是只要找到自己擅长的领域去深耕，知道自己赚的是什么钱（我这种就是短时的信息差），找到适合自己的交易方式，不影响生活，睡的了觉。\n\n昨天热议的abcde，我个人是感觉不是他们做错了什么，就是单纯的没找到适合自己属性的投资模式而已，只要不下牌桌，还有担当，一切都好说。\n\np/s：发稿前已经平仓，无利益相关。",
-      "clean_text": "推上有好多不同类型的交易博主，每个人都有自己的三板斧，门道和擅长的领域，\n\n看k线趋势的 @Paris13Jeanne @CryptosLaowai  , 有看机制的 @thecryptoskanda , 有看宏观的 @phyrexni  @CryptoHayes , 有看链上的 @cishanjia @wolfyxbt , 也有玄学的 @kunlunstar   看事件驱动型的 @dotyyds1234 @brc20niubi  看市场情绪和市场情报的 @Elizabethofyou 等等 - 反正各式各样的都有，唯一的共同点就是深耕\n\n我从17年就跟交易所打交道（亚洲/欧洲/美国/拉美，离岸/合规，白/黑/黄种人），自己也做项目，所以对交易所的公告和项目方发的信息比较敏感，加上喜欢看一下历史类的书籍，就逐步形成了“事件驱动型”的交易体系\n\n比如昨晚动静比较大的 $voxel, 在4月10日的时候就出现在binance 的delisting投票里，当时市值只有不到10m，然后昨晚看到binance出的一个关于调整资金费率的公告（从8-》4-〉2），24h的费率达到24%，而且voxel当时的市值不到15m，我就知道机会来了，睡前做了一波多仓就跑了\n\n今早看到趋势还在上涨，估计是要庄家要集体扎空大家，所以就开了个多仓，还能吃费率，吃了个早餐回来发现果然涨了不少。\n\n我不是要说自己有多厉害，交易有多牛，事实上我也是小韭菜一名；只是想说一个事情，就是只要找到自己擅长的领域去深耕，知道自己赚的是什么钱（我这种就是短时的信息差），找到适合自己的交易方式，不影响生活，睡的了觉。\n\n昨天热议的abcde，我个人是感觉不是他们做错了什么，就是单纯的没找到适合自己属性的投资模式而已，只要不下牌桌，还有担当，一切都好说。\n\np/s：发稿前已经平仓，无利益相关。",
-      "favoriteCount": 19,
-      "viewCount": 5316,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.12,
-      "v_score": 0.7,
-      "composite_score": 0.257,
-      "domain_id": "listing_lobbying"
-    },
-    {
-      "id": "2023061744038694940",
-      "createdAt": "Sun Feb 15 15:48:01 +0000 2026",
-      "text": "考考大家，你们知道近20年来中文农历新年歌曲的大都产自哪里吗？\n\na，中国大陆\nb，台湾\nc，马来西亚\nd，加拿大\ne，印尼\n\n等灯登邓～\n\n很多人可能以为是台湾，毕竟那里发片的产业比较成熟，但是其实：\n\n答案是c，马来西亚 - 各位是不是没想到～ \n近两年来，每年产出近100+首“新年歌”（贺岁歌曲） —— 出猫山王之外，被尊称为地表最强新年歌产地\n\n就是这么一个只有700万华人人口的国家，居然每年产出这么多首新年歌曲+mv ，你说真的是大家都喜欢听新年歌？别傻了孩子，华商是最抠的。。。\n\n其实答案就在时间点+商业模式上 - 因为贺岁歌曲是马来西亚本土华人艺人最容易找到“赞助的”（所谓的要就不开张，开张吃一年）\n\n恰好企业的老板是华人、恰好年尾（农历新年在年头）还有剩余的市场预算没花完、恰好新年歌的门槛低（成本不高，没什么技术含量）、恰好华人在新年期间最舍得花钱、恰好马来西亚的商场都需要更换歌单、恰好老板们出去庆功宴、赞助会的时候需要有个排场.... \n\n兜兜转转，就是各种凑巧 —— 这个跟listing一样，就是有政策，有风口，有标准，有商务，有叙事，有收入等等 - 就是这么凑在一起，你说换了一个时间来，还行不行？换一个人来，还能不能？\n\n对不起，很多时候就是没赶巧 - 岁岁年年花相似，年年岁岁人不同，很多时候，错过了就是一眼万年\n\n昨天的船票登不了今天的船；今天播下的种子也未必长成后天的鲜花，不变的是：鲜肉终会变成腊肉\n\n不把listing当成大满贯和目的地才是唯一解\n\n最后分享一个，我觉得今年最有新意的马来西亚新年歌，来自namewee黄明志的《马来西亚的新年》\n\nhttps://t.co/slhjNo9ToO\n\n看看大家能听出用了多少种语言吗？ 🤣\n\n当我们在说中文，你确定你的中文和我说的是一样的吗？",
-      "clean_text": "考考大家，你们知道近20年来中文农历新年歌曲的大都产自哪里吗？\n\na，中国大陆\nb，台湾\nc，马来西亚\nd，加拿大\ne，印尼\n\n等灯登邓～\n\n很多人可能以为是台湾，毕竟那里发片的产业比较成熟，但是其实：\n\n答案是c，马来西亚 - 各位是不是没想到～ \n近两年来，每年产出近100+首“新年歌”（贺岁歌曲） —— 出猫山王之外，被尊称为地表最强新年歌产地\n\n就是这么一个只有700万华人人口的国家，居然每年产出这么多首新年歌曲+mv ，你说真的是大家都喜欢听新年歌？别傻了孩子，华商是最抠的。。。\n\n其实答案就在时间点+商业模式上 - 因为贺岁歌曲是马来西亚本土华人艺人最容易找到“赞助的”（所谓的要就不开张，开张吃一年）\n\n恰好企业的老板是华人、恰好年尾（农历新年在年头）还有剩余的市场预算没花完、恰好新年歌的门槛低（成本不高，没什么技术含量）、恰好华人在新年期间最舍得花钱、恰好马来西亚的商场都需要更换歌单、恰好老板们出去庆功宴、赞助会的时候需要有个排场.... \n\n兜兜转转，就是各种凑巧 —— 这个跟listing一样，就是有政策，有风口，有标准，有商务，有叙事，有收入等等 - 就是这么凑在一起，你说换了一个时间来，还行不行？换一个人来，还能不能？\n\n对不起，很多时候就是没赶巧 - 岁岁年年花相似，年年岁岁人不同，很多时候，错过了就是一眼万年\n\n昨天的船票登不了今天的船；今天播下的种子也未必长成后天的鲜花，不变的是：鲜肉终会变成腊肉\n\n不把listing当成大满贯和目的地才是唯一解\n\n最后分享一个，我觉得今年最有新意的马来西亚新年歌，来自namewee黄明志的《马来西亚的新年》\n\n\n\n看看大家能听出用了多少种语言吗？ 🤣\n\n当我们在说中文，你确定你的中文和我说的是一样的吗？",
-      "favoriteCount": 20,
-      "viewCount": 6992,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.7,
-      "composite_score": 0.25,
-      "domain_id": "listing_lobbying"
-    },
-    {
-      "id": "2050933116500656331",
-      "createdAt": "Sun May 03 13:38:54 +0000 2026",
-      "text": "用 @thecryptoskanda 的话，救市就是救庄\n\n项目方自救，做自己的庄\n\n这篇文只是序幕，你说 $rave $coai $myx 的基本面好得可以几十亿市值吗？能造血到这个程度？\n\n机制使然而已\n\n他们能，为什么你不能？",
-      "clean_text": "用 @thecryptoskanda 的话，救市就是救庄\n\n项目方自救，做自己的庄\n\n这篇文只是序幕，你说 $rave $coai $myx 的基本面好得可以几十亿市值吗？能造血到这个程度？\n\n机制使然而已\n\n他们能，为什么你不能？",
-      "favoriteCount": 16,
-      "viewCount": 5918,
-      "has_article": false,
-      "j_score": 0.2,
-      "e_score": 0.1,
-      "v_score": 0.5,
-      "composite_score": 0.24,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "2098980907504083307",
-      "createdAt": "Sun Sep 13 03:43:40 +0000 2026",
-      "text": "重要的事情说两次\n不要碰 ethereum:0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f \n不要碰 ethereum:0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f \n\n这个币现在是疯狂前的自救 https://x.com/agintender/status/2068186852637700170",
-      "clean_text": "重要的事情说两次\n不要碰 ethereum:0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f \n不要碰 ethereum:0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f \n\n这个币现在是疯狂前的自救",
-      "favoriteCount": 38,
-      "viewCount": 39813,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.5,
-      "composite_score": 0.2,
-      "domain_id": "trader_mindset_essays"
-    },
-    {
-      "id": "1981556578768855457",
-      "createdAt": "Fri Oct 24 03:01:18 +0000 2025",
-      "text": "建议大家都把这篇文章和之前写的pendle的长文（ https://t.co/jyatyBv4l8） 和 循环贷策略（ https://t.co/u87ZX2ATZY） 都看一下\n\n要不然接下来我写的跨产品联动逻辑（又称3P策略 😂）\nPoly- Perp - Pendle ，你们会完全找不着北",
-      "clean_text": "建议大家都把这篇文章和之前写的pendle的长文（  和 循环贷策略（  都看一下\n\n要不然接下来我写的跨产品联动逻辑（又称3P策略 😂）\nPoly- Perp - Pendle ，你们会完全找不着北",
-      "favoriteCount": 99,
-      "viewCount": 14991,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.5,
-      "composite_score": 0.2,
-      "domain_id": "trader_mindset_essays"
+      "id": "2064524494417613069",
+      "text": "😂 妈妈，我上电视了～ \n之前写的资金费率算法的文章被转载了\n\nlook mum, I made it 😄 someone just reposted that old funding-rate-algorithm piece of mine\n\n中文版原文在这里：https://t.co/urNwwX8IXl https://t.co/02ueTVuraI",
+      "createdAt": "Wed Jun 10 01:46:11 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 35,
+      "replyCount": 3,
+      "viewCount": 11522,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2064524494417613069",
+      "isQuote": true,
+      "quoteId": "2064486476583207312",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2064524494417613069/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HKapgwfa4AAr7DQ.jpg"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://x.com/agintender/status/1947269261057266046?s=20",
+          "displayUrl": "x.com/agintender/sta…"
+        }
+      ],
+      "clean_text": "😂 妈妈，我上电视了～ \n之前写的资金费率算法的文章被转载了\n\nlook mum, I made it 😄 someone just reposted that old funding-rate-algorithm piece of mine\n\n中文版原文在这里：https://t.co/urNwwX8IXl https://t.co/02ueTVuraI",
+      "gold_score": 8.0,
+      "domain_id": "06_contracts_short_selling_phil"
     },
     {
       "id": "2089918265049157814",
-      "createdAt": "Wed Aug 19 03:31:57 +0000 2026",
       "text": "那些在perp上做空 $unitree 宇树的朋友们… 你们真的还好吗？！  尤其在trade xyz上开仓的…\n\n就这个流动性和资金费率吃一壶都算少的\n\n可以看空但不做空的",
-      "clean_text": "那些在perp上做空 $unitree 宇树的朋友们… 你们真的还好吗？！  尤其在trade xyz上开仓的…\n\n就这个流动性和资金费率吃一壶都算少的\n\n可以看空但不做空的",
+      "createdAt": "Wed Aug 19 03:31:57 +0000 2026",
       "favoriteCount": 6,
+      "replyCount": 24,
       "viewCount": 4195,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.4,
-      "composite_score": 0.175,
-      "domain_id": "derivatives_options"
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 35457,
+      "quoteCount": 1,
+      "language": "zh",
+      "conversationId": "2089918265049157814",
+      "clean_text": "那些在perp上做空 $unitree 宇树的朋友们… 你们真的还好吗？！  尤其在trade xyz上开仓的…\n\n就这个流动性和资金费率吃一壶都算少的\n\n可以看空但不做空的",
+      "gold_score": 6.6,
+      "domain_id": "06_contracts_short_selling_phil"
     },
     {
-      "id": "2082804518388154378",
-      "createdAt": "Thu Jul 30 12:24:28 +0000 2026",
-      "text": "@Michael_Liu93 赞成的，爸爸们不减capex，不影响基本面，大家还都要买买买\n\n另，开源模型这个趋势还会有新增的capex，目前大家还没聊到\n\n不过韩国这个救市措施，要是真的是禁掉卖空真的是有点无语了。。它们关闭用户的融资渠道都好过这个",
-      "clean_text": "@Michael_Liu93 赞成的，爸爸们不减capex，不影响基本面，大家还都要买买买\n\n另，开源模型这个趋势还会有新增的capex，目前大家还没聊到\n\n不过韩国这个救市措施，要是真的是禁掉卖空真的是有点无语了。。它们关闭用户的融资渠道都好过这个",
-      "favoriteCount": 2,
-      "viewCount": 2527,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.4,
-      "composite_score": 0.175,
-      "domain_id": "trader_mindset_essays"
+      "id": "1952905780912635916",
+      "text": "更新一版 @binance新推出的 All USDⓈ-M Composite Index  \n\n先说小结： \n如果你做多 ALL Index，就是押注“整个市场上涨”；  反之，你做空 ALL Index，就是押注“整个市场下跌”  \n\n因为是指数，所以不要期待那种“黄河之水天上来”的大涨大跌之势  \n\n看不懂的，就不参与 \n\n 10个要点 \n\n1. 除了ethbtc/指数/usdc交易对的“所有在binance上usdt永续交易对”的指数   \n\n2. 交易的是指数，就是你交易的是这一篮子资产的“价格强弱变化与相关性波动性，而不是单一资产的方向性”  \n\n说人话，就是这个标的只跟自己昨天的价格比  \n\n3. 它是由 Binance 上所有 USDⓈ 报价的合约组成的一个“广义市场指数”  \n交易它 = 你交易的是整个市场的平均表现，多就是看涨；空就是看跌  \n\n4. 算法上：每个币种都是单独的权重，假设有100个永续交易对，那么每个币种都是1%的权重  ，包括eth,btc,bnb etc\n\n换句话今天就算有要个妖币，比如今天的 $myx ，24h涨了400%也就占1%（举例而已）  \n\n5.divisor都是标准公式就不说了  - 反正就是保证公式只是反应“价格变化”  \n\n6. 然后为了防止妖币乱舞，“指数乱窜”（在当前市场是很有可能的）贴心的算法设计师还为大家设计了地板floor和cap天花板的变化阈值，将δ = 0.95  \n\n说的高级一点就是： 在 Binance 指数合约中，δ = 0.95 表示：新一期的指数权重调整中，有 95% 的比重继承自上一期，只有 5% 来自当前实际市场表现的变动。  \n\n7. 关于rebalance是每天的utc时间0800，相当于每天utc的早上8点会自动刷新（套利的黄金时刻） \n\n注意：因为δ = 0.95，所以对于那些用“直觉”交易的选手要格外小心了（我故意提了两次了哈 🤣）  \n\n 8.估计是真的怕了“妖币”，所以即将下架的交易对在下架前的40h前就纳入指数了 \n\n9. 资金费率的上线是 ±3% （8h），也体现出binance的保守姿态和“市场的敬畏”  \n\n10. funding rate要怎么算呢？上线后观察一下 \n\n最后，如果你看完以上的文字，还是觉得很复杂，或者压根就不想看完，那，要不，还是看看就好，就别参与了 \n\n知其然，且知其所以然 \nhttps://t.co/7ttA6Cnwef",
+      "createdAt": "Wed Aug 06 01:33:16 +0000 2025",
+      "language": "zh",
+      "retweetCount": 7,
+      "favoriteCount": 21,
+      "replyCount": 3,
+      "viewCount": 3923,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1952905780912635916",
+      "mentions": [
+        {
+          "screenName": "binance",
+          "name": "Binance",
+          "userId": "877807935493033984"
+        }
+      ],
+      "clean_text": "更新一版 @binance新推出的 All USDⓈ-M Composite Index  \n\n先说小结： \n如果你做多 ALL Index，就是押注“整个市场上涨”；  反之，你做空 ALL Index，就是押注“整个市场下跌”  \n\n因为是指数，所以不要期待那种“黄河之水天上来”的大涨大跌之势  \n\n看不懂的，就不参与 \n\n 10个要点 \n\n1. 除了ethbtc/指数/usdc交易对的“所有在binance上usdt永续交易对”的指数   \n\n2. 交易的是指数，就是你交易的是这一篮子资产的“价格强弱变化与相关性波动性，而不是单一资产的方向性”  \n\n说人话，就是这个标的只跟自己昨天的价格比  \n\n3. 它是由 Binance 上所有 USDⓈ 报价的合约组成的一个“广义市场指数”  \n交易它 = 你交易的是整个市场的平均表现，多就是看涨；空就是看跌  \n\n4. 算法上：每个币种都是单独的权重，假设有100个永续交易对，那么每个币种都是1%的权重  ，包括eth,btc,bnb etc\n\n换句话今天就算有要个妖币，比如今天的 $myx ，24h涨了400%也就占1%（举例而已）  \n\n5.divisor都是标准公式就不说了  - 反正就是保证公式只是反应“价格变化”  \n\n6. 然后为了防止妖币乱舞，“指数乱窜”（在当前市场是很有可能的）贴心的算法设计师还为大家设计了地板floor和cap天花板的变化阈值，将δ = 0.95  \n\n说的高级一点就是： 在 Binance 指数合约中，δ = 0.95 表示：新一期的指数权重调整中，有 95% 的比重继承自上一期，只有 5% 来自当前实际市场表现的变动。  \n\n7. 关于rebalance是每天的utc时间0800，相当于每天utc的早上8点会自动刷新（套利的黄金时刻） \n\n注意：因为δ = 0.95，所以对于那些用“直觉”交易的选手要格外小心了（我故意提了两次了哈 🤣）  \n\n 8.估计是真的怕了“妖币”，所以即将下架的交易对在下架前的40h前就纳入指数了 \n\n9. 资金费率的上线是 ±3% （8h），也体现出binance的保守姿态和“市场的敬畏”  \n\n10. funding rate要怎么算呢？上线后观察一下 \n\n最后，如果你看完以上的文字，还是觉得很复杂，或者压根就不想看完，那，要不，还是看看就好，就别参与了 \n\n知其然，且知其所以然 \nhttps://t.co/7ttA6Cnwef",
+      "gold_score": 8.2,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2044339378101879059",
+      "text": "经历了去年的 $alpaca $myx $coai 到这几天的 $rave ，整个市场都知道了“做空”的好处\n\n说一个反直觉的事情，做空听起来很可怕，但是从数据来看，做空机制的引入，带来的不是市场的崩溃，而是繁荣（aka 膨胀） 看图\n\n但是目前能够到“perp做空门槛”的币种少之又少 - 百家乐都能买闲庄，为什么到了token只能买入？！ 是被什么限制了？\n\n为此我们希望能做一个让所有币，不论meme，alpha，社区盘子，矿币 etc都能“做空”的协议 —— 把“做空权”还给市场，为此我们做了这个协议 ——  https://t.co/HJByC2ahKH \n\n至于为什么叫 you can short it - 看文章封面就知道了🤣\n\n这篇文洋洋洒洒写了9000字，改了近20个版本，终于发出来了\n\n作为一个老韭菜，我一直深信每次的牛市才不是什么减半叙事、xx的共识也是xx共识的结果，而是交易机制进化的成果\n\n这一次的机制变化的主旋律是：把做空权还给市场，you can short it \n\n是为序",
+      "createdAt": "Wed Apr 15 08:57:44 +0000 2026",
+      "language": "zh",
+      "retweetCount": 4,
+      "favoriteCount": 36,
+      "replyCount": 7,
+      "viewCount": 17822,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2044339378101879059",
+      "isQuote": true,
+      "quoteId": "2044266032970510343",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2044339378101879059/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HF7xgM-bQAAUmHc.jpg"
+        }
+      ],
+      "clean_text": "经历了去年的 $alpaca $myx $coai 到这几天的 $rave ，整个市场都知道了“做空”的好处\n\n说一个反直觉的事情，做空听起来很可怕，但是从数据来看，做空机制的引入，带来的不是市场的崩溃，而是繁荣（aka 膨胀） 看图\n\n但是目前能够到“perp做空门槛”的币种少之又少 - 百家乐都能买闲庄，为什么到了token只能买入？！ 是被什么限制了？\n\n为此我们希望能做一个让所有币，不论meme，alpha，社区盘子，矿币 etc都能“做空”的协议 —— 把“做空权”还给市场，为此我们做了这个协议 ——  https://t.co/HJByC2ahKH \n\n至于为什么叫 you can short it - 看文章封面就知道了🤣\n\n这篇文洋洋洒洒写了9000字，改了近20个版本，终于发出来了\n\n作为一个老韭菜，我一直深信每次的牛市才不是什么减半叙事、xx的共识也是xx共识的结果，而是交易机制进化的成果\n\n这一次的机制变化的主旋律是：把做空权还给市场，you can short it \n\n是为序",
+      "gold_score": 8.3,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1967795678970814494",
+      "text": "想象一下，有一棵猫山王榴莲树。这棵树代表着一个能产生收益的基础资产，就像Binance上的永续合约市场一样。\n\n未来的榴莲收成：这棵树未来会结出多少榴莲，其品质如何，都是不确定的。这个不确定的未来收成，就好比永续合约市场未来产生的资金费率。有时收成好（资金费率为正且高），有时收成差（资金费率为负）。\n\n榴莲期货合约：果农和水果商希望提前锁定未来榴莲的价格，以对冲收成的不确定性。于是，他们创建了一个市场，专门交易“未来特定日期交付的榴莲”的合约。这个合约，就相当于Boros协议中的收益单位（YU）。\n\n期货市场的价格：在这个市场上，榴莲期货合约有一个由买卖双方竞价形成的价格。这个价格反映了市场对未来榴莲收成的集体预期。这个价格，就是Boros中的隐含年化收益率（Implied APR）。\n\n实际的收成价值：等到榴莲成熟采摘时，它在现货市场上的实际价值就确定了。这个最终的、真实的价值，就是Boros中的基础年化收益率（Underlying APR）。",
+      "createdAt": "Tue Sep 16 03:40:24 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 8,
+      "replyCount": 0,
+      "quoteCount": 1,
+      "viewCount": 3510,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1967795678970814494",
+      "isQuote": true,
+      "quoteId": "1967516272955982094",
+      "clean_text": "想象一下，有一棵猫山王榴莲树。这棵树代表着一个能产生收益的基础资产，就像Binance上的永续合约市场一样。\n\n未来的榴莲收成：这棵树未来会结出多少榴莲，其品质如何，都是不确定的。这个不确定的未来收成，就好比永续合约市场未来产生的资金费率。有时收成好（资金费率为正且高），有时收成差（资金费率为负）。\n\n榴莲期货合约：果农和水果商希望提前锁定未来榴莲的价格，以对冲收成的不确定性。于是，他们创建了一个市场，专门交易“未来特定日期交付的榴莲”的合约。这个合约，就相当于Boros协议中的收益单位（YU）。\n\n期货市场的价格：在这个市场上，榴莲期货合约有一个由买卖双方竞价形成的价格。这个价格反映了市场对未来榴莲收成的集体预期。这个价格，就是Boros中的隐含年化收益率（Implied APR）。\n\n实际的收成价值：等到榴莲成熟采摘时，它在现货市场上的实际价值就确定了。这个最终的、真实的价值，就是Boros中的基础年化收益率（Underlying APR）。",
+      "gold_score": 7.3,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1965338135187128594",
+      "text": "现在换用负资金费率当诱饵\n\n负得你受不了进来开多，关门，打狗 😂",
+      "createdAt": "Tue Sep 09 08:55:00 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 17,
+      "replyCount": 2,
+      "viewCount": 4955,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1965338135187128594",
+      "isQuote": true,
+      "quoteId": "1965323429156196451",
+      "clean_text": "现在换用负资金费率当诱饵\n\n负得你受不了进来开多，关门，打狗 😂",
+      "gold_score": 5.4,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2066919343636520986",
+      "text": "那双绿鞋可厉害了喂.. 叫超额配售选择权～ 在行情好的时候，框框卖\n\n越涨越有人来做空\n越做空越有人来\n\n这对于币圈的high fdv low float的剧本可熟悉了",
+      "createdAt": "Tue Jun 16 16:22:27 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 12,
+      "replyCount": 1,
+      "viewCount": 4762,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2066919343636520986",
+      "isQuote": true,
+      "quoteId": "2066899504658362522",
+      "clean_text": "那双绿鞋可厉害了喂.. 叫超额配售选择权～ 在行情好的时候，框框卖\n\n越涨越有人来做空\n越做空越有人来\n\n这对于币圈的high fdv low float的剧本可熟悉了",
+      "gold_score": 5.8,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1947664351843831899",
+      "text": "怎么利用“资金费率机制”完成收割？\n\n这个版本的市场流动性现在都集中在永续合约上（这也是为什么好多项目方都抱怨，上币之后的流动性都不咋地），所以这也催生出新的庄家“玩法”（比如alpaca）\n\n“资金费率”在这其中扮演了一个非常重要的角色\n\n这个版本都有一个“共识”，就是暴涨或者上线之后“无脑空”，这就给操盘手机会了\n\n本质上就是通过合约和现货的价差，创造了“资金费率”倾斜，让做空的一方需要给做多的一方每隔一段时间交“持仓费”（反之亦然）\n\n而且随着价差越来越大，这个持仓费用就会越来越高，收取的频率越来越快 —— 估计很多散户都没注意到这个细节\n\n就这样依靠资金费率机制的“定向刮刀”逐渐把对方的保证金消耗殆尽，最后只要“轻轻一推”，仓位就锅干碗净 —— 这些强平的仓位进而形成所谓的“空军燃料”，进一步助推价格，让操盘手得以脱身。\n\n不得不说，操盘手很好滴利用了这个机制给自己创造了优势，进而转化为胜势",
+      "createdAt": "Tue Jul 22 14:25:41 +0000 2025",
+      "language": "zh",
+      "retweetCount": 20,
+      "favoriteCount": 132,
+      "replyCount": 8,
+      "quoteCount": 1,
+      "viewCount": 24113,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1947664351843831899",
+      "isQuote": true,
+      "quoteId": "1947269261057266046",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1947664351843831899/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/Gwd8J3xbEAIJyVa.jpg"
+        }
+      ],
+      "clean_text": "怎么利用“资金费率机制”完成收割？\n\n这个版本的市场流动性现在都集中在永续合约上（这也是为什么好多项目方都抱怨，上币之后的流动性都不咋地），所以这也催生出新的庄家“玩法”（比如alpaca）\n\n“资金费率”在这其中扮演了一个非常重要的角色\n\n这个版本都有一个“共识”，就是暴涨或者上线之后“无脑空”，这就给操盘手机会了\n\n本质上就是通过合约和现货的价差，创造了“资金费率”倾斜，让做空的一方需要给做多的一方每隔一段时间交“持仓费”（反之亦然）\n\n而且随着价差越来越大，这个持仓费用就会越来越高，收取的频率越来越快 —— 估计很多散户都没注意到这个细节\n\n就这样依靠资金费率机制的“定向刮刀”逐渐把对方的保证金消耗殆尽，最后只要“轻轻一推”，仓位就锅干碗净 —— 这些强平的仓位进而形成所谓的“空军燃料”，进一步助推价格，让操盘手得以脱身。\n\n不得不说，操盘手很好滴利用了这个机制给自己创造了优势，进而转化为胜势",
+      "gold_score": 8.3,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1998229671050461355",
+      "text": "如果我们用福建生意人的眼光重新审视 2025 年的币圈，会看到这样一幅图景：\n\n这群人（项目方+VC）原本宣称要在乌克兰（高风险新区）建房子（Web3 生态），其实他们根本不在乎房子能不能住人。他们真正做的是：\n\n1. 先在那块地上插个牌子，以此为理由印了一堆“砖头票”（Token）。\n\n2. 找来华尔街的大佬（VC机构）站台，说这砖头票以后能换黄金。\n\n3. 找来一堆群演（工作室）来售楼处连夜排队，制造火爆场面（刷数据）\n\n4. 找来几个大点的台子（交易所），交点保护费（上币费+空投），再开个专场（合约交易）\n\n5. 找来村里的大喇叭（KOL）喊话，说砖头票要涨价了。\n\n6. 最后，利用合约机制把想做空砖头票的人打爆，趁机把手里的废纸（Token）换成了真金白银。\n\nps：细心的人会看到这与原po有啥区别\npps：不是我们不会，而是老灯真下不去这个手。。。",
+      "createdAt": "Tue Dec 09 03:14:13 +0000 2025",
+      "language": "zh",
+      "retweetCount": 6,
+      "favoriteCount": 52,
+      "replyCount": 15,
+      "quoteCount": 3,
+      "viewCount": 16351,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1998229671050461355",
+      "isQuote": true,
+      "quoteId": "1998024711146770855",
+      "clean_text": "如果我们用福建生意人的眼光重新审视 2025 年的币圈，会看到这样一幅图景：\n\n这群人（项目方+VC）原本宣称要在乌克兰（高风险新区）建房子（Web3 生态），其实他们根本不在乎房子能不能住人。他们真正做的是：\n\n1. 先在那块地上插个牌子，以此为理由印了一堆“砖头票”（Token）。\n\n2. 找来华尔街的大佬（VC机构）站台，说这砖头票以后能换黄金。\n\n3. 找来一堆群演（工作室）来售楼处连夜排队，制造火爆场面（刷数据）\n\n4. 找来几个大点的台子（交易所），交点保护费（上币费+空投），再开个专场（合约交易）\n\n5. 找来村里的大喇叭（KOL）喊话，说砖头票要涨价了。\n\n6. 最后，利用合约机制把想做空砖头票的人打爆，趁机把手里的废纸（Token）换成了真金白银。\n\nps：细心的人会看到这与原po有啥区别\npps：不是我们不会，而是老灯真下不去这个手。。。",
+      "gold_score": 7.1,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1952747103866016147",
+      "text": "看了一下 @binance 新推出的 All USDⓈ-M Composite Index\n\n先说小结：\n如果你做多 ALL Index，就是押注“整个山寨币市场上涨”；\n\n反之，你做空 ALL Index，就是押注“山寨币市场整体下”\n\n因为是指数，所以不要期待那种“黄河之水天上来”的大涨大跌之势\n\n看不懂的，就不参与\n\n10个要点\n1. 除了eth和btc/指数/usdc交易对的“所有在binance上usdt永续交易对”的指数 \n\n2. 交易的是指数，就是你交易的是这一篮子资产的“价格强弱变化与相关性波动性，而不是单一资产的方向性”\n\n说人话，就是这个标的只跟自己昨天的价格比\n\n3. 它是由 Binance 上所有 USDⓈ 报价的合约组成的一个“广义市场指数”\n\n交易它 = 你交易的是山寨币的平均表现，多就是看涨；空就是看跌\n\n4. 算法上：每个币种都是单独的权重，假设有100个永续交易对，那么每个币种都是1%的权重\n\n换句话今天就算有要个妖币，比如今天的 $myx ，24h涨了400%也就占1%（举例而已）\n\n5.divisor都是标准公式就不说了  - 反正就是保证公式只是反应“价格变化”\n\n6. 然后为了防止妖币乱舞，“指数乱窜”（在当前市场是很有可能的）贴心的算法设计师还为大家设计了地板floor和cap天花板的变化阈值，将δ = 0.95\n\n说的高级一点就是：\n在 Binance 指数合约中，δ = 0.95 表示：新一期的指数权重调整中，有 95% 的比重继承自上一期，只有 5% 来自当前实际市场表现的变动。\n\n7. 关于rebalance是每天的utc时间0800，相当于每天utc的早上8点会自动刷新（套利的黄金时刻）\n\n注意：因为δ = 0.95，所以对于那些用“直觉”交易的选手要格外小心了（我故意提了两次了哈 🤣） \n\n8.估计是真的怕了“妖币”，所以即将下架的交易对在下架前的40h前就纳入指数了 🤣\n\n9. 资金费率的上线是 ±3% （8h），也体现出binance的保守姿态和“市场的敬畏”\n\n10. funding rate要怎么算呢？（因为指数没有现货），我有空再去看吧，今天太累了\n\n最后，如果你看完以上的文字，还是觉得很复杂，或者压根就不想看完，那，要不，还是看看就好，就别参与了\n\n知其然，且知其所以然\n\nhttps://t.co/gend0QgmzJ \n\nps：没有广告费",
+      "createdAt": "Tue Aug 05 15:02:44 +0000 2025",
+      "language": "zh",
+      "retweetCount": 6,
+      "favoriteCount": 71,
+      "replyCount": 13,
+      "quoteCount": 3,
+      "viewCount": 21794,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1952747103866016147",
+      "isQuote": true,
+      "quoteId": "1952711705190072744",
+      "mentions": [
+        {
+          "screenName": "binance",
+          "name": "Binance",
+          "userId": "877807935493033984"
+        }
+      ],
+      "clean_text": "看了一下 @binance 新推出的 All USDⓈ-M Composite Index\n\n先说小结：\n如果你做多 ALL Index，就是押注“整个山寨币市场上涨”；\n\n反之，你做空 ALL Index，就是押注“山寨币市场整体下”\n\n因为是指数，所以不要期待那种“黄河之水天上来”的大涨大跌之势\n\n看不懂的，就不参与\n\n10个要点\n1. 除了eth和btc/指数/usdc交易对的“所有在binance上usdt永续交易对”的指数 \n\n2. 交易的是指数，就是你交易的是这一篮子资产的“价格强弱变化与相关性波动性，而不是单一资产的方向性”\n\n说人话，就是这个标的只跟自己昨天的价格比\n\n3. 它是由 Binance 上所有 USDⓈ 报价的合约组成的一个“广义市场指数”\n\n交易它 = 你交易的是山寨币的平均表现，多就是看涨；空就是看跌\n\n4. 算法上：每个币种都是单独的权重，假设有100个永续交易对，那么每个币种都是1%的权重\n\n换句话今天就算有要个妖币，比如今天的 $myx ，24h涨了400%也就占1%（举例而已）\n\n5.divisor都是标准公式就不说了  - 反正就是保证公式只是反应“价格变化”\n\n6. 然后为了防止妖币乱舞，“指数乱窜”（在当前市场是很有可能的）贴心的算法设计师还为大家设计了地板floor和cap天花板的变化阈值，将δ = 0.95\n\n说的高级一点就是：\n在 Binance 指数合约中，δ = 0.95 表示：新一期的指数权重调整中，有 95% 的比重继承自上一期，只有 5% 来自当前实际市场表现的变动。\n\n7. 关于rebalance是每天的utc时间0800，相当于每天utc的早上8点会自动刷新（套利的黄金时刻）\n\n注意：因为δ = 0.95，所以对于那些用“直觉”交易的选手要格外小心了（我故意提了两次了哈 🤣） \n\n8.估计是真的怕了“妖币”，所以即将下架的交易对在下架前的40h前就纳入指数了 🤣\n\n9. 资金费率的上线是 ±3% （8h），也体现出binance的保守姿态和“市场的敬畏”\n\n10. funding rate要怎么算呢？（因为指数没有现货），我有空再去看吧，今天太累了\n\n最后，如果你看完以上的文字，还是觉得很复杂，或者压根就不想看完，那，要不，还是看看就好，就别参与了\n\n知其然，且知其所以然\n\nhttps://t.co/gend0QgmzJ \n\nps：没有广告费",
+      "gold_score": 8.8,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2041470395614982332",
+      "text": "我就奇怪，怎么notifications这么多，一看，感觉要被骂惨了。。不能再这么抽象了\n\n反正上个帖大概是我说 $freedomofmoney 这个meme筹码很集中，左手导右手 top10占了50%之类  -然后就被网友喷\n\n我一瞬间就傻了。。 这咋回事呢。。结果一问之下原来大家都看的是gmgn的数据。。。。 我去～  （当然这也是我的问题）\n\n都2026年，玩meme还有看gmgn这种工具的免费公开信息玩的吗？！你们认真的吗？！你们这样真的能赚到钱吗？\n\n我随便给你看个图，你自己感受一下吧 唉。。\n\n要不然还是来 https://t.co/HJByC2ahKH 玩吧  - 能随时买多，卖空。。筹码结构还清楚透明\n\n应该就是这两天，发个真·透明·好玩的",
+      "createdAt": "Tue Apr 07 10:57:25 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 27,
+      "replyCount": 12,
+      "viewCount": 14202,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2041470395614982332",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2041470395614982332/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HFS_tFXaAAAupGH.png"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2041470395614982332/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HFTAk70bkAAETWw.png"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2041470395614982332/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HFTBCABbsAA61-I.png"
+        }
+      ],
+      "clean_text": "我就奇怪，怎么notifications这么多，一看，感觉要被骂惨了。。不能再这么抽象了\n\n反正上个帖大概是我说 $freedomofmoney 这个meme筹码很集中，左手导右手 top10占了50%之类  -然后就被网友喷\n\n我一瞬间就傻了。。 这咋回事呢。。结果一问之下原来大家都看的是gmgn的数据。。。。 我去～  （当然这也是我的问题）\n\n都2026年，玩meme还有看gmgn这种工具的免费公开信息玩的吗？！你们认真的吗？！你们这样真的能赚到钱吗？\n\n我随便给你看个图，你自己感受一下吧 唉。。\n\n要不然还是来 https://t.co/HJByC2ahKH 玩吧  - 能随时买多，卖空。。筹码结构还清楚透明\n\n应该就是这两天，发个真·透明·好玩的",
+      "gold_score": 7.9,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1968703934299594809",
+      "text": "都快5b fdv了 \n有哪里能做空 $aster 的吗？ \n我反正是不信，上了binance能撑住这个fdv",
+      "createdAt": "Thu Sep 18 15:49:29 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 15,
+      "replyCount": 11,
+      "quoteCount": 2,
+      "viewCount": 56861,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1968703934299594809",
+      "isQuote": true,
+      "quoteId": "1968505561093390523",
+      "clean_text": "都快5b fdv了 \n有哪里能做空 $aster 的吗？ \n我反正是不信，上了binance能撑住这个fdv",
+      "gold_score": 6.2,
+      "domain_id": "06_contracts_short_selling_phil"
     },
     {
       "id": "2095349445710029220",
-      "createdAt": "Thu Sep 03 03:13:32 +0000 2026",
       "text": "各位来新加坡吃榴莲的时候，千万不要配酒一起食用啊…. \n\n还吃的是什么炭烤猫山王… \n\n什么东西啊…. 你们的良心不会疼嘛…",
-      "clean_text": "各位来新加坡吃榴莲的时候，千万不要配酒一起食用啊…. \n\n还吃的是什么炭烤猫山王… \n\n什么东西啊…. 你们的良心不会疼嘛…",
+      "createdAt": "Thu Sep 03 03:13:32 +0000 2026",
       "favoriteCount": 16,
+      "replyCount": 19,
       "viewCount": 11347,
-      "has_article": false,
-      "j_score": 0.1,
-      "e_score": 0.1,
-      "v_score": 0.3,
-      "composite_score": 0.15,
-      "domain_id": "trader_mindset_essays"
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 35813,
+      "clean_text": "各位来新加坡吃榴莲的时候，千万不要配酒一起食用啊…. \n\n还吃的是什么炭烤猫山王… \n\n什么东西啊…. 你们的良心不会疼嘛…",
+      "gold_score": 5.6,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2082804518388154378",
+      "text": "@Michael_Liu93 赞成的，爸爸们不减capex，不影响基本面，大家还都要买买买\n\n另，开源模型这个趋势还会有新增的capex，目前大家还没聊到\n\n不过韩国这个救市措施，要是真的是禁掉卖空真的是有点无语了。。它们关闭用户的融资渠道都好过这个",
+      "createdAt": "Thu Jul 30 12:24:28 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 2,
+      "replyCount": 1,
+      "viewCount": 2527,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2082798877707792691",
+      "isReply": true,
+      "replyId": "2082798877707792691",
+      "mentions": [
+        {
+          "screenName": "Michael_Liu93",
+          "name": "憨厚的麦总",
+          "userId": "1525742352006287361"
+        }
+      ],
+      "clean_text": "@Michael_Liu93 赞成的，爸爸们不减capex，不影响基本面，大家还都要买买买\n\n另，开源模型这个趋势还会有新增的capex，目前大家还没聊到\n\n不过韩国这个救市措施，要是真的是禁掉卖空真的是有点无语了。。它们关闭用户的融资渠道都好过这个",
+      "gold_score": 5.8,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2082778083522965752",
+      "text": "禁止卖空这个政策在这个时间点真的好傻的…. 明明就好多方法\n\n首先这次的股灾是因为杠杆etf和etn.. 与是不是卖空的关系，你调整etf的结算时间或者丢给暗池\n\n而且这次的重灾区是samsung和skhynix，而后者有skhy的美国adr了（Samsung的adr也在路上了），你说你不让adr在美国卖空吗？ 这不现实嘛\n\n你要嘛永远不允许双边赎回，要不然这个卖空压力还是能传导回来，要是不能的话，adr和正股的价差就会更大了\n\n禁止卖空要堵的点太多了，而且还容易得罪评级机构\n\n（我猜卖空的主力就是外资，这几天的买入是补回平仓，让他们淘爽了）\n\n你要针对外资的话，把卖空的结算时间调整一下就可以了，来几次瓮中抓鳖，他们就不敢了… 你觉得他们卖空没上杠杆？ 😂\n\n给出这个政策的人一看就没体会过市场的险恶…",
+      "createdAt": "Thu Jul 30 10:39:25 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 8,
+      "replyCount": 42,
+      "viewCount": 8848,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2082778083522965752",
+      "isQuote": true,
+      "quoteId": "2082763372538323450",
+      "clean_text": "禁止卖空这个政策在这个时间点真的好傻的…. 明明就好多方法\n\n首先这次的股灾是因为杠杆etf和etn.. 与是不是卖空的关系，你调整etf的结算时间或者丢给暗池\n\n而且这次的重灾区是samsung和skhynix，而后者有skhy的美国adr了（Samsung的adr也在路上了），你说你不让adr在美国卖空吗？ 这不现实嘛\n\n你要嘛永远不允许双边赎回，要不然这个卖空压力还是能传导回来，要是不能的话，adr和正股的价差就会更大了\n\n禁止卖空要堵的点太多了，而且还容易得罪评级机构\n\n（我猜卖空的主力就是外资，这几天的买入是补回平仓，让他们淘爽了）\n\n你要针对外资的话，把卖空的结算时间调整一下就可以了，来几次瓮中抓鳖，他们就不敢了… 你觉得他们卖空没上杠杆？ 😂\n\n给出这个政策的人一看就没体会过市场的险恶…",
+      "gold_score": 6.5,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1945777404947128529",
+      "text": "为什么资金费率不能是 0？ 是交易所要赚你的钱吗？\n\n资金费率本质上可以看作是：\n期货市场中模拟现货杠杆交易的“借贷利息机制”。（或者持仓成本）\n\n大部分交易所（如 Binance、OKX）默认基础资金费率为 ±0.01%，这其实与“传统的年化借贷成本”有关。\n\n换算为年化收益：\n0.01% / 8小时 → 3次/天\n0.01% × 3 × 365 ≈ 10.95% 年化\n这个年化值是比较贴近 传统市场中美元借贷利率 + BTC 期货溢价 的一个合理水平。\n\n也就是说，如果你持有一个合约头寸，你需要为你的“杠杆资金”支付大致 10% 左右的年化利率——这就像你借钱买币，得为使用资金付利息一样。\n\n做多的人，好比在借美元去买BTC，要承担利息；\n做空的人，好比借BTC去换成美元，同样要付利息。\n\n用 @0xcryptowizard 话说，你一开仓就成为了“时间的敌人” （因为利息）\n\n传统金融中，如果你在衍生品市场做多/做空，也必须支付类似的借贷成本（借入资产或融资），而永续合约通过资金费率来模拟这种经济行为。 （看到这里是不是觉得Bitmex @CryptoHayes 真的很厉害） 🤣",
+      "createdAt": "Thu Jul 17 09:27:38 +0000 2025",
+      "language": "zh",
+      "retweetCount": 2,
+      "favoriteCount": 19,
+      "replyCount": 5,
+      "viewCount": 3722,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1945777404947128529",
+      "isQuote": true,
+      "quoteId": "1942176973167661265",
+      "clean_text": "为什么资金费率不能是 0？ 是交易所要赚你的钱吗？\n\n资金费率本质上可以看作是：\n期货市场中模拟现货杠杆交易的“借贷利息机制”。（或者持仓成本）\n\n大部分交易所（如 Binance、OKX）默认基础资金费率为 ±0.01%，这其实与“传统的年化借贷成本”有关。\n\n换算为年化收益：\n0.01% / 8小时 → 3次/天\n0.01% × 3 × 365 ≈ 10.95% 年化\n这个年化值是比较贴近 传统市场中美元借贷利率 + BTC 期货溢价 的一个合理水平。\n\n也就是说，如果你持有一个合约头寸，你需要为你的“杠杆资金”支付大致 10% 左右的年化利率——这就像你借钱买币，得为使用资金付利息一样。\n\n做多的人，好比在借美元去买BTC，要承担利息；\n做空的人，好比借BTC去换成美元，同样要付利息。\n\n用 @0xcryptowizard 话说，你一开仓就成为了“时间的敌人” （因为利息）\n\n传统金融中，如果你在衍生品市场做多/做空，也必须支付类似的借贷成本（借入资产或融资），而永续合约通过资金费率来模拟这种经济行为。 （看到这里是不是觉得Bitmex @CryptoHayes 真的很厉害） 🤣",
+      "gold_score": 7.3,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1945736130693120000",
+      "text": "各位久等了 @binance 和 @okx 资金费率的infographic来了",
+      "createdAt": "Thu Jul 17 06:43:38 +0000 2025",
+      "language": "zh",
+      "retweetCount": 5,
+      "favoriteCount": 26,
+      "replyCount": 6,
+      "viewCount": 4451,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1945736130693120000",
+      "isQuote": true,
+      "quoteId": "1942176973167661265",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1945736130693120000/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/GwCkOP0bgAEYI8K.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1945736130693120000/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/GwCkQo3aYAAFzjU.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1945736130693120000/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/GwCkTV9WoAAY_qr.jpg"
+        }
+      ],
+      "mentions": [
+        {
+          "screenName": "binance",
+          "name": "Binance",
+          "userId": "877807935493033984"
+        },
+        {
+          "screenName": "okx",
+          "name": "OKX",
+          "userId": "867617849208037377"
+        }
+      ],
+      "clean_text": "各位久等了 @binance 和 @okx 资金费率的infographic来了",
+      "gold_score": 6.2,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1877349392169975907",
+      "text": "1/ What is @pendle_fi ?\nPendle is an interest rate derivatives platform, trading APY (yield) instead of token prices. The implied APY is the real \"price,\" and the value of Principal Tokens (PT) and Yield Tokens (YT) is derived from it. 🧵👇",
+      "createdAt": "Thu Jan 09 13:39:09 +0000 2025",
+      "language": "en",
+      "retweetCount": 1,
+      "favoriteCount": 2,
+      "replyCount": 1,
+      "viewCount": 242,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1877349392169975907",
+      "mentions": [
+        {
+          "screenName": "pendle_fi",
+          "name": "Pendle",
+          "userId": "1377493693762969600"
+        }
+      ],
+      "clean_text": "1/ What is @pendle_fi ?\nPendle is an interest rate derivatives platform, trading APY (yield) instead of token prices. The implied APY is the real \"price,\" and the value of Principal Tokens (PT) and Yield Tokens (YT) is derived from it. 🧵👇",
+      "gold_score": 6.5,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1996549981956890978",
+      "text": "这波总结真快 厉害了 @YeruiZhang \n\n我补充一下这题：\n\n14. 接下来没项目怎么办，币安不引领叙事（多次强调），只观察发现市场上的财富效应，帮用户吃到VC红利，找小而美的项目，有商业模式吃成长红利，对大VC币恐惧，对叙事不感冒。\n\n—- 原问题是\n按照现在bn alpha的上币速度和现在市场的融资环境（一般大项目从融资到发币需要12-18个月），到了2026年q2的时候基本已经没有“大”项目了，那到时候bn要上什么？趋势是什么？\n\n一姐 @heyibinance 的回答其实有好多信息\n1. 估值小，融资轮次不太多，vc站台/背书不顶用了\n\n2. 先发项目再发币。让用户能更早参与\n\n3.项目发出来后有收入，现金流\n\n4. 要愿意撒币做空投（重复了n次）\n\n5. vc通过融资顶上去的估值应当由二级市场博弈来决定（回到1）\n\n6. “小而美”不是字面上的“小而美”，小是估值小，美是收入美，说白了就是 revenue/fdv 反而要越大越好\n\n7. 都快2026了，就都别相信叙事了\n\n8.结合对人才需求的context，这个小而美最好还能发生在 bnbchain 上\n\n9.我实在编不下去了 就先这样吧 😂",
+      "createdAt": "Thu Dec 04 11:59:44 +0000 2025",
+      "language": "zh",
+      "retweetCount": 3,
+      "favoriteCount": 53,
+      "replyCount": 16,
+      "quoteCount": 2,
+      "viewCount": 48807,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1996549981956890978",
+      "isQuote": true,
+      "quoteId": "1996483722682515540",
+      "mentions": [
+        {
+          "screenName": "YeruiZhang",
+          "name": "Rui",
+          "userId": "3148596870"
+        }
+      ],
+      "clean_text": "这波总结真快 厉害了 @YeruiZhang \n\n我补充一下这题：\n\n14. 接下来没项目怎么办，币安不引领叙事（多次强调），只观察发现市场上的财富效应，帮用户吃到VC红利，找小而美的项目，有商业模式吃成长红利，对大VC币恐惧，对叙事不感冒。\n\n—- 原问题是\n按照现在bn alpha的上币速度和现在市场的融资环境（一般大项目从融资到发币需要12-18个月），到了2026年q2的时候基本已经没有“大”项目了，那到时候bn要上什么？趋势是什么？\n\n一姐 @heyibinance 的回答其实有好多信息\n1. 估值小，融资轮次不太多，vc站台/背书不顶用了\n\n2. 先发项目再发币。让用户能更早参与\n\n3.项目发出来后有收入，现金流\n\n4. 要愿意撒币做空投（重复了n次）\n\n5. vc通过融资顶上去的估值应当由二级市场博弈来决定（回到1）\n\n6. “小而美”不是字面上的“小而美”，小是估值小，美是收入美，说白了就是 revenue/fdv 反而要越大越好\n\n7. 都快2026了，就都别相信叙事了\n\n8.结合对人才需求的context，这个小而美最好还能发生在 bnbchain 上\n\n9.我实在编不下去了 就先这样吧 😂",
+      "gold_score": 7.6,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1956029892853932046",
+      "text": "Pendle通过将任何生息资产（yield-bearing asset）拆分为其“本金PT”和“收益YT”两个独立部分，有效地在DeFi内部创造了固定收益和收益率投机市场。\n\n这一机制不仅为用户提供了在动荡市场中锁定固定回报的能力，也为更成熟的交易者开辟了利用资本高效地对未来收益率进行投机的途径。\n\n这里的“收益”除了熟知的利息之外，还有撸各种积分 eigenlayer/ puffer etc\n\n这波积分之战也让pendle一跃而起",
+      "createdAt": "Thu Aug 14 16:27:22 +0000 2025",
+      "language": "zh",
+      "retweetCount": 5,
+      "favoriteCount": 20,
+      "replyCount": 3,
+      "viewCount": 4016,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1956029892853932046",
+      "isQuote": true,
+      "quoteId": "1955846941952049444",
+      "clean_text": "Pendle通过将任何生息资产（yield-bearing asset）拆分为其“本金PT”和“收益YT”两个独立部分，有效地在DeFi内部创造了固定收益和收益率投机市场。\n\n这一机制不仅为用户提供了在动荡市场中锁定固定回报的能力，也为更成熟的交易者开辟了利用资本高效地对未来收益率进行投机的途径。\n\n这里的“收益”除了熟知的利息之外，还有撸各种积分 eigenlayer/ puffer etc\n\n这波积分之战也让pendle一跃而起",
+      "gold_score": 6.5,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1955850262666731721",
+      "text": "结合大家的投票 发一篇pendle机制的介绍\n\nhttps://t.co/YimtWIvEm5",
+      "createdAt": "Thu Aug 14 04:33:35 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 9,
+      "replyCount": 4,
+      "viewCount": 2679,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1955850262666731721",
+      "isQuote": true,
+      "quoteId": "1954787934730854640",
+      "urls": [
+        {
+          "url": "https://x.com/agintender/status/1955846941952049444?s=46",
+          "displayUrl": "x.com/agintender/sta…"
+        }
+      ],
+      "clean_text": "结合大家的投票 发一篇pendle机制的介绍\n\nhttps://t.co/YimtWIvEm5",
+      "gold_score": 5.0,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2044593849503559736",
+      "text": "写给alpha项目方们的反攻信号\n\n1792-1840年代，那是一个属于华尔街的蛮荒时代——那是一个只能做多的原始市场。\n\n当时的市场和今天的山寨币市场相似：只能买入，持有，等庄家，等过年。没有杠杆，没有做空，没有标准化的交割流程。\n\n个股的日均交易额可能不到50万美元，参与者不过几十人。市场极小，因为能做的事太少了。\n￼\n价格波动完全由多头情绪驱动。好消息来了，所有人买入，价格飙涨。坏消息来了，所有人想卖，但因为市场太浅，卖不出去，价格崩盘。没有空头在下跌时回补买入，所以市场没有自然支撑，底部完全取决于最后一个多头什么时候认输。\n\n这就是2024~2025年的Meme，alpha的山寨币市场 - 不是说alpha的机制不好，而是红利期已过了，以前的套路都不好使了\n\n这么说吧：汇旺都倒了，陈志都被抓了，cz都出狱出书了，而alpha的机制还是这样 - 你们上了alpha之后，交易大赛之后，然后呢？说好的只要有对手方，就有流动性 呢？结果就只有羊毛党\n\n当年花了大价钱上alpha，说好的流动性？说好的perp？ alpha项目方们，你们真的就愿意这么躺平吗？碌碌无为吗？\n\n现在 @youcanshortit 就有这个机会 - 只要你上了交易所的alpha（不关是binance还是okx），只要你还不认命，还不想躺平 - 欢迎pm我 或@youcanshortit \n\n我自讨腰包100万美金的奖池跟你（们）一起把“做空权”归还市场\n\nbinance和okx不理你的，我来～\n\n名额不多哈 等你",
+      "createdAt": "Thu Apr 16 01:48:55 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 22,
+      "replyCount": 11,
+      "viewCount": 8412,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2044593849503559736",
+      "isQuote": true,
+      "quoteId": "2044266032970510343",
+      "clean_text": "写给alpha项目方们的反攻信号\n\n1792-1840年代，那是一个属于华尔街的蛮荒时代——那是一个只能做多的原始市场。\n\n当时的市场和今天的山寨币市场相似：只能买入，持有，等庄家，等过年。没有杠杆，没有做空，没有标准化的交割流程。\n\n个股的日均交易额可能不到50万美元，参与者不过几十人。市场极小，因为能做的事太少了。\n￼\n价格波动完全由多头情绪驱动。好消息来了，所有人买入，价格飙涨。坏消息来了，所有人想卖，但因为市场太浅，卖不出去，价格崩盘。没有空头在下跌时回补买入，所以市场没有自然支撑，底部完全取决于最后一个多头什么时候认输。\n\n这就是2024~2025年的Meme，alpha的山寨币市场 - 不是说alpha的机制不好，而是红利期已过了，以前的套路都不好使了\n\n这么说吧：汇旺都倒了，陈志都被抓了，cz都出狱出书了，而alpha的机制还是这样 - 你们上了alpha之后，交易大赛之后，然后呢？说好的只要有对手方，就有流动性 呢？结果就只有羊毛党\n\n当年花了大价钱上alpha，说好的流动性？说好的perp？ alpha项目方们，你们真的就愿意这么躺平吗？碌碌无为吗？\n\n现在 @youcanshortit 就有这个机会 - 只要你上了交易所的alpha（不关是binance还是okx），只要你还不认命，还不想躺平 - 欢迎pm我 或@youcanshortit \n\n我自讨腰包100万美金的奖池跟你（们）一起把“做空权”归还市场\n\nbinance和okx不理你的，我来～\n\n名额不多哈 等你",
+      "gold_score": 7.4,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2042270867988811942",
+      "text": "哈哈哈 有小伙伴问我，文章彩蛋里面说的 $walk 和 $go 是什么情况？！\n\n这两个“dataset token”是由 @pundiai 的 datapump 推出来的dataset token \n\n这两个token的筹码结构非常清晰 - 近乎40%在shortit（供大家来short），还有60%在pancakeswap （供大家来买）\n\ndev：0% 是的，dev没有币，纯纯就是打出来之后放在pancake和youcanshortit来博弈\ndev没有任何token，没有人有token - 全都在“现货”和“做空池”\n\ndev没有任何token，没有人有token - 全都在“现货”和“做空池”\n\ndev没有任何token，没有人有token - 全都在“现货”和“做空池”\n\n为的是就是要让各位来感受最直接，最透明的pvp 博弈 - 当散户一上来除了有”做多权“，更重要的事还有“做空权”，会发生什么事情？\n\n这个是第一次，一个mc只有15k /300k /1.6m 的token有开空的权利？大家不想尝试看看嘛\n\n要做多：直接去gmgn搜ca\n要做空：https://t.co/HJByC2ahKH \n\n细节自己看文章吧，我就不贴ca了 😂 \n\n请大家务必小金额尝试一下就好，非常血腥\n新人务必小心，或者还是看看就好\n我们模拟的经验是40分钟有200%return的，也有15分钟归零的",
+      "createdAt": "Thu Apr 09 15:58:13 +0000 2026",
+      "language": "zh",
+      "retweetCount": 3,
+      "favoriteCount": 13,
+      "replyCount": 2,
+      "viewCount": 6547,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2042270867988811942",
+      "isQuote": true,
+      "quoteId": "2041837904255971403",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2042270867988811942/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HFeXWwfaEAABN8S.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2042270867988811942/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HFeXWwZbAAANv6H.png"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2042270867988811942/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HFeXWwibAAIrLMq.png"
+        }
+      ],
+      "mentions": [
+        {
+          "screenName": "pundiai",
+          "name": "Pundi AI",
+          "userId": "1050075854611443712"
+        }
+      ],
+      "clean_text": "哈哈哈 有小伙伴问我，文章彩蛋里面说的 $walk 和 $go 是什么情况？！\n\n这两个“dataset token”是由 @pundiai 的 datapump 推出来的dataset token \n\n这两个token的筹码结构非常清晰 - 近乎40%在shortit（供大家来short），还有60%在pancakeswap （供大家来买）\n\ndev：0% 是的，dev没有币，纯纯就是打出来之后放在pancake和youcanshortit来博弈\ndev没有任何token，没有人有token - 全都在“现货”和“做空池”\n\ndev没有任何token，没有人有token - 全都在“现货”和“做空池”\n\ndev没有任何token，没有人有token - 全都在“现货”和“做空池”\n\n为的是就是要让各位来感受最直接，最透明的pvp 博弈 - 当散户一上来除了有”做多权“，更重要的事还有“做空权”，会发生什么事情？\n\n这个是第一次，一个mc只有15k /300k /1.6m 的token有开空的权利？大家不想尝试看看嘛\n\n要做多：直接去gmgn搜ca\n要做空：https://t.co/HJByC2ahKH \n\n细节自己看文章吧，我就不贴ca了 😂 \n\n请大家务必小金额尝试一下就好，非常血腥\n新人务必小心，或者还是看看就好\n我们模拟的经验是40分钟有200%return的，也有15分钟归零的",
+      "gold_score": 7.8,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2042068155150037409",
+      "text": "要想复兴山寨：先把做空权还给散户吧\n\n散户在meme交易里最大的结构性缺陷：只能做多\n\n在没有perp（永续合约）的时候，庄家确实也只能做多，但他不需要做空。 原因在于成本。\n\n庄家的筹码成本低到接近于零（gas费或早期极低价）。哪怕跌了90%，他依然是赚的，只是\"少赚\"。超低成本给了他极大的容错空间。\n\n但散户是在FOMO阶段追高的，成本可能是庄家的50倍。你的成本结构决定了你承受不了回撤。 散户既没有做空工具，也没有低成本安全垫。唯一能赚钱的场景是：买了之后涨了，并在跌之前卖了。\n\n一个方向，一个手段，一个窗口——这是结构性的不公平。\n\n要想复兴山寨：先把做空权还给散户吧",
+      "createdAt": "Thu Apr 09 02:32:42 +0000 2026",
+      "language": "zh",
+      "retweetCount": 11,
+      "favoriteCount": 43,
+      "replyCount": 3,
+      "viewCount": 15136,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2042068155150037409",
+      "isQuote": true,
+      "quoteId": "2041837904255971403",
+      "clean_text": "要想复兴山寨：先把做空权还给散户吧\n\n散户在meme交易里最大的结构性缺陷：只能做多\n\n在没有perp（永续合约）的时候，庄家确实也只能做多，但他不需要做空。 原因在于成本。\n\n庄家的筹码成本低到接近于零（gas费或早期极低价）。哪怕跌了90%，他依然是赚的，只是\"少赚\"。超低成本给了他极大的容错空间。\n\n但散户是在FOMO阶段追高的，成本可能是庄家的50倍。你的成本结构决定了你承受不了回撤。 散户既没有做空工具，也没有低成本安全垫。唯一能赚钱的场景是：买了之后涨了，并在跌之前卖了。\n\n一个方向，一个手段，一个窗口——这是结构性的不公平。\n\n要想复兴山寨：先把做空权还给散户吧",
+      "gold_score": 7.5,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1967222934852051435",
+      "text": "@woaidaxiong123 已做空了 😄",
+      "createdAt": "Sun Sep 14 13:44:31 +0000 2025",
+      "language": "ja",
+      "favoriteCount": 2,
+      "replyCount": 1,
+      "viewCount": 581,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1967191013854007439",
+      "isReply": true,
+      "replyId": "1967197436881076488",
+      "mentions": [
+        {
+          "screenName": "woaidaxiong123",
+          "name": "叶炎",
+          "userId": "1168724168831119367"
+        }
+      ],
+      "clean_text": "@woaidaxiong123 已做空了 😄",
+      "gold_score": 5.0,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2098980907504083307",
+      "text": "重要的事情说两次\n不要碰 ethereum:0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f \n不要碰 ethereum:0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f \n\n这个币现在是疯狂前的自救 https://x.com/agintender/status/2068186852637700170",
+      "createdAt": "Sun Sep 13 03:43:40 +0000 2026",
+      "retweetCount": 3,
+      "favoriteCount": 38,
+      "replyCount": 9,
+      "quoteCount": 1,
+      "viewCount": 39813,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "userFollowers": 36034,
+      "isQuote": true,
+      "urls": [
+        {
+          "url": "https://t.co/9vZsQEYaYl",
+          "displayUrl": "x.com/agintender/sta…"
+        }
+      ],
+      "quotedStatus": {
+        "id": "2068186852637700170",
+        "text": "http://x.com/i/article/2068163155038261248",
+        "createdAt": "Sat Jun 20 04:19:05 +0000 2026",
+        "retweetCount": 16,
+        "favoriteCount": 109,
+        "replyCount": 7,
+        "quoteCount": 3,
+        "viewCount": 118345,
+        "userScreenName": "agintender",
+        "userName": "danny",
+        "userIdStr": "913320844411019265",
+        "userFollowers": 34153,
+        "urls": [
+          {
+            "url": "https://t.co/lh46pPwkS9",
+            "displayUrl": "x.com/i/article/2068…"
+          }
+        ]
+      },
+      "language": "zh",
+      "conversationId": "2098980907504083307",
+      "quoteId": "2068186852637700170",
+      "clean_text": "重要的事情说两次\n不要碰 ethereum:0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f \n不要碰 ethereum:0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f \n\n这个币现在是疯狂前的自救 https://x.com/agintender/status/2068186852637700170",
+      "gold_score": 6.4,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1979901813223805286",
+      "text": "哈哈哈 给那些刚看完我之前写的 $alpaca 下架币叙事（https://t.co/j2O7Mgk8uE）的小伙伴们，加点功课啦\n\n如果各位有注意的话 $alpaca 里面有个很重要的“逼仓”元素，就是那个恐怖的资金费率，每小时4%的催命符\n\n但是呢？这个以资金费率为飞刀的策略在9月18日已经不适用啦 - 改成8小时至多2-3%\n具体的算法就在里面的文章了 - 8/n的魔法护盾\n\n所以大家下次再看到负费率的时候也不用这么慌张啦 哈哈哈😂\n\n镰刀们也要与时俱进",
+      "createdAt": "Sun Oct 19 13:25:51 +0000 2025",
+      "language": "zh",
+      "retweetCount": 3,
+      "favoriteCount": 30,
+      "replyCount": 4,
+      "viewCount": 8812,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1979901813223805286",
+      "isQuote": true,
+      "quoteId": "1968535750259134464",
+      "urls": [
+        {
+          "url": "https://x.com/agintender/status/1954160744678699396?s=46",
+          "displayUrl": "x.com/agintender/sta…"
+        }
+      ],
+      "clean_text": "哈哈哈 给那些刚看完我之前写的 $alpaca 下架币叙事（https://t.co/j2O7Mgk8uE）的小伙伴们，加点功课啦\n\n如果各位有注意的话 $alpaca 里面有个很重要的“逼仓”元素，就是那个恐怖的资金费率，每小时4%的催命符\n\n但是呢？这个以资金费率为飞刀的策略在9月18日已经不适用啦 - 改成8小时至多2-3%\n具体的算法就在里面的文章了 - 8/n的魔法护盾\n\n所以大家下次再看到负费率的时候也不用这么慌张啦 哈哈哈😂\n\n镰刀们也要与时俱进",
+      "gold_score": 7.3,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2050933116500656331",
+      "text": "用 @thecryptoskanda 的话，救市就是救庄\n\n项目方自救，做自己的庄\n\n这篇文只是序幕，你说 $rave $coai $myx 的基本面好得可以几十亿市值吗？能造血到这个程度？\n\n机制使然而已\n\n他们能，为什么你不能？",
+      "createdAt": "Sun May 03 13:38:54 +0000 2026",
+      "language": "zh",
+      "retweetCount": 3,
+      "favoriteCount": 16,
+      "replyCount": 2,
+      "viewCount": 5918,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2050933116500656331",
+      "isQuote": true,
+      "quoteId": "2050733546378252621",
+      "mentions": [
+        {
+          "screenName": "thecryptoskanda",
+          "name": "加密韋馱｜Skanda 🔶",
+          "userId": "1298668226155442176"
+        }
+      ],
+      "clean_text": "用 @thecryptoskanda 的话，救市就是救庄\n\n项目方自救，做自己的庄\n\n这篇文只是序幕，你说 $rave $coai $myx 的基本面好得可以几十亿市值吗？能造血到这个程度？\n\n机制使然而已\n\n他们能，为什么你不能？",
+      "gold_score": 5.8,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2068560935158161435",
+      "text": "又到了榴莲季节，今年的猫山王榴莲大丰收（尤其是文东高山区）\n\n各位路过路过新加坡和马来西亚的，欢迎品尝，价格应该是covid之后最便宜的（指的是猫山王，其他的品种基本没什么变化）\n\n为什么会这样呢？因为猫山王产量过剩\n事情要说回到covid之后，猫山王榴莲获准出口到中国大陆，所以好多人在covid之后看到这个商机，扎堆嫁接猫山王种（新树猫山王），而今年呢？ 刚好到了成熟期，万树齐开\n\n所以造就了只有猫山王榴莲价格下降的奇景\n\n这个时候吃老树猫山王就很爽了，因为整体价格下来了，连带老树价格也下来了\n\n此情此景- 就要吃点好的\n\n怎么看老树呢？\n刺相对来说没这么扎手\n果柄比较粗，有点沙沙感\nplus 果肉有点“黑青色”的 -恭喜你\n口感苦甜绵密（拉丝的基本就呵呵呵了）\n有点类似吃冰淇淋的感觉\n最后：产地请认准彭亨劳勿 Pahang Raub （20年以上）\n\n风险提示\n吃老树猫山王有一个后遗症：\n就是吃了老树以后，你就回不去了🤣",
+      "createdAt": "Sun Jun 21 05:05:33 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 19,
+      "replyCount": 7,
+      "quoteCount": 1,
+      "viewCount": 3937,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2068560935158161435",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2068560935158161435/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HLUBM80aIAAryrC.jpg"
+        }
+      ],
+      "clean_text": "又到了榴莲季节，今年的猫山王榴莲大丰收（尤其是文东高山区）\n\n各位路过路过新加坡和马来西亚的，欢迎品尝，价格应该是covid之后最便宜的（指的是猫山王，其他的品种基本没什么变化）\n\n为什么会这样呢？因为猫山王产量过剩\n事情要说回到covid之后，猫山王榴莲获准出口到中国大陆，所以好多人在covid之后看到这个商机，扎堆嫁接猫山王种（新树猫山王），而今年呢？ 刚好到了成熟期，万树齐开\n\n所以造就了只有猫山王榴莲价格下降的奇景\n\n这个时候吃老树猫山王就很爽了，因为整体价格下来了，连带老树价格也下来了\n\n此情此景- 就要吃点好的\n\n怎么看老树呢？\n刺相对来说没这么扎手\n果柄比较粗，有点沙沙感\nplus 果肉有点“黑青色”的 -恭喜你\n口感苦甜绵密（拉丝的基本就呵呵呵了）\n有点类似吃冰淇淋的感觉\n最后：产地请认准彭亨劳勿 Pahang Raub （20年以上）\n\n风险提示\n吃老树猫山王有一个后遗症：\n就是吃了老树以后，你就回不去了🤣",
+      "gold_score": 7.3,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1949357447937916933",
+      "text": "今天说一下马来西亚的猫山王榴莲\n\n我猜很多人不知道的是猫山王的榴莲树其实有老树和新树之分\n\n老树榴莲呢- 说的是就是正经八百，根正苗红，原汁原味的猫山王果树\n\n由于猫山王榴莲的成熟期要7-8年，老树就意味着要10年…..\n\nwell 为什么老树更好，或者说更有韵味呢？ 因为老树的根扎得深，所以能吸收土壤内更多的矿物质（老树榴莲的肉色都有点“黑青”，甜中带苦、苦中带涩、涩里有甜、百转千回，齿颊回甘）\n\n新树呢 - 指的就是拿着猫山王的树枝嫁接到其他已经成熟的榴莲树（比如D24，101），这种方式就类似web3的hard fork。种植时间大概2-3年的时间，就会结出（类似/形似）猫山王的果实，为什么说形似，因为榴莲的尾部还是会有五角星⭐️，但是味道和口感还是有差异（没这么绵密，果肉会拉丝，齁甜，种子偏大，味道少了一股坚果香 etc）\n\n現在市面上如果没说是劳勿老树的，你都可以默认是这种新树猫山王，真·老树的价格可以是新树的1-2倍，黑青果甚至有价无市\n\n但是对于一般人新树的猫山王其实也可以了，毕竟就吃个意思（吃过就行嘛），而且一般人也分辨不出来。除非你是老饕或者好这一口，寻求更极限的味蕾刺激，要不然很难justify这么贵的价格\n\n但是近年来因为出口受阻，加上产量过剩，所以新树猫山王的价格大跌，反观老树依然坚挺，而且随着大家越来越识货，价格还隐隐上扬\n\n其实你这么一看，猫山王榴莲的老树和新树（hard fork版本）跟我们这个行业的Defi,AI也很像\n\n随着猫山王一炮而红，越来越多的fork版本出现，挤压了大家的注意力，但是随着供应量太多，骗子的花招也越多，导致新树的价格回落甚至消亡\n\n在经历周期的洗礼之后，只有老树（原版），“根”深“地”固还越来越好，当市场回来（水）后，老树的价格涨势更加强劲\n\n越老越值得回味 - 说的不只是猫山王榴莲，还有经历周期煎熬的老兵们\n\n$aave $maker $gmx  #pundiai $pundix",
+      "createdAt": "Sun Jul 27 06:33:27 +0000 2025",
+      "language": "zh",
+      "retweetCount": 5,
+      "favoriteCount": 76,
+      "replyCount": 35,
+      "quoteCount": 2,
+      "viewCount": 35618,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1949357447937916933",
+      "clean_text": "今天说一下马来西亚的猫山王榴莲\n\n我猜很多人不知道的是猫山王的榴莲树其实有老树和新树之分\n\n老树榴莲呢- 说的是就是正经八百，根正苗红，原汁原味的猫山王果树\n\n由于猫山王榴莲的成熟期要7-8年，老树就意味着要10年…..\n\nwell 为什么老树更好，或者说更有韵味呢？ 因为老树的根扎得深，所以能吸收土壤内更多的矿物质（老树榴莲的肉色都有点“黑青”，甜中带苦、苦中带涩、涩里有甜、百转千回，齿颊回甘）\n\n新树呢 - 指的就是拿着猫山王的树枝嫁接到其他已经成熟的榴莲树（比如D24，101），这种方式就类似web3的hard fork。种植时间大概2-3年的时间，就会结出（类似/形似）猫山王的果实，为什么说形似，因为榴莲的尾部还是会有五角星⭐️，但是味道和口感还是有差异（没这么绵密，果肉会拉丝，齁甜，种子偏大，味道少了一股坚果香 etc）\n\n現在市面上如果没说是劳勿老树的，你都可以默认是这种新树猫山王，真·老树的价格可以是新树的1-2倍，黑青果甚至有价无市\n\n但是对于一般人新树的猫山王其实也可以了，毕竟就吃个意思（吃过就行嘛），而且一般人也分辨不出来。除非你是老饕或者好这一口，寻求更极限的味蕾刺激，要不然很难justify这么贵的价格\n\n但是近年来因为出口受阻，加上产量过剩，所以新树猫山王的价格大跌，反观老树依然坚挺，而且随着大家越来越识货，价格还隐隐上扬\n\n其实你这么一看，猫山王榴莲的老树和新树（hard fork版本）跟我们这个行业的Defi,AI也很像\n\n随着猫山王一炮而红，越来越多的fork版本出现，挤压了大家的注意力，但是随着供应量太多，骗子的花招也越多，导致新树的价格回落甚至消亡\n\n在经历周期的洗礼之后，只有老树（原版），“根”深“地”固还越来越好，当市场回来（水）后，老树的价格涨势更加强劲\n\n越老越值得回味 - 说的不只是猫山王榴莲，还有经历周期煎熬的老兵们\n\n$aave $maker $gmx  #pundiai $pundix",
+      "gold_score": 8.0,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2023061744038694940",
+      "text": "考考大家，你们知道近20年来中文农历新年歌曲的大都产自哪里吗？\n\na，中国大陆\nb，台湾\nc，马来西亚\nd，加拿大\ne，印尼\n\n等灯登邓～\n\n很多人可能以为是台湾，毕竟那里发片的产业比较成熟，但是其实：\n\n答案是c，马来西亚 - 各位是不是没想到～ \n近两年来，每年产出近100+首“新年歌”（贺岁歌曲） —— 出猫山王之外，被尊称为地表最强新年歌产地\n\n就是这么一个只有700万华人人口的国家，居然每年产出这么多首新年歌曲+mv ，你说真的是大家都喜欢听新年歌？别傻了孩子，华商是最抠的。。。\n\n其实答案就在时间点+商业模式上 - 因为贺岁歌曲是马来西亚本土华人艺人最容易找到“赞助的”（所谓的要就不开张，开张吃一年）\n\n恰好企业的老板是华人、恰好年尾（农历新年在年头）还有剩余的市场预算没花完、恰好新年歌的门槛低（成本不高，没什么技术含量）、恰好华人在新年期间最舍得花钱、恰好马来西亚的商场都需要更换歌单、恰好老板们出去庆功宴、赞助会的时候需要有个排场.... \n\n兜兜转转，就是各种凑巧 —— 这个跟listing一样，就是有政策，有风口，有标准，有商务，有叙事，有收入等等 - 就是这么凑在一起，你说换了一个时间来，还行不行？换一个人来，还能不能？\n\n对不起，很多时候就是没赶巧 - 岁岁年年花相似，年年岁岁人不同，很多时候，错过了就是一眼万年\n\n昨天的船票登不了今天的船；今天播下的种子也未必长成后天的鲜花，不变的是：鲜肉终会变成腊肉\n\n不把listing当成大满贯和目的地才是唯一解\n\n最后分享一个，我觉得今年最有新意的马来西亚新年歌，来自namewee黄明志的《马来西亚的新年》\n\nhttps://t.co/slhjNo9ToO\n\n看看大家能听出用了多少种语言吗？ 🤣\n\n当我们在说中文，你确定你的中文和我说的是一样的吗？",
+      "createdAt": "Sun Feb 15 15:48:01 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 20,
+      "replyCount": 7,
+      "quoteCount": 1,
+      "viewCount": 6992,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2023061744038694940",
+      "clean_text": "考考大家，你们知道近20年来中文农历新年歌曲的大都产自哪里吗？\n\na，中国大陆\nb，台湾\nc，马来西亚\nd，加拿大\ne，印尼\n\n等灯登邓～\n\n很多人可能以为是台湾，毕竟那里发片的产业比较成熟，但是其实：\n\n答案是c，马来西亚 - 各位是不是没想到～ \n近两年来，每年产出近100+首“新年歌”（贺岁歌曲） —— 出猫山王之外，被尊称为地表最强新年歌产地\n\n就是这么一个只有700万华人人口的国家，居然每年产出这么多首新年歌曲+mv ，你说真的是大家都喜欢听新年歌？别傻了孩子，华商是最抠的。。。\n\n其实答案就在时间点+商业模式上 - 因为贺岁歌曲是马来西亚本土华人艺人最容易找到“赞助的”（所谓的要就不开张，开张吃一年）\n\n恰好企业的老板是华人、恰好年尾（农历新年在年头）还有剩余的市场预算没花完、恰好新年歌的门槛低（成本不高，没什么技术含量）、恰好华人在新年期间最舍得花钱、恰好马来西亚的商场都需要更换歌单、恰好老板们出去庆功宴、赞助会的时候需要有个排场.... \n\n兜兜转转，就是各种凑巧 —— 这个跟listing一样，就是有政策，有风口，有标准，有商务，有叙事，有收入等等 - 就是这么凑在一起，你说换了一个时间来，还行不行？换一个人来，还能不能？\n\n对不起，很多时候就是没赶巧 - 岁岁年年花相似，年年岁岁人不同，很多时候，错过了就是一眼万年\n\n昨天的船票登不了今天的船；今天播下的种子也未必长成后天的鲜花，不变的是：鲜肉终会变成腊肉\n\n不把listing当成大满贯和目的地才是唯一解\n\n最后分享一个，我觉得今年最有新意的马来西亚新年歌，来自namewee黄明志的《马来西亚的新年》\n\nhttps://t.co/slhjNo9ToO\n\n看看大家能听出用了多少种语言吗？ 🤣\n\n当我们在说中文，你确定你的中文和我说的是一样的吗？",
+      "gold_score": 7.0,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2083824101786071078",
+      "text": "有人说这次citadel捡漏了？ 其实是救人也自救\n\n你以为只有Leopord一家带杠杆？怎么可能？一堆人呢\n要是把这个仓位都丢出去，citadel和goldman能独善其身？\n\n都是最好的安排\n\n带杠杆的名牌仓位最好的归宿都是麒麟会与宝总的那次通话\n\n树倒人散？可不止如此呢\n还有大树附近的花花草草，飞禽走兽\n\n带杠杆之后就没有独善其身一说",
+      "createdAt": "Sun Aug 02 07:55:56 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 10,
+      "replyCount": 27,
+      "quoteCount": 1,
+      "viewCount": 14966,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2083824101786071078",
+      "isQuote": true,
+      "quoteId": "2083448142717182036",
+      "clean_text": "有人说这次citadel捡漏了？ 其实是救人也自救\n\n你以为只有Leopord一家带杠杆？怎么可能？一堆人呢\n要是把这个仓位都丢出去，citadel和goldman能独善其身？\n\n都是最好的安排\n\n带杠杆的名牌仓位最好的归宿都是麒麟会与宝总的那次通话\n\n树倒人散？可不止如此呢\n还有大树附近的花花草草，飞禽走兽\n\n带杠杆之后就没有独善其身一说",
+      "gold_score": 6.4,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1913791489500696942",
+      "text": "推上有好多不同类型的交易博主，每个人都有自己的三板斧，门道和擅长的领域，\n\n看k线趋势的 @Paris13Jeanne @CryptosLaowai  , 有看机制的 @thecryptoskanda , 有看宏观的 @phyrexni  @CryptoHayes , 有看链上的 @cishanjia @wolfyxbt , 也有玄学的 @kunlunstar   看事件驱动型的 @dotyyds1234 @brc20niubi  看市场情绪和市场情报的 @Elizabethofyou 等等 - 反正各式各样的都有，唯一的共同点就是深耕\n\n我从17年就跟交易所打交道（亚洲/欧洲/美国/拉美，离岸/合规，白/黑/黄种人），自己也做项目，所以对交易所的公告和项目方发的信息比较敏感，加上喜欢看一下历史类的书籍，就逐步形成了“事件驱动型”的交易体系\n\n比如昨晚动静比较大的 $voxel, 在4月10日的时候就出现在binance 的delisting投票里，当时市值只有不到10m，然后昨晚看到binance出的一个关于调整资金费率的公告（从8-》4-〉2），24h的费率达到24%，而且voxel当时的市值不到15m，我就知道机会来了，睡前做了一波多仓就跑了\n\n今早看到趋势还在上涨，估计是要庄家要集体扎空大家，所以就开了个多仓，还能吃费率，吃了个早餐回来发现果然涨了不少。\n\n我不是要说自己有多厉害，交易有多牛，事实上我也是小韭菜一名；只是想说一个事情，就是只要找到自己擅长的领域去深耕，知道自己赚的是什么钱（我这种就是短时的信息差），找到适合自己的交易方式，不影响生活，睡的了觉。\n\n昨天热议的abcde，我个人是感觉不是他们做错了什么，就是单纯的没找到适合自己属性的投资模式而已，只要不下牌桌，还有担当，一切都好说。\n\np/s：发稿前已经平仓，无利益相关。",
+      "createdAt": "Sun Apr 20 03:07:02 +0000 2025",
+      "language": "zh",
+      "retweetCount": 3,
+      "favoriteCount": 19,
+      "replyCount": 10,
+      "quoteCount": 1,
+      "viewCount": 5316,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1913791489500696942",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1913791489500696942/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/Go8lNtCa0AAJjp3.png"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1913791489500696942/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/Go8lNtQbQAArnpi.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1913791489500696942/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/Go8lNrEacAAwoIu.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1913791489500696942/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/Go8lNtTaIAADEZP.png"
+        }
+      ],
+      "mentions": [
+        {
+          "screenName": "Paris13Jeanne",
+          "name": "K线教主（网络喷子版）",
+          "userId": "3353223123"
+        },
+        {
+          "screenName": "CryptosLaowai",
+          "name": "LOVE BVT DREAD",
+          "userId": "1531160319992557568"
+        },
+        {
+          "screenName": "thecryptoskanda",
+          "name": "加密韋馱｜Skanda 🔶",
+          "userId": "1298668226155442176"
+        },
+        {
+          "screenName": "phyrexni",
+          "userId": "555634740"
+        },
+        {
+          "screenName": "CryptoHayes",
+          "name": "Arthur Hayes",
+          "userId": "983993370048630785"
+        },
+        {
+          "screenName": "cishanjia",
+          "userId": "1002945631407702017"
+        },
+        {
+          "screenName": "wolfyxbt",
+          "userId": "1516941936971554817"
+        },
+        {
+          "screenName": "kunlunstar",
+          "name": "昆仑星",
+          "userId": "1648345448229531649"
+        },
+        {
+          "screenName": "dotyyds1234",
+          "name": "憨巴龙王",
+          "userId": "1449274874317266945"
+        }
+      ],
+      "clean_text": "推上有好多不同类型的交易博主，每个人都有自己的三板斧，门道和擅长的领域，\n\n看k线趋势的 @Paris13Jeanne @CryptosLaowai  , 有看机制的 @thecryptoskanda , 有看宏观的 @phyrexni  @CryptoHayes , 有看链上的 @cishanjia @wolfyxbt , 也有玄学的 @kunlunstar   看事件驱动型的 @dotyyds1234 @brc20niubi  看市场情绪和市场情报的 @Elizabethofyou 等等 - 反正各式各样的都有，唯一的共同点就是深耕\n\n我从17年就跟交易所打交道（亚洲/欧洲/美国/拉美，离岸/合规，白/黑/黄种人），自己也做项目，所以对交易所的公告和项目方发的信息比较敏感，加上喜欢看一下历史类的书籍，就逐步形成了“事件驱动型”的交易体系\n\n比如昨晚动静比较大的 $voxel, 在4月10日的时候就出现在binance 的delisting投票里，当时市值只有不到10m，然后昨晚看到binance出的一个关于调整资金费率的公告（从8-》4-〉2），24h的费率达到24%，而且voxel当时的市值不到15m，我就知道机会来了，睡前做了一波多仓就跑了\n\n今早看到趋势还在上涨，估计是要庄家要集体扎空大家，所以就开了个多仓，还能吃费率，吃了个早餐回来发现果然涨了不少。\n\n我不是要说自己有多厉害，交易有多牛，事实上我也是小韭菜一名；只是想说一个事情，就是只要找到自己擅长的领域去深耕，知道自己赚的是什么钱（我这种就是短时的信息差），找到适合自己的交易方式，不影响生活，睡的了觉。\n\n昨天热议的abcde，我个人是感觉不是他们做错了什么，就是单纯的没找到适合自己属性的投资模式而已，只要不下牌桌，还有担当，一切都好说。\n\np/s：发稿前已经平仓，无利益相关。",
+      "gold_score": 8.6,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1943993912424903076",
+      "text": "那些想套保的交易策略都收手吧 \n\n都这个时候了，资金费率还没暴走，那就说明庄家不要赚这点小钱\n\n而是酝酿波大的….\n\nHL上的pump都只能上小杠杆，为了要拉爆这些仓位做燃料，你就想象一下幅度会有多大\n\nHL如此了，其他允许上高杠杆的cex一定会更high\n\n坐等 @pumpdotfun",
+      "createdAt": "Sat Jul 12 11:20:41 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 12,
+      "replyCount": 6,
+      "quoteCount": 1,
+      "viewCount": 6616,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1943993912424903076",
+      "clean_text": "那些想套保的交易策略都收手吧 \n\n都这个时候了，资金费率还没暴走，那就说明庄家不要赚这点小钱\n\n而是酝酿波大的….\n\nHL上的pump都只能上小杠杆，为了要拉爆这些仓位做燃料，你就想象一下幅度会有多大\n\nHL如此了，其他允许上高杠杆的cex一定会更high\n\n坐等 @pumpdotfun",
+      "gold_score": 6.2,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2085968199628276170",
+      "text": "我去….不行了，不能只有我辣眼睛！\n\n什么榴莲pizza 榴莲蛋挞我也就忍了\n\n你这个榴莲煲仔饭是个什么鬼！！\n\n你这样吃榴莲是要遭报应的啊，你们有考虑过榴莲的感受嘛…  太可怕了😱 https://t.co/rT9Zy5hugG",
+      "createdAt": "Sat Aug 08 05:55:48 +0000 2026",
+      "language": "zh",
+      "favoriteCount": 8,
+      "replyCount": 70,
+      "viewCount": 4708,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2085968199628276170",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2085968199628276170/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HPLZA90aEAAsK6T.jpg"
+        }
+      ],
+      "clean_text": "我去….不行了，不能只有我辣眼睛！\n\n什么榴莲pizza 榴莲蛋挞我也就忍了\n\n你这个榴莲煲仔饭是个什么鬼！！\n\n你这样吃榴莲是要遭报应的啊，你们有考虑过榴莲的感受嘛…  太可怕了😱 https://t.co/rT9Zy5hugG",
+      "gold_score": 6.6,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1916149704615989581",
+      "text": "我简单说一下 $alpaca 这种行情\n已知庄要赚钱，而且oi越来越高，vested interest 越来越重，而且庄有优势，且庄是多单为主\n\n已知散户知道未来要下架，oi越要愈高，庄家跑不了\n\n一边要想办法干下去 ，一边想办法抬上来 - 这种博弈你就做短线网格就行\n至于是空仓还是多仓，老实说，多空都能转波段的钱，我自己现阶段倾向于跟庄走\n\n什么时候知道不行了： 当你看到热度过去（成交频率下来了，资金费率下来）那么庄就没有拉上去的理由（没这么多燃料了）庄要出头寸的\n\n离30号还有几天，我要是庄，等到交易频率下来，oi减少了，再来几个波段，把你们都引诱进去做空 \n\n鲁迅说过，看两虎相斗，吃瓜观众能够喝口汤也不错，不用赚最后一分钱",
+      "createdAt": "Sat Apr 26 15:17:44 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 7,
+      "replyCount": 5,
+      "quoteCount": 1,
+      "viewCount": 3086,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1916149704615989581",
+      "clean_text": "我简单说一下 $alpaca 这种行情\n已知庄要赚钱，而且oi越来越高，vested interest 越来越重，而且庄有优势，且庄是多单为主\n\n已知散户知道未来要下架，oi越要愈高，庄家跑不了\n\n一边要想办法干下去 ，一边想办法抬上来 - 这种博弈你就做短线网格就行\n至于是空仓还是多仓，老实说，多空都能转波段的钱，我自己现阶段倾向于跟庄走\n\n什么时候知道不行了： 当你看到热度过去（成交频率下来了，资金费率下来）那么庄就没有拉上去的理由（没这么多燃料了）庄要出头寸的\n\n离30号还有几天，我要是庄，等到交易频率下来，oi减少了，再来几个波段，把你们都引诱进去做空 \n\n鲁迅说过，看两虎相斗，吃瓜观众能够喝口汤也不错，不用赚最后一分钱",
+      "gold_score": 6.9,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2058867514088812772",
+      "text": "一刷推，都在说 $sive  涨爆了…\n\n真的是叙事打开了？要双上市？才不是，人家的AI相关pe到了230x…\n\n今天这轮暴涨我盲猜是因为逼空，有点类似 gamestop当年（不过这次不是期权，而是现货卖空） 有博主说是2sigma开的大仓位，我没去查证，但即使不是它，也是其他人\n\n如果要类比币圈的资产， $myx $coai $rave 那可太多了… 你可以理解就是“机制”造成的 ，空头燃料\n\n长期不好说（我也不懂技术原理）但短期就是博弈之源（多空较量）驱动的，到哪儿都一样\n\n这不就到了我们的舒适区啦？ 🤣🤣\n这玩意儿有了资金费率只会更high\n\n@Binance @okx @bitget @MEXC - 别看了啊，赶紧的",
+      "createdAt": "Mon May 25 11:07:21 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 8,
+      "replyCount": 6,
+      "viewCount": 10564,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2058867514088812772",
+      "isQuote": true,
+      "quoteId": "2058743728857333838",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2058867514088812772/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HJKQ9PSbEAAUVAX.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2058867514088812772/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HJKQ9PYb0AEMl22.jpg"
+        }
+      ],
+      "clean_text": "一刷推，都在说 $sive  涨爆了…\n\n真的是叙事打开了？要双上市？才不是，人家的AI相关pe到了230x…\n\n今天这轮暴涨我盲猜是因为逼空，有点类似 gamestop当年（不过这次不是期权，而是现货卖空） 有博主说是2sigma开的大仓位，我没去查证，但即使不是它，也是其他人\n\n如果要类比币圈的资产， $myx $coai $rave 那可太多了… 你可以理解就是“机制”造成的 ，空头燃料\n\n长期不好说（我也不懂技术原理）但短期就是博弈之源（多空较量）驱动的，到哪儿都一样\n\n这不就到了我们的舒适区啦？ 🤣🤣\n这玩意儿有了资金费率只会更high\n\n@Binance @okx @bitget @MEXC - 别看了啊，赶紧的",
+      "gold_score": 8.3,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2033477865803841661",
+      "text": "传说中的short所有 #bnbchain token的产品终于上“删档beta测试”版了\n\n产品名字也非常接地气（aka 俗）就叫 https://t.co/HJByC2ahKH \nyou can short it，就是这么的长，这么的朴实无华\n\n基本原理就是margin trade，用户可以来这里借币-卖空来达到做空的效果（锁着稳定币），测试阶段是0.8x的杠杆，之后会逐步开放\n\n而镰刀们则可以来这里存币（stake with risk）来跟这些看空的交易员们做对赌\n\n既然是对赌就有edge，就是借贷方需要向资金提供方支付利息\n\n有人就问了，假设借出去的币涨爆了咋办？那不好意思，就相当于存款方卖了一个covered call，拿走相当于当时价格的180%，说人话就是赚少了，但是肯定还是赚的\n\n我们目前主要针对 #bnbchain 上了一定体量的 #meme 和那些上了alpha，但是还没有perp交易对的，需要对手盘的项目方和meme，欢迎来聊\n\n也应该是少数几个让 #meme 也有存款利率的地儿了\n\n另外如果大家有什么想short 但是市场上找不到标的，欢迎留言，只要你想short，我们来找对手盘 —— 让bnbchain的pvp浓度到下一个level\n\n有兴趣来做白老鼠的，评论区留言，我发邀请码给大家\n\n友情提示：shortit的算法非常的不新手友好，是一个极致的pvp斗兽场，非常的血腥，建议大家就充值个10u 50u来玩玩就好",
+      "createdAt": "Mon Mar 16 09:37:58 +0000 2026",
+      "language": "zh",
+      "retweetCount": 8,
+      "favoriteCount": 60,
+      "replyCount": 21,
+      "quoteCount": 5,
+      "viewCount": 55398,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2033477865803841661",
+      "isQuote": true,
+      "quoteId": "2030650141489987823",
+      "hashtags": [
+        "bnbchain"
+      ],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2033477865803841661/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HDhZB0ybwAADsYJ.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2033477865803841661/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HDhb__VaoAAEyfC.jpg"
+        }
+      ],
+      "urls": [
+        {
+          "url": "http://youcanshortit.com",
+          "displayUrl": "youcanshortit.com"
+        }
+      ],
+      "clean_text": "传说中的short所有 #bnbchain token的产品终于上“删档beta测试”版了\n\n产品名字也非常接地气（aka 俗）就叫 https://t.co/HJByC2ahKH \nyou can short it，就是这么的长，这么的朴实无华\n\n基本原理就是margin trade，用户可以来这里借币-卖空来达到做空的效果（锁着稳定币），测试阶段是0.8x的杠杆，之后会逐步开放\n\n而镰刀们则可以来这里存币（stake with risk）来跟这些看空的交易员们做对赌\n\n既然是对赌就有edge，就是借贷方需要向资金提供方支付利息\n\n有人就问了，假设借出去的币涨爆了咋办？那不好意思，就相当于存款方卖了一个covered call，拿走相当于当时价格的180%，说人话就是赚少了，但是肯定还是赚的\n\n我们目前主要针对 #bnbchain 上了一定体量的 #meme 和那些上了alpha，但是还没有perp交易对的，需要对手盘的项目方和meme，欢迎来聊\n\n也应该是少数几个让 #meme 也有存款利率的地儿了\n\n另外如果大家有什么想short 但是市场上找不到标的，欢迎留言，只要你想short，我们来找对手盘 —— 让bnbchain的pvp浓度到下一个level\n\n有兴趣来做白老鼠的，评论区留言，我发邀请码给大家\n\n友情提示：shortit的算法非常的不新手友好，是一个极致的pvp斗兽场，非常的血腥，建议大家就充值个10u 50u来玩玩就好",
+      "gold_score": 9.8,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1984256337585590777",
+      "text": "本文有个很重要的概念：合成头寸\n\n你能把这个东西想明白了，DeFi的东西就是看你怎么拼接组装而已\n\n如果你还能想明白怎么有序地拼接组装各个协议，比如文中说的 Pendle - Polymarket - Perps - Boros，并且还能想清楚各个环节之间会如何（多变量）联动\n\n那么恭喜你，解锁新成就 - 一鱼多吃",
+      "createdAt": "Fri Oct 31 13:49:11 +0000 2025",
+      "language": "zh",
+      "retweetCount": 23,
+      "favoriteCount": 89,
+      "replyCount": 6,
+      "viewCount": 15928,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1984256337585590777",
+      "isQuote": true,
+      "quoteId": "1984146996161319174",
+      "clean_text": "本文有个很重要的概念：合成头寸\n\n你能把这个东西想明白了，DeFi的东西就是看你怎么拼接组装而已\n\n如果你还能想明白怎么有序地拼接组装各个协议，比如文中说的 Pendle - Polymarket - Perps - Boros，并且还能想清楚各个环节之间会如何（多变量）联动\n\n那么恭喜你，解锁新成就 - 一鱼多吃",
+      "gold_score": 6.8,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1984159243889786945",
+      "text": "本文有点硬核，建议先看过以下文章再来：\n1.  DeFi循环思路https://t.co/Z13qPfCePr\n\n2.  Pendle https://t.co/bTlrwi3t7P\n\n3.  资金费率https://t.co/fhVcFFHCiO\n\n4. Poly基本机制https://t.co/m3XGCkBhRL\n\n开胃菜吃完之后再来，效果更佳哦",
+      "createdAt": "Fri Oct 31 07:23:22 +0000 2025",
+      "language": "zh",
+      "retweetCount": 96,
+      "favoriteCount": 373,
+      "replyCount": 8,
+      "quoteCount": 1,
+      "viewCount": 50324,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1984159243889786945",
+      "isQuote": true,
+      "quoteId": "1984146996161319174",
+      "urls": [
+        {
+          "url": "https://x.com/agintender/status/1979441023094001834",
+          "displayUrl": "x.com/agintender/sta…"
+        },
+        {
+          "url": "https://x.com/agintender/status/1955846941952049444",
+          "displayUrl": "x.com/agintender/sta…"
+        },
+        {
+          "url": "https://x.com/agintender/status/1947269261057266046",
+          "displayUrl": "x.com/agintender/sta…"
+        },
+        {
+          "url": "https://x.com/agintender/status/1981300383982244285",
+          "displayUrl": "x.com/agintender/sta…"
+        }
+      ],
+      "clean_text": "本文有点硬核，建议先看过以下文章再来：\n1.  DeFi循环思路https://t.co/Z13qPfCePr\n\n2.  Pendle https://t.co/bTlrwi3t7P\n\n3.  资金费率https://t.co/fhVcFFHCiO\n\n4. Poly基本机制https://t.co/m3XGCkBhRL\n\n开胃菜吃完之后再来，效果更佳哦",
+      "gold_score": 7.4,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1981556578768855457",
+      "text": "建议大家都把这篇文章和之前写的pendle的长文（ https://t.co/jyatyBv4l8） 和 循环贷策略（ https://t.co/u87ZX2ATZY） 都看一下\n\n要不然接下来我写的跨产品联动逻辑（又称3P策略 😂）\nPoly- Perp - Pendle ，你们会完全找不着北",
+      "createdAt": "Fri Oct 24 03:01:18 +0000 2025",
+      "language": "zh",
+      "retweetCount": 14,
+      "favoriteCount": 99,
+      "replyCount": 6,
+      "viewCount": 14991,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1981556578768855457",
+      "isQuote": true,
+      "quoteId": "1981300383982244285",
+      "urls": [
+        {
+          "url": "https://x.com/agintender/status/1967516272955982094?s=46",
+          "displayUrl": "x.com/agintender/sta…"
+        },
+        {
+          "url": "https://x.com/agintender/status/1979441023094001834?s=46",
+          "displayUrl": "x.com/agintender/sta…"
+        }
+      ],
+      "clean_text": "建议大家都把这篇文章和之前写的pendle的长文（ https://t.co/jyatyBv4l8） 和 循环贷策略（ https://t.co/u87ZX2ATZY） 都看一下\n\n要不然接下来我写的跨产品联动逻辑（又称3P策略 😂）\nPoly- Perp - Pendle ，你们会完全找不着北",
+      "gold_score": 6.8,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2065491499471528308",
+      "text": "已知\n1. 流通盘4% ，fdv 万亿\n2. 这么多人没抢到，情绪不爽\n3. 博弈分歧大：看空/做空者 v 做多 差不多5:5开\n\n是不是有点 $pump 的感觉了\n凭什么你值得？ 凭什么你不值得？\n\n你从怀疑 - 拉到你怀疑🐶生- 上车- 再关门打狗",
+      "createdAt": "Fri Jun 12 17:48:43 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 16,
+      "replyCount": 1,
+      "quoteCount": 1,
+      "viewCount": 37497,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2065491499471528308",
+      "isQuote": true,
+      "quoteId": "2065457443283370127",
+      "clean_text": "已知\n1. 流通盘4% ，fdv 万亿\n2. 这么多人没抢到，情绪不爽\n3. 博弈分歧大：看空/做空者 v 做多 差不多5:5开\n\n是不是有点 $pump 的感觉了\n凭什么你值得？ 凭什么你不值得？\n\n你从怀疑 - 拉到你怀疑🐶生- 上车- 再关门打狗",
+      "gold_score": 6.4,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2083084405531201673",
+      "text": "我真的是服了韩国散户了。。。\n\n今天的暴涨属于是：\n外资大量买现货（占净买入的75%）\n\n散户呢？散户买什么？\n\n给个数据你们看下：\n\n今天开盘一小时，三星电子和SK海力士相关的16只单一股票杠杆产品，成交额达到约 1.5万亿韩元。而当时：\n\nKODEX SK海力士单一股票杠杆 ETF：全市场 ETF 成交额第3名\nKODEX 三星电子杠杆 ETF：第7名\nTIGER SK海力士杠杆 ETF：第8名\n\n这就导致这些产品当天上涨40%至50%以上。 —— 你们猜这些产品都是谁买的？！\n\n所以韩国哪里是需要禁止卖空？！这特么是需要禁掉这些杠杆产品啊。。。\n\n下一轮轮回又开始了。。\n而且这次额应该很快，下周二周三？",
+      "createdAt": "Fri Jul 31 06:56:38 +0000 2026",
+      "language": "zh",
+      "retweetCount": 18,
+      "favoriteCount": 133,
+      "replyCount": 54,
+      "quoteCount": 4,
+      "viewCount": 177630,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2083084405531201673",
+      "isQuote": true,
+      "quoteId": "2082988632097628169",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2083084405531201673/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HOiYryaaMAA88NI.jpg"
+        }
+      ],
+      "clean_text": "我真的是服了韩国散户了。。。\n\n今天的暴涨属于是：\n外资大量买现货（占净买入的75%）\n\n散户呢？散户买什么？\n\n给个数据你们看下：\n\n今天开盘一小时，三星电子和SK海力士相关的16只单一股票杠杆产品，成交额达到约 1.5万亿韩元。而当时：\n\nKODEX SK海力士单一股票杠杆 ETF：全市场 ETF 成交额第3名\nKODEX 三星电子杠杆 ETF：第7名\nTIGER SK海力士杠杆 ETF：第8名\n\n这就导致这些产品当天上涨40%至50%以上。 —— 你们猜这些产品都是谁买的？！\n\n所以韩国哪里是需要禁止卖空？！这特么是需要禁掉这些杠杆产品啊。。。\n\n下一轮轮回又开始了。。\n而且这次额应该很快，下周二周三？",
+      "gold_score": 8.5,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "2082988632097628169",
+      "text": "kospi大复苏唤醒术. 着\n\n这下还要禁止做空吗？\n你还敢奏乐接着舞吗？！\n\n爱情都不敢来得这么快好伐\n现在就看周末的时候是不是又放什么消息… https://t.co/vqAiMyrgTD",
+      "createdAt": "Fri Jul 31 00:36:04 +0000 2026",
+      "language": "zh",
+      "retweetCount": 1,
+      "favoriteCount": 2,
+      "replyCount": 14,
+      "quoteCount": 1,
+      "viewCount": 144156,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "2082988632097628169",
+      "isQuote": true,
+      "quoteId": "2082726985525276965",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/2082988632097628169/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/HOhDHp4bYAAsQBk.jpg"
+        }
+      ],
+      "clean_text": "kospi大复苏唤醒术. 着\n\n这下还要禁止做空吗？\n你还敢奏乐接着舞吗？！\n\n爱情都不敢来得这么快好伐\n现在就看周末的时候是不是又放什么消息… https://t.co/vqAiMyrgTD",
+      "gold_score": 7.8,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1946176817758601484",
+      "text": "我在想要不要给大家周末加更一下 —— 说一下最近比较流行的“小资金费率期现双杀”的玩法\n\n事情大概是这样的：\n我前天开始做空 $cross \n连着4-5天上涨，明显就是后面有人（跟前几个项目相似）\n\n然后一看现货与期货居然没什么价差，而且alpha的数据（除了刷量之外）也比较一般\n\nmc也来到100m，fdv 大概300m左右，oi也差不多10m，感觉应该差不多了，就打算空进去赚点零花钱\n\n哪知道....\n\nxx.... 差点就被埋了，回调后亏了一点就跑出来了\n\n有100个赞的话，我周末加班写一个“心路历程” 😂",
+      "createdAt": "Fri Jul 18 11:54:46 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 17,
+      "replyCount": 6,
+      "viewCount": 2391,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1946176817758601484",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1946176817758601484/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/GwIvKcYacAEo4Wi.png"
+        },
+        {
+          "type": "photo",
+          "url": "https://x.com/agintender/status/1946176817758601484/photo/1",
+          "thumbUrl": "https://pbs.twimg.com/media/GwIyIQVXkAAMrWy.png"
+        }
+      ],
+      "clean_text": "我在想要不要给大家周末加更一下 —— 说一下最近比较流行的“小资金费率期现双杀”的玩法\n\n事情大概是这样的：\n我前天开始做空 $cross \n连着4-5天上涨，明显就是后面有人（跟前几个项目相似）\n\n然后一看现货与期货居然没什么价差，而且alpha的数据（除了刷量之外）也比较一般\n\nmc也来到100m，fdv 大概300m左右，oi也差不多10m，感觉应该差不多了，就打算空进去赚点零花钱\n\n哪知道....\n\nxx.... 差点就被埋了，回调后亏了一点就跑出来了\n\n有100个赞的话，我周末加班写一个“心路历程” 😂",
+      "gold_score": 7.7,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1956200686544199794",
+      "text": "测试一下，用不同的角度写 @pendle_fi 看下大家更容易接受/喜欢哪一个类型的？ 🤣\n\n欢迎评论一下\n\n利益相关：我持有 $pendle 且在里面交易",
+      "createdAt": "Fri Aug 15 03:46:02 +0000 2025",
+      "language": "zh",
+      "favoriteCount": 9,
+      "replyCount": 4,
+      "viewCount": 2182,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1956200686544199794",
+      "isQuote": true,
+      "quoteId": "1956199137394737324",
+      "mentions": [
+        {
+          "screenName": "pendle_fi",
+          "name": "Pendle",
+          "userId": "1377493693762969600"
+        }
+      ],
+      "clean_text": "测试一下，用不同的角度写 @pendle_fi 看下大家更容易接受/喜欢哪一个类型的？ 🤣\n\n欢迎评论一下\n\n利益相关：我持有 $pendle 且在里面交易",
+      "gold_score": 5.0,
+      "domain_id": "06_contracts_short_selling_phil"
+    },
+    {
+      "id": "1951296096598454594",
+      "text": "慢性出血的合约交易\n\n不是每个时间点都要开仓的\n收手吧 去看看真人 去感受大自然\n\n假设你做多BTC 100,000 USDT的仓位，使用50倍杠杆，仅投入保证金 $2,000 。\n每8小时资金费为0.01%，即每日0.03%；\n持仓10天，累计资金费率为0.3%；\n由于是按“名义价值”计算，这相当于：  0.03% * 100,000 * 10  = $ 300 , 这占其初始保证金的 15%！更可怕的是，这段时间你什么都没做，BTC的价格也没有变化。而你的仓位没有了！\n\n如果行情横盘，你看似没亏，但资金费每天“滴血”；\n\n越高杠杆、越长时间、越震荡不跌不涨，资金费用就是越大的慢性伤害。\n\n说个反直觉的：\n\n“高杠杆+震荡市+长时间”= 隐形的绞肉机",
+      "createdAt": "Fri Aug 01 14:56:57 +0000 2025",
+      "language": "zh",
+      "retweetCount": 6,
+      "favoriteCount": 31,
+      "replyCount": 9,
+      "viewCount": 8204,
+      "userScreenName": "agintender",
+      "userName": "danny",
+      "userIdStr": "913320844411019265",
+      "conversationId": "1951296096598454594",
+      "isQuote": true,
+      "quoteId": "1950876402343108921",
+      "clean_text": "慢性出血的合约交易\n\n不是每个时间点都要开仓的\n收手吧 去看看真人 去感受大自然\n\n假设你做多BTC 100,000 USDT的仓位，使用50倍杠杆，仅投入保证金 $2,000 。\n每8小时资金费为0.01%，即每日0.03%；\n持仓10天，累计资金费率为0.3%；\n由于是按“名义价值”计算，这相当于：  0.03% * 100,000 * 10  = $ 300 , 这占其初始保证金的 15%！更可怕的是，这段时间你什么都没做，BTC的价格也没有变化。而你的仓位没有了！\n\n如果行情横盘，你看似没亏，但资金费每天“滴血”；\n\n越高杠杆、越长时间、越震荡不跌不涨，资金费用就是越大的慢性伤害。\n\n说个反直觉的：\n\n“高杠杆+震荡市+长时间”= 隐形的绞肉机",
+      "gold_score": 6.9,
+      "domain_id": "06_contracts_short_selling_phil"
     }
   ]
 }

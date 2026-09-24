@@ -14,6 +14,7 @@
 | **C J** | [@gch_enbsbxbs](https://x.com/gch_enbsbxbs) | CJ DeFi 做市与套利实战手册 | **502 篇** | [进入](https://suoha888.github.io/Trader-Archives/cj/) |
 | **憨厚的麦总** | [@Michael_Liu93](https://x.com/Michael_Liu93) | 实战交易与周期投资全书 | **5,344 篇** | [进入](https://suoha888.github.io/Trader-Archives/michael-liu/) |
 | **川沐｜Trumoo** | [@xiaomustock](https://x.com/xiaomustock) | 美股硬科技、加密大周期与盘口博弈 | **3,866 篇** | [进入](https://suoha888.github.io/Trader-Archives/xiaomu/) |
+| **danny** | [@agintender](https://x.com/agintender) | 暗流博弈与二级合约算法大典 | **3,231 篇（含 92 篇万字长文）** | [进入](https://suoha888.github.io/Trader-Archives/agintender/) |
 
 > 更多实战 KOL 持续收录中，敬请关注。
 
