@@ -127,15 +127,15 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
 .hstat-label { font-size: 12px; color: var(--text-muted); font-weight: 600; }
 
 /* 卷横幅 */
-.volume-section { margin-bottom: 65px; }
+.volume-section { margin-bottom: 65px; content-visibility: auto; contain-intrinsic-size: 1px 700px; contain: layout style; }
 .volume-banner { background: #FFFFFF; border: 1px solid var(--border-main); border-left: 6px solid var(--brand-amber); border-radius: 10px; padding: 28px 36px; margin-bottom: 32px; box-shadow: var(--shadow-card); }
 .vol-banner-pre { font-size: 11.5px; font-weight: 800; letter-spacing: 0.12em; color: var(--brand-amber); margin-bottom: 6px; font-family: monospace; }
 .vol-banner-title { font-size: 24px; font-weight: 800; color: var(--text-main); margin-bottom: 10px; font-family: var(--font-serif); }
 .vol-banner-desc { font-size: 14.5px; color: var(--text-sub); line-height: 1.75; margin-bottom: 14px; }
 .vol-banner-meta { display: flex; align-items: center; gap: 10px; font-size: 12.5px; color: var(--text-muted); font-weight: 500; }
 
-/* 课题卡片 */
-.topic-card { background: #FFFFFF; border: 1px solid var(--border-main); border-radius: 12px; padding: 36px 42px; margin-bottom: 38px; box-shadow: var(--shadow-card); scroll-margin-top: 30px; transition: transform 0.2s, box-shadow 0.2s; }
+/* 课题卡片 - 布局隔离与硬件加速 */
+.topic-card { background: #FFFFFF; border: 1px solid var(--border-main); border-radius: 12px; padding: 36px 42px; margin-bottom: 38px; box-shadow: var(--shadow-card); scroll-margin-top: 30px; transition: transform 0.2s, box-shadow 0.2s; content-visibility: auto; contain-intrinsic-size: 1px 750px; contain: layout style; }
 .topic-card:hover { box-shadow: var(--shadow-hover); }
 .topic-header { margin-bottom: 24px; border-bottom: 1px solid var(--border-light); padding-bottom: 18px; }
 .topic-meta-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
@@ -734,7 +734,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
         <div class="sidebar-profile">
             <div class="profile-main-row">
                 <div class="profile-avatar-wrap">
-                    <img src="images/cj_avatar.jpg" alt="CJ 老师官方头像" class="profile-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                    <img src="images/cj_avatar.jpg" alt="CJ 老师官方头像" class="profile-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async">
                     <span class="profile-badge-auth" title="Twitter 认证做市高手">✓</span>
                 </div>
                 <div class="profile-info">
@@ -996,7 +996,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
 
         <!-- 侧边栏底部克制的信息整理者小注 -->
         <div class="sidebar-curator-note">
-            <img src="images/suoha_avatar.jpg" alt="梭哈.AI" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+            <img src="images/suoha_avatar.jpg" alt="梭哈.AI" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
             <span>信息整理：<a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer">梭哈.AI (@SUOHA_AI)</a></span>
         </div>
 
@@ -1028,13 +1028,13 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
             <div class="hero-curator-bar">
                 <div class="hcb-item">
                     <span class="hcb-label">原著经验：</span>
-                    <img src="images/cj_avatar.jpg" alt="CJ" class="hcb-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                    <img src="images/cj_avatar.jpg" alt="CJ" class="hcb-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                     <a href="https://x.com/gch_enbsbxbs" target="_blank" rel="noopener noreferrer" class="hcb-link">CJ (@gch_enbsbxbs)</a>
                 </div>
                 <span class="hcb-divider">•</span>
                 <div class="hcb-item">
                     <span class="hcb-label">信息整理：</span>
-                    <img src="images/suoha_avatar.jpg" alt="梭哈.AI" class="hcb-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                    <img src="images/suoha_avatar.jpg" alt="梭哈.AI" class="hcb-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                     <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" class="hcb-link">梭哈.AI (@SUOHA_AI)</a>
                 </div>
             </div>
@@ -1166,7 +1166,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-2094582598022664265">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -1224,7 +1224,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-2093977225943232670">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -1279,7 +1279,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-2095091083747451165">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -1380,7 +1380,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-2090359344445719016">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -1448,7 +1448,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-2095022016969785715">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -1553,7 +1553,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-2094571978401423557">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -1601,7 +1601,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/2094571978401423557_1.png')" title="点击全屏放大实盘截图">
-                <img src="images/2094571978401423557_1.png" alt="CJ实盘截图 #2094571978401423557" loading="lazy">
+                <img src="images/2094571978401423557_1.png" alt="CJ实盘截图 #2094571978401423557" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -1634,7 +1634,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-2094662841404194947">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -1736,7 +1736,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-1907037188329730245">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -1797,7 +1797,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-1912721730692608363">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -1854,7 +1854,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-1999885378812326282">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -1978,7 +1978,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-1930592265342525690">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -2077,7 +2077,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-1930623777962139695">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -2179,7 +2179,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-1987051719541547037">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -2220,7 +2220,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1987051719541547037_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1987051719541547037_1.jpg" alt="CJ实盘截图 #1987051719541547037" loading="lazy">
+                <img src="images/1987051719541547037_1.jpg" alt="CJ实盘截图 #1987051719541547037" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -2253,7 +2253,7 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     <div class="tweet-card" id="tw-1987074761948864662">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -2292,7 +2292,7 @@ apr 刚才显示6000 应该是那会波动很剧烈。
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1987074761948864662_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1987074761948864662_1.jpg" alt="CJ实盘截图 #1987074761948864662" loading="lazy">
+                <img src="images/1987074761948864662_1.jpg" alt="CJ实盘截图 #1987074761948864662" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -2370,7 +2370,7 @@ apr 刚才显示6000 应该是那会波动很剧烈。
     <div class="tweet-card" id="tw-1916086010678849899">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -2406,7 +2406,7 @@ apr 刚才显示6000 应该是那会波动很剧烈。
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1916086010678849899_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1916086010678849899_1.jpg" alt="CJ实盘截图 #1916086010678849899" loading="lazy">
+                <img src="images/1916086010678849899_1.jpg" alt="CJ实盘截图 #1916086010678849899" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -2439,7 +2439,7 @@ apr 刚才显示6000 应该是那会波动很剧烈。
     <div class="tweet-card" id="tw-1932701138262081765">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -2472,7 +2472,7 @@ apr 刚才显示6000 应该是那会波动很剧烈。
         <div class="tw-media-container count-2">
             
             <div class="tw-media-item" onclick="openLightbox('images/1932701138262081765_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1932701138262081765_1.jpg" alt="CJ实盘截图 #1932701138262081765" loading="lazy">
+                <img src="images/1932701138262081765_1.jpg" alt="CJ实盘截图 #1932701138262081765" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -2480,7 +2480,7 @@ apr 刚才显示6000 应该是那会波动很剧烈。
             </div>
             
             <div class="tw-media-item" onclick="openLightbox('images/1932701138262081765_2.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1932701138262081765_2.jpg" alt="CJ实盘截图 #1932701138262081765" loading="lazy">
+                <img src="images/1932701138262081765_2.jpg" alt="CJ实盘截图 #1932701138262081765" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -2558,7 +2558,7 @@ apr 刚才显示6000 应该是那会波动很剧烈。
     <div class="tweet-card" id="tw-1948733203566789056">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -2598,7 +2598,7 @@ https://t.co/6YV5PnrKjp
         <div class="tw-media-container count-3">
             
             <div class="tw-media-item" onclick="openLightbox('images/1948733203566789056_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1948733203566789056_1.jpg" alt="CJ实盘截图 #1948733203566789056" loading="lazy">
+                <img src="images/1948733203566789056_1.jpg" alt="CJ实盘截图 #1948733203566789056" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -2606,7 +2606,7 @@ https://t.co/6YV5PnrKjp
             </div>
             
             <div class="tw-media-item" onclick="openLightbox('images/1948733203566789056_2.png')" title="点击全屏放大实盘截图">
-                <img src="images/1948733203566789056_2.png" alt="CJ实盘截图 #1948733203566789056" loading="lazy">
+                <img src="images/1948733203566789056_2.png" alt="CJ实盘截图 #1948733203566789056" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -2614,7 +2614,7 @@ https://t.co/6YV5PnrKjp
             </div>
             
             <div class="tw-media-item" onclick="openLightbox('images/1948733203566789056_3.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1948733203566789056_3.jpg" alt="CJ实盘截图 #1948733203566789056" loading="lazy">
+                <img src="images/1948733203566789056_3.jpg" alt="CJ实盘截图 #1948733203566789056" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -2647,7 +2647,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-1918177589174431804">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -2686,7 +2686,7 @@ https://t.co/6YV5PnrKjp
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1918177589174431804_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1918177589174431804_1.jpg" alt="CJ实盘截图 #1918177589174431804" loading="lazy">
+                <img src="images/1918177589174431804_1.jpg" alt="CJ实盘截图 #1918177589174431804" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -2719,7 +2719,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-1926252473481662908">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -2759,7 +2759,7 @@ https://t.co/6YV5PnrKjp
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1926252473481662908_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1926252473481662908_1.jpg" alt="CJ实盘截图 #1926252473481662908" loading="lazy">
+                <img src="images/1926252473481662908_1.jpg" alt="CJ实盘截图 #1926252473481662908" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -2853,7 +2853,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-1969964672825909560">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -2911,7 +2911,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-1957967603051466921">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3012,7 +3012,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-1899347899970154794">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3046,7 +3046,7 @@ https://t.co/6YV5PnrKjp
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1899347899970154794_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1899347899970154794_1.jpg" alt="CJ实盘截图 #1899347899970154794" loading="lazy">
+                <img src="images/1899347899970154794_1.jpg" alt="CJ实盘截图 #1899347899970154794" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -3124,7 +3124,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-2094582598022664265">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3182,7 +3182,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-1988263445666709986">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3222,7 +3222,7 @@ https://t.co/6YV5PnrKjp
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1988263445666709986_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1988263445666709986_1.jpg" alt="CJ实盘截图 #1988263445666709986" loading="lazy">
+                <img src="images/1988263445666709986_1.jpg" alt="CJ实盘截图 #1988263445666709986" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -3316,7 +3316,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-1913110637544448479">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3375,7 +3375,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-1908940394370625897">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3413,7 +3413,7 @@ https://t.co/6YV5PnrKjp
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1908940394370625897_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1908940394370625897_1.jpg" alt="CJ实盘截图 #1908940394370625897" loading="lazy">
+                <img src="images/1908940394370625897_1.jpg" alt="CJ实盘截图 #1908940394370625897" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -3491,7 +3491,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-1980461247830323367">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3528,7 +3528,7 @@ https://t.co/6YV5PnrKjp
         <div class="tw-media-container count-2">
             
             <div class="tw-media-item" onclick="openLightbox('images/1980461247830323367_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1980461247830323367_1.jpg" alt="CJ实盘截图 #1980461247830323367" loading="lazy">
+                <img src="images/1980461247830323367_1.jpg" alt="CJ实盘截图 #1980461247830323367" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -3536,7 +3536,7 @@ https://t.co/6YV5PnrKjp
             </div>
             
             <div class="tw-media-item" onclick="openLightbox('images/1980461247830323367_2.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1980461247830323367_2.jpg" alt="CJ实盘截图 #1980461247830323367" loading="lazy">
+                <img src="images/1980461247830323367_2.jpg" alt="CJ实盘截图 #1980461247830323367" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -3614,7 +3614,7 @@ https://t.co/6YV5PnrKjp
     <div class="tweet-card" id="tw-1906238617724625229">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3673,7 +3673,7 @@ https://t.co/xbFZqfmuSd
     <div class="tweet-card" id="tw-1908512253240033654">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3713,7 +3713,7 @@ https://t.co/xbFZqfmuSd
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1908512253240033654_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1908512253240033654_1.jpg" alt="CJ实盘截图 #1908512253240033654" loading="lazy">
+                <img src="images/1908512253240033654_1.jpg" alt="CJ实盘截图 #1908512253240033654" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -3746,7 +3746,7 @@ https://t.co/xbFZqfmuSd
     <div class="tweet-card" id="tw-1953005005335560201">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3851,7 +3851,7 @@ https://t.co/xbFZqfmuSd
     <div class="tweet-card" id="tw-2092056042813448344">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3916,7 +3916,7 @@ lighter robinhoodlighter xyz io
     <div class="tweet-card" id="tw-2087445462819516529">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -3984,7 +3984,7 @@ lighter robinhoodlighter xyz io
     <div class="tweet-card" id="tw-2086612620136874076">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4088,7 +4088,7 @@ lighter robinhoodlighter xyz io
     <div class="tweet-card" id="tw-1913575205576007986">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4130,7 +4130,7 @@ lighter robinhoodlighter xyz io
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1913575205576007986_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1913575205576007986_1.jpg" alt="CJ实盘截图 #1913575205576007986" loading="lazy">
+                <img src="images/1913575205576007986_1.jpg" alt="CJ实盘截图 #1913575205576007986" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -4224,7 +4224,7 @@ lighter robinhoodlighter xyz io
     <div class="tweet-card" id="tw-1969731767352660075">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4284,7 +4284,7 @@ YT和现货对冲。 不同池子 对冲 。
     <div class="tweet-card" id="tw-1972844249025753150">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4342,7 +4342,7 @@ YT和现货对冲。 不同池子 对冲 。
     <div class="tweet-card" id="tw-1967786496104206735">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4379,7 +4379,7 @@ pendle + swap + pools https://t.co/hukTKeLyUX" title="复制原推文本">
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1967786496104206735_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1967786496104206735_1.jpg" alt="CJ实盘截图 #1967786496104206735" loading="lazy">
+                <img src="images/1967786496104206735_1.jpg" alt="CJ实盘截图 #1967786496104206735" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -4457,7 +4457,7 @@ pendle + swap + pools https://t.co/hukTKeLyUX" title="复制原推文本">
     <div class="tweet-card" id="tw-1971711369511862528">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4519,7 +4519,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-1960401224773328941">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4555,7 +4555,7 @@ usdc/usdt 的循环贷，拉满杠杆。
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1960401224773328941_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1960401224773328941_1.jpg" alt="CJ实盘截图 #1960401224773328941" loading="lazy">
+                <img src="images/1960401224773328941_1.jpg" alt="CJ实盘截图 #1960401224773328941" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -4633,7 +4633,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-2034189833032331265">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4694,7 +4694,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-1981030639077114198">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4754,7 +4754,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-2095540867306283493">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4879,7 +4879,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-1914933717157777419">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4938,7 +4938,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-1962860208310583793">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -4980,7 +4980,7 @@ usdc/usdt 的循环贷，拉满杠杆。
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1962860208310583793_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1962860208310583793_1.jpg" alt="CJ实盘截图 #1962860208310583793" loading="lazy">
+                <img src="images/1962860208310583793_1.jpg" alt="CJ实盘截图 #1962860208310583793" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -5058,7 +5058,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-1934241999819038740">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -5096,7 +5096,7 @@ usdc/usdt 的循环贷，拉满杠杆。
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1934241999819038740_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1934241999819038740_1.jpg" alt="CJ实盘截图 #1934241999819038740" loading="lazy">
+                <img src="images/1934241999819038740_1.jpg" alt="CJ实盘截图 #1934241999819038740" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -5174,7 +5174,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-1933013337576780181">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -5276,7 +5276,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-1931626940806598927">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -5379,7 +5379,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-2094294541214117902">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -5419,7 +5419,7 @@ usdc/usdt 的循环贷，拉满杠杆。
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/2094294541214117902_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/2094294541214117902_1.jpg" alt="CJ实盘截图 #2094294541214117902" loading="lazy">
+                <img src="images/2094294541214117902_1.jpg" alt="CJ实盘截图 #2094294541214117902" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -5513,7 +5513,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-2096079739404550551">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -5567,7 +5567,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-1988263445666709986">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -5607,7 +5607,7 @@ usdc/usdt 的循环贷，拉满杠杆。
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1988263445666709986_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1988263445666709986_1.jpg" alt="CJ实盘截图 #1988263445666709986" loading="lazy">
+                <img src="images/1988263445666709986_1.jpg" alt="CJ实盘截图 #1988263445666709986" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -5640,7 +5640,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-1988225624302039450">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -5680,7 +5680,7 @@ usdc/usdt 的循环贷，拉满杠杆。
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/1988225624302039450_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1988225624302039450_1.jpg" alt="CJ实盘截图 #1988225624302039450" loading="lazy">
+                <img src="images/1988225624302039450_1.jpg" alt="CJ实盘截图 #1988225624302039450" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -5758,7 +5758,7 @@ usdc/usdt 的循环贷，拉满杠杆。
     <div class="tweet-card" id="tw-2092322901647372641">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -5809,7 +5809,7 @@ apr 你们自己算吧。
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/2092322901647372641_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/2092322901647372641_1.jpg" alt="CJ实盘截图 #2092322901647372641" loading="lazy">
+                <img src="images/2092322901647372641_1.jpg" alt="CJ实盘截图 #2092322901647372641" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -5842,7 +5842,7 @@ apr 你们自己算吧。
     <div class="tweet-card" id="tw-2030179652636209482">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -5901,7 +5901,7 @@ apr 你们自己算吧。
     <div class="tweet-card" id="tw-2029224402009899203">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -5940,7 +5940,7 @@ apr 你们自己算吧。
         <div class="tw-media-container count-1">
             
             <div class="tw-media-item" onclick="openLightbox('images/2029224402009899203_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/2029224402009899203_1.jpg" alt="CJ实盘截图 #2029224402009899203" loading="lazy">
+                <img src="images/2029224402009899203_1.jpg" alt="CJ实盘截图 #2029224402009899203" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -6018,7 +6018,7 @@ apr 你们自己算吧。
     <div class="tweet-card" id="tw-1972677244394012769">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -6061,7 +6061,7 @@ alpha抄底+ 合约做空 鲁了2万多
         <div class="tw-media-container count-2">
             
             <div class="tw-media-item" onclick="openLightbox('images/1972677244394012769_1.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1972677244394012769_1.jpg" alt="CJ实盘截图 #1972677244394012769" loading="lazy">
+                <img src="images/1972677244394012769_1.jpg" alt="CJ实盘截图 #1972677244394012769" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -6069,7 +6069,7 @@ alpha抄底+ 合约做空 鲁了2万多
             </div>
             
             <div class="tw-media-item" onclick="openLightbox('images/1972677244394012769_2.jpg')" title="点击全屏放大实盘截图">
-                <img src="images/1972677244394012769_2.jpg" alt="CJ实盘截图 #1972677244394012769" loading="lazy">
+                <img src="images/1972677244394012769_2.jpg" alt="CJ实盘截图 #1972677244394012769" loading="lazy" decoding="async">
                 <div class="tw-media-overlay">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     <span>放大实盘</span>
@@ -6102,7 +6102,7 @@ alpha抄底+ 合约做空 鲁了2万多
     <div class="tweet-card" id="tw-1974037766389576181">
         <div class="tw-card-top">
             <div class="tw-author">
-                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/cj_avatar.jpg" alt="CJ 推特头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <div class="tw-author-info">
                     <div class="tw-name-line">
                         <span class="tw-author-name">CJ</span>
@@ -6291,7 +6291,7 @@ alpha抄底+ 合约做空 鲁了2万多
             </p>
             
             <div class="epilogue-curator-note">
-                <img src="images/suoha_avatar.jpg" alt="梭哈.AI" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <img src="images/suoha_avatar.jpg" alt="梭哈.AI" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                 <span>信息整理：<a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer">梭哈.AI (@SUOHA_AI)</a> · 历经 502 篇推文全量清洗与 7 卷 28 课题体系化重构</span>
             </div>
 
@@ -6304,7 +6304,7 @@ alpha抄底+ 合约做空 鲁了2万多
 
 <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
     <div class="lightbox-close">&times;</div>
-    <img src="" alt="实盘大图" class="lightbox-img" id="lightboxImg" onclick="event.stopPropagation()">
+    <img src="" alt="实盘大图" class="lightbox-img" id="lightboxImg" onclick="event.stopPropagation()" decoding="async" loading="lazy">
 </div>
 
 <div class="toast-notify" id="toastNotify">
@@ -6325,18 +6325,23 @@ function toggleVolume(volNum) {
     }
 }
 
-// 侧边栏实时过滤课题
+// 侧边栏实时过滤课题 (150ms 防抖)
+// debounce search
+let cjSidebarFilterTimer = null;
 function filterSidebar(query) {
-    const q = query.trim().toLowerCase();
-    const links = document.querySelectorAll('.nav-topic-link');
-    links.forEach(link => {
-        const text = link.textContent.toLowerCase();
-        if (!q || text.includes(q)) {
-            link.style.display = 'flex';
-        } else {
-            link.style.display = 'none';
-        }
-    });
+    clearTimeout(cjSidebarFilterTimer);
+    cjSidebarFilterTimer = setTimeout(() => {
+        const q = query.trim().toLowerCase();
+        const links = document.querySelectorAll('.nav-topic-link');
+        links.forEach(link => {
+            const text = link.textContent.toLowerCase();
+            if (!q || text.includes(q)) {
+                link.style.display = 'flex';
+            } else {
+                link.style.display = 'none';
+            }
+        });
+    }, 150);
 }
 
 // 复制原推文本
@@ -6438,7 +6443,7 @@ function renderArchiveList() {
         if (t.imgs && t.imgs.length > 0) {
             let imgItems = t.imgs.map(img => `
                 <div class="tw-media-item" onclick="openLightbox('images/${img}')" style="max-height: 200px;">
-                    <img src="images/${img}" alt="实盘配图" loading="lazy">
+                    <img src="images/${img}" alt="实盘配图" loading="lazy" decoding="async">
                     <div class="tw-media-overlay"><span>放大实盘</span></div>
                 </div>
             `).join('');
@@ -6452,7 +6457,7 @@ function renderArchiveList() {
         <div class="tweet-card">
             <div class="tw-card-top">
                 <div class="tw-author">
-                    <img src="images/cj_avatar.jpg" alt="CJ 头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                    <img src="images/cj_avatar.jpg" alt="CJ 头像" class="tw-avatar-img" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
                     <div class="tw-author-info">
                         <div class="tw-name-line">
                             <span class="tw-author-name">CJ</span>
@@ -6530,7 +6535,7 @@ renderArchiveList();
 
 <!-- CJ 做市 AI 助手悬浮触发器 -->
 <div class="cj-ai-fab" id="cjAiFab" onclick="toggleCjAiModal()">
-    <img src="images/cj_avatar.jpg" alt="CJ AI" class="cj-ai-fab-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+    <img src="images/cj_avatar.jpg" alt="CJ AI" class="cj-ai-fab-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
     <span class="cj-ai-fab-text">
         <span>问问 CJ 做市 AI</span>
         <span class="cj-ai-pulse-dot"></span>
@@ -6541,7 +6546,7 @@ renderArchiveList();
 <div class="cj-ai-modal" id="cjAiModal">
     <div class="cj-ai-header">
         <div class="cj-ai-header-left">
-            <img src="images/cj_avatar.jpg" alt="CJ" class="cj-ai-header-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+            <img src="images/cj_avatar.jpg" alt="CJ" class="cj-ai-header-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" decoding="async" loading="lazy">
             <div>
                 <div class="cj-ai-header-title">CJ 做市与套利 AI 助手</div>
                 <div class="cj-ai-header-status">
