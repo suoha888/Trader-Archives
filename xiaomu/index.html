@@ -101,10 +101,82 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
 .hero-pill-gold { background: var(--brand-amber-light); color: #92400E; border: 1px solid rgba(180, 83, 9, 0.2); }
 .hero-pill-green { background: var(--accent-green-bg); color: var(--accent-green); border: 1px solid rgba(21, 128, 61, 0.2); }
 
-.hero-author-badge { display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.95); padding: 5px 12px 5px 6px; border-radius: 30px; border: 1px solid var(--border-main); margin-bottom: 14px; width: fit-content; }
-.hero-author-avatar { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; }
-.hero-author-text { font-size: 12.5px; font-weight: 700; color: var(--text-main); }
-.hero-author-sub { font-size: 11px; color: var(--text-muted); margin-left: 4px; }
+/* ===== 信息整理者 (梭哈.AI) 微型克制典雅样式 ===== */
+.hero-curator-bar {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid var(--border-main);
+    border-radius: 30px;
+    padding: 5px 14px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+}
+.hcb-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-sub);
+}
+.hcb-label {
+    color: var(--text-muted);
+    font-size: 11.5px;
+}
+.hcb-avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-main);
+}
+.hcb-link {
+    color: var(--text-main);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+}
+.hcb-link:hover {
+    color: var(--brand-amber);
+}
+.hcb-divider {
+    color: var(--border-dark);
+    font-size: 11px;
+}
+
+/* 侧边栏整理者署名 */
+.sidebar-curator-note {
+    padding: 8px 12px;
+    margin: 6px 10px 0 10px;
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px dashed var(--border-main);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 11.5px;
+    color: var(--text-muted);
+}
+.sidebar-curator-note img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-main);
+}
+.sidebar-curator-note a {
+    color: var(--brand-amber-hover);
+    text-decoration: none;
+    font-weight: 700;
+}
+.sidebar-curator-note a:hover {
+    text-decoration: underline;
+}
 
 .hero-title { font-size: 32px; font-weight: 900; color: var(--text-main); line-height: 1.3; margin-bottom: 10px; font-family: var(--font-serif); }
 .hero-subtitle { font-size: 16.5px; color: #92400E; font-weight: 700; margin-bottom: 16px; font-family: var(--font-sans); }
@@ -497,6 +569,12 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
 
         </nav>
 
+        <!-- 侧边栏底部克制的信息整理者小注 -->
+        <div class="sidebar-curator-note">
+            <img src="images/suoha_avatar.jpg" alt="梭哈.AI" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+            <span>体系整理：<a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer">梭哈.AI (@SUOHA_AI)</a></span>
+        </div>
+
         <div class="sidebar-footer">
             <a href="data/xiaomu_tweets.csv" download class="btn-sidebar-action btn-download-full">
                 📥 下载全量 3,866 推文 CSV (带BOM)
@@ -517,17 +595,26 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
                 <span class="hero-pill hero-pill-green">🟢 3,866 篇全量推文开源已收录</span>
             </div>
 
-            <div class="hero-author-badge">
-                <img src="images/xiaomu_avatar.jpg" alt="川沐" class="hero-author-avatar">
-                <span class="hero-author-text">原著经验：川沐 @xiaomustock</span>
-                <span class="hero-author-sub">• 体系化整理：梭哈.AI @SUOHA_AI</span>
+            <!-- 精致克制的信息整理者双头像小条 -->
+            <div class="hero-curator-bar">
+                <div class="hcb-item">
+                    <span class="hcb-label">原著经验：</span>
+                    <img src="images/xiaomu_avatar.jpg" alt="川沐" class="hcb-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                    <a href="https://x.com/xiaomustock" target="_blank" rel="noopener noreferrer" class="hcb-link">川沐｜Trumoo (@xiaomustock)</a>
+                </div>
+                <span class="hcb-divider">•</span>
+                <div class="hcb-item">
+                    <span class="hcb-label">体系化整理：</span>
+                    <img src="images/suoha_avatar.jpg" alt="梭哈.AI" class="hcb-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                    <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" class="hcb-link">梭哈.AI (@SUOHA_AI)</a>
+                </div>
             </div>
 
             <h1 class="hero-title">《川沐实战交易全书：美股硬科技、加密大周期与盘口博弈实盘大典》</h1>
             <div class="hero-subtitle">推特 28.2万 关注顶流实战派 · 3,866 篇真金白银推文全量精解 · 6 大卷 24 课题全景重构</div>
 
             <p class="hero-desc">
-                本全书系推特顶流二级实战派交易员【川沐｜Trumoo】历年公开推文的工程化数字资产典藏。拒绝碎片化遗忘与空洞说教，深度提炼其在美股半导体硬科技（MRVL、MU、LITE、HBM存储霸权）、加密大周期流动性节拍、期货现货盘口庄家微观博弈、标品护城河以及巴菲特 LTCM 仓位风控铁律等维度的真金白银实盘心智。内置专属数字孪生 AI 导师，全量推文数据湖 100% 开源共享。
+                本全书系推特顶流二级实战派交易员【川沐｜Trumoo】历年公开推文的工程化数字资产典藏，由研究员 <strong>梭哈.AI（@SUOHA_AI）</strong> 独立收录重构。拒绝碎片化遗忘与空洞说教，深度提炼其在美股半导体硬科技（MRVL、MU、LITE、HBM存储霸权）、加密大周期流动性节拍、期货现货盘口庄家微观博弈、标品护城河以及巴菲特 LTCM 仓位风控铁律等维度的真金白银实盘心智。内置专属数字孪生 AI 导师，全量推文数据湖 100% 开源共享。
             </p>
 
             <!-- 5 步流程脉络图 -->
