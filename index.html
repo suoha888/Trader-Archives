@@ -424,6 +424,321 @@
             color: var(--brand-amber);
         }
 
+        /* ================================================================
+           左侧作者挂件卡片 (Author Side Floating Dock)
+           ================================================================ */
+        .author-floating-dock {
+            position: fixed;
+            left: max(18px, calc(50% - 620px - 225px));
+            top: 110px;
+            width: 200px;
+            background: linear-gradient(180deg, #FFFFFF 0%, #FAF8F3 100%);
+            border: 1px solid var(--border-main);
+            border-radius: 16px;
+            padding: 20px 16px 16px;
+            box-shadow: 0 10px 28px rgba(31, 27, 22, 0.08), 0 1px 3px rgba(0,0,0,0.03);
+            z-index: 999;
+            text-align: center;
+            transition: all 0.25s ease;
+        }
+
+        .author-floating-dock:hover {
+            box-shadow: 0 14px 36px rgba(180, 83, 9, 0.12), 0 2px 6px rgba(0,0,0,0.04);
+            border-color: rgba(180, 83, 9, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .author-tag-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--brand-amber);
+            background: var(--brand-amber-light);
+            border: 1px solid rgba(180, 83, 9, 0.25);
+            padding: 3px 10px;
+            border-radius: 9999px;
+            margin-bottom: 14px;
+            letter-spacing: 0.3px;
+        }
+
+        .author-avatar-wrap {
+            position: relative;
+            width: 78px;
+            height: 78px;
+            margin: 0 auto 12px;
+        }
+
+        .author-dock-avatar {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #FFFFFF;
+            box-shadow: 0 0 0 2px var(--brand-amber), 0 6px 16px rgba(180, 83, 9, 0.22);
+            display: block;
+            background: #EAE2D2;
+            transition: transform 0.25s ease;
+        }
+
+        .author-floating-dock:hover .author-dock-avatar {
+            transform: scale(1.04);
+        }
+
+        .author-verify-badge {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #1D9BF0;
+            color: #FFFFFF;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 900;
+            border: 2px solid #FFFFFF;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.18);
+        }
+
+        .author-dock-name {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 17px;
+            font-weight: 900;
+            color: var(--text-main);
+            line-height: 1.3;
+            margin-bottom: 2px;
+        }
+
+        .author-dock-handle {
+            display: inline-block;
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--brand-amber);
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-family: 'Plus Jakarta Sans', monospace;
+            transition: color 0.15s;
+        }
+
+        .author-dock-handle:hover {
+            color: var(--brand-amber-hover);
+            text-decoration: underline;
+        }
+
+        .author-dock-bio {
+            font-size: 11.5px;
+            color: var(--text-muted);
+            line-height: 1.55;
+            margin-bottom: 14px;
+            padding: 0 4px;
+        }
+
+        .author-dock-divider {
+            height: 1px;
+            background: var(--border-light);
+            margin: 12px 0 14px;
+        }
+
+        /* 精美推特跳转小按钮 */
+        .btn-author-jump {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            width: 100%;
+            padding: 9px 12px;
+            background: #0F1419;
+            color: #FFFFFF;
+            font-size: 12.5px;
+            font-weight: 700;
+            border-radius: 9999px;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(15, 20, 25, 0.2);
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-author-jump::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-author-jump:hover::before {
+            left: 100%;
+        }
+
+        .btn-author-jump:hover {
+            background: var(--brand-amber);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(180, 83, 9, 0.35);
+        }
+
+        .btn-author-jump svg {
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-author-jump:hover svg {
+            transform: scale(1.1);
+        }
+
+        .btn-author-jump .jump-arrow {
+            font-size: 13px;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-author-jump:hover .jump-arrow {
+            transform: translate(2px, -2px);
+        }
+
+        .author-dock-sublink {
+            display: block;
+            margin-top: 10px;
+            font-size: 11px;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .author-dock-sublink:hover {
+            color: var(--brand-amber);
+            text-decoration: underline;
+        }
+
+        /* 响应式内嵌作者条 (在中窄屏/手机端展示) */
+        .author-inline-bar {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-main);
+            border-radius: 14px;
+            padding: 12px 20px;
+            margin: 0 auto 28px;
+            max-width: 820px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            text-align: left;
+        }
+
+        .author-inline-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .author-inline-avatar-wrap {
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .author-inline-avatar {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--brand-amber);
+            box-shadow: 0 2px 8px rgba(180, 83, 9, 0.18);
+            display: block;
+            background: #EAE2D2;
+        }
+
+        .author-inline-verify {
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            background: #1D9BF0;
+            color: #FFFFFF;
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
+            font-weight: 800;
+            border: 1.5px solid #FFFFFF;
+        }
+
+        .author-inline-info {
+            flex: 1;
+        }
+
+        .author-inline-name-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 2px;
+        }
+
+        .author-inline-name {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .author-inline-role {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--brand-amber);
+            background: var(--brand-amber-light);
+            border: 1px solid rgba(180, 83, 9, 0.2);
+            padding: 2px 7px;
+            border-radius: 9999px;
+        }
+
+        .author-inline-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .author-inline-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 9px 16px;
+            background: #0F1419;
+            color: #FFFFFF;
+            font-size: 12.5px;
+            font-weight: 700;
+            border-radius: 9999px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .author-inline-btn:hover {
+            background: var(--brand-amber);
+            color: #FFFFFF;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 14px rgba(180, 83, 9, 0.3);
+        }
+
+        @media (max-width: 1339px) {
+            .author-floating-dock {
+                display: none;
+            }
+            .author-inline-bar {
+                display: flex;
+            }
+        }
+
         @media (max-width: 960px) {
             .kol-grid {
                 grid-template-columns: 1fr;
@@ -439,6 +754,31 @@
                 font-size: 30px;
             }
         }
+
+        @media (max-width: 640px) {
+            .author-inline-bar {
+                flex-direction: column;
+                align-items: stretch;
+                text-align: center;
+                gap: 12px;
+                padding: 14px 16px;
+            }
+            .author-inline-left {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+            .author-inline-info {
+                text-align: center;
+            }
+            .author-inline-name-row {
+                justify-content: center;
+            }
+            .author-inline-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -448,6 +788,39 @@
         ⚡ Trader-Archives 已上线 · 推特顶级实战交易员推文全量开源收录 · 持续更新中
         <a href="https://github.com/suoha888/Trader-Archives" target="_blank">⭐ Star on GitHub</a>
     </div>
+
+    <!-- 桌面宽屏左侧固定作者挂件卡片 -->
+    <aside class="author-floating-dock" aria-label="典藏发起人与作者信息">
+        <div class="author-tag-pill">
+            <span>👑</span> 典藏发起人 & 研究员
+        </div>
+        
+        <div class="author-avatar-wrap">
+            <img src="images/suoha_avatar.jpg" alt="作者 梭哈.AI 头像" class="author-dock-avatar" loading="eager" decoding="async">
+            <span class="author-verify-badge" title="推特实名认证">✓</span>
+        </div>
+
+        <div class="author-dock-name">梭哈.AI</div>
+        <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" class="author-dock-handle">@SUOHA_AI</a>
+
+        <div class="author-dock-bio">
+            推特硬核交易员实盘推文全景重构 · 打造华人顶级交易知识大典
+        </div>
+
+        <div class="author-dock-divider"></div>
+
+        <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" class="btn-author-jump" title="跳转访问 梭哈.AI 推特主页">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span>关注 @SUOHA_AI</span>
+            <span class="jump-arrow">↗</span>
+        </a>
+
+        <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" class="author-dock-sublink">
+            💬 推荐新导师 / 私信线索
+        </a>
+    </aside>
 
     <!-- 主容器 -->
     <div class="container">
@@ -463,6 +836,31 @@
             <p class="hero-desc">
                 告别推特碎片化噪音与信息遗忘。将推特顶级实战交易员与投资导师的数千篇真金白银实盘公开推文，体系化收录整理为可随查随用的在线研报站与 GitHub 全量开源数据湖。持续收录更新中。
             </p>
+
+            <!-- 中窄屏/移动端 自适应作者条 -->
+            <div class="author-inline-bar">
+                <div class="author-inline-left">
+                    <div class="author-inline-avatar-wrap">
+                        <img src="images/suoha_avatar.jpg" alt="作者 梭哈.AI 头像" class="author-inline-avatar" loading="lazy" decoding="async">
+                        <span class="author-inline-verify">✓</span>
+                    </div>
+                    <div class="author-inline-info">
+                        <div class="author-inline-name-row">
+                            <span class="author-inline-name">梭哈.AI</span>
+                            <span class="author-inline-role">典藏发起人</span>
+                        </div>
+                        <div class="author-inline-desc">
+                            推特实战交易员推文全量工程化重构 · 打造华人顶级交易知识大典
+                        </div>
+                    </div>
+                </div>
+                <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" class="author-inline-btn" title="跳转访问 梭哈.AI 推特主页">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    <span>关注 @SUOHA_AI ↗</span>
+                </a>
+            </div>
 
             <!-- 全局宏观统计 (0 折行) -->
             <div class="stats-strip">
