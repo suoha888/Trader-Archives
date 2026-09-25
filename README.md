@@ -16,6 +16,7 @@
 | **川沐｜Trumoo** | [@xiaomustock](https://x.com/xiaomustock) | 美股硬科技、加密大周期与盘口博弈 | **3,866 篇** | [进入](https://suoha888.github.io/Trader-Archives/xiaomu/) |
 | **danny** | [@agintender](https://x.com/agintender) | 暗流博弈与二级合约算法大典 | **3,231 篇（含 92 篇万字长文）** | [进入](https://suoha888.github.io/Trader-Archives/agintender/) |
 | **magnolia** | [@0xmagnolia](https://x.com/0xmagnolia) | 蓝筹Alpha与一级链上狂飙实战全书 | **1,249 篇** | [进入](https://suoha888.github.io/Trader-Archives/0xmagnolia/) |
+| **0xSun** | [@0xSunNFT](https://x.com/0xSunNFT) | 实战交易与全市场进化全书 | **2,581 篇（含 AI 代币万字研报）** | [进入](https://suoha888.github.io/Trader-Archives/0xsun/) |
 
 > 更多实战 KOL 持续收录中，敬请关注。
 
@@ -41,10 +42,15 @@ Trader-Archives/
 │   ├── data/               # 完整数据湖（JSON / CSV / 5大垂类切片）
 │   ├── docs/articles/      # 92 篇 Twitter Article 独立 Markdown 文库
 │   └── images/             # 本地实盘图床
-├── 0xmagnolia/             # 🚀【本次新增】magnolia 蓝筹Alpha与一级链上狂飙全书
+├── 0xmagnolia/             # magnolia 蓝筹Alpha与一级链上狂飙全书
 │   ├── index.html          # magnolia 独立自包含研报阅读站（含 23-Key 导师与 24 课题精解）
 │   ├── data/               # 完整数据湖（JSON / CSV / 6大垂类切片）
 │   ├── docs/articles/      # Twitter Article 独立 Markdown 文库
+│   └── images/             # 本地实盘图床
+├── 0xsun/                  # 🚀【本次新增】0xSun 实战交易与全市场进化全书
+│   ├── index.html          # 0xSun 独立自包含研报阅读站（含 23-Key 导师与 24 课题精解）
+│   ├── data/               # 完整数据湖（JSON / CSV / 6大垂类切片）
+│   ├── docs/articles/      # Twitter Article 深度长文 Markdown 文库
 │   └── images/             # 本地实盘图床
 ├── xiaomu/                  # 川沐实战交易全书
 │   ├── index.html
