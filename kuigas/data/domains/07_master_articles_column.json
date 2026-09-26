@@ -1,0 +1,253 @@
+[
+  {
+    "id": "2091190201070559294",
+    "text": "http://x.com/i/article/2091086787150295040",
+    "createdAt": "Sat Aug 22 15:46:11 +0000 2026",
+    "retweetCount": 1,
+    "favoriteCount": 41,
+    "replyCount": 18,
+    "quoteCount": 1,
+    "viewCount": 43398,
+    "userScreenName": "KuiGas",
+    "userName": "丰密",
+    "userIdStr": "1372876871990272000",
+    "userFollowers": 107322,
+    "urls": [
+      {
+        "url": "https://t.co/QYlcTNWH3t",
+        "displayUrl": "x.com/i/article/2091…"
+      }
+    ],
+    "language": "zxx",
+    "conversationId": "2091190201070559294",
+    "has_article": true,
+    "article_id": "2091086787150295040",
+    "gold_score": 10.0,
+    "primary_domain": "07_master_articles_column"
+  },
+  {
+    "id": "2070150993007018339",
+    "text": "http://x.com/i/article/2069447629185142784",
+    "createdAt": "Thu Jun 25 14:23:52 +0000 2026",
+    "retweetCount": 11,
+    "favoriteCount": 136,
+    "replyCount": 41,
+    "quoteCount": 6,
+    "viewCount": 32102,
+    "userScreenName": "KuiGas",
+    "userName": "丰密",
+    "userIdStr": "1372876871990272000",
+    "userFollowers": 107382,
+    "urls": [
+      {
+        "url": "https://t.co/oXZv45iKsX",
+        "displayUrl": "x.com/i/article/2069…"
+      }
+    ],
+    "language": "zxx",
+    "conversationId": "2070150993007018339",
+    "has_article": true,
+    "article_id": "2069447629185142784",
+    "gold_score": 10.0,
+    "primary_domain": "07_master_articles_column"
+  },
+  {
+    "id": "1894025288692244768",
+    "text": "https://t.co/4SeNkVh1Rn",
+    "createdAt": "Mon Feb 24 14:03:12 +0000 2025",
+    "language": "zxx",
+    "retweetCount": 53,
+    "favoriteCount": 168,
+    "replyCount": 14,
+    "quoteCount": 3,
+    "viewCount": 73562,
+    "userScreenName": "KuiGas",
+    "userName": "丰密",
+    "userIdStr": "1372876871990272000",
+    "conversationId": "1894025288692244768",
+    "urls": [
+      {
+        "url": "http://x.com/i/article/1894017713028358144",
+        "displayUrl": "x.com/i/article/1894…"
+      }
+    ],
+    "has_article": true,
+    "article_id": "1894017713028358144",
+    "gold_score": 10.0,
+    "primary_domain": "07_master_articles_column"
+  },
+  {
+    "id": "1913207555100492247",
+    "text": "https://t.co/ENw5qp7UHB",
+    "createdAt": "Fri Apr 18 12:26:41 +0000 2025",
+    "language": "zxx",
+    "retweetCount": 40,
+    "favoriteCount": 135,
+    "replyCount": 41,
+    "quoteCount": 3,
+    "viewCount": 72424,
+    "userScreenName": "KuiGas",
+    "userName": "丰密",
+    "userIdStr": "1372876871990272000",
+    "conversationId": "1913207555100492247",
+    "urls": [
+      {
+        "url": "http://x.com/i/article/1913063804013105152",
+        "displayUrl": "x.com/i/article/1913…"
+      }
+    ],
+    "has_article": true,
+    "article_id": "1913063804013105152",
+    "gold_score": 10.0,
+    "primary_domain": "07_master_articles_column"
+  },
+  {
+    "id": "1927699973191414004",
+    "text": "https://t.co/pRudg6jNoL",
+    "createdAt": "Wed May 28 12:14:23 +0000 2025",
+    "language": "zxx",
+    "retweetCount": 43,
+    "favoriteCount": 125,
+    "replyCount": 23,
+    "quoteCount": 8,
+    "viewCount": 116979,
+    "userScreenName": "KuiGas",
+    "userName": "丰密",
+    "userIdStr": "1372876871990272000",
+    "conversationId": "1927699973191414004",
+    "urls": [
+      {
+        "url": "http://x.com/i/article/1927346063414857728",
+        "displayUrl": "x.com/i/article/1927…"
+      }
+    ],
+    "has_article": true,
+    "article_id": "1927346063414857728",
+    "gold_score": 10.0,
+    "primary_domain": "07_master_articles_column"
+  },
+  {
+    "id": "1878072044971311450",
+    "text": "https://t.co/KIW3teMffa",
+    "createdAt": "Sat Jan 11 13:30:43 +0000 2025",
+    "language": "zxx",
+    "retweetCount": 11,
+    "favoriteCount": 27,
+    "replyCount": 7,
+    "quoteCount": 1,
+    "viewCount": 11842,
+    "userScreenName": "KuiGas",
+    "userName": "丰密",
+    "userIdStr": "1372876871990272000",
+    "conversationId": "1878072044971311450",
+    "urls": [
+      {
+        "url": "http://x.com/i/article/1878045926163709952",
+        "displayUrl": "x.com/i/article/1878…"
+      }
+    ],
+    "has_article": true,
+    "article_id": "1878045926163709952",
+    "gold_score": 10.0,
+    "primary_domain": "07_master_articles_column"
+  },
+  {
+    "id": "1849081968149058023",
+    "text": "https://t.co/pQAbc9nsnU",
+    "createdAt": "Wed Oct 23 13:34:30 +0000 2024",
+    "language": "zxx",
+    "retweetCount": 29,
+    "favoriteCount": 93,
+    "replyCount": 27,
+    "quoteCount": 5,
+    "viewCount": 59408,
+    "userScreenName": "KuiGas",
+    "userName": "丰密",
+    "userIdStr": "1372876871990272000",
+    "conversationId": "1849081968149058023",
+    "urls": [
+      {
+        "url": "http://x.com/i/article/1813933786671042561",
+        "displayUrl": "x.com/i/article/1813…"
+      }
+    ],
+    "has_article": true,
+    "article_id": "1813933786671042561",
+    "gold_score": 10.0,
+    "primary_domain": "07_master_articles_column"
+  },
+  {
+    "id": "1869975506470482311",
+    "text": "https://t.co/sspKW1ZZiY",
+    "createdAt": "Fri Dec 20 05:17:57 +0000 2024",
+    "language": "zxx",
+    "retweetCount": 4,
+    "favoriteCount": 34,
+    "replyCount": 6,
+    "viewCount": 24921,
+    "userScreenName": "KuiGas",
+    "userName": "丰密",
+    "userIdStr": "1372876871990272000",
+    "conversationId": "1869975506470482311",
+    "urls": [
+      {
+        "url": "http://x.com/i/article/1869954061296119808",
+        "displayUrl": "x.com/i/article/1869…"
+      }
+    ],
+    "has_article": true,
+    "article_id": "1869954061296119808",
+    "gold_score": 10.0,
+    "primary_domain": "07_master_articles_column"
+  },
+  {
+    "id": "1881894097545564510",
+    "text": "https://t.co/BerUcG4gvr",
+    "createdAt": "Wed Jan 22 02:38:11 +0000 2025",
+    "language": "zxx",
+    "retweetCount": 71,
+    "favoriteCount": 169,
+    "replyCount": 20,
+    "quoteCount": 3,
+    "viewCount": 55274,
+    "userScreenName": "KuiGas",
+    "userName": "丰密",
+    "userIdStr": "1372876871990272000",
+    "conversationId": "1881894097545564510",
+    "urls": [
+      {
+        "url": "http://x.com/i/article/1881267668390641665",
+        "displayUrl": "x.com/i/article/1881…"
+      }
+    ],
+    "has_article": true,
+    "article_id": "1881267668390641665",
+    "gold_score": 10.0,
+    "primary_domain": "07_master_articles_column"
+  },
+  {
+    "id": "1851174168592838709",
+    "text": "https://t.co/UQ3vvvXKdX",
+    "createdAt": "Tue Oct 29 08:08:09 +0000 2024",
+    "language": "zxx",
+    "retweetCount": 7,
+    "favoriteCount": 54,
+    "replyCount": 18,
+    "quoteCount": 1,
+    "viewCount": 29064,
+    "userScreenName": "KuiGas",
+    "userName": "丰密",
+    "userIdStr": "1372876871990272000",
+    "conversationId": "1851174168592838709",
+    "urls": [
+      {
+        "url": "http://x.com/i/article/1851157390982623232",
+        "displayUrl": "x.com/i/article/1851…"
+      }
+    ],
+    "has_article": true,
+    "article_id": "1851157390982623232",
+    "gold_score": 10.0,
+    "primary_domain": "07_master_articles_column"
+  }
+]

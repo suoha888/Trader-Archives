@@ -21,6 +21,7 @@
 | **ZTZZ ฿** | [@ZTZZBTC](https://x.com/ZTZZBTC) | 主观做市、空头绝杀与独立交易员心智全书 | **261 篇（含 6.7万字官方研报）** | [进入](https://suoha888.github.io/Trader-Archives/ztzzbtc/) |
 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 实战交易与周期心智全书 | **2,718 篇（含 13 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/wallstreet0name/) |
 | **paulwei** | [@coolish](https://x.com/coolish) | 实战交易、两轮牛熊全景复盘与AI拓荒全书 | **2,579 篇（含近6年4万条Bitmex订单开源）** | [进入](https://suoha888.github.io/Trader-Archives/coolish/) |
+| **丰密** | [@KuiGas](https://x.com/KuiGas) | 实战周期投资与以慢制快心智全书 | **4,667 篇（含 10 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/kuigas/) |
 
 > 更多实战 KOL 持续收录中，敬请关注。
 
