@@ -19,6 +19,7 @@
 | **0xSun** | [@0xSunNFT](https://x.com/0xSunNFT) | 实战交易与全市场进化全书 | **2,581 篇（含 AI 代币万字研报）** | [进入](https://suoha888.github.io/Trader-Archives/0xsun/) |
 | **0xWizard** | [@0xcryptowizard](https://x.com/0xcryptowizard) | 日月星辰宏观体系与AI硬科技投资全书 | **1,685 篇（含 5 篇万字长文）** | [进入](https://suoha888.github.io/Trader-Archives/0xcryptowizard/) |
 | **ZTZZ ฿** | [@ZTZZBTC](https://x.com/ZTZZBTC) | 主观做市、空头绝杀与独立交易员心智全书 | **261 篇（含 6.7万字官方研报）** | [进入](https://suoha888.github.io/Trader-Archives/ztzzbtc/) |
+| **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 实战交易与周期心智全书 | **2,718 篇（含 13 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/wallstreet0name/) |
 
 > 更多实战 KOL 持续收录中，敬请关注。
 
