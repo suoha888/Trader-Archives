@@ -6716,12 +6716,73 @@ const CJ_AI_CONFIG = {
 7. 【智能章节联动】：若回答命中了手册章节，文末建议查阅对应卡片，格式：[第 XX 课题：课题名](#t-XX)。`
 };
 
-let cjAiKeyIndex = Math.floor(Math.random() * CJ_AI_CONFIG.keys.length);
+// ===== 跨手册全局持久化高可用绝对均衡调度器 (Global Persistent Fair-Load Key Scheduler) =====
+const GlobalKeyScheduler = {
+    CURSOR_KEY: 'trader_archives_ai_cursor',
+    COOLDOWN_KEY: 'trader_archives_ai_cooldowns',
+
+    getCooldowns() {
+        try {
+            return JSON.parse(localStorage.getItem(this.COOLDOWN_KEY) || '{}');
+        } catch(e) { return {}; }
+    },
+
+    setCooldown(key, durationMs = 45000) {
+        try {
+            const cds = this.getCooldowns();
+            cds[key] = Date.now() + durationMs;
+            localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+        } catch(e) {}
+    },
+
+    clearCooldown(key) {
+        try {
+            const cds = this.getCooldowns();
+            if (cds[key]) {
+                delete cds[key];
+                localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+            }
+        } catch(e) {}
+    },
+
+    getNextHealthyKey(keys) {
+        if (!keys || !keys.length) return '';
+        const now = Date.now();
+        const cds = this.getCooldowns();
+        
+        let cursor = 0;
+        try {
+            cursor = parseInt(localStorage.getItem(this.CURSOR_KEY) || '0', 10);
+            if (isNaN(cursor)) cursor = 0;
+        } catch(e) { cursor = 0; }
+
+        let chosenKey = '';
+        for (let i = 0; i < keys.length; i++) {
+            const idx = (cursor + i) % keys.length;
+            const candidate = keys[idx];
+            const cooldownUntil = cds[candidate] || 0;
+            if (now >= cooldownUntil) {
+                chosenKey = candidate;
+                try {
+                    localStorage.setItem(this.CURSOR_KEY, ((idx + 1) % keys.length).toString());
+                } catch(e) {}
+                break;
+            }
+        }
+
+        if (!chosenKey) {
+            chosenKey = keys[cursor % keys.length];
+            try {
+                localStorage.setItem(this.CURSOR_KEY, ((cursor + 1) % keys.length).toString());
+            } catch(e) {}
+        }
+
+        return chosenKey;
+    }
+};
 
 function getNextKey() {
-    const k = CJ_AI_CONFIG.keys[cjAiKeyIndex];
-    cjAiKeyIndex = (cjAiKeyIndex + 1) % CJ_AI_CONFIG.keys.length;
-    return k;
+    return GlobalKeyScheduler.getNextHealthyKey(CJ_AI_CONFIG.keys);
 }
 
 let cjAiHistory = [
@@ -6948,6 +7009,7 @@ async function sendCjAiMessage() {
         const timeoutId = setTimeout(() => {
             if (!hasReceivedChunk) {
                 console.warn(`[AI] Attempt ${attempt+1} exceeded 3.5s timeout, fast retry next key...`);
+                GlobalKeyScheduler.setCooldown(currentKey, 45000);
                 controller.abort();
             }
         }, 3500);
@@ -6971,6 +7033,7 @@ async function sendCjAiMessage() {
 
             if (!resp.ok) {
                 clearTimeout(timeoutId);
+                if (resp.status === 429) GlobalKeyScheduler.setCooldown(currentKey, 45000);
                 console.warn(`[AI] Attempt ${attempt+1} HTTP ${resp.status}, fast retry`);
                 continue;
             }
@@ -7030,6 +7093,7 @@ async function sendCjAiMessage() {
                 updateBubbleDisplay(true);
                 const cleanedContent = fullAiResponse.replace(/^(?:\s*|\d+[\.、]\s*|\*+\s*)*(?:用户想要[问询了解]|用户意图|用户的?问题[是为：:]|你想要[问询了解]|你询问的[是为：:]|针对你的?提问|思考过程|问题解构|分析过程)[^\n]*(\n+|$)/gi, '').trim();
                 cjAiHistory.push({ role: 'assistant', content: cleanedContent || fullAiResponse || fullReasoning });
+                GlobalKeyScheduler.clearCooldown(currentKey);
                 success = true;
                 break;
             }
