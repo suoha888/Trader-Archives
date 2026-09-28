@@ -1117,7 +1117,63 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     .flow-grid { grid-template-columns: 1fr; }
     .tw-media-container.count-2 { grid-template-columns: 1fr; }
 }
-    </style>
+    
+/* ===== AI 深度思考链 (CoT) 可视化优雅面板 ===== */
+.ai-reasoning-box {
+    margin-bottom: 12px;
+    border: 1px solid rgba(180, 83, 9, 0.25);
+    border-radius: 8px;
+    background: rgba(254, 243, 199, 0.45);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.ai-reasoning-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 7px 11px;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #92400E;
+    cursor: pointer;
+    user-select: none;
+    background: rgba(180, 83, 9, 0.08);
+    list-style: none;
+}
+.ai-reasoning-summary::-webkit-details-marker {
+    display: none;
+}
+.ai-reasoning-summary:hover {
+    background: rgba(180, 83, 9, 0.14);
+}
+.ai-reasoning-pulse-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #F59E0B;
+    animation: pulseReasoningDot 1.2s infinite ease-in-out;
+}
+@keyframes pulseReasoningDot {
+    0%, 100% { transform: scale(0.85); opacity: 0.5; }
+    50% { transform: scale(1.3); opacity: 1; }
+}
+.ai-reasoning-content {
+    padding: 9px 12px;
+    font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+    font-size: 11px;
+    line-height: 1.55;
+    color: #685E50;
+    white-space: pre-wrap;
+    word-break: break-word;
+    max-height: 240px;
+    overflow-y: auto;
+    border-top: 1px dashed rgba(180, 83, 9, 0.15);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+</style>
 </head>
 <body>
 
@@ -32828,58 +32884,154 @@ function appendAiMsg(role, content) {
     return msgId;
 }
 
-async function callAtriaApi(messages, targetMsgId, retryCount = 0) {
+function escapeAiHtml(str) {
+    return (str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+function formatSimpleMarkdown(text) {
+    if (!text) return '';
+    return text.replace(/\n/g, '<br>')
+               .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+               .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" onclick="closeAiDrawer()" style="color:var(--brand-amber);font-weight:700;text-decoration:underline;">$1</a>');
+}
+
+async function callAtriaApi(messages, targetMsgId) {
     const targetEl = document.getElementById(targetMsgId);
     if (!targetEl) return;
+    const bubble = targetEl.querySelector('.ai-msg-bubble');
+    if (!bubble) return;
 
-    if (retryCount >= 4) {
-        targetEl.querySelector('.ai-msg-bubble').innerHTML = '⚠️ 网络连接波动，请重试或更换网络节点。';
-        return;
+    let fullReasoning = '';
+    let fullAiResponse = '';
+    let isFirstToken = true;
+
+    function updateBubbleDisplay(isFinal = false) {
+        let outHtml = '';
+        if (fullReasoning.trim()) {
+            const hasStartedAnswer = Boolean(fullAiResponse.trim()) || isFinal;
+            outHtml += `
+            <details class="ai-reasoning-box" ${hasStartedAnswer ? '' : 'open'}>
+                <summary class="ai-reasoning-summary">
+                    <span style="display:flex; align-items:center; gap:6px;">
+                        <span>${hasStartedAnswer ? '💡' : '🧠'}</span>
+                        <span>${hasStartedAnswer ? '已完成深度推演 (点击展开/折叠)' : '川沐导师正在深度演算模型推演...'}</span>
+                    </span>
+                    ${!hasStartedAnswer ? '<span class="ai-reasoning-pulse-dot"></span>' : '<span style="font-size:10px; opacity:0.7;">▼</span>'}
+                </summary>
+                <div class="ai-reasoning-content">${escapeAiHtml(fullReasoning)}</div>
+            </details>`;
+        }
+        if (fullAiResponse.trim()) {
+            outHtml += `<div class="ai-answer-content">${formatSimpleMarkdown(fullAiResponse)}</div>`;
+        }
+        bubble.innerHTML = outHtml;
+        const chatBody = document.getElementById('aiChatBody');
+        if (chatBody) chatBody.scrollTop = chatBody.scrollHeight;
     }
 
-    const key = getNextKey();
-    const payload = {
-        model: CJ_AI_CONFIG.model,
-        temperature: CJ_AI_CONFIG.temperature,
-        max_tokens: CJ_AI_CONFIG.maxTokens,
-        messages: [
-            { role: 'system', content: CJ_AI_CONFIG.systemPrompt },
-            ...messages.slice(-6)
-        ]
-    };
+    const maxAttempts = Math.min(8, CJ_AI_CONFIG.keys.length);
+    let success = false;
 
-    try {
-        const resp = await fetch(CJ_AI_CONFIG.apiUrl, {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${key}`,
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(payload)
-        });
+    for (let attempt = 0; attempt < maxAttempts; attempt++) {
+        const currentKey = getNextKey();
+        const controller = new AbortController();
+        let hasReceivedChunk = false;
 
-        if (!resp.ok) {
-            return callAtriaApi(messages, targetMsgId, retryCount + 1);
+        // 3.5秒超时熔断机制
+        const timeoutId = setTimeout(() => {
+            if (!hasReceivedChunk) {
+                console.warn(`[AI-Xiaomu] Attempt ${attempt+1} 3.5s timeout, aborting to next key...`);
+                controller.abort();
+            }
+        }, 3500);
+
+        try {
+            const resp = await fetch(CJ_AI_CONFIG.apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${currentKey}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    model: CJ_AI_CONFIG.model,
+                    temperature: CJ_AI_CONFIG.temperature,
+                    max_tokens: CJ_AI_CONFIG.maxTokens,
+                    stream: true,
+                    messages: [
+                        { role: 'system', content: CJ_AI_CONFIG.systemPrompt },
+                        ...messages.slice(-6)
+                    ]
+                }),
+                signal: controller.signal
+            });
+
+            if (!resp.ok) {
+                clearTimeout(timeoutId);
+                console.warn(`[AI-Xiaomu] Attempt ${attempt+1} HTTP ${resp.status}, fast retry`);
+                continue;
+            }
+
+            const reader = resp.body.getReader();
+            const decoder = new TextDecoder('utf-8');
+            let buffer = '';
+
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+
+                if (!hasReceivedChunk) {
+                    hasReceivedChunk = true;
+                    clearTimeout(timeoutId);
+                }
+
+                buffer += decoder.decode(value, { stream: true });
+                const lines = buffer.split('\n');
+                buffer = lines.pop();
+
+                for (const line of lines) {
+                    const trimmed = line.trim();
+                    if (trimmed.startsWith('data: ') && trimmed !== 'data: [DONE]') {
+                        try {
+                            const chunk = JSON.parse(trimmed.slice(6));
+                            const deltaObj = chunk.choices?.[0]?.delta || {};
+                            const deltaReasoning = deltaObj.reasoning_content || '';
+                            const deltaContent = deltaObj.content || '';
+
+                            if (deltaReasoning) {
+                                fullReasoning += deltaReasoning;
+                                updateBubbleDisplay(false);
+                            }
+
+                            if (deltaContent) {
+                                fullAiResponse += deltaContent;
+                                updateBubbleDisplay(false);
+                            }
+                        } catch (e) {}
+                    }
+                }
+            }
+
+            clearTimeout(timeoutId);
+
+            if (fullAiResponse.trim() || fullReasoning.trim()) {
+                updateBubbleDisplay(true);
+                chatHistory.push({ role: 'assistant', content: fullAiResponse || fullReasoning });
+                success = true;
+                break;
+            }
+
+        } catch (fetchErr) {
+            clearTimeout(timeoutId);
+            console.warn(`[AI-Xiaomu] Attempt ${attempt+1} error:`, fetchErr.name === 'AbortError' ? '3.5s Timeout' : fetchErr.message);
         }
+    }
 
-        const data = await resp.json();
-        const reply = data.choices && data.choices[0] && data.choices[0].message ? data.choices[0].message.content : '';
-
-        if (!reply) {
-            return callAtriaApi(messages, targetMsgId, retryCount + 1);
-        }
-
-        chatHistory.push({ role: 'assistant', content: reply });
-
-        let formatted = reply.replace(/\n/g, '<br>')
-                             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                             .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" onclick="closeAiDrawer()" style="color:var(--brand-amber);font-weight:700;text-decoration:underline;">$1</a>');
-
-        targetEl.querySelector('.ai-msg-bubble').innerHTML = formatted;
-        document.getElementById('aiChatBody').scrollTop = document.getElementById('aiChatBody').scrollHeight;
-
-    } catch (e) {
-        callAtriaApi(messages, targetMsgId, retryCount + 1);
+    if (!success) {
+        bubble.innerHTML = '<span style="color: #B91C1C;">⚠️ 网络调度中，所有节点暂时繁忙，请稍等 5 秒后重试。</span>';
     }
 }
 </script>

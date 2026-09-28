@@ -717,6 +717,62 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     text-align: center;
 }
 
+
+/* ===== AI 深度思考链 (CoT) 可视化优雅面板 ===== */
+.ai-reasoning-box {
+    margin-bottom: 12px;
+    border: 1px solid rgba(180, 83, 9, 0.25);
+    border-radius: 8px;
+    background: rgba(254, 243, 199, 0.45);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.ai-reasoning-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 7px 11px;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #92400E;
+    cursor: pointer;
+    user-select: none;
+    background: rgba(180, 83, 9, 0.08);
+    list-style: none;
+}
+.ai-reasoning-summary::-webkit-details-marker {
+    display: none;
+}
+.ai-reasoning-summary:hover {
+    background: rgba(180, 83, 9, 0.14);
+}
+.ai-reasoning-pulse-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #F59E0B;
+    animation: pulseReasoningDot 1.2s infinite ease-in-out;
+}
+@keyframes pulseReasoningDot {
+    0%, 100% { transform: scale(0.85); opacity: 0.5; }
+    50% { transform: scale(1.3); opacity: 1; }
+}
+.ai-reasoning-content {
+    padding: 9px 12px;
+    font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+    font-size: 11px;
+    line-height: 1.55;
+    color: #685E50;
+    white-space: pre-wrap;
+    word-break: break-word;
+    max-height: 240px;
+    overflow-y: auto;
+    border-top: 1px dashed rgba(180, 83, 9, 0.15);
+    background: rgba(255, 255, 255, 0.7);
+}
+
 </style>
 </head>
 <body>
@@ -6798,6 +6854,14 @@ function scrollCjAiToBottom() {
     }
 }
 
+function escapeAiHtml(str) {
+    return (str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
 async function sendCjAiMessage() {
     if (isCjAiGenerating) return;
     const input = document.getElementById('cjAiInput');
@@ -6810,7 +6874,7 @@ async function sendCjAiMessage() {
     const body = document.getElementById('cjAiBody');
     const userRow = document.createElement('div');
     userRow.className = 'cj-msg-row user';
-    userRow.innerHTML = `<div class="cj-msg-bubble">${userText.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</div>`;
+    userRow.innerHTML = `<div class="cj-msg-bubble">${escapeAiHtml(userText)}</div>`;
     body.appendChild(userRow);
 
     if (input) {
@@ -6826,32 +6890,68 @@ async function sendCjAiMessage() {
     const aiBubble = document.createElement('div');
     aiBubble.className = 'cj-msg-bubble';
     
-    // 动态状态提示（遵照要求：思考的时候说模型正在思考中）
     let searchDots = 0;
-    aiBubble.innerHTML = '<span style="color: #92400E; font-size:12.5px; display:inline-flex; align-items:center; gap:6px;"><span class="cj-ai-pulse-dot" style="background:#F59E0B; width:7px; height:7px;"></span> ⚡ 模型正在思考中...</span>';
+    aiBubble.innerHTML = '<span style="color: #92400E; font-size:12.5px; display:inline-flex; align-items:center; gap:6px;"><span class="cj-ai-pulse-dot" style="background:#F59E0B; width:7px; height:7px;"></span> ⚡ 模型正在连接调度中...</span>';
     aiRow.appendChild(aiBubble);
     body.appendChild(aiRow);
     scrollCjAiToBottom();
+
+    let fullReasoning = '';
+    let fullAiResponse = '';
+    let isFirstToken = true;
 
     const thinkTimer = setInterval(() => {
         searchDots = (searchDots + 1) % 4;
         const dots = '.'.repeat(searchDots);
         const tipEl = aiBubble.querySelector('span');
-        if (tipEl && !fullAiResponse) {
-            tipEl.innerHTML = `<span class="cj-ai-pulse-dot" style="background:#F59E0B; width:7px; height:7px;"></span> ⚡ 模型正在思考中${dots}`;
+        if (tipEl && !fullReasoning && !fullAiResponse) {
+            tipEl.innerHTML = `<span class="cj-ai-pulse-dot" style="background:#F59E0B; width:7px; height:7px;"></span> ⚡ 模型正在连接调度中${dots}`;
         }
-    }, 500);
+    }, 400);
 
     isCjAiGenerating = true;
     const sendBtn = document.getElementById('cjAiSendBtn');
     if (sendBtn) sendBtn.disabled = true;
 
-    let fullAiResponse = '';
     let success = false;
-    const totalKeys = CJ_AI_CONFIG.keys.length;
+    const maxAttempts = Math.min(8, CJ_AI_CONFIG.keys.length);
 
-    for (let attempt = 0; attempt < totalKeys; attempt++) {
+    function updateBubbleDisplay(isFinal = false) {
+        let outHtml = '';
+        if (fullReasoning.trim()) {
+            const hasStartedAnswer = Boolean(fullAiResponse.trim()) || isFinal;
+            outHtml += `
+            <details class="ai-reasoning-box" ${hasStartedAnswer ? '' : 'open'}>
+                <summary class="ai-reasoning-summary">
+                    <span style="display:flex; align-items:center; gap:6px;">
+                        <span>${hasStartedAnswer ? '💡' : '🧠'}</span>
+                        <span>${hasStartedAnswer ? '已完成深度推演 (点击展开/折叠)' : '导师正在深度演算模型推演...'}</span>
+                    </span>
+                    ${!hasStartedAnswer ? '<span class="ai-reasoning-pulse-dot"></span>' : '<span style="font-size:10px; opacity:0.7;">▼</span>'}
+                </summary>
+                <div class="ai-reasoning-content">${escapeAiHtml(fullReasoning)}</div>
+            </details>`;
+        }
+        if (fullAiResponse.trim()) {
+            outHtml += `<div class="ai-answer-content">${renderSimpleMarkdown(fullAiResponse)}</div>`;
+        }
+        aiBubble.innerHTML = outHtml;
+        scrollCjAiToBottom();
+    }
+
+    for (let attempt = 0; attempt < maxAttempts; attempt++) {
         const currentKey = getNextKey();
+        const controller = new AbortController();
+        let hasReceivedChunk = false;
+
+        // 3.5秒超时熔断机制：若 3.5s 内未收到首个有效 chunk，立刻掐断切换下一个 Key
+        const timeoutId = setTimeout(() => {
+            if (!hasReceivedChunk) {
+                console.warn(`[AI] Attempt ${attempt+1} exceeded 3.5s timeout, fast retry next key...`);
+                controller.abort();
+            }
+        }, 3500);
+
         try {
             const resp = await fetch(CJ_AI_CONFIG.apiUrl, {
                 method: 'POST',
@@ -6865,22 +6965,29 @@ async function sendCjAiMessage() {
                     stream: true,
                     temperature: CJ_AI_CONFIG.temperature,
                     max_tokens: CJ_AI_CONFIG.maxTokens
-                })
+                }),
+                signal: controller.signal
             });
 
             if (!resp.ok) {
-                console.warn(`Attempt ${attempt+1} status: ${resp.status}`);
+                clearTimeout(timeoutId);
+                console.warn(`[AI] Attempt ${attempt+1} HTTP ${resp.status}, fast retry`);
                 continue;
             }
 
             const reader = resp.body.getReader();
             const decoder = new TextDecoder('utf-8');
             let buffer = '';
-            let isFirstChunk = true;
 
             while (true) {
                 const { done, value } = await reader.read();
                 if (done) break;
+
+                if (!hasReceivedChunk) {
+                    hasReceivedChunk = true;
+                    clearTimeout(timeoutId);
+                }
+
                 buffer += decoder.decode(value, { stream: true });
                 const lines = buffer.split('\n');
                 buffer = lines.pop();
@@ -6890,39 +6997,52 @@ async function sendCjAiMessage() {
                     if (trimmed.startsWith('data: ') && trimmed !== 'data: [DONE]') {
                         try {
                             const chunk = JSON.parse(trimmed.slice(6));
-                            const delta = chunk.choices?.[0]?.delta?.content || '';
-                            if (delta) {
-                                if (isFirstChunk) {
+                            const deltaObj = chunk.choices?.[0]?.delta || {};
+                            const deltaReasoning = deltaObj.reasoning_content || '';
+                            const deltaContent = deltaObj.content || '';
+
+                            if (deltaReasoning) {
+                                if (isFirstToken) {
                                     clearInterval(thinkTimer);
-                                    aiBubble.innerHTML = '';
-                                    isFirstChunk = false;
+                                    isFirstToken = false;
                                 }
-                                fullAiResponse += delta;
-                                aiBubble.innerHTML = renderSimpleMarkdown(fullAiResponse);
-                                scrollCjAiToBottom();
+                                fullReasoning += deltaReasoning;
+                                updateBubbleDisplay(false);
+                            }
+
+                            if (deltaContent) {
+                                if (isFirstToken) {
+                                    clearInterval(thinkTimer);
+                                    isFirstToken = false;
+                                }
+                                fullAiResponse += deltaContent;
+                                updateBubbleDisplay(false);
                             }
                         } catch (e) {}
                     }
                 }
             }
 
-            if (fullAiResponse.trim()) {
+            clearTimeout(timeoutId);
+
+            if (fullAiResponse.trim() || fullReasoning.trim()) {
                 clearInterval(thinkTimer);
-                aiBubble.innerHTML = renderSimpleMarkdown(fullAiResponse);
+                updateBubbleDisplay(true);
                 const cleanedContent = fullAiResponse.replace(/^(?:\s*|\d+[\.、]\s*|\*+\s*)*(?:用户想要[问询了解]|用户意图|用户的?问题[是为：:]|你想要[问询了解]|你询问的[是为：:]|针对你的?提问|思考过程|问题解构|分析过程)[^\n]*(\n+|$)/gi, '').trim();
-                cjAiHistory.push({ role: 'assistant', content: cleanedContent || fullAiResponse });
+                cjAiHistory.push({ role: 'assistant', content: cleanedContent || fullAiResponse || fullReasoning });
                 success = true;
                 break;
             }
 
         } catch (fetchErr) {
-            console.error(`Attempt ${attempt+1} error:`, fetchErr);
+            clearTimeout(timeoutId);
+            console.warn(`[AI] Attempt ${attempt+1} error:`, fetchErr.name === 'AbortError' ? '3.5s Timeout' : fetchErr.message);
         }
     }
 
     clearInterval(thinkTimer);
     if (!success) {
-        aiBubble.innerHTML = '<span style="color: #B91C1C;">⚠️ 网络连接波动或超时，请点击重新发送，或在页面底部下载完整推文数据。</span>';
+        aiBubble.innerHTML = '<span style="color: #B91C1C;">⚠️ 网络调度中，所有节点暂时繁忙，请稍等 5 秒后重试。</span>';
     }
 
     isCjAiGenerating = false;
