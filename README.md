@@ -24,6 +24,7 @@
 | **paulwei** | [@coolish](https://x.com/coolish) | 实战交易、两轮牛熊全景复盘与AI拓荒全书 | **2,579 篇（含近6年4万条Bitmex订单开源）** | [进入](https://suoha888.github.io/Trader-Archives/coolish/) |
 | **丰密** | [@KuiGas](https://x.com/KuiGas) | 实战周期投资与以慢制快心智全书 | **4,667 篇（含 10 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/kuigas/) |
 | **Meta 猿 🦍** | [@Metabape](https://x.com/Metabape) | 实战交易与商业哲学全书 | **3,602 篇（含 6 篇官方万字研报）** | [进入](https://suoha888.github.io/Trader-Archives/metabape/) |
+| **风无向🦅** | [@Web3Feng](https://x.com/Web3Feng) | 精心策划的辉煌：从工作室产业化、长尾量化到通天贷逆袭心法 | **5,287 篇** | [进入](https://suoha888.github.io/Trader-Archives/web3feng/) |
 
 > 更多实战 KOL 持续收录中，敬请关注。
 
@@ -34,7 +35,12 @@
 ```
 Trader-Archives/
 ├── index.html               # 总门户导航首页
-├── yourquantguy/            # 🚀【本次新增】yourQuantGuy Perp DEX 量化做市与高频套利全书
+├── web3feng/                # 🚀【本次新增】风无向 精心策划的辉煌全集
+│   ├── index.html          # 风无向 独立自包含研报阅读站（含 23-Key 导师与 6 卷课题拆解）
+│   ├── data/               # 完整开源数据湖（JSON / CSV / 6大垂类切片）
+│   ├── docs/articles/      # 官方长文研报 Markdown 文库
+│   └── images/             # 163 张本地高清实盘与架构图床
+├── yourquantguy/            # yourQuantGuy Perp DEX 量化做市与高频套利全书
 │   ├── index.html          # yourQuantGuy 独立自包含研报阅读站（含 23-Key 导师与 24 卷精解）
 │   ├── data/               # 完整数据湖（JSON / CSV / 6大垂类切片）
 │   ├── docs/articles/      # 4 篇 Twitter Article 深度长文文库
