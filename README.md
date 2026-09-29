@@ -23,6 +23,7 @@
 | **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 量化做市与高频套利全书 | **670 篇（含 4 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/yourquantguy/) |
 | **paulwei** | [@coolish](https://x.com/coolish) | 实战交易、两轮牛熊全景复盘与AI拓荒全书 | **2,579 篇（含近6年4万条Bitmex订单开源）** | [进入](https://suoha888.github.io/Trader-Archives/coolish/) |
 | **丰密** | [@KuiGas](https://x.com/KuiGas) | 实战周期投资与以慢制快心智全书 | **4,667 篇（含 10 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/kuigas/) |
+| **Meta 猿 🦍** | [@Metabape](https://x.com/Metabape) | 实战交易与商业哲学全书 | **3,602 篇（含 6 篇官方万字研报）** | [进入](https://suoha888.github.io/Trader-Archives/metabape/) |
 
 > 更多实战 KOL 持续收录中，敬请关注。
 
