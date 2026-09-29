@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yourQuantGuy《Perp DEX 量化做市、跨所统一保证金与高频套利全书》| 顶级交易员开源大典 · Trader-Archives</title>
-    <meta name="description" content="推特顶级对冲基金量化交易员 @yourQuantGuy 知识工程化全集：从 edgeX 帕拉梅拉 200k 战役、Derive 550k 期权风控博弈到六大 Perp DEX 开源脚本、CrossEx 跨所统一保证金与麦穗择取算法，搭载 Atria 23-Key 专属 AI 实战导师。">
+    <meta name="description" content="推特顶级对冲基金量化交易员 @yourQuantGuy 知识工程化全集：从 edgeX 帕拉梅拉 200k 战役、Derive 550k 期权风控博弈到六大 Perp DEX 开源脚本、CrossEx 跨所统一保证金与麦穗择取算法，搭载 Atria 30-Key 专属 AI 实战导师。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700;900&display=swap" rel="stylesheet">
@@ -24215,7 +24215,7 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
                 <img src="images/yourquantguy_avatar.jpg" alt="AI 导师头像" class="ai-avatar">
                 <div>
                     <div class="ai-title">yourQuantGuy AI 导师</div>
-                    <div class="ai-sub">对冲基金量化 · Atria 23-Key 满血高并发集群</div>
+                    <div class="ai-sub">对冲基金量化 · Atria 30-Key 满血高并发集群</div>
                 </div>
             </div>
             <button class="btn-close-ai" onclick="toggleAIDrawer()">✕</button>
@@ -24244,9 +24244,9 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
         <img src="" alt="放大实盘截图" class="modal-img" id="modalImgTag">
     </div>
 
-    <!-- 交互脚本与 23-Key Atria 集群 -->
+    <!-- 交互脚本与 30-Key Atria 集群 -->
     <script>
-        // 23-Key Atria 高并发配置
+        // 30-Key Atria 高并发配置
         const QUANT_AI_CONFIG = {
             apiUrl: 'https://api.atria-asi.ai/v1/chat/completions',
             model: 'Atria-Dawn-Preview',
@@ -24273,7 +24273,14 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
                 'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
                 'atr__I_zVBtTtpXcpnZ610CUeqImHFmotp3d',
                 'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
-                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
+                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK',
+                'atr_VqPsvvWD7DXDvhvnObLMVWSDdX-psfct',
+                'atr_BDCofqyfuD11Kxr7uebduie25fYhFKiU',
+                'atr_Rw20tkMZYGb_2gTMv6PDjMfuS7DuGBnw',
+                'atr_QTMwWfc169DeHUtENtmrBc_qG8-Md-KN',
+                'atr_qXOwui1hXMr9eKeISScK-Z9rvxpKID8I',
+                'atr_sQZUcg8Q4aD3F3-poD3SLD6sUPJMtPhE',
+                'atr_jXxhTfYwXMdvdZ-jgCmDdOKk_pxQ9xvx'
             ],
             temperature: 0.2,
             maxTokens: 2500,
@@ -24290,11 +24297,73 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
    - 🛡️【风控红线与避坑法则】`
         };
 
-        let quantAiKeyIndex = Math.floor(Math.random() * QUANT_AI_CONFIG.keys.length);
+        // ===== 跨手册全局持久化高可用绝对均衡调度器 (Global Persistent Fair-Load Key Scheduler) =====
+        const GlobalKeyScheduler = {
+            CURSOR_KEY: 'trader_archives_ai_cursor',
+            COOLDOWN_KEY: 'trader_archives_ai_cooldowns',
+
+            getCooldowns() {
+                try {
+                    return JSON.parse(localStorage.getItem(this.COOLDOWN_KEY) || '{}');
+                } catch(e) { return {}; }
+            },
+
+            setCooldown(key, durationMs = 45000) {
+                try {
+                    const cds = this.getCooldowns();
+                    cds[key] = Date.now() + durationMs;
+                    localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+                } catch(e) {}
+            },
+
+            clearCooldown(key) {
+                try {
+                    const cds = this.getCooldowns();
+                    if (cds[key]) {
+                        delete cds[key];
+                        localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+                    }
+                } catch(e) {}
+            },
+
+            getNextHealthyKey(keys) {
+                if (!keys || !keys.length) return '';
+                const now = Date.now();
+                const cds = this.getCooldowns();
+                
+                let cursor = 0;
+                try {
+                    cursor = parseInt(localStorage.getItem(this.CURSOR_KEY) || '0', 10);
+                    if (isNaN(cursor)) cursor = 0;
+                } catch(e) { cursor = 0; }
+
+                let chosenKey = '';
+                for (let i = 0; i < keys.length; i++) {
+                    const idx = (cursor + i) % keys.length;
+                    const candidate = keys[idx];
+                    const cooldownUntil = cds[candidate] || 0;
+                    if (now >= cooldownUntil) {
+                        chosenKey = candidate;
+                        try {
+                            localStorage.setItem(this.CURSOR_KEY, ((idx + 1) % keys.length).toString());
+                        } catch(e) {}
+                        break;
+                    }
+                }
+
+                if (!chosenKey) {
+                    chosenKey = keys[cursor % keys.length];
+                    try {
+                        localStorage.setItem(this.CURSOR_KEY, ((cursor + 1) % keys.length).toString());
+                    } catch(e) {}
+                }
+
+                return chosenKey;
+            }
+        };
+
         function getNextKey() {
-            const k = QUANT_AI_CONFIG.keys[quantAiKeyIndex];
-            quantAiKeyIndex = (quantAiKeyIndex + 1) % QUANT_AI_CONFIG.keys.length;
-            return k;
+            return GlobalKeyScheduler.getNextHealthyKey(QUANT_AI_CONFIG.keys);
         }
 
         // 折叠推文切换
@@ -24378,42 +24447,57 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
             // Loading Msg
             const bDiv = document.createElement('div');
             bDiv.className = 'ai-msg bot';
-            bDiv.innerHTML = '<em>正在通过 Atria 23-Key 轮转集群检索量化知识库...</em>';
+            bDiv.innerHTML = '<em>⚡ 正在通过 Atria 30-Key 满血高并发集群检索量化知识库...</em>';
             chatBody.appendChild(bDiv);
             chatBody.scrollTop = chatBody.scrollHeight;
 
-            try {
+            async function requestWithKey(retryCount = 0) {
                 const key = getNextKey();
-                const res = await fetch(QUANT_AI_CONFIG.apiUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${key}`
-                    },
-                    body: JSON.stringify({
-                        model: QUANT_AI_CONFIG.model,
-                        messages: [
-                            { role: 'system', content: QUANT_AI_CONFIG.systemPrompt },
-                            { role: 'user', content: q }
-                        ],
-                        temperature: QUANT_AI_CONFIG.temperature,
-                        max_tokens: QUANT_AI_CONFIG.maxTokens
-                    })
-                });
+                try {
+                    const res = await fetch(QUANT_AI_CONFIG.apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${key}`
+                        },
+                        body: JSON.stringify({
+                            model: QUANT_AI_CONFIG.model,
+                            messages: [
+                                { role: 'system', content: QUANT_AI_CONFIG.systemPrompt },
+                                { role: 'user', content: q }
+                            ],
+                            temperature: QUANT_AI_CONFIG.temperature,
+                            max_tokens: QUANT_AI_CONFIG.maxTokens
+                        })
+                    });
 
-                const data = await res.json();
-                if (data.choices && data.choices[0] && data.choices[0].message) {
-                    const reply = data.choices[0].message.content;
-                    // Format bold and line breaks
-                    bDiv.innerHTML = reply.replace(/
+                    if (!res.ok) {
+                        GlobalKeyScheduler.setCooldown(key, 45000);
+                        if (retryCount < 2) {
+                            return await requestWithKey(retryCount + 1);
+                        }
+                        throw new Error(`HTTP ${res.status}`);
+                    }
+
+                    const data = await res.json();
+                    if (data.choices && data.choices[0] && data.choices[0].message) {
+                        const reply = data.choices[0].message.content;
+                        bDiv.innerHTML = reply.replace(/
 /g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-                } else {
-                    bDiv.textContent = 'AI 响应格式异常，请重试。';
+                    } else {
+                        bDiv.textContent = 'AI 响应格式异常，请稍后重试。';
+                    }
+                } catch (err) {
+                    GlobalKeyScheduler.setCooldown(key, 45000);
+                    if (retryCount < 2) {
+                        return await requestWithKey(retryCount + 1);
+                    }
+                    bDiv.textContent = '连接中断或瞬时限流，已自动切换备用健康 Key，请重新发送。';
                 }
-            } catch (err) {
-                bDiv.textContent = '连接失败，正在自动轮换备用 Key，请重试。';
+                chatBody.scrollTop = chatBody.scrollHeight;
             }
-            chatBody.scrollTop = chatBody.scrollHeight;
+
+            await requestWithKey();
         }
     </script>
 </body>

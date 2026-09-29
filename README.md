@@ -1,101 +1,32 @@
-# Trader-Archives
+# 🏛️ Trader-Archives | 推特顶级实战交易员与投资导师全景大典
 
-> **推特顶级实战派交易员与周期投资导师 · 全量推文公开收录 · 开源共享**
-> 告别碎片化噪音，沉淀真金白银实盘公开认知体系。永久开源、零构建门槛、纯静态极速阅读。
+> **将推特顶级实战交易员与投资导师的数万篇真金白银实盘公开推文，体系化收录整理为可随查随用的在线研报站与 GitHub 全量开源数据湖。持续收录更新中。**  
+> *告别碎片化噪音与信息遗忘，让华语顶级实战心法沉淀为可传承的量化知识大厦。*
 
-**在线总门户**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)
-
----
-
-## 收录导师与子手册速查
-
-| 导师 | 推特 | 手册 | 收录推文 | 在线阅读 |
-| :--- | :--- | :--- | :--- | :--- |
-| **C J** | [@gch_enbsbxbs](https://x.com/gch_enbsbxbs) | CJ DeFi 做市与套利实战手册 | **502 篇** | [进入](https://suoha888.github.io/Trader-Archives/cj/) |
-| **憨厚的麦总** | [@Michael_Liu93](https://x.com/Michael_Liu93) | 实战交易与周期投资全书 | **5,344 篇** | [进入](https://suoha888.github.io/Trader-Archives/michael-liu/) |
-| **川沐｜Trumoo** | [@xiaomustock](https://x.com/xiaomustock) | 美股硬科技、加密大周期与盘口博弈 | **3,866 篇** | [进入](https://suoha888.github.io/Trader-Archives/xiaomu/) |
-| **danny** | [@agintender](https://x.com/agintender) | 暗流博弈与二级合约算法大典 | **3,231 篇（含 92 篇万字长文）** | [进入](https://suoha888.github.io/Trader-Archives/agintender/) |
-| **magnolia** | [@0xmagnolia](https://x.com/0xmagnolia) | 蓝筹Alpha与一级链上狂飙实战全书 | **1,249 篇** | [进入](https://suoha888.github.io/Trader-Archives/0xmagnolia/) |
-| **0xSun** | [@0xSunNFT](https://x.com/0xSunNFT) | 实战交易与全市场进化全书 | **2,581 篇（含 AI 代币万字研报）** | [进入](https://suoha888.github.io/Trader-Archives/0xsun/) |
-| **0xWizard** | [@0xcryptowizard](https://x.com/0xcryptowizard) | 日月星辰宏观体系与AI硬科技投资全书 | **1,685 篇（含 5 篇万字长文）** | [进入](https://suoha888.github.io/Trader-Archives/0xcryptowizard/) |
-| **ZTZZ ฿** | [@ZTZZBTC](https://x.com/ZTZZBTC) | 主观做市、空头绝杀与独立交易员心智全书 | **261 篇（含 6.7万字官方研报）** | [进入](https://suoha888.github.io/Trader-Archives/ztzzbtc/) |
-| **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 实战交易与周期心智全书 | **2,718 篇（含 13 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/wallstreet0name/) |
-| **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 量化做市与高频套利全书 | **670 篇（含 4 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/yourquantguy/) |
-| **paulwei** | [@coolish](https://x.com/coolish) | 实战交易、两轮牛熊全景复盘与AI拓荒全书 | **2,579 篇（含近6年4万条Bitmex订单开源）** | [进入](https://suoha888.github.io/Trader-Archives/coolish/) |
-| **丰密** | [@KuiGas](https://x.com/KuiGas) | 实战周期投资与以慢制快心智全书 | **4,667 篇（含 10 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/kuigas/) |
-| **Meta 猿 🦍** | [@Metabape](https://x.com/Metabape) | 实战交易与商业哲学全书 | **3,602 篇（含 6 篇官方万字研报）** | [进入](https://suoha888.github.io/Trader-Archives/metabape/) |
-| **风无向🦅** | [@Web3Feng](https://x.com/Web3Feng) | 精心策划的辉煌：从工作室产业化、长尾量化到通天贷逆袭心法 | **5,287 篇** | [进入](https://suoha888.github.io/Trader-Archives/web3feng/) |
-
-> 更多实战 KOL 持续收录中，敬请关注。
+🌐 **在线总门户**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)  
+🤖 **全站 AI 导师矩阵**：全站各子站均搭载 **Atria 30-Key 满血高并发集群** 与 `GlobalKeyScheduler` 跨站负载均衡调度器，7x24 小时极速答疑。
 
 ---
 
-## 目录结构
+## 📚 正式上线实战导师名录
 
-```
-Trader-Archives/
-├── index.html               # 总门户导航首页
-├── web3feng/                # 🚀【本次新增】风无向 精心策划的辉煌全集
-│   ├── index.html          # 风无向 独立自包含研报阅读站（含 23-Key 导师与 6 卷课题拆解）
-│   ├── data/               # 完整开源数据湖（JSON / CSV / 6大垂类切片）
-│   ├── docs/articles/      # 官方长文研报 Markdown 文库
-│   └── images/             # 163 张本地高清实盘与架构图床
-├── yourquantguy/            # yourQuantGuy Perp DEX 量化做市与高频套利全书
-│   ├── index.html          # yourQuantGuy 独立自包含研报阅读站（含 23-Key 导师与 24 卷精解）
-│   ├── data/               # 完整数据湖（JSON / CSV / 6大垂类切片）
-│   ├── docs/articles/      # 4 篇 Twitter Article 深度长文文库
-│   └── images/             # 282 张本地高清实盘与架构图床
-├── coolish/                 # paulwei 实战交易、两轮牛熊全景复盘与AI拓荒全书
-│   ├── index.html          # paulwei 独立自包含研报阅读站（含 23-Key 导师与 6 卷课题精解）
-│   ├── data/               # 完整数据湖（JSON / CSV / 6大垂类切片）
-│   ├── docs/articles/      # 深度研报文库
-│   └── images/             # 本地实盘图床与时光机截图
-├── cj/                      # CJ 老师做市手册
-│   ├── index.html
-│   ├── data/
-│   ├── docs/
-│   └── images/
-├── michael-liu/             # 憨厚的麦总全书
-│   ├── index.html
-│   ├── data/
-│   ├── docs/
-│   └── images/
-├── agintender/             # danny 衍生品与暗流大典
-│   ├── index.html          # danny 独立自包含研报阅读站（含 23-Key 导师与 92 篇万字长文）
-│   ├── data/               # 完整数据湖（JSON / CSV / 5大垂类切片）
-│   ├── docs/articles/      # 92 篇 Twitter Article 独立 Markdown 文库
-│   └── images/             # 本地实盘图床
-├── 0xmagnolia/             # magnolia 蓝筹Alpha与一级链上狂飙全书
-│   ├── index.html          # magnolia 独立自包含研报阅读站（含 23-Key 导师与 24 课题精解）
-│   ├── data/               # 完整数据湖（JSON / CSV / 6大垂类切片）
-│   ├── docs/articles/      # Twitter Article 独立 Markdown 文库
-│   └── images/             # 本地实盘图床
-├── 0xsun/                  # 0xSun 实战交易与全市场进化全书
-│   ├── index.html          # 0xSun 独立自包含研报阅读站（含 23-Key 导师与 24 课题精解）
-│   ├── data/               # 完整数据湖（JSON / CSV / 6大垂类切片）
-│   ├── docs/articles/      # Twitter Article 深度长文 Markdown 文库
-│   └── images/             # 本地实盘图床
-├── 0xcryptowizard/         # 🚀【本次新增】0xWizard 日月星辰体系与AI硬科技投资全书
-│   ├── index.html          # 0xWizard 独立自包含研报阅读站（含 23-Key 导师与 11 课题精解）
-│   ├── data/               # 完整数据湖（JSON / CSV / 7大垂类切片）
-│   ├── docs/articles/      # Twitter Article 万字深度长文 Markdown 文库
-│   └── images/             # 本地实盘图床
-├── xiaomu/                  # 川沐实战交易全书
-│   ├── index.html
-│   ├── data/
-│   ├── docs/
-│   └── images/
-└── ...                      # 后续新增 KOL
-```
+| 导师 | Twitter Handle | 专属全书定位与大典称号 | 收录规模 | 在线研报阅读站 | GitHub 全量开源数据湖 |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+| **C J** | [@gch_enbsbxbs](https://x.com/gch_enbsbxbs) | CJ DeFi 做市与套利实战手册 | **502 篇** | [进入阅读](https://suoha888.github.io/Trader-Archives/cj/) | [浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/cj/data) |
+| **憨厚的麦总** | [@Michael_Liu93](https://x.com/Michael_Liu93) | 实战交易与周期投资全书 | **5,344 篇** | [进入阅读](https://suoha888.github.io/Trader-Archives/michael-liu/) | [浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/michael-liu/data) |
+| **川沐｜Trumoo** | [@xiaomustock](https://x.com/xiaomustock) | 美股硬科技、加密大周期与盘口博弈 | **3,866 篇** | [进入阅读](https://suoha888.github.io/Trader-Archives/xiaomu/) | [浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/xiaomu/data) |
+| **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 基差套利与量化做市实战大典 | **670 篇（含4篇万字研报）** | [进入阅读](https://suoha888.github.io/Trader-Archives/yourquantguy/) | [浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data) |
+| **Meta 猿 🦍** | [@Metabape](https://x.com/metabape) | 微观漏洞套利、OLP负点差与商海博弈心智 | **3,602 篇（含5篇万字长文）** | [进入阅读](https://suoha888.github.io/Trader-Archives/metabape/) | [浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/metabape/data) |
 
 ---
 
-## 免责声明
+## 🌟 核心工程特色
 
-1. 本项目所有内容均来自推特博主公开推文的整理与收录。
-2. 所有内容仅供学习交流，**不构成任何投资建议（Not Financial Advice）**。
-3. 加密资产与金融衍生品交易存在极高风险，请独立思考并自行承担风险（DYOR）。
+1. **JEV 认知降噪提炼**：不仅全量收录原始推文，更由 JEV 决策引擎与实盘术语模型进行两道严密过滤，提炼最精炼的思维模型；
+2. **100% 离线图床与无外链依赖**：所有推文配图全部本地离线化存储，彻底告别推特防盗链与图床失效；
+3. **Atria 30-Key 满血高并发 AI 集群**：内置专属数字孪生策略导师，灌顶全部推文语料，多 Key 轮转与毫秒级降级熔断，支持高并发无卡顿问答；
+4. **全量开源数据湖**：每个导师均配备完整的 JSON 与 UTF-8-SIG 带 BOM CSV（Excel 打开无乱码），面向 AI Agent 与量化投研全面开放。
 
 ---
 
-> 由 [@SUOHA_AI](https://x.com/SUOHA_AI) 收录整理与开源维护
+*由研究员梭哈.AI [@SUOHA_AI](https://x.com/SUOHA_AI) 独立工程化构建，开源开放，非投资建议，请 DYOR。*

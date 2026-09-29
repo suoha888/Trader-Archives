@@ -18134,7 +18134,7 @@
                 <img src="images/metabape_avatar.jpg" alt="Meta 猿 AI" class="ai-avatar">
                 <div>
                     <div class="ai-name">Meta 猿 · 实战 AI 导师</div>
-                    <div class="ai-status">● 在线 · 23-Key 轮转引擎</div>
+                    <div class="ai-status">● 在线 · 30-Key 轮转引擎</div>
                 </div>
             </div>
             <button class="btn-ai-close" onclick="toggleAiDrawer()">✕</button>
@@ -18164,7 +18164,7 @@
     </div>
 
     <script>
-        // 23-Key Atria Cluster
+        // 30-Key Atria Cluster
         const ATRIA_CONFIG = {
             apiUrl: 'https://api.atria-asi.ai/v1/chat/completions',
             model: 'Atria-Dawn-Preview',
@@ -18191,7 +18191,14 @@
                 'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
                 'atr__I_zVBtTtpXcpnZ610CUeqImHFmotp3d',
                 'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
-                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
+                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK',
+                'atr_VqPsvvWD7DXDvhvnObLMVWSDdX-psfct',
+                'atr_BDCofqyfuD11Kxr7uebduie25fYhFKiU',
+                'atr_Rw20tkMZYGb_2gTMv6PDjMfuS7DuGBnw',
+                'atr_QTMwWfc169DeHUtENtmrBc_qG8-Md-KN',
+                'atr_qXOwui1hXMr9eKeISScK-Z9rvxpKID8I',
+                'atr_sQZUcg8Q4aD3F3-poD3SLD6sUPJMtPhE',
+                'atr_jXxhTfYwXMdvdZ-jgCmDdOKk_pxQ9xvx'
             ],
             temperature: 0.25,
             maxTokens: 2500,
@@ -18208,11 +18215,73 @@
    - 🛡️【避坑铁律与仓位警告】`
         };
 
-        let atriaKeyIndex = Math.floor(Math.random() * ATRIA_CONFIG.keys.length);
+// ===== 跨手册全局持久化高可用绝对均衡调度器 (Global Persistent Fair-Load Key Scheduler) =====
+        const GlobalKeyScheduler = {
+            CURSOR_KEY: 'trader_archives_ai_cursor',
+            COOLDOWN_KEY: 'trader_archives_ai_cooldowns',
+
+            getCooldowns() {
+                try {
+                    return JSON.parse(localStorage.getItem(this.COOLDOWN_KEY) || '{}');
+                } catch(e) { return {}; }
+            },
+
+            setCooldown(key, durationMs = 45000) {
+                try {
+                    const cds = this.getCooldowns();
+                    cds[key] = Date.now() + durationMs;
+                    localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+                } catch(e) {}
+            },
+
+            clearCooldown(key) {
+                try {
+                    const cds = this.getCooldowns();
+                    if (cds[key]) {
+                        delete cds[key];
+                        localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+                    }
+                } catch(e) {}
+            },
+
+            getNextHealthyKey(keys) {
+                if (!keys || !keys.length) return '';
+                const now = Date.now();
+                const cds = this.getCooldowns();
+                
+                let cursor = 0;
+                try {
+                    cursor = parseInt(localStorage.getItem(this.CURSOR_KEY) || '0', 10);
+                    if (isNaN(cursor)) cursor = 0;
+                } catch(e) { cursor = 0; }
+
+                let chosenKey = '';
+                for (let i = 0; i < keys.length; i++) {
+                    const idx = (cursor + i) % keys.length;
+                    const candidate = keys[idx];
+                    const cooldownUntil = cds[candidate] || 0;
+                    if (now >= cooldownUntil) {
+                        chosenKey = candidate;
+                        try {
+                            localStorage.setItem(this.CURSOR_KEY, ((idx + 1) % keys.length).toString());
+                        } catch(e) {}
+                        break;
+                    }
+                }
+
+                if (!chosenKey) {
+                    chosenKey = keys[cursor % keys.length];
+                    try {
+                        localStorage.setItem(this.CURSOR_KEY, ((cursor + 1) % keys.length).toString());
+                    } catch(e) {}
+                }
+
+                return chosenKey;
+            }
+        };
+
         function getNextAtriaKey() {
-            const k = ATRIA_CONFIG.keys[atriaKeyIndex];
-            atriaKeyIndex = (atriaKeyIndex + 1) % ATRIA_CONFIG.keys.length;
-            return k;
+            return GlobalKeyScheduler.getNextHealthyKey(ATRIA_CONFIG.keys);
         }
 
         function toggleAiDrawer() {
