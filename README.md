@@ -20,6 +20,7 @@
 | **0xWizard** | [@0xcryptowizard](https://x.com/0xcryptowizard) | 日月星辰宏观体系与AI硬科技投资全书 | **1,685 篇（含 5 篇万字长文）** | [进入](https://suoha888.github.io/Trader-Archives/0xcryptowizard/) |
 | **ZTZZ ฿** | [@ZTZZBTC](https://x.com/ZTZZBTC) | 主观做市、空头绝杀与独立交易员心智全书 | **261 篇（含 6.7万字官方研报）** | [进入](https://suoha888.github.io/Trader-Archives/ztzzbtc/) |
 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 实战交易与周期心智全书 | **2,718 篇（含 13 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/wallstreet0name/) |
+| **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 量化做市与高频套利全书 | **670 篇（含 4 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/yourquantguy/) |
 | **paulwei** | [@coolish](https://x.com/coolish) | 实战交易、两轮牛熊全景复盘与AI拓荒全书 | **2,579 篇（含近6年4万条Bitmex订单开源）** | [进入](https://suoha888.github.io/Trader-Archives/coolish/) |
 | **丰密** | [@KuiGas](https://x.com/KuiGas) | 实战周期投资与以慢制快心智全书 | **4,667 篇（含 10 篇官方长文研报）** | [进入](https://suoha888.github.io/Trader-Archives/kuigas/) |
 
@@ -32,7 +33,12 @@
 ```
 Trader-Archives/
 ├── index.html               # 总门户导航首页
-├── coolish/                 # 🚀【本次新增】paulwei 实战交易、两轮牛熊全景复盘与AI拓荒全书
+├── yourquantguy/            # 🚀【本次新增】yourQuantGuy Perp DEX 量化做市与高频套利全书
+│   ├── index.html          # yourQuantGuy 独立自包含研报阅读站（含 23-Key 导师与 24 卷精解）
+│   ├── data/               # 完整数据湖（JSON / CSV / 6大垂类切片）
+│   ├── docs/articles/      # 4 篇 Twitter Article 深度长文文库
+│   └── images/             # 282 张本地高清实盘与架构图床
+├── coolish/                 # paulwei 实战交易、两轮牛熊全景复盘与AI拓荒全书
 │   ├── index.html          # paulwei 独立自包含研报阅读站（含 23-Key 导师与 6 卷课题精解）
 │   ├── data/               # 完整数据湖（JSON / CSV / 6大垂类切片）
 │   ├── docs/articles/      # 深度研报文库

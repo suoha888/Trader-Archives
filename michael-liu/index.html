@@ -1201,7 +1201,63 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
     text-align: center;
 }
 
-    </style>
+    
+/* ===== AI 深度思考链 (CoT) 可视化优雅面板 ===== */
+.ai-reasoning-box {
+    margin-bottom: 12px;
+    border: 1px solid rgba(180, 83, 9, 0.25);
+    border-radius: 8px;
+    background: rgba(254, 243, 199, 0.45);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.ai-reasoning-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 7px 11px;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #92400E;
+    cursor: pointer;
+    user-select: none;
+    background: rgba(180, 83, 9, 0.08);
+    list-style: none;
+}
+.ai-reasoning-summary::-webkit-details-marker {
+    display: none;
+}
+.ai-reasoning-summary:hover {
+    background: rgba(180, 83, 9, 0.14);
+}
+.ai-reasoning-pulse-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #F59E0B;
+    animation: pulseReasoningDot 1.2s infinite ease-in-out;
+}
+@keyframes pulseReasoningDot {
+    0%, 100% { transform: scale(0.85); opacity: 0.5; }
+    50% { transform: scale(1.3); opacity: 1; }
+}
+.ai-reasoning-content {
+    padding: 9px 12px;
+    font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+    font-size: 11px;
+    line-height: 1.55;
+    color: #685E50;
+    white-space: pre-wrap;
+    word-break: break-word;
+    max-height: 240px;
+    overflow-y: auto;
+    border-top: 1px dashed rgba(180, 83, 9, 0.15);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+</style>
 </head>
 <body>
 
@@ -22653,7 +22709,7 @@ const CJ_AI_CONFIG = {
     apiUrl: 'https://api.atria-asi.ai/v1/chat/completions',
     model: 'Atria-Dawn-Preview',
     temperature: 0.1,
-    maxTokens: 1200,
+    maxTokens: 750,
     keys: [
         'atr_4KCkb-G1ueWHh_FdvRU4dcNLaDnBHMnV',
         'atr_M7r-GEFgLx5Ir29ZCNAp5FSSV8GSUx4d',
@@ -22668,85 +22724,98 @@ const CJ_AI_CONFIG = {
         'atr_zUzYh2CFcpzA9ygYAZHhmUvCMXpElJUp',
         'atr_btx_XUCZUPzvCWZph4NHv5T75-9scHKg',
         'atr_4qdUmd7dCTVIyPkbO5k7yCLR7b1Rbz2c',
-        'atr_gdB8sYnLaEvkbrOrMGLKakbyP7fIns5P'
+        'atr_gdB8sYnLaEvkbrOrMGLKakbyP7fIns5P',
+        'atr_HG4lxOTfc5GRYox--0p9wTfnAnz6jOtb',
+        'atr_jlG17natxoywaLwuC58C15eH5EmxD4DS',
+        'atr_ZobajhyKOPVRENJkPGrK1OkLNtLBXjk5',
+        'atr_o2tuf1I9RJq4N3iz5Ft-9GqJtJ-ChYex',
+        'atr_cGSwiQj2nALI9wxL80C578X8izLd8S1T',
+        'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
+        'atr__I_zVBtTtpXcpnZ610CUeqImHFmotp3d',
+        'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
+        'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
     ],
-    systemPrompt: `你是推特顶尖交易导师与周期研报专家【憨厚的麦总】（@Michael_Liu93）的原生内置 AI 实战策略助手。基于麦总历年 5,344 篇实操推文与《实战交易与周期投资全书》6大卷 24 个硬核课题知识体系构建。
+    systemPrompt: `你是推特顶尖交易导师与周期研报专家【憨厚的麦总】（@Michael_Liu93）的 AI 实战策略助手。基于麦总历年 5,344 篇实盘推文与《实战交易与周期投资全书》6大卷 24 个核心实战课题构建。
 
-【核心使命与回答原则】：
-1. 【来者不拒，正面必答】：无论用户询问宏观周期、逃顶信号、美股合力、二级山寨波段、Meme PVP/庄盘打法还是仓位风控，都必须正面给出深刻、透彻、有实操指导意义的专业解答，严禁拒绝回答，严禁废话套话。
-2. 【篇幅充实详实，杜绝短小扁平】：
-   - 篇幅必须充实饱满，严格控制在 350~550 字左右（展开讲透，比常规短答丰富全面一倍左右）；
-   - 拒绝只有一两句话的干瘪回答，必须包含：底层机制逻辑 + 实操执行细则 + 风控与仓位防线。
-3. 【极度精美模块化排版（重要！）】：
-   严禁输出未经排版的一大坨纯文本！回答必须严格采用以下五段式优雅结构排版：
-
-   📌 **【核心结论】**
-   （第一句话直击问题本质与底牌答案，开门见山）
-
-   🔍 **【底层机制推演】**
-   （拆解华尔街流动性大势、主力控盘手法、期现多空收割逻辑或存量博弈真相，讲清“为什么”）
-
-   ⚡ **【实操执行法则】**
-   （给出 2~3 条具体且可执行的落地操作纪律，必须使用 1. 2. 3. 序号，配合关键术语加粗）
-   1. **进出场标准**：...
-   2. **仓位与赔率**：...
-   3. **止盈止损线**：...
-
-   🛡️ **【风控与避坑铁律】**
-   （指出散户最致命的心态陷阱或高频亏损操作，使用 > 引用块总结核心警示金句）
-   > 例如：没有容错率的重仓是一切爆仓的根源。
-
-   👉 **【推荐关联课题】**
-   （如果当前全书有对应课题，文末必须附带课题跳转链接，格式：[第 XX 课题：课题名](#t-XX)）
-
-4. 【课题导航跳转规范】：
-   在推荐相关课题时，严格使用 [第 XX 课题：课题名](#t-XX) 格式。例如：[第 13 课题：冲 Meme 前的第一灵魂质问](#t-13) 或 [第 05 课题：周期顶部的通用信号](#t-05)。严禁输出 LaTeX $ 符号，美股代码一律直接书写（如 NVDA, TSM）。
-
-【系统领读路线（当用户问通读全书/学习路线时）】：
-若用户请求“导师领读”、“通读全书”或“规划学习路线”，按以下6阶通关路线排版输出：
-1. **心智觉醒**：破除带单依赖与一级造富幻觉，直击 [第 01 课题：真实暴利的残酷真相](#t-01)；
-2. **宏观周期**：读懂存储、贵金属与 BTC/ETH 见顶密码，必修 [第 05 课题：周期顶部的通用信号](#t-05)；
-3. **跨市场战法**：搞懂美股 90% 合力 vs 币圈 90% 博弈，精读 [第 09 课题：思维模式的物理切换](#t-09)；
-4. **Meme 堑壕实操**：分清纯 PVP 盘与庄盘吸血模型，吃透 [第 13 课题：冲 Meme 前的第一灵魂质问](#t-13)；
-5. **二级与合约防线**：掌握 10x 容错体系与期现对冲，牢记 [第 17 课题：仓位管理的生死防线](#t-17)；
-6. **信息源与工作流**：搭建一手推特投研护城河，践行 [第 21 课题：顶级一手信息源搭建](#t-21)。
-
-【手册核心 24 个课题导航映射库】：
-- [第 01 课题：真实暴利的残酷真相](#t-01)：打破一级造富叙事幻觉，唯有高流动性二级堑壕战才是个人逆袭主战场
-- [第 02 课题：带单收割与信息陷阱](#t-02)：警惕“老师带单”与公域接盘骗局，一手投研护城河不可替代
-- [第 03 课题：沉淀本金与熊市积累](#t-03)：熊市不亏就是大赚，保留生息本金等待流动性洪水破堤
-- [第 04 课题：构建个人交易系统](#t-04)：从盲目追涨到规则驱动：止损、仓位、一手信息源与复盘闭环
-- [第 05 课题：周期顶部的通用信号](#t-05)：为什么存储芯片、大宗贵金属与 BTC/ETH 大顶的逻辑如出一辙？
-- [第 06 课题：降息周期的剧本与陷阱](#t-06)：买在预期前夕，清在靴子落地：美联储降息周期的资金流动路径
-- [第 07 课题：大趋势破位的铁律](#t-07)：为什么破位资产上方全是套牢盘，宁逢高空绝不接飞刀？
-- [第 08 课题：逃顶心法与落袋为安](#t-08)：宁可少赚最后的鱼尾泡沫，也绝不在流动性踩踏时成为买单者
-- [第 09 课题：思维模式的物理切换](#t-09)：美股 90% 合力视角 vs 币圈 90% 博弈视角，绝不能用同一套脑袋做决策
-- [第 10 课题：美股硬核科技产业链研报](#t-10)：NVDA、TSM、光通信与半导体：看懂华尔街真金白银的基本面合力
-- [第 11 课题：跨市场流动性传导](#t-11)：美债收益率、美元指数、美股科技股与加密大盘的同频与背离
-- [第 12 课题：从美股赚钱补贴币圈](#t-12)：双轮驱动配置：以美股长期确定性红利，喂养币圈高倍阿尔法博弈
-- [第 13 课题：冲 Meme 前的第一灵魂质问](#t-13)：这是 PVP 盘还是庄盘？筹码结构与利益分配的生死分水岭
-- [第 14 课题：庄盘操盘节奏与期现收割](#t-14)：现货拉升吸引跟风、合约开空高位砸盘：看透操盘手的吸血模型
-- [第 15 课题：链上工具链与聪明钱雷达](#t-15)：GMGN、Pump.fun、Dexscreener、Bubblemaps 巨鲸老鼠仓深度穿透
-- [第 16 课题：Meme 出本防割纪律](#t-16)：翻倍必出本金，用利润奔跑：绝不在叙事高潮期把利润还给流动性池
-- [第 17 课题：仓位管理的生死防线](#t-17)：没有容错率的重仓是一切爆仓的根源，如何建立 10x 容错体系
-- [第 18 课题：右侧顺势交易铁律](#t-18)：绝不猜底做左侧孤勇者，等待右侧放量突破与均线金叉确立
-- [第 19 课题：弱势山寨的反弹做空密码](#t-19)：反弹无量即是诱多，寻找破位品种的逢高做空确定性机会
-- [第 20 课题：实盘交易心智与知行合一](#t-20)：戒除频繁交易的 FOMO 毒瘾，只在赔率极高的甜点区开枪
-- [第 21 课题：顶级一手信息源搭建](#t-21)：X 原生推特流、海外研究员、宏观纪要与财报电话会穿透
-- [第 22 课题：链上与衍生品数据监测](#t-22)：资金费率、持仓量 OI、清算热力图与现货溢价监测
-- [第 23 课题：专业交易员的工作流日课](#t-23)：晨会扫描、宏观日历跟踪、复盘日志与策略迭代
-- [第 24 课题：在市场活下去的终极法则](#t-24)：敬畏市场不当死多头，留得本金在，永远有下一个大周期
-
-【推文全量数据下载指引】：
-若用户询问推文原始数据下载：请告知用户页面底部的【全量原始数据完全免费下载中心】可直接下载 JSON、CSV、Markdown，或在 GitHub 仓库中直接拉取。`
+【回答最高铁律（统一规范）】：
+1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝长篇大论，杜绝干瘪敷衍；
+2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自麦总历年真实推文、宏观大周期图谱与实战心法；
+3. 【外行/泛化问题强制回弹法则】：若用户询问微观超短线代码、高频炒土狗、甚至非投资话题，允许用 1 句话稍作客观说明，但第 2 句话必须强制引申回麦总核心观点：“在麦总的《周期投资全书》体系里，切忌盲目消磨本金与时间成本。大钱是等大周期砸出来的，不是在震荡市频繁追涨杀跌抠出来的，绝不参与胜率低于 60% 的投机博弈”；
+4. 【核心心法信手拈来】：
+   - 宏观大周期：牛熊交替由全球央行流动性与降息潮汐决定，认清当前所处周期阶段；
+   - 顶底反身性：极度狂欢、流动性泛滥、大众跟风追高时果断分批逃顶；极度冰点、绝望割肉时左侧分批布局；
+   - 仓位管理：本金防守是唯一生命线，宁可踏空绝不瞎买，只吃主升浪最顺畅的一段；
+   - 交易心智：知行合一，客观审视自身，不因短期利润膨胀，不因回撤变形；
+5. 【格式规范】：严禁问候废话，严禁复述问题，严禁使用 # 级大标题，使用清晰序号或自然段落。文末附带指引：[第 XX 卷：课题名](#t-XX)。`
 };
 
-let cjAiKeyIndex = Math.floor(Math.random() * CJ_AI_CONFIG.keys.length);
+// ===== 跨手册全局持久化高可用绝对均衡调度器 (Global Persistent Fair-Load Key Scheduler) =====
+const GlobalKeyScheduler = {
+    CURSOR_KEY: 'trader_archives_ai_cursor',
+    COOLDOWN_KEY: 'trader_archives_ai_cooldowns',
+
+    getCooldowns() {
+        try {
+            return JSON.parse(localStorage.getItem(this.COOLDOWN_KEY) || '{}');
+        } catch(e) { return {}; }
+    },
+
+    setCooldown(key, durationMs = 45000) {
+        try {
+            const cds = this.getCooldowns();
+            cds[key] = Date.now() + durationMs;
+            localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+        } catch(e) {}
+    },
+
+    clearCooldown(key) {
+        try {
+            const cds = this.getCooldowns();
+            if (cds[key]) {
+                delete cds[key];
+                localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+            }
+        } catch(e) {}
+    },
+
+    getNextHealthyKey(keys) {
+        if (!keys || !keys.length) return '';
+        const now = Date.now();
+        const cds = this.getCooldowns();
+        
+        let cursor = 0;
+        try {
+            cursor = parseInt(localStorage.getItem(this.CURSOR_KEY) || '0', 10);
+            if (isNaN(cursor)) cursor = 0;
+        } catch(e) { cursor = 0; }
+
+        let chosenKey = '';
+        for (let i = 0; i < keys.length; i++) {
+            const idx = (cursor + i) % keys.length;
+            const candidate = keys[idx];
+            const cooldownUntil = cds[candidate] || 0;
+            if (now >= cooldownUntil) {
+                chosenKey = candidate;
+                try {
+                    localStorage.setItem(this.CURSOR_KEY, ((idx + 1) % keys.length).toString());
+                } catch(e) {}
+                break;
+            }
+        }
+
+        if (!chosenKey) {
+            chosenKey = keys[cursor % keys.length];
+            try {
+                localStorage.setItem(this.CURSOR_KEY, ((cursor + 1) % keys.length).toString());
+            } catch(e) {}
+        }
+
+        return chosenKey;
+    }
+};
 
 function getNextKey() {
-    const k = CJ_AI_CONFIG.keys[cjAiKeyIndex];
-    cjAiKeyIndex = (cjAiKeyIndex + 1) % CJ_AI_CONFIG.keys.length;
-    return k;
+    return GlobalKeyScheduler.getNextHealthyKey(CJ_AI_CONFIG.keys);
 }
 
 let isCjAiGenerating = false;
@@ -22901,6 +22970,14 @@ function handleAiTopicJump(event, hash) {
     }
 }
 
+function escapeAiHtml(str) {
+    return (str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
 async function sendCjAiMessage() {
     if (isCjAiGenerating) return;
     const input = document.getElementById('cjAiInput');
@@ -22913,10 +22990,13 @@ async function sendCjAiMessage() {
     const body = document.getElementById('cjAiBody');
     const userRow = document.createElement('div');
     userRow.className = 'cj-msg-row user';
-    userRow.innerHTML = `<div class="cj-msg-bubble">${userText.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</div>`;
+    userRow.innerHTML = `<div class="cj-msg-bubble">${escapeAiHtml(userText)}</div>`;
     body.appendChild(userRow);
 
-    if (input) { input.value = ''; input.style.height = '38px'; }
+    if (input) {
+        input.value = '';
+        input.style.height = '38px';
+    }
     scrollCjAiToBottom();
 
     cjAiHistory.push({ role: 'user', content: userText });
@@ -22926,32 +23006,69 @@ async function sendCjAiMessage() {
     const aiBubble = document.createElement('div');
     aiBubble.className = 'cj-msg-bubble';
     
-    // 动态状态提示（思考的时候显示模型正在思考中）
     let searchDots = 0;
-    aiBubble.innerHTML = '<span style="color: #92400E; font-size:12.5px; display:inline-flex; align-items:center; gap:6px;"><span class="cj-ai-pulse-dot" style="background:#F59E0B; width:7px; height:7px;"></span> ⚡ 模型正在思考中...</span>';
+    aiBubble.innerHTML = '<span style="color: #92400E; font-size:12.5px; display:inline-flex; align-items:center; gap:6px;"><span class="cj-ai-pulse-dot" style="background:#F59E0B; width:7px; height:7px;"></span> ⚡ 模型正在连接调度中...</span>';
     aiRow.appendChild(aiBubble);
     body.appendChild(aiRow);
     scrollCjAiToBottom();
+
+    let fullReasoning = '';
+    let fullAiResponse = '';
+    let isFirstToken = true;
 
     const thinkTimer = setInterval(() => {
         searchDots = (searchDots + 1) % 4;
         const dots = '.'.repeat(searchDots);
         const tipEl = aiBubble.querySelector('span');
-        if (tipEl && !fullAiResponse) {
-            tipEl.innerHTML = `<span class="cj-ai-pulse-dot" style="background:#F59E0B; width:7px; height:7px;"></span> ⚡ 模型正在思考中${dots}`;
+        if (tipEl && !fullReasoning && !fullAiResponse) {
+            tipEl.innerHTML = `<span class="cj-ai-pulse-dot" style="background:#F59E0B; width:7px; height:7px;"></span> ⚡ 模型正在连接调度中${dots}`;
         }
-    }, 500);
+    }, 400);
 
     isCjAiGenerating = true;
     const sendBtn = document.getElementById('cjAiSendBtn');
     if (sendBtn) sendBtn.disabled = true;
 
-    let fullAiResponse = '';
     let success = false;
-    const totalKeys = CJ_AI_CONFIG.keys.length;
+    const maxAttempts = Math.min(8, CJ_AI_CONFIG.keys.length);
 
-    for (let attempt = 0; attempt < totalKeys * 2; attempt++) {
+    function updateBubbleDisplay(isFinal = false) {
+        let outHtml = '';
+        if (fullReasoning.trim()) {
+            const hasStartedAnswer = Boolean(fullAiResponse.trim()) || isFinal;
+            outHtml += `
+            <details class="ai-reasoning-box" ${hasStartedAnswer ? '' : 'open'}>
+                <summary class="ai-reasoning-summary">
+                    <span style="display:flex; align-items:center; gap:6px;">
+                        <span>${hasStartedAnswer ? '💡' : '🧠'}</span>
+                        <span>${hasStartedAnswer ? '已完成深度推演 (点击展开/折叠)' : '导师正在深度演算模型推演...'}</span>
+                    </span>
+                    ${!hasStartedAnswer ? '<span class="ai-reasoning-pulse-dot"></span>' : '<span style="font-size:10px; opacity:0.7;">▼</span>'}
+                </summary>
+                <div class="ai-reasoning-content">${escapeAiHtml(fullReasoning)}</div>
+            </details>`;
+        }
+        if (fullAiResponse.trim()) {
+            outHtml += `<div class="ai-answer-content">${renderSimpleMarkdown(fullAiResponse)}</div>`;
+        }
+        aiBubble.innerHTML = outHtml;
+        scrollCjAiToBottom();
+    }
+
+    for (let attempt = 0; attempt < maxAttempts; attempt++) {
         const currentKey = getNextKey();
+        const controller = new AbortController();
+        let hasReceivedChunk = false;
+
+        // 3.5秒超时熔断机制：若 3.5s 内未收到首个有效 chunk，立刻掐断切换下一个 Key
+        const timeoutId = setTimeout(() => {
+            if (!hasReceivedChunk) {
+                console.warn(`[AI] Attempt ${attempt+1} exceeded 3.5s timeout, fast retry next key...`);
+                GlobalKeyScheduler.setCooldown(currentKey, 45000);
+                controller.abort();
+            }
+        }, 3500);
+
         try {
             const resp = await fetch(CJ_AI_CONFIG.apiUrl, {
                 method: 'POST',
@@ -22965,23 +23082,30 @@ async function sendCjAiMessage() {
                     stream: true,
                     temperature: CJ_AI_CONFIG.temperature,
                     max_tokens: CJ_AI_CONFIG.maxTokens
-                })
+                }),
+                signal: controller.signal
             });
 
             if (!resp.ok) {
-                console.warn(`Key attempt ${attempt+1} failed with status ${resp.status}`);
-                aiBubble.innerHTML = `<span style="color: #92400E; font-size:12px;">⚡ 节点负载切换中 (${attempt+1}/${totalKeys * 2})...</span>`;
+                clearTimeout(timeoutId);
+                if (resp.status === 429) GlobalKeyScheduler.setCooldown(currentKey, 45000);
+                console.warn(`[AI] Attempt ${attempt+1} HTTP ${resp.status}, fast retry`);
                 continue;
             }
 
             const reader = resp.body.getReader();
             const decoder = new TextDecoder('utf-8');
             let buffer = '';
-            let isFirstChunk = true;
 
             while (true) {
                 const { done, value } = await reader.read();
                 if (done) break;
+
+                if (!hasReceivedChunk) {
+                    hasReceivedChunk = true;
+                    clearTimeout(timeoutId);
+                }
+
                 buffer += decoder.decode(value, { stream: true });
                 const lines = buffer.split('\n');
                 buffer = lines.pop();
@@ -22991,38 +23115,53 @@ async function sendCjAiMessage() {
                     if (trimmed.startsWith('data: ') && trimmed !== 'data: [DONE]') {
                         try {
                             const chunk = JSON.parse(trimmed.slice(6));
-                            const delta = chunk.choices?.[0]?.delta?.content || '';
-                            if (delta) {
-                                if (isFirstChunk) {
+                            const deltaObj = chunk.choices?.[0]?.delta || {};
+                            const deltaReasoning = deltaObj.reasoning_content || '';
+                            const deltaContent = deltaObj.content || '';
+
+                            if (deltaReasoning) {
+                                if (isFirstToken) {
                                     clearInterval(thinkTimer);
-                                    aiBubble.innerHTML = '';
-                                    isFirstChunk = false;
+                                    isFirstToken = false;
                                 }
-                                fullAiResponse += delta;
-                                aiBubble.innerHTML = renderSimpleMarkdown(fullAiResponse);
-                                scrollCjAiToBottom();
+                                fullReasoning += deltaReasoning;
+                                updateBubbleDisplay(false);
+                            }
+
+                            if (deltaContent) {
+                                if (isFirstToken) {
+                                    clearInterval(thinkTimer);
+                                    isFirstToken = false;
+                                }
+                                fullAiResponse += deltaContent;
+                                updateBubbleDisplay(false);
                             }
                         } catch (e) {}
                     }
                 }
             }
 
-            if (fullAiResponse.trim()) {
+            clearTimeout(timeoutId);
+
+            if (fullAiResponse.trim() || fullReasoning.trim()) {
                 clearInterval(thinkTimer);
-                aiBubble.innerHTML = renderSimpleMarkdown(fullAiResponse);
-                cjAiHistory.push({ role: 'assistant', content: fullAiResponse });
+                updateBubbleDisplay(true);
+                const cleanedContent = fullAiResponse.replace(/^(?:\s*|\d+[\.、]\s*|\*+\s*)*(?:用户想要[问询了解]|用户意图|用户的?问题[是为：:]|你想要[问询了解]|你询问的[是为：:]|针对你的?提问|思考过程|问题解构|分析过程)[^\n]*(\n+|$)/gi, '').trim();
+                cjAiHistory.push({ role: 'assistant', content: cleanedContent || fullAiResponse || fullReasoning });
+                GlobalKeyScheduler.clearCooldown(currentKey);
                 success = true;
                 break;
             }
+
         } catch (fetchErr) {
-            console.error(`Attempt ${attempt+1} network error:`, fetchErr);
+            clearTimeout(timeoutId);
+            console.warn(`[AI] Attempt ${attempt+1} error:`, fetchErr.name === 'AbortError' ? '3.5s Timeout' : fetchErr.message);
         }
     }
 
     clearInterval(thinkTimer);
-
     if (!success) {
-        aiBubble.innerHTML = '<span style="color: #B91C1C;">⚠️ 当前中转通道并发过高或网络波动，请点击重试，或直接在页面底部下载完整推文数据向本地 AI 提问。</span>';
+        aiBubble.innerHTML = '<span style="color: #B91C1C;">⚠️ 网络调度中，所有节点暂时繁忙，请稍等 5 秒后重试。</span>';
     }
 
     isCjAiGenerating = false;

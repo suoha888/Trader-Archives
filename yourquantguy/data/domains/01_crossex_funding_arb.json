@@ -1,0 +1,1132 @@
+[
+  {
+    "id": "2102714607101960247",
+    "createdAt": "Wed Sep 23 11:00:03 +0000 2026",
+    "text": "Pendle 和 Boros 的三个主旋律：稳定币、RWA、Perps，通过这三部分让Pendle成为链上收益的黑洞，所有链上收益都收入其中。\n\n其实从我最初开始链上理财，在不知不觉中就已经和Pendle越靠越近。不论是大家耳熟能详的Pendle的稳定币PT/YT/LP，还是也许还没用过但也听说过的Boros资费套利，基本上链上能做的稳定收益理财都可以在Pendle/Boros完成。\n\n最让我期待的是文中预告了将推出让无收益资产也能做 PT/YT 的新技术，且在 Tokenized RWAs 的文末，也许是股票分红相关的？\n\n在上一轮的各种稳定币发行中，Pendle是毫无疑问的中心，期待在接下来 RWA 链上发展的故事里 Pendle 扮演的角色。",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 1,
+    "viewCount": 6742,
+    "images": [],
+    "goldScore": 6.6,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2095261040581726512",
+    "createdAt": "Wed Sep 02 21:22:14 +0000 2026",
+    "text": "CBB和他的兄弟从去年10月开始做链上RWA的perp futures与券商股票之间的套利，赚了$10M。\n\n文末他也写到，年化算下来大约是35%-40%左右。\n\n在文章中他也提到了影响策略很大一部分原因是券商与币圈的资金平衡的问题，导致资金利用率没有那么高。（这也是我没有做这方面套利的原因，直到后来海力士的利润实在太高了）",
+    "likeCount": 0,
+    "retweetCount": 11,
+    "replyCount": 6,
+    "viewCount": 33714,
+    "images": [],
+    "goldScore": 6.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2095137568035688855",
+    "createdAt": "Wed Sep 02 13:11:36 +0000 2026",
+    "text": "昨天 @variational_io 正式开放 Swaps，目前支持XAU和US100两个标的。\n\n确实牛逼。\n\n牛逼在两个地方：\n1. 点差超低。以US100为例，一键开800万u的仓位也只有不到0.02%的点差。\n2. 资金费率超低。swaps的资金费用本质上是美元的融资成本，和永续合约的“价差”为本质的资金费用完全不同。\nswaps的资金费用低且稳定，而永续合约的资金费用相对高且波动大。\n\n我在看到推特后两个小时左右试图开仓，结果碰到了 “open interest skew”的限制，只能开空，不能开多。所以我也特意去问了团队：\n根据swaps的这个特性，基本上绝大部分仓位都是会开多的，那么长期来说怎么解决这个“open interest skew”的限制呢？\n团队的回答是：现在有这个限制是因为还在逐步放开，长期来说，随着var上的swaps市场逐渐成熟，OI limit会提高，同时与合作方的仓位limit也会提高（目前谈下来的limit已经很高了，只是没有完全放开而已），当所有的仓位都可以丢给合作方时，skew就不再是个问题了。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 8,
+    "viewCount": 10505,
+    "images": [],
+    "goldScore": 6.2,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1993698031640727656",
+    "createdAt": "Wed Nov 26 15:07:06 +0000 2025",
+    "text": "[交易所美股合约 <> 美股 套利]\n\n昨天为了测试 Lighter 的美股合约和美股的套利， \n在 Lighter 用1万u的保证金开空了 5万u 的 HOOD 的仓位，吃了 30u 的资金费率。\n\n100% 的年化。  \n\n但是如果我现在平仓，因为美股账号有 $3000 的盈利，我的美股账户要多交大约 $1000 的税\n\n思路打开了，突然想到了很多玩法\n\n在不考虑美股账户税务问题的情况下，\n最好的资金费率套利的玩法应该是卖 deep in the money 的 PUT，如果是 portfolio margin account，就不需要考虑资金占用了。\n\n比币圈的资金费率套利的资金效率应该高了两三倍。",
+    "likeCount": 0,
+    "retweetCount": 23,
+    "replyCount": 18,
+    "viewCount": 78225,
+    "images": [
+      "tw_1993698031640727656_1.jpg"
+    ],
+    "goldScore": 9.5,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1991112528735211921",
+    "createdAt": "Wed Nov 19 11:53:14 +0000 2025",
+    "text": "@richardgo_go perp dex 跨所的资费套利",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 1711,
+    "images": [],
+    "goldScore": 4.6,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1991109512846024787",
+    "createdAt": "Wed Nov 19 11:41:15 +0000 2025",
+    "text": "[暂时和 defi 项目说再见了 | 拥抱新的机会]\n\n昨天花了半天的时间整理统计了所有的钱包和账户\n\n留在 defi 项目里的资金大概只有年初的十分之一了，应该是我接触 crypto 以来的最低比例，资金几乎全部移去了 perp dex。\n\n几年前接触 crypto 就是因为 defi 远高于 tradfi 的理财收益，虽然有各种被盗和暴雷的风险，但我也侥幸地躲过了所有的坑。运气是一方面，在风险方面的调研也是一部分原因。\n\ndefi 比起 tradfi 还是很香的。\n\n在 Pendle 依然可以找到收益10%+的优质项目的 PT 或是 LP，aave 5%的稳定币收益也是香，更别说即将推出的app上更高的收益。\n\n但是，perp dex 更香。\n\n1⃣套利的机会\n现在的市场对于有技术的散户是非常友好的。新的交易所出来，市场还没有成熟，机构和工作室还没有抢占全部的市场。\n\n[收益]\n仅仅是最基本的资金费率套利就能以低杠杆简简单单做到15%的收益。而其他稍微复杂一些的策略，更是能做到年化50%+，甚至100%+。比如我之前分享过的 @edgeX_exchange 上的套利。\n\n[风险]\ndefi 复杂的链上架构带来了各种风险，比如项目本身的风险，黑客风险，底层资产风险，底层资产对应项目的风险，等等。而 perp dex 的风险更加简单明了：项目本身的风险和黑客风险。这很难量化，但我个人认为 perp dex 的 risk premium 是更好的。\n\n2⃣存款利息\n现在几乎所有 perp dex 都为存款提供利息，并提供交易所金库。\n\n[收益]\n现在大部分 perp dex 的金库的收益都远高于 defi 理财，我在两三个月前存入了 @edgeX_exchange 的金库，目前的收益大约是10%。也存入了 Lighter 的金库，在经历了1011的大跌后，目前持平。更别说hyperliquid的金库在1011一天就涨了10%+。\n\n另外是简单存款的利息。比如目前在 Backpack 的存款有5%的利息，ethereal的存款也有5%的利息， grvt 的存款更是有10%的利息。\n\n[风险]\nperp dex 的金库并不是保本的投资，本质上是通过做市以及收取清算费用(部分交易所)来提供收益，从长期来看，这个策略是能够稳定盈利的，但同时也有突然事件导致大额亏损的可能。比如hyperliquid发生过的两次被操纵，又比如 lighter 的金库在1011大亏5%。\n\n3⃣积分\nperp dex 的积分就不用多说了，不少的人都在以亏钱的形式刷交易换取积分。赛道大火是原因，对tge空投的预期高是原因，但背后更重要的原因还是 perp dex 真的太赚钱了。明天我会发一条生动的视频，如果你现在还不理解，明天看了就能理解了。\n\n[最后]\n我之前说过，defi 会一直在，这里也适用。\n\n我上面提到的 perp dex 的机会并不会一直存在，市场的有效性会让所有的 收益/风险比 回归到一个正常的水平。所以，等到哪天 perp dex 的 收益/风险比 回到一个不值得我折腾的水平，我就会回到defi，继续存钱收菜。",
+    "likeCount": 0,
+    "retweetCount": 15,
+    "replyCount": 22,
+    "viewCount": 37024,
+    "images": [],
+    "goldScore": 9.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1988574934398816358",
+    "createdAt": "Wed Nov 12 11:49:44 +0000 2025",
+    "text": "如果你现在还觉得这是一篇没营养的广告，看完下一篇详细的技术分享，你就能理解，为什么这个又吃又拿的策略只能在 @edgeX_exchange 上做，而无法在其他绝大多数的 perp dex 上复刻，包括b、g、p、另一个e。 \n\nedgeX 比起其他的 perp dex 是有实质性的优势的。比如，星期一我在币安上套利的单日交易额达到了 $75M (见截图)，而这与币安的流动性和深度息息相关。\n\n这篇主要是铺垫，下一篇我会详细讲解所有技术细节，几乎是手把手教你如何从零搭建一个完整的价差套利架构：从云服务器的搭建，到核心代码、参数调优，再到网络与资金安全的处理。只要你是一个合格的程序员，你就能做到小资金至少20%的年化，小资金指的是50万u以下。\n\n评论区有人说我是广告狗，把我拉黑了，我只是替你惋惜，断了自己的财路。要是多年前的自己看到这么有营养的广告，能走不少弯路。",
+    "likeCount": 0,
+    "retweetCount": 14,
+    "replyCount": 50,
+    "viewCount": 33326,
+    "images": [
+      "tw_1988574934398816358_1.png"
+    ],
+    "goldScore": 9.9,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2059558999184351658",
+    "createdAt": "Wed May 27 08:55:04 +0000 2026",
+    "text": "[ 过去一个月 | 不赚钱版 ]\n\n过去一个月都在外面漂(欧洲 - 大陆 - 香港 - 澳洲 - 大陆 - 欧洲)，期间有很多机会，但我一个都没抓到：\n - BTC 时隔四个月回到了$82,000\n - 美股每天都在新高\n - HYPE 在10天内从$38涨到了$62\n - 加密交易所里的spaceX都算是价格回归到了和一级市场基本一致的水平\n - 大陆对于futu等券商监管的新闻\n - RWA的资费套利\n\n还好我已经不焦虑了，还是那个道理，有些钱就是我赚不到的，有些钱就是给我赚的。\n\n关注我比较久的朋友知道我的风险厌恶非常高，非常保守：\n - BTC跌到$63K的时候我也只敢买了1个\n - 放在两年前，美股是我最大的收入来源，现在已经接近空仓快半年了，完全踏空了这波每天all time high\n - 从三个月前HYPE $30 的时候开始定投，在几周前到$47的时候就清仓了\n\n所以我一直说我不是一个交易员，也不适合做一个交易员。我还是做自己擅长的事情比较开心，低风险做做链上理财，无风险套利，出去玩一个月也不用怎么管。",
+    "likeCount": 0,
+    "retweetCount": 3,
+    "replyCount": 17,
+    "viewCount": 30148,
+    "images": [],
+    "goldScore": 6.6,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2054493839524847757",
+    "createdAt": "Wed May 13 09:27:56 +0000 2026",
+    "text": "前段时间 Pendle 的 @boros_fi 上线了一个可以直接查看通过Boros中性套利机会的面板。\n\n虽然现在的收益不是特别诱人，但我认为以后绝对有机会用到的，所以可以先学起来。\n\n面板里的固定APR收益都是按照10倍杠杆来计算的，每一个固定收益的套利由四部分组成。以第一行中的机会为例，持有到期的年化为9.06%：\n - 在币安 10x 杠杆开多ETH，支付浮动的资金费率\n - 在 Hyperliquid 10x 杠杆开空ETH，收取 浮动的资金费率\n - 在Boros中开仓币安仓位的多头，支付固定1.47%资金费率，收取浮动资金费率\n - 在Boros中开仓Hyperliquid仓位的空头，支付浮动的资金费率，收取固定的4.01%资金费率。\n\n整理一下，通过这四笔交易，我们可以固定收取资金费率2.54%：\n - 在Boros中支付固定1.47%资金费\n - 在Boros中收取固定4.01%资金费\n\n而浮动资金费率则完全抵消：\n - 在 币安 支付浮动资金费率\n - 在Boros收取 币安 的浮动资金费率\n - 在 Hyperliquid 收取 浮动的资金费率\n - 在Boros支付 Hyperliquid 浮动的资金费率\n\n也就是说，在1倍杠杆的情况下，这个策略可以做到 固定的 2.5%左右的年化收益，在去掉合约交易和boros交易中的手续费，最终在两边各10倍杠杆的情况下，收益就固定在了9%左右。\n\n因为现在整体市场还不活跃，资金费率也常常在0左右徘徊，所以这个策略的收益还不高。但等到市场活跃起来，很有可能用得上，有备无患。",
+    "likeCount": 0,
+    "retweetCount": 13,
+    "replyCount": 14,
+    "viewCount": 11131,
+    "images": [
+      "tw_2054493839524847757_1.jpg"
+    ],
+    "goldScore": 9.9,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2082440392142970891",
+    "createdAt": "Wed Jul 29 12:17:34 +0000 2026",
+    "text": "@MengLayer 这是rwa的交易量？Lighter上单BTC合约24小时的交易量就有$700m了",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 726,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1947955132198519127",
+    "createdAt": "Wed Jul 23 09:41:09 +0000 2025",
+    "text": "[新项目分享] Strata @strata_money | Ethena 生态新拼图\n\nStrata 在 12 小时前开放存款，TVL 已经冲到 $14.5M，我自己也塞了 10 万进去。存款可以拿到 30x Strata points，30x Ethena points，1x Ethereal points。\n\n先放上邀请码，用了你可以额外拿 10% 分数：https://t.co/zUYRnSOPmw\n\n⚠️ 建议先换成 eUSDe 再存，不要直接存 USDe——原因在文末会说。\n\n1⃣ 什么是 Strata？\nStrata 是一个基于 sUSDe 的收益分层协议，让用户在享受 sUSDe 收益的同时，可以根据自己的风险偏好定制风险/回报敞口。上线后还会逐步整合更多收益来源。\n - 由 Ethena 孵化\n - 将在 Ethereum 与 Converge 部署\n\n2⃣为什么需要 Strata？\n大家都知道 sUSDe 是 Ethena 的增息稳定币，但它只有单一的收益选择，而 Resolv 这种类似的项目之所以能做起来，就是因为它用双币结构提供高/低风险两种选项满足不同用户的偏好。\n\nStrata 解决的就是这个问题，提供两种代币：\nstUSDe：低风险低收益，有保底收益锚定 Sky SSR，收益上限跟随 sUSDe 的收益率。\nstJLP：高风险高收益，当 sUSDe 收益不足以覆盖 stUSDe 的保底收益时，需要由 stJLP 补贴，因此有可能亏损；但当资金费率暴涨时，它的收益率会比 sUSDe 更高。\n\n收益举例（假设 sUSDe 收益 10%，SSR收益4.5% ）\n - 若存款 50% 选择 stUSDe，则 stUSDe 收益为 4.5%，stJLP 为 15%。\n - 若存款 75% 选择 stUSDe，则 stUSDe 收益为 7.5%，stJLP 为 17.5%。\n\n3⃣ 项目时间线\n1. Season 0 持续约三个月，预计 10 月下旬结束\n2. S0结束后正式上线产品，并启动 Season 1\n3. TGE 预计在今年底\n以上信息来自官方文档及团队在Discord里的信息。\n\n4⃣收益与积分\n存款本身没有收益，但 30x Ethena points 按现在的币价约等于 7.5% 年化空投，加上 Strata 与 Ethereal 的分数，保底预期 12%。如果看好整个 Ethena 体系，可以无脑冲。\n\n5⃣操作建议\n路径：USDe → eUSDe → Strata\n用 eUSDe 存是因为 Ethereal 分数的计算规则还不明确。Strata 的 Discord 说是按照整个项目存款中 eUSDe 的占比来平均分配 Ethereal 分数，而 Ethereal 的 Discord 又说只要存 eUSDe 就能拿 1x 分数。既然规则不确定，与其省那点 gas，不如直接存 eUSDe 保险一些。\n\nPendle的池子应该也会很快上线。\n\n📒 我的看法\n我非常看好 Ethena + Converge 生态。Strata 让 sUSDe 有了保底收益模式，更容易嵌入生态各个模块，尤其是在 Converge 链上。参考 Sky SSR 只有 4.5% 收益仍能吸 $2.4B TVL，Resolv 双币设计 TVL 一月涨 50%，市场需求已经验证。我先塞了 10 万，后续可能再加。\n\n#Ethena #converge #stratafinance",
+    "likeCount": 0,
+    "retweetCount": 5,
+    "replyCount": 4,
+    "viewCount": 7344,
+    "images": [],
+    "goldScore": 8.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2077409799717687506",
+    "createdAt": "Wed Jul 15 15:07:47 +0000 2026",
+    "text": "[ 海力士 韩股和美股ADR 套利 ]\n\n最近挺多人在讨论和执行这个价差套利的，对我来说，不管是哪个方向，都是风险挺高的一件事。\n\n但我昨天开仓了 $500k 的仓位。\n\n背景：\nSKHYNIX，韩股代码000660，以韩元计价。\nSKHY，上周在美股上市的ADR，10股SKHY = 1股 SKHYNIX\n\n但由于两者不互通，SKHY不能转换成000660，000660不能转换成SKHY，导致美股的SKHY最高有40%的溢价。\n\n类似的情况在台积电的股票上也有发生，美股的台积电对于台股的台积电长期存在10%-20%的溢价。\n\n所以这件事就是赌溢价会扩大还是缩小。\n\n我直到昨天才开仓，是因为我不想承担仓位的资金费用。如果在币圈开仓，就是资金费率的不确定性；如果在传统券商开仓，对应的就是做空的利息。昨天在券商做空SKHY的利息已经从年化50%掉到了5%（现在只有2%了），也就是说，在券商空SKHY的费用已经几乎可以忽略不计了。\n\n我的仓位是：\n在券商买了000660韩股现货，空了SKHY，开仓的平均溢价35%，赌的是溢价收敛。\n\n目前做空SKHY的利息只有2%，收到的现金还可以拿短期美债的收益；借韩元买000660的利息是5%；因为我的账户是portfolio margin，所以这样多空双开的仓位几乎不占用资金，且资金费用可以忽略不计了。\n\n除了仓位的费用低以外，我认为现在35%的溢价是一个赌溢价收敛盈亏比挺高的位置。\n\n这个trade最核心的预设是：我不认为溢价能长期在40%以上，即使需要一些时间来收敛，我的仓位不占用现金，且几乎没有成本。\n\n我认为在接下来一个月里，即使向上去50%的价差也不可能长期持续，而向下去30%以下的价差的概率不小，所以我的计划是：\n只要溢价掉到30%以下，我就开始平仓。溢价到40%以上，就继续加仓。",
+    "likeCount": 0,
+    "retweetCount": 7,
+    "replyCount": 8,
+    "viewCount": 37041,
+    "images": [],
+    "goldScore": 7.8,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1942889517200953771",
+    "createdAt": "Wed Jul 09 10:12:12 +0000 2025",
+    "text": "再补充几个矿：\n\n- @SkyEcosystem 质押SKY并开空对冲：可以选择USDS 13% APY作为奖励或 SPK 18.2% APY 作为奖励。\n- @Hyperwavefi 7.1% APY，本质上就是HLP，适合已经在存HLP的朋友，可以多拿一层积分，也可以用hwHLP抵押借款。\n- @HypurrFi 借出 USDT，约10% API + 积分\n- @AuraFinance 上各种 USDC/USDT/GHO 的池子约11% APR；iUSD/GHO 的池子17% APR； GHO/USDf 的池子22.5% APR（刀口舔血）\n\n以及 @pendle 上各种 10% 左右的PT就不赘述了。\n\n申明：这些矿只是我整理出来的列表方便我自己以及大家查阅，不代表我推荐或者已经研究过。请大家自己做功课（DYOR）。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 2,
+    "viewCount": 6164,
+    "images": [],
+    "goldScore": 5.8,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1940332583981666533",
+    "createdAt": "Wed Jul 02 08:51:52 +0000 2025",
+    "text": "百万美金 DeFi 记录 - Day 35\n\n感谢所有在推特和私底下给我推荐矿的朋友，今天总结一下所有我目前没有在挖的矿。我还没有时间每个项目都看一眼，所以在这里随机排序，只是归纳总结，没有推荐和偏好。\n\n- @EchelonMarket  存 USDC: 10%+\n- @kai_finance_sui suiUSDT/USDC: 10%+\n- @hyperion_xyz 稳定币 LP: 20%\n- @TakaraLend 借出稳定币：13.5%+\n- @yalaorg 存Stability Pool：10%\n- @MidasRWA mF-ONE: 15% (这名字能更搞笑一点吗？)\n- @aave sGHO: 8.4%\n- @ton_blockchain 上的 USDe：15%（$10k 限额）\n- @maplefinance 存稳定币：9.8%\n\n另外我也贡献一个我昨天刚才开始存的，虽然容量小，但还是无私分享了: @term_labs 在 Avalanche 上的 Term USDT Meta Vault， 21.82%，高收益来自 $20k AVAX 的激励，只持续7月一个月。\n\n再次感谢大家的推荐，也欢迎大家在以后随时留言分享好矿或套利机会。因为我并不是全职做web3，除此以外我还得盯着美股，另外还有两个公司的运营，所以可以用于发掘好矿的时间有限，但我保证会100%分享所有的机会，我认为这样的交流对大家都会有帮助。",
+    "likeCount": 0,
+    "retweetCount": 15,
+    "replyCount": 21,
+    "viewCount": 25811,
+    "images": [],
+    "goldScore": 8.5,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2008843465409659125",
+    "createdAt": "Wed Jan 07 10:09:39 +0000 2026",
+    "text": "@traderwanwan 2026H1的最佳defi理财是perp dex，最佳空投是 xxxxxxxxxx",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 3,
+    "viewCount": 3950,
+    "images": [],
+    "goldScore": 4.2,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2026801322146578605",
+    "createdAt": "Wed Feb 25 23:27:46 +0000 2026",
+    "text": "参与了全程，最后所有开空的人都被adl平仓了，我给大家梳理一下重要节点：\n\n1. 该账户在 Lighter 上开仓了约 2亿 个ARC 的看多合约，价值约$2400万\n\n2. Lighter 为了控制局面，给ARC增加了增加了$40M的OI限制，所以所有人只能平仓，不能开仓。由于几乎所有的多仓都是这个账户持有，所以没有卖单，只有开空平仓的买单，导致短时间内价格迅速上升（图中标注1的地方）\n\n3. 价格迅速上升后，Lighter团队不知道为啥，又取消了OI的限制，有人可以进来开空后，价格随机迅速下跌（图中标注2的地方）\n\n4. 没过多久，OI的限制又加上了🤣，由于没有卖单只有买单，价格又开始拉升（图中标注3的地方）\n\n5. Lighter 只能使出绝招，把资金费率从每小时 0.5% 调整到了每小时 2%，于是价格终于开始下跌，该账户爆仓被清算（图中标注4的地方）\n\n你以为故事就这样结束了吗？ 还没呢\n\n6. 该账户被清算后，所有仓位还是被移到 LLP。\n\n7. 这时候应该启动adl机制了，但是好像出了什么问题了，于是Lighter直接拔了网线，关了服务器。\n\n8. 服务器再次启动后，adl开始了，所有空仓都被adl了，OI从$4000万回到了$40万。\n\n我的体验：以后再也不玩这种了。。。忙活半天，最后因为被adl的价差，只赚了2000u不到。",
+    "likeCount": 0,
+    "retweetCount": 19,
+    "replyCount": 35,
+    "viewCount": 125553,
+    "images": [
+      "tw_2026801322146578605_1.jpg"
+    ],
+    "goldScore": 9.5,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2026599703580692767",
+    "createdAt": "Wed Feb 25 10:06:36 +0000 2026",
+    "text": "分享一个 Alpha，这个月我“只”撸了几万u\n\n事情是这样的，我前段时间不是开始定投 Hype 了吗？\n\n然后我就想着能不能通过期权再增加点收益，一点点也行\n\n就去看了一下各个平台的价格和流动性，结果，这价差大到吓人，按照年化算，能有 1000% 😳 （图1）\n\n而且不是什么复杂的期权结构，就是在一个交易所买一手期权，再去另一个交易所卖一手同样行权价和到期日的期权。\n\n我担心有什么坑，于是只买了一点点试水。几天后到期了，居然一点坑都没有。\n\n于是我开始下单买更多，但是开始贪心了，只想买那些到期日近的，变现快的，放弃了那些远期但套利收益其实更高的期权。\n\n结果还不到一周，套利的机会就没了，明明如果大扫货的话能暴富的，最后却“只”撸了几万u 🥲\n\n虽然这个 alpha 过期了，但是有心的朋友还是可以监控一下，偶尔还是有套利的机会可以小额赚个20%左右的年化，尤其是如果你用统一保证金且账户里本来就有资金，那就是顺便赚的了。（图2）",
+    "likeCount": 0,
+    "retweetCount": 30,
+    "replyCount": 19,
+    "viewCount": 89619,
+    "images": [
+      "tw_2026599703580692767_1.jpg",
+      "tw_2026599703580692767_2.jpg"
+    ],
+    "goldScore": 10.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2024099309285679492",
+    "createdAt": "Wed Feb 18 12:30:55 +0000 2026",
+    "text": "11月底的时候我发过一条推，说「大多数人已经错过 Perp DEX」，因为当时其实已经进入偏后期了。\n\n之后我只零散发过几次邀请码，分别是：\n- edgeX：开源了edgeX的价差套利脚本\n- grvt：开源了v2版本的脚本，市价单刷量磨损0.007%，也就只有手动自成交的成本能比它更低，以及10%利息的理财\n- ethereal/paradex：都是存钱的理财局，只有少赚，没有反撸\n\n后来脚本里又加了 standx 和 nado，我自己也刷了，但没有再发邀请链接，原因大家应该都懂。\n\n我自己其实还在刷edgeX和Backpack，原因很简单：我的成本低，TGE近在眼前。\n\nedgeX最近几周的成本是 1u/xp，backpack的成本是 0.05/分。\n\n除非你有自己的优势，比如技术、内幕消息、天才交易员又吃又拿，否则后面新出来的这些台子真的没必要撸了。\n\n后面的新台子有没有可能出个大毛？当然有可能，在币圈没有什么是不可能的。而且越是无人问津，反而越有可能出大毛。大毛的典型路径一直都是：前期冷 → 中期有人注意 → 后期被疯狂追逐。\n\n但从撸空投的角度来说，Perp DEX 里的新台子已经逐渐从“高确定性不反撸，高确定性高收益”，变成了“低确定性不反撸，低确定性高收益”。\n\n所以对我个人来说，与其在这个阶段到处撒网赌一个“大毛”，不如把时间继续花在套利上至少赚的是u，不是积分。",
+    "likeCount": 0,
+    "retweetCount": 3,
+    "replyCount": 18,
+    "viewCount": 15936,
+    "images": [
+      "tw_2024099309285679492_1.png"
+    ],
+    "goldScore": 9.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2092743173730628061",
+    "createdAt": "Wed Aug 26 22:37:08 +0000 2026",
+    "text": "entropy 的价差套利代码来了\n\n这是最基础的框架，不要指望跑起来就能盈利。\n\n适合从没接触过价差套利，有心学习和尝试，却又不知道怎么迈出第一步的朋友。\n\n这不是我自己在跑的版本，而是简化后的版本。\n\n可以去优化的几个方向：\n1. 目前只支持entropy和另外一个自选交易所套利，可以改成多个交易所同时大乱斗。\n2. 目前是根据自己设定的价差 开仓/平仓，可以改成动态的。\n3. 滑点的动态管理。\n4. 代码网络环境，降低延迟。\n\n总之你们会遇到很多问题，做很多尝试，且大部分的尝试并不能解决问题，最后也许开始了套利之路，也许一气之下再也不看套利的内容。祝好运。\n\nhttps://t.co/qdB0vz3RtU",
+    "likeCount": 0,
+    "retweetCount": 33,
+    "replyCount": 18,
+    "viewCount": 28289,
+    "images": [],
+    "goldScore": 8.7,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2092560110111293785",
+    "createdAt": "Wed Aug 26 10:29:42 +0000 2026",
+    "text": "在明天开源 entropy 的套利脚本框架之前（今天刚重获新生的 Fable 5 正在干活），先再来聊聊套利，希望能扫除一部分朋友对套利的误解。\n\n首先，不要希望任何网上开源的脚本直接帮你印钱。\n\n可能可以一键赚钱吗？可能的。比如你下载个马丁策略来跑交易，跑一周，发现赚钱了，而且还赚不少，但长期来说，肯定是负EV的，最终不是爆仓就是止损。\n\n即使是中性套利的开源脚本，短期可能可以赚到钱，但肯定不是稳定/长期的，或者收益连个美债利息都不如。\n\n我明天开源的脚本可以理解为一个学习资料，帮那些从来没有接触过套利，但又有心学习研究的朋友迈开第一步。不适合已经有独立开发能力（aka 能有效让AI干活）的朋友，也不适合希望一键赚钱的朋友。\n\n如果你是从零开始的，最重要的是去花时间学习和研究所有相关的一切，读那些你原来看都不会去看一眼的文档，想那些连项目方都没有想到要放进文档里的问题。\n现在有了AI，代码本身完全不是门槛，门槛是你自己需要对所有因素清晰的理解，对你的策略在脑子里有一个完整的系统。\n\n以 entropy 为例，推特上不少人连hip-3是什么都不知道，然后发一些展现自己低弱认知的推文，比如拿tradexyz的btc交易量和entropy的btc交易量比较，发现一模一样，比如在那抱怨为什么在entropy上交易了gold-usdc却没有反佣。\n\n非常客观地说，这类人就不适合做套利。或者说，如果他们去做套利，钱是怎么亏的都不知道。\n\n再以 entropy 为例来说说套利本身。\n价差套利的原理很简单：两个交易所，一样的底层资产，但价格不一样，直觉：价格低的那边买进，价格高的那边卖出。\n\n这时候就到了套利需要的刨根问底，理解透彻的环节了：\n为什么会有这个价差？\n - 是普通的正常波动？\n - 是计算的价格不同？比如USDT vs USDC\n - 是因为有大户持续开仓或爆仓影响了价格？比如昨天Lighter上的BTC\n - 是oracle不同？\n - 是资金费率的计算方法不同所以其实价差已经体现在资费里了？\n - ... 无数的其他可能\n\n风险/其他考虑因素有哪些？\n - 价差会不会持续扩大？\n - 滑点会不会夸张到直接抹平价差甚至亏损？\n - 手续费？\n - 资金费率的亏损直接把价差的盈利抹平了？\n - 多久可以平仓？不会价差持续一个月吧？\n - ... 无数的其他可能\n\n这些问题都可以通过自己读文档/问AI/参考历史数据来解决，但只有当你对你的策略有一个完整的系统时，才会想到这些问题，然后去解决。\n\n本来我还想再详细介绍一下entropy的手续费和用我 tier 4 邀请码反佣后的零手续费是怎么计算的。但如果有朋友想要从零开始尝试做套利的，可以自己去研究一下。\n\n如果连一个交易所的手续费都研究不明白，确实是不适合做套利。这不是负面评价，只是客观事实，就像我，永远都不可能做创意设计型的工作，但适合和数字打交道。",
+    "likeCount": 0,
+    "retweetCount": 20,
+    "replyCount": 31,
+    "viewCount": 53211,
+    "images": [],
+    "goldScore": 9.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2090027790640824556",
+    "createdAt": "Wed Aug 19 10:47:10 +0000 2026",
+    "text": "前几天 Boros 推出了 P2P 功能，简单的说，就是全自动版的OTC市场。\n\n以前下大单，需要走OTC，靠Boros团队手动匹配，现在又了P2P，就可以直接挂单或吃单了，在完成大额交易的同时，不会对订单簿和市场造成影响。\n\n目前看来确实有很多订单可以吃，但和订单簿补的价格比起来，并不是有绝对优势。\n\n但不管怎么说，这是增加流动性的又一个新的途径，可以持续观察一下。\n\n另外，通过crossEx配合boros进行费率套利的收益依然可观，目前4个月后到期的ETH市场，按照25倍杠杆计算，有固定20%年化的净收益。\n\n我自己不会全仓开这么高的杠杆，之所以这么计算，是因为这是按照crossEx最高资金利用率来算，比如我自己有在做其他一些套利，那么用剩余资金开25倍对冲杠杆的风险其实是远小于“25倍”看上去的风险的。",
+    "likeCount": 0,
+    "retweetCount": 4,
+    "replyCount": 1,
+    "viewCount": 8599,
+    "images": [
+      "tw_2090027790640824556_1.jpg"
+    ],
+    "goldScore": 9.2,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1955485878446420260",
+    "createdAt": "Wed Aug 13 04:25:39 +0000 2025",
+    "text": "[杠杆虽好，不要贪倍哦] 那么多少倍的杠杆适合你呢？\n\n最近的市场波动很大，因为我做的都是带杠杆的中性策略，所以最主要的风险是单边拉升或下跌导致的单边爆仓风险。应该也有不少朋友在做跨所合约费率套利的同时刷一些 DEX 的积分（比如 Lighter，需要邀请码请DM我），也是有一样的风险。\n\n我抓了过去 5 年半币安的 BTC 和 ETH 永续合约每小时最高价、最低价数据，模拟在 不同杠杆 和 不同反应时间（补保证金时间）的情况下，会有多少天触发爆仓。  \n\n附图是不同反应时间和杠杆下的爆仓天数热力图。 \n\n结论：  \n- ETH 风险明显高于 BTC。  \n- 只要开了杠杆，就很难避免爆仓，至少在过去6年里是这样。  \n\n虽然2020-2021年的波动非常大，在这些爆仓天数里也占了不少比重，但是谁能保证BTC以后不会再闪跌30%呢？  如果大家感兴趣的话，我可以再做一个自2022年之后的版本，整体市场相对趋于稳定一点。  \n\n最后再来奶一下 @Lighter_xyz ：虽然零手续费模式到底能不能做起来很难说，但从用户角度，在所有 perp dex 里我最看好 Lighter，而且不管怎么样，现在零手续费让 Lighter 有很多可玩性。需要邀请码的请DM我。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 7,
+    "viewCount": 4820,
+    "images": [
+      "tw_1955485878446420260_1.jpg"
+    ],
+    "goldScore": 8.5,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2084965415122301322",
+    "createdAt": "Wed Aug 05 11:31:06 +0000 2026",
+    "text": "之前提到过的 Gate CrossEx 已经开源了。\n\n - 什么是CrossEx？\n简单介绍一下，Gate 的 CrossEx 聚合多个交易所（币安、okx、hyperliquid、bybit、kranken、gate 等等），最大的特点是跨所统一保证金，是跨所资费套利的神器。\n\nCrossEx解决了传统的跨所资费套利的两大痛点：\n1. 避免单边爆仓的风险。\n2. 无需平衡保证金。\n\n以开5倍杠杆为例，普通的跨所资费套利只要波动20%就会单边爆仓。\n而CrossEx因为是跨所统一保证金，波动造成的两边的浮盈和浮亏刚好抵消，唯一爆仓的可能是两个交易所的价差往不利的方向拉大到20%。如果是做大币/rwa的资费套利，虽然理论可能一直存在，但可能性极低。\n\n又因为是跨所统一保证金，所以也不需要像传统跨所套利那样频繁平衡两边的保证金。\n\n - 我开源的究竟是什么？\n目前 Crossex 本身只支持 API，没有官方 UI，所以我做了一个开源前端，并加了一些我自己常用的功能，比如费率监控、一键开对冲仓位等等。所以这只是一个工具，可以当作是一个交易所的开源前端，而不是一个交易/量化策略。\n\n安装和使用方法在 Github repo 的文档里都有。如果已经有Gate的账户，只需要简单的几步：\n1. 开通Gate的CrossEx （链接在文档里有）\n2. 安装我的开源工具（只需要运行一行代码，在文档中有详细介绍）\n3. 运行开源工具并设置API key\n\n我自己已经做了不少测试，但这个项目本质上相当于一个交易所前端，复杂度还是挺高的，难免会有一些 bug。\n\n如果大家在使用过程中遇到任何问题，欢迎随时私信或者 @ 我，我会尽快修复。\n\n因为工具完全在本地运行，所以你的硬件和网络情况都会有所影响，建议先小额测试。\n\n开源代码（安装教程在打开链接后下滑的文档中）：\nhttps://t.co/dTs1jcXcJl",
+    "likeCount": 0,
+    "retweetCount": 53,
+    "replyCount": 28,
+    "viewCount": 65113,
+    "images": [],
+    "goldScore": 10.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2084965417399792073",
+    "createdAt": "Wed Aug 05 11:31:06 +0000 2026",
+    "text": "主要的功能：\n1. 在各个交易所用CrossEx的统一保证金手动交易\n2. 资费监控面板，并一键对冲开仓（见图1、图2）\n3. 海力士美股/韩股溢价监控及交易（图3） https://t.co/uduZNFYaf7",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 2,
+    "viewCount": 3443,
+    "images": [
+      "tw_2084965417399792073_1.jpg",
+      "tw_2084965417399792073_2.jpg",
+      "tw_2084965417399792073_3.jpg"
+    ],
+    "goldScore": 6.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2044341224086106470",
+    "createdAt": "Wed Apr 15 09:05:04 +0000 2026",
+    "text": "[ Pendle | Crypto + RWA ]\n\n最近 Pendle 上了几个和RWA有关的很有意思的市场，在说这几个具体的市场之前，先闲聊一下。\n\n从产品上来说，我觉得这几个RWA相关的市场时机非常适合，尤其是现在加密市场整体低迷，不仅是链上理财越来越靠近传统金融：曾经的靠做合约基差作为收益的链上稳定币大哥Ethena现在只剩下11%的资产继续在做基差交易，而剩下的89%都是持有的稳定币现金，其中不少都依靠美债获取收益；甚至连币圈的永续合约交易也被rwa抢尽风头：从黄金，到银，再到原油，hyperliquid上的原油单日交易量甚至超过了BTC。\n\n现在不是RWA这个概念最火的时候，最火的时候应该是一年前吧。但看起来现在正是RWA在crypto稳步发展的阶段，且是明确的大势所趋。这也让我想起 Y Combinator 办公室墙上的一张初创公司周期发展图（见配图），大多数初创公司在最开始都会有一波大热，然后降温，面对现实，最后稳步发展，当然，也有不少就在这些过程中消失了。同样的周期也适用于币圈的各种叙事，RWA是为数不多的经历了大热后，目前正在稳步发展的叙事。\n\nPendle 特别适合迎接这些RWA理财产品上链：只要是理财，核心就是收益，有收益就会有波动，有波动就会有人想锁利有人想搏一搏，最后就会有人买Pendle的PT，有人买YT。\n\n如果你还不了解pendle 的PT和YT，强烈建议去仔细阅读一下官方文档。在这里就简单介绍一下：买PT相当于存定期，收固定利率；买YT相当于做PT的对手方，收浮动利率的收益，而买YT时付出的成本就作为PT的固定收益了。  如果这听起来还是有点绕，甚至可以把他当作是一个预测市场。假设一个资产的PT的利率是10%，如果你认为最终的收益大于10%，那就可以考虑买YT；如果觉得最终的收益会小于10%，或者对10%的收益已经满意了，就可以买PT。\n\n* 以上都是为简单说明而作的大概解释，强烈建议大家去读一下文档。\n\n目前Pendle上的几个和RWA相关的市场：\n- Ember的eACRED\n底层资产是Apollo做的 Apollo Diversified Credit Fund，这是传统金融里最大的资管公司，管理规模约 $750B。这个基金目前净值约$1.6B，主要做的就是在放贷收息。像这种基金，在传统金融里最大的缺点就是不容易退出，有退出流动性的限制，而经过securitize上链后就很好地解决了这一点，如果想要退出，可以直接在链上卖出，不需要经过基金繁琐的退出流程。\n\n - Saturn 的 USDAT 和 SUSDAT\nUSDAT的底层资产就是美债，就不多说了。\n有意思的是sUSDAT，底层资产是微策略的STRC。STRT本身的利息是每个月浮动的，目前是11%，而pendle上的sUSDAT的PT目前的收益是14%固定年化。\n\n - apyX 的 apyUSD\n底层资产也是微策略的STRC，目前pendle上的apyUSD的PT收益也是14%固定年化。\n\nPendle作为工具，为博弈的双方提供了一个平台。每次你买一个PT，就意味着有人持有着一个YT，也许是提供流动性的池子，也许是想要博弈更高收益的YT购买者。\n\n@pendle_fi",
+    "likeCount": 0,
+    "retweetCount": 11,
+    "replyCount": 13,
+    "viewCount": 11344,
+    "images": [
+      "tw_2044341224086106470_1.jpg"
+    ],
+    "goldScore": 9.5,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2044340873995997617",
+    "createdAt": "Wed Apr 15 09:03:41 +0000 2026",
+    "text": "[ Pendle | Crypto + RWA ]\n\n最近 Pendle 上了几个和RWA有关的很有意思的市场，在说这几个具体的市场之前，先闲聊一下。\n\n从产品上来说，我觉得这几个RWA相关的市场时机非常适合，尤其是现在加密市场整体低迷，不仅是链上理财越来越靠近传统金融：曾经的靠做合约基差作为收益的链上稳定币大哥Ethena现在只剩下11%的资产继续在做基差交易，而剩下的89%都是持有的稳定币现金，其中不少都依靠美债获取收益；甚至连币圈的永续合约交易也被rwa抢尽风头：从黄金，到银，再到原油，hyperliquid上的原油单日交易量甚至超过了BTC。\n\n现在不是RWA这个概念最火的时候，最火的时候应该是一年前吧。但看起来现在正是RWA在crypto稳步发展的阶段，且是明确的大势所趋。这也让我想起 Y Combinator 办公室墙上的一张初创公司周期发展图（见配图），大多数初创公司在最开始都会有一波大热，然后降温，面对现实，最后稳步发展，当然，也有不少就在这些过程中消失了。同样的周期也适用于币圈的各种叙事，RWA是为数不多的经历了大热后，目前正在稳步发展的叙事。\n\nPendle 特别适合迎接这些RWA理财产品上链：只要是理财，核心就是收益，有收益就会有波动，有波动就会有人想锁利有人想搏一搏，最后就会有人买Pendle的PT，有人买YT。\n\n如果你还不了解pendle 的PT和YT，强烈建议去仔细阅读一下官方文档。在这里就简单介绍一下：买PT相当于存定期，收固定利率；买YT相当于做PT的对手方，收浮动利率的收益，而买YT时付出的成本就作为PT的固定收益了。  如果这听起来还是有点绕，甚至可以把他当作是一个预测市场。假设一个资产的PT的利率是10%，如果你认为最终的收益大于10%，那就可以考虑买YT；如果觉得最终的收益会小于10%，或者对10%的收益已经满意了，就可以买PT。  * 以上都是为简单说明而作的大概解释，强烈建议大家去读一下文档。\n\n目前Pendle上的几个和RWA相关的市场：\n- Ember的eACRED\n底层资产是Apollo做的 Apollo Diversified Credit Fund，这是传统金融里最大的资管公司，管理规模约 $750B。这个基金目前净值约$1.6B，主要做的就是在放贷收息。像这种基金，在传统金融里最大的缺点就是不容易退出，有退出流动性的限制，而经过securitize上链后就很好地解决了这一点，如果想要退出，可以直接在链上卖出，不需要经过基金繁琐的退出流程。\n\n - Saturn 的 USDAT 和 SUSDAT\nUSDAT的底层资产就是美债，就不多说了。\n有意思的是sUSDAT，底层资产是微策略的STRC。STRT本身的利息是每个月浮动的，目前是11%，而pendle上的sUSDAT的PT目前的收益是14%固定年化。\n\n - apyX 的 apyUSD\n底层资产也是微策略的STRC，目前pendle上的apyUSD的PT收益也是14%固定年化。\n\nPendle作为工具，为博弈的双方提供了一个平台。每次你买一个PT，就意味着有人持有着一个YT，也许是提供流动性的池子，也许是想要博弈更高收益的YT购买者。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 0,
+    "images": [
+      "tw_2044340873995997617_1.jpg"
+    ],
+    "goldScore": 8.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2041862418721014145",
+    "createdAt": "Wed Apr 08 12:55:11 +0000 2026",
+    "text": "如果Hyperliquid的潜在最大利好是传统金融机构的adoption，那么最大的问题就是ADL机制。\n\n每次说到Hyperliquid ADL的机制，评论区总有无数的“这是一个feature，不是bug”，“有了ADL的机制才保证了hype的稳定运行”，等等。\n\n从不同的角度来讨论，你怎么说都对，并且我也没说这是一个bug。但对于机构，这确实是个问题，尤其是传统金融机构来说，安全、合规、稳定，是最重要的。\n\n机构是无法接受仓位在某一天的某一刻，也许是周六的凌晨3:05在没有任何通知的情况下仓位突然消失了，因为被ADL了。这对交易本身是灾难，对擅长做各种对冲的机构来说，更是一个灾难。\n\n这个问题对于hyperliquid来说似乎无解，甚至jeff并不认为这是问题，但对传统金融机构来说，这可能是个门槛。\n\n借用我一位传统金融机构的朋友的话：只要adl存在，你的交易就在接受长尾风险(negative tail)的同时，放弃了潜在的长尾收益(positive tail)。\n\n上面这些讨论只是从最近火热的RWA交易引申的一些想法。我之前也发过推，提到前段时间因为大宗商品的交易而出圈到传统金融的大佬都第一次听说了hyperliquid（我也因此开始定投，我觉得一月底到二月初的那一波涨幅一定程度上也来自于此），我和身边还在传统金融的朋友提到hyperliquid，他们的第一反应也是“不得了不得了”，但提到adl，就都会说“这是个需要解决的问题”。",
+    "likeCount": 0,
+    "retweetCount": 7,
+    "replyCount": 23,
+    "viewCount": 16007,
+    "images": [],
+    "goldScore": 7.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1993319174827917472",
+    "createdAt": "Tue Nov 25 14:01:40 +0000 2025",
+    "text": "[Perp DEX 赛道撸空投解析]\n\n主要介绍 TGE 时间预期、积分发放情况、拿分方式。\n\n按发币时间预期排序\n\n1. @edgeX_exchange \n\nTGE 预期：\n12月2日 是这一季积分的最后一周，Polymarket 上 12 月发币的概率是 64%。目前每周分发30万分，预计积分总量为730万分。\n\neLP 金库：\n有积分，但很少，10万u 每周只有2分，过去一个月年化12%\n\n获取积分：\n交易是主要的积分来源，可以分为持仓和交易量。\n - 持仓：如果不想交易，可以做资金费率套利，在有收益的情况下顺便拿一些分，但整体而言拿分效率不高。edgeX的 BTC 和 ETH 的费率非常稳定的在 11% 左右，binance平均在6%左右，在3倍杠杆的情况下，年化在7.5%左右。推特上看到有人说持仓1万u的 BTC 每周可以拿1.4分，但我没有实测过。\n\n - 交易量：目前20万-30万交易量/分，用我的脚本和lighter对刷，获取积分的成本在20-35u/分左右。\n\n只剩下最后一周了，大家量力而行。",
+    "likeCount": 0,
+    "retweetCount": 9,
+    "replyCount": 12,
+    "viewCount": 11075,
+    "images": [],
+    "goldScore": 8.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2039040703389368360",
+    "createdAt": "Tue Mar 31 18:02:41 +0000 2026",
+    "text": "\"with the post-weighting distribution criteria applied consistently across all participants\"\n\nPlease publish the full formula and clearly explain why most users are receiving significantly fewer tokens than expected.\n\nThe math itself is straightforward:\n21% allocated to points holders\n = 210,000,000 tokens\n7,311,219 total points ->\n210,000,000 / 7,311,219\n = 28.7 tokens per point\n\nEven accounting for your “post-weighting distribution criteria,” if many users are receiving less than 28.7 EDGE per point, then logically some participants must be receiving much more than 28.7 EDGE per point.\n\nSo WHO are they?\n\nAnd are they, coincidentally, the same group receiving the 14% airdrop allocation?\n\n@edgeX_KF @edgeX_exchange",
+    "likeCount": 0,
+    "retweetCount": 3,
+    "replyCount": 13,
+    "viewCount": 13080,
+    "images": [],
+    "goldScore": 7.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2028816043951460838",
+    "createdAt": "Tue Mar 03 12:53:33 +0000 2026",
+    "text": "周末认真读了一下 Pendle 的 2026 roadmap\n\n正文第一段就打到我了，Pendle 确实懂用户，尤其是像我这种defi理财的用户：\n\n“在 DeFi 领域中最有经验的用户，当有吸引力的收益机会变少时，并不会停止寻找收益，而是会变得更加挑剔——不仅对资金配置更加谨慎，也更加珍惜自己的精力。\n通常情况下，他们会选择退守到那些简单、低摩擦、可靠的平台，在那里继续赚取相对稳健、适度的回报。”\n\n我在 DeFi 接触的第一个协议是 Aave，当时被链上简简单单的借贷的高收益震惊到了。\n\n但第一个让我觉得“这东西设计得也太聪明了”的，是 Pendle。虽然拆解收益并用来交易的概念在传统金融也有类似的，但 PT / YT 这个结构结合 defi 特有的积分/空投，并给予不同风险偏好的玩家不同的选择，读完文档就真的被惊艳到了。（同样被惊艳到的项目还有 usual 🥲 和 lighter…算了不说了）\n\nPendle 的 @boros_fi 是在币圈特有的资金费率上的创新。\n\n我一直想系统性研究一下 Boros，但过去几个月基本都在改进 perp dex 的套利脚本，实在没时间。\n\n我觉得 Boros 应该可以像我前几天分享的期权套利一样，很适合在交易所本来就有保证金的情况下，开一些套利仓位来提升收益。\n\n所以接下来准备好好学习一下 Boros 和潜在的套利机会。",
+    "likeCount": 0,
+    "retweetCount": 7,
+    "replyCount": 9,
+    "viewCount": 13379,
+    "images": [],
+    "goldScore": 8.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1937447029845708966",
+    "createdAt": "Tue Jun 24 09:45:42 +0000 2025",
+    "text": "分享一下细节和一些数据，我这个策略只是普通的跨交易所价差套利，也不指望靠这个有很高的收益。\n\n我个人的理解是，跨交易所的价差套利最大的成本不是滑点而是交易费，所以除了专业做套利有交易费优惠的很难有超额的收益。我写这个脚本，一方面是因为 Lighter 目前没有交易费，且其他交易所也有一些交易费优惠活动（比如 Backpack 针对交易量的交易大赛），让我这样的业余选手也有足够的盈利空间；另一方面是纯粹出于兴趣，看着自己写的代码自动赚钱，虽然收益不高，但很有成就感。\n\n我主要做的是 ETH，因为抓了三天数据，在流动性好的交易对中，ETH的价差波动最大。如果在价差0.02%的时候开仓，价格回归后关仓，每天倒三个来回，2倍杠杆，年化大约是20%。目前除了Lighter以外，我监控了其他三个交易所的价格，主要交易集中在其中一个手续费最低的交易所。\n\n开关仓的阈值可以根据市场情况或个人目标进行调整。阀值调低可以增加交易量，刷Lighter的分，阀值调高可以稳定盈利，但交易量会减少。我目前的设置是价差0.035%开仓，在反向价差的0.015%关仓，这样一个来回就是0.05%的收益。等程序稳定运行一段时间后再把阀值调低来刷交易量试试。\n\n主要的风险和影响因素：\n - 代码有bug导致对冲有问题\n - 下单时发生滑点\n - 价格回归的周期过长\n - 越来越多专业套利的人进场 Lighter\n\n花了差不多 4 天时间，代码已经可以连续稳定运行 20 小时，目前仓位约为 4 万 U，收益为 25 U，年化约 23%，已经非常有成就感了🥳🥳🥳\n\n如果有专业或和我一样的业余写代码套利的朋友请 say hi，让我也能看到你们的内容，一起交流学习！\n\n* short Lighter price diff = (best bid in Lighter - best ask in counter exchange)/mid price\n* long Lighter price diff = (best bid in counter exchange - best ask in Lighter)/mid price\n\n数据已同步到 google sheets：https://t.co/lbmDXRNOQ2",
+    "likeCount": 0,
+    "retweetCount": 7,
+    "replyCount": 18,
+    "viewCount": 14223,
+    "images": [
+      "tw_1937447029845708966_1.jpg",
+      "tw_1937447029845708966_2.jpg"
+    ],
+    "goldScore": 9.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2076846826334933093",
+    "createdAt": "Tue Jul 14 01:50:44 +0000 2026",
+    "text": "开玩笑啦 其实是资费套利。\n\n你手里的海力士有无限的上涨空间，我手里的海力士有100%的年化，我们都有美好的未来。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 2539,
+    "images": [],
+    "goldScore": 3.8,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2074287361723150344",
+    "createdAt": "Tue Jul 07 00:20:20 +0000 2026",
+    "text": "[ 去年疯狂的 Perp DEX summer | Lighter ]\n\n看到 LIT 涨得这么疯，实在没忍住，找出了去年在Lighter做套利顺便挖空投的 Google Sheets 来怀念一下。\n\n我接触Lighter的时间并不早，从2025年5月才做了第一笔交易，然后开始写代码。\n\n那时候的AI还很笨，Lighter的API文档和屎一样，全靠自己手撸的代码，终于6月才开始实盘跑了起来。\n\n一边跑我一边调试一边增加资金，让我意外的是，收益却一路上升。中间还经历了Lighter对免费账户加了300ms延迟的变化，却一点都没有影响收益。\n\n半年下来平均年化100%左右，$七位数的资金量。这应该是我第一公开分享这整段时间的收益率，这只是中性对冲套利的收益，还没有算上Lighter的空投。\n\n今年上半年虽然有赚钱，但都是吃的去年的老本：\n - BP和edgex的空投\n - spacex的ipo（去年年初$400B的估值投的）\n - Derive 上套利（现在也已经没机会了）\n - 其他的合约价差套利（最近收益很低，15%都没有）\n\n看起来好像赚钱了，应该开心，但想象一下从年化100%的大资金稳定策略一下子跌到年化15%。\n\n有一段时间确实特别焦虑，每天都在调试代码，想策略，甚至助眠都是靠闭上眼睛虚空想策略。\n\n直到中途出去度假了一次，发现其实什么都不做也不会怎么样。于是彻底躺平了，不再去卷策略，又回归到了撸毛/理财，交易所里8%的收益我就满足了。\n\n虽然我自己躺平了，但我还是鼓励有冲劲的年轻人们多花时间研究，多动手尝试，只刷推特是找不到属于你自己的机会的。",
+    "likeCount": 0,
+    "retweetCount": 4,
+    "replyCount": 12,
+    "viewCount": 10670,
+    "images": [
+      "tw_2074287361723150344_1.jpg"
+    ],
+    "goldScore": 9.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1940172860456411457",
+    "createdAt": "Tue Jul 01 22:17:11 +0000 2025",
+    "text": "@waterrecreation @Terminal_fi 毕竟converge整条链都是为rwa设计的",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 271,
+    "images": [],
+    "goldScore": 3.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1939965886464463272",
+    "createdAt": "Tue Jul 01 08:34:44 +0000 2025",
+    "text": "前几天 Ethena 生态的项目 @Terminal_fi 开始预存款了，现在完整 Ethena 生态的雏形已经展现：Ethena + Converge + Ethereal + Terminal\n\n想要明白 Terminal 的业务，需要先了解 Ethena, Converge, Ethereal 分别是做什么的。\n\n1⃣Converge 和 Ethereal 是什么？\nConverge 是 Ethena 和 Securitize 推出的高性能 appchain，基于 Arbitrum Orbit + Celestia 构建，允许用稳定币 USDe/USDtb 付 gas，专门为RWA和机构交易设计。\nEthereal 则是 Converge 上的高性能 DEX，专注于现货和 perp 交易撮合，最终结算都通过 Converge 完成。\n\n2⃣Terminal Finance\nTerminal 是一个部署在 Converge 链上的 DeFi 流动性平台，主要服务对象是机构级用户。\nTerminal 的本质是一个为 收益型稳定币（yield-bearing stablecoins）和蓝筹资产（ETH、BTC 等） 设计的现货 DEX + 流动性路由层，服务对象是项目方、机构和高净值资金。它的目标不是做通用 AMM，而是解决一件事：\n\n怎么让这些能“生息”的资产既能被用来交易，又能持续产出收益？\n\nTerminal 提供的机制是：\n - 项目方（比如 Ethena）或其他协议，可以将自己的 yield-bearing 资产与某个蓝筹币（如 sUSDe/USDe、weETH/ETH）组成交易对；\n - Terminal 会自动管理这些交易对背后的资产，将其配置到对应收益来源（如 staking、rebasing、revenue-sharing）中；\n - 用户或做市商提供 LP 时，系统自动帮其将资产转为收益型版本，并将产生的利息收益返还给 LP（或协议本身）；\n - 所有这些过程透明、无需手动操作，并且在 Converge 的高性能环境下运行，适合机构的高频大额交易。\n\n最终，Terminal 将变成一个在 Converge 上“模块化的、自动收益优化的流动性层”。\n\n📕 Ethena 生态\n至此，Ethena生态已经非常清晰了：Ethena的稳定币是基础，Converge 是链，Ethereal 处理交易，Terminal 管资产流动性。\n\n👉为什么这套体系值得关注？\nConverge 是专门为RWA和机构交易设计的链。Terminal 和 Ethereal 是 Converge 上最早落地的两个项目，分别承载资产端（资金进出与收益管理）和交易端（高性能撮合），逻辑非常清晰。如果说传统 DeFi 是为散户和早期用户设计的，那么这套体系的目标用户就更偏向于管理数百万甚至上亿美金的资金团队：高频交易、低滑点结算、跨资产部署和点对点清算，全都在链上跑通。\n\n👉Robinhood 昨天的宣布意味着什么？\n昨天 Robinhood 宣布将构建自己的 Arbitrum L2，并推出 tokenized stocks，进一步验证了链上 RWA 是下一个爆发点。但他们主要做的是前端整合与资产发行，而不是链本身的流动性基础设施。Converge + Terminal 的组合，正好是 RWA 资产发行之后最缺的一块拼图：一个能接住大规模稳定币、支持链上收益优化、并允许构建机构级流动性的底层系统。\n\n虽然没有锁仓，但考虑到目前没有收益且存款时间长度不确定，我会考虑小额存一些。\n这里是我的 referral link: https://t.co/pgsjeKqsZc",
+    "likeCount": 0,
+    "retweetCount": 5,
+    "replyCount": 4,
+    "viewCount": 7030,
+    "images": [],
+    "goldScore": 8.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2041449629745598717",
+    "createdAt": "Tue Apr 07 09:34:54 +0000 2026",
+    "text": "Boros @boros_fi 即将重新开放Hyperliquid上两个原油市场的资金费率交易。\n\n过去的这一两周以及接下来的时间里，原油市场预计会继续大波动，这也意味着资金费率会有很大的波动，因此在Boros上有很大的操作空间。\n\n不论是单方向地交易资金费率，还是作为价差套利时资费对冲的工具，还是通过对冲来固定资费套利。\n\n其中非常重要的是，5月和6月的原油期货价格相差了超过10%，而从明天开始，hyperliquid上的原油合约的指数价格即将从5月的期货价格向6月的期货价格滚动，每天滚动20%。\n\n目前5月的WTI期货价格为$112，6月的WTI期货价格为$98，这意味着指数价格每天都会下降 $2.8，继而影响资金费率。\n\n这会给交易带来更多的复杂度，但也带来很多机会。\n\n如果这段时间在Boros上做原油市场的资费交易，一定要有足够的保证金，因为波动会很大。",
+    "likeCount": 0,
+    "retweetCount": 4,
+    "replyCount": 3,
+    "viewCount": 11661,
+    "images": [],
+    "goldScore": 7.8,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1994077158545801678",
+    "createdAt": "Thu Nov 27 16:13:37 +0000 2025",
+    "text": "这套框架适用于其他任何所与 Lighter 的价差套利，包括bp、ext、paradex等等\n\n如果你们真的适配到其他dex了，就能感受到 @edgeX_exchange 的流动性和订单簿深度比起其他 perp dex 真的是断层的好。",
+    "likeCount": 0,
+    "retweetCount": 8,
+    "replyCount": 14,
+    "viewCount": 24920,
+    "images": [],
+    "goldScore": 6.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1994075222815682798",
+    "createdAt": "Thu Nov 27 16:05:55 +0000 2025",
+    "text": "[ 价差套利代码开源 ]\n\n过去十多天都在 Cookie 的 @edgeX_exchange 月榜上排到了榜首，\n\n所以明天我会开源一份最基础版本的 edgeX <> Lighter 价差套利框架，应该是全网第一个？\n\n事实证明分享干货不影响yapping，yapping也不影响分享干货。\n\n这是我自己觉得比较舒服的方式：\n - 读者看到了干货\n - “广告”内容都是真实的，读者甚至可以亲自体验和确认\n - 我也能从中拿到一些奖励\n\n所以 读者、项目方、作者 三赢。\n\n这可能有点半路开香槟了，但还是要感谢大家的支持！",
+    "likeCount": 0,
+    "retweetCount": 24,
+    "replyCount": 36,
+    "viewCount": 43287,
+    "images": [
+      "tw_1994075222815682798_1.jpg"
+    ],
+    "goldScore": 9.9,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1994040462043124040",
+    "createdAt": "Thu Nov 27 13:47:48 +0000 2025",
+    "text": "今天的价差套利，我是那个利\n\n被套了1650u\n\n原因是 Lighter 的 websocket 的订单簿推送疑似有问题 ，\n说“疑似”是因为团队还没有公开声明，但Discord的API频道里有很多人表示有一样的问题。\n\n我昨天开始感觉到磨损变大，还以为是因为流动性差。\n\n今天早上起来一看，发现亏了1650u，算上机会成本，实际的损失更大。\n\n一看 log，得了，一直在高买低卖。\n\n这也是我为什么一直不在我开源的脚本里加入自动平衡仓位的原因 - API 返还的数据不一定是对的，程序自动化管理仓位平衡是非常危险的，不适合开源给大家。",
+    "likeCount": 0,
+    "retweetCount": 4,
+    "replyCount": 28,
+    "viewCount": 28283,
+    "images": [
+      "tw_1994040462043124040_1.jpg"
+    ],
+    "goldScore": 9.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1991499916565156018",
+    "createdAt": "Thu Nov 20 13:32:35 +0000 2025",
+    "text": "为什么选择 DEX？\nWhy DEX?\n\n为什么选择 Perp DEX？\nWhy Perp DEX?\n\n为什么选择 @edgeX_exchange ？\nWhy @edgeX_exchange ?\n\n收入为王。\nRevenue is king.\n\n如果没耐心，快进到 6 月份，你会看到 edgeX 如何一路冲到协议收入第二。\nIf you’re impatient, fast forward to June, you’ll see how edgeX climb all the way to #2 in protocol revenue.",
+    "likeCount": 0,
+    "retweetCount": 12,
+    "replyCount": 53,
+    "viewCount": 37098,
+    "images": [
+      "tw_1991499916565156018_1.jpg"
+    ],
+    "goldScore": 9.1,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2059868305335144618",
+    "createdAt": "Thu May 28 05:24:09 +0000 2026",
+    "text": "[ 过去一个月 | 赚钱版 ]\n\n虽然过去一个月错过了很多机会，但也还是赚到了自己能赚的钱。这里也算是总结一下最近在干啥：\n - Pendle上的 PT-apxUSD，年化15%。\n - 以Lighter为中心的多个交易所价差套利，年化约15%\n - Variational上的套利，套利年化约15%，如果按照盘前20u/分的价值来算积分年化，大约是120%，总年化135%。实际上我自己算帐时是按照保守的5u/分来算的，年化45%。\n - 在Extended上存了金库，并保持仓位拿OI分。金库本身的收益大约9.5%，积分按照0.3u/分算，大约是5%（其实还能更高，但我仓位开得不大）。总年化15%。\n - 还有其他的我称之为exotic套利，一些偶发的另类套利，比如之前发过的一晚上在derive套利了55万u，最后还回去了30万u。\n\nps: 不建议任何人再去derive套了，因为事情发生后，他们在5月9日修改了“服务协议”以及“交易规则与市场公平政策”，直接把保护做市商的错误报价写进了协议。\n\n虽然是熊市，但市场上还是有适合不同人的各种机会。昨天和一位朋友吃饭，他提到了他身边有人在做一个项目，也是类似Lighter那样的机会，一天手撸100个号拿积分。\nLighter那时候我就说过这种机会就是纯靠执行力、毅力、还有时间，我是真做不到，也是真佩服能做到的。\n\n中登总结：多动手多尝试，找到适合自己的路径，是消减焦虑最好的方法。",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 6,
+    "viewCount": 12527,
+    "images": [],
+    "goldScore": 7.5,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2037180469033275590",
+    "createdAt": "Thu Mar 26 14:50:47 +0000 2026",
+    "text": "最近身边很多人都开始玩tradfi或者大宗商品的费率套利，Pendle的 @boros_fi 最近也上了很多大宗商品的交易对，包括Hyperliquid上的 S&P 500。\n\n我之前也说过，最近会开始研究boros来增加一些被动收入。目前做的第一件事就是比较 implied APR 和 backward-looking cumulative realized APR，可以理解为做一些简单的回测。\n\n注意，是 cumulative realized APR，而不是网页上显示的即时的 underlying APR。\n\n先大概解释一下这三个不同的APR。\n - underlying APR：目前该市场的实际费率。比如币安上的BTCUSDT永续合约的合约费率是年化10%，那么 Boros 上的 underlying APR 就是10%\n\n - implied APR：Boros上交易的费率价格所对应的费率。接着上一个例子，如果币安上的费率是10%，而 Boros 上的费率是5%。当你在 Boros 上看多费率时，你就可以按照5%的费率固定付出，并按照 underlying APR 的费率浮动收入。\n\n - backward-looking cumulative realized APR：这是指过去x天实际的费率APR，可以理解为给过去的费率做一个回测。\n\n以配图的币安上的BTCUSDT市场为例，图中的 realized APR 就是从今天开始往前推，计算过去这些天的实际的资金费率的年化。\n\n比如这个Boros上的市场刚开始交易时，implied APR 是5%，而我们倒推回去的realized APR是 2.4%\n\n也就是说，如果我们在11月27日在Boros上看空费率，卖出YU，会收到固定的5%年化，而实际付出的只有2.4%，收益年化是2.6%。实际的回报率约等于 2.6%/5% = 52%。\n\n而如果在2月5日左右做空费率的话，可以收到5%的年化，实际付出是-1%，也就是另外收入1%，总年化达到5%。实际的回报率约等于 6%/5% = 120%。\n\n当然，如果你交易错了方向，也会有大百分比的亏损，这也是为什么我做的第一件事就是观察implied APR和realized APR：他们两者的差就是市场预期与市场实际走向的差额。\n\n如果从这个单独的市场来看，只要无脑空就随时都能赚钱，因为市场预期的费率一直高于实际的费率，但事情显然没有这么简单。\n\n接下来我会把目前Boros上的交易对都回测一遍，看看是不是市场总是这么乐观。",
+    "likeCount": 0,
+    "retweetCount": 12,
+    "replyCount": 7,
+    "viewCount": 23132,
+    "images": [
+      "tw_2037180469033275590_1.png"
+    ],
+    "goldScore": 9.1,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1950903551523189038",
+    "createdAt": "Thu Jul 31 12:57:07 +0000 2025",
+    "text": "过去两周，我在跑的三个中性策略整体年化收益约 136%，也就是5.2%的 ROI（实际收益更高，因为一周前我加了 50% 的资金，但年化计算是按目前的资金量来算的），已扣除所有手续费，包含策略本身的套利收益、返佣以及资金费。现在基本把能从币圈挪出来的资金都投进去了，包括百万 DeFi 账户里的 $35 万，所以现在暂时是“65万DeFi记录”了。\n\n高收益带来的副作用是把自己搞fomo了。过去一周我几乎没怎么休息，也没发推，刷推特的时间加起来不超过 10 分钟。原因是：我知道策略还有优化空间，滑点还能更小，同时也有了收益更高的新策略构思。于是每天睁眼就在写代码，闭眼睡觉时还在思考怎么优化。听上去有点凡尔赛，但这种相对（优化/不优化，做/不做新策略）真的带来很多焦虑，因为只要一天没有优化、一天没让新策略跑起来，就觉得自己每天亏了几千u。比如前几天在搞交易所手续费减免，每天 2000 万交易额，减免 0.01%，就是 $2000 一天的差距。\n\n虽然知道这种状态不健康，但仔细想了想，唯一能缓解焦虑的方法就是把问题一个个解决掉：优化现有策略、写新策略、让它们上线，所以最近就一直在埋头苦干。\n\n📒 这里简单分享其中一个策略（有一定门槛，需要币安 VIP 级别降低手续费，或者加入做市商计划拿返佣）：\n\n涉及的三个合约：\n1. 币安 BTC-USDT 永续合约\n2. 币安 BTC-USDC 永续合约\n3. 另一家交易所的 BTC 永续合约\n\n主要收益来源：\n1. 跨所价差套利\n2. 合约资金费率\n3. USDC/USDT 价格波动\n4. BTC-USDT 与 BTC-USDC 合约间的价差波动\n\n所以本质还是跨所套利，但关键点在于 动态调整 BTC-USDT 和 BTC-USDC 的仓位，通过两者价差变化放大收益。可以说是把一个套利做成了三个套利，资金利用率提高了，收益率也就提高了。",
+    "likeCount": 0,
+    "retweetCount": 13,
+    "replyCount": 29,
+    "viewCount": 31274,
+    "images": [],
+    "goldScore": 9.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2082826674337435663",
+    "createdAt": "Thu Jul 30 13:52:30 +0000 2026",
+    "text": "grvt 的空投和解锁计划已经可以看到了\n\n如果选的是无锁期的，那么你可以获得的grvt代币总数（包括未解锁的），应该是积分的19.5x左右。\n\n即使选的是无锁期，目前看来也有两种不同的结果：\n1. 分三次发放：今天发放40%，4个月后解锁40%，8个月后再解锁最后的20%\n\n2. 分四次发放：今天发放5%，4个月后解锁10%，8个月后解锁40%，12个月后解锁最后的45%\n\n从我社群里的讨论和我身边朋友的结果来看，第二种很大概率是对 自成交低成本刷交易量 的制裁。\n\n我身边的一些朋友，当时只存了金库，拿11%的利息+存金库的积分，结果都是第一种。\n\n我自己是存了金库+开了对冲仓位拿OI的积分+高频价差套利，也是第一种。\n\n而群里的几个碰到第二种解锁的朋友，大多是当时自成交的。（不代表第二种的肯定都是自成交的，只是我目前看到的最合理的解释）",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 10,
+    "viewCount": 19978,
+    "images": [],
+    "goldScore": 7.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1948293267700752454",
+    "createdAt": "Thu Jul 24 08:04:47 +0000 2025",
+    "text": "我觉得 @pendle_fi 上的 hwHLP-PT 还是挺香的，19.5% 的APY，而且有充足流动性，10万u也没有什么滑点，尤其适合本来就存了 HLP 的朋友。\n\nhwHLP 是 @Hyperwavefi 做的代币化 Hyperliquid 的 HLP金库，我之前也有提到过。本质上就是用户存钱到 hyperwave，然后hyperwave再存钱到HLP，以此做到HLP的代币化。\n\n风险提示：Hyperliquid 的 HLP 本身是有亏损的风险的，hwHLP-PT 在这之上加上了hyperwave和pendle的protocol risk。pendle我觉得基本上没问题，hyperwave有审计但项目比较新，请大家自己做好功课。",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 10,
+    "viewCount": 9283,
+    "images": [
+      "tw_1948293267700752454_1.jpg"
+    ],
+    "goldScore": 6.8,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1945779375250579927",
+    "createdAt": "Thu Jul 17 09:35:28 +0000 2025",
+    "text": "再补充一些关于具体操作的： \n1. 存款前先在Pro的页面建立好自己的策略，然后点击保存，这样存款后会直接按照你的策略开始开仓。 \n\n2. 可以在官网的 Stats 页面看到不同资产的24小时/7天/30天/90天的资金费率（见配图），方便建立你自己的策略。我目前有两个账号，一个全塞了PUMP，另一个是HYPE，ETH，BTC 各 33%。 \n\n3. 关于存款和取款的手续费：从Hyperliquid和Arbitrum存取款完全没有手续费，但如果其他链跨过去有0.06%的跨链手续费。建议还是自己跨到arb或者交易所提到arb后存款，秒到账。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 8,
+    "viewCount": 5922,
+    "images": [
+      "tw_1945779375250579927_1.jpg"
+    ],
+    "goldScore": 7.6,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1945766987805634715",
+    "createdAt": "Thu Jul 17 08:46:15 +0000 2025",
+    "text": "这几天市场又热起来了，所有资金费率相关项目的收益也都冲到了近期高点，比如 Ethena 的 sUSDe、Resolv 的 wstUSR 和 RLP。如果单看一些币的资金费率，像 PUMP 这种高达 100%+ 的费率实在是很诱人。\n\n所以趁机介绍一个我其他账户在存的新项目 —— Liminal（@liminalmoney），目前 TVL 约 $50m，还处于 epoch 0 阶段，使用需要邀请码，因为每个账号最多只有5个邀请码，现在我只剩2个邀请码了，如果实在找不到邀请码且认真想要存的可以来dm我。\n\n这个项目做的事情很简单，专注于资金费率套利，没有花哨的稳定币机制，目前也没有积分活动（虽然不排除之后会有）。Liminal 的产品逻辑也很直接：帮助用户在 Hyperliquid 上做现货+永续反向对冲的资金费率套利。\n\n他们的收费结构是从收益中抽成 10%，没有盈利就不收费，用户只需正常承担 Hyperliquid 的交易费。\n\n那问题来了，为什么不自己手动做而要用 Liminal？\n\n✅ Liminal 提供更优的 execution，滑点比手动操作小\n✅ 可以灵活配置多个套利标的，并按百分比分配资金，调整策略也很方便\n✅ 策略执行是自动化的，不用自己一直盯盘\n✅ 如果将来推出积分活动，还能顺手撸毛\n\n其实类似的一键套利产品很多交易所也在做，但 Liminal 毕竟是链上的，资金存在自己钱包里，策略也更自由，收益可以复投或转出，界面设计也相当干净清爽。\n\n由于 Liminal 还在 epoch 0，所以为了风控，只放出了 $10m的 PUMP 的额度，并且在3小时内就没了，大家可以多关注。",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 17,
+    "viewCount": 18686,
+    "images": [
+      "tw_1945766987805634715_1.jpg"
+    ],
+    "goldScore": 8.5,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2077645939553030378",
+    "createdAt": "Thu Jul 16 06:46:07 +0000 2026",
+    "text": "昨天刚发完这条，价差就掉到了30%，于是平了一半仓位，去掉磨损啥的，就算是4%的收益吧。\n\n平仓的路径是买回了SKHY，然后空了SKHYNIX的合约，相当于把差价收敛仓位换成了资金费率套利仓位。\n\n另外更正一个评论区里指出的错误：在IBKR里short selling收到的现金是没有利息的",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 5,
+    "viewCount": 19941,
+    "images": [],
+    "goldScore": 5.6,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2001697997017747681",
+    "createdAt": "Thu Dec 18 16:56:06 +0000 2025",
+    "text": "@traderwanwan 15分钟的价格市场",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 2,
+    "viewCount": 1793,
+    "images": [],
+    "goldScore": 3.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2001621644922794373",
+    "createdAt": "Thu Dec 18 11:52:43 +0000 2025",
+    "text": "@wu48636254 @traderwanwan 可能是生活习惯了",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 600,
+    "images": [],
+    "goldScore": 3.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2093023785712570869",
+    "createdAt": "Thu Aug 27 17:12:11 +0000 2026",
+    "text": "[ Pendle @boros_fi 4腿套利活动 | 开仓就送100u ]\n\n之前我分享过用crossEx配合boros的四腿固定收益套利，现在Boros官方也推出了他们的工具，比我之前做工具的更方便。\n\n前100位按照活动规定开仓并分享的还可以拿到 50 PENDLE 的奖励，价值100u。（截止发文时还剩下七十多个席位）\n\n再简单解释一下 Boros 的四腿套利：\n - 在两个交易所开合约对冲仓位（用 Gate 的 CrossEx 能跨所共享保证金 ）\n - 在 Boros 开对冲仓位对应的Boros资金费率仓位\n\n收益就来源于 Boros 固定的资金费率，不熟悉的朋友一定要好好读一下文档或以前介绍的推文，小心不要操作错了。",
+    "likeCount": 0,
+    "retweetCount": 10,
+    "replyCount": 36,
+    "viewCount": 13625,
+    "images": [
+      "tw_2093023785712570869_1.jpg"
+    ],
+    "goldScore": 9.9,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1972089764829368588",
+    "createdAt": "Sun Sep 28 00:03:34 +0000 2025",
+    "text": "感谢你花时间去认真理解我的脚本！你提到的风险是完全正确的，这也是为什么我几乎每一条提到这个脚本的推特最后都会有风险提示，并且每天都在 Telegram 群里强烈建议大家去理解脚本的逻辑和各个参数，注意风险。\n\n不过，我对你讨论到的一些观点有些不同的看法，所以也想借这个机会系统性地介绍和解释一下这个脚本，让正在用或打算用这个脚本的朋友，对它和背后的风险有更好的理解，毕竟这个脚本确实不适合每一个人。因为想要尽可能详细阐述，所以篇幅可能会有点长。\n\n首先我会从几个方面来说明写这个脚本时的想法和背景，然后尝试解答你提出的几个问题。\n\n1. 目标\n写这个脚本的目的很明确：在有限时间内，用有限的资金，平衡风险和效率，保持稳定且可长时间托管，获得尽可能多的积分。\n\n2. 限制条件\n在明确目标后，就有了以下限制和因素：\n - “在一段时间内，用有限的资金”：我们有时间限制，而且越早越好，因为越早积分越容易拿到。需要在相对短时间内尽可能多获取积分，所以资金利用率非常重要，也就是 交易量/本金 的比例，这就引出了下面的点。\n\n - “平衡风险和效率”：拿积分的方法有很多，手刷、网格、存钱、真实交易等等。对于不同方法，“平衡风险和效率”的判定很主观，所以我只是说一下自己的理解。在这个特定情境下，我把“风险”理解为“使用不同方法获得同等积分时的盈亏期望值”，而“效率”理解为“不同方法在同等时间内获得的积分（交易量）”。之所以说主观，是因为量化盈亏期望需要很多假设。对我来说，最重要的一个假设是市场的随机性，并且我不认为自己有能力判断市场的短期走向，因此我认为每次下单后的市场走向是 50/50 随机的。\n\n - “稳定运行且可较长时间托管”：排除了手动刷交易的可能性。\n\n3. Exit Plan\n在写脚本时，我已经想好了三种结果：\n - 市场波动后最终创新高，这是最理想的：无损刷量。\n - 市场波动后最终下跌，有亏损但亏损小于 交易量 × 手续费，这仍是好结果：小亏离场，用较低成本换积分。\n - 市场一路下跌被套，这是最不理想的情况。如果这种情况发生，我的方案是换成期权，长期持有等待解套。举个例子：假设 8 月以 $120k 的均价被套 1 BTC，我可以先平掉合约仓位，再卖一个 2026 年 3 月到期、行权价 110k 的 Put，收取 $11k 权利金（这是目前 Deribit 上真实报价）。也就是说，只要 2026 年 3 月 BTC 在 $110k 以上，不仅能抹平亏损，还有 $1k 额外盈利来补贴资金成本。如果跌破 110k，也没关系，成本已从 $120k 降到 $110k，可以继续滚动展期（roll forward），6 个月后再降 $10k。\n\n大概介绍了一些背景，现在来回应你的一些观点：\n\n1. “无损的条件是价格一直上行刷新高点”\n无损的条件并不是价格要一直创新高，而是在停用脚本时价格回到新高。在下跌市场中，只要仓位没有完全被套，脚本依然可以继续刷量。至于是否会完全被套，取决于使用者的风险偏好：用全部本金开一单，只要这一单被套，脚本就停了；分成 100 单、每单间隔 0.1%，则要跌 10% 才会完全被套。\n\n2. “如果能做出这个判断，为何不直接玩合约”；“这依然是依赖走势判断盈亏比”\n运行脚本确实需要判断，但不是短期判断，而是长期判断。长期判断不一定是持续新高，也可能是横盘或小跌，而这种判断并不适用于短期合约操作。并且从收益率角度看，短期刷积分博空投与长期持有现货/合约并不冲突。\n\n3. “说愿意拿货就是扯淡，因为拿的总是山顶的货”\n确实没人愿意在山顶接货，我也不愿意。但我的想法是：即使在山顶接了，也可以等着解套，配合期权工具来摊薄成本，具体例子见前文。因为接受这个接货风险的潜在收益是 perp dex 的积分。\n\n4. “你在判断如果下跌，我将能在跌下去之前有多少时间可以刷，这段时间我能刷多少！”\n这部分我没完全理解。如果有人相信自己短期判断能力，认为会跌，也可以选择脚本开空。但正如我之前说的，我自己不会做短期判断。\n\n总结\n我认为这个策略适合我，原因有三：\n - 短期能快速刷量。实测下跌市场每天 交易量/本金 可达 30x，上涨市场可达 120x。\n - 一次设定即可自动交易，多交易所同时运行，无需手动干预。\n - 长期来看，不认为会有腰斩级别的大跌。结合期权，一年内跌幅只要低于 20%，就能回本。\n\n如果你(指的是所有在看这段文字的朋友)不认同我的看法，这完全没问题，因为其中本来就有很多都是主观的选择和判断，但同时也说明这个脚本可能并不适合你。\n\n最后，我觉得这是一次很好的讨论。真心希望每个使用我脚本的朋友都能像你一样，认真理解脚本，仔细思考风险，为自己的资金负责。",
+    "likeCount": 0,
+    "retweetCount": 14,
+    "replyCount": 16,
+    "viewCount": 52192,
+    "images": [],
+    "goldScore": 9.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1977399129144770753",
+    "createdAt": "Sun Oct 12 15:41:05 +0000 2025",
+    "text": "刚才 ETH 一根大阳线后，现在的价差是 Lighter 比 币安高 0.025%，我的脚本也已经自动获利了。\n\n如果在昨天 -0.15% 价差 4x 杠杆开仓的，一天的收益是0.175% * 4 / 2 = 0.35%，年化127%。\n\n如果是今天上午 -0.1% 价差的时候开仓，也能有 0.25% 的收益，年化就不算了，就几个小时，数字大，意义不大。\n\n最大的风险是出现黑天鹅，ETH 涨/跌 25%。\n\n这是最基础的价差套利，又蹭上了合约费率套利，觉得这刚好是个挺好的实例，所以就分享了出来。",
+    "likeCount": 0,
+    "retweetCount": 8,
+    "replyCount": 7,
+    "viewCount": 21992,
+    "images": [
+      "tw_1977399129144770753_1.png"
+    ],
+    "goldScore": 7.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1977324206661538201",
+    "createdAt": "Sun Oct 12 10:43:22 +0000 2025",
+    "text": "[分享一个小小套利的 alpha]\n\n目前的年化约 50%，我自己有约 1000 ETH 的仓位在做这个套利。\n\n套利的市场条件：\n - Lighter 上的 ETHUSDC 合约价格比币安的 ETHUSDC 低 0.1% 左右\n - Lighter 的合约费率是负的\n - 币安的合约费率是正的\n\n因此，可以在Lighter开多，币安开空，在做价差套利的同时获得合约费率的收益。\n\n以我在 Lighter 上做价差套利四个月的经验，我可以负责任地说，这个水平的价差从没维持过3天以上。即使最近的市场比较特殊，但我认为这个价差最久也会在一周内收敛，很有可能明天周一有了流动性后就会收敛。\n\n💻 收益计算\n假设开 3x 杠杆，且差价在 2 天后收敛，那么收益就是：\n - 价差回归后的 0.1% 价差收益，3x杠杆后相较于本金的收益就是 3/2 *0.1% / 2 = 0.15%，年化 27.3%\n - Lighter 开多的合约费率，目前年化 7%，3x杠杆后的年化就是 3/2*7% / 2= 10.5%\n - 币安开空的合约费率，目前年化 9.1%，3x杠杆后的年化就是 3*9.1% / 2 = 13.7%\n\n除以 2 是因为 Lighter 和 币安 两边都需要保证金，所以我们最终计算出来的收益是算入了两边的保证金了的真实收益。\n\n所有收益的年化共计 51.5%，如果你愿意承担更高杠杆的风险，那收益自然也更高。\n\n风险也显而易见：\n - 会不会碰到黑天鹅导致 3x 杠杆的仓位爆仓\n - 价差会不会存在很久都不收敛\n - 合约费率的变化导致两边都需要付合约费率",
+    "likeCount": 0,
+    "retweetCount": 31,
+    "replyCount": 31,
+    "viewCount": 75645,
+    "images": [
+      "tw_1977324206661538201_1.jpg"
+    ],
+    "goldScore": 9.7,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1989985886503674229",
+    "createdAt": "Sun Nov 16 09:16:22 +0000 2025",
+    "text": "经过上周的暴跌以及周末流动性的缺失，现在各个交易所之间的价差已经大到手动套都可以有利润，风险是价格收敛需要的时间（资金的时间成本）。\n\n本来只是想简单分享这个价差，但发现截图刚好可以 说明/佐证 我在前两篇文章说提到的价差套利中很重要的一点：订单簿的深度。\n\n在截图里可以很清楚的看到 @edgeX_exchange 在接近盘口的订单簿的深度是有优势的。这对于价差套利来说有两个优势：\n1. 当价差出现时，可以下大单，尽快的捕捉价差。\n2. 滑点更小，在预计收益时更加准确。\n\n另外，在前两篇文章中，有很多朋友问我关于 “速度” 的问题。\n\n我的回答是，在现在这个市场中，还完全不需要考虑和其他套利者竞争的速度的比较，只需要考虑自己代码执行的策略，尽可能缩短在套利两边的交易所的成交速度就可以了。\n\n最最最最重要的，还是开仓和平仓的逻辑，现在的价差是0.1%，如果在价差0.05%时就开了全仓了，那么就少了者0.05%的收益。\n\n这张截图也是侧面地佐证了这两点。",
+    "likeCount": 0,
+    "retweetCount": 10,
+    "replyCount": 24,
+    "viewCount": 20797,
+    "images": [
+      "tw_1989985886503674229_1.jpg"
+    ],
+    "goldScore": 10.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2068842776335126633",
+    "createdAt": "Sun Jun 21 23:45:29 +0000 2026",
+    "text": "@ZLiao3 @boros_fi 是的，配合Boros还挺好的，希望Gate多配点资源好好做CrossEx，在各种场景其实都挺常能用到的",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 1320,
+    "images": [],
+    "goldScore": 3.8,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2068842211572076702",
+    "createdAt": "Sun Jun 21 23:43:15 +0000 2026",
+    "text": "@boros_fi 我自己也是Gate的CrossEx的一个普通用户，没有任何合作关系，甚至连交易所的反佣链接也没有。只是觉得Crossex刚好适合Boros的套利，所以介绍给大家。我自己在用Crossex的时候也碰到了一些问题，没啥大问题，但偶尔有服务器不稳定的状况，所以大家自己做好风险研究，为自己的钱包负责。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 3101,
+    "images": [],
+    "goldScore": 5.2,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2068835858619183343",
+    "createdAt": "Sun Jun 21 23:18:00 +0000 2026",
+    "text": "[ Boros 中性策略费率套利 ]\n\n最近 Pendle 的 @boros_fi 上的中性费率套利的可行性高了不少，比如Bybit和Hyperliquid上的HYPE套利，能在delta neutral的前提下，收取固定的21.8%的年化收益。\n\n截图里的是Boros自带的工具，可以在 快速开始 -> 捕捉价差 中找到，显示的是根据10倍杠杆计算的收益。\n\n而且不费脑子，只需要跟着网页上的策略说明，开空开多别搞错了，一步步执行就行。\n\n你大概想要开骂了，10倍杠杆，风险也太高了，插个针，一边就爆仓了。\n\n这就要顺带介绍一下 @Gate 的 CrossEx trading 这个产品了，统一保证金，可以跨所交易，包括币安、Gate、OKX、bybit、Hyperliquid。\n\n用我们刚才提到的Boros的机会作为例子，用Gate crossex可以直接在Bybit和Hyperliquid开仓，且用同一份保证金。\n\n以一万u为例：\n - 一般情况：我们需要在bybit和hyperliquid各放5000u保证金，如果开10倍杠杆，那么只要其中一边涨跌超过10%且没来得及调整保证金，那么就爆仓了。\n - 使用 Gate CrossEx：在Gate CrossEx中存入1万u保证金，可以统一保证金用于在hyperliquid和bybit开仓，只要两个交易所没有价差，就不会爆仓。那么如果有价差呢？单边10倍杠杆意味着交易所两边需要有20%的价差才会引起爆仓。这种情况可能发生吗？当然可能，但主流币（BTC，ETH，SOL，HYPE）在这几个交易所的价差达到20%的可能性有多少，大家可以自行判断。\n\n所以 Pendle 的 Boros 配合Gate 的 CrossEx 的可玩性其实已经很高了。",
+    "likeCount": 0,
+    "retweetCount": 24,
+    "replyCount": 20,
+    "viewCount": 27445,
+    "images": [
+      "tw_2068835858619183343_1.jpg"
+    ],
+    "goldScore": 9.9,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2066132400283812335",
+    "createdAt": "Sun Jun 14 12:15:25 +0000 2026",
+    "text": "[ myportfolio.xyz | Variational 套利 ]\n\n上周被币圈的SpaceX打新搞得一团糟，各个钱包和交易所账户也全都混乱了。\n\n下周重点做两件事：\n1. 根据大家的反馈，修复 myportfolio.xyz 的一些bugs（根本修不完），并开始支持券商账户。\n2. 继续狠狠干 Variational（目前我唯一还在“刷”的 Perp DEX），希望TGE时能有2万分。\n\n由于Var上交易不收手续费，所以对套利非常友好。很多人的第一反应大概是和Lighter套利，因为Lighter也是零手续费。\n\n需要注意的是：Lighter虽然是用USDC作为保证金，合约的价格确是跟着USDT走的，而Var则是跟着USDC走的。所以做价差套利时一定要搞清楚这个价差是从哪来的。\n\n但这其实对于非技术型的选手是一项优势，你只需要根据usdc/usdt的波动去Var和Lighter开仓/平仓。收益肯定是不会高的，但想要做到无损刷Var的交易量和持仓拿分应该是问题不大的。\n\n我的 Github 里也在很久之前开源了 Var <> Lighter 的半自动套利代码(variational-v1)，主要的逻辑是：在Var手动下单，在监听到Var的订单成交后马上自动在 Lighter 下对冲单。大家可以用这个代码来做价差套利，也可以用于合约资费套利的开仓/平仓。\n\n因为这个工具在Var的部分是完全手动的，最主要的功能在Lighter的自动对冲单，所以Var这边基本不会有被女巫的风险，也没有任何理由被女巫。",
+    "likeCount": 0,
+    "retweetCount": 4,
+    "replyCount": 3,
+    "viewCount": 9783,
+    "images": [],
+    "goldScore": 8.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2086434249599525149",
+    "createdAt": "Sun Aug 09 12:47:43 +0000 2026",
+    "text": "以这次的TUT为例，再来说一下CrossEx的优势以及潜在风险（划重点）\n\nCrossEx支持用统一保证金在不同的交易所开仓，且头寸的盈亏互抵，因此非常适合价差套利和资费套利。\n\n以TUT为例，假设用2万u开单边1万u的仓位。\n\n传统套利的方法：\n在币安放1万u，开1万u的看多仓\n在bybit放1万u，开1万u的看空仓\n假设开仓时的价格为0.15，那么只要涨到了0.3，bybit这边就爆仓了。而像今天这样的行情，根本没有反应时间，bybit刚爆仓，价格就下去了，币安这边没赚钱而bybit这边却爆仓了，纯亏1万u。\n\n在crossex开仓：\n用2万u保证金，开单边1万u的仓位\n因为头寸的盈亏互抵，即使价格在一分钟内从0.15涨到了0.3，依然没有任何一边会爆仓。\n因为：从0.15涨到0.3，币安盈利1万，bybit亏损1万，crossex盈亏互抵，账户余额依然是2万u。\n\n听起来很美好，那么现在来说一说风险(已经有群友中招了)。\n最主要的风险就是交易所之间的价差：\n在CrossEx用2万u保证金，开单边1万u的对冲仓位，如果两个交易所的价格一直都是同步，那么永远都不会爆仓，但当两个交易所出现价差时，风险就来了，尤其是当你开了高杠杆时。\n\n比如，TUT在bitget和gate的价格最高点分别插针到了1和0.7，而币安和bybit则只有0.33左右。\n\n如果在价格0.15时bitget或gate开了空单，在bybit或币安开了多单：当空单的价格到达0.6时，空单的亏损高达3万，而多单盈利却只有1万，这时候2万u的保证金就已经归零爆仓了。\n\n总结一下：\nCrossEx并不是对冲仓位避免爆仓的避风港，只是一个提高资金利用率，降低风险的工具。\n\n在同样资金，同样仓位，同样杠杆的情况下，CrossEx的对冲仓位的风险远小于在两个交易所独立开仓的风险。但在极端行情下，CrossEx也无法保护你的仓位，因为风险一直都有，CrossEx只是一个降低风险的工具而不是完全消除风险。",
+    "likeCount": 0,
+    "retweetCount": 11,
+    "replyCount": 23,
+    "viewCount": 20675,
+    "images": [
+      "tw_2086434249599525149_1.jpg"
+    ],
+    "goldScore": 9.9,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1977029055896604876",
+    "createdAt": "Sat Oct 11 15:10:33 +0000 2025",
+    "text": "[过去十几小时我的全部操作与思考]\n\n首先希望大家都能平稳地度过这波暴跌。我也是熬了一整夜，这种极端行情虽然残酷，但也是发现自己的短板并成长的最好的机会。\n\n下面是与我相关的时间线（我现在在欧洲，但为了大家方便，我把时间转换成了北京时间）：\n\n23:00 - 23:30 | 第一波下跌\n第一波下跌，ETH 从 4300 跌到了 4100，我的价差套利脚本刚好将 Lighter 上的仓位从 +690 ETH 减到了 -127 ETH。\n\n23:53 | Lighter 出现问题，停止套利脚本 \n我观察到Lighter的服务器出现了一些问题，套利的脚本也一直在报错，因为以前吃过太多亏了，所以就安全起见，将脚本停了。\n\n00:00 | 收到对冲仓位不平衡的警报\n收到了我的监测系统的警报，Lighter的仓位突然从 -127 ETH 变成了 +114 ETH。于是我立马查看仓位核实，发现API返还的和前端显示的都是 +114，也就是说我从完全对冲的仓位变成了 226 ETH 的多仓。这时候我有点慌了，担心是在第一波下跌中出了什么问题导致订单现在才成交，于是我开始核对储存在本地和Lighter上的交易记录。\n\n00:06 | 再次收到警报，仓位风险敞口 270万U (图一)\n在收到第一个警报时，我有点摸不着头脑究竟是怎么回事，但看到第二个警报，仓位敞口 690 ETH，我大概猜到应该是 Lighter 宕机后数据回滚了，因为当时仓位和我几个小时前的仓位非常接近。但这时我依然不确定该平仓，还是什么都不操作等待Lighter的修复。\n\n在紧急联系了项目方后，基本确定是由于数据回滚，并且在逐步同步当中，所以我就没有做任何操作，等待数据同步。\n\n01:39 | 仓位恢复正常\n期间我一直用我自己做的Telegram机器人在监控仓位变化，由于我是用多个账户在跑策略，所以这个机器人在当时的情况下发挥了非常重要的作用。帮助我快速查看各个账户的余额和仓位情况，不仅是便于统计，对当时的心理状态也有很大帮助，想象一下如果在当时的那种情况下还要一个个账户用ledger手动切换查看仓位，大概会手抖到连 Ledger 的密码都输错\n\n终于，在 01:39 收到机器人信息，仓位回到 -127 ETH，确认套利脚本没有在这次大跌和 Lighter 宕机中遭受损失。我也安全起见，没有开启套利的脚本（这也让我在后面逃过一劫）。\n\n但没想到的，马上迎来的是 ETH 插针到 3400 的极端行情。\n\n04:50 - 05:20 | 市场开始第二波下跌，并在05:20达到最低点。\n这时候我还躺在沙发上看电视，虽然手机一直在震，但没有看，也错失了最好的一波套利/抄底的机会。\n\n05:34 | 看了眼手机，注意到市场情况。\n我最先看到的是一位一直在交流套利的朋友给我发的信息，说 Binance 和 Lighter 上ETH的价差一度达到了 5%。于是我第一时间开启了套利的脚本。\n\n05:36 | 套利脚本开始运行，并完成第一笔交易 (图二)\n虽然错过了 5% 的价差，但当时依然有 1% 所有的价差，每成交 1 ETH 就有大约40u 的收益。当时那位朋友喊我的时候说的是“半个小时赚到了过去一个月的利润”，我自己则是半小时里赚到了过去一周的收益。\n\n因为几个小时前刚经历过 Lighter 的宕机，所以我花了大约十几分钟观察和监控订单和仓位，在确保 Lighter 当时能够稳定运行后，开始寻找其他的套利机会。\n\n期间我一直在后悔没有早点运行套利脚本，错失了一次罕见的ETH 5% 价差的好机会，但后来想到，如果提早开了套利脚本并且价差不断扩大，那不但可能会因为提早满仓而吃不到 5% 的价差，反而可能会在满仓的情况下吃到 05:20 时的那根针而单边爆仓。\n\n06:04 | $0.95 买入 USDe\n在开启套利脚本并观察了二十多分钟确认运行没有问题后，我开始打开币安/各种群/推特开始寻找机会，并且在06:04 以$0.95 买入 USDe。本来打算搬到链上套利，但看到有人说卡住了转不出去，所以就没有操作，留在了账户并挂了个 $0.99 的价格。\n\n06:30 | 开始检查在撸的各个 Perp DEX 的仓位\n因为注意到市场状况的时候是已经插了针后回升了，所以我没有第一时间检查在撸的 Perp DEX 的仓位，如果爆仓也已经爆了。在开启了套利脚本并完成了 USDe 的套利后，我开始查看和整理 Perp DEX 的仓位。\n\n我在 Perp DEX 上的仓位都是用我的开源脚本在跑着，所以我的第一件事是连接服务器，将脚本都暂停了。然后开始一一检查仓位，幸运的是，我在10月6日提醒了群友们将脚本的参数设置地保守一些 (图三)，我自己也将参数设置的非常保守，所有的Perp DEX上的仓位浮亏约 16,000U。\n\n07:00 - 10:30 | 监测套利脚本，学习别人的成功\n剩下的时间里，我一边盯着套利脚本，因为担心再次宕机，一边也刷着各种群和推特，关注zerobase的进展，学习别人成功的套利，确实学到了很多。\n\n10:30 | Lighter 再次宕机，休息\n我的当地时间已经04:30了，当时也正打算把套利脚本关了去休息，刚好碰上Lighter再次宕机，庆幸当时的仓位不大，留着不管也没有爆仓的风险，所以就把脚本停了，和几个群的群友们闲扯了几句就去休息了。\n\n14:40 | 醒来，再次开启套利脚本\n睡了四个小时，醒来刚好看到 Lighter 又重新修复上线了，所以起床开了套利脚本。同时也看到挂着的 USDe 也成交获利了，一切暂时告一段落。\n\n----分割线----\n收益：\n - 套利脚本\n - 抄底 USDe\n\n亏损：\n - Perp DEX 的仓位\n - Lighter LLP (意料之外的大亏损，好在存了很久，一直以来的收益覆盖了昨天的大跌，但还是很肉疼)\n\n暴露的短板 和 新的学习：\n1. 我的套利策略的理论最大仓位是6倍杠杆，如果不是昨晚 Lighter 提前宕机了让我停了我的脚本，有可能就会在以满仓的状态在第二波大跌中被爆仓。\n2. 我需要给我的TG机器人加一个一键减仓的功能，碰到这样的极端行情就可以减一半的仓来做套利的同时也能控制风险。\n3. 学习到了wbeth, bnsol 这些 wrap 代币的套利，当时完全没有想到这方面的套利，是我新的学习。\n\n非常幸运这次没有爆仓，整体依然是盈利的。这次暴跌不仅再次提醒了我风控的重要性，也让我在实战中发现了策略上的短板，并学习到了不少极端行情下的套利思路。\n\n希望这些经验对大家也有所帮助。如果大家看到厉害的套利操作，也可以评论分享，一起学习一下。",
+    "likeCount": 0,
+    "retweetCount": 22,
+    "replyCount": 17,
+    "viewCount": 29287,
+    "images": [
+      "tw_1977029055896604876_1.png",
+      "tw_1977029055896604876_2.png",
+      "tw_1977029055896604876_3.jpg"
+    ],
+    "goldScore": 10.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2078394182708740375",
+    "createdAt": "Sat Jul 18 08:19:22 +0000 2026",
+    "text": "同一个交易所里同时有SKHYNIX和SKHY的仓位，本来要平SKHY的仓位，结果平了SKHYNIX的仓位，过了一天才发现 😭\n\n本来都是对冲仓位，结果这么一错，就不对冲了。\n\n本来我是有对冲仓位的监控的，防止被ADL之类的，但是因为这几天在交易那个价格收敛的策略，仓位很乱且经常会变化，加上还有券商的仓位，所以暂时关了监控，打算这周末改一下代码。\n\n另一个没有发现的原因是，我在5个交易所都开了SKHYNIX和SKHY的仓位，得5个交易所的仓位加起来，再加上券商的仓位才能算出总仓位。\n\n之所以发现了，是因为我还有个资金费率的监控，会显示各个交易所的仓位和对应的资金费，收到资金费结算的时候瞄了一眼信息，感觉好像不大对，结果一算…心痛💔",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 2115,
+    "images": [],
+    "goldScore": 7.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2002395553389240696",
+    "createdAt": "Sat Dec 20 15:07:57 +0000 2025",
+    "text": "最近套利的收益越来越低，所以开始扣细节了。\n\n首先就是花时间研究了一下我一直都注意到但没有时间去仔细分析的一件事：Lighter 虽然是用USDC，但 Lighter 上合约的价格似乎更多的是跟着USDT。\n\n下面的图中，我们以币安的 ETHUSDT 和 ETHUSDC 作为基准，比较 Lighter 上 ETH 合约价格与 Binance 合约价格的价差，图中是过去一周的数据。\n\n绿色的线是USDC/USDT的汇率，对应右边的坐标轴。\n\n橙色的线是Lighter的ETH合约价格与币安 ETHUSDT 的价差。\n\n蓝色的线是Lighter的ETH合约价格与币安 ETHUSDC 的价差。 \n\n通过过去一周的数据，可以清晰地看到，随着USDC相对USDT越来越贵，Lighter 上的 ETH 合约价格与币安上的 ETH 的 USDC 的合约价差越来越大，而与USDT合约的价差却基本在同一个区间内变化。\n\n理论上来说，Lighter用的是USDC，所以 Lighter 上的合约价格随着USDC/USDT汇率的变化，更应该跟着币安上USDC的合约价格走。但至少在过去一周里，Lighter上的合约价格更像是以USDT结算的价格。\n\n这是做价差套利中需要考虑到的因素之一，尤其是当市场竞争变得更加激烈，收益更是由这些细节决定。",
+    "likeCount": 0,
+    "retweetCount": 7,
+    "replyCount": 11,
+    "viewCount": 29419,
+    "images": [
+      "tw_2002395553389240696_1.jpg"
+    ],
+    "goldScore": 7.6,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1997295908372038042",
+    "createdAt": "Sat Dec 06 13:23:47 +0000 2025",
+    "text": "@beefnoode @tradexyz @Lighter_xyz good job!\n美股合约的资金费率一定要放进逻辑里，不像BTC/ETH之类的那么稳定，会很夸张",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 1774,
+    "images": [],
+    "goldScore": 5.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2091149211182006485",
+    "createdAt": "Sat Aug 22 13:03:18 +0000 2026",
+    "text": "发现大部分朋友对 hip-3 都完全不了解，所以简单介绍一下。\n\n什么是 “hip-3” ?\nHIP-3（Hyperliquid Improvement Proposal 3）是 Hyperliquid 最重要的升级之一。它允许任何符合条件的人都可以在 Hyperliquid 上创建自己的永续合约市场，而不需要 Hyperliquid 官方批准。\n\n其中最重要的一个条件就是质押 500,000 HYPE，按照现在的市场价，大约是 $38m。\n\n当一个项目在hyperliquid上创建自己的永续合约市场了，我们就俗称它为 hip-3 项目，其中最知名的就是 https://t.co/Ea8JVCRKTK 。\n\nHyperliquid 提供什么？\n你可以把 Hyperliquid 理解成整个交易基础设施。它负责提供：\n - 撮合引擎\n - 保证金系统\n - 清算系统\n - 底层链和 API\n - 以及最重要的：共享流动性\n\n也就是说，HIP-3 项目不需要自己开发一套交易所，而是直接使用 Hyperliquid 的底层基础设施。并且可以和Hyperliquid共享市场流动性，在hip-3项目里交易BTCUSD与在hyperliquid上交易BTCUSD是一模一样的，用的是同一个订单簿，同样的流动性。\n\nHIP-3 项目负责什么？\nHIP-3 项目则负责运营自己的市场，例如：\n - 决定上线哪些交易对\n - 提供价格（Oracle）\n - 设置市场参数（杠杆、资金费率等）\n - 做市场推广、拉新和用户运营\n\nHIP-3 项目与 Hyperliquid 的利润分成\n主要根据交易对的不同分成两种情况：\n1. Hyperliquid的原生交易对\n比如BTC的永续合约，hip-3项目一般会在hyperliquid的手续费基础上再加手续费作为收益。\n\n2. HIP-3 项目自己上的交易对\n比如tradexyz上的各种rwa合约，比如entropy目前已经上了的SNDK和ANTH。这种情况下，hip-3项目和hyperliquid会平分手续费，各拿手续费的50%。\n\n大概介绍完了，说回 entropy 这个项目：\n因为上面提到的手续费分成的设计，entropy的反佣只支持他们自己的交易对，目前只有ANTH和SNDK，大家千万不要以为交易什么都有返现。那不是把hyperliquid用成Lighter了吗，没有这么好的事！🤣",
+    "likeCount": 0,
+    "retweetCount": 7,
+    "replyCount": 13,
+    "viewCount": 30080,
+    "images": [],
+    "goldScore": 8.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1992914680868897244",
+    "createdAt": "Mon Nov 24 11:14:21 +0000 2025",
+    "text": "@truxon9479 @edgeX_exchange btc的资金费率都挺稳定的，edgex和lighter一般都是刚好对冲掉",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 414,
+    "images": [],
+    "goldScore": 5.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2036112563553890673",
+    "createdAt": "Mon Mar 23 16:07:18 +0000 2026",
+    "text": "刚查完了背包 @Backpack  的空投：全军覆没。\n\n只有 17 万分的队长号拿了 2W 个币，大概是出于怜悯吧。\n\n情绪上的不满，就不在公开场合宣泄了，分享几点客观事实，算是给这个项目收个尾，也给自己一个交代：\n\n1. 大户分号是再正常不过的行为。\n\n分号并不是因为发现了什么积分漏洞，而是作为奔着盈利去的真实套利交易者，我们会考虑通过分散资金，以获得更好的杠杆率支持，更大量的 rate limit，和尽量规避单点故障的风险。\n\n拿背包来说，它的一二赛季适合做 basis trading。\n\n假设你有 10wu 的本金，你开一个号，每个子账户放 1wu，就可以把资金效率利用到极限，无需多号。\n\n但假如你有 2M、5M 呢？\n\n单号明显就是资金效率很低的做法。\n\n而到了第三赛季，API 交易不再降权，做跨所价差套利，可以又吃又拿。\n\n不过背包那时出了个奇葩的规则，如果月交易量大于一定的值，账户等级高了，就没有办法拿到正常比例的反佣。\n\n当时我做的是 @Lighter_xyz 和 BP 的 $BTC 盘口价差套利，一个月能烧得出几十万手续费。\n\n所以我还需要刻意控制着每个号的交易量，让每个号不要超过官方设定的上限。\n\n毕竟价差利润的大头都以手续费的形式上缴给背包了，我们做小农经济的，不精打细算，根本赚不到钱。\n\n2. 我全程没有做过账号隔离。\n\n我不仅不做隔离，还豪不避讳地跟项目方坦诚沟通过我的情况。\n\n因为我就是个真实到不能再真实的用户，为什么要浪费精力和项目方玩这猫鼠游戏？\n\n比如日本线下交流时，我当着老板和老板娘的面就说了为了在你们这做好量化套利，我用了全家亲朋好友的 KYC。\n\n再比如第四赛季，我本来已经撤资了，但是看到产品数据掉的厉害，官方开始用积分权重倾斜试图引导用户开点儿 OI 。\n\n于是我又放了 3m+ 进去，一个号 500K，现货合约对冲仓位，做 $SOL 和 $USDC 的息差套利。\n\n这事儿我也和 BP 的工作人员打过招呼，说 TGE 前，我作为队长，怎么也要支持下。\n\n不然他们一天 20% 的平台 OI 涨幅是哪来的？\n\n我不仅在背包不做隔离，我参与的其他所有 perp dex，也都没有隔离。\n\n因为所有的项目方在听完我的实际需求，看完我的跨所套利订单记录之后，都认为我在合理范围内多开几个号，完全是为了满足自己的交易需求，应该予以支持。\n\n毕竟我这种长期稳定的 order flow，能够给项目带来源源不断现金利润，但凡一个懂怎么做生意的人，不说跪着喊爹，至少不应该盯着我搞吧？\n\n如果真的觉得我有问题，不欢迎我这种用户，为什么不早点告诉我？\n\n然而普天之大，无奇不有，人类物种的多样性，远超我的想象。\n\n3. 我体感很差的地方，不在于亏多少钱。\n\n作为成年人，选错了项目，那一定是自己水平差，识别 bullshit 的能力有限。\n\n盘前币价这个鬼样子，本来手里的分就算换成 U，对应自己前期支付的资金成本和机会成本，就已经是一笔不聪明的投资了。\n\n但币价差这种事儿，我是一点儿都不会怪项目方，毕竟投过的垃圾玩意儿多了，多一个不多，愿赌服输。\n\n但问题是，按江湖规矩，既然经济价值你是创造不了一点，那情绪价值方面最起码照顾下吧？\n\n而它的选择是：不照顾，不在乎，不尊重。\n\n那这事儿就让我觉得自己很小丑了。🤡\n\n说直白点：你可以让我不赚钱，你可以让我亏钱，但你不能一点不给我留面子，让别人看我像个傻逼。\n\n手贱又翻看了下自己过去发的背包套利攻略帖，贴几条出来给大家感受下，猿哥，作为一个被官方定义成恶意 farmer，不配拥有背包代币的用户画像：\n\na. 一赛季 basis trading 讲解，第一个把背包联合保证金机制的正确用法讲清楚的帖：\nhttps://t.co/hpx1KLhmIO\n\nb. 限时 $APT 奖金活动，循环贷打法，帖子发完，池子就涨了1M ：\nhttps://t.co/tRxvNAEkNQ\n\nc. 三赛季跨所套利交易复盘：\nhttps://t.co/ndRg8TWvdc\n\nd. 四赛季 $SOL 息差打法：\nhttps://t.co/uPkDkCyP03\n\ne. 索拉纳息差流升级版，通过主子账号，不断循环贷互相借入 $SOL 和 $USDC ，无损爽吃 15% APY 打法：\nhttps://t.co/E86iXsxgAW\n\nf. 最小丑的是这条，我居然前两天还在给推友们建议，拿到币之后，可以关注链上的单边 LP 机会，结果最后大家连第一步都没事实现，笑死...\nhttps://t.co/kxT5gsVf0q\n\n4. 被女巫的小散户们需要一个交代。\n\n我已经是老登了，干啥啥不行，就剩个千帆看尽后的心态好。\n\n洋洋洒洒写到这里，我发现这事儿，我已经基本放下了。\n\n毕竟我还是在没有 IP 隔离的情况下，开了多号是吧？\n毕竟我只高价买了 5 个 NFT，却续航了 10 个号是吧？\n毕竟我只是一厢情愿的觉得跟项目方打好了招呼是吧？\n\n真要上纲上线，严查到底，女巫就女巫吧，谁让背包是全宇宙最合规的交易所呢？\n\n而像我这种输的起，总觉得多一事不如少一事，不希望在烂人烂事儿上做过多纠缠，坏自己风水的人，本就是那些不守江湖规矩的人最喜欢的下手目标。\n\n偶尔遇人不淑，吃亏也是正常。\n\n我也不会因为这个项目没赚到钱，而对自己的套利撸毛能力产生任何一丝丝怀疑。\n\n因为 perps 上半场，我的小农经济已经很版本之子了，而下半场的链上 rwa 又会和我司业务完美衔接，我的 edge 只更大，会继续又吃又拿。\n\n像背包这种玩来玩去无非就是个联合保证金和循环贷拉杠杆的项目，从头到尾就被我和群友玩穿了，我们探讨出来的策略永远领先版本。\n\n只是玩到最后，对方不认账了。\n\n那我吸取教训，后面要我的流动性，我的 flow，我的背书的项目，提前签好合同，给自己多一道保护就好。\n\n但那些花了心血、时间、金钱，撸了背包一整年，币价不能回本也都硬着头皮认了，可今天一觉睡醒，连账号都被女巫，颗粒无收的散户们，此时此刻需要一个交代：\n\n1. 到底罚没了多少分？标准是什么？\n\n2. 为什么大家体感上受灾面积那么大，根本不像是 15%？怎么证明只罚没了 6000W？\n\n3. 为什么走了我的链接的群友，有的没事儿，有的有事儿，而出事儿的都是分多的？\n\n4. 为什么官方人员之前鼓励租 NFT，后面又说 NFT 有问题？\n\n....\n\n该给的交代得给到，人嘛，其实都挺渺小的，还是要相信些因果报应的。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 0,
+    "images": [],
+    "goldScore": 7.5,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1937295471287910663",
+    "createdAt": "Mon Jun 23 23:43:28 +0000 2025",
+    "text": "@daidaibtc 现在是第三周，前两周手动交易，第一周交易量50万，亏损2000u，拿了37分。第二周交易量10万，一直放着赚资金费率，盈利7000u，拿了11分。",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 0,
+    "viewCount": 1422,
+    "images": [],
+    "goldScore": 4.2,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2061388015033815515",
+    "createdAt": "Mon Jun 01 10:02:56 +0000 2026",
+    "text": "[ Boros 历史数据回测 ]\n\n上次计算了一次的费率，这次直接做了一个网站，回测了 Pendle 的 Boros 上所有已到期的市场，结果挺让我惊讶的。\n\n这次回测主要分为两个方面：\n1. implied APR vs. forward realized APR\nboros上的费率与未来时间收入/付出的费率\n\n2. implied APR vs. cumulative settled APR\n费率结算时boros上的费率与实际结算的费率\n\n说人话来解释，\n第一种是比较当时boros上的费率以及如果以这个费率在boros上买入/卖出后，未来会收到/付出多少费率。是某一天和到期日这段时间的收益。\n第二种是比较boros上的费率以及实时的结算费率，从第一天开始累积。是从第一天开始到某天的收益。\n\n非常有意思的是，几乎所有的BTC和ETH市场，在Boros上的implied APR 都比实际的费率更高。也就是说，只要在Boros上short rate：支付实际浮动资费，并在Boros上收取固定资费，基本上不会亏。\n\n这只是第一步，没有算上手续费，没有考虑订单簿的深度。\n\n但大家还是可以去玩一下，如果发现哪里计算有问题，欢迎反馈。\n\n网址：\nhttps://t.co/L205MamgOo",
+    "likeCount": 0,
+    "retweetCount": 5,
+    "replyCount": 6,
+    "viewCount": 11230,
+    "images": [
+      "tw_2061388015033815515_1.jpg"
+    ],
+    "goldScore": 8.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2079154789745922274",
+    "createdAt": "Mon Jul 20 10:41:45 +0000 2026",
+    "text": "Pendle 的 @boros_fi 上线了 Hyperliquid 的 SKHYNIX 市场，8月5日到期（15天后），所以现在又多了一个工具来做海力士相关的交易/套利。\n\n1. 首先是直接和Boros相关的：\n可以在Boros上做多/做空SKHYNIX的资金费率。\n\n目前Boros上的隐含费率大概是30% APR，过去一周Hyperliquid上的费率是32% APR，而过去一个月是75%APR。\n\n如果你认为费率会上升，可以在Boros上做多：付出固定30% APR的费率，收入Hyperliquid上实际的费率。\n\n反过来也一样。\n\n2. 结合传统券商，交易所，和Boros，做成一个年化20%+的中性固定收益套利（假设1倍杠杆）：\n\n在券商买入SKHYNIX的正股，在Hyperliquid合约做空，并在Boros做空费率。\n\n这么一来，股价的波动由正股和合约对冲了。由于在Boros上做空了费率，因此在Hyperliquid上做空合约收到的资金费都会交给对手方，而我们则收到Boros上固定的30% APR 的费率。\n\n整个仓位就成了约年化20%+的固定收益。\n\n3. SKHYNIX和SKHY 的价格收敛：\n首先风险提醒一下，这不是简单的套利，而是有风险的交易，因为他们的价格并不是一定会收敛。\n\n因为这个交易需要做多SKHYNIX，很大一部分的交易成本就是资金费率了。现在有了Boros，可以考虑在做多SKHYNIX的同时，做多Boros上的SKHYNIX市场，这样就能够以固定30% APR的资金费率持有SKHYNIX的看多合约。\n\n我自己还是偏向 #2，做成固定收益。因为现在订单簿比较薄，可以挂单等着成交，如果需求比较大的，也可以直接在Boros上申请OTC交易。",
+    "likeCount": 0,
+    "retweetCount": 9,
+    "replyCount": 9,
+    "viewCount": 18634,
+    "images": [],
+    "goldScore": 8.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2094387326440894932",
+    "createdAt": "Mon Aug 31 11:30:25 +0000 2026",
+    "text": "@Ricky_qqa 小资金做什么价差套利都合适",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 1076,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2091955100046471616",
+    "createdAt": "Mon Aug 24 18:25:37 +0000 2026",
+    "text": "entropy 官方终于宣发了，Ribbit 领投 $1400万。\n\n从来不发我自己不参与的项目，过去几天已经套利刷了6百多万交易量，一边盈利一边刷。Hyperliquid上的growth mode本来就只有0.008%的手续费，万一都不要，再加上entropy的反佣，套利的玩法非常多。\n\n这两天要去研究一下他的资金费率的公式，和其他交易所有很大不同，尤其是周末的时候，可能有套利空间。\n\ntier 4 最高级的反佣：\nhttps://t.co/e1rAQFX4ub",
+    "likeCount": 0,
+    "retweetCount": 11,
+    "replyCount": 20,
+    "viewCount": 24893,
+    "images": [
+      "tw_2091955100046471616_1.jpg"
+    ],
+    "goldScore": 8.5,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2086963136507130353",
+    "createdAt": "Mon Aug 10 23:49:20 +0000 2026",
+    "text": "[ CrossEx开源项目更新 | 增加Boros面板，捕捉10%-30% APR固定收益套利 ]\n\n我一直都有介绍Pendle的Boros的四腿套利：跨所开合约对冲仓位，再利用Boros锁定资金费率，以此完成锁定资金费率的固定收益套利。\n\n之前这个策略最大的问题是跨所的资金利用率以及高杠杆的单边爆仓风险，但有了CrossEx之后，这两个问题几乎不再是问题了。\n\n因为CrossEx是跨所统一保证金，且跨所盈亏互抵，所以只要持有像BTC或ETH这样的跨所对冲仓位，对保证金几乎不会有影响，因为交易所之间的价差非常小。\n\n即使是极高的杠杆，爆仓的风险也大大减小了（注意，风险依然存在）。\n\n以1万u本金，10倍杠杆为例在CrossEx里开仓BTC的对冲仓位，分别用5000u开每边5万u的仓位，价格的波动对保证金和爆仓没有影响，只有当两个交易所出现价差时才会对保证金有影响。\n\n那么什么时候会爆仓呢？\n当开空一边涨10%，亏损5000u保证金，且开多的一边跌10%，亏损5000u保证金，这时候CrossEx的仓位才会爆仓，也就是说当两个交易所BTC的价差达到20%时。作为参考，1011时BTC的最大价差大约是5%。\n\n因此，利用CrossEx，Boros的锁定资金费率套利的可行性及潜在利润大大提升，而风险则是减小了不少。\n\n因为目前CrossEx只支持API，没有交互界面。可以用我开源的CrossEx项目进行操作，里面还包括了一步步的指导以及自动的对冲仓位开仓，比手动开仓的滑点及对冲磨损更低。\n\n风险提示：只要有杠杆就有爆仓风险，即使策略能经受1011的考验也不能预测未来表现。面板中的收益率按照CrossEx的最高杠杆计算，以体现最高资金利用率下的收益率。",
+    "likeCount": 0,
+    "retweetCount": 15,
+    "replyCount": 43,
+    "viewCount": 12108,
+    "images": [
+      "tw_2086963136507130353_1.jpg"
+    ],
+    "goldScore": 10.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2086963139040448832",
+    "createdAt": "Mon Aug 10 23:49:20 +0000 2026",
+    "text": "安装仅需一步，在下面的github地址中有说明：\nhttps://t.co/mHrxgpmrvj\n\n已经安装的朋友只需要运行一个指令进行更新：\nMac: cd ~/gate-crossex &amp;&amp; ./run update\nWindows: Set-Location \"$HOME\\gate-crossex\"; .\\run.ps1 update",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 2,
+    "viewCount": 2377,
+    "images": [],
+    "goldScore": 5.2,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2041226228628357505",
+    "createdAt": "Mon Apr 06 18:47:11 +0000 2026",
+    "text": "SpaceX IPO closing market cap > $3T, NO 的概率今天到了20%，虽然我是hedging，但我还是觉得这个价格可以说是错误定价了：\n1. 榜一的 YES 买家包揽了 90% 的 YES\n2. 目前在市面上买 SpaceX pre-ipo 的价格还是在 $1.7T 左右\n3. 几周前的消息是 SpaceX 将以 $1.75T 的价格 IPO，前几天的消息是将以 $2T 以上的价格IPO，如果要在IPO当天达到$3T，需要 50% 的涨幅。这对于一家普通上市公司来说不难，但对于一家已经 $2T 估值的公司要到 $3T，并不容易。\n\n另外在这里顺便分享一个套利机会：\n - 在 hyperliquid (ventual) 开多spaceX\n - 在 polymarket 买 NO\n算上3个月的资金费率成本，只要达到$1.3T就能保本，如果高于$1.3T则年化基本在50%-100%之间，最大的风险是：\n1. 资金费率。目前是按照30%年化计算的。\n2. SpaceX 无法在近期完成IPO。\n\n具体数据看配图。\n\n仅供参考，DYOR。",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 6,
+    "viewCount": 29775,
+    "images": [
+      "tw_2041226228628357505_1.jpg"
+    ],
+    "goldScore": 8.4,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2103389833314132054",
+    "createdAt": "Fri Sep 25 07:43:10 +0000 2026",
+    "text": "[ 五大中心化交易所比较 ]\n\n在我的印象里：\nT0：币安\nT1：OKX\nT2：Bybit, Bitget, Gate \n\n但是印象和真实数据还是有偏差的。\n\n为了比较一下交易所之间的真实差别，我让Claude去抓了一些交易所的主要数据进行比较，包括资产储备及其组成，合约持仓量，合约交易量，现货交易量。\n\n具体的数据已经总结在了下面的图里，在这里我想写几个我看了之后觉得比较特别的点：\n\n - 即使2026年有了RWA资产的加持，但各个交易所的月均合约交易量甚至比2024还低。\n\n - 现货交易量则是更惨淡了，因为现货都是加密原生资产，交易量基本腰斩。\n\n - 从合约持仓来看，印象中t1的 OKX 并不领先于剩下的三个交易所。\n\n - Bitget有点雷声大雨点小的感觉了，印象中Bitget的营销做的很好，但从数据来看不论是资产储备、交易量的绝对值或是增长%，都是排最后的。\n\n - OKX的资产储备是最“健康”的，BTC+ETH+稳定币占了87%，而gate则只有51%。\n\n* 数据由Claude抓取，主要来源是defillama和theblock，如果数据有错，欢迎指出，也建议交易所直接联系数据源，毕竟那也是作为交易所marketing很重要的一部分。",
+    "likeCount": 0,
+    "retweetCount": 6,
+    "replyCount": 0,
+    "viewCount": 0,
+    "images": [],
+    "goldScore": 6.2,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1994346643903201311",
+    "createdAt": "Fri Nov 28 10:04:27 +0000 2025",
+    "text": "[ 价差套利框架开源 | edgeX <> Lighter ]\n\n昨天承诺给大家的 @edgeX_exchange 的价差套利框架，如果有能力的话可以适配到其他交易所上，到时候你就会明显体验到 edgeX 的流动性和订单簿深度的优势。\n\n一些说明，\n！！！请务必仔细阅读！！！\n\n1. 使用代码前请仔细阅读 README 文档，理解逻辑与风险。在这里我就不解释代码的逻辑了，如果连这点时间和精力都不愿意付出，就算我解释了，这套代码大概率也对你没有帮助。\n\n2. 不要相信任何人的代码，尤其是涉及钱的。\n\n但如果有人要做恶，大多数人其实是没有甄别的能力的(包括我自己也是)，最好的避开风险的办法是理解逻辑后自己重写一遍。其次是可以把代码扔给AI，让AI扫描一遍。\n\n3. 不要幻想能在网上找到一段套利的代码，开始运行后就能开始稳定印钱。\n\n并不是因为没有人愿意分享可盈利的套利策略，而是因为只要一样的策略和参数全部都分享出来，必定会在几天内就被卷得没有收益。\n\n注意，我说的是中性套利策略，而不是有风险的交易策略，比如网格或是做市。\n\n4. 这套代码虽然可运行，但并不是我生产用的代码，主要是以交流和分享为目的的。\n\n这套代码跑得起来，并且只要改十行代码就能实现除手续费外零磨损刷交易量。\n\n但代码里有非常多可以优化的地方，比如：\n性能类的：\n- 检查所有的 sleep() 的必要性来确保速度\n- 将开仓/关仓的逻辑改为动态的\n- 改变仓位平衡检查的逻辑，让开仓/关仓的代码更有效\n- 根据不同的价差水平分批开仓/关仓\n\n代码/风控类的：\n - websocket 断线后的重连\n - 在 edgeX 开仓前检查 Lighter 的服务器状态\n - 检查 websocket 推送的订单簿的新鲜度\n - 比对 rest api 和 websocket 推送数据的一致性 (昨天踩的坑)\n - 控制发送请求的频率，注意 API rate limit\n\n小小提示一下：“只要改十行代码就能实现除手续费外零磨损刷交易量” 说的是将开仓和关仓的逻辑改为动态的，根据移动平均价差 (moving average) 和移动标准差 (rolling std) 决定开仓和关仓的逻辑。（如果你认真读到这里，就算是个小彩蛋吧。）\n\n---- 分割线 ----\n\nedgeX 的积分季下周三就结束了，但如果你还没有参与 edgeX，又想试试这套代码，可以用我的邀请链接：\n - 直升 VIP 1 费率\n - 额外 10% 手续费自动返佣\n - 10% 额外奖励积分\n\nedgeX 邀请链接：https://t.co/AUEWRSNHcZ\n\n开源脚本地址：https://t.co/NyQY2Hflqm\n\n欢迎所有人的意见和建议，如果有任何问题，欢迎留言，也可私信我加入 Telegram 交流群组（不放公开链接是因为骗子和广告太多了）。",
+    "likeCount": 0,
+    "retweetCount": 7,
+    "replyCount": 22,
+    "viewCount": 9175,
+    "images": [],
+    "goldScore": 8.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1928426936881283166",
+    "createdAt": "Fri May 30 12:23:04 +0000 2025",
+    "text": "百万美金 DeFi 记录 - Day 2\n\n今天没新操作，来介绍下我目前最大仓位（约 28 万 U）的项目：@noble_xyz\n\nNoble 是专注 RWA 的稳定币基础设施，核心功能：\n1️⃣ 帮机构原生发行 USDC（获 Circle 官方合作）和其他稳定币\n2️⃣ 提供链间资产托管与结算（支持 IBC）\n\n目前已有 $600M+ 稳定币通过 Noble 在 COSMOS 发行，是该生态稳定币中枢。\n\n💰积分项目：\n今年 3 月，Noble 推出自家稳定币 USDN 和积分计划：\n - 可选 14.5% APY 收益\n - 或放弃收益换积分（预计未来可换代币）\n\n即使 14.5% 收益已很可观，我仍拿出部分资金参与积分池。因为 Noble 不只是又一个稳定币项目，而是整个加密行业稳定币和 RWA 基础设施的重要拼图。\n\n🚨为什么我敢投下账户里 25% 的资金？\n风控逻辑如下：\n1. 顶级 VC 支持：$18.3M 融资来自 Polychain、Paradigm、Circle\n2. 北美团队，合规审查更严格\n3. USDN 背后为 M^0 链上美债，资产透明\n4. 收益结构清晰：4.1% 来源于美债利息，其余来自积分池里存款的收益\n5. 存款与收益数据链上可查，透明度高\n\n积分活动将在 36 天后 截止，且需要至少存满 30 天才能拿积分，换句话说：只剩 6 天窗口可入场。\n\n目前尚不清楚之后是否直接 TGE，还是开启新赛季。如果直接 TGE，那这波绝对是个大毛。\n\n所以这周，可能是参与积分计划的最后机会了。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 3,
+    "viewCount": 2038,
+    "images": [],
+    "goldScore": 7.4,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "1933459983682638121",
+    "createdAt": "Fri Jun 13 09:42:36 +0000 2025",
+    "text": "百万美金 DeFi 记录 - Day 16\n\n昨天 cUSDO 的 PT 到期了，先换成 USDC 存进 Morpho 吃利息，等后天另一笔 PT 到期后再一起处理。\n\n今天分享一个 年化约 25% 的策略，适合能接受一定风险的朋友：\n我上周用交易账户小仓位偷偷试了下 @Lighter_xyz 的 LLP + 合约费率套利，表现不错，但暂时不会用大仓位。在这里分享一下具体做法和风险提示。\n\n📉 先说风险：\n - Lighter 正在审计中，但还没出报告。\n - LLP 是做交易用户对手盘，虽然 APR 有100%，但还是有亏损的可能，过去三个月最大单日回撤 2.42%。\n - 合约费率随时变，数据基于过去一个月，不保证未来一样。\n - 我的策略用了 2.5x 杠杆（非常保守），不至于一觉醒来爆仓。杠杆越高，收益高，但风险也更高。\n\n⚙️ 策略结构：\n总资金：$70,000\n - $10,000 放入 LLP，吃约 100% 的 APR\n - $60,000 分别存在 Lighter 和币安两边，做合约费率套利（以 BTC 合约为例）\n\n🪙 LLP 金库\nLighter LLP 的存款额度由积分决定，新用户只能存 25%，所以假设向 Lighter 共转入 $40,000，那么你可以在 LLP 存 $10,000。\n\n🔄 合约套利细节：\n - 在 Lighter 开 BTC 空仓，在币安用 USDC 合约对冲\n - Lighter 的 BTC 合约过去一个月年化费率 ≈ 13.3%\n - 币安 BTCUSDC 合约过去一个月年化费率 ≈ 3.4%，且限价单免手续费\n - 以 2.5x 杠杆计算，合约套利的实际 APR 约为：2.5 x $30,000 x 10% / $60,000 = 12.5%\n\n📊 年化总收益估算：\nLLP 收益：$10,000 * 100% = $10,000\n合约套利收益：$7,500\n\n总计：$17,500 / $70,000 = 25% 年化\n注意，这只是当前数据的年化推算，未来不一定能持续这么高。\n\n📌 几点补充：\n- Lighter 有积分计划，在套利收益的基础上还有空投加成，积分的收益很有可能非常可观。\n - Lighter 零交易费，任何操作都不收交易费用。\n - Lighter 的 24h 交易量已是 Hype 的 25%-40%，比 Aster 还高，我看好零交易费带来的长期快速增长。\n - 选择币安是因为我本身就在做交易，有现成保证金，资金利用率高，可以让这个策略的实际收益更高\n - 币安 USDC 限价单免手续费 → 因此可以先挂币安限价单、再在 Lighter 市价成交。记得分批小额操作，避免滑点。\n - 如果你愿意手动操作，也可以频繁换仓到费率差额更高的合约对，但需要注意换仓时开关仓位时的滑点。\n - 如果你不想频繁换仓，想和我一样开了仓就躺着吃资金费率差，不建议参考 Lighter 网站上和其他交易平台的利率差来开利率差额最高的仓位（见图2），因为很快就会被填平甚至变负。\n\n如果你熟悉合约套利，我认为这是一个风险和收益性价比不错的策略组合，尤其是考虑到积分的潜在收益。\n\n#defi #lighter #合约套利",
+    "likeCount": 0,
+    "retweetCount": 7,
+    "replyCount": 6,
+    "viewCount": 11192,
+    "images": [
+      "tw_1933459983682638121_1.jpg",
+      "tw_1933459983682638121_2.jpg"
+    ],
+    "goldScore": 9.3,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2083183189854417243",
+    "createdAt": "Fri Jul 31 13:29:10 +0000 2026",
+    "text": "昨天看到SKHYNIX和SKHY的溢价到了40%以上，刚好正在做一个工具，于是用测试的6000u开仓了，十倍杠杆，刚才平了，赚了3500u。\n\n这个工具就是 Gate 的 CrossEx，本身确实是个好产品，可以用统一保证金交易包括币安、okx、gate、hyperliquid等7个交易所，特别适合高杠杆价差或资金费套利。但是因为只有API，没有UI，所以我就打算做一个开源出来分享。\n\n我大概从两个多月前就开始做了，花了很多时间。但最近Gate 的这件事大家也知道，搞得我不知道该怎么办了。\n\n后来想想，还是决定过两天最后测试一遍就开源分享出来。就是个工具，大家想用的用，不想用的也别来骂我。毕竟代码无罪？",
+    "likeCount": 0,
+    "retweetCount": 42,
+    "replyCount": 45,
+    "viewCount": 85054,
+    "images": [
+      "tw_2083183189854417243_1.jpg",
+      "tw_2083183189854417243_2.jpg",
+      "tw_2083183189854417243_3.jpg"
+    ],
+    "goldScore": 10.0,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  },
+  {
+    "id": "2093268520729530492",
+    "createdAt": "Fri Aug 28 09:24:41 +0000 2026",
+    "text": "[ 又一个神矿的落幕：海力士套利 ]\n\n今年最省心，最舒服，风险收益比最高的套利就是海力士相关的套利了：\n - 资金容量大，几百万u的仓位起不了一点水花\n - 收益高且稳定，甚至什么都不用做就可以躺着盈利\n - 配合交易所各种稳定币的补贴，资金利用率爆表\n\n和大家一起来回顾一下三种套利方式：\n\n一。资金费率套利\n6月份，SKHYNIX合约的资金费率累计约 6%。\n7月份，SKHYNIX合约的资金费率累计约 6.5%。\n8月份，SKHYNIX合约的资金费率累计约 2%。\n也就是说，只要开了海力士的合约空仓，三个月能累计收到约14.5%的资金费率。\n\n资金费率套利最好的办法是用 IBKR 的 portfolio margin 账户持有海力士韩股，同时在币圈交易所空海力士合约。在IBKR里可以直接 借韩元 -> 买海力士韩股 -> 借美元还韩元的债。\n\n第三步最重要，也有不少朋友在这一步上吃了亏，简单来说，如果想要完美对冲，账户里不能有任何韩元的头寸，不管是借款还是余额。因为交易所里做空SKHYNIX合约已经是以美金计价了，其中包含了韩元与美金的汇率波动。\n\n资金费率套利是最舒服的，开了仓就不用管了。我是大约6月底7月初才开始套，大约十天前全部平仓了，五十天时间约 8% 的收益。\n\n二。价差套利\n价差套利分为两种：币圈交易所的合约跨所价差套利 和 币圈交易所与韩股正股间的价差套利。\n\n两种价差套利的利润都非常高（大家现在也可以去拉一下分钟线的结算价格，比较一下各个交易所之间的价差），但我主要做了币圈交易所和韩股正股间的价差套利，因为收益更显化：\n我只在币圈合约价格高于韩股正股时开仓，在等待价格收敛的同时还能吃资金费率（高价差也同时会带来超高的资金费率）。在7月份时，常常发生一天内价差上下波动2%以上。唯一的问题是我人在欧洲，韩股开盘时间是凌晨2点，高强度做了两个星期后，人实在扛不住了，收益也低了很多，于是就放弃了这个收益源。\n\n三。海力士韩股与美股ADR的套利\n这个策略确实不能说是传统意义上的套利，更像是带着套利的思维做交易。\n\n从美股ADR的溢价在35%以上开始，我先是做了两个来回的收敛的，每次的平均收益在5%左右。第三次也是最后一次是大约三周前，溢价从35%一路冲到43%，且维持了两周，终于在这周又回到了30%左右。持仓体验极差，还好控制了仓位，在最初36%的溢价开仓后，又在42%双倍加仓了，最终平局成本溢价40%，并在溢价回到36%左右止盈平仓了。\n\n这个套利里有三个坑很多朋友都踩到了，甚至有朋友三个坑一起都踩了：\n坑一：韩股和ADR的仓位配比不能是按股数的1:10，而应该是按照仓位价值的1:10。如果是按股数的1:10，收益还会受海力士股票价格的影响，而不是单纯地套利 两者之间的溢价百分比 了。具体不解释了，大家可以自己随便选两个价位模拟一下就明白了。\n\n坑二：如果为了避免开多SKHYNIX的资金费率而去券商直接买韩股正股的，像之前资金费率套利里提到的一样，需要还清借来买正股的韩元，否则韩元对美元的汇率每高1%，你就会有 1%*仓位 的亏损。过去两个月，韩元对美元涨了约10%，如果没有做好这一点，就是 10%*仓位价值 的亏损。\n\n坑三：不留余地一次性打完子弹\n如果我在36%溢价时一次性打完子弹，在溢价到43%时大概已经睡不着觉了。群里有朋友甚至在溢价还在百分之二十多的时候看了无良媒体说海力士ADR要开始开放兑换而满仓做了这个溢价收敛，结果到现在别人已经挣了几个来回的钱，他还被套着。\n\n短期内应该不会再有这么舒服的机会了，尤其是这种低风险高收益的资金费率套利的机会。",
+    "likeCount": 0,
+    "retweetCount": 33,
+    "replyCount": 28,
+    "viewCount": 37303,
+    "images": [],
+    "goldScore": 9.5,
+    "domain": "01_crossex_funding_arb",
+    "domainTitle": "跨所统一保证金与资金费率/基差套利：CrossEx 架构实战与大币/RWA价差全解"
+  }
+]

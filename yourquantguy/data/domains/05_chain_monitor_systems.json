@@ -1,0 +1,933 @@
+[
+  {
+    "id": "2102730516403306961",
+    "createdAt": "Wed Sep 23 12:03:16 +0000 2026",
+    "text": "说实话是运气，在看META期权的时候不小心注意到，抱着试试看的心态做了一笔，先做了call spread，因为远期 + out of money，delta很低，即使后面的put spread没有成交，也可以把call spread平了，亏也亏不了多少。\n\n结果没想到还真可以，但是第一次碰到这种情况是真不知道有没有什么我自己没有意识到的坑，所以只做了5套。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 123,
+    "images": [],
+    "goldScore": 4.8,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2102722584345186785",
+    "createdAt": "Wed Sep 23 11:31:45 +0000 2026",
+    "text": "回复这位朋友是想告诉大家，AI很好用，但有时候也很“笨”，尤其是如果你问的内容是你自己完全不了解的，很容易被误导。\n\n不知道prompt写的啥，但AI的整个回答都在质疑这笔交易的真实性，而不是这笔交易是不是成立的套利，有点像是一知半解的人在夸夸其谈。\n\n1. “两个数字不可能属于同一时间的同一标的”\n我早就在原文的评论区贴出成交记录了\n\n2. “就算真成交了，吃两年利息也是假的”\n确实已经吃了两年利息了，没有被提早行权。\n不知道这是哪个模型，但稍微有点蠢：\n即使被行权了，我也可以把仓位全部平了，为什么还要留着call spread？\n\n3. “最高收益$50260概率=0，收在$799得赔$100”\n刚好到最高收益50260的概率确实约等于0，但是收在$799 赚 $49860，收在$740（META现在的价格）赚$24000。而不是“赔”。\n\n4. “portfoliio margin 几乎没有资金成本 不成立”\nportfolio margin的最低要求是账户有 $10万，而这一套期权组合占用的保证金约等于零，每开一套这个仓位，就收到了1万的现金，还会因为“MTM负债逼近1万在到期前被强平”？\n\n5. “摩擦成本能吃掉全部$52收益边际”\n这笔套利不是为了$52的收益，AI说的这种情况是秒开关\n\n6. “那个国债收益是抵押品本来就有的收益”\n如果我的账户里100%都是 AAPL 的持仓，哪来的收益？\n如果我的账户里100%是$10万现金，做了这笔交易后又多了$5万现金，利息收益的本金从$10万变成了$15万，收益怎么没有增加？",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 32,
+    "viewCount": 9933,
+    "images": [],
+    "goldScore": 6.6,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1965716160709575085",
+    "createdAt": "Wed Sep 10 09:57:08 +0000 2025",
+    "text": "[ENA S4 收益预估 & 各种稳定币空投备忘录]\n\n手上一大把的积分，各个项目也在陆陆续续发币，又有锁仓/分批发放等等，所以我整理了一下，算了大概的APR，也方便大家查看。\n\n1. Ethena S4\n9月24日结束，最少分配3.5%代币，具体领取时间还没公布。目前总积分40t，如果按照结束时45t总积分估算，每100万分大约可以领 11.67 ENA，约$9.5。\n\n如果按照积分倍数来换算成年化：\nPendle上USDe的LP积分是60x，sUSDe的积分是30x，对应的APR分别是20%和10%。这仅仅是没有算上任何加成的积分的收益，再加上LP本身的收益以及积分的加成，20%+的年化轻轻松松。没想到S4了还能有这么高的收益，从挖矿的角度看，从第一季到现在，Ethena确实是一代神矿。\n\n2. Huma Season 1\n根据你的锁仓和HUMA质押量，年化在15%-20%。分两期发放：\n - 第一期已经可以领取，10月26日截止。\n - 第二期9月26日开始领取。\n\n3. Reservoir\n分三期发放：8月18日，9月1日，9月15日。\nReservoir是我当时在Berachain存rUSD吃利息顺便拿的积分，当时利息大约是13%左右，积分大概5%，所以年化大约在18%左右。\n\n4. Resolv\n第二季已在9月8日结束，第三季紧接着开始，暂时还没有公布关于第二季的空投发放时间。\n第二季发放5%的代币，暂时看不到总积分，所以没法算大概的年化。\n\n5. Openeden\n9月底TGE，具体细节还得再等等。\n\n6. Sonic\n25%即时解锁，剩下的75%分270天线性解锁。我当时存了Pendle aUSDC LP，积分部分的年化12%左右，LP收益10%左右，总收益年化22%。\n\n目前有积分但离发币还早着的：\n1. infiniFi\n2. Momentum\n3. Strata\n4. Ethereal\n5. Falcon\n6. infrared\n7. Level\n8. Noble\n9. Perena\n10. TermMax",
+    "likeCount": 0,
+    "retweetCount": 5,
+    "replyCount": 12,
+    "viewCount": 14015,
+    "images": [],
+    "goldScore": 8.3,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1925161376990876050",
+    "createdAt": "Wed May 21 12:06:54 +0000 2025",
+    "text": "有很多人说 Huma 存款限额是因为没有足够的市场和需求去有效地运用资金，但我看好 Huma Finance 反而是因为它背后的潜在市场。这个市场究竟有多大呢？\n\nHuma 主要的业务是提供即时流动性解决方案。提供即时流动性的主要对象是 跨境支付机构。\n\n🔍 为什么这些机构需要“即时流动性”？\n\n跨境支付机构本质上是资金中介，它们帮助企业或个人在不同国家之间转账、兑换货币。流程中经常涉及到账户预留、对账结算、资金清算等步骤，这些步骤导致它们有“资金空档期”（settlement delay）：\n\n🧭 举个例子说明：\n一位用户在美国用一个支付机构给家人汇款到泰国。\n美国端收到了钱（比如 $1000），但这笔钱要等一段时间（比如 2~3 天）才能清算、对账完成。\n支付机构为了这种“即时到账”的用户体验，就需要先垫资在泰国这端提前发钱。\n这时支付机构手头可能没有足够的现金流动性，就需要短期借款来完成“秒到账”体验。\n\n💡 Huma 的作用：\n\nHuma 就是在这个过程中介入，为支付机构提供T-0（实时）短期垫资。这类贷款：\n\n通常持续时间只有 3–5 天；\n有对等法币抵押（如托管账户中等值货币）；\n回款路径确定，风险极低；\n而借款方（支付公司）也愿意为“提高客户体验”和“提升资金效率”付出利息。\n\n🧾 这些机构为什么不找银行融资？\n\n因为传统融资的痛点在于：\n - 审批慢（几天甚至几周）；\n - 灵活性差，无法按需快速增减；\n - 无法按“分钟级”频率完成循环融资。\n\n而 Huma 提供的是：\n - 链上资金 → 自动批量撮合 → 数分钟内完成放款\n - 自由进出 → 实时计息 → 可嵌入企业系统中调用\n\n🏦 Huma 的典型客户画像：\n1. 跨境支付机构\n 需求：提前向收款方打款\n Huma 的价值：提供短期垫资、提速体验\n\n2. 电商平台/汇款平台\n 需求：优化资金结算周期\n Huma 的价值：增强资金周转效率\n\n3. 区域支付结算商\n 需求：本地清算但全球流动资金稀缺\n Huma的价值：提供稳定币融资支持\n\n总结：\nHuma 给的“即时流动性”，解决的是传统跨境支付行业的结构性痛点——时间差 +流动性空档。这些支付公司为了提升服务体验和业务效率，非常愿意为几天的短期垫资支付利息。\n\n所以 @humafinance 背后的潜在市场有多大，就看你想象力了。",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 2,
+    "viewCount": 491,
+    "images": [],
+    "goldScore": 5.8,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1937878626503950832",
+    "createdAt": "Wed Jun 25 14:20:43 +0000 2025",
+    "text": "@dabula321783841 首先你这期权的脚就选错了，如果最后价格在630，那你倒亏2000。\n应该是610，630，630，650",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 158,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1937711657272377597",
+    "createdAt": "Wed Jun 25 03:17:14 +0000 2025",
+    "text": "@neoduan23 说实话是机缘巧合😅😅 当时在看meta远期的期权，各种组合看着看着觉得这价格好像不对。。。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 2183,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1937686659094446152",
+    "createdAt": "Wed Jun 25 01:37:54 +0000 2025",
+    "text": "@edgerunner_z 卖期权是不用付利息的",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 2283,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1932731851774312701",
+    "createdAt": "Wed Jun 11 09:29:16 +0000 2025",
+    "text": "百万美金 DeFi 记录 - Day 14\n\n今天没啥新的挖矿动作和分享，补充一组昨天提到的在 Dune 上抓的稳定币 FDV/TVL 数据：\n - 橙色是 USUAL 的 FDV/TVL，蓝色是 Ethena 的 FDV/TVL\n - 下方柱状图显示两者的偏离百分比\n - 自 2 月以来的最大偏离是 20%，也就是说，如果 Ethena 的 FDV/TVL 是 1，USUAL 的从没脱离 0.8 - 1.2 区间\n\n之后可以在图里加上 Resolv，看看 TGE 过后沉淀一段时间，三者是否会出现收敛。\n\n其实我在对冲基金的第一份工作就是 data engineer，我知道数据里有很多巧合和噪音。我并不是说这组数据一定能说明什么。但如果一个趋势持续存在，并且背后有逻辑能解释，那长期来看，在没有其他大的变量的情况下，相信这个趋势会继续存在的期望值就是正的。",
+    "likeCount": 0,
+    "retweetCount": 3,
+    "replyCount": 2,
+    "viewCount": 13095,
+    "images": [
+      "tw_1932731851774312701_1.jpg"
+    ],
+    "goldScore": 8.0,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2064700705978388881",
+    "createdAt": "Wed Jun 10 13:26:23 +0000 2026",
+    "text": "[ Pendle LP-srUSDat | 12% 年化 + Saturn积分 ]\n\n在上次的 PT-apxUSD 幸运逃顶后，昨天把资金放进了Pendle 的 LP-srUSDat。\n\n从结构上来说，srUSDat的安全性要比apxUSD高得多，且除了基本收益外，还有Saturn积分的收益，第一季将在8月8日结束。\n\n注意这里是Strata包装的 srUSDat，而不是sUSDat。\n\n来拆分一下srUSDat究竟是什么：\n1. 最底层是 Saturn 的 USDat，是实实在在的稳定币，目前的底层资产是100%的短期美债，和STRC完全没有关系。\n\n2. 将 USDat 存入Strata的金库时有两个选择：\n - srUSDat: 低风险，低收益，赎回快 (目前7.8%年化)\n - jrUSDat：高风险，高收益，赎回满 (目前20%年化)\n\n两个金库都是将USDat质押为saturn的sUSDat（底层资产变成了STRC），但两者最重要的差别是：\n - 当STRC价格波动下降时，jrUSDat首先承担风险，来保护srUSDat的价值。也就是说，只有jrUSDat归零了，srUSDat的价值才会下降。\n - jrUSDat的赎回有14天的锁仓+sUSDat赎回成USDat的7天赎回期，共21天赎回期；而srUSDat赎回没有锁仓，只有底层资产USDat的7天赎回期，也可直接秒赎回成sUSDat。\n\n目前srUSDat的资产大约$10m，jrUSDat大约$3.3m。也就是说，只有当STRC跌超过33%，才会影响srUSDat的价值。另一种可能性是srUSDat的TVL大幅上升，比如翻倍后达到$20m而jrUSDat的TVL不变，那么缓冲就变成16%了。\n\n3. 持有srUSDat只有7.8%的年化，而存入Pendle LP，目前有12%的年化+积分，市场还有77天到期。收益增加了不少，风险则是多了一层智能合约的风险。\n\n之所以一直在看这些STRC相关的资产，主要还是因为现在币圈容量稍大一点的理财收益都不高，目前只有STRC提供的高风险高收益。\n\n如果选择srUSDat，可以考虑vibe coding一个监控，监控srUSDat和jrUSDat的TVL和赎回情况。\n\n如果想要更稳妥一点，也可以选择Pendle上的 PT-USDat，在BSC上有8.6%的年化收益。USDat目前毕竟是100%的短期美债的稳定币，风险收益比是非常好的。\n\nSaturn相关的各个代币风险排序，大家也可以根据自己的风险偏好在Pendle上找相关的LP或者PT：\nUSDat (美债稳定币) < srUSDat (由jrUSDat保护的收益币) < sUSDat (底层就是STRC) < jrUSDat (高风险高收益)",
+    "likeCount": 0,
+    "retweetCount": 6,
+    "replyCount": 6,
+    "viewCount": 7342,
+    "images": [
+      "tw_2064700705978388881_1.jpg"
+    ],
+    "goldScore": 8.0,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2016641643710206283",
+    "createdAt": "Wed Jan 28 22:36:49 +0000 2026",
+    "text": "@wu48636254 @joejoedefi @capapp 哎 现在的稳定币项目实在是太不性感了 市场的审美也变了",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 231,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2026804223656997165",
+    "createdAt": "Wed Feb 25 23:39:17 +0000 2026",
+    "text": "补充一下，这个账户本来本金是$10M，中途转了$3M到子账户隔离，剩下的$7M最后全部被清算归零了。\n\n但是毫无疑问他在其他交易所是开空了的。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 2,
+    "viewCount": 6889,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2026624133019086985",
+    "createdAt": "Wed Feb 25 11:43:40 +0000 2026",
+    "text": "@Pro_0xBi 同意，mark price和交割手续费我也花了不少时间去研究，风险确实存在，平时风险不大，主要还是极端情况市场大波动时的tail risk比较高。所以后来我基本都做像你说的那样otm的期权，比如HYPE 80 的 call，两边的价格居然相差 $0.43 https://t.co/VSI8g3EBs7",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 4180,
+    "images": [
+      "tw_2026624133019086985_1.jpg",
+      "tw_2026624133019086985_2.jpg"
+    ],
+    "goldScore": 6.2,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2003800548982542747",
+    "createdAt": "Wed Dec 24 12:10:54 +0000 2025",
+    "text": "补充几个信息\n1. 关于存取款的手续费：\n存款的最优(无损)路线是，在钱包的ETH链准备好USDe，用stargate将USDe跨链到Ethereal链（固定手续费0.1u），然后就可以无损将Ethereal链上的USDe存入Ethereal交易所了。\n取款是固定2u的手续费，可以提USDe到 Ethereal、Arbitrum、Ethereum 三条链上。\n\n2. 额外奖励是根据你上一周的仓位将奖励分配到这一周，所以有一周的延后。\n\n3. 积分和奖励的周期都是 周五 - 周五。",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 2,
+    "viewCount": 8902,
+    "images": [],
+    "goldScore": 6.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2102330500182655327",
+    "createdAt": "Tue Sep 22 09:33:45 +0000 2026",
+    "text": "[ 监控系列 之 “稳定币脱锚”监控 ]\n\n一觉醒来，感觉亏了一个亿\n\n监控是做了，但人还在睡觉。 https://t.co/igW7En04H8",
+    "likeCount": 0,
+    "retweetCount": 9,
+    "replyCount": 22,
+    "viewCount": 24078,
+    "images": [
+      "tw_2102330500182655327_1.png"
+    ],
+    "goldScore": 6.0,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1937557441903788301",
+    "createdAt": "Tue Jun 24 17:04:26 +0000 2025",
+    "text": "@crypto_jiwuming 理论上是可以的，但实际操作起来很难，尤其是对散户而言，因为期权的bid/ask spread 太大了，直接用工具只能缩小范围，能直接找到的都被quant直接秒了。\n\n我是刚好想要做点meta的期权，看到价格之后觉得有机会就试了一下，没想到真成交了。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 3470,
+    "images": [],
+    "goldScore": 4.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1937554377868210500",
+    "createdAt": "Tue Jun 24 16:52:16 +0000 2025",
+    "text": "套利的思维就像一种病毒，一旦入脑，看到什么都忍不住想想有没有无风险或低风险的机会。分享一下去年在美股上做过最完美的一笔套利：\n\n标的是 META Dec ’26 的一个 iron condor 结构：\nLong 700 put + Short 800 put：这边是一个 bull put spread，每套收入 $8,944\nShort 800 call + Long 900 call：这边是一个 bear call spread，每套收入 $1,108\n\n也就是说，整套组合一共收入 $10,052。\n\n这个期权结构到期时的表现是这样的：\n1. 如果 META 到期价格低于 700，bull put spread亏 $10,000，bear call spread归零，总体亏损 $10,000 - $10,052 = 盈利 $52\n2. 如果 META 高于 900，到期时 bear call spread亏 $10,000，bull put spread归零，最终也是盈利 $52\n3. 如果 META 在 700-800 或 800-900 区间内，由于总保费已收入超过 $10,000，最终也是盈利 $52\n4. 如果 META 在 800 附近收盘，两边全部归零，拿满整个 $10,052 收益\n\n另外，因为这是在 portfolio margin account 里做的，所以几乎没有资金成本\n\n把收到的 $10,052 拿去买美债（假设年化收益率 5%），两年（到期在 Dec ‘26）能额外赚约 $1,000+ 的无风险利息，5个组合就是 $5,000+\n如果 META 到期刚好在 $800 附近，两边期权都不被执行，一次性收满 $10,052，5个组合共$50,260\n\n所以这是一笔最低收益 $5,000，最高收益 $50,260 的保本套利。",
+    "likeCount": 0,
+    "retweetCount": 54,
+    "replyCount": 22,
+    "viewCount": 154252,
+    "images": [
+      "tw_1937554377868210500_1.jpg"
+    ],
+    "goldScore": 9.3,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2066887234762985981",
+    "createdAt": "Tue Jun 16 14:14:52 +0000 2026",
+    "text": "今天终于出期权了，之后都用期权套保了，在币圈套保还要承受交易所搞事情的风险。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 1747,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1932460203854684585",
+    "createdAt": "Tue Jun 10 15:29:50 +0000 2025",
+    "text": "领了 Resolv 的空投，没仔细算，但毛估估在Pendle做LP的年化大概是30%左右。\n\n顺手在 $0.18 做多了 RESOLV，赚了点快钱。我平时不太做交易，但觉得稳定币项目在同类竞品存在的情况下，估值大概率会趋同，不会偏离太远。\n\n比如 Ethena 和 Usual 的 FDV/TVL 都在 0.72 左右，所以我认为 Resolv 最终也会靠近 0.72，甚至更高 —— 毕竟刚 TGE，TVL 也还有上涨空间。看到 RESOLV 跌到 $0.18 时，FDV/TVL 只有约 0.5，就果断冲了一把。",
+    "likeCount": 0,
+    "retweetCount": 3,
+    "replyCount": 10,
+    "viewCount": 12492,
+    "images": [
+      "tw_1932460203854684585_1.jpg",
+      "tw_1932460203854684585_2.jpg"
+    ],
+    "goldScore": 8.0,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2064310432953684211",
+    "createdAt": "Tue Jun 09 11:35:34 +0000 2026",
+    "text": "[ 低风险理财 | 年化~10% ]\n\n好像没怎么看到有人提到Bitget的这个活期简单理财，容量不小，可以多号，且已经20%年化持续一个月了，昨天刚降到10%。\n\n一直没分享也是担心突然就降到0%了，结果昨天降到了10%之后还觉得松了口气，说明至少还能挖一段时间。\n\n在Bitget的简单理财里，存入Ondo发行的部分美股代币，就可以有10%的年化收益，同时用合约开空套保，还能吃费率收益。\n\n几点需要注意的：\n1. 每个代币都有额度，有些已经满了，点进去就能看到。\n2. 即使还有额度，每个代币的额度都不同，比如TSLA每个人有300股的额度，对应约12万u；而AAPL的额度只有100股，对应3万u。\n3. Ondo的代币和合约会有价差，建议挑价差小的代币，或者监控一下价差。",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 3,
+    "viewCount": 9911,
+    "images": [
+      "tw_2064310432953684211_1.jpg"
+    ],
+    "goldScore": 6.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1929860449643696194",
+    "createdAt": "Tue Jun 03 11:19:20 +0000 2025",
+    "text": "百万美金 DeFi 记录 - Day 6\n\n今天没有什么操作，来介绍一下 @sparkfinance \n\n🚨 先厘清一个很容易搞混的概念：\n因为 Pendle 上的池子是 USDS，所以不少人以为自己在挖 USDS 的积分，其实不是！\n\nSpark 是 Sky 的一个 子DAO，主要专注于去中心化借贷业务。Sky 的前身是 MakerDAO，MakerDAO 是稳定币 DAI 的发行者，而稳定币 USDS 则是由 Sky 发行的 DAI 的继任者。Sky 已经有了自己的代币 $SKY, 目前市值二十亿美金， $MKR 则是 MakerDAO 时代的代币。\n\n关系链如下：\nMakerDAO → 更名为 → Sky\n$MKR（老代币）→ 升级为 → $SKY（新代币）\nDAI（老稳定币）→ 升级为 → USDS（新稳定币）\nSpark → Sky 生态中的子 DAO，专注于借贷业务\n\n🔎 Spark 到底是干什么的？\n\nSpark 有两个核心业务，共同构建了一个围绕 USDS 的借贷与收益系统：\n\n1. 存款（Savings）| TVL：$3.37B\n\n用户存入稳定币，Spark 将其投入 Sky 的 SSR（Sky Savings Rate）协议赚取利息，目前年化约 4.5%。\n简单来说，这是一个封装了 SSR 的用户友好入口。\n\n2. 借贷（Sparklend）| TVL：$3.2B\n - Spark Borrow： 类似 Aave，用户存抵押资产（如 ETH、wstETH）借出 USDS、DAI、USDC。借出的稳定币由 Sky 提供。\n\n - Spark Liquidity Layer： Spark 还会把资金流动性外包到其他协议（如 Aave、Morpho）赚利息，资金同样由 Sky 注入。\n\n所以，Spark 实际上是 Sky 出钱、Spark 出力。它管理的 TVL 总规模已达 65 亿美金，本质上是 Sky 在 DeFi 借贷领域的主力打手。\n\n✈️ 积分与空投机制（$SPK）\n官方信息：\n - Spark 的代币是 $SPK，总供应 100 亿枚\n - 65 亿枚将分配给社区\n - 第一年释放 16.25%，即 16.25 亿枚\n - 早期活动已释放 1.5 亿枚\n\n个人推测：\n当前这季活动从 5 月到 8 月，持续 4 个月\n若这轮分配 5 亿枚 $SPK，则对应 FDV 的 5%\n当前总积分约 250 亿，假设活动结束达到 1000–1500 亿\n\n以 Pendle 存 10,000 U LP 为例，每天约拿 25 万积分\n三个月约可积累 2,250 万积分\n若空投按 5% 分配，则预估空投价值约 $750，对应 年化收益约 35%\n\n📊 下图展示了不同总积分和 TVL 假设下，从今天开始在 Pendle 存三个月 LP 的预估积分收益情况，仅供参考（基于 5% 空投假设）\n\n如有错误请指出，有问题请留言，大家一起学习！",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 9,
+    "viewCount": 4146,
+    "images": [
+      "tw_1929860449643696194_1.png"
+    ],
+    "goldScore": 7.6,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2079498533690806383",
+    "createdAt": "Tue Jul 21 09:27:40 +0000 2026",
+    "text": "@leifuchen @LZRationalnvest 可以考虑买boxx，所有券商的美债利息都是会withheld的，但是boxx不发利息，直接体现在股价里了。虽然boxx底层不是美债，但收益来自美债（期权的cost of money）",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 3,
+    "viewCount": 360,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1940056023617654991",
+    "createdAt": "Tue Jul 01 14:32:55 +0000 2025",
+    "text": "HOOD 算是我真正意义上的第一只五倍股，今天给它加了一个 collar：买了100 put，卖了140 call，这样就可以安心放着了。\n\ncollar 是我在美股中最常用的策略，也是对冲基金最常用的期权组合之一。在这里简单分享一下：\ncollar 是指在持有股票的同时，买入一个 put + 卖出一个 call\n\n📑以我刚才 HOOD 的操作为例，当前股价 $98，在我已经持有hood的情况下，可以花 $36 买入一张 2027 年 12 月到期的 100 put，同时卖出一张 2027 年 12 月到期的 $140 call，收回 $30，相当于净花 $6 来构建这个保护结构。而这 $6 还包括了目前的价格($98)和 $100 PUT 的差额，所以真实的成本只有 $4 (max loss)。\n\n✅ 如果 HOOD 跌破 100，我可以用 100 的价格卖出\n✅ 如果 HOOD 涨破 140，我的收益封顶，但涨到 140 之前的收益都能享受；\n✅ 如果股价在 100-140 之间，我依然是完整暴露在上涨空间中。\n\n更重要的是：collar 策略可以非常灵活。如果中途遇到大跌，还可以继续操作，比如 roll down put 或者 buy back call 来增加弹性。",
+    "likeCount": 0,
+    "retweetCount": 47,
+    "replyCount": 25,
+    "viewCount": 43032,
+    "images": [
+      "tw_1940056023617654991_1.jpg"
+    ],
+    "goldScore": 8.9,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2092195215847141739",
+    "createdAt": "Tue Aug 25 10:19:45 +0000 2026",
+    "text": "@ZLiao3 是的。。我也是这周工作量太大了，200u的套餐的fable全用完了还充了100u，后来分了些无关紧要的监控代码去sol和opus，结果被蠢到了",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 7830,
+    "images": [],
+    "goldScore": 3.8,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2049103179241914696",
+    "createdAt": "Tue Apr 28 12:27:23 +0000 2026",
+    "text": "[ 又回 Defi 了 | Pendle 14% 固定年化收益]\n\n最近在 Defi 和 @pendle_fi 上比较火的项目基本都和DAT相关，这几天我也在 Pendle 上买了几十万u的 apxUSD PT，固定年化14%。今天就详细介绍一下 Apyx 这个项目。\n\n简单说：\napxUSD 是由 @apyx_fi 发行的类稳定币，底层资产主要是 @saylor MSTR 发行的 STRC。我再通过Pendle PT作为工具锁定固定利率，到期收获14%年化的固定收益。\n\n这个策略有三层：STRC，apxUSD，Pendle PT，我会一层一层地来解析收益和风险。\n\n - STRC\nSTRC，是 Strategy / MSTR 发行的浮动利率优先股，目标是围绕 $100的价值交易，并通过调节股息率来维持价格稳定。比如当价格低于$100，就调高股息，吸引买家；当价格低于$100，就调低股息。目前的股息是年化11%。\n\n - Apyx 发行的 apxUSD 和 apyUSD\napxUSD 不是像USDC那种普通的稳定币，因为它的底层主要是像 STRC 这样价格会波动的资产，再加上一些现金和短期美债。\n\napyUSD 是 apxUSD 的收益版本。 用户把 apxUSD 存进金库（也可以理解为质押），收到 apyUSD。apyUSD的收益体现在对apxUSD的汇率上升。也就是说，随着底层资产(STRC)产生收益，1 apyUSD 可以兑换越来越多 apxUSD。\n\n接下来详细分析一下Apyx这个项目的收益来源和风险。\n\n✅收益来源：\n目前项目的核心收益来自于 DAT 优先股的股息，比如STRC目前11%的年化股息。当你把资金存入Apyx，项目方会用你的稳定币买入 STRC / SATA 等资产，这些资产产生的现金股息，会被转化为 apxUSD 体系内的收益，最后体现在 apyUSD 对 apxUSD 的汇率增长上。\n\n❗️主要风险：\napxUSD和apyUSD最大的风险就是底层资产中的DAT优先股了，但这恰恰也是我选择买入 apxUSD PT 的原因。\n\n目前STRC的年化收益为11%，apxUSD的底层资产中有约55%的STRC，42%的现金。历史上STRC的最低价格到过$90，也就是说，假设再次发生，这对apxUSD的影响大约是5%。另外，apyx还有大约1%的超额抵押品，所以实际影响会更低。\n\n而目前在 Pendle 上 apxUSD的PT收益在14%，PT的收益来自买入YT从而希望通过apyx积分而获得更大收益的空投的玩家。（关于pendle PT/YT，我个人非常建议自己去读文档，认真学习一下，因为真不是一句两句话就能讲清楚的。）\n\n换句话说，在Pendle上买入apxUSD的PT，可以获得比底层资产更高的收益，而承担更小的底层资产的风险。当然，比起底层资产，多了一层protocol risk，也就是链上项目被黑客攻击的风险，只要是defi，就自带protocol risk，大家就自己考量了。\n\n - Pendle PT\n 在 Pendle 上买 PT-apxUSD，本质上是在折价买入一份未来到期可兑回 apxUSD 的本金，从而锁定固定收益。\n\n那 Pendle 在这里做了什么？\n\nPendle 会把一个资产拆成两部分：\nPT = Principal Token，本金部分\nYT = Yield Token，收益部分\n\n应用到 apxUSD 上来说：\nPT-apxUSD 代表到期可兑回的本金；\nYT-apxUSD 代表这段时间内 apxUSD 产生的收益，实际上apxUSD没有资金收益，只有apyx这个项目的积分收益。所以 YT-apxUSD 代表的就是市场认为的积分潜在的价值。\n\n如果你买 PT，本质上就是直接变现apxUSD带来的积分收益。\n\n举个简单例子：\n假设某个 PT-apxUSD 到期时可以兑换 1 apxUSD，\n现在市场价格是 0.95 apxUSD。那你买入后，只要持有到期并成功赎回，理论上就可以用 0.95 apxUSD 换回 1 apxUSD。\n\n这中间的 0.05 apxUSD，就是你的固定收益。换成年化，就是 Pendle 页面上显示的 fixed APY。\n\n这就是 Pendle 的魅力：\n你不用去赌未来 apxUSD 的积分价值，你买 PT 的那一刻，价格已经锁定了你的到期收益。如果到期资产正常兑付，你拿的是固定收益。\n\n同理也可以适用到apyUSD上，如果你想要长期持有apyUSD来赚取收益，由于apyUSD的收益和底层资产相关联（STRC），所以是浮动的。所以如果你想固定收益，就可以在Pendle上买入PT-apyUSD，目前固定年化收益15.5%。\n\n大概的风险和收益就这样，非投资建议，大家自己做好研究。",
+    "likeCount": 0,
+    "retweetCount": 5,
+    "replyCount": 13,
+    "viewCount": 15162,
+    "images": [],
+    "goldScore": 7.0,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2097973547322732825",
+    "createdAt": "Thu Sep 10 09:00:46 +0000 2026",
+    "text": "@wang_xiaolou 只要看到别人的赚钱分享贴，如果是和信息差/时间差有关的，就可以想想能不能系统化地监控一下。慢慢就积累起来了，然后自己也会有自己的思路",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 1,
+    "viewCount": 2826,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2097968091959308422",
+    "createdAt": "Thu Sep 10 08:39:06 +0000 2026",
+    "text": "@0xFeng 嗯，其实只要刷推特看到别人靠信息差/时间差赚到钱了，就可以考虑做个监控了",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 0,
+    "viewCount": 2539,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1922813277454860383",
+    "createdAt": "Thu May 15 00:36:24 +0000 2025",
+    "text": "今天顺便再推荐一下 @TermMaxFi 。主打固定利息借款，并且支持pendle PT 循环贷。比如截图中的PT-sUSDe，5%固定利率循环贷 79 天，年化收益 28%，这种好事在TradFi中是不可想象的。\n\n作为一个从 TradFi 跳进 DeFi 已经有一段时间了的人，我每天还是默默感叹：DeFi 的机会实在太多了。\n\n我说的不是哪个 meme 币暴涨，也不是哪种空投超级能薅，而是那些相对稳定、收益可观、风险可控的策略。\n\n我在 DeFi 的投入从最初试水，到超 $1M，现在已经和我在美股的资金规模持平。\n\n以后会记录和分享我的一些想法和操作，推荐一些好的项目，每条po文都会是干货，没有废话。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 3,
+    "viewCount": 1127,
+    "images": [
+      "tw_1922813277454860383_1.jpg"
+    ],
+    "goldScore": 7.2,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1935701419509555585",
+    "createdAt": "Thu Jun 19 14:09:16 +0000 2025",
+    "text": "@linwanwan823 刚好在ethena的dc看到这个，笑死我了 https://t.co/VPU8LpPsO9",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 2,
+    "viewCount": 1104,
+    "images": [
+      "tw_1935701419509555585_1.jpg"
+    ],
+    "goldScore": 4.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1933172393004171413",
+    "createdAt": "Thu Jun 12 14:39:49 +0000 2025",
+    "text": "这次空投的范围非常广，不仅局限于 Sky 生态和 Sparklend，还给 AAVE，Morpho，Fluid，Pendle，Ethena，Curve 等主流 DeFi平台的用户空投了，大部分的快照时间是2025年3月15日，所以大家都可以去查一下。\n\n所以这个campaign应该是想把目前积分活动前的奖励都了结一下，并吸引注意力，准备TGE。",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 0,
+    "viewCount": 2650,
+    "images": [],
+    "goldScore": 5.6,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1950906015911719314",
+    "createdAt": "Thu Jul 31 13:06:54 +0000 2025",
+    "text": "@V1JeromeLoo 有hype，但我现在是多个交易所监控，主要dex，因为可以额外撸空投😋",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 1539,
+    "images": [],
+    "goldScore": 4.2,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1950889322162409762",
+    "createdAt": "Thu Jul 31 12:00:34 +0000 2025",
+    "text": "3. @strata_money \n也是我非常看好的一个 Ethena/Converge 生态的项目，上线一周，TVL 已经超过 $30m。可以同时拿 Strata，Ethena，以及 Ethereal 的积分。\n\n邀请链接(你也会额外获得10%的积分)：https://t.co/enRVtyeaXl\n项目介绍：https://t.co/8NHULXRfbO",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 1276,
+    "images": [],
+    "goldScore": 4.8,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1950889315677917330",
+    "createdAt": "Thu Jul 31 12:00:33 +0000 2025",
+    "text": "百万美金 DeFi 记录 | 账户更新 - Day 64\n\n又是月底的账户总结时间了，最近没怎么发推特是因为一直在埋头写代码。这里也要说声抱歉，因为我从这个 DeFi 账户挪了大概 $35万 过去跑策略，所以现在暂时变成了 “65万美金 DeFi 记录” 了。一会儿也会发一个推，简单说一下目前我正在跑的几个交易策略的大概情况。\n\n过去两周这个 DeFi 账户总额上涨了 $4,300，在 Google Sheets 中，我把转移出去的资金放在了 Withdrawn 一栏，方便记录和比较账户总额。\n\n账户主要的变化： \n1. 把 Noble 收益池的 $27万 全部提了出去，用于跑策略\n2. Term AVAX USDT vault 的激励今天到期，我也提前提了 $8万 出去用于跑策略，剩余的资金放到了 Strata 的Pendle LP\n3. TermMax 的循环贷到期了，资金也放到了 Strata 的Pendle LP\n4. 放了 $10万 在 Strata Pendle LP\n5. 领了Sonic $1000 的空投，还有约 $3000 vesting\n\n今天刚好是记录的两个月左右，账户实际收益 $13k，如果算年化的话，只有7.8%。主要有两个原因：\n1. Usual 的 USL 浮亏 $10k，这是整体收益低最主要的原因，如果没有这 $10k 的浮亏，那目前年化大约有13.2%\n2. 收益没有计入任何的积分/未领取空投收益，包括过去一个月存在 Term 的 $15万 15% 年化的激励（明天发放），以及 Sonic 还在锁仓的 $3000 空投也没有算进去。\n目前这个账户的一些积分：\n - MMT\n - InfiniFi\n - Huma\n - Noble\n - Perena\n - Ethena\n - Ethereal\n - Strata\n - Spark\n - TermMax\n - Sonic\n\n手上这么一大把的积分，有些是有确定价值的，比如Huma，Ethena，Sonic。所以我觉得整体来说还是符合 15%-20% 年化的预期的。",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 6,
+    "viewCount": 9818,
+    "images": [
+      "tw_1950889315677917330_1.jpg"
+    ],
+    "goldScore": 7.6,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2016891218689507804",
+    "createdAt": "Thu Jan 29 15:08:33 +0000 2026",
+    "text": "[ META 期权无风险套利仓位更新 ]\n\n今天META大涨，又回到了$700，我也来更新一下这个24年7月开仓的 META 期权套利仓位。\n\n先简单回顾一下仓位和开仓价格：\nLong 700 PUT: $251.61\nShort 800 PUT: $341.05\nShort 800 CALL: $40.05\nLong 900 CALL: $28.97\n\n都是2026年12月18日到期的期权。\n\n四个期权为一个组合，每一个组合收入权益金 $100.52 * 100:\n$341.05 - $251.61 + $40.05 - $28.97 = $100.52\n\n每一组合的最大亏损是 $10,000 （当META的价格在700以下或900以上时），也就是说，最坏的情况下组合的收益是$52，但是如果算上4%的短期美债利息，每一组合最坏的情况下的收益是：\n$52 + $10,052*0.04*2.5 = $1057.2\n\n这还不是重点，重点是如果META的价格在期权到期时在$700-$900 的区间内时，还能有更高的收益。\n\n如果 META 的价格在期权到期时刚好达到 $800, 那么开仓时收入的权益金就都是利润了：\n$10,052 权益金 + $1057.2 无风险利息 = $11,109.2 收益\n\n我当时胆子小，怕有什么幺蛾子，只做了5个组合，目前浮盈 $8,000 + 一年半4%的无风险利息。\n\n如果今年底 META 的价格在 $800 左右徘徊，那就可以拿到大约 $55k 的收益。\n\n这个套利仓位最舒服的是省心，不管怎么样最后都能拿到4%的无风险利息，外加潜在的上升空间。不像币圈里的套利，每天提心吊胆的，怕爆仓，怕黑客，怕平台跑路。",
+    "likeCount": 0,
+    "retweetCount": 7,
+    "replyCount": 9,
+    "viewCount": 16503,
+    "images": [
+      "tw_2016891218689507804_1.jpg"
+    ],
+    "goldScore": 8.0,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1892579076512313690",
+    "createdAt": "Thu Feb 20 14:16:28 +0000 2025",
+    "text": "🚨 Ethereal 空投提醒 🚨\n\n🚀 @Ethereal 已正式推出 Season Zero！\nEthereal 已无缝集成至 @Ethena 网络。回顾 Ethena 第一季空投的成功，我对未来潜在奖励充满期待！\n\n如何参与：\n1️⃣ 存入资金\n打开 Season 0 官网并存入 USDe：\n🔗 存入链接：https://t.co/JGJOWyPRYE\n\n⏳ 早期支持者可获得：\n• 💰 Ethereal 积分\n• 🔥 30x Ethena 积分\n• 🎁 OG 角色等专属福利\n\n2️⃣ 领取 Discord OG 角色\n加入 Ethereal Discord 并领取 OG 角色，解锁专属福利。\n\n#EtherealSeasonZero #DeFi #Crypto #OnChainTrading #Airdrop #Ethena #Ethereal",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 271,
+    "images": [],
+    "goldScore": 7.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1972217768322711654",
+    "createdAt": "Sun Sep 28 08:32:12 +0000 2025",
+    "text": "我自己主要是靠工作中的积累，搭配好奇心驱使去找各种视频看，所以对系统性课程不是特别了解。\n\n如果你已经有了最基础的代码(怎么用class 和decorator)和金融知识(期权的greeks，期货的Contango/backwardation)，那么chatgpt会是你很好的老师。如果你的水平还不了解这些，那么我建议先随便找一个资源学习，书、视频、chatgpt都可以，因为上面提到的这些概念都是最基础的。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 1394,
+    "images": [],
+    "goldScore": 4.8,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1976807933397942562",
+    "createdAt": "Sat Oct 11 00:31:53 +0000 2025",
+    "text": "一个半月前写的关于 Ethena USDe 的随笔，但没想到的是风险首先爆发在了cex上，链上反而影响不大。希望不会再发酵后产生连锁反应。",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 2,
+    "viewCount": 11340,
+    "images": [],
+    "goldScore": 4.2,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1992172004489711864",
+    "createdAt": "Sat Nov 22 10:03:13 +0000 2025",
+    "text": "请教大家一个问题：\n\n上一轮的十几个 [a-z]USD[a-z] 稳定币项目里，有哪一个项目做了用自己的稳定币的支付系统吗？比如u卡或者转账（以1:1美金，而不是通过其他的支付方式按市场价swap成usdt/usdc后支付）\n\n如果没有/寥寥无几的话，为什么不做呢？主要是技术原因还是监管合规原因？还是盈利问题呢？\n\n如果是监管合规原因，现在不是有很多提供“一键发u卡”服务的公司吗？是因为那些公司在 技术/合规 上无法适配那些山寨稳定币吗？",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 18,
+    "viewCount": 11173,
+    "images": [],
+    "goldScore": 4.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1989519029921280135",
+    "createdAt": "Sat Nov 15 02:21:14 +0000 2025",
+    "text": "@cryptocutiee_ 监控三四天能有个大概感觉，可以开始小跑起来测试，一边测试一边监控，监控一周就有相对比较全面的数据了，监控半个月就差不多有很全面的数据了。后面就是一边跑着一边收集数据，隔一段时间拿出来看一下",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 2,
+    "viewCount": 998,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2037842017456173131",
+    "createdAt": "Sat Mar 28 10:39:32 +0000 2026",
+    "text": "15% 积分加成邀请链接：\nhttps://t.co/SdDS311OPx\n\n在使用邀请链接前的一些小提醒：\n1. 务必使用无损出入金路线，否则手续费很高！\n在钱包的 ETH 链准备好 USDe，用 Stargate 将USDe跨链到Ethereal链（无损，固定手续费0.1u），然后就可以无损将Ethereal链上的USDe存入Ethereal交易所了。 \n\n取款是固定2u的手续费，可以无损将 USDe 提到 Ethereal、Arbitrum、Ethereum 三条链上。\n\n2. 额外奖励是根据你上一周的仓位将奖励分配到这一周，所以有一周的延后。\n\n3. Ethena Exchange Points 的 0.5% ENA 空投份额是目前Ethena 透露的信息，但在 Ethena 正式官宣前都有可能变化，最终解释权在Ethena，所以只能作为参考。\n\n对应的积分价值可以用Ethereal社区成员做的这个网站来预估（附图是我的其中一个号）：\nhttps://t.co/y99a2PcNjL\n\n4. 额外的年化收益是根据仓位杠杆决定的，只要在合约开仓，就有风险，DYOR。",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 7,
+    "viewCount": 3614,
+    "images": [
+      "tw_2037842017456173131_1.jpg"
+    ],
+    "goldScore": 8.5,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2032774693820715325",
+    "createdAt": "Sat Mar 14 11:03:48 +0000 2026",
+    "text": "这两天其实一直在关注 @pendle_fi 上的 USDG 理财，像这种不限额又相对安全的理财机会现在真的不多。\n\n担心大家冲得太猛导致收益率会下滑所以一直没有分享，但目前看来已经稳定在年化9%左右了，还不错。\n\nUSDG 是由 @Paxos 和 @global_dollar 发行的合规稳定币，有定期的审计和底层资产的披露。\n\n我看了审计报告，底层资产中有80%以上都是现金和 government money market fund (可以理解成超短期借款，有利息拿)，没有任何风险。\n另外20%是4个月内的短债，即使短债的利率有变化，只要持有到期，就不会有亏损，也是几乎零风险，因此安全方面非常有保障。\n\nPendle上的 USDG LP 大约2个半月后到期，9%的年化收益主要来自于：\n - USDG 本身的收益2.49%\n - USDG 的额外激励 2.87%\n - Pendle 的额外激励 0.86%\n - PT 的收益 1.05%\n - LP 的手续费以及Pendle激励 1.77%\n\n其中最重要的是 USDG 给出的激励的部分。目前USDG拿出了 15万u 的激励，每周3万，持续5周，并有可能在5周后把激励续上。所以至少在接下来5周是有保障的。\n\n现在USDG和其他稳定币的汇率也很好，基本无损，在CEX或者链上直接换就行，在CEX上注意手续费，多比较一下就没什么问题了。",
+    "likeCount": 0,
+    "retweetCount": 5,
+    "replyCount": 14,
+    "viewCount": 12517,
+    "images": [
+      "tw_2032774693820715325_1.jpg"
+    ],
+    "goldScore": 8.0,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1936349735050203269",
+    "createdAt": "Sat Jun 21 09:05:27 +0000 2025",
+    "text": "更新一下之前发过的这组稳定币 tvl/fdv 的数据，加上了 刚tge不到2周的Resolv，目前从高位回归，和 USUAL 都在 0.51 左右，Ethena稍高，在0.61左右。\n\n撇开绝对估值，这三个项目的相对估值我觉得还是合理的。Ethena 毕竟是老大哥，Usual依然没有解决一月份骚操作后的信任问题导致的tvl流失，而Resolv则是tvl不见增长又被同类型的ethena压着一头。\n\n所以不管你是持有 ENA, USUAL 还是 RESOLV ，都别哭，大家一起做家人。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 2,
+    "viewCount": 7720,
+    "images": [
+      "tw_1936349735050203269_1.jpg",
+      "tw_1936349735050203269_2.jpg"
+    ],
+    "goldScore": 5.8,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2027757580357861791",
+    "createdAt": "Sat Feb 28 14:47:35 +0000 2026",
+    "text": "今天睡了个懒觉，起床后随手撸了两单错价期权的套利，落袋 200u，都不需要等到到期\n\n我分享的都是干货，就看你自己有没有行动力了\n\n如果你看了我上一个帖子后自己也做了个监控，那么今天你也可以用500u本金在10分钟内赚200u\n\n熊市里的时间线也不一定都是垃圾和撕逼 https://t.co/XkheugDuHQ",
+    "likeCount": 0,
+    "retweetCount": 31,
+    "replyCount": 20,
+    "viewCount": 53420,
+    "images": [
+      "tw_2027757580357861791_1.jpg"
+    ],
+    "goldScore": 8.7,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1890707258595590635",
+    "createdAt": "Sat Feb 15 10:18:32 +0000 2025",
+    "text": "🚨 Ethereal Airdrop Alert 🚨\n\n🚀 @Ethereal has launched Season Zero!\nEthereal is seamlessly integrated with the @Ethena Network. Reflecting on the success of Ethena’s Season 1 airdrop, I'm optimistic about potential future rewards.\n\nSteps to maximize your potential rewards:\n1. Deposit\nOpen the Season 0 website and deposit USDe: https://t.co/JGJOWyPk96\n\nEarly supporters can earn:\n• 💰 Ethereal Points\n• 🔥 30x Ethena rewards multiplier\n• 🎁 Exclusive perks like OG role on Discord\n\n2. Claim OG role on Discord\nJoin Ethereal discord and claim OG role that will offer exclusive benefits as well as direct access to drive product development for the Ethereal Protocol as it begins to take shape.\n\n#EtherealSeasonZero #DeFi #Crypto #OnChainTrading #Airdrop #Ethena #Ethereal",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 224,
+    "images": [],
+    "goldScore": 6.6,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1959199788747927878",
+    "createdAt": "Sat Aug 23 10:23:24 +0000 2025",
+    "text": "另一个角度是 Ethena 对于合约费率市场的影响和容量，以前看到过分析的文章，也很有意思。虽然Ethena已经开始把资金往美债的方向布局，但依然大多数资金是通过合约对冲的中性策略。\n\n比如币安上的 BTCUSDT 合约总仓位大约在 $10B，空单大约在 $5B，Ethena在币安的仓位是$1.85B，占到了37%。那么Ethena开的空单对于合约费率有多大的影响呢？而这些影响最终也会转移到项目自己的利润。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 4194,
+    "images": [],
+    "goldScore": 4.8,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1959194493283979491",
+    "createdAt": "Sat Aug 23 10:02:21 +0000 2025",
+    "text": "[随笔] Ethena TVL 暴涨与系统性风险的思考\n\n最近几周，Ethena 的 TVL 从 $6.5B 飙升到 $13.28B，并且深入渗透到各大 DeFi 协议，这让我开始思考它对于 Ethereum 整个 DeFi 生态的系统性影响。\n\n1⃣ 背景\n过去几个月，Ethena 的 TVL 呈现出爆炸式增长，仅仅过去一个月，TVL 就从 $6.5B 上升到了目前的 $13.28B，而在一年前，Ethena 的 TVL 只有$3B。这种增长并不是单纯的资金流入，而是依靠 sUSDe 的循环贷模式：用户将 USDe 抵押，生成 sUSDe，再投入以 Pendle 为主的 DeFi 市场，进行拆分后再流入其他的借贷市场，并不断叠加杠杆。在链上资金的自我增殖逻辑下，Ethena 在一年内里就跻身 Ethereum DeFi 的最核心层。\n\n和以往一些大型项目不同的是，这种增长并没有停留在 Ethena 内部，而是快速渗透到 Ethereum DeFi 的基础设施中。\n\n2⃣ 数据\n下面是与 USDe 或是 sUSDe 相关的资产在各个核心 DeFi 项目中的 TVL 以及对于各个项目本身的TVL占比：\nPendle: $7.35B，占 82%\nAave: $6.6B，占 20%\nEuler: 占 20%，Morpho: 占 14%，\nSpark/Curve/Convex/Fluid: 各占 10% 左右\n\n根据 DefiLlama 的数据，整个 Ethereum 的 DeFi 市场一共是$100B，而与 Ethena 相关的资产在 DeFi 中占到了15%。\n\n3⃣ 联想\n这些数字背后意味着，Ethena 已经不只是“一个协议”，而是 Ethereum DeFi 的系统性组成部分。它通过抵押、借贷、收益结构化和流动性池，直接与 DeFi 最核心的协议相连，成为它们的主要资产来源之一。\n\n这种情况让我想起 2008 年金融危机中的一个核心现象：次贷产品被通过 MBS、CDO 等金融工程反复打包、分层、分销，渗透进整个金融系统的资产负债表中。这种结构化资产的系统性扩散作为前提，当问题出现时，所有机构都在某种程度上被卷入其中。\n\n当然，Ethena 的 sUSDe 并不是“劣质资产”，这一点和次贷的本质完全不同。我把这两者做类比，重点是从“结构扩散”的角度，以及由此带来的不可避免的系统性风险：\n在 Pendle，它被切分成不同的利率产品；\n在 Aave/Morpho，它被当作抵押品；\n在 Curve，它成为稳定币流动性的核心部分。\n一个相对新兴的协议，在一年的时间里就与 Ethereum DeFi 的主要资金通道深度绑定。\n\n4⃣ 这意味着什么？\n一方面，这是 DeFi 创新的胜利：链上金融的开放性和可组合性，让一个新资产可以在极短时间内渗透进全链生态，形成新的资金效率与玩法。\n另一方面，这也带来了潜在的系统性风险：如果某个环节失效，它的影响将远远超出单一协议，而会波及整个生态。\n\n我并不是在暗示 Ethena 会重演某种暴雷。相反，DeFi 的透明和实时清算机制让它比传统金融更具韧性。但当一个协议与其他核心协议联系如此紧密时，我认为系统性风险天然存在，就像 USDC/USDT 对 DeFi 的重要性以及他们背后自带的系统性风险一样。\n\n📔 最后\n对我来说，这是一个有意思的值得观察的现象： Ethena 正在走向“Too big to fail”？不仅仅是因为单个协议太大，也是因为与其他核心协议之间紧密的联系。\n\n但不论如何，有一点可以确定：Ethena 的爆发，肯定是 DeFi 的一个里程碑。",
+    "likeCount": 0,
+    "retweetCount": 3,
+    "replyCount": 14,
+    "viewCount": 23257,
+    "images": [],
+    "goldScore": 8.3,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1926959793870164151",
+    "createdAt": "Mon May 26 11:13:10 +0000 2025",
+    "text": "Resolv 应该还有两三天就能领取了，这里根据最新数据更新一下每一百万积分的预估价值。\n\n@ResolvLabs  团队已在 Discord 确认第一季总分为 6.17T，空投占比 10% 也已确定。目前唯一还未知的是开盘 FDV。\n\n但我们可以参考 Ethena 和 Usual 目前的 FDV/TVL 比例来预估 Resolv：\nEthena: $5,775M / $6,660M ≈ 87%\nUsual: $519M / $641M ≈ 81%\n\n所以我认为 Resolv 一个较合理的假设是 FDV ≈ TVL 的 84%。那对应目前 $432M 的 TVL，FDV 约为 $363M，换算下来每 100 万积分约值 $5.9。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 1396,
+    "images": [
+      "tw_1926959793870164151_1.jpg"
+    ],
+    "goldScore": 7.2,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1921868327988740562",
+    "createdAt": "Mon May 12 10:01:30 +0000 2025",
+    "text": "3. 什么是 USL？\n\nUSL（Usual Stability Loans）是 USUAL 团队基于 Euler 技术架构，在 Euler 上推出的一款创新型借贷产品。\n\nUSL 有四个核心特点：\n- 固定利率借贷：质押 USD0++，可按 5% 固定利率 借出 USD0。\n- 继续赚 USUAL：质押期间，USD0++ 仍能每日获得 USUAL 释放。\n- 无清算风险：采用 1:1 预言机，83% LTV，LLTV 高达 99.99%。\n- 高效杠杆：在固定利率+无清算风险的前提下，可实现 最高 5.86 倍杠杆，当前综合年化收益约 77.75%。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 703,
+    "images": [
+      "tw_1921868327988740562_1.jpg"
+    ],
+    "goldScore": 6.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1921868322213171265",
+    "createdAt": "Mon May 12 10:01:29 +0000 2025",
+    "text": "为什么你现在还应该考虑去买 @usualmoney  的 USD0++，然后放进 USL 循环贷？\n78% APY，没有清算风险，这不香吗？\n\n这条推本来上周就该发，结果懒了一下。那时候 USD0++ 还在 $0.97 附近，现在都快 $0.98 了。\n\n接下来我会讲清楚：USD0++ 的前世今生，USL 背后的风险与机会。\n🧵👇\n\nDYOR",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 1,
+    "viewCount": 3195,
+    "images": [],
+    "goldScore": 4.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1939637594452557962",
+    "createdAt": "Mon Jun 30 10:50:13 +0000 2025",
+    "text": "百万美金 DeFi 记录 - Day 33\n\n今天兑现6月底承诺公开钱包地址的计划，所有仓位在 Google Sheets 中都已经附上对应地址。目前共有四个地址，分别对应 Noble、Sui、Solana 和 Ethereum 四条链。除了两个因锁仓暂时不便转出的较小仓位，其他都已迁移至公开账户。\n\n趁着周末 gas 较低，我也顺手整理了一下仓位，目前大约有 23 万 USDC 存在 Morpho 上吃利息。主要是最近确实没时间研究项目，也没看到特别值得下手的机会。\n\n💱以下是自上次账户总结（15天前）以来的变化：\n1. 七月到期的 sUSDe LP 已关仓，收益偏低；\n2. Ethereal LP 也已退出，今天是 1.6x 积分的最后一天，且整体收益低；\n3. HLP 全部转入 Morpho，近期收益下滑，与风险不成正比；\n4. Sonic aUSDC LP 已关，第一季积分结束、收益低、空投预期也差；\n5. USDS LP 也关了，LP 收益太低。如果要拿积分博空投，不如直接买其他项目 10% 的 PT 再来买 USDS 的 YT；\n6. infiniFi 的仓位从 2 万美金加仓到了 15 万。\n\n📒接下来的计划：\n1. 仍然看好 infiniFi，如果没有发现更合适的项目，考虑再加到 20 万；\n2. Huma 可能加仓 5 万，总仓位 10 万；\n3. MMT 稳定币 LP 也在考虑再加 5 万，总仓位 15 万。\n\n退出了这么多存款项目另一个重要原因是最近实在太忙，没有时间盯这么多项目，所以把账户整理得简单点。\n\n现在整个市场的收益水平确实处于一个低点，如果你有发现年化10%以上的矿，欢迎推荐，感谢！（不考虑浮动利率的循环贷）",
+    "likeCount": 0,
+    "retweetCount": 11,
+    "replyCount": 30,
+    "viewCount": 12070,
+    "images": [
+      "tw_1939637594452557962_1.jpg"
+    ],
+    "goldScore": 9.9,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2066437815571759528",
+    "createdAt": "Mon Jun 15 08:29:02 +0000 2026",
+    "text": "@0xCheshire 怎么现在还有人在发这种脑残文案？不就是赌狗自己的钱赌完了还拿用户的钱去赌结果爆仓了吗？\n\n这和“我在2017年初被迫以10万美金的价格清算了100个比特币，如果留到现在，价值600万美金”有什么不一样？",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 3,
+    "viewCount": 4159,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2081886740965409148",
+    "createdAt": "Mon Jul 27 23:37:33 +0000 2026",
+    "text": "@Boywus 看起来是预言机炸了一下，不少人被清算和adl了(谁说天上不会掉馅饼)",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 2,
+    "viewCount": 2842,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1947297096484225237",
+    "createdAt": "Mon Jul 21 14:06:21 +0000 2025",
+    "text": "@gccgcc3155591 @stablecoin_x 是 @strata_money ，明天上线开始接受存款，也是 Ethena 孵化的。会在USDe的基础上做一个类似 resolv 的senior/junior trench，看 resolv 最近两周tvl涨了接近100%，我觉得会有很大的需求。",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 438,
+    "images": [],
+    "goldScore": 5.2,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1947220548527783977",
+    "createdAt": "Mon Jul 21 09:02:11 +0000 2025",
+    "text": "分久必合，合久必分。Ethena、Usual、Resolv 三个项目的 FDV/TVL 比例，在经历了一段时间的收敛靠近之后，最近终于又开始出现明显分化。\n\n第一话：Usual 初登场时的英姿。\nUsual TGE 后气势如虹，FDV/TVL 曾高达 4 倍。但江湖有云：“暴涨之后多虚火。” 果不其然，热度退去后，它便一路下探，逐渐与 Ethena 靠拢。从 4 月底开始，两人你侬我侬，如影随形，一度贴得让人分不清谁是谁。\n\n第二话：Resolv 杀入战局。\n时间来到 6 月，Resolv 正式入场。初来乍到，自是备受瞩目，FDV/TVL 一度站上高地。但很快，它也尝到了现实的毒打，从众星捧月跌至与大哥二哥并肩。三兄弟终于在 6 月 18 日 FDV/TVL 同落 0.58，可谓共饮一壶茶，同过一条命。\n\n然而币圈无宁日，随着 ETH 近日风云再起。Ethena、Usual、Resolv 的 FDV/TVL 也开始再次拉开距离，分化幅度甚至到了今年 2 月以来的高点。\n\n三兄弟，是要各奔前程，还是再度把酒言欢？欲知后事如何，且听下回分解。",
+    "likeCount": 0,
+    "retweetCount": 9,
+    "replyCount": 9,
+    "viewCount": 10054,
+    "images": [
+      "tw_1947220548527783977_1.jpg",
+      "tw_1947220548527783977_2.jpg"
+    ],
+    "goldScore": 7.2,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1944713668211495271",
+    "createdAt": "Mon Jul 14 11:00:44 +0000 2025",
+    "text": "之前介绍过 @TermMaxFi，这个平台我一直挺喜欢的，原因有三：\n1⃣ 固定利率的借贷和循环贷机制\n2⃣ 和多个项目的合作激励\n3⃣ 在套利的同时还能顺便拿项目积分\n\n今天介绍一下在 Termmax 上目前挺不错的两个玩法。\n\n玩法 1：Ethereal 固收 + 双重积分\n📈 固定收益：10%\n🎯 积分：1x Ethereal + 30x Ethena + TMX 积分\n适合还在持有 eUSDe 的朋友。现在 Pendle 上的 LP 已经不再有 1.6x 加成，但在 TermMax 上抵押 eUSDe 借出 USDC，固定利率仅 4.53%，LTV有 91.5%（图1）。\n\n借出的 USDC 可转手投入TermMax上的 PT-sUSDe 借贷池，年化利率 14.5%（其中 2% 来自 TMX 收益），稳稳锁定 10%+ 的利差，外加多重积分激励。\n\n玩法 2：Reservoir 套利 或 循环贷\n📈 固定利差：2.5%\n🎯 积分：0.5x Reservoir\nwsrUSD 自带 6.7% 年化收益，在 TermMax 上抵押 wsrUSD 只需支付 4.2% 的固定借贷利率（图3），还能顺带拿 Reservoir 的积分。相当于存进去 1000u 的 wsrUSD ，可以借出来 920u 的 USDC，同时还赚着 1000u 2.5%的利差和 0.5x 的 Reservoir 积分。\n\n如果你打算用资金去买 Pendle 的 PT，完全可以先买 wsrUSD → 抵押借 USDC → 投入其他项目或继续在 TermMax 上放贷赚 14%。一笔资金两次收益，还有积分拿。\n\n📕需要注意的是，因为TermMax上都是固定利率，所以每个池子都有固定的到期时间，最优的方式是在池子刚开的时候进去，这样躺的时间可以久一点。\n\n#TermMax #Ethereal #Reservoir #DeFi #固定利率套利",
+    "likeCount": 0,
+    "retweetCount": 3,
+    "replyCount": 4,
+    "viewCount": 5852,
+    "images": [
+      "tw_1944713668211495271_1.jpg",
+      "tw_1944713668211495271_2.jpg",
+      "tw_1944713668211495271_3.jpg"
+    ],
+    "goldScore": 8.8,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2094369766836142445",
+    "createdAt": "Mon Aug 31 10:20:38 +0000 2026",
+    "text": "@ZLiao3 海力士我都没在监控了，你这么一说我两条大腿都拍断了",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 0,
+    "viewCount": 1390,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1952374013113557176",
+    "createdAt": "Mon Aug 04 14:20:12 +0000 2025",
+    "text": "今天这市场太适合了，用了 $2万 在跑，一天不到，收益$2300了😅。当然，如果你用相同的资金去5倍杠杆做多ETH，收益更高。可这就和用期权对冲一样，如果不花买Put的钱来保护仓位，我就不会入场，这个策略也是同理，如果不是因为这个脚本在震荡市场也能赚钱，我也不会写这个脚本。\n\n另外再提醒一次：因为这个脚本没有止损，所以当币价冲击高位时，肯定会有一些仓位被挂在高位，这也是我为什么设置了分75个订单且有30秒分隔下单。",
+    "likeCount": 0,
+    "retweetCount": 6,
+    "replyCount": 1,
+    "viewCount": 16356,
+    "images": [],
+    "goldScore": 6.0,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1971565535469990167",
+    "createdAt": "Fri Sep 26 13:20:28 +0000 2025",
+    "text": "今天Huma的第二期空投可以领了，所以顺便更新一下：\n\n1. Ethena S4\nS4正式结束了，但空投日期还没确定。\n\n2. Huma Season 1 \n分两期领取，现在两期都已经可以领了\n\n3. Reservoir\n分三期发放，三期都可以领了，我已经领完和这个项目说拜拜了。\n\n4. Resolv\n第二季空投可以领了，也是一个说拜拜了的项目。\n\n5. Openeden\n已经快照，具体空投细节9月底公布，应该就这几天了。\n\n6. Sonic \n25%即时解锁，剩下的75%分270天线性解锁，隔一段时间领一点吧。\n\n7. Falcon\n马上就出结果了！\n\n目前有积分但还没发币的： \n1. infiniFi \n2. Momentum （应该会在两个月内发币）\n3. Strata \n4. Ethereal  \n5. infrared \n6. Noble \n7. Perena \n8. TermMax\n\n另外，Level 已经彻底死了，是我印象中这轮稳定币里第一个倒下的。还好当时就不看好这个项目，只是存其他项目的时候顺便拿了一点积分。",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 5,
+    "viewCount": 10278,
+    "images": [],
+    "goldScore": 6.6,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2103450184088764721",
+    "createdAt": "Fri Sep 25 11:42:58 +0000 2026",
+    "text": "@ZLiao3 要是susde的收益能高一点也好，就当找人帮我理财了",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 1195,
+    "images": [],
+    "goldScore": 3.8,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1966533322961477696",
+    "createdAt": "Fri Sep 12 16:04:15 +0000 2025",
+    "text": "Ethereal 的主网终于快上线了，现在可以加入Waitlist，早一天获取白名单就早一天可以开始刷。\n\nEthena 和 Converge 这整个体系我是一直都非常看好的，所以一上线我就会准备好脚本狠狠地刷。\n\n没有参与 Season 0 的朋友可以用我的推荐码： https://t.co/CMzDbs1xM5",
+    "likeCount": 0,
+    "retweetCount": 5,
+    "replyCount": 7,
+    "viewCount": 9194,
+    "images": [],
+    "goldScore": 6.0,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2098330287755206775",
+    "createdAt": "Fri Sep 11 08:38:20 +0000 2026",
+    "text": "很多人问做的是什么监控\n\n如果你是做交易/meme的，肯定有你们特有的监控可以做。我主要是做套利的，所以只监控价差，发现机会后不需要做决策，只需要低买高卖。\n\n在我眼里，所有的套利都是价差，即使是新闻/时间差套利，套的也是现在的价格和未来的价格的价差（已知未来的价格变化）。\n\n最好的办法就是看到别人分享赚钱的推，如果是和套利相关的，就想想能不能系统化，能不能做监控。\n\n慢慢的你就自己也会有一些监控的想法，想到什么做什么，即使你觉得这种机会肯定不会出现，也去做，因为现在AI做个监控几乎是零成本的。\n\n所以不用去想着给各种机会分类，只要是可能赚钱的机会，就做个监控呗。\n\n我也不是说做了监控就保证你赚钱。我在推特上和tg群里也说过好多次，其实我分享的东西都是同一个格式的：\n我告诉你哪里有金矿，我帮你验证过了确实能挖到金子，我也告诉你大概的路径，但最后你能不能淘到金，没人能保证。\n\n如果以后你们有自己吃不完的金矿，也可以私信我，给你们发大红包。\n\n为什么即使你觉得这种机会肯定不会出现，也去做监控？\n附图是前段时间和一个网友聊，给他分享了我监控到的一个机会。这个机会蠢到说出去真的没人信，而且还持续了大约一个月，全网基本只有我一个人在吃，后来就变成了我们两个人在吃，再后来来了第三个陌生人，然后吃了几天这个机会就没了。",
+    "likeCount": 0,
+    "retweetCount": 18,
+    "replyCount": 57,
+    "viewCount": 23555,
+    "images": [
+      "tw_2098330287755206775_1.jpg"
+    ],
+    "goldScore": 8.7,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1994451719963480370",
+    "createdAt": "Fri Nov 28 17:01:59 +0000 2025",
+    "text": "Converge 和 Terminal 都被 Ethena 抛弃了\n\nEthereal 还有必要刷吗？",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 13,
+    "viewCount": 11342,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1936043567341818189",
+    "createdAt": "Fri Jun 20 12:48:51 +0000 2025",
+    "text": "正在撸 OpenEden 积分，或者打算参与的朋友，这里有一个「拿分+赚收益」的机会，比直接买 YT 拿积分还划算。\n\n🔹基本介绍：\n@TermMaxFi 是一个固定利率借贷平台，支持用 cUSDO 抵押借出 USDC：\n - 借款利率仅 2.48%，固定利率\n - 抵押的 cUSDO 有 4x OpenEden 积分\n - 抵押的 cUSDO 自身还有约 3.9% 的收益，相当于撸积分的同时还能拿利息，“倒贴”你收益\n\n目前有 $1.1M 的流动性，支持最高 LTV 0.91，即使借50万也只需要3.5%的利息，所以循环贷的空间也很大。\n\n🔹收益以及积分计算：\n下图是以 $10,000 为例计算的循环次数、实际收益和可获得的积分：\n - 杠杆最多可以开到 10 倍，在本金的基础上 40x OpenEden 积分 + 固定收益，比直接买 YT 拿积分更划算\n - 如果只循环2-3次，在拿积分和收益的同时，还留下本金70%-80%的 USDC 可以投到别的项目\n\n🚨风险提示：\n - Smart contract risk 每个项目都会有，自己权衡。\n - 清算风险。以配图中的 0.9 ltv 举例，当 cUSDO (目前$1.016) 脱锚至 $0.97 时会有清算风险。\n - 特别重要！！！因为是固定期限的固定利率借贷，必须在到期前还款，否则会有清算罚款。\n\n配图数据： https://t.co/XVX7bQ7Ee0\n\n#termmax #defi #openeden",
+    "likeCount": 0,
+    "retweetCount": 2,
+    "replyCount": 8,
+    "viewCount": 10045,
+    "images": [
+      "tw_1936043567341818189_1.png"
+    ],
+    "goldScore": 7.2,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "1948745304607457506",
+    "createdAt": "Fri Jul 25 14:01:01 +0000 2025",
+    "text": "@cryptocloudpace 我还真不知道，没拿过10m在defi理财。可能就还是最老牌的几个项目吧，就是收益低一点。如果想要收益高一点，风险也稍微高一点，我觉得ethena体系里的几个项目可能相对好一点",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 2,
+    "viewCount": 1433,
+    "images": [],
+    "goldScore": 3.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2009589930926764156",
+    "createdAt": "Fri Jan 09 11:35:50 +0000 2026",
+    "text": "[ Ethereal 继续 27%真实年化收益 + 积分 ]\n\nEthereal 今天又出分了，也更新了上周的保证金收益率，我们的策略依然奏效，拿满了27%的年化收益。\n\n另外，Ethereal 与 Ethena 即将有一个合作，推出 Ethena Exchange Points，具体细节会在未来几周内推出，现在所有的交易活动都已经在积累分数了，到时候都会被追溯。\n\n所以现在不仅可以拿 27% 的真实年化收益，Ethereal 积分，还有 Ethena Exchange Points。\n\n最后再提醒一下，入金的时候一定要走这个无损路线，否则磨损很大：\n1. 在钱包的ETH链准备好USDe\n2. 用 stargate 将 Ethereum 上的 USDe跨链到 Ethereal 链（固定手续费0.1u）\n3. 去Ethereal交易所将Ethereal链上的USDe无损存入Ethereal交易所，记得要留一点点 gas 在 Ethereal链上\n\n目前 Ethereal 还是邀请制的，可以使用我的邀请链接：\nhttps://t.co/SdDS311OPx",
+    "likeCount": 0,
+    "retweetCount": 7,
+    "replyCount": 14,
+    "viewCount": 20595,
+    "images": [
+      "tw_2009589930926764156_1.png"
+    ],
+    "goldScore": 9.2,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2022302109710930263",
+    "createdAt": "Fri Feb 13 13:29:30 +0000 2026",
+    "text": "@etherealdex 无损存款路线：\n在钱包的ETH链准备好USDe，用 stargate 将 Ethereum 上的 USDe跨链到 Ethereal 链（固定手续费0.1u），然后再去Ethereal交易所就可以无损将Ethereal链上的USDe存入Ethereal交易所了。\n\n注意，将 USDe 存入Ethereal交易所的时候，在Ethereal链上留下几u需要作为gas",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 1,
+    "viewCount": 2267,
+    "images": [],
+    "goldScore": 6.0,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2022265528895639882",
+    "createdAt": "Fri Feb 13 11:04:08 +0000 2026",
+    "text": "这是社区成员做的的一个网站，输入地址后点击rewards，滑到最下面，可以直接预估你目前已获得的ENA数量。\nhttps://t.co/y99a2PcNjL\n\n因为 Ethena 最终还是会根据Ethereal和HyENA两个交易所的交易量等数据分配ENA，所以自己去计算的公式比较复杂，可以直接参考这个网站的数据。也因为这样，不存在“HyENA数据差所以更好拿分“的情况，因为最终在HyENA的1分 不等于 在Ethereal的1分。在Ethereal的1 Ethena Exchange Points会更值钱。",
+    "likeCount": 0,
+    "retweetCount": 1,
+    "replyCount": 1,
+    "viewCount": 3194,
+    "images": [
+      "tw_2022265528895639882_1.jpg"
+    ],
+    "goldScore": 6.4,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  },
+  {
+    "id": "2019572626692210775",
+    "createdAt": "Fri Feb 06 00:43:30 +0000 2026",
+    "text": "CoinMarketCap 的恐惧与贪婪指数达到近年来的最低点： 5，表示市场情绪目前极度恐慌。\n\n但也许是因为我身边都是撸空投、套利、和稳定币理财的，反而觉得大家都极度贪婪，10个人里有5个人已经抄底，另外5个人在下单。\n\n我也买了一点点BTC。\n\n有没有过来人来说说，一般是不是把我们这群平时不炒币的人也骗进去埋了之后，市场才会反弹？",
+    "likeCount": 0,
+    "retweetCount": 0,
+    "replyCount": 25,
+    "viewCount": 10052,
+    "images": [
+      "tw_2019572626692210775_1.jpg"
+    ],
+    "goldScore": 6.2,
+    "domain": "05_chain_monitor_systems",
+    "domainTitle": "链上微观监控与黑天鹅预警系统：稳定币脱锚雷达、期权 RFQ 异动捕获与做市商风控规避"
+  }
+]
