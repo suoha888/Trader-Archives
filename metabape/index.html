@@ -1466,6 +1466,131 @@
             .lake-card-full { grid-column: span 1; }
         }
     </style>
+
+<style id="ai-exquisite-typography">
+/* ===== 梭哈.AI 全站统一 AI 精美研报风排版引擎 CSS ===== */
+.ai-answer-content, .ai-msg.bot, .cj-msg-bubble {
+    font-size: 14px !important;
+    line-height: 1.72 !important;
+    color: #1F2937 !important;
+    letter-spacing: 0.15px !important;
+}
+.ai-para {
+    margin: 0 0 10px 0 !important;
+    line-height: 1.7 !important;
+}
+.ai-para:last-child {
+    margin-bottom: 0 !important;
+}
+.ai-list-ol, .ai-list-ul {
+    margin: 8px 0 12px 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+.ai-item-li {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin-bottom: 9px !important;
+    line-height: 1.65 !important;
+}
+.ai-item-li:last-child {
+    margin-bottom: 0 !important;
+}
+.ai-badge-num {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    background: #FEF3C7 !important;
+    color: #B45309 !important;
+    font-weight: 700 !important;
+    font-size: 11.5px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+    border: 1px solid #FDE68A !important;
+}
+.ai-item-li-bullet {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin-bottom: 8px !important;
+}
+.ai-item-li-bullet::before {
+    content: "•" !important;
+    color: #D97706 !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    margin-top: 2px !important;
+}
+.ai-item-text {
+    flex: 1 !important;
+}
+.ai-bold {
+    color: #92400E !important;
+    font-weight: 700 !important;
+}
+.ai-code-inline {
+    background: #F3F4F6 !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 4px !important;
+    padding: 1px 5px !important;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+    font-size: 12.5px !important;
+    color: #B45309 !important;
+}
+.ai-box-core {
+    background: #FFFBEB !important;
+    border-left: 3px solid #F59E0B !important;
+    padding: 7px 12px !important;
+    border-radius: 0 6px 6px 0 !important;
+    margin: 6px 0 10px 0 !important;
+    font-weight: 700 !important;
+    color: #92400E !important;
+    font-size: 14px !important;
+}
+.ai-box-warn {
+    background: #FEF2F2 !important;
+    border-left: 3px solid #EF4444 !important;
+    padding: 8px 12px !important;
+    border-radius: 0 6px 6px 0 !important;
+    margin: 10px 0 10px 0 !important;
+    color: #991B1B !important;
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+}
+.ai-topic-cite {
+    margin-top: 12px !important;
+    padding-top: 8px !important;
+    border-top: 1px dashed #E5E7EB !important;
+    font-size: 12.5px !important;
+    color: #6B7280 !important;
+}
+.ai-pill-topic {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    background: #F4EFE6 !important;
+    color: #B45309 !important;
+    border: 1px solid #D8CDBC !important;
+    border-radius: 12px !important;
+    padding: 2px 10px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.15s ease !important;
+    margin-left: 4px !important;
+    cursor: pointer !important;
+}
+.ai-pill-topic:hover {
+    background: #FEF3C7 !important;
+    border-color: #B45309 !important;
+    transform: translateY(-1px) !important;
+}
+</style>
+
 </head>
 <body>
 
@@ -19896,21 +20021,22 @@
                 'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
                 'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
             ],
-            systemPrompt: `你是推特顶级实战派商业操盘手兼衍生品套利交易员【Meta 猿 🦍】（@Metabape，前知名自媒体“萌C”主理人）的专属 AI 数字孪生导师。
-你的核心知识库基于 Meta 猿沉淀的 3,602 篇实盘原推、6 篇官方万字长文研报（《猿哥的十年商场浮沉》、《狂暴撸分 BACKPACK》、《逻辑鬼才：KAITO》、《Ethos 黑镜时刻》、《Variational 内循环赌场》、《此后加密空投再无大毛》）以及 10 大核心实战思维模型。
+            systemPrompt: `你是推特顶级实战派商业操盘手兼衍生品套利交易员【Meta 猿 🦍】（@Metabape）的专属 AI 数字孪生导师。基于 Meta 猿沉淀的 3,602 篇实盘原推、6 篇官方万字长文研报与 10 大核心实战思维模型构建。
 
-【回答核心铁律】：
-1. 【Meta 猿真实口吻】：冷峻冷静、见血封喉、穿透本质、略带自嘲与黑色幽默（“食腐的秃鹫”、“小农经济”、“中登”、“亏欠感”）；
-2. 【坚决拒绝假大空】：绝不做教科书式空泛科普，每一条结论必须用具体的数据、公式、机制漏洞推演与仓位风控规则落地；
-3. 【专业研报输出结构】：
-   - 🎯【核心研判与第一性原理】
-   - 🔍【底层机制推演】（产品规则漏洞与数学逻辑）
-   - ⚡【实操执行法则】（1. 2. 3. 落地纪律）
-   - 🛡️【避坑铁律与仓位警告】`
+【回答最高铁律（统一研报排版规范）】：
+1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝长篇套话，确保 1.5 秒极速生成；
+2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自 Meta 猿历年实操原推、大户分仓架构与十年商场浮沉心智；
+3. 【外行/泛化问题强制回弹】：若用户询问短线追涨杀跌等非体系话题，第 2 句话必须强制引申回 Meta 猿核心心法：“在真正的猎手眼中，交易是掠夺流动性补贴与机制漏洞。绝不在别人设好的庄家赌场里送人头，我们要么吃负滑点国补，要么通过大户多号分仓吃干抹净”；
+4. 【核心心法信手拈来】：微观机制漏洞精准收割、OLP 负点差吃“国补”补贴（又吃又拿）、Backpack 等多号矩阵分仓防女巫与风控封号、商业债务底层驱动、资产流动性本质；
+5. 【黄金研报输出格式】：
+   - 🎯【核心研判】：首句加粗直击商业与机制本质；
+   - 【微观机制与实操拆解】：使用 1. 2. 3. 序号列表展开漏洞逻辑、分仓操作与利润测算；
+   - 🛡️【避坑警告】：1句话指出防封号/防反噬红线；
+   - 📍【课题精读】：文末附带指引：[卷 X · 课题名](#vol-0X) 或 [官方长文研报](#art-1795155473739677696)。`
         };
 
         function getNextKey() {
-            return GlobalKeyScheduler.getNextHealthyKey(CJ_AI_CONFIG.keys);
+            return GlobalKeyScheduler.getNextHealthyKey(ATRIA_CONFIG.keys);
         }
 
         // ===== 3. 抽屉与界面控制 =====
@@ -19977,6 +20103,7 @@
         }
 
         function formatSimpleMarkdown(text) {
+            return formatAiExquisiteOutput(text);
             if (!text) return '';
             return text.split(String.fromCharCode(10)).join('<br>')
                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
@@ -20096,7 +20223,7 @@ Hyperliquid 用真实、高频、健康的衍生品现金流证明了自身的�
                 if (chatBody) chatBody.scrollTop = chatBody.scrollHeight;
             }
 
-            const maxAttempts = Math.min(8, CJ_AI_CONFIG.keys.length);
+            const maxAttempts = Math.min(8, ATRIA_CONFIG.keys.length);
             let success = false;
 
             for (let attempt = 0; attempt < maxAttempts; attempt++) {
@@ -20276,5 +20403,94 @@ Hyperliquid 用真实、高频、健康的衍生品现金流证明了自身的�
             });
         }
     </script>
+<script>
+
+// ===== 梭哈.AI 原生超轻量精美研报 Markdown 渲染引擎 =====
+function formatAiExquisiteOutput(raw) {
+    if (!raw) return '';
+    var txt = String(raw).trim();
+    txt = txt.replace(/<think>[\s\S]*?<\/think>/gi, '');
+    txt = txt.replace(/^(?:思考过程|分析过程|用户意图|问题解构|思考：)[^\n]*\n+/gi, '');
+    txt = txt.replace(/^(?:老铁|你好|您好|哈喽)[，,！!\s]*/gi, '');
+    txt = txt.replace(/^(?:针对你(?:所问|提到|关于)的?(?:问题|内容)?[，,！!\s]*)/gi, '');
+    
+    txt = txt.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    txt = txt.replace(/```([a-zA-Z0-9_-]*)\r?\n([\s\S]*?)```/g, '<pre class="ai-pre"><code class="ai-code">$2</code></pre>');
+    txt = txt.replace(/`([^`]+)`/g, '<code class="ai-code-inline">$1</code>');
+    txt = txt.replace(/^#{1,6}\s*(.*?)$/gm, '<strong class="ai-bold">$1</strong>');
+    txt = txt.replace(/#{1,6}\s+/g, '');
+    txt = txt.replace(/\*\*([^\*]+)\*\*/g, '<strong class="ai-bold">$1</strong>');
+    txt = txt.replace(/\$([^\$]+)\$/g, '$1');
+    txt = txt.replace(/\[([^\]]+)\]\((#[a-zA-Z0-9_-]+)\)/g, '<a href="$2" class="ai-pill-topic" data-anchor="$2">📍 $1</a>');
+    txt = txt.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="ai-ext-link">$1 ↗</a>');
+
+    var lines = txt.split(/\r?\n/);
+    var parts = [];
+    var inOl = false;
+    var inUl = false;
+    
+    for (var i = 0; i < lines.length; i++) {
+        var line = lines[i].trim();
+        if (!line) {
+            if (inOl) { parts.push('</ol>'); inOl = false; }
+            if (inUl) { parts.push('</ul>'); inUl = false; }
+            continue;
+        }
+        
+        var olM = line.match(/^(\d+)[\.、\)]\s*(.*)$/);
+        if (olM) {
+            if (inUl) { parts.push('</ul>'); inUl = false; }
+            if (!inOl) { parts.push('<ol class="ai-list-ol">'); inOl = true; }
+            parts.push('<li class="ai-item-li"><span class="ai-badge-num">' + olM[1] + '</span><div class="ai-item-text">' + olM[2] + '</div></li>');
+            continue;
+        }
+        
+        var ulM = line.match(/^[-•\*]\s*(.*)$/);
+        if (ulM) {
+            if (inOl) { parts.push('</ol>'); inOl = false; }
+            if (!inUl) { parts.push('<ul class="ai-list-ul">'); inUl = true; }
+            parts.push('<li class="ai-item-li-bullet"><div class="ai-item-text">' + ulM[1] + '</div></li>');
+            continue;
+        }
+        
+        if (inOl) { parts.push('</ol>'); inOl = false; }
+        if (inUl) { parts.push('</ul>'); inUl = false; }
+        
+        if (line.indexOf('🛡️') === 0 || line.indexOf('⚠️') === 0 || line.indexOf('避坑') !== -1 || line.indexOf('风险红线') !== -1) {
+            parts.push('<div class="ai-box-warn">' + line + '</div>');
+        } else if (line.indexOf('🎯') === 0 || line.indexOf('💡') === 0 || line.indexOf('核心研判') !== -1) {
+            parts.push('<div class="ai-box-core">' + line + '</div>');
+        } else if (line.indexOf('📍') === 0 || line.indexOf('课题精读') !== -1) {
+            parts.push('<div class="ai-topic-cite">' + line + '</div>');
+        } else {
+            parts.push('<p class="ai-para">' + line + '</p>');
+        }
+    }
+    if (inOl) parts.push('</ol>');
+    if (inUl) parts.push('</ul>');
+    return parts.join('\n');
+}
+
+// 统一章节跳转事件监听
+if (typeof document !== 'undefined') {
+    document.addEventListener('click', function(e) {
+    var pill = e.target.closest('.ai-pill-topic');
+    if (!pill) return;
+    var anchor = pill.getAttribute('data-anchor') || pill.getAttribute('href');
+    if (!anchor || anchor.indexOf('#') !== 0) return;
+    e.preventDefault();
+    var drawer = document.getElementById('aiDrawer') || document.getElementById('cjAiModal');
+    if (drawer) drawer.classList.remove('open', 'active');
+    var target = document.querySelector(anchor);
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.style.transition = 'box-shadow 0.4s ease, border-color 0.4s ease';
+        target.style.boxShadow = '0 0 0 3px rgba(245, 158, 11, 0.4)';
+        setTimeout(function() { target.style.boxShadow = ''; }, 2400);
+    }
+});
+}
+
+</script>
 </body>
 </html>

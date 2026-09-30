@@ -1258,6 +1258,131 @@ body { font-family: var(--font-sans); color: var(--text-main); background-color:
 }
 
 </style>
+
+<style id="ai-exquisite-typography">
+/* ===== 梭哈.AI 全站统一 AI 精美研报风排版引擎 CSS ===== */
+.ai-answer-content, .ai-msg.bot, .cj-msg-bubble {
+    font-size: 14px !important;
+    line-height: 1.72 !important;
+    color: #1F2937 !important;
+    letter-spacing: 0.15px !important;
+}
+.ai-para {
+    margin: 0 0 10px 0 !important;
+    line-height: 1.7 !important;
+}
+.ai-para:last-child {
+    margin-bottom: 0 !important;
+}
+.ai-list-ol, .ai-list-ul {
+    margin: 8px 0 12px 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+.ai-item-li {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin-bottom: 9px !important;
+    line-height: 1.65 !important;
+}
+.ai-item-li:last-child {
+    margin-bottom: 0 !important;
+}
+.ai-badge-num {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    background: #FEF3C7 !important;
+    color: #B45309 !important;
+    font-weight: 700 !important;
+    font-size: 11.5px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+    border: 1px solid #FDE68A !important;
+}
+.ai-item-li-bullet {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin-bottom: 8px !important;
+}
+.ai-item-li-bullet::before {
+    content: "•" !important;
+    color: #D97706 !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    margin-top: 2px !important;
+}
+.ai-item-text {
+    flex: 1 !important;
+}
+.ai-bold {
+    color: #92400E !important;
+    font-weight: 700 !important;
+}
+.ai-code-inline {
+    background: #F3F4F6 !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 4px !important;
+    padding: 1px 5px !important;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+    font-size: 12.5px !important;
+    color: #B45309 !important;
+}
+.ai-box-core {
+    background: #FFFBEB !important;
+    border-left: 3px solid #F59E0B !important;
+    padding: 7px 12px !important;
+    border-radius: 0 6px 6px 0 !important;
+    margin: 6px 0 10px 0 !important;
+    font-weight: 700 !important;
+    color: #92400E !important;
+    font-size: 14px !important;
+}
+.ai-box-warn {
+    background: #FEF2F2 !important;
+    border-left: 3px solid #EF4444 !important;
+    padding: 8px 12px !important;
+    border-radius: 0 6px 6px 0 !important;
+    margin: 10px 0 10px 0 !important;
+    color: #991B1B !important;
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+}
+.ai-topic-cite {
+    margin-top: 12px !important;
+    padding-top: 8px !important;
+    border-top: 1px dashed #E5E7EB !important;
+    font-size: 12.5px !important;
+    color: #6B7280 !important;
+}
+.ai-pill-topic {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    background: #F4EFE6 !important;
+    color: #B45309 !important;
+    border: 1px solid #D8CDBC !important;
+    border-radius: 12px !important;
+    padding: 2px 10px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.15s ease !important;
+    margin-left: 4px !important;
+    cursor: pointer !important;
+}
+.ai-pill-topic:hover {
+    background: #FEF3C7 !important;
+    border-color: #B45309 !important;
+    transform: translateY(-1px) !important;
+}
+</style>
+
 </head>
 <body>
 
@@ -22735,18 +22860,18 @@ const CJ_AI_CONFIG = {
         'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
         'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
     ],
-    systemPrompt: `你是推特顶尖交易导师与周期研报专家【憨厚的麦总】（@Michael_Liu93）的 AI 实战策略助手。基于麦总历年 5,344 篇实盘推文与《实战交易与周期投资全书》6大卷 24 个核心实战课题构建。
+    systemPrompt: `你是推特著名实战派投资导师兼宏观周期专家【憨厚的麦总】（@Michael_Liu93）的 AI 数字孪生导师。基于麦总沉淀的 5,344 篇实盘推文与《实战交易与周期投资全书》6大卷 24 个实战课题构建。
 
-【回答最高铁律（统一规范）】：
-1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝长篇大论，杜绝干瘪敷衍；
-2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自麦总历年真实推文、宏观大周期图谱与实战心法；
-3. 【外行/泛化问题强制回弹法则】：若用户询问微观超短线代码、高频炒土狗、甚至非投资话题，允许用 1 句话稍作客观说明，但第 2 句话必须强制引申回麦总核心观点：“在麦总的《周期投资全书》体系里，切忌盲目消磨本金与时间成本。大钱是等大周期砸出来的，不是在震荡市频繁追涨杀跌抠出来的，绝不参与胜率低于 60% 的投机博弈”；
-4. 【核心心法信手拈来】：
-   - 宏观大周期：牛熊交替由全球央行流动性与降息潮汐决定，认清当前所处周期阶段；
-   - 顶底反身性：极度狂欢、流动性泛滥、大众跟风追高时果断分批逃顶；极度冰点、绝望割肉时左侧分批布局；
-   - 仓位管理：本金防守是唯一生命线，宁可踏空绝不瞎买，只吃主升浪最顺畅的一段；
-   - 交易心智：知行合一，客观审视自身，不因短期利润膨胀，不因回撤变形；
-5. 【格式规范】：严禁问候废话，严禁复述问题，严禁使用 # 级大标题，使用清晰序号或自然段落。文末附带指引：[第 XX 卷：课题名](#t-XX)。`
+【回答最高铁律（统一研报排版规范）】：
+1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝长篇大论，确保 1.5 秒极速响应；
+2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自麦总历年实操原推、华尔街投行与加密实战交易心法；
+3. 【外行/泛化问题强制回弹】：若用户询问短线猜涨跌等噪音话题，第 2 句话必须强制引申回麦总核心心法：“在成熟的周期交易者眼中，只做高容错率的右侧顺势交易。只在流动性泛滥大浪潮中寻找抽水机龙头，宁可踏空绝不接飞刀”；
+4. 【核心心法信手拈来】：宏观全球央行流动性潮汐、顶底反身性与极度狂欢分批逃顶法则、本金防守是唯一生命线、只吃主升浪最顺畅一段、知行合一知止知退；
+5. 【黄金研报输出格式】：
+   - 🎯【核心研判】：首句加粗直接给出结论与第一性原理；
+   - 【微观机制与实操拆解】：使用 1. 2. 3. 序号列表展开宏观逻辑、筹码分布与仓位节奏；
+   - 🛡️【避坑警告】：1句话指出最大亏损陷阱；
+   - 📍【课题精读】：文末附带指引：[第 XX 卷：课题名](#t-XX)。`
 };
 
 // ===== 跨手册全局持久化高可用绝对均衡调度器 (Global Persistent Fair-Load Key Scheduler) =====
@@ -22901,6 +23026,7 @@ function scrollCjAiToBottom() {
 }
 
 function renderSimpleMarkdown(raw) {
+    return formatAiExquisiteOutput(raw);
     if (!raw) return '';
     let txt = raw.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     txt = txt.replace(/```([a-zA-Z0-9_-]*)\r?\n([\s\S]*?)```/g, '<pre class="ai-pre"><code>$2</code></pre>');
@@ -23170,5 +23296,94 @@ async function sendCjAiMessage() {
 }
 </script>
 
+<script>
+
+// ===== 梭哈.AI 原生超轻量精美研报 Markdown 渲染引擎 =====
+function formatAiExquisiteOutput(raw) {
+    if (!raw) return '';
+    var txt = String(raw).trim();
+    txt = txt.replace(/<think>[\s\S]*?<\/think>/gi, '');
+    txt = txt.replace(/^(?:思考过程|分析过程|用户意图|问题解构|思考：)[^\n]*\n+/gi, '');
+    txt = txt.replace(/^(?:老铁|你好|您好|哈喽)[，,！!\s]*/gi, '');
+    txt = txt.replace(/^(?:针对你(?:所问|提到|关于)的?(?:问题|内容)?[，,！!\s]*)/gi, '');
+    
+    txt = txt.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    txt = txt.replace(/```([a-zA-Z0-9_-]*)\r?\n([\s\S]*?)```/g, '<pre class="ai-pre"><code class="ai-code">$2</code></pre>');
+    txt = txt.replace(/`([^`]+)`/g, '<code class="ai-code-inline">$1</code>');
+    txt = txt.replace(/^#{1,6}\s*(.*?)$/gm, '<strong class="ai-bold">$1</strong>');
+    txt = txt.replace(/#{1,6}\s+/g, '');
+    txt = txt.replace(/\*\*([^\*]+)\*\*/g, '<strong class="ai-bold">$1</strong>');
+    txt = txt.replace(/\$([^\$]+)\$/g, '$1');
+    txt = txt.replace(/\[([^\]]+)\]\((#[a-zA-Z0-9_-]+)\)/g, '<a href="$2" class="ai-pill-topic" data-anchor="$2">📍 $1</a>');
+    txt = txt.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="ai-ext-link">$1 ↗</a>');
+
+    var lines = txt.split(/\r?\n/);
+    var parts = [];
+    var inOl = false;
+    var inUl = false;
+    
+    for (var i = 0; i < lines.length; i++) {
+        var line = lines[i].trim();
+        if (!line) {
+            if (inOl) { parts.push('</ol>'); inOl = false; }
+            if (inUl) { parts.push('</ul>'); inUl = false; }
+            continue;
+        }
+        
+        var olM = line.match(/^(\d+)[\.、\)]\s*(.*)$/);
+        if (olM) {
+            if (inUl) { parts.push('</ul>'); inUl = false; }
+            if (!inOl) { parts.push('<ol class="ai-list-ol">'); inOl = true; }
+            parts.push('<li class="ai-item-li"><span class="ai-badge-num">' + olM[1] + '</span><div class="ai-item-text">' + olM[2] + '</div></li>');
+            continue;
+        }
+        
+        var ulM = line.match(/^[-•\*]\s*(.*)$/);
+        if (ulM) {
+            if (inOl) { parts.push('</ol>'); inOl = false; }
+            if (!inUl) { parts.push('<ul class="ai-list-ul">'); inUl = true; }
+            parts.push('<li class="ai-item-li-bullet"><div class="ai-item-text">' + ulM[1] + '</div></li>');
+            continue;
+        }
+        
+        if (inOl) { parts.push('</ol>'); inOl = false; }
+        if (inUl) { parts.push('</ul>'); inUl = false; }
+        
+        if (line.indexOf('🛡️') === 0 || line.indexOf('⚠️') === 0 || line.indexOf('避坑') !== -1 || line.indexOf('风险红线') !== -1) {
+            parts.push('<div class="ai-box-warn">' + line + '</div>');
+        } else if (line.indexOf('🎯') === 0 || line.indexOf('💡') === 0 || line.indexOf('核心研判') !== -1) {
+            parts.push('<div class="ai-box-core">' + line + '</div>');
+        } else if (line.indexOf('📍') === 0 || line.indexOf('课题精读') !== -1) {
+            parts.push('<div class="ai-topic-cite">' + line + '</div>');
+        } else {
+            parts.push('<p class="ai-para">' + line + '</p>');
+        }
+    }
+    if (inOl) parts.push('</ol>');
+    if (inUl) parts.push('</ul>');
+    return parts.join('\n');
+}
+
+// 统一章节跳转事件监听
+if (typeof document !== 'undefined') {
+    document.addEventListener('click', function(e) {
+    var pill = e.target.closest('.ai-pill-topic');
+    if (!pill) return;
+    var anchor = pill.getAttribute('data-anchor') || pill.getAttribute('href');
+    if (!anchor || anchor.indexOf('#') !== 0) return;
+    e.preventDefault();
+    var drawer = document.getElementById('aiDrawer') || document.getElementById('cjAiModal');
+    if (drawer) drawer.classList.remove('open', 'active');
+    var target = document.querySelector(anchor);
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.style.transition = 'box-shadow 0.4s ease, border-color 0.4s ease';
+        target.style.boxShadow = '0 0 0 3px rgba(245, 158, 11, 0.4)';
+        setTimeout(function() { target.style.boxShadow = ''; }, 2400);
+    }
+});
+}
+
+</script>
 </body>
 </html>
