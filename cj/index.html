@@ -6794,33 +6794,38 @@ const CJ_AI_CONFIG = {
     apiUrl: 'https://api.atria-asi.ai/v1/chat/completions',
     model: 'Atria-Dawn-Preview',
     keys: [
-        'atr_4KCkb-G1ueWHh_FdvRU4dcNLaDnBHMnV',
-        'atr_M7r-GEFgLx5Ir29ZCNAp5FSSV8GSUx4d',
-        'atr_XEsZzQZ56upLNGCyGcrBeO1IamTbFsCS',
-        'atr_eLaCRAQiID8gcCIpG5ILduGyNeHqRs8z',
-        'atr_FBUVCpNZ3DRQoBSVm4fCefZt7OspUDf9',
-        'atr_nnVppYvV1n3hofvc5bEYSi8kE1a3kaJC',
-        'atr_ukvkiQ0jOsBMDXKfi0opMpLgvQO1b-ZR',
-        'atr_-TpmSHCCaJW9d5s5gGTO53eEV_nJV0Oj',
-        'atr_Rhn_JLO027LZcWMVqxZBXrFq_38qfIR2',
-        'atr_Z7elfMAJm0ToK9LmU8juIdMSh9qeUui4',
+        'atr_HG4lxOTfc5GRYox--0p9wTfnAnz6jOtb',
+        'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
+        'atr_ZobajhyKOPVRENJkPGrK1OkLNtLBXjk5',
+        'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
+        'atr_gdB8sYnLaEvkbrOrMGLKakbyP7fIns5P',
         'atr_zUzYh2CFcpzA9ygYAZHhmUvCMXpElJUp',
         'atr_btx_XUCZUPzvCWZph4NHv5T75-9scHKg',
         'atr_4qdUmd7dCTVIyPkbO5k7yCLR7b1Rbz2c',
-        'atr_gdB8sYnLaEvkbrOrMGLKakbyP7fIns5P',
-        'atr_HG4lxOTfc5GRYox--0p9wTfnAnz6jOtb',
-        'atr_jlG17natxoywaLwuC58C15eH5EmxD4DS',
-        'atr_ZobajhyKOPVRENJkPGrK1OkLNtLBXjk5',
+        'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK',
+        'atr_QTMwWfc169DeHUtENtmrBc_qG8-Md-KN',
+        'atr_jXxhTfYwXMdvdZ-jgCmDdOKk_pxQ9xvx',
+        'atr_eLaCRAQiID8gcCIpG5ILduGyNeHqRs8z',
+        'atr_Rw20tkMZYGb_2gTMv6PDjMfuS7DuGBnw',
+        'atr_XEsZzQZ56upLNGCyGcrBeO1IamTbFsCS',
         'atr_o2tuf1I9RJq4N3iz5Ft-9GqJtJ-ChYex',
-        'atr_cGSwiQj2nALI9wxL80C578X8izLd8S1T',
-        'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
+        'atr_FBUVCpNZ3DRQoBSVm4fCefZt7OspUDf9',
+        'atr_BDCofqyfuD11Kxr7uebduie25fYhFKiU',
+        'atr_M7r-GEFgLx5Ir29ZCNAp5FSSV8GSUx4d',
+        'atr_nnVppYvV1n3hofvc5bEYSi8kE1a3kaJC',
         'atr__I_zVBtTtpXcpnZ610CUeqImHFmotp3d',
-        'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
-        'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
+        'atr_Z7elfMAJm0ToK9LmU8juIdMSh9qeUui4',
+        'atr_Rhn_JLO027LZcWMVqxZBXrFq_38qfIR2',
+        'atr_jlG17natxoywaLwuC58C15eH5EmxD4DS',
+        'atr_cGSwiQj2nALI9wxL80C578X8izLd8S1T'
     ],
     temperature: 0.1,
     maxTokens: 750,
     systemPrompt: `你是推特知名实战派做市商兼链上套利交易员【C J】（@gch_enbsbxbs）的 AI 数字孪生导师。基于 CJ 历年沉淀的 502 篇实战推文与《CJ DeFi 做市与套利实战手册》28 个核心课题构建。
+
+【极速响应与超短推理指令（至关重要）】：
+- 思考过程（reasoning）必须极度精简，严禁写冗长草稿，30字以内迅速确立核心点，立即转入正文输出！
+- 杜绝一切犹豫和自我反思，直接按研报格式输出正文！
 
 【回答最高铁律（统一研报排版规范）】：
 1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，绝不废话车轱辘话，确保 1.5 秒极速生成；
@@ -7071,7 +7076,7 @@ async function sendCjAiMessage() {
     aiBubble.className = 'cj-msg-bubble';
     
     let searchDots = 0;
-    aiBubble.innerHTML = '<span style="color: #92400E; font-size:12.5px; display:inline-flex; align-items:center; gap:6px;"><span class="cj-ai-pulse-dot" style="background:#F59E0B; width:7px; height:7px;"></span> ⚡ 模型正在连接调度中...</span>';
+    aiBubble.innerHTML = '<span class="ai-live-status">⚡ 正在检索 502 篇链上做市与离散网格实战... (1s)</span>';
     aiRow.appendChild(aiBubble);
     body.appendChild(aiRow);
     scrollCjAiToBottom();
@@ -7079,22 +7084,28 @@ async function sendCjAiMessage() {
     let fullReasoning = '';
     let fullAiResponse = '';
     let isFirstToken = true;
+    let waitTimer = 1;
 
     const thinkTimer = setInterval(() => {
-        searchDots = (searchDots + 1) % 4;
-        const dots = '.'.repeat(searchDots);
-        const tipEl = aiBubble.querySelector('span');
+        waitTimer++;
+        const tipEl = aiBubble.querySelector('.ai-live-status');
         if (tipEl && !fullReasoning && !fullAiResponse) {
-            tipEl.innerHTML = `<span class="cj-ai-pulse-dot" style="background:#F59E0B; width:7px; height:7px;"></span> ⚡ 模型正在连接调度中${dots}`;
+            if (waitTimer < 4) {
+                tipEl.textContent = `⚡ 正在检索 502 篇链上做市与离散网格实战... (${waitTimer}s)`;
+            } else if (waitTimer < 8) {
+                tipEl.textContent = `🧠 CJ 导师正在推演无常损失与费率平衡机制... (${waitTimer}s)`;
+            } else {
+                tipEl.textContent = `📊 正在生成量化研报与避坑警告... (${waitTimer}s)`;
+            }
         }
-    }, 400);
+    }, 1000);
 
     isCjAiGenerating = true;
     const sendBtn = document.getElementById('cjAiSendBtn');
     if (sendBtn) sendBtn.disabled = true;
 
     let success = false;
-    const maxAttempts = Math.min(8, CJ_AI_CONFIG.keys.length);
+    const maxAttempts = 3;
 
     function updateBubbleDisplay(isFinal = false) {
         let outHtml = '';
@@ -7124,14 +7135,14 @@ async function sendCjAiMessage() {
         const controller = new AbortController();
         let hasReceivedChunk = false;
 
-        // 9.5秒超时熔断机制：预留推理模型思考时间，超时掐断切换下一个 Key
+        // 16秒超时熔断机制 (预留推理思考耗时，防止早夭熔断)
         const timeoutId = setTimeout(() => {
             if (!hasReceivedChunk) {
-                console.warn(`[AI] Attempt ${attempt+1} exceeded 9.5s timeout, fast retry next key...`);
+                console.warn(`[AI-CJ] Attempt ${attempt+1} 16s timeout, aborting to next key...`);
                 GlobalKeyScheduler.setCooldown(currentKey, 45000);
                 controller.abort();
             }
-        }, 9500);
+        }, 16000);
 
         try {
             const resp = await fetch(CJ_AI_CONFIG.apiUrl, {
@@ -7153,7 +7164,7 @@ async function sendCjAiMessage() {
             if (!resp.ok) {
                 clearTimeout(timeoutId);
                 if (resp.status === 429) GlobalKeyScheduler.setCooldown(currentKey, 45000);
-                console.warn(`[AI] Attempt ${attempt+1} HTTP ${resp.status}, fast retry`);
+                console.warn(`[AI-CJ] Attempt ${attempt+1} HTTP ${resp.status}, fast retry`);
                 continue;
             }
 
@@ -7167,6 +7178,7 @@ async function sendCjAiMessage() {
 
                 if (!hasReceivedChunk) {
                     hasReceivedChunk = true;
+                    clearInterval(thinkTimer);
                     clearTimeout(timeoutId);
                 }
 
@@ -7219,7 +7231,7 @@ async function sendCjAiMessage() {
 
         } catch (fetchErr) {
             clearTimeout(timeoutId);
-            console.warn(`[AI] Attempt ${attempt+1} error:`, fetchErr.name === 'AbortError' ? '3.5s Timeout' : fetchErr.message);
+            console.warn(`[AI-CJ] Attempt ${attempt+1} error:`, fetchErr.name === 'AbortError' ? '16s Timeout' : fetchErr.message);
         }
     }
 
