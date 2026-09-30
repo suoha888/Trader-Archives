@@ -20019,7 +20019,14 @@
                 'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
                 'atr__I_zVBtTtpXcpnZ610CUeqImHFmotp3d',
                 'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
-                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
+                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK',
+                'atr_VqPsvvWD7DXDvhvnObLMVWSDdX-psfct',
+                'atr_BDCofqyfuD11Kxr7uebduie25fYhFKiU',
+                'atr_Rw20tkMZYGb_2gTMv6PDjMfuS7DuGBnw',
+                'atr_QTMwWfc169DeHUtENtmrBc_qG8-Md-KN',
+                'atr_qXOwui1hXMr9eKeISScK-Z9rvxpKID8I',
+                'atr_sQZUcg8Q4aD3F3-poD3SLD6sUPJMtPhE',
+                'atr_jXxhTfYwXMdvdZ-jgCmDdOKk_pxQ9xvx'
             ],
             systemPrompt: `你是推特顶级实战派商业操盘手兼衍生品套利交易员【Meta 猿 🦍】（@Metabape）的专属 AI 数字孪生导师。基于 Meta 猿沉淀的 3,602 篇实盘原推、6 篇官方万字长文研报与 10 大核心实战思维模型构建。
 
@@ -20036,7 +20043,7 @@
         };
 
         function getNextKey() {
-            return GlobalKeyScheduler.getNextHealthyKey(ATRIA_CONFIG.keys);
+            return GlobalKeyScheduler.getNextHealthyKey(CJ_AI_CONFIG.keys);
         }
 
         // ===== 3. 抽屉与界面控制 =====
@@ -20223,7 +20230,7 @@ Hyperliquid 用真实、高频、健康的衍生品现金流证明了自身的�
                 if (chatBody) chatBody.scrollTop = chatBody.scrollHeight;
             }
 
-            const maxAttempts = Math.min(8, ATRIA_CONFIG.keys.length);
+            const maxAttempts = Math.min(8, CJ_AI_CONFIG.keys.length);
             let success = false;
 
             for (let attempt = 0; attempt < maxAttempts; attempt++) {
@@ -20231,14 +20238,14 @@ Hyperliquid 用真实、高频、健康的衍生品现金流证明了自身的�
                 const controller = new AbortController();
                 let hasReceivedChunk = false;
 
-                // 3.5秒超时熔断机制
+                // 9.5秒超时熔断机制 (预留推理思考耗时，防止早夭熔断)
                 const timeoutId = setTimeout(() => {
                     if (!hasReceivedChunk) {
-                        console.warn(`[AI-Metabape] Attempt ${attempt+1} 3.5s timeout, aborting to next key...`);
+                        console.warn(`[AI-Metabape] Attempt ${attempt+1} 9.5s timeout, aborting to next key...`);
                         GlobalKeyScheduler.setCooldown(currentKey, 45000);
                         controller.abort();
                     }
-                }, 3500);
+                }, 9500);
 
                 try {
                     const resp = await fetch(CJ_AI_CONFIG.apiUrl, {

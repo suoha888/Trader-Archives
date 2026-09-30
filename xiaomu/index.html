@@ -33094,11 +33094,11 @@ async function callAtriaApi(messages, targetMsgId) {
         // 3.5秒超时熔断机制
         const timeoutId = setTimeout(() => {
             if (!hasReceivedChunk) {
-                console.warn(`[AI-Xiaomu] Attempt ${attempt+1} 3.5s timeout, aborting to next key...`);
+                console.warn(`[AI-Xiaomu] Attempt ${attempt+1} 9.5s timeout, aborting to next key...`);
                 GlobalKeyScheduler.setCooldown(currentKey, 45000);
                 controller.abort();
             }
-        }, 3500);
+        }, 9500);
 
         try {
             const resp = await fetch(CJ_AI_CONFIG.apiUrl, {

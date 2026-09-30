@@ -7124,14 +7124,14 @@ async function sendCjAiMessage() {
         const controller = new AbortController();
         let hasReceivedChunk = false;
 
-        // 3.5秒超时熔断机制：若 3.5s 内未收到首个有效 chunk，立刻掐断切换下一个 Key
+        // 9.5秒超时熔断机制：预留推理模型思考时间，超时掐断切换下一个 Key
         const timeoutId = setTimeout(() => {
             if (!hasReceivedChunk) {
-                console.warn(`[AI] Attempt ${attempt+1} exceeded 3.5s timeout, fast retry next key...`);
+                console.warn(`[AI] Attempt ${attempt+1} exceeded 9.5s timeout, fast retry next key...`);
                 GlobalKeyScheduler.setCooldown(currentKey, 45000);
                 controller.abort();
             }
-        }, 3500);
+        }, 9500);
 
         try {
             const resp = await fetch(CJ_AI_CONFIG.apiUrl, {

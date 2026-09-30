@@ -25463,11 +25463,11 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
 
             const timeoutId = setTimeout(() => {
                 if (!hasReceivedChunk) {
-                    console.warn(`[AI-YQG] Attempt ${attempt+1} 3.5s timeout, aborting to next key...`);
+                    console.warn(`[AI-YQG] Attempt ${attempt+1} 9.5s timeout, aborting to next key...`);
                     GlobalKeyScheduler.setCooldown(currentKey, 45000);
                     controller.abort();
                 }
-            }, 3500);
+            }, 9500);
 
             try {
                 const resp = await fetch(CJ_AI_CONFIG.apiUrl, {
