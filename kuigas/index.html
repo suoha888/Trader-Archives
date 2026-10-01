@@ -939,6 +939,361 @@
             .mm-grid { grid-template-columns: 1fr; }
             .datalake-grid { grid-template-columns: 1fr; }
         }
+
+        /* 右下角固定定位浮动 AI 导师按钮 */
+        .ai-mentor-fab {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: linear-gradient(135deg, #B45309 0%, #D97706 100%);
+            color: #FFFFFF;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 20px;
+            font-size: 13.5px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(180, 83, 9, 0.35);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.25s;
+        }
+        .ai-mentor-fab:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(180, 83, 9, 0.45);
+        }
+        .ai-fab-pulse {
+            width: 8px;
+            height: 8px;
+            background: #4ADE80;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #4ADE80;
+            animation: fab_pulse 2s infinite;
+        }
+        @keyframes fab_pulse {
+            0% { opacity: 0.4; }
+            50% { opacity: 1; }
+            100% { opacity: 0.4; }
+        }
+
+        /* AI 抽屉与遮罩层 */
+        .ai-drawer-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 1000;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+        .ai-drawer {
+            position: fixed;
+            top: 0;
+            right: -560px;
+            width: 520px;
+            max-width: 90vw;
+            height: 100vh;
+            background: #FAF8F3;
+            z-index: 1001;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+            transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+        }
+        .ai-drawer.open {
+            right: 0 !important;
+        }
+        .ai-drawer-overlay.open {
+            display: block !important;
+            opacity: 1 !important;
+        }
+        .ai-drawer-header {
+            padding: 18px 20px;
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border-main);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ai-drawer-title {
+            font-family: var(--font-serif);
+            font-size: 15.5px;
+            font-weight: 800;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-close-drawer {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .btn-close-drawer:hover {
+            color: var(--text-main);
+            background: var(--bg-page-deep);
+        }
+
+        .ai-chat-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .ai-chat-body::-webkit-scrollbar { width: 5px; }
+        .ai-chat-body::-webkit-scrollbar-thumb { background: #D9D0BE; border-radius: 4px; }
+        .ai-msg { display: flex; flex-direction: column; gap: 6px; max-width: 95%; }
+        .ai-msg.user { align-self: flex-end; }
+        .ai-msg.assistant { align-self: flex-start; }
+        .ai-msg-bubble {
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13.5px;
+            line-height: 1.65;
+        }
+        .ai-msg.user .ai-msg-bubble {
+            background: var(--brand-amber);
+            color: #FFFFFF;
+            border-bottom-right-radius: 2px;
+        }
+        .ai-msg.assistant .ai-msg-bubble {
+            background: #FFFFFF;
+            border: 1px solid var(--border-main);
+            color: var(--text-main);
+            border-bottom-left-radius: 2px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+        .ai-quick-prompts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+        .btn-quick-p {
+            background: #FFFFFF;
+            border: 1px solid var(--border-main);
+            border-radius: 16px;
+            padding: 4px 10px;
+            font-size: 11px;
+            color: var(--brand-amber);
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn-quick-p:hover {
+            background: var(--brand-amber-light);
+            border-color: var(--brand-amber);
+        }
+
+        .ai-chat-input-bar {
+            padding: 14px 18px;
+            background: #FFFFFF;
+            border-top: 1px solid var(--border-main);
+            display: flex;
+            gap: 8px;
+        }
+        .ai-input-field {
+            flex: 1;
+            padding: 8px 12px;
+            font-size: 13px;
+            border: 1px solid var(--border-main);
+            border-radius: 6px;
+            outline: none;
+            background: var(--bg-page);
+            resize: none;
+            height: 42px;
+            font-family: var(--font-sans);
+        }
+        .ai-input-field:focus {
+            border-color: var(--brand-amber);
+            background: #FFFFFF;
+        }
+        .btn-ai-send {
+            background: var(--brand-amber);
+            color: #FFFFFF;
+            border: none;
+            border-radius: 6px;
+            padding: 0 16px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn-ai-send:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        /* 深度推演细节折叠框 */
+        .ai-reasoning-box {
+            margin-bottom: 10px;
+            background: #FFFBEB;
+            border: 1px solid #FDE68A;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .ai-reasoning-summary {
+            padding: 8px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #92400E;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+        }
+        .ai-reasoning-pulse-dot {
+            width: 6px;
+            height: 6px;
+            background: #F59E0B;
+            border-radius: 50%;
+            animation: dot_pulse 1.2s infinite;
+        }
+        @keyframes dot_pulse {
+            0% { transform: scale(0.8); opacity: 0.3; }
+            50% { transform: scale(1.3); opacity: 1; }
+            100% { transform: scale(0.8); opacity: 0.3; }
+        }
+
+        /* Markdown 精美研报排版 */
+        .ai-answer-content {
+            font-size: 13.5px;
+            line-height: 1.7;
+            color: #1F2937;
+        }
+        .ai-para {
+            margin: 0 0 10px 0;
+            line-height: 1.7;
+        }
+        .ai-para:last-child {
+            margin-bottom: 0;
+        }
+        .ai-list-ol {
+            margin: 8px 0 12px 0 !important;
+            padding-left: 0 !important;
+            list-style: none !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 8px !important;
+        }
+        .ai-item-li {
+            display: flex !important;
+            align-items: flex-start !important;
+            gap: 8px !important;
+            line-height: 1.6 !important;
+        }
+        .ai-badge-num {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 18px !important;
+            height: 18px !important;
+            border-radius: 50% !important;
+            background: #FEF3C7 !important;
+            color: #B45309 !important;
+            font-weight: 700 !important;
+            font-size: 11px !important;
+            flex-shrink: 0 !important;
+            margin-top: 2px !important;
+        }
+        .ai-list-ul {
+            margin: 8px 0 12px 0 !important;
+            padding-left: 0 !important;
+            list-style: none !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 6px !important;
+        }
+        .ai-item-li-bullet {
+            display: flex !important;
+            align-items: flex-start !important;
+            position: relative !important;
+            padding-left: 14px !important;
+            line-height: 1.6 !important;
+        }
+        .ai-item-li-bullet::before {
+            content: "•" !important;
+            position: absolute !important;
+            left: 2px !important;
+            color: #D97706 !important;
+            font-weight: 900 !important;
+            font-size: 14px !important;
+            line-height: 1 !important;
+            margin-top: 2px !important;
+        }
+        .ai-item-text {
+            flex: 1 !important;
+        }
+        .ai-bold {
+            color: #92400E !important;
+            font-weight: 700 !important;
+        }
+        .ai-code-inline {
+            background: #F3F4F6 !important;
+            border: 1px solid #E5E7EB !important;
+            border-radius: 4px !important;
+            padding: 1px 5px !important;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+            font-size: 12.5px !important;
+            color: #B45309 !important;
+        }
+        .ai-box-core {
+            background: #FFFBEB !important;
+            border-left: 3px solid #F59E0B !important;
+            padding: 7px 12px !important;
+            border-radius: 0 6px 6px 0 !important;
+            margin: 6px 0 10px 0 !important;
+            font-weight: 700 !important;
+            color: #92400E !important;
+            font-size: 14px !important;
+        }
+        .ai-box-warn {
+            background: #FEF2F2 !important;
+            border-left: 3px solid #EF4444 !important;
+            padding: 8px 12px !important;
+            border-radius: 0 6px 6px 0 !important;
+            margin: 10px 0 10px 0 !important;
+            color: #991B1B !important;
+            font-size: 13.5px !important;
+            line-height: 1.6 !important;
+        }
+        .ai-topic-cite {
+            margin-top: 12px !important;
+            padding-top: 8px !important;
+            border-top: 1px dashed #E5E7EB !important;
+            font-size: 12.5px !important;
+            color: #6B7280 !important;
+        }
+        .ai-pill-topic {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 4px !important;
+            background: #F4EFE6 !important;
+            color: #B45309 !important;
+            border: 1px solid #D8CDBC !important;
+            border-radius: 12px !important;
+            padding: 2px 10px !important;
+            font-size: 12px !important;
+            font-weight: 600 !important;
+            text-decoration: none !important;
+            transition: all 0.15s ease !important;
+            margin-left: 4px !important;
+            cursor: pointer !important;
+        }
+        .ai-pill-topic:hover {
+            background: #FEF3C7 !important;
+            border-color: #B45309 !important;
+            transform: translateY(-1px) !important;
+        }
+
     </style>
 </head>
 <body>
@@ -20617,24 +20972,39 @@
         </main>
     </div>
 
-    <!-- AI 导师抽屉 -->
+    <!-- 右下角固定定位浮动 AI 导师按钮 -->
+    <button class="ai-mentor-fab" onclick="openAiDrawer()">
+        <span class="ai-fab-pulse"></span>
+        <span>🤖 丰密 AI 实战导师</span>
+    </button>
+
+    <!-- AI 导师抽屉与遮罩层 -->
+    <div class="ai-drawer-overlay" id="aiDrawerOverlay" onclick="closeAiDrawer()"></div>
     <div class="ai-drawer" id="aiDrawer">
-        <div class="ai-header">
-            <div class="ai-title">
+        <div class="ai-drawer-header">
+            <div class="ai-drawer-title">
                 <span>🤖 丰密 · 专属 AI 数字导师</span>
             </div>
-            <button class="ai-close" onclick="toggleAiDrawer()">✕</button>
+            <button class="btn-close-drawer" onclick="closeAiDrawer()">✕</button>
         </div>
-        <div class="ai-messages" id="aiMessages">
-            <div class="ai-msg bot">
-                你好！我是<strong>丰密（@KuiGas）</strong>的专属 AI 数字孪生导师。<br><br>
-                在任何行情面前，先记住我们的底牌：<strong>“一切都是运气，靠运气赚的钱，尽快存入不靠运气也能赚钱的账户。以慢制快：成本+赔率+风险+机会+策略。”</strong><br><br>
-                你可以向我咨询任何关于：大周期仓位管理、以慢制快五维模型、L2与公链竞争格局、早期链上交互避坑、VC代币经济学拆解或33Dao社区实践。直接抛出你的实盘困惑吧！
+        <div class="ai-chat-body" id="aiChatBody">
+            <div class="ai-msg assistant">
+                <div class="ai-msg-bubble">
+                    <div class="ai-box-core">🎯 <strong>以慢制快：成本 + 赔率 + 风险 + 机会 + 策略</strong></div>
+                    你好！我是<strong>丰密（@KuiGas）</strong>的专属 AI 数字孪生导师。<br><br>
+                    基于我沉淀的全部推文心法与第一性原理构建。在任何行情面前，先记住我们的底牌：<strong>“一切都是运气，靠运气赚的钱，尽快存入不靠运气也能赚钱的账户。”</strong><br><br>
+                    你可以直接向我咨询大周期买卖择时、L2/新公链格局、VC币解锁与估值陷阱、或早期链上交互避坑纪律。
+                    <div class="ai-quick-prompts">
+                        <button class="btn-quick-p" onclick="sendQuickPrompt('以慢制快的五维模型具体如何运用？')">以慢制快五维模型</button>
+                        <button class="btn-quick-p" onclick="sendQuickPrompt('如何判断大周期底部并进行现货建仓？')">大周期底部建仓</button>
+                        <button class="btn-quick-p" onclick="sendQuickPrompt('如何识别高FDV低流通VC币的做市陷阱？')">防范VC币做市陷阱</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="ai-input-wrap">
-            <input type="text" class="ai-input" id="aiInput" placeholder="输入您在周期投资、仓位或链上操作中的困惑..." onkeydown="if(event.key==='Enter') sendAiMessage()">
-            <button class="ai-send-btn" onclick="sendAiMessage()">发送</button>
+        <div class="ai-chat-input-bar">
+            <textarea class="ai-input-field" id="aiUserInput" placeholder="输入您在周期投资、公链选择或仓位配置中的困惑..." onkeydown="handleAiInputKey(event)"></textarea>
+            <button class="btn-ai-send" onclick="sendAiMessage()">发送</button>
         </div>
     </div>
 
@@ -20691,16 +21061,28 @@
             if (modal) modal.style.display = 'none';
         }
 
-        // AI 导师抽屉切换
+        // 1. 打开关闭 AI 导师抽屉
+        function openAiDrawer() {
+            document.getElementById('aiDrawerOverlay').classList.add('open');
+            document.getElementById('aiDrawer').classList.add('open');
+        }
+        function closeAiDrawer() {
+            document.getElementById('aiDrawerOverlay').classList.remove('open');
+            document.getElementById('aiDrawer').classList.remove('open');
+        }
         function toggleAiDrawer() {
-            const drawer = document.getElementById('aiDrawer');
-            if (drawer) drawer.classList.toggle('open');
+            openAiDrawer();
+        }
+        function toggleAIDrawer() {
+            openAiDrawer();
         }
 
-        // 23-Key 轮转 Atria-Dawn-Preview 引擎
+        // 2. 30-Key 轮转 Atria-Dawn-Preview 引擎与调度器
         const CJ_AI_CONFIG = {
             apiUrl: 'https://api.atria-asi.ai/v1/chat/completions',
             model: 'Atria-Dawn-Preview',
+            temperature: 0.1,
+            maxTokens: 750,
             keys: [
                 'atr_4KCkb-G1ueWHh_FdvRU4dcNLaDnBHMnV',
                 'atr_M7r-GEFgLx5Ir29ZCNAp5FSSV8GSUx4d',
@@ -20724,80 +21106,381 @@
                 'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
                 'atr__I_zVBtTtpXcpnZ610CUeqImHFmotp3d',
                 'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
-                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
+                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK',
+                'atr_VqPsvvWD7DXDvhvnObLMVWSDdX-psfct',
+                'atr_BDCofqyfuD11Kxr7uebduie25fYhFKiU',
+                'atr_Rw20tkMZYGb_2gTMv6PDjMfuS7DuGBnw',
+                'atr_QTMwWfc169DeHUtENtmrBc_qG8-Md-KN',
+                'atr_qXOwui1hXMr9eKeISScK-Z9rvxpKID8I',
+                'atr_sQZUcg8Q4aD3F3-poD3SLD6sUPJMtPhE',
+                'atr_jXxhTfYwXMdvdZ-jgCmDdOKk_pxQ9xvx'
             ],
-            temperature: 0.2,
-            maxTokens: 2500,
-            systemPrompt: `你是【丰密】（推特 @KuiGas）的专属 AI 数字孪生导师。
-你的核心知识库基于丰密公开沉淀的全部核心思维模型与实战心法。
-口头禅与心法：“一切都是运气，靠运气赚的钱，尽快存入不靠运气也能赚钱的账户。以慢制快：成本+赔率+风险+机会+策略。”
-面对用户的任何提问，严格遵循以下风格与结构回答：
-1. 恪守丰密的真实投资风格：大周期现货思维、重视第一性原理、强调非对称赔率与风险底线、拒绝无脑高杠杆；
-2. 杜绝空洞的大道理与泛泛之谈，直给具体的数据、公式、仓位风控规则与逻辑底牌；
-3. 输出采用专业研报结构：
-   - 🎯【核心研判与第一性原理】
-   - 🔍【底层机制推演】
-   - ⚡【实操执行法则】（1. 2. 3. 落地纪律）
-   - 🛡️【避坑铁律与仓位警告】`
+            systemPrompt: `你是推特著名实战派宏观周期论者兼公链深度研究者【丰密】（@KuiGas）的专属 AI 数字孪生导师。基于丰密沉淀的 4,667 篇实战原推、10 篇官方万字长文研报与 7 大实战数据湖与 122 大核心思维模型构建。
+
+【回答最高铁律（统一研报排版规范）】：
+1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝长篇废话，确保 1.5 秒极速生成；
+2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自丰密历年实操推文、周期宏观推演与第一性原理认知底座；
+3. 【外行/泛化问题强制回弹】：若用户询问追涨杀跌、短期百倍土狗等非体系话题，第 2 句话必须强制引申回丰密核心心法：“一切都是运气，靠运气赚的钱，必须尽快存入不靠运气也能赚钱的账户。交易是以慢制快：永远从成本、赔率、风险、机会、策略五个维度出发，只打胜率与赔率极度非对称的大仗”；
+4. 【核心心法信手拈来】：以慢制快五维框架、宏观周期跨越（牛熊转换时钟与流动性拐点）、以太坊 L2 与高性能新公链底层架构研判、代币经济学防割指南与逃顶纪律、33DAO / KuiClub 极客精神；
+5. 【黄金研报输出格式】：
+   - 🎯【核心研判】：首句加粗直击周期与赔率本质；
+   - 【微观机制与实操拆解】：使用 1. 2. 3. 序号列表展开成本测算、赔率比较与仓位分配；
+   - 🛡️【避坑警告】：1句话指出认知局限与风险底线；
+   - 📍【课题精读】：文末附带指引：[模块名](#t-XX)。`
         };
 
-        let cjAiKeyIndex = Math.floor(Math.random() * CJ_AI_CONFIG.keys.length);
+        const GlobalKeyScheduler = {
+            CURSOR_KEY: 'trader_archives_ai_cursor',
+            COOLDOWN_KEY: 'trader_archives_ai_cooldowns',
+
+            getCooldowns() {
+                try {
+                    return JSON.parse(localStorage.getItem(this.COOLDOWN_KEY) || '{}');
+                } catch(e) { return {}; }
+            },
+
+            setCooldown(key, durationMs = 45000) {
+                try {
+                    const cds = this.getCooldowns();
+                    cds[key] = Date.now() + durationMs;
+                    localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+                } catch(e) {}
+            },
+
+            clearCooldown(key) {
+                try {
+                    const cds = this.getCooldowns();
+                    if (cds[key]) {
+                        delete cds[key];
+                        localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+                    }
+                } catch(e) {}
+            },
+
+            getNextHealthyKey(keys) {
+                if (!keys || !keys.length) return '';
+                const now = Date.now();
+                const cds = this.getCooldowns();
+                
+                let cursor = 0;
+                try {
+                    cursor = parseInt(localStorage.getItem(this.CURSOR_KEY) || '0', 10);
+                    if (isNaN(cursor)) cursor = 0;
+                } catch(e) { cursor = 0; }
+
+                let chosenKey = '';
+                for (let i = 0; i < keys.length; i++) {
+                    const idx = (cursor + i) % keys.length;
+                    const candidate = keys[idx];
+                    const cooldownUntil = cds[candidate] || 0;
+                    if (now >= cooldownUntil) {
+                        chosenKey = candidate;
+                        try {
+                            localStorage.setItem(this.CURSOR_KEY, ((idx + 1) % keys.length).toString());
+                        } catch(e) {}
+                        break;
+                    }
+                }
+
+                if (!chosenKey) {
+                    chosenKey = keys[cursor % keys.length];
+                    try {
+                        localStorage.setItem(this.CURSOR_KEY, ((cursor + 1) % keys.length).toString());
+                    } catch(e) {}
+                }
+
+                return chosenKey;
+            }
+        };
+
         function getNextKey() {
-            const k = CJ_AI_CONFIG.keys[cjAiKeyIndex];
-            cjAiKeyIndex = (cjAiKeyIndex + 1) % CJ_AI_CONFIG.keys.length;
-            return k;
+            return GlobalKeyScheduler.getNextHealthyKey(CJ_AI_CONFIG.keys);
         }
 
-        async function sendAiMessage() {
-            const input = document.getElementById('aiInput');
-            const messagesContainer = document.getElementById('aiMessages');
+        let chatHistory = [];
+
+        function handleAiInputKey(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendAiMessage();
+            }
+        }
+
+        function sendQuickPrompt(txt) {
+            document.getElementById('aiUserInput').value = txt;
+            sendAiMessage();
+        }
+
+        function sendAiMessage() {
+            const input = document.getElementById('aiUserInput');
             const text = input.value.trim();
             if (!text) return;
-
-            // Render user msg
-            const userMsg = document.createElement('div');
-            userMsg.className = 'ai-msg user';
-            userMsg.textContent = text;
-            messagesContainer.appendChild(userMsg);
             input.value = '';
 
-            // Placeholder bot msg
-            const botMsg = document.createElement('div');
-            botMsg.className = 'ai-msg bot';
-            botMsg.innerHTML = '<em>丰密 AI 正在深度推演周期与赔率机制...</em>';
-            messagesContainer.appendChild(botMsg);
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            appendAiMsg('user', text);
+            chatHistory.push({ role: 'user', content: text });
 
-            try {
-                const key = getNextKey();
-                const response = await fetch(CJ_AI_CONFIG.apiUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${key}`,
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        model: CJ_AI_CONFIG.model,
-                        temperature: CJ_AI_CONFIG.temperature,
-                        max_tokens: CJ_AI_CONFIG.maxTokens,
-                        messages: [
-                            { role: 'system', content: CJ_AI_CONFIG.systemPrompt },
-                            { role: 'user', content: text }
-                        ]
-                    })
-                });
+            const loadingId = appendAiMsg('assistant', '思考推演中...');
 
-                if (response.ok) {
-                    const data = await response.json();
-                    const reply = data.choices[0].message.content;
-                    botMsg.innerHTML = reply.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-                } else {
-                    botMsg.innerHTML = '<em>导师目前思考并发较高，请稍等重试。</em>';
+            callAtriaApi(chatHistory, loadingId);
+        }
+
+        function appendAiMsg(role, content) {
+            const body = document.getElementById('aiChatBody');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'ai-msg ' + role;
+            const msgId = 'msg-' + Date.now();
+            msgDiv.id = msgId;
+
+            let parsed = content.replace(/
+/g, '<br>')
+                                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                                .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" onclick="closeAiDrawer()" style="color:var(--brand-amber);font-weight:700;">$1</a>');
+
+            msgDiv.innerHTML = `<div class="ai-msg-bubble">${parsed}</div>`;
+            body.appendChild(msgDiv);
+            body.scrollTop = body.scrollHeight;
+            return msgId;
+        }
+
+        function escapeAiHtml(str) {
+            return (str || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function formatSimpleMarkdown(text) {
+            return formatAiExquisiteOutput(text);
+        }
+
+        async function callAtriaApi(messages, targetMsgId) {
+            const targetEl = document.getElementById(targetMsgId);
+            if (!targetEl) return;
+            const bubble = targetEl.querySelector('.ai-msg-bubble');
+            if (!bubble) return;
+
+            let fullReasoning = '';
+            let fullAiResponse = '';
+
+            function updateBubbleDisplay(isFinal = false) {
+                let outHtml = '';
+                if (fullReasoning.trim()) {
+                    const hasStartedAnswer = Boolean(fullAiResponse.trim()) || isFinal;
+                    outHtml += `
+                    <details class="ai-reasoning-box" ${hasStartedAnswer ? '' : 'open'}>
+                        <summary class="ai-reasoning-summary">
+                            <span style="display:flex; align-items:center; gap:6px;">
+                                <span>${hasStartedAnswer ? '💡' : '🧠'}</span>
+                                <span>${hasStartedAnswer ? '已完成深度推演 (点击展开/折叠)' : '丰密 正在深度推演周期与赔率机制...'}</span>
+                            </span>
+                            ${!hasStartedAnswer ? '<span class="ai-reasoning-pulse-dot"></span>' : '<span style="font-size:10px; opacity:0.7;">▼</span>'}
+                        </summary>
+                        <div class="ai-reasoning-content" style="padding: 10px 12px; font-size: 12px; color: #78350F; line-height: 1.6; white-space: pre-wrap; background: rgba(255,255,255,0.7);">${escapeAiHtml(fullReasoning)}</div>
+                    </details>`;
                 }
-            } catch (err) {
-                botMsg.innerHTML = '<em>网络通信异常，请检查网络后重试。</em>';
+                if (fullAiResponse.trim()) {
+                    outHtml += `<div class="ai-answer-content">${formatSimpleMarkdown(fullAiResponse)}</div>`;
+                }
+                bubble.innerHTML = outHtml;
+                const chatBody = document.getElementById('aiChatBody');
+                if (chatBody) chatBody.scrollTop = chatBody.scrollHeight;
             }
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+            const maxAttempts = Math.min(8, CJ_AI_CONFIG.keys.length);
+            let success = false;
+
+            for (let attempt = 0; attempt < maxAttempts; attempt++) {
+                const currentKey = getNextKey();
+                const controller = new AbortController();
+                let hasReceivedChunk = false;
+
+                const timeoutId = setTimeout(() => {
+                    if (!hasReceivedChunk) {
+                        console.warn(`[AI-KuiGas] Attempt ${attempt+1} 3.5s timeout, aborting to next key...`);
+                        GlobalKeyScheduler.setCooldown(currentKey, 45000);
+                        controller.abort();
+                    }
+                }, 3500);
+
+                try {
+                    const resp = await fetch(CJ_AI_CONFIG.apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${currentKey}`,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            model: CJ_AI_CONFIG.model,
+                            temperature: CJ_AI_CONFIG.temperature,
+                            max_tokens: CJ_AI_CONFIG.maxTokens,
+                            stream: true,
+                            messages: [
+                                { role: 'system', content: CJ_AI_CONFIG.systemPrompt },
+                                ...messages.slice(-6)
+                            ]
+                        }),
+                        signal: controller.signal
+                    });
+
+                    if (!resp.ok) {
+                        clearTimeout(timeoutId);
+                        if (resp.status === 429) GlobalKeyScheduler.setCooldown(currentKey, 45000);
+                        console.warn(`[AI-KuiGas] Attempt ${attempt+1} HTTP ${resp.status}, fast retry`);
+                        continue;
+                    }
+
+                    const reader = resp.body.getReader();
+                    const decoder = new TextDecoder('utf-8');
+                    let buffer = '';
+
+                    while (true) {
+                        const { done, value } = await reader.read();
+                        if (done) break;
+
+                        if (!hasReceivedChunk) {
+                            hasReceivedChunk = true;
+                            clearTimeout(timeoutId);
+                        }
+
+                        buffer += decoder.decode(value, { stream: true });
+                        const lines = buffer.split('
+');
+                        buffer = lines.pop();
+
+                        for (const line of lines) {
+                            const trimmed = line.trim();
+                            if (trimmed.startsWith('data: ') && trimmed !== 'data: [DONE]') {
+                                try {
+                                    const chunk = JSON.parse(trimmed.slice(6));
+                                    const deltaObj = chunk.choices?.[0]?.delta || {};
+                                    const deltaReasoning = deltaObj.reasoning_content || '';
+                                    const deltaContent = deltaObj.content || '';
+
+                                    if (deltaReasoning) {
+                                        fullReasoning += deltaReasoning;
+                                        updateBubbleDisplay(false);
+                                    }
+
+                                    if (deltaContent) {
+                                        fullAiResponse += deltaContent;
+                                        updateBubbleDisplay(false);
+                                    }
+                                } catch (e) {}
+                            }
+                        }
+                    }
+
+                    clearTimeout(timeoutId);
+
+                    if (fullAiResponse.trim() || fullReasoning.trim()) {
+                        updateBubbleDisplay(true);
+                        chatHistory.push({ role: 'assistant', content: fullAiResponse || fullReasoning });
+                        GlobalKeyScheduler.clearCooldown(currentKey);
+                        success = true;
+                        break;
+                    }
+
+                } catch (fetchErr) {
+                    clearTimeout(timeoutId);
+                    console.warn(`[AI-KuiGas] Attempt ${attempt+1} error:`, fetchErr.name === 'AbortError' ? '3.5s Timeout' : fetchErr.message);
+                }
+            }
+
+            if (!success) {
+                bubble.innerHTML = '<div style="color:#DC2626; font-size:13px;">⚠️ 导师思考节点网络并发密集，请稍后刷新重试。</div>';
+            }
+        }
+
+        // ===== 梭哈.AI 原生超轻量精美研报 Markdown 渲染引擎 =====
+        function formatAiExquisiteOutput(raw) {
+            if (!raw) return '';
+            var txt = String(raw).trim();
+            txt = txt.replace(/<think>[\s\S]*?<\/think>/gi, '');
+            txt = txt.replace(/^(?:思考过程|分析过程|用户意图|问题解构|思考：)[^
+]*
++/gi, '');
+            txt = txt.replace(/^(?:老铁|你好|您好|哈喽)[，,！!\s]*/gi, '');
+            txt = txt.replace(/^(?:针对你(?:所问|提到|关于)的?(?:问题|内容)?[，,！!\s]*)/gi, '');
+            
+            txt = txt.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            txt = txt.replace(/```([a-zA-Z0-9_-]*)?
+([\s\S]*?)```/g, '<pre class="ai-pre"><code class="ai-code">$2</code></pre>');
+            txt = txt.replace(/`([^`]+)`/g, '<code class="ai-code-inline">$1</code>');
+            txt = txt.replace(/^#(1, 6)\s*(.*?)$/gm, '<strong class="ai-bold">$1</strong>');
+            txt = txt.replace(/#(1, 6)\s+/g, '');
+            txt = txt.replace(/\*\*([^\*]+)\*\*/g, '<strong class="ai-bold">$1</strong>');
+            txt = txt.replace(/\$([^\$]+)\$/g, '$1');
+            txt = txt.replace(/\[([^\]]+)\]\((#[a-zA-Z0-9_-]+)\)/g, '<a href="$2" class="ai-pill-topic" data-anchor="$2">📍 $1</a>');
+            txt = txt.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="ai-ext-link">$1 ↗</a>');
+
+            var lines = txt.split(/?
+/);
+            var parts = [];
+            var inOl = false;
+            var inUl = false;
+            
+            for (var i = 0; i < lines.length; i++) {
+                var line = lines[i].trim();
+                if (!line) {
+                    if (inOl) { parts.push('</ol>'); inOl = false; }
+                    if (inUl) { parts.push('</ul>'); inUl = false; }
+                    continue;
+                }
+                
+                var olM = line.match(/^(\d+)[\.、\)]\s*(.*)$/);
+                if (olM) {
+                    if (inUl) { parts.push('</ul>'); inUl = false; }
+                    if (!inOl) { parts.push('<ol class="ai-list-ol">'); inOl = true; }
+                    parts.push('<li class="ai-item-li"><span class="ai-badge-num">' + olM[1] + '</span><div class="ai-item-text">' + olM[2] + '</div></li>');
+                    continue;
+                }
+                
+                var ulM = line.match(/^[-•\*]\s*(.*)$/);
+                if (ulM) {
+                    if (inOl) { parts.push('</ol>'); inOl = false; }
+                    if (!inUl) { parts.push('<ul class="ai-list-ul">'); inUl = true; }
+                    parts.push('<li class="ai-item-li-bullet"><div class="ai-item-text">' + ulM[1] + '</div></li>');
+                    continue;
+                }
+                
+                if (inOl) { parts.push('</ol>'); inOl = false; }
+                if (inUl) { parts.push('</ul>'); inUl = false; }
+                
+                if (line.indexOf('🛡️') === 0 || line.indexOf('⚠️') === 0 || line.indexOf('避坑') !== -1 || line.indexOf('风险红线') !== -1) {
+                    parts.push('<div class="ai-box-warn">' + line + '</div>');
+                } else if (line.indexOf('🎯') === 0 || line.indexOf('💡') === 0 || line.indexOf('核心研判') !== -1) {
+                    parts.push('<div class="ai-box-core">' + line + '</div>');
+                } else if (line.indexOf('📍') === 0 || line.indexOf('课题精读') !== -1) {
+                    parts.push('<div class="ai-topic-cite">' + line + '</div>');
+                } else {
+                    parts.push('<p class="ai-para">' + line + '</p>');
+                }
+            }
+            if (inOl) parts.push('</ol>');
+            if (inUl) parts.push('</ul>');
+            return parts.join('
+');
+        }
+
+        // 统一章节跳转事件监听
+        if (typeof document !== 'undefined') {
+            document.addEventListener('click', function(e) {
+                var pill = e.target.closest('.ai-pill-topic');
+                if (!pill) return;
+                var anchor = pill.getAttribute('data-anchor') || pill.getAttribute('href');
+                if (!anchor || anchor.indexOf('#') !== 0) return;
+                e.preventDefault();
+                closeAiDrawer();
+                var target = document.querySelector(anchor);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    target.style.transition = 'box-shadow 0.4s ease, border-color 0.4s ease';
+                    target.style.boxShadow = '0 0 0 3px rgba(245, 158, 11, 0.4)';
+                    setTimeout(function() { target.style.boxShadow = ''; }, 2400);
+                }
+            });
         }
     </script>
 </body>

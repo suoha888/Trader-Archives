@@ -8,7 +8,7 @@
 
 ---
 
-## 📚 正式上线实战导师名录（已收录 5 位顶级高手）
+## 📚 正式上线实战导师名录（已收录 6 位顶级高手）
 
 | 导师 | Twitter Handle | 专属全书定位与大典称号 | 收录规模 | 专属在线研报阅读站 | GitHub 全量开源数据湖 |
 | :--- | :--- | :--- | :---: | :---: | :---: |
@@ -17,6 +17,7 @@
 | **川沐｜Trumoo** | [@xiaomustock](https://x.com/xiaomustock) | 美股硬科技、加密大周期与盘口博弈 | **3,866 篇** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/xiaomu/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/xiaomu/data) |
 | **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 基差套利与量化做市实战大典 | **670 篇（含4篇万字研报）** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/yourquantguy/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data) |
 | **Meta 猿 🦍** | [@Metabape](https://x.com/metabape) | 微观机制漏洞套利、OLP负点差与商海博弈心智 | **3,602 篇（含6篇万字长文）** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/metabape/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/metabape/data) |
+| **风无向🦅** | [@Web3Feng](https://x.com/Web3Feng) | 精心策划的辉煌：工作室产业化、长尾量化与通天贷逆袭心法 | **5,287 篇（含4篇深度研报）** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/web3feng/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/web3feng/data) |
 
 ---
 
@@ -77,12 +78,39 @@
 
 ---
 
+### 6. 【第六期重磅上线】风无向🦅（[@Web3Feng](https://x.com/Web3Feng)）
+> **定位：从 Web2 工业化工作室、长尾量化套利到通天贷逆袭心智的实战派导师**  
+> 🔗 **专属在线阅读站**：[https://suoha888.github.io/Trader-Archives/web3feng/](https://suoha888.github.io/Trader-Archives/web3feng/)  
+> 📂 **开源数据湖入口**：[https://github.com/suoha888/Trader-Archives/tree/main/web3feng/data](https://github.com/suoha888/Trader-Archives/tree/main/web3feng/data)
+
+* **核心擅长板块与实战战绩**：
+  - **工作室 SOP 产业化**：告别小打小闹，将打新、空投、链上交互做成 24 小时工业化流水线，小散户破局的资本原始积累指南；
+  - **通天贷与非对称杠杆心智**：“梭哈不是鲁莽，而是精心策划的辉煌”，解构段永平抄底网易的非对称杠杆，极度苛刻地选择胜率与赔率；
+  - **长尾量化套利策略**：绝不与顶级高频量化（Jane Street、Jump）正面火拼，深耕链上冷门交易对、微观深度失衡与特定规则长尾利润；
+  - **1379 绝不追涨冷酷纪律**：化身《三体》1379 号监听员，熊市敢于重仓埋伏，牛市人声鼎沸时坚决不追涨，冷静止盈；
+  - **A股与制造业硬核推演**：从买方视角拆解 A 股“去宁德化”、光伏电池技术路线与制造业产能出清周期；
+  - **AI 极客工具链双持**：率先提出大模型“性价比悖论”，实盘 Codestral / Claude 3.5 Sonnet / DeepSeek 混合架构辅助量化开发。
+* **数据湖结构**：收录 5,287 篇全量推文、4 篇官方深度长文研报（含《谁会傻逼到这个时候去买希音》、《Sign：全新的链上证明》等）、15 大核心实战思维模型、6 大垂类数据湖切片。
+
+---
+
 ## 🗂️ 全量开源仓库目录树结构
 
 ```text
 Trader-Archives/
-├── index.html                   # 🏛️ 全景大典总门户（含五维数据看板与 5 导师大典卡片）
+├── index.html                   # 🏛️ 全景大典总门户（含五维数据看板与 6 导师大典卡片）
 ├── README.md                    # 📖 全量开源项目总纲与跳转指引（当前文件）
+│
+├── web3feng/                    # 🚀【第六期】风无向🦅 精心策划的辉煌：工作室产业化、长尾量化与通天贷大典
+│   ├── index.html               # 独立研报阅读站（内置 Atria 专属 AI 导师）
+│   ├── data/                    # 完整开源数据湖
+│   │   ├── domains/             # 6 大垂类数据湖切片（CSV & JSON）
+│   │   ├── web3feng_articles_full.json     # 4 篇官方深度长文研报
+│   │   ├── web3feng_mental_models.json     # 15 大实战思维模型
+│   │   ├── web3feng_featured.json/csv      # 精选高价值推文
+│   │   └── web3feng_tweets.json/csv        # 5,287 篇全量推文库
+│   ├── docs/articles/           # 4 篇官方长文研报 Markdown 文库
+│   └── images/                  # 163 张本地离线高清实盘与分析图床
 │
 ├── yourquantguy/                # 🚀【第四期】yourQuantGuy Perp DEX 量化套利大典
 │   ├── index.html               # 独包含研报阅读站（内置 Atria 30-Key 专属 AI 导师）
