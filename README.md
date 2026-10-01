@@ -8,7 +8,7 @@
 
 ---
 
-## 📚 正式上线实战导师名录（已收录 6 位顶级高手）
+## 📚 正式上线实战导师名录（已收录 7 位顶级高手）
 
 | 导师 | Twitter Handle | 专属全书定位与大典称号 | 收录规模 | 专属在线研报阅读站 | GitHub 全量开源数据湖 |
 | :--- | :--- | :--- | :---: | :---: | :---: |
@@ -18,6 +18,7 @@
 | **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 基差套利与量化做市实战大典 | **670 篇（含4篇万字研报）** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/yourquantguy/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data) |
 | **Meta 猿 🦍** | [@Metabape](https://x.com/metabape) | 微观机制漏洞套利、OLP负点差与商海博弈心智 | **3,602 篇（含6篇万字长文）** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/metabape/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/metabape/data) |
 | **风无向🦅** | [@Web3Feng](https://x.com/Web3Feng) | 精心策划的辉煌：工作室产业化、长尾量化与通天贷逆袭心法 | **5,287 篇（含4篇深度研报）** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/web3feng/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/web3feng/data) |
+| **丰密** | [@KuiGas](https://x.com/KuiGas) | 大周期现货、公链生态与以慢制快投资全书 | **4,667 篇（含10篇长文研报）** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/kuigas/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/kuigas/data) |
 
 ---
 
@@ -94,12 +95,38 @@
 
 ---
 
+### 7. 【第七期重磅上线】丰密（[@KuiGas](https://x.com/KuiGas)）
+> **定位：宏观周期论者、以慢制快投资哲学践行者与公链生态布道者**  
+> 🔗 **专属在线阅读站**：[https://suoha888.github.io/Trader-Archives/kuigas/](https://suoha888.github.io/Trader-Archives/kuigas/)  
+> 📂 **开源数据湖入口**：[https://github.com/suoha888/Trader-Archives/tree/main/kuigas/data](https://github.com/suoha888/Trader-Archives/tree/main/kuigas/data)
+
+* **核心擅长板块与实战战绩**：
+  - **以慢制快五维投资哲学**：“一切都是运气，靠运气赚的钱，必须尽快存入不靠运气也能赚钱的账户。交易是以慢制快：永远从成本、赔率、风险、机会、策略五个维度出发，只打胜率与赔率极度非对称的大仗”；
+  - **大周期现货底部重仓法则**：牛熊转换时钟、全球宏观流动性拐点与长期复利，耐得住寂寞在周期底部低吸确定性资产，在泡沫狂热期冷静分批止盈；
+  - **公链底层架构与以太坊 L2 竞争格局**：从第一性原理拆解 Rollup 机制、DA 层演进、模块化公链与高性能单体链的真实价值沉淀；
+  - **代币经济学防割避坑**：透视高 FDV 低流通 VC 币的锁仓与抛压陷阱、做市商借币操盘逻辑，坚守链上交易者的风控底线；
+  - **33DAO 与极客精神实践**：创立 33DAO 与 KuiClub，记录真实的实盘心路与行业深思。
+* **数据湖结构**：收录 4,667 篇全量推文、10 篇官方万字长文研报、122 条核心实战思维模型、7 大垂类数据湖切片。
+
+---
+
 ## 🗂️ 全量开源仓库目录树结构
 
 ```text
 Trader-Archives/
-├── index.html                   # 🏛️ 全景大典总门户（含五维数据看板与 6 导师大典卡片）
+├── index.html                   # 🏛️ 全景大典总门户（含五维数据看板与 7 导师大典卡片）
 ├── README.md                    # 📖 全量开源项目总纲与跳转指引（当前文件）
+│
+├── kuigas/                      # 🚀【第七期】丰密 大周期现货、公链生态与以慢制快投资全书
+│   ├── index.html               # 独立研报阅读站（内置 Atria 30-Key 专属 AI 导师）
+│   ├── data/                    # 完整开源数据湖
+│   │   ├── domains/             # 7 大垂类数据湖切片（CSV & JSON）
+│   │   ├── kuigas_articles.json # 10 篇官方深度长文研报
+│   │   ├── kuigas_mental_models.json # 122 大实战思维模型
+│   │   ├── kuigas_featured.json/csv  # 527 篇精选实盘推文
+│   │   └── kuigas_tweets.json/csv    # 4,667 篇全量推文库
+│   ├── docs/articles/           # 10 篇官方长文研报 Markdown 文库
+│   └── images/                  # 180 张本地离线高清实盘与架构图床
 │
 ├── web3feng/                    # 🚀【第六期】风无向🦅 精心策划的辉煌：工作室产业化、长尾量化与通天贷大典
 │   ├── index.html               # 独立研报阅读站（内置 Atria 专属 AI 导师）
@@ -168,4 +195,4 @@ Trader-Archives/
 
 ---
 
-*由研究员梭哈.AI [@SUOHA_AI](https://x.com/SUOHA_AI) 独立工程化重构构建，全网全量开源，非投资建议，请 DYOR。*
+*由研究员梭哈.AI [@SUOHA_AI](https://x.com/SUOHA_AI) 独立体系化整理构建，全网全量开源，非投资建议，请 DYOR。*
