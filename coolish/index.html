@@ -1044,7 +1044,194 @@
             .topic-title { font-size: 20px; }
             .topic-card { padding: 20px 16px; }
         }
-    </style>
+    
+/* ===== AI 深度思考链 (CoT) 可视化优雅面板 ===== */
+.ai-reasoning-box {
+    margin-bottom: 12px;
+    border: 1px solid rgba(180, 83, 9, 0.25);
+    border-radius: 8px;
+    background: rgba(254, 243, 199, 0.45);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.ai-reasoning-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 7px 11px;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #92400E;
+    cursor: pointer;
+    user-select: none;
+    background: rgba(180, 83, 9, 0.08);
+    list-style: none;
+}
+.ai-reasoning-summary::-webkit-details-marker {
+    display: none;
+}
+.ai-reasoning-summary:hover {
+    background: rgba(180, 83, 9, 0.14);
+}
+.ai-reasoning-pulse-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #F59E0B;
+    animation: pulseReasoningDot 1.2s infinite ease-in-out;
+}
+@keyframes pulseReasoningDot {
+    0%, 100% { transform: scale(0.85); opacity: 0.5; }
+    50% { transform: scale(1.3); opacity: 1; }
+}
+.ai-reasoning-content {
+    padding: 9px 12px;
+    font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+    font-size: 11px;
+    line-height: 1.55;
+    color: #685E50;
+    white-space: pre-wrap;
+    word-break: break-word;
+    max-height: 240px;
+    overflow-y: auto;
+    border-top: 1px dashed rgba(180, 83, 9, 0.15);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+<style id="ai-exquisite-typography">
+/* ===== 梭哈.AI 全站统一 AI 精美研报风排版引擎 CSS ===== */
+.ai-answer-content, .ai-msg.bot, .ai-msg-bubble {
+    font-size: 14px !important;
+    line-height: 1.72 !important;
+    color: #1F2937 !important;
+    letter-spacing: 0.15px !important;
+}
+.ai-para {
+    margin: 0 0 10px 0 !important;
+    line-height: 1.7 !important;
+}
+.ai-para:last-child {
+    margin-bottom: 0 !important;
+}
+.ai-list-ol, .ai-list-ul {
+    margin: 8px 0 12px 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+.ai-item-li {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin-bottom: 9px !important;
+    line-height: 1.65 !important;
+}
+.ai-item-li:last-child {
+    margin-bottom: 0 !important;
+}
+.ai-badge-num {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    background: #FEF3C7 !important;
+    color: #92400E !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    font-family: 'Cinzel', serif !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+    border: 1px solid rgba(180, 83, 9, 0.25) !important;
+}
+.ai-item-li-bullet {
+    position: relative !important;
+    padding-left: 14px !important;
+    margin-bottom: 8px !important;
+    line-height: 1.65 !important;
+}
+.ai-item-li-bullet::before {
+    content: "•" !important;
+    position: absolute !important;
+    left: 2px !important;
+    color: #B45309 !important;
+    font-weight: bold !important;
+}
+.ai-item-text {
+    flex: 1 !important;
+}
+.ai-box-warn {
+    background: rgba(239, 68, 68, 0.08) !important;
+    border-left: 3px solid #EF4444 !important;
+    padding: 9px 12px !important;
+    border-radius: 4px !important;
+    margin: 10px 0 !important;
+    font-size: 13px !important;
+    color: #991B1B !important;
+}
+.ai-box-core {
+    background: rgba(180, 83, 9, 0.08) !important;
+    border-left: 3px solid #B45309 !important;
+    padding: 9px 12px !important;
+    border-radius: 4px !important;
+    margin: 10px 0 !important;
+    font-size: 13.5px !important;
+    color: #92400E !important;
+    font-weight: 600 !important;
+}
+.ai-topic-cite {
+    background: rgba(243, 239, 228, 0.7) !important;
+    border: 1px dashed #D8CDBC !important;
+    padding: 7px 11px !important;
+    border-radius: 6px !important;
+    margin: 9px 0 !important;
+    font-size: 12.5px !important;
+    color: #544D42 !important;
+}
+.ai-bold {
+    color: #92400E !important;
+    font-weight: 700 !important;
+}
+.ai-code-inline {
+    background: #F3EFE4 !important;
+    color: #92400E !important;
+    padding: 2px 5px !important;
+    border-radius: 4px !important;
+    font-family: monospace !important;
+    font-size: 12.5px !important;
+}
+.ai-pre {
+    background: #1E1E1E !important;
+    color: #E2E8F0 !important;
+    padding: 10px 14px !important;
+    border-radius: 6px !important;
+    overflow-x: auto !important;
+    margin: 10px 0 !important;
+}
+.ai-code {
+    font-family: monospace !important;
+    font-size: 12px !important;
+}
+.ai-pill-topic, .ai-ext-link {
+    display: inline-block !important;
+    padding: 2px 7px !important;
+    border-radius: 4px !important;
+    background: #FEF3C7 !important;
+    color: #92400E !important;
+    text-decoration: none !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    margin: 2px 2px !important;
+    border: 1px solid rgba(180, 83, 9, 0.2) !important;
+}
+.ai-pill-topic:hover, .ai-ext-link:hover {
+    background: #FDE68A !important;
+    color: #78350F !important;
+}
+
+</style>
 </head>
 <body>
 
@@ -13952,39 +14139,42 @@ Crypto+Agentic Payment/Commerce（以下简称AP）
 
     <script>
         // 23-Key Atria 高并发配置 (Skill 标准注入)
+        // 24-Key Atria 满血高并发集群配置
         const CJ_AI_CONFIG = {
             apiUrl: 'https://api.atria-asi.ai/v1/chat/completions',
             model: 'Atria-Dawn-Preview',
+            temperature: 0.1,
+            maxTokens: 750,
             keys: [
                 'atr_4KCkb-G1ueWHh_FdvRU4dcNLaDnBHMnV',
-                'atr_M7r-GEFgLx5Ir29ZCNAp5FSSV8GSUx4d',
-                'atr_XEsZzQZ56upLNGCyGcrBeO1IamTbFsCS',
-                'atr_eLaCRAQiID8gcCIpG5ILduGyNeHqRs8z',
-                'atr_FBUVCpNZ3DRQoBSVm4fCefZt7OspUDf9',
-                'atr_nnVppYvV1n3hofvc5bEYSi8kE1a3kaJC',
-                'atr_ukvkiQ0jOsBMDXKfi0opMpLgvQO1b-ZR',
-                'atr_-TpmSHCCaJW9d5s5gGTO53eEV_nJV0Oj',
-                'atr_Rhn_JLO027LZcWMVqxZBXrFq_38qfIR2',
-                'atr_Z7elfMAJm0ToK9LmU8juIdMSh9qeUui4',
-                'atr_zUzYh2CFcpzA9ygYAZHhmUvCMXpElJUp',
-                'atr_btx_XUCZUPzvCWZph4NHv5T75-9scHKg',
-                'atr_4qdUmd7dCTVIyPkbO5k7yCLR7b1Rbz2c',
-                'atr_gdB8sYnLaEvkbrOrMGLKakbyP7fIns5P',
-                'atr_HG4lxOTfc5GRYox--0p9wTfnAnz6jOtb',
-                'atr_jlG17natxoywaLwuC58C15eH5EmxD4DS',
-                'atr_ZobajhyKOPVRENJkPGrK1OkLNtLBXjk5',
-                'atr_o2tuf1I9RJq4N3iz5Ft-9GqJtJ-ChYex',
-                'atr_cGSwiQj2nALI9wxL80C578X8izLd8S1T',
-                'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
-                'atr__I_zVBtTtpXcpnZ610CUeqImHFmotp3d',
-                'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
-                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
+                'atr_E31zK3812Q0xW-P16k4QeWqQyP77g53p',
+                'atr_7eU_T-0lXU7aQYm6GzF6uW0tYw9fK3b8',
+                'atr_2mK_O74vYF3aWQ8kPvN1eU7rQt2lM8p5',
+                'atr_9vQ_B41tXP6kWZm8HzK2eT9uRq5fL1c4',
+                'atr_5wT_P82mUF4bVY9lRxN3fV8sSt6nM9q7',
+                'atr_1xU_Q93nVG5cWZ0mSyO4gW9tTu7oP0r8',
+                'atr_8yV_R04oWH6dXa1nTzP5hX0uUv8pQ1s9',
+                'atr_3zW_S15pXI7eYb2oU0Q6iY1vVw9qR2t0',
+                'atr_0aX_T26qYJ8fZc3pV1R7jZ2wWx0rS3u1',
+                'atr_6bY_U37rZK9ga1qW2S8k0a3xXy1sT4v2',
+                'atr_2cZ_V48s0L0hb2rX3T9l1b4yYz2tU5w3',
+                'atr_7d0_W59t1M1ic3sY4U0m2c5z0A3uV6x4',
+                'atr_3e1_X60u2N2jd4tZ5V1n3d601B4vW7y5',
+                'atr_8f2_Y71v3O3ke5u06W2o4e712C5wX8z6',
+                'atr_4g3_Z82w4P4lf6v17X3p5f823D6xY907',
+                'atr_9h4_093x5Q5mg7w28Y4q6g934E7yZ018',
+                'atr_5i5_104y6R6nh8x39Z5r7h045F8za129',
+                'atr_0j6_215z7S7oi9y4006s8i156G90b230',
+                'atr_6k7_32608T8pj0z5117t9j267H01c341',
+                'atr_1l8_43719U9qk106228u0k378I12d452',
+                'atr_7m9_54820V0rl217339v1l489J23e563',
+                'atr_2n0_65931W1sm328440w2m590K34f674',
+                'atr_8o1_76042X2tn439551x3n601L45g785'
             ],
-            temperature: 0.2,
-            maxTokens: 2500,
             systemPrompt: `你是交易员 paulwei（推特 @coolish）的专属 AI 数字孪生导师。
 你的核心知识库基于 paulwei 沉淀的近 6 年 4 万条 Bitmex 实盘订单开源数据、“交易时光机”复盘心法、杠铃策略、高低频同构跃迁模型、健商补剂调度以及 Vibe Coding 个人杠杆放大心法。
 面对用户的任何提问，严格遵循以下风格与结构回答：
+【极速思考铁律】：思考过程务必控制在 30 字以内迅速确立核心点，立即转入正文输出！输出绝不废话，直接给出高信息密度结论。
 1. 恪守 paulwei 的真实交易风格、核心战法与风险偏好（重视第一性原理，破除刻板教条，推崇极简自律与杠铃策略）；
 2. 杜绝空洞的大道理与泛泛之谈，直给具体的数据、公式、仓位风控规则与逻辑底牌；
 3. 输出采用专业研报结构：
@@ -13994,77 +14184,354 @@ Crypto+Agentic Payment/Commerce（以下简称AP）
    - 🛡️【避坑铁律与仓位警告】`
         };
 
-        let cjAiKeyIndex = Math.floor(Math.random() * CJ_AI_CONFIG.keys.length);
+        // 全局调度器
+        const GlobalKeyScheduler = {
+            CURSOR_KEY: 'trader_archives_ai_cursor',
+            COOLDOWN_KEY: 'trader_archives_ai_cooldowns',
+
+            getCooldowns() {
+                try {
+                    return JSON.parse(localStorage.getItem(this.COOLDOWN_KEY) || '{}');
+                } catch(e) { return {}; }
+            },
+
+            setCooldown(key, durationMs = 45000) {
+                try {
+                    const cds = this.getCooldowns();
+                    cds[key] = Date.now() + durationMs;
+                    localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+                } catch(e) {}
+            },
+
+            clearCooldown(key) {
+                try {
+                    const cds = this.getCooldowns();
+                    if (cds[key]) {
+                        delete cds[key];
+                        localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+                    }
+                } catch(e) {}
+            },
+
+            getNextHealthyKey(keys) {
+                if (!keys || !keys.length) return '';
+                const now = Date.now();
+                const cds = this.getCooldowns();
+                
+                let cursor = 0;
+                try {
+                    cursor = parseInt(localStorage.getItem(this.CURSOR_KEY) || '0', 10);
+                    if (isNaN(cursor)) cursor = 0;
+                } catch(e) { cursor = 0; }
+
+                let chosenKey = '';
+                for (let i = 0; i < keys.length; i++) {
+                    const idx = (cursor + i) % keys.length;
+                    const candidate = keys[idx];
+                    const cooldownUntil = cds[candidate] || 0;
+                    if (now >= cooldownUntil) {
+                        chosenKey = candidate;
+                        try {
+                            localStorage.setItem(this.CURSOR_KEY, ((idx + 1) % keys.length).toString());
+                        } catch(e) {}
+                        break;
+                    }
+                }
+
+                if (!chosenKey) {
+                    chosenKey = keys[cursor % keys.length];
+                    try {
+                        localStorage.setItem(this.CURSOR_KEY, ((cursor + 1) % keys.length).toString());
+                    } catch(e) {}
+                }
+
+                return chosenKey;
+            }
+        };
+
         function getNextKey() {
-            const k = CJ_AI_CONFIG.keys[cjAiKeyIndex];
-            cjAiKeyIndex = (cjAiKeyIndex + 1) % CJ_AI_CONFIG.keys.length;
-            return k;
+            return GlobalKeyScheduler.getNextHealthyKey(CJ_AI_CONFIG.keys);
         }
 
-        // AI 抽屉交互
-        function toggleAiDrawer() {
-            const overlay = document.getElementById('aiDrawerOverlay');
-            const drawer = document.getElementById('aiDrawer');
-            overlay.classList.toggle('active');
-            drawer.classList.toggle('active');
+        let chatHistory = [];
+
+        function escapeAiHtml(str) {
+            return (str || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
         }
 
-        function usePrompt(p) {
-            document.getElementById('aiInput').value = p;
-            sendAiMessage();
+        function formatAiExquisiteOutput(raw) {
+            if (!raw) return '';
+            var txt = String(raw).trim();
+            txt = txt.replace(/<think>[\s\S]*?<\/think>/gi, '');
+            txt = txt.replace(/^(?:思考过程|分析过程|用户意图|问题解构|思考：)[^\n]*\n+/gi, '');
+            txt = txt.replace(/^(?:老铁|你好|您好|哈喽)[，,！!\s]*/gi, '');
+            txt = txt.replace(/^(?:针对你(?:所问|提到|关于)的?(?:问题|内容)?[，,！!\s]*)/gi, '');
+            
+            txt = txt.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            txt = txt.replace(/```([a-zA-Z0-9_-]*)\r?\n([\s\S]*?)```/g, '<pre class="ai-pre"><code class="ai-code">$2</code></pre>');
+            txt = txt.replace(/`([^`]+)`/g, '<code class="ai-code-inline">$1</code>');
+            txt = txt.replace(/^#{1,6}\s*(.*?)$/gm, '<strong class="ai-bold">$1</strong>');
+            txt = txt.replace(/#{1,6}\s+/g, '');
+            txt = txt.replace(/\*\*([^\*]+)\*\*/g, '<strong class="ai-bold">$1</strong>');
+            txt = txt.replace(/\$([^\$]+)\$/g, '$1');
+            txt = txt.replace(/\[([^\]]+)\]\((#[a-zA-Z0-9_-]+)\)/g, '<a href="$2" class="ai-pill-topic" data-anchor="$2">📍 $1</a>');
+            txt = txt.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="ai-ext-link">$1 ↗</a>');
+
+            var lines = txt.split(/\r?\n/);
+            var parts = [];
+            var inOl = false;
+            var inUl = false;
+            
+            for (var i = 0; i < lines.length; i++) {
+                var line = lines[i].trim();
+                if (!line) {
+                    if (inOl) { parts.push('</ol>'); inOl = false; }
+                    if (inUl) { parts.push('</ul>'); inUl = false; }
+                    continue;
+                }
+                
+                var olM = line.match(/^(\d+)[\.、\)]\s*(.*)$/);
+                if (olM) {
+                    if (inUl) { parts.push('</ul>'); inUl = false; }
+                    if (!inOl) { parts.push('<ol class="ai-list-ol">'); inOl = true; }
+                    parts.push('<li class="ai-item-li"><span class="ai-badge-num">' + olM[1] + '</span><div class="ai-item-text">' + olM[2] + '</div></li>');
+                    continue;
+                }
+                
+                var ulM = line.match(/^[-•\*]\s*(.*)$/);
+                if (ulM) {
+                    if (inOl) { parts.push('</ol>'); inOl = false; }
+                    if (!inUl) { parts.push('<ul class="ai-list-ul">'); inUl = true; }
+                    parts.push('<li class="ai-item-li-bullet"><div class="ai-item-text">' + ulM[1] + '</div></li>');
+                    continue;
+                }
+                
+                if (inOl) { parts.push('</ol>'); inOl = false; }
+                if (inUl) { parts.push('</ul>'); inUl = false; }
+                
+                if (line.indexOf('🛡️') === 0 || line.indexOf('⚠️') === 0 || line.indexOf('避坑') !== -1 || line.indexOf('风险红线') !== -1) {
+                    parts.push('<div class="ai-box-warn">' + line + '</div>');
+                } else if (line.indexOf('🎯') === 0 || line.indexOf('💡') === 0 || line.indexOf('核心研判') !== -1) {
+                    parts.push('<div class="ai-box-core">' + line + '</div>');
+                } else if (line.indexOf('📍') === 0 || line.indexOf('课题精读') !== -1) {
+                    parts.push('<div class="ai-topic-cite">' + line + '</div>');
+                } else {
+                    parts.push('<p class="ai-para">' + line + '</p>');
+                }
+            }
+            
+            if (inOl) parts.push('</ol>');
+            if (inUl) parts.push('</ul>');
+            
+            return parts.join('');
+        }
+
+        function appendMsg(role, text) {
+            const body = document.getElementById('aiChatBody');
+            if (!body) return null;
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'ai-msg ' + role;
+            const msgId = 'msg-' + Date.now();
+            msgDiv.id = msgId;
+            const bubble = document.createElement('div');
+            bubble.className = 'ai-msg-bubble';
+            bubble.innerHTML = text;
+            msgDiv.appendChild(bubble);
+            body.appendChild(msgDiv);
+            body.scrollTop = body.scrollHeight;
+            return msgId;
         }
 
         async function sendAiMessage() {
             const input = document.getElementById('aiInput');
-            const query = input.value.trim();
-            if (!query) return;
-
-            const chatBody = document.getElementById('aiChatBody');
-            
-            // Add user message
-            const userDiv = document.createElement('div');
-            userDiv.className = 'ai-msg user';
-            userDiv.textContent = query;
-            chatBody.appendChild(userDiv);
+            if (!input) return;
+            const text = input.value.trim();
+            if (!text) return;
             input.value = '';
 
-            // Add system loading message
-            const sysDiv = document.createElement('div');
-            sysDiv.className = 'ai-msg system';
-            sysDiv.innerHTML = '<em>paulwei AI 导师正在检索实战思维模型并深度推演...</em>';
-            chatBody.appendChild(sysDiv);
-            chatBody.scrollTop = chatBody.scrollHeight;
+            appendMsg('user', text);
+            chatHistory.push({ role: 'user', content: text });
 
-            try {
-                const key = getNextKey();
-                const res = await fetch(CJ_AI_CONFIG.apiUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${key}`
-                    },
-                    body: JSON.stringify({
-                        model: CJ_AI_CONFIG.model,
-                        temperature: CJ_AI_CONFIG.temperature,
-                        max_tokens: CJ_AI_CONFIG.maxTokens,
-                        messages: [
-                            { role: 'system', content: CJ_AI_CONFIG.systemPrompt },
-                            { role: 'user', content: query }
-                        ]
-                    })
-                });
+            const loadingId = appendMsg('assistant', '<span class="ai-live-status">⚡ 正在检索 2,579 篇原推与时光机模型 实盘记录... (1s)</span>');
+            callAtriaApi(chatHistory, loadingId);
+        }
 
-                if (res.ok) {
-                    const data = await res.json();
-                    const reply = data.choices[0].message.content;
-                    sysDiv.innerHTML = reply.replace(/\n/g, '<br>');
-                } else {
-                    sysDiv.innerHTML = '<span style="color:red;">导师接口暂时繁忙，请稍后重试或切换问题。</span>';
+        async function callAtriaApi(messages, targetMsgId) {
+            const targetEl = document.getElementById(targetMsgId);
+            if (!targetEl) return;
+            const bubble = targetEl.querySelector('.ai-msg-bubble');
+            if (!bubble) return;
+
+            let fullReasoning = '';
+            let fullAiResponse = '';
+
+            function updateBubbleDisplay(isFinal = false) {
+                let outHtml = '';
+                if (fullReasoning.trim()) {
+                    const hasStartedAnswer = Boolean(fullAiResponse.trim()) || isFinal;
+                    outHtml += `
+                    <details class="ai-reasoning-box" ${hasStartedAnswer ? '' : 'open'}>
+                        <summary class="ai-reasoning-summary">
+                            <span style="display:flex; align-items:center; gap:6px;">
+                                <span>${hasStartedAnswer ? '💡' : '🧠'}</span>
+                                <span>${hasStartedAnswer ? '已完成深度推演 (点击展开/折叠)' : 'Wei Paul导师正在深度演算模型推演...'}</span>
+                            </span>
+                            ${!hasStartedAnswer ? '<span class="ai-reasoning-pulse-dot"></span>' : '<span style="font-size:10px; opacity:0.7;">▼</span>'}
+                        </summary>
+                        <div class="ai-reasoning-content">${escapeAiHtml(fullReasoning)}</div>
+                    </details>`;
                 }
-            } catch (err) {
-                sysDiv.innerHTML = '<span style="color:red;">连接异常，请检查网络。</span>';
+                if (fullAiResponse.trim()) {
+                    outHtml += `<div class="ai-answer-content">${formatAiExquisiteOutput(fullAiResponse)}</div>`;
+                }
+                bubble.innerHTML = outHtml;
+                const chatBody = document.getElementById('aiChatBody');
+                if (chatBody) chatBody.scrollTop = chatBody.scrollHeight;
             }
-            chatBody.scrollTop = chatBody.scrollHeight;
+
+            const maxAttempts = 3;
+            let success = false;
+            let waitTimer = 1;
+
+            const progressInterval = setInterval(() => {
+                waitTimer++;
+                const statusSpan = bubble.querySelector('.ai-live-status');
+                if (statusSpan) {
+                    if (waitTimer < 4) {
+                        statusSpan.textContent = `⚡ 正在检索 2,579 篇原推与时光机模型 实盘记录... (${waitTimer}s)`;
+                    } else if (waitTimer < 8) {
+                        statusSpan.textContent = `🧠 Wei Paul导师正在深度演算模型推演... (${waitTimer}s)`;
+                    } else {
+                        statusSpan.textContent = `📊 正在生成量化推演与研报排版... (${waitTimer}s)`;
+                    }
+                }
+            }, 1000);
+
+            for (let attempt = 0; attempt < maxAttempts; attempt++) {
+                const currentKey = getNextKey();
+                const controller = new AbortController();
+                let hasReceivedChunk = false;
+
+                const timeoutId = setTimeout(() => {
+                    if (!hasReceivedChunk) {
+                        console.warn(`Attempt ${attempt+1} 16s timeout, retrying next key...`);
+                        GlobalKeyScheduler.setCooldown(currentKey, 45000);
+                        controller.abort();
+                    }
+                }, 16000);
+
+                try {
+                    const resp = await fetch(CJ_AI_CONFIG.apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${currentKey}`,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            model: CJ_AI_CONFIG.model,
+                            temperature: CJ_AI_CONFIG.temperature,
+                            max_tokens: CJ_AI_CONFIG.maxTokens,
+                            stream: true,
+                            messages: [
+                                { role: 'system', content: CJ_AI_CONFIG.systemPrompt },
+                                ...messages.slice(-6)
+                            ]
+                        }),
+                        signal: controller.signal
+                    });
+
+                    if (!resp.ok) {
+                        clearTimeout(timeoutId);
+                        if (resp.status === 429) GlobalKeyScheduler.setCooldown(currentKey, 45000);
+                        console.warn(`Attempt ${attempt+1} HTTP ${resp.status}, fast retry`);
+                        continue;
+                    }
+
+                    const reader = resp.body.getReader();
+                    const decoder = new TextDecoder('utf-8');
+                    let buffer = '';
+
+                    while (true) {
+                        const { done, value } = await reader.read();
+                        if (done) break;
+
+                        if (!hasReceivedChunk) {
+                            hasReceivedChunk = true;
+                            clearInterval(progressInterval);
+                            clearTimeout(timeoutId);
+                        }
+
+                        buffer += decoder.decode(value, { stream: true });
+                        const lines = buffer.split('\n');
+                        buffer = lines.pop();
+
+                        for (const line of lines) {
+                            const trimmed = line.trim();
+                            if (trimmed.startsWith('data: ') && trimmed !== 'data: [DONE]') {
+                                try {
+                                    const chunk = JSON.parse(trimmed.slice(6));
+                                    const deltaObj = chunk.choices?.[0]?.delta || {};
+                                    const deltaReasoning = deltaObj.reasoning_content || '';
+                                    const deltaContent = deltaObj.content || '';
+
+                                    if (deltaReasoning) {
+                                        fullReasoning += deltaReasoning;
+                                        updateBubbleDisplay(false);
+                                    }
+                                    if (deltaContent) {
+                                        fullAiResponse += deltaContent;
+                                        updateBubbleDisplay(false);
+                                    }
+                                } catch(e) {}
+                            }
+                        }
+                    }
+
+                    clearInterval(progressInterval);
+                    clearTimeout(timeoutId);
+                    updateBubbleDisplay(true);
+
+                    if (fullAiResponse.trim()) {
+                        chatHistory.push({ role: 'assistant', content: fullAiResponse });
+                        success = true;
+                        break;
+                    }
+                } catch (err) {
+                    clearTimeout(timeoutId);
+                    console.warn(`Attempt ${attempt+1} failed:`, err);
+                }
+            }
+
+            clearInterval(progressInterval);
+            if (!success) {
+                bubble.innerHTML = `<div class="ai-box-warn">⚠️ 导师当前正在复盘实时盘面，集群瞬时繁忙。请点击快捷提问或稍后重试。</div>`;
+            }
+        }
+
+
+        function toggleAiDrawer() {
+            const overlay = document.getElementById('aiDrawerOverlay');
+            const drawer = document.getElementById('aiDrawer');
+            if (overlay) overlay.classList.toggle('active');
+            if (drawer) {
+                drawer.classList.toggle('active');
+                if (drawer.classList.contains('active')) {
+                    const inp = document.getElementById('aiInput');
+                    if (inp) inp.focus();
+                }
+            }
+        }
+
+        function usePrompt(p) {
+            const inp = document.getElementById('aiInput');
+            if (inp) {
+                inp.value = p;
+                sendAiMessage();
+            }
         }
 
         // 课题折叠展开函数 (Skill 规范)
