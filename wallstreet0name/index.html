@@ -1268,14 +1268,209 @@
     color: #78350F !important;
 }
 
+
+        /* ===== 标杆作者署名与信息整理者样式 (1:1 对标 yourquantguy) ===== */
+        .top-banner {
+            background: linear-gradient(90deg, #92400E, #B45309, #D97706);
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 8px 16px;
+            text-align: center;
+            letter-spacing: 0.3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .top-banner a {
+            color: #FEF3C7;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        .sidebar-curator-note {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 14px;
+            background: #FAF7F0;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            margin: 16px 0 12px;
+            font-size: 12px;
+            color: var(--text-sub);
+        }
+        .sidebar-curator-note img {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1.5px solid var(--brand-amber);
+            object-fit: cover;
+        }
+        .sidebar-curator-note a {
+            color: var(--brand-amber);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .hero-curator-bar {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(254, 243, 199, 0.5);
+            border: 1px solid rgba(180, 83, 9, 0.25);
+            padding: 6px 16px;
+            border-radius: 30px;
+            margin-bottom: 18px;
+            font-size: 12px;
+        }
+        .hcb-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .hcb-avatar {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 1px solid var(--brand-amber);
+            object-fit: cover;
+        }
+        .hcb-label {
+            color: var(--text-muted);
+            font-size: 11.5px;
+        }
+        .hcb-link {
+            color: var(--brand-amber);
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .hcb-divider {
+            color: var(--border-dark);
+            font-size: 10px;
+        }
+
+        /* ===== 右下角固定定位浮动 AI 导师按钮 (1:1 对标 yourquantguy 标杆) ===== */
+        .ai-mentor-fab {
+            position: fixed !important;
+            bottom: 28px !important;
+            right: 28px !important;
+            background: linear-gradient(135deg, #B45309 0%, #D97706 100%) !important;
+            color: #FFFFFF !important;
+            border: none !important;
+            border-radius: 50px !important;
+            padding: 12px 20px !important;
+            font-size: 13.5px !important;
+            font-weight: 700 !important;
+            cursor: pointer !important;
+            box-shadow: 0 6px 20px rgba(180, 83, 9, 0.35) !important;
+            z-index: 99999 !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            transition: all 0.25s ease !important;
+        }
+        .ai-mentor-fab:hover {
+            transform: translateY(-3px) scale(1.02) !important;
+            box-shadow: 0 10px 25px rgba(180, 83, 9, 0.45) !important;
+        }
+        .ai-fab-pulse {
+            width: 8px;
+            height: 8px;
+            background: #4ADE80;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #4ADE80;
+            animation: fab_pulse 2s infinite;
+        }
+        @keyframes fab_pulse {
+            0% { opacity: 0.4; }
+            50% { opacity: 1; }
+            100% { opacity: 0.4; }
+        }
+
+        /* 统一 AI 抽屉与遮罩层类名 (同时兼容 open 和 active) */
+        .ai-drawer-overlay {
+            position: fixed !important;
+            inset: 0 !important;
+            background: rgba(0,0,0,0.45) !important;
+            z-index: 100000 !important;
+            display: none !important;
+            opacity: 0 !important;
+            transition: opacity 0.25s ease !important;
+        }
+        .ai-drawer-overlay.open, .ai-drawer-overlay.active {
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        .ai-drawer {
+            position: fixed !important;
+            top: 0 !important;
+            right: -560px !important;
+            width: 500px !important;
+            max-width: 90vw !important;
+            height: 100vh !important;
+            background: #FAF8F3 !important;
+            z-index: 100001 !important;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.18) !important;
+            transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+        .ai-drawer.open, .ai-drawer.active {
+            right: 0 !important;
+        }
+        .ai-drawer-header {
+            padding: 18px 20px;
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border-main);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ai-input-area {
+            padding: 14px 16px;
+            background: #FFFFFF;
+            border-top: 1px solid var(--border-main);
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .ai-input-field {
+            flex: 1;
+            padding: 10px 12px;
+            border: 1px solid var(--border-main);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 13.5px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .ai-input-field:focus {
+            border-color: var(--brand-amber);
+        }
+        .ai-send-btn {
+            height: 42px;
+            padding: 0 18px;
+            border: none;
+            border-radius: 8px;
+            background: var(--brand-amber);
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
 </style>
 </head>
 <body>
 
     <!-- 顶部大典指引通栏 -->
+        <!-- 顶部通栏公告 (对标 yourquantguy 标杆) -->
     <div class="top-banner">
-        🏛️ 本书收录于全球开源量化与实战大典《Trader-Archives》· 当前导师编号：NO.07
-        <a href="../">进入大典总目录速览 →</a>
+        <span>🏛️ Trader-Archives · 顶级实战导师 华尔街没有名字 交易全书开源收录 · 体系化整理：<a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer">梭哈.AI (@SUOHA_AI)</a></span>
+        <a href="../" style="margin-left: 14px; text-decoration: none; color: #FEF3C7; font-weight: 700;">← 返回大典总目录</a>
+        <a href="https://github.com/suoha888/Trader-Archives" target="_blank" style="margin-left: 14px; font-weight: 700;">⭐ Star on GitHub</a>
     </div>
 
     <div class="layout-container">
@@ -1300,7 +1495,7 @@
                 </div>
                 <div class="author-handle">@WallStreet0Name</div>
                 <div class="author-bio">8年全职交易员 · 华尔街没有技术-街哥课堂主理人 · 经历爆仓40枚BTC逆袭与大周期割肉卖房的实盘硬核导师</div>
-                <button class="btn-call-ai" onclick="toggleAiDrawer()">
+                <button class="btn-call-ai" onclick="openAiDrawer()">
                     <span>💬</span>
                     <span>对话街哥专属 AI 导师</span>
                 </button>
@@ -1437,9 +1632,25 @@
                     <span class="hero-pill">大宗商品14倍交割单</span>
                     <span class="hero-pill">13篇万字官方研报</span>
                 </div>
+                
+                <!-- 精致克制的信息整理者双头像小条 (对标 yourquantguy 标杆) -->
+                <div class="hero-curator-bar">
+                    <div class="hcb-item">
+                        <span class="hcb-label">原著经验：</span>
+                        <img src="images/wallstreet0name_avatar.jpg" alt="华尔街没有名字" class="hcb-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                        <a href="https://x.com/WallStreet0Name" target="_blank" rel="noopener noreferrer" class="hcb-link">华尔街没有名字 (@WallStreet0Name)</a>
+                    </div>
+                    <span class="hcb-divider">•</span>
+                    <div class="hcb-item">
+                        <span class="hcb-label">体系化重构：</span>
+                        <img src="images/suoha_avatar.jpg" alt="梭哈.AI" class="hcb-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                        <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" class="hcb-link">梭哈.AI (@SUOHA_AI)</a>
+                    </div>
+                </div>
+
                 <h1 class="hero-title">《华尔街没有名字 · 实战交易与周期心智全书》</h1>
                 <p class="hero-subtitle">
-                    推特顶级实战派交易员兼学堂导师 @WallStreet0Name（街哥）8年职业生涯系统化沉淀大典。全面涵盖多周期裸K看盘系统、技术分析反玄学祛魅、黄金白银33天翻14倍交割单深度复盘、13篇Twitter官方长文研报与买方AI提示词工程、以及从爆仓40枚BTC到3000万豪宅腰斩卖房的生死心智法典。
+                    本全书系推特顶级实战派交易员兼宏观博弈导师【华尔街没有名字 (@WallStreet0Name，街哥)】历年公开推文的工程化数字资产典藏，由研究员 <strong>梭哈.AI（@SUOHA_AI）</strong> 独立收录重构。全面涵盖多周期裸K看盘系统、技术分析反玄学祛魅、黄金白银33天翻14倍交割单深度复盘、13篇Twitter官方长文研报与买方AI提示词工程、以及从爆仓40枚BTC到3000万豪宅腰斩卖房的生死心智法典。
                 </p>
 
                 <!-- 五维宏观数据看板 -->
@@ -17073,6 +17284,32 @@
             </section>
 
         </main>
+
+    <!-- 标杆全站页脚 (对标 yourquantguy 标杆) -->
+    <footer class="footer" style="background: #F4EFE6; border-top: 1px solid var(--border-main); padding: 36px 20px; text-align: center; margin-top: 60px;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <p style="font-size: 13.5px; font-weight: 700; color: var(--text-main); margin-bottom: 6px;">
+                以上内容由研究员梭哈.AI @SUOHA_AI 独立收录重构 · 纯开源分享 · 非投资建议 · 请 DYOR
+            </p>
+            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 16px;">
+                推特顶级实战派交易员经验沉淀 · 严禁用于商业牟利 · 保持求真务实
+            </p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 12.5px;">
+                <a href="../" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">🏛️ Trader-Archives 总目录</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="../yourquantguy/" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">yourQuantGuy 量化大典</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="../coolish/" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">Wei Paul 时光机全书</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="../xiaomu/" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">川沐实战全书</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="https://github.com/suoha888/Trader-Archives" target="_blank" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">⭐ GitHub 源码仓库</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="https://x.com/SUOHA_AI" target="_blank" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">关注 @SUOHA_AI</a>
+            </div>
+        </div>
+    </footer>
+
     </div>
 
     <!-- 研报全文弹窗模态框 -->
@@ -17094,6 +17331,7 @@
     </div>
 
     <!-- 23-Key Atria 高并发 AI 导师侧滑抽屉 -->
+    <div class="ai-drawer-overlay" id="aiDrawerOverlay" onclick="closeAiDrawer()"></div>
     <div class="ai-drawer" id="aiDrawer">
         <div class="ai-drawer-header">
             <div class="ai-header-left">
@@ -17106,7 +17344,7 @@
                     </div>
                 </div>
             </div>
-            <button class="ai-close-btn" onclick="toggleAiDrawer()">&times;</button>
+            <button class="ai-close-btn" onclick="closeAiDrawer()">&times;</button>
         </div>
 
         <div class="ai-chat-body" id="chatBody">
@@ -17521,6 +17759,50 @@
         }
 
 
+        // ===== 标杆抽屉打开/关闭函数 (对标 yourquantguy) =====
+        function openAiDrawer() {
+            const drawer = document.getElementById('aiDrawer');
+            const overlay = document.getElementById('aiDrawerOverlay');
+            if (drawer) {
+                drawer.classList.add('open');
+                drawer.classList.add('active');
+            }
+            if (overlay) {
+                overlay.classList.add('open');
+                overlay.classList.add('active');
+            }
+            const inp = document.getElementById('aiUserInput') || document.getElementById('aiInput');
+            if (inp) inp.focus();
+        }
+
+        function closeAiDrawer() {
+            const drawer = document.getElementById('aiDrawer');
+            const overlay = document.getElementById('aiDrawerOverlay');
+            if (drawer) {
+                drawer.classList.remove('open');
+                drawer.classList.remove('active');
+            }
+            if (overlay) {
+                overlay.classList.remove('open');
+                overlay.classList.remove('active');
+            }
+        }
+
+        function handleAiInputKey(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendAiMessage();
+            }
+        }
+
+        function sendQuickPrompt(txt) {
+            const inp = document.getElementById('aiUserInput') || document.getElementById('aiInput');
+            if (inp) {
+                inp.value = txt;
+                sendAiMessage();
+            }
+        }
+
         function toggleAiDrawer() {
             const drawer = document.getElementById('aiDrawer');
             if (drawer) {
@@ -17584,5 +17866,12 @@
             document.getElementById('imgModal').style.display = 'none';
         }
     </script>
+
+    <!-- 浮动 AI 导师按钮 (右下角固定定位，标杆样式) -->
+    <button class="ai-mentor-fab" id="aiMentorFab" onclick="openAiDrawer()" title="点击与 街哥 AI 实战导师在线研讨">
+        <span class="ai-fab-pulse"></span>
+        <span>🤖 街哥 AI 实战导师</span>
+    </button>
+
 </body>
 </html>

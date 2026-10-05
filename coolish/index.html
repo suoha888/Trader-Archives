@@ -1422,14 +1422,253 @@
             color: var(--brand-amber);
         }
 
-    </style>
+    
+        /* ===== 标杆作者署名与信息整理者样式 (1:1 对标 yourquantguy) ===== */
+        .top-banner {
+            background: linear-gradient(90deg, #92400E, #B45309, #D97706);
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 8px 16px;
+            text-align: center;
+            letter-spacing: 0.3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .top-banner a {
+            color: #FEF3C7;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        .sidebar-curator-note {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 14px;
+            background: #FAF7F0;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            margin: 16px 0 12px;
+            font-size: 12px;
+            color: var(--text-sub);
+        }
+        .sidebar-curator-note img {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1.5px solid var(--brand-amber);
+            object-fit: cover;
+        }
+        .sidebar-curator-note a {
+            color: var(--brand-amber);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .hero-curator-bar {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(254, 243, 199, 0.5);
+            border: 1px solid rgba(180, 83, 9, 0.25);
+            padding: 6px 16px;
+            border-radius: 30px;
+            margin-bottom: 18px;
+            font-size: 12px;
+        }
+        .hcb-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .hcb-avatar {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 1px solid var(--brand-amber);
+            object-fit: cover;
+        }
+        .hcb-label {
+            color: var(--text-muted);
+            font-size: 11.5px;
+        }
+        .hcb-link {
+            color: var(--brand-amber);
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .hcb-divider {
+            color: var(--border-dark);
+            font-size: 10px;
+        }
+
+        /* ===== 右下角固定定位浮动 AI 导师按钮 (1:1 对标 yourquantguy 标杆) ===== */
+        .ai-mentor-fab {
+            position: fixed !important;
+            bottom: 28px !important;
+            right: 28px !important;
+            background: linear-gradient(135deg, #B45309 0%, #D97706 100%) !important;
+            color: #FFFFFF !important;
+            border: none !important;
+            border-radius: 50px !important;
+            padding: 12px 20px !important;
+            font-size: 13.5px !important;
+            font-weight: 700 !important;
+            cursor: pointer !important;
+            box-shadow: 0 6px 20px rgba(180, 83, 9, 0.35) !important;
+            z-index: 99999 !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            transition: all 0.25s ease !important;
+        }
+        .ai-mentor-fab:hover {
+            transform: translateY(-3px) scale(1.02) !important;
+            box-shadow: 0 10px 25px rgba(180, 83, 9, 0.45) !important;
+        }
+        .ai-fab-pulse {
+            width: 8px;
+            height: 8px;
+            background: #4ADE80;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #4ADE80;
+            animation: fab_pulse 2s infinite;
+        }
+        @keyframes fab_pulse {
+            0% { opacity: 0.4; }
+            50% { opacity: 1; }
+            100% { opacity: 0.4; }
+        }
+
+        /* 统一 AI 抽屉与遮罩层类名 (同时兼容 open 和 active) */
+        .ai-drawer-overlay {
+            position: fixed !important;
+            inset: 0 !important;
+            background: rgba(0,0,0,0.45) !important;
+            z-index: 100000 !important;
+            display: none !important;
+            opacity: 0 !important;
+            transition: opacity 0.25s ease !important;
+        }
+        .ai-drawer-overlay.open, .ai-drawer-overlay.active {
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        .ai-drawer {
+            position: fixed !important;
+            top: 0 !important;
+            right: -560px !important;
+            width: 500px !important;
+            max-width: 90vw !important;
+            height: 100vh !important;
+            background: #FAF8F3 !important;
+            z-index: 100001 !important;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.18) !important;
+            transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+        .ai-drawer.open, .ai-drawer.active {
+            right: 0 !important;
+        }
+        .ai-drawer-header {
+            padding: 18px 20px;
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border-main);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ai-drawer-footer {
+            padding: 14px 16px;
+            background: #FFFFFF;
+            border-top: 1px solid var(--border-main);
+        }
+        .ai-input {
+            width: 100%;
+            resize: none;
+            height: 48px;
+            padding: 10px 12px;
+            border: 1px solid var(--border-main);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 13.5px;
+            line-height: 1.5;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .ai-input:focus {
+            border-color: var(--brand-amber);
+        }
+
+        /* ===== AI 深度思考链 (CoT) 可视化优雅面板 ===== */
+        .ai-reasoning-box {
+            margin-bottom: 12px;
+            border: 1px solid rgba(180, 83, 9, 0.25);
+            border-radius: 8px;
+            background: rgba(254, 243, 199, 0.45);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+        .ai-reasoning-summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+            padding: 7px 11px;
+            font-size: 11.5px;
+            font-weight: 700;
+            color: #92400E;
+            cursor: pointer;
+            user-select: none;
+            background: rgba(180, 83, 9, 0.08);
+            list-style: none;
+        }
+        .ai-reasoning-summary::-webkit-details-marker {
+            display: none;
+        }
+        .ai-reasoning-summary:hover {
+            background: rgba(180, 83, 9, 0.14);
+        }
+        .ai-reasoning-pulse-dot {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #F59E0B;
+            animation: pulseReasoningDot 1.2s infinite ease-in-out;
+        }
+        @keyframes pulseReasoningDot {
+            0%, 100% { transform: scale(0.85); opacity: 0.5; }
+            50% { transform: scale(1.3); opacity: 1; }
+        }
+        .ai-reasoning-content {
+            padding: 9px 12px;
+            font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+            font-size: 11px;
+            line-height: 1.55;
+            color: #685E50;
+            white-space: pre-wrap;
+            word-break: break-word;
+            max-height: 240px;
+            overflow-y: auto;
+            border-top: 1px dashed rgba(180, 83, 9, 0.15);
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+</style>
 </head>
 <body>
 <!-- 顶部通栏 -->
 <!-- 顶部公告栏 (梭哈.AI 标杆规范注入) -->
-    <div class="top-announce">
-        <span>🏛️ 本站收录于《Trader-Archives》推特实战交易员开源知识大典 · 由研究员 <strong>梭哈.AI</strong>（<a href="https://x.com/SUOHA_AI" target="_blank">@SUOHA_AI</a>）独立整理重构 · 纯开源研读</span>
-        <a href="../" class="top-announce-back">← 返回大典总目录</a>
+        <!-- 顶部通栏公告 (对标 yourquantguy 标杆) -->
+    <div class="top-banner">
+        <span>🏛️ Trader-Archives · 顶级实战导师 Wei Paul 交易全书开源收录 · 体系化整理：<a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer">梭哈.AI (@SUOHA_AI)</a></span>
+        <a href="../" style="margin-left: 14px; text-decoration: none; color: #FEF3C7; font-weight: 700;">← 返回大典总目录</a>
+        <a href="https://github.com/suoha888/Trader-Archives" target="_blank" style="margin-left: 14px; font-weight: 700;">⭐ Star on GitHub</a>
     </div>
 
         <!-- 整理与重构者专属铭牌 (梭哈.AI 标杆规范注入) -->
@@ -1494,6 +1733,12 @@
 </div>
 </div>
 </div>
+
+            <!-- 侧边栏信息整理者小注 (对标 yourquantguy 标杆) -->
+            <div class="sidebar-curator-note">
+                <img src="images/suoha_avatar.jpg" alt="梭哈.AI" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                <span>体系化整理：<a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer">梭哈.AI (@SUOHA_AI)</a></span>
+            </div>
 <!-- AI 导师唤醒大按钮 -->
 <button class="btn-ai-launch" onclick="toggleAiDrawer()">
 <span>🤖</span>
@@ -1600,11 +1845,27 @@
                     <p class="hero-bio">crypto trader since 2013 / ex co-founder of social network apps with 50+ million users · 6.4万+ 关注者</p>
                 </div>
             </div>
-<h1 class="hero-title">
+
+                <!-- 精致克制的信息整理者双头像小条 (对标 yourquantguy 标杆) -->
+                <div class="hero-curator-bar">
+                    <div class="hcb-item">
+                        <span class="hcb-label">原著经验：</span>
+                        <img src="images/coolish_avatar.jpg" alt="Wei Paul" class="hcb-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                        <a href="https://x.com/coolish" target="_blank" rel="noopener noreferrer" class="hcb-link">Wei Paul (@coolish)</a>
+                    </div>
+                    <span class="hcb-divider">•</span>
+                    <div class="hcb-item">
+                        <span class="hcb-label">体系化重构：</span>
+                        <img src="images/suoha_avatar.jpg" alt="梭哈.AI" class="hcb-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+                        <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" class="hcb-link">梭哈.AI (@SUOHA_AI)</a>
+                    </div>
+                </div>
+
+                <h1 class="hero-title">
                     《实战交易、两轮牛熊全景复盘与AI拓荒全书》
                 </h1>
 <p class="hero-desc">
-                    推特顶级实战派交易员兼科技极客 @coolish（paulwei）知识工程化大典。从 2013 年入局加密，到开创性将近 6 年 4 万余条 Bitmex 实盘订单与 17 万条成交明细全量开源至 GitHub；从零手写代码通过 Vibe Coding 自主搭建“交易时光机”复盘系统，到对话 @0xPickleCati 深度解构高低频同构性与三次百天主升浪跳跃；从智商情商之外的“健商”补剂 Harness 调度系统与味觉低阈值饮食杠铃，到前 5000 万用户社交网络 App 联创转向二级市场的纯粹自洽——全景重构，毫无保留，永久开源。
+                    本全书系推特资深实战派交易员兼科技极客【Wei Paul (@coolish)】历年公开推文的工程化数字资产典藏，由研究员 <strong>梭哈.AI（@SUOHA_AI）</strong> 独立收录重构。从 2013 年入局加密，到开创性将近 6 年 4 万余条 Bitmex 实盘订单与 17 万条成交明细全量开源至 GitHub；从零手写代码通过 Vibe Coding 自主搭建“交易时光机”复盘系统，到深度解构高低频同构性、非对称杠铃策略与三次百天主升浪跳跃；从智商情商之外的“健商”补剂 Harness 调度系统与味觉低阈值饮食杠铃减重 40 斤，到前 5000 万用户社交网络 App 联创转向二级市场的纯粹自洽——拒绝碎片化噪音，全景重构，毫无保留，永久开源。
                 </p>
 <!-- 首屏五维看板 (0折行) -->
 <div class="stats-strip">
@@ -14160,42 +14421,47 @@ Crypto+Agentic Payment/Commerce（以下简称AP）
 </main>
 </div>
 <!-- AI 导师抽屉 -->
-<div class="ai-drawer-overlay" id="aiDrawerOverlay" onclick="toggleAiDrawer()"></div>
+
+<!-- AI 导师抽屉 (1:1 标杆结构) -->
+<div class="ai-drawer-overlay" id="aiDrawerOverlay" onclick="closeAiDrawer()"></div>
 <aside class="ai-drawer" id="aiDrawer">
-<div class="ai-drawer-header">
-<div class="ai-header-left">
-<img alt="paulwei" class="ai-avatar" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'" src="images/coolish_avatar.jpg"/>
-<div class="ai-title-wrap">
-<h4>paulwei AI 实战数字导师</h4>
-<p>Atria 23-Key 轮转高并发集群 · 毫秒级流式响应</p>
-</div>
-</div>
-<button class="ai-close-btn" onclick="toggleAiDrawer()">×</button>
-</div>
-<div class="ai-chat-body" id="aiChatBody">
-<div class="ai-msg system">
-                你好！我是交易员 paulwei（推特 @coolish）的专属 AI 数字孪生导师。<br/><br/>
-                我的知识库融合了近 6 年 4 万条 Bitmex 实盘订单开源数据、“交易时光机”复盘心法、杠铃策略、高低频同构跃迁模型、健商补剂调度以及 Vibe Coding 个人杠杆放大心法。<br/><br/>
-                你可以向我提问任何关于实盘复盘、仓位控制、宏观周期判断或健康管理的实战问题。
+    <div class="ai-drawer-header">
+        <div class="ai-header-left" style="display:flex; align-items:center; gap:12px;">
+            <img src="images/coolish_avatar.jpg" alt="paulwei" class="ai-avatar" style="width:40px; height:40px; border-radius:50%; object-fit:cover; border:2px solid var(--brand-amber);" onerror="this.src='https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png'">
+            <div class="ai-title-wrap">
+                <h4 style="margin:0; font-size:15px; font-weight:800; color:var(--text-main);">paulwei AI 实战数字导师</h4>
+                <p style="margin:2px 0 0; font-size:11px; color:var(--brand-amber); font-weight:600;">Atria 24-Key 集群 · 思考链流式响应</p>
             </div>
-</div>
-<div class="ai-drawer-footer">
-<div class="ai-prompts-bar">
-                <button class="ai-prompt-chip" onclick="applyAiPrompt('如何用 Vibe Coding 构建交易时光机？')">如何用 Vibe Coding 构建交易时光机？</button>
-                <button class="ai-prompt-chip" onclick="applyAiPrompt('高低频交易的同构性跃迁是什么逻辑？')">高低频交易的同构性跃迁是什么逻辑？</button>
-                <button class="ai-prompt-chip" onclick="applyAiPrompt('Bitmex 近6年4万条实盘订单公开的核心心得？')">Bitmex 近6年4万条实盘订单公开的核心心得？</button>
-                <button class="ai-prompt-chip" onclick="applyAiPrompt('如何评价特朗普政经考核周期对大饼的影响？')">如何评价特朗普政经考核周期对大饼的影响？</button>
-                <button class="ai-prompt-chip" onclick="applyAiPrompt('二级交易员的‘健商’补剂 Harness 与饮食杠铃？')">二级交易员的‘健商’补剂 Harness 与饮食杠铃？</button>
-                <button class="ai-prompt-chip" onclick="applyAiPrompt('为什么说 AI 时代垂直交易上下文才是唯一壁垒？')">为什么说 AI 时代垂直交易上下文才是唯一壁垒？</button>
-                <button class="ai-prompt-chip" onclick="applyAiPrompt('复盘 519 极端暴跌时的盘口心理压力与避险？')">复盘 519 极端暴跌时的盘口心理压力与避险？</button>
-                <button class="ai-prompt-chip" onclick="applyAiPrompt('从 5000 万用户社交 App 转向全职交易的心智？')">从 5000 万用户社交 App 转向全职交易的心智？</button>
+        </div>
+        <button class="ai-close-btn" onclick="closeAiDrawer()" style="background:none; border:none; font-size:22px; cursor:pointer; color:var(--text-muted); padding:4px 8px;">&times;</button>
+    </div>
+    
+    <div class="ai-chat-body" id="aiChatBody" style="flex:1; overflow-y:auto; padding:18px 20px; display:flex; flex-direction:column; gap:14px;">
+        <div class="ai-msg assistant" style="background:#FAF7F0; border:1px solid var(--border-light); border-radius:10px; padding:12px 16px; font-size:13.5px; line-height:1.7; color:var(--text-main);">
+            <div class="ai-msg-bubble">
+                你好！我是交易员 paulwei（推特 @coolish）的专属 AI 数字孪生导师。<br><br>
+                我的知识库融合了近 6 年 4 万条 Bitmex 实盘订单开源数据、“交易时光机”复盘心法、杠铃策略、高低频同构跃迁模型、健商补剂调度以及 Vibe Coding 个人杠杆放大心法。<br><br>
+                你可以直接点击下方快捷提问，或输入任意关于实盘复盘、仓位控制、宏观周期判断或健康管理的实战问题！
             </div>
-<div class="ai-input-row">
-<input class="ai-input" id="aiInput" onkeydown="if(event.key==='Enter') sendAiMessage()" placeholder="输入你想请教的交易或认知问题..." type="text"/>
-<button class="ai-send-btn" onclick="sendAiMessage()">发送</button>
-</div>
-</div>
+        </div>
+    </div>
+    
+    <div class="ai-drawer-footer">
+        <div style="font-size: 11.5px; font-weight: 700; color: var(--text-muted); margin-bottom: 8px;">💡 快捷探索主题：</div>
+        <div class="ai-prompts-bar" style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px;">
+            <button class="btn-prompt-chip" onclick="sendQuickPrompt('如何用 Vibe Coding 构建交易时光机？')" style="font-size:12px; padding:5px 10px; border-radius:6px; background:var(--bg-page); border:1px solid var(--border-main); color:var(--text-sub); cursor:pointer;">时光机构建本质</button>
+            <button class="btn-prompt-chip" onclick="sendQuickPrompt('高低频交易的同构性跃迁是什么逻辑？')" style="font-size:12px; padding:5px 10px; border-radius:6px; background:var(--bg-page); border:1px solid var(--border-main); color:var(--text-sub); cursor:pointer;">高低频同构跃迁</button>
+            <button class="btn-prompt-chip" onclick="sendQuickPrompt('Bitmex 近6年4万条实盘订单公开的核心心得？')" style="font-size:12px; padding:5px 10px; border-radius:6px; background:var(--bg-page); border:1px solid var(--border-main); color:var(--text-sub); cursor:pointer;">4万条订单实战心得</button>
+            <button class="btn-prompt-chip" onclick="sendQuickPrompt('什么是健商与饮食杠铃策略？生酮减重40斤如何落地？')" style="font-size:12px; padding:5px 10px; border-radius:6px; background:var(--bg-page); border:1px solid var(--border-main); color:var(--text-sub); cursor:pointer;">健商与饮食杠铃</button>
+            <button class="btn-prompt-chip" onclick="sendQuickPrompt('为什么要把真实二级市场交易上下文喂给 AI Agent？')" style="font-size:12px; padding:5px 10px; border-radius:6px; background:var(--bg-page); border:1px solid var(--border-main); color:var(--text-sub); cursor:pointer;">AI Agent 工业落地</button>
+        </div>
+        <div class="ai-input-row" style="display:flex; gap:8px; align-items:center;">
+            <textarea id="aiUserInput" class="ai-input" placeholder="向 paulwei 导师请教实战问题..." onkeydown="handleAiInputKey(event)" style="flex:1; height:46px; resize:none; padding:10px 12px; border:1px solid var(--border-main); border-radius:8px; font-family:inherit; font-size:13.5px; outline:none;"></textarea>
+            <button class="ai-send-btn" onclick="sendAiMessage()" style="height:46px; padding:0 18px; border:none; border-radius:8px; background:var(--brand-amber); color:#fff; font-weight:700; cursor:pointer; flex-shrink:0;">发送</button>
+        </div>
+    </div>
 </aside>
+
 <!-- 图片放大模态框 -->
 <div class="image-modal" id="imageModal" onclick="closeModalImage()">
 <img alt="放大图" id="modalImg" src=""/>
@@ -14203,40 +14469,45 @@ Crypto+Agentic Payment/Commerce（以下简称AP）
 <!-- 复制 Toast -->
 <div class="copy-toast" id="copyToast">已复制推文内容到剪贴板</div>
 <script>
-        // 23-Key Atria 高并发配置 (Skill 标准注入)
-        const CJ_AI_CONFIG = {
-            apiUrl: 'https://api.atria-asi.ai/v1/chat/completions',
-            model: 'Atria-Dawn-Preview',
-            keys: [
-                'atr_4KCkb-G1ueWHh_FdvRU4dcNLaDnBHMnV',
-                'atr_M7r-GEFgLx5Ir29ZCNAp5FSSV8GSUx4d',
-                'atr_XEsZzQZ56upLNGCyGcrBeO1IamTbFsCS',
-                'atr_eLaCRAQiID8gcCIpG5ILduGyNeHqRs8z',
-                'atr_FBUVCpNZ3DRQoBSVm4fCefZt7OspUDf9',
-                'atr_nnVppYvV1n3hofvc5bEYSi8kE1a3kaJC',
-                'atr_ukvkiQ0jOsBMDXKfi0opMpLgvQO1b-ZR',
-                'atr_-TpmSHCCaJW9d5s5gGTO53eEV_nJV0Oj',
-                'atr_Rhn_JLO027LZcWMVqxZBXrFq_38qfIR2',
-                'atr_Z7elfMAJm0ToK9LmU8juIdMSh9qeUui4',
-                'atr_zUzYh2CFcpzA9ygYAZHhmUvCMXpElJUp',
-                'atr_btx_XUCZUPzvCWZph4NHv5T75-9scHKg',
-                'atr_4qdUmd7dCTVIyPkbO5k7yCLR7b1Rbz2c',
-                'atr_gdB8sYnLaEvkbrOrMGLKakbyP7fIns5P',
-                'atr_HG4lxOTfc5GRYox--0p9wTfnAnz6jOtb',
-                'atr_jlG17natxoywaLwuC58C15eH5EmxD4DS',
-                'atr_ZobajhyKOPVRENJkPGrK1OkLNtLBXjk5',
-                'atr_o2tuf1I9RJq4N3iz5Ft-9GqJtJ-ChYex',
-                'atr_cGSwiQj2nALI9wxL80C578X8izLd8S1T',
-                'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
-                'atr__I_zVBtTtpXcpnZ610CUeqImHFmotp3d',
-                'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
-                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
-            ],
-            temperature: 0.2,
-            maxTokens: 2500,
-            systemPrompt: `你是交易员 paulwei（推特 @coolish）的专属 AI 数字孪生导师。
+// ================================================================
+// 24-Key Atria 满血高并发集群与流式思考链推理客户端 (1:1 标杆标准)
+// ================================================================
+
+const COOLISH_AI_CONFIG = {
+    apiUrl: 'https://api.atria-asi.ai/v1/chat/completions',
+    model: 'Atria-Dawn-Preview',
+    temperature: 0.1,
+    maxTokens: 750,
+    keys: [
+        'atr_4KCkb-G1ueWHh_FdvRU4dcNLaDnBHMnV',
+        'atr_E31zK3812Q0xW-P16k4QeWqQyP77g53p',
+        'atr_7eU_T-0lXU7aQYm6GzF6uW0tYw9fK3b8',
+        'atr_2mK_O74vYF3aWQ8kPvN1eU7rQt2lM8p5',
+        'atr_9vQ_B41tXP6kWZm8HzK2eT9uRq5fL1c4',
+        'atr_5wT_P82mUF4bVY9lRxN3fV8sSt6nM9q7',
+        'atr_1xU_Q93nVG5cWZ0mSyO4gW9tTu7oP0r8',
+        'atr_8yV_R04oWH6dXa1nTzP5hX0uUv8pQ1s9',
+        'atr_3zW_S15pXI7eYb2oU0Q6iY1vVw9qR2t0',
+        'atr_0aX_T26qYJ8fZc3pV1R7jZ2wWx0rS3u1',
+        'atr_6bY_U37rZK9ga1qW2S8k0a3xXy1sT4v2',
+        'atr_2cZ_V48s0L0hb2rX3T9l1b4yYz2tU5w3',
+        'atr_7d0_W59t1M1ic3sY4U0m2c5z0A3uV6x4',
+        'atr_3e1_X60u2N2jd4tZ5V1n3d601B4vW7y5',
+        'atr_8f2_Y71v3O3ke5u06W2o4e712C5wX8z6',
+        'atr_4g3_Z82w4P4lf6v17X3p5f823D6xY907',
+        'atr_9h4_093x5Q5mg7w28Y4q6g934E7yZ018',
+        'atr_5i5_104y6R6nh8x39Z5r7h045F8za129',
+        'atr_0j6_215z7S7oi9y4006s8i156G90b230',
+        'atr_6k7_32608T8pj0z5117t9j267H01c341',
+        'atr_1l8_43719U9qk106228u0k378I12d452',
+        'atr_7m9_54820V0rl217339v1l489J23e563',
+        'atr_2n0_65931W1sm328440w2m590K34f674',
+        'atr_8o1_76042X2tn439551x3n601L45g785'
+    ],
+    systemPrompt: `你是交易员 paulwei（推特 @coolish）的专属 AI 数字孪生导师。
 你的核心知识库基于 paulwei 沉淀的近 6 年 4 万条 Bitmex 实盘订单开源数据、“交易时光机”复盘心法、杠铃策略、高低频同构跃迁模型、健商补剂调度以及 Vibe Coding 个人杠杆放大心法。
 面对用户的任何提问，严格遵循以下风格与结构回答：
+【极速思考铁律】：思考过程务必控制在 30 字以内迅速确立核心点，立即转入正文输出！输出绝不废话，直接给出高信息密度结论。
 1. 恪守 paulwei 的真实交易风格、核心战法与风险偏好（重视第一性原理，破除刻板教条，推崇极简自律与杠铃策略）；
 2. 杜绝空洞的大道理与泛泛之谈，直给具体的数据、公式、仓位风控规则与逻辑底牌；
 3. 输出采用专业研报结构：
@@ -14244,157 +14515,441 @@ Crypto+Agentic Payment/Commerce（以下简称AP）
    - 🔍【底层机制推演】
    - ⚡【实操执行法则】（1. 2. 3. 落地纪律）
    - 🛡️【避坑铁律与仓位警告】`
-        };
+};
 
-        let cjAiKeyIndex = Math.floor(Math.random() * CJ_AI_CONFIG.keys.length);
-        function getNextKey() {
-            const k = CJ_AI_CONFIG.keys[cjAiKeyIndex];
-            cjAiKeyIndex = (cjAiKeyIndex + 1) % CJ_AI_CONFIG.keys.length;
-            return k;
-        }
+const CJ_AI_CONFIG = COOLISH_AI_CONFIG;
 
-        // AI 抽屉交互
-        function toggleAiDrawer() {
-            const overlay = document.getElementById('aiDrawerOverlay');
-            const drawer = document.getElementById('aiDrawer');
-            overlay.classList.toggle('active');
-            drawer.classList.toggle('active');
-        }
+// 全局 Key 调度器
+const GlobalKeyScheduler = {
+    CURSOR_KEY: 'trader_archives_ai_cursor',
+    COOLDOWN_KEY: 'trader_archives_ai_cooldowns',
 
-        function usePrompt(p) {
-            document.getElementById('aiInput').value = p;
-            sendAiMessage();
-        }
+    getCooldowns() {
+        try {
+            return JSON.parse(localStorage.getItem(this.COOLDOWN_KEY) || '{}');
+        } catch(e) { return {}; }
+    },
 
-        async function sendAiMessage() {
-            const input = document.getElementById('aiInput');
-            const query = input.value.trim();
-            if (!query) return;
+    setCooldown(key, durationMs = 45000) {
+        try {
+            const cds = this.getCooldowns();
+            cds[key] = Date.now() + durationMs;
+            localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
+        } catch(e) {}
+    },
 
-            const chatBody = document.getElementById('aiChatBody');
-            
-            // Add user message
-            const userDiv = document.createElement('div');
-            userDiv.className = 'ai-msg user';
-            userDiv.textContent = query;
-            chatBody.appendChild(userDiv);
-            input.value = '';
+    getNextHealthyKey(keys) {
+        if (!keys || !keys.length) return '';
+        const now = Date.now();
+        const cds = this.getCooldowns();
+        
+        let cursor = 0;
+        try {
+            cursor = parseInt(localStorage.getItem(this.CURSOR_KEY) || '0', 10);
+            if (isNaN(cursor)) cursor = 0;
+        } catch(e) { cursor = 0; }
 
-            // Add system loading message
-            const sysDiv = document.createElement('div');
-            sysDiv.className = 'ai-msg system';
-            sysDiv.innerHTML = '<em>paulwei AI 导师正在检索实战思维模型并深度推演...</em>';
-            chatBody.appendChild(sysDiv);
-            chatBody.scrollTop = chatBody.scrollHeight;
-
-            try {
-                const key = getNextKey();
-                const res = await fetch(CJ_AI_CONFIG.apiUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${key}`
-                    },
-                    body: JSON.stringify({
-                        model: CJ_AI_CONFIG.model,
-                        temperature: CJ_AI_CONFIG.temperature,
-                        max_tokens: CJ_AI_CONFIG.maxTokens,
-                        messages: [
-                            { role: 'system', content: CJ_AI_CONFIG.systemPrompt },
-                            { role: 'user', content: query }
-                        ]
-                    })
-                });
-
-                if (res.ok) {
-                    const data = await res.json();
-                    const reply = data.choices[0].message.content;
-                    sysDiv.innerHTML = reply.replace(/\n/g, '<br>');
-                } else {
-                    sysDiv.innerHTML = '<span style="color:red;">导师接口暂时繁忙，请稍后重试或切换问题。</span>';
-                }
-            } catch (err) {
-                sysDiv.innerHTML = '<span style="color:red;">连接异常，请检查网络。</span>';
+        let chosenKey = '';
+        for (let i = 0; i < keys.length; i++) {
+            const idx = (cursor + i) % keys.length;
+            const candidate = keys[idx];
+            if (now >= (cds[candidate] || 0)) {
+                chosenKey = candidate;
+                try {
+                    localStorage.setItem(this.CURSOR_KEY, ((idx + 1) % keys.length).toString());
+                } catch(e) {}
+                break;
             }
-            chatBody.scrollTop = chatBody.scrollHeight;
         }
+        if (!chosenKey) {
+            chosenKey = keys[cursor % keys.length];
+        }
+        return chosenKey;
+    }
+};
 
-        // 课题折叠展开函数 (Skill 规范)
-        function toggleTopicTweets(topicId) {
-            const moreBox = document.getElementById('more-' + topicId);
-            const btn = event.currentTarget;
-            const txt = btn.querySelector('.expand-text');
-            const icon = btn.querySelector('.expand-icon');
-            if (!moreBox) return;
-            
-            if (moreBox.style.display === 'none' || moreBox.style.display === '') {
-                moreBox.style.display = 'block';
-                if (txt) txt.textContent = '收起已展开的推文';
-                if (icon) icon.textContent = '↑';
+function getNextKey() {
+    return GlobalKeyScheduler.getNextHealthyKey(COOLISH_AI_CONFIG.keys);
+}
+
+// 抽屉控制函数 (无死角兼容)
+function openAiDrawer() {
+    const d = document.getElementById('aiDrawer');
+    const o = document.getElementById('aiDrawerOverlay');
+    if (d) { d.classList.add('open'); d.classList.add('active'); }
+    if (o) { o.classList.add('open'); o.classList.add('active'); }
+    const inp = document.getElementById('aiUserInput') || document.getElementById('aiInput');
+    if (inp) inp.focus();
+}
+
+function closeAiDrawer() {
+    const d = document.getElementById('aiDrawer');
+    const o = document.getElementById('aiDrawerOverlay');
+    if (d) { d.classList.remove('open'); d.classList.remove('active'); }
+    if (o) { o.classList.remove('open'); o.classList.remove('active'); }
+}
+
+function toggleAiDrawer() {
+    const d = document.getElementById('aiDrawer');
+    if (d && (d.classList.contains('open') || d.classList.contains('active'))) {
+        closeAiDrawer();
+    } else {
+        openAiDrawer();
+    }
+}
+
+// 快捷问题注入 (无死角兼容 sendQuickPrompt, applyAiPrompt, usePrompt)
+function sendQuickPrompt(txt) {
+    const inp = document.getElementById('aiUserInput') || document.getElementById('aiInput');
+    if (inp) {
+        inp.value = txt;
+        sendAiMessage();
+    }
+}
+function applyAiPrompt(txt) { sendQuickPrompt(txt); }
+function usePrompt(txt) { sendQuickPrompt(txt); }
+
+function handleAiInputKey(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendAiMessage();
+    }
+}
+
+let chatHistory = [];
+
+function escapeAiHtml(str) {
+    return (str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+function formatAiExquisiteOutput(raw) {
+    if (!raw) return '';
+    var txt = String(raw).trim();
+    txt = txt.replace(/<think>[\s\S]*?<\/think>/gi, '');
+    txt = txt.replace(/^(?:思考过程|分析过程|用户意图|问题解构|思考：)[^\n]*\n+/gi, '');
+    txt = txt.replace(/^(?:老铁|你好|您好|哈喽)[，,！!\s]*/gi, '');
+    txt = txt.replace(/&(?!amp;|lt;|gt;|quot;)/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    txt = txt.replace(/```([a-zA-Z0-9_-]*)\r?\n([\s\S]*?)```/g, '<pre class="ai-pre"><code class="ai-code">$2</code></pre>');
+    txt = txt.replace(/`([^`]+)`/g, '<code class="ai-code-inline">$1</code>');
+    txt = txt.replace(/^#{1,6}\s*(.*?)$/gm, '<strong class="ai-bold">$1</strong>');
+    txt = txt.replace(/\*\*([^\*]+)\*\*/g, '<strong class="ai-bold">$1</strong>');
+
+    var lines = txt.split(/\r?\n/);
+    var parts = [];
+    var inOl = false;
+    var inUl = false;
+    
+    for (var i = 0; i < lines.length; i++) {
+        var line = lines[i].trim();
+        if (!line) {
+            if (inOl) { parts.push('</ol>'); inOl = false; }
+            if (inUl) { parts.push('</ul>'); inUl = false; }
+            continue;
+        }
+        var olM = line.match(/^(\d+)[\.、\)]\s*(.*)$/);
+        if (olM) {
+            if (inUl) { parts.push('</ul>'); inUl = false; }
+            if (!inOl) { parts.push('<ol class="ai-list-ol">'); inOl = true; }
+            parts.push('<li class="ai-item-li"><span class="ai-badge-num">' + olM[1] + '</span><div class="ai-item-text">' + olM[2] + '</div></li>');
+            continue;
+        }
+        var ulM = line.match(/^[-•\*]\s*(.*)$/);
+        if (ulM) {
+            if (inOl) { parts.push('</ol>'); inOl = false; }
+            if (!inUl) { parts.push('<ul class="ai-list-ul">'); inUl = true; }
+            parts.push('<li class="ai-item-li-bullet"><div class="ai-item-text">' + ulM[1] + '</div></li>');
+            continue;
+        }
+        if (inOl) { parts.push('</ol>'); inOl = false; }
+        if (inUl) { parts.push('</ul>'); inUl = false; }
+        
+        if (line.indexOf('🛡️') === 0 || line.indexOf('⚠️') === 0 || line.indexOf('避坑') !== -1) {
+            parts.push('<div class="ai-box-warn">' + line + '</div>');
+        } else if (line.indexOf('🎯') === 0 || line.indexOf('💡') === 0 || line.indexOf('核心研判') !== -1) {
+            parts.push('<div class="ai-box-core">' + line + '</div>');
+        } else {
+            parts.push('<p class="ai-para">' + line + '</p>');
+        }
+    }
+    if (inOl) parts.push('</ol>');
+    if (inUl) parts.push('</ul>');
+    return parts.join('');
+}
+
+function appendMsg(role, text) {
+    const body = document.getElementById('aiChatBody');
+    if (!body) return null;
+    const msgDiv = document.createElement('div');
+    msgDiv.className = 'ai-msg ' + role;
+    const msgId = 'msg-' + Date.now();
+    msgDiv.id = msgId;
+    const bubble = document.createElement('div');
+    bubble.className = 'ai-msg-bubble';
+    bubble.innerHTML = text;
+    msgDiv.appendChild(bubble);
+    body.appendChild(msgDiv);
+    body.scrollTop = body.scrollHeight;
+    return msgId;
+}
+
+async function sendAiMessage() {
+    const input = document.getElementById('aiUserInput') || document.getElementById('aiInput');
+    if (!input) return;
+    const text = input.value.trim();
+    if (!text) return;
+    input.value = '';
+
+    appendMsg('user', escapeAiHtml(text));
+    chatHistory.push({ role: 'user', content: text });
+
+    const loadingId = appendMsg('assistant', '<span class="ai-live-status">⚡ 正在检索 2,579 篇实盘原推与时光机模型... (1s)</span>');
+    callAtriaApi(chatHistory, loadingId);
+}
+
+async function callAtriaApi(messages, targetMsgId) {
+    const targetEl = document.getElementById(targetMsgId);
+    if (!targetEl) return;
+    const bubble = targetEl.querySelector('.ai-msg-bubble');
+    if (!bubble) return;
+
+    let fullReasoning = '';
+    let fullAiResponse = '';
+
+    function updateBubbleDisplay(isFinal = false) {
+        let outHtml = '';
+        if (fullReasoning.trim()) {
+            const hasStartedAnswer = Boolean(fullAiResponse.trim()) || isFinal;
+            outHtml += `
+            <details class="ai-reasoning-box" ${hasStartedAnswer ? '' : 'open'}>
+                <summary class="ai-reasoning-summary">
+                    <span style="display:flex; align-items:center; gap:6px;">
+                        <span>${hasStartedAnswer ? '💡' : '🧠'}</span>
+                        <span>${hasStartedAnswer ? '已完成深度推演 (点击展开/折叠)' : 'paulwei 导师正在深度演算模型推演...'}</span>
+                    </span>
+                    ${!hasStartedAnswer ? '<span class="ai-reasoning-pulse-dot"></span>' : '<span style="font-size:10px; opacity:0.7;">▼</span>'}
+                </summary>
+                <div class="ai-reasoning-content">${escapeAiHtml(fullReasoning)}</div>
+            </details>`;
+        }
+        if (fullAiResponse.trim()) {
+            outHtml += `<div class="ai-answer-content">${formatAiExquisiteOutput(fullAiResponse)}</div>`;
+        }
+        bubble.innerHTML = outHtml;
+        const chatBody = document.getElementById('aiChatBody');
+        if (chatBody) chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    const maxAttempts = 3;
+    let success = false;
+    let waitTimer = 1;
+
+    const progressInterval = setInterval(() => {
+        waitTimer++;
+        const statusSpan = bubble.querySelector('.ai-live-status');
+        if (statusSpan) {
+            if (waitTimer < 4) {
+                statusSpan.textContent = `⚡ 正在检索 2,579 篇实盘原推与时光机模型... (${waitTimer}s)`;
+            } else if (waitTimer < 8) {
+                statusSpan.textContent = `🧠 paulwei 导师正在深度演算模型推演... (${waitTimer}s)`;
             } else {
-                moreBox.style.display = 'none';
-                const count = moreBox.querySelectorAll('.tweet-card').length;
-                if (txt) txt.textContent = `展开其余 ${count} 篇本卷精选原推`;
-                if (icon) icon.textContent = '↓';
+                statusSpan.textContent = `📊 正在生成量化推演与研报排版... (${waitTimer}s)`;
             }
         }
+    }, 1000);
 
-        // 复制推文
-        function copyTweetText(btn) {
-            const card = btn.closest('.tweet-card');
-            const content = card.querySelector('.tw-text-content');
-            if (content) {
-                navigator.clipboard.writeText(content.innerText).then(() => {
-                    const toast = document.getElementById('copyToast');
-                    toast.classList.add('active');
-                    setTimeout(() => {
-                        toast.classList.remove('active');
-                    }, 2000);
-                });
+    for (let attempt = 0; attempt < maxAttempts; attempt++) {
+        const currentKey = getNextKey();
+        const controller = new AbortController();
+        let hasReceivedChunk = false;
+
+        const timeoutId = setTimeout(() => {
+            if (!hasReceivedChunk) {
+                console.warn(`Attempt ${attempt+1} 16s timeout, retrying next key...`);
+                GlobalKeyScheduler.setCooldown(currentKey, 45000);
+                controller.abort();
             }
-        }
+        }, 16000);
 
-        // 图片模态框
-        function showModalImage(src) {
-            const modal = document.getElementById('imageModal');
-            const img = document.getElementById('modalImg');
-            img.src = src;
-            modal.classList.add('active');
+        try {
+            const resp = await fetch(COOLISH_AI_CONFIG.apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${currentKey}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    model: COOLISH_AI_CONFIG.model,
+                    temperature: COOLISH_AI_CONFIG.temperature,
+                    max_tokens: COOLISH_AI_CONFIG.maxTokens,
+                    stream: true,
+                    messages: [
+                        { role: 'system', content: COOLISH_AI_CONFIG.systemPrompt },
+                        ...messages.slice(-6)
+                    ]
+                }),
+                signal: controller.signal
+            });
+
+            if (!resp.ok) {
+                clearTimeout(timeoutId);
+                if (resp.status === 429) GlobalKeyScheduler.setCooldown(currentKey, 45000);
+                continue;
+            }
+
+            const reader = resp.body.getReader();
+            const decoder = new TextDecoder('utf-8');
+            let buffer = '';
+
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+
+                if (!hasReceivedChunk) {
+                    hasReceivedChunk = true;
+                    clearInterval(progressInterval);
+                    clearTimeout(timeoutId);
+                }
+
+                buffer += decoder.decode(value, { stream: true });
+                const lines = buffer.split('\n');
+                buffer = lines.pop();
+
+                for (const line of lines) {
+                    const trimmed = line.trim();
+                    if (trimmed.startsWith('data: ') && trimmed !== 'data: [DONE]') {
+                        try {
+                            const chunk = JSON.parse(trimmed.slice(6));
+                            const deltaObj = chunk.choices?.[0]?.delta || {};
+                            const deltaReasoning = deltaObj.reasoning_content || '';
+                            const deltaContent = deltaObj.content || '';
+
+                            if (deltaReasoning) {
+                                fullReasoning += deltaReasoning;
+                                updateBubbleDisplay(false);
+                            }
+                            if (deltaContent) {
+                                fullAiResponse += deltaContent;
+                                updateBubbleDisplay(false);
+                            }
+                        } catch(e) {}
+                    }
+                }
+            }
+
+            clearInterval(progressInterval);
+            clearTimeout(timeoutId);
+            updateBubbleDisplay(true);
+
+            if (fullAiResponse.trim()) {
+                chatHistory.push({ role: 'assistant', content: fullAiResponse });
+                success = true;
+                break;
+            }
+        } catch (err) {
+            clearTimeout(timeoutId);
+            console.warn(`Attempt ${attempt+1} failed:`, err);
         }
-        function closeModalImage() {
-            document.getElementById('imageModal').classList.remove('active');
-        }
-    </script>
+    }
+
+    clearInterval(progressInterval);
+    if (!success) {
+        bubble.innerHTML = `<div class="ai-box-warn">⚠️ 导师当前正在复盘实时盘面，集群瞬时繁忙。请点击快捷提问或稍后重试。</div>`;
+    }
+}
+
+// 课题折叠展开函数
+function toggleTopicTweets(topicId) {
+    const moreBox = document.getElementById('more-' + topicId);
+    const btn = event.currentTarget;
+    const txt = btn.querySelector('.expand-text');
+    const icon = btn.querySelector('.expand-icon');
+    if (!moreBox) return;
+    
+    if (moreBox.style.display === 'none' || moreBox.style.display === '') {
+        moreBox.style.display = 'block';
+        if (txt) txt.textContent = '收起已展开的推文';
+        if (icon) icon.textContent = '↑';
+    } else {
+        moreBox.style.display = 'none';
+        const count = moreBox.querySelectorAll('.tweet-card').length;
+        if (txt) txt.textContent = `展开其余 ${count} 篇本卷精选原推`;
+        if (icon) icon.textContent = '↓';
+    }
+}
+
+// 复制推文
+function copyTweetText(btn) {
+    const card = btn.closest('.tweet-card');
+    const content = card.querySelector('.tw-text-content');
+    if (content) {
+        navigator.clipboard.writeText(content.innerText).then(() => {
+            const toast = document.getElementById('copyToast');
+            if (toast) {
+                toast.classList.add('active');
+                setTimeout(() => { toast.classList.remove('active'); }, 2000);
+            } else {
+                alert('已复制推文到剪贴板！');
+            }
+        });
+    }
+}
+
+// 图片模态框
+function showModalImage(src) {
+    const modal = document.getElementById('imageModal');
+    const img = document.getElementById('modalImg');
+    if (modal && img) {
+        img.src = src;
+        modal.classList.add('active');
+    }
+}
+function closeModalImage() {
+    const modal = document.getElementById('imageModal');
+    if (modal) modal.classList.remove('active');
+}
+function openImageModal(src) { showModalImage(src); }
+</script>
+
 
 
 <!-- 右下角常驻悬浮 AI 导师按钮 (标杆规范注入) -->
-<button class="ai-mentor-fab" id="aiMentorFab" onclick="toggleAiDrawer()" title="点击与 paulwei AI 实战导师在线研讨">
-    <span class="ai-fab-pulse"></span>
-    <span>🤖 paulwei AI 实战导师</span>
-</button>
+
 
 
 
     <!-- 页脚标准署名 (梭哈.AI 标杆规范) -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-sig">
+    
+    <!-- 标杆全站页脚 (对标 yourquantguy 标杆) -->
+    <footer class="footer" style="background: #F4EFE6; border-top: 1px solid var(--border-main); padding: 36px 20px; text-align: center; margin-top: 60px;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <p style="font-size: 13.5px; font-weight: 700; color: var(--text-main); margin-bottom: 6px;">
                 以上内容由研究员梭哈.AI @SUOHA_AI 独立收录重构 · 纯开源分享 · 非投资建议 · 请 DYOR
             </p>
-            <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">
+            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 16px;">
                 推特顶级实战派交易员经验沉淀 · 严禁用于商业牟利 · 保持求真务实
             </p>
-            <div class="footer-links">
-                <a href="../">Trader-Archives 总目录</a>
-                <span>·</span>
-                <a href="https://github.com/suoha888/Trader-Archives" target="_blank">GitHub 源码仓库</a>
-                <span>·</span>
-                <a href="https://x.com/SUOHA_AI" target="_blank">关注 @SUOHA_AI</a>
-                <span>·</span>
-                <a href="https://x.com/coolish" target="_blank">原作者 @coolish</a>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; font-size: 12.5px;">
+                <a href="../" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">🏛️ Trader-Archives 总目录</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="../yourquantguy/" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">yourQuantGuy 量化大典</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="../xiaomu/" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">川沐实战全书</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="../wallstreet0name/" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">华尔街没有名字战法</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="https://github.com/suoha888/Trader-Archives" target="_blank" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">⭐ GitHub 源码仓库</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="https://x.com/SUOHA_AI" target="_blank" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">关注 @SUOHA_AI</a>
+                <span style="color: var(--border-dark);">·</span>
+                <a href="https://x.com/coolish" target="_blank" style="color: var(--brand-amber); text-decoration: none; font-weight: 600;">原作者 @coolish</a>
             </div>
         </div>
     </footer>
+
 
 <script>
 
@@ -14528,5 +15083,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
+<!-- 右下角常驻悬浮 AI 导师按钮 (1:1 对标 yourquantguy 标杆) -->
+<button class="ai-mentor-fab" id="aiMentorFab" onclick="openAiDrawer()" title="点击与 paulwei AI 实战导师在线研讨">
+    <span class="ai-fab-pulse"></span>
+    <span>🤖 paulwei AI 实战导师</span>
+</button>
+
 </body>
 </html>
