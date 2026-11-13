@@ -2,3 +2,11 @@
 Thumbs.db
 *.tmp
 *.log
+.env
+*.env
+__pycache__/
+*.pyc
+analyze_kol_profiles.py
+audit_all_subsites.py
+full_audit_results.json
+print_audit_table.py

@@ -4,14 +4,15 @@
 > *让华语圈最顶级的实盘交易心法、做市套利算法与宏观周期认知，沉淀为可以被人类和 AI Agent 永久检索、复现的量化知识大厦。*
 
 🌐 **在线总门户（即刻沉浸式研读）**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)  
-🤖 **全站 AI 导师矩阵**：全站各导师子站均搭载 **Atria 24-Key 满血高并发集群**、`GlobalKeyScheduler` 跨站调度器与流式思考链（CoT）推理架构，支持 7×24 小时极速高并发策略咨询。
+🤖 **全站 AI 导师矩阵**：全站各导师子站均接入 **Vercel Edge Serverless 流式 AI 导师网关** 与 `GlobalKeyScheduler` 跨站调度器，结合极速 SSE 流式推理架构，支持 7×24 小时在线合约与交易策略咨询。
 
 ---
 
-## 📚 正式上线实战导师名录（已收录 7 位顶级高手）
+## 📚 正式上线实战导师名录（已收录 8 位顶级高手）
 
 | 导师 | Twitter Handle | 专属全书定位与大典称号 | 收录规模 | 专属在线研报阅读站 | GitHub 全量开源数据湖 |
 | :--- | :--- | :--- | :---: | :---: | :---: |
+| **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 合约滚仓、龙头结构与高赔率实盘复盘 | **7,303 篇** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data) |
 | **Wei Paul** | [@coolish](https://x.com/coolish) | BitMEX 时光机、杠铃博弈与逆向周期 | **2,579 篇** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/coolish/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/coolish/data) |
 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 裸K战法与跨市场宏观博弈全书 | **8,264 篇（2,000+核心精选，13篇研报）** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/wallstreet0name/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data) |
 | **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 基差套利与量化做市实战大典 | **670 篇（含4篇万字研报）** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/yourquantguy/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data) |
@@ -24,7 +25,14 @@
 
 ## 🌟 导师专属深度介绍与板块直达
 
-### 1. 【最新重磅上线】Wei Paul（[@coolish](https://x.com/coolish)）
+### 1. 【最新重磅上线】allincrypto 熬鹰资本（[@thankUcrypto](https://x.com/thankUcrypto)）
+- **定位**：合约滚仓实战派导师 · `13,000 RMB → 1500W`、`PNL 120K—10M USD` 高赔率合约全书
+- **规模**：完整清洗收录 **7,303** 篇历史推文（4,944 篇高纯度核心合约数据，148 篇精选实盘复盘，6 大合约域切片，568 张真实图表）
+- **核心亮点**：
+  - 提炼 **12 大合约实战思维模型** 与 **18 篇合约专题深析（`#t-01` ~ `#t-18`）**，覆盖滚仓复利、结构突破、山寨龙头轮动、宏观波动率、止损出金与跟单心智防御。
+  - 原生复刻 Twitter 实盘推文卡片与真实图表 Lightbox，支持按 6 大合约域与 S/A/B/C 含金量分级检索全量数据湖。
+
+### 2. 【重磅上线】Wei Paul（[@coolish](https://x.com/coolish)）
 > **定位：BitMEX 与以太坊早期实战派交易员，物理学第一性原理思考者，杠铃策略与 Vibe Coding 实践者**  
 > 🔗 **专属在线阅读站**：[https://suoha888.github.io/Trader-Archives/coolish/](https://suoha888.github.io/Trader-Archives/coolish/)  
 > 📂 **开源数据湖入口**：[https://github.com/suoha888/Trader-Archives/tree/main/coolish/data](https://github.com/suoha888/Trader-Archives/tree/main/coolish/data)
@@ -39,7 +47,7 @@
 
 ---
 
-### 2. 【重磅上线】华尔街没有名字（[@WallStreet0Name](https://x.com/WallStreet0Name)）
+### 3. 【重磅上线】华尔街没有名字（[@WallStreet0Name](https://x.com/WallStreet0Name)）
 > **定位：前华尔街实盘交易员，多周期裸 K 系统、背离防守祛魅、大宗商品战役与宏观博弈老手**  
 > 🔗 **专属在线阅读站**：[https://suoha888.github.io/Trader-Archives/wallstreet0name/](https://suoha888.github.io/Trader-Archives/wallstreet0name/)  
 > 📂 **开源数据湖入口**：[https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data](https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data)
@@ -54,7 +62,7 @@
 
 ---
 
-### 3. yourQuantGuy（[@yourQuantGuy](https://x.com/yourQuantGuy)）
+### 4. yourQuantGuy（[@yourQuantGuy](https://x.com/yourQuantGuy)）
 > **定位：前对冲基金科班量化，Perp DEX 跨所基差与高频做市套利卷王**  
 > 🔗 **专属在线阅读站**：[https://suoha888.github.io/Trader-Archives/yourquantguy/](https://suoha888.github.io/Trader-Archives/yourquantguy/)  
 > 📂 **开源数据湖入口**：[https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data)
@@ -63,7 +71,7 @@
 
 ---
 
-### 4. Meta 猿 🦍（[@Metabape](https://x.com/metabape)）
+### 5. Meta 猿 🦍（[@Metabape](https://x.com/metabape)）
 > **定位：微观机制漏洞套利狂人，顶级大户分仓架构与商海实操心智**  
 > 🔗 **专属在线阅读站**：[https://suoha888.github.io/Trader-Archives/metabape/](https://suoha888.github.io/Trader-Archives/metabape/)  
 > 📂 **开源数据湖入口**：[https://github.com/suoha888/Trader-Archives/tree/main/metabape/data](https://github.com/suoha888/Trader-Archives/tree/main/metabape/data)
@@ -72,7 +80,7 @@
 
 ---
 
-### 5. 川沐｜Trumoo（[@xiaomustock](https://x.com/xiaomustock)）
+### 6. 川沐｜Trumoo（[@xiaomustock](https://x.com/xiaomustock)）
 > **定位：跨市场多资产全能、美股硬科技半导体与加密大周期选手**  
 > 🔗 **专属在线阅读站**：[https://suoha888.github.io/Trader-Archives/xiaomu/](https://suoha888.github.io/Trader-Archives/xiaomu/)  
 > 📂 **开源数据湖入口**：[https://github.com/suoha888/Trader-Archives/tree/main/xiaomu/data](https://github.com/suoha888/Trader-Archives/tree/main/xiaomu/data)
@@ -81,7 +89,7 @@
 
 ---
 
-### 6. 憨厚的麦总（[@Michael_Liu93](https://x.com/Michael_Liu93)）
+### 7. 憨厚的麦总（[@Michael_Liu93](https://x.com/Michael_Liu93)）
 > **定位：宏观周期、美股科技与交易投资全书**  
 > 🔗 **专属在线阅读站**：[https://suoha888.github.io/Trader-Archives/michael-liu/](https://suoha888.github.io/Trader-Archives/michael-liu/)  
 > 📂 **开源数据湖入口**：[https://github.com/suoha888/Trader-Archives/tree/main/michael-liu/data](https://github.com/suoha888/Trader-Archives/tree/main/michael-liu/data)
@@ -90,7 +98,7 @@
 
 ---
 
-### 7. C J 老师（[@gch_enbsbxbs](https://x.com/gch_enbsbxbs)）
+### 8. C J 老师（[@gch_enbsbxbs](https://x.com/gch_enbsbxbs)）
 > **定位：DeFi 做市与单边离散网格套利手册**  
 > 🔗 **专属在线阅读站**：[https://suoha888.github.io/Trader-Archives/cj/](https://suoha888.github.io/Trader-Archives/cj/)  
 > 📂 **开源数据湖入口**：[https://github.com/suoha888/Trader-Archives/tree/main/cj/data](https://github.com/suoha888/Trader-Archives/tree/main/cj/data)
@@ -103,10 +111,16 @@
 
 ```text
 Trader-Archives/
-├── index.html                   # 🏛️ 全景大典总门户（含数据看板与 7 位导师大典卡片）
+├── index.html                   # 🏛️ 全景大典总门户（含数据看板与 8 位导师大典卡片）
 ├── README.md                    # 📖 全量开源项目总纲与跳转指引（当前文件）
 │
-├── coolish/                     # 🚀【最新上线】Wei Paul 时光机法则与杠铃博弈全书
+├── thankucrypto/                # 🚀【最新上线】allincrypto 熬鹰资本合约实战与滚仓全书
+│   ├── index.html               # 象牙暖白研报子站（12大思维模型 + 18篇深析 + Vercel Edge 流式 AI 导师）
+│   ├── images/                  # 568 张本地高清实盘图表与头像缓存
+│   ├── docs/                    # 合约实战手册（Markdown）
+│   └── data/                    # thankucrypto_tweets.json/csv, thankucrypto_featured.json/csv, thankucrypto_mental_models.json/csv, domains/
+│
+├── coolish/                     # Wei Paul 时光机法则与杠铃博弈全书
 │   ├── index.html               # 独立研报阅读站（内置 24-Key 流式 AI 导师）
 │   ├── data/                    # 完整开源数据湖
 │   │   ├── domains/             # 6 大垂类数据湖切片（CSV & JSON）
@@ -135,13 +149,13 @@ Trader-Archives/
 
 ---
 
-## 🤖 Atria 24-Key 满血高并发集群与流式思考链架构
+## 🤖 Vercel Edge 流式 AI 导师网关与并发调度架构
 
 全站各导师子站均配备强大的专属数字孪生策略导师：
 1. **24-Key 轮转矩阵**：峰值并发处理能力达 **240 RPM / 240,000 TPM**，支持高并发无缝调度；
 2. **GlobalKeyScheduler 跨站调度器**：利用浏览器 `localStorage` 实现跨页面持久化轮换与均摊，杜绝单个 Key 用量过载；
 3. **45 秒自动熔断与静默重试**：任一 Key 遇到瞬时限流或网络抖动，系统毫秒级置入 45 秒隔离冷却名单，并自动调用下一个健康 Key 重试；
-4. **实时流式思考链（CoT）可视化**：搭载极速 Server-Sent Events (SSE) 流式传输，将 Atria-Dawn-Preview 的深度推演过程折叠呈现，毫秒级流式打字输出，彻底消除白屏与等待焦虑。
+4. **实时流式响应（SSE）可视化**：搭载极速 Server-Sent Events (SSE) 流式传输，通过 Vercel Edge Gateway 安全代理推理响应，毫秒级打字输出，彻底消除白屏与等待焦虑。
 
 ---
 

@@ -21079,7 +21079,7 @@
 
         // 2. 30-Key 轮转 Atria-Dawn-Preview 引擎与调度器
         const CJ_AI_CONFIG = {
-            apiUrl: 'https://api.atria-asi.ai/v1/chat/completions',
+            apiUrl: 'https://trader-archives-ai-gateway.vercel.app/api/chat',
             model: 'Atria-Dawn-Preview',
             temperature: 0.1,
             maxTokens: 750,
@@ -21405,7 +21405,8 @@
             txt = txt.replace(/^(?:针对你(?:所问|提到|关于)的?(?:问题|内容)?[，,！!\s]*)/gi, '');
             
             txt = txt.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-            txt = txt.replace(/```([a-zA-Z0-9_-]*)?
+            txt = txt.replace(/```([a-zA-Z0-9_-]*)
+?
 ([\s\S]*?)```/g, '<pre class="ai-pre"><code class="ai-code">$2</code></pre>');
             txt = txt.replace(/`([^`]+)`/g, '<code class="ai-code-inline">$1</code>');
             txt = txt.replace(/^#(1, 6)\s*(.*?)$/gm, '<strong class="ai-bold">$1</strong>');
@@ -21415,7 +21416,8 @@
             txt = txt.replace(/\[([^\]]+)\]\((#[a-zA-Z0-9_-]+)\)/g, '<a href="$2" class="ai-pill-topic" data-anchor="$2">📍 $1</a>');
             txt = txt.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="ai-ext-link">$1 ↗</a>');
 
-            var lines = txt.split(/?
+            var lines = txt.split(/
+?
 /);
             var parts = [];
             var inOl = false;
