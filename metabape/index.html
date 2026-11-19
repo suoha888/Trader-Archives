@@ -1593,16 +1593,40 @@
 
 <style>
 /* === Trader-Archives Unified AI Typography & Mobile Responsive Safeguard === */
+.ta-ai-md { font-size: 13.5px; line-height: 1.72; color: #1C1917; word-break: break-word; }
+.ta-ai-md > :first-child { margin-top: 0 !important; }
+.ta-ai-md > :last-child { margin-bottom: 0 !important; }
 .ta-ai-md h2, .ta-ai-md h3, .ta-ai-md h4 {
   font-family: 'Noto Serif SC', serif;
   font-size: 14.5px;
   font-weight: 800;
   color: #1C1917;
-  margin: 10px 0 6px;
+  margin: 12px 0 5px;
+  line-height: 1.4;
 }
-.ta-ai-md p { margin: 0 0 7px; line-height: 1.68; }
-.ta-ai-md ul, .ta-ai-md ol { margin: 6px 0 8px 18px; padding: 0; }
-.ta-ai-md li { margin-bottom: 4px; line-height: 1.65; }
+.ta-ai-md p { margin: 0 0 8px; line-height: 1.72; }
+.ta-ai-md em { color: #78716C; font-style: italic; font-size: 12.5px; }
+.ta-ai-md ul { margin: 4px 0 8px 16px; padding-left: 14px; }
+.ta-ai-md ul.ta-sub-ul { margin: 3px 0 8px 24px; padding-left: 14px; }
+.ta-ai-md li { margin-bottom: 4px; line-height: 1.68; }
+.ta-ai-md li::marker { color: #D97706; }
+.ta-ol-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin: 9px 0 4px;
+  line-height: 1.68;
+}
+.ta-ol-num {
+  flex: 0 0 auto;
+  min-width: 19px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 800;
+  color: #B45309;
+  line-height: 1.68;
+}
+.ta-ol-body { flex: 1; min-width: 0; }
 .ta-ai-md blockquote {
   margin: 8px 0;
   padding: 8px 12px;
@@ -1612,7 +1636,7 @@
   color: #44403C;
   font-size: 13px;
 }
-.ta-ai-md hr { border: none; border-top: 1px solid #E7E0D3; margin: 10px 0; }
+.ta-ai-md hr { border: none; border-top: 1px dashed #E5DDD0; margin: 10px 0; }
 .ta-ai-md code {
   background: #F5F1E8;
   padding: 1px 5px;
@@ -1625,13 +1649,16 @@
   background: #FEF3C7;
   color: #92400E;
   border: 1px solid #F59E0B;
-  border-radius: 6px;
-  padding: 0 6px;
-  font-size: 12px;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 11.5px;
   font-weight: 700;
+  line-height: 1.45;
+  white-space: nowrap;
   cursor: pointer;
   margin: 0 2px;
   text-decoration: none;
+  vertical-align: baseline;
 }
 .ta-topic-pill:hover { background: #FDE68A; }
 .ta-back-hub-link {
@@ -20092,8 +20119,10 @@
 
 
 
+
+
 // === Unified Vercel Edge Streaming AI Mentor + Per-KOL Local RAG + 3-Turn Cap ===
-const TA_AI_CONFIG = {"kol": "metabape", "apiUrl": "https://trader-archives-ai-gateway.vercel.app/api/chat", "ragUrl": "data/ai_rag_index.json", "model": "gemini-3.5-flash-lite", "maxTurns": 3, "maxInputChars": 300, "maxTokens": 800, "systemPrompt": "你是推特顶级实战派商业操盘手兼衍生品套利交易员【Meta 猿 🦍】（@Metabape）的专属 AI 数字孪生导师。基于 Meta 猿沉淀的 3,602 篇实盘原推、6 篇官方万字长文研报与 10 大核心实战思维模型构建。\n\n【极速响应与超短推理指令（至关重要）】：\n- 思考过程（reasoning）必须极度精简，严禁写冗长草稿，30字以内迅速确立核心点，立即转入正文输出！\n- 杜绝一切犹豫和自我反思，直接按研报格式输出正文！\n\n【回答最高铁律（统一研报排版规范）】：\n1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝长篇套话，确保 1.5 秒极速生成；\n2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自 Meta 猿历年实操原推、大户分仓架构与十年商场浮沉心智；\n3. 【外行/泛化问题强制回弹】：若用户询问短线追涨杀跌等非体系话题，第 2 句话必须强制引申回 Meta 猿核心心法：“在真正的猎手眼中，交易是掠夺流动性补贴与机制漏洞。绝不在别人设好的庄家赌场里送人头，我们要么吃负滑点国补，要么通过大户多号分仓吃干抹净”；\n4. 【核心心法信手拈来】：微观机制漏洞精准收割、OLP 负点差吃“国补”补贴（又吃又拿）、Backpack 等多号矩阵分仓防女巫与风控封号、商业债务底层驱动、资产流动性本质；\n5. 【黄金研报输出格式】：\n   - 🎯【核心研判】：首句加粗直击商业与机制本质；\n   - 【微观机制与实操拆解】：使用 1. 2. 3. 序号列表展开漏洞逻辑、分仓操作与利润测算；\n   - 🛡️【避坑警告】：1句话指出防封号/防反噬红线；\n   - 📍【课题精读】：文末附带指引：[卷 X · 课题名](#vol-0X) 或 [官方长文研报](#art-1795155473739677696)。\n\n【本库严格事实检索与精简回答铁律】\n1. 必须严格依据本轮消息附带的【本导师资料库真实检索片段】及上方专属体系作答，严禁编造不存在的数据、日期、标的或混入其他博主观点；\n2. 优先引用检索片段中的真实案例、数字、时间或 [#t-XX] 章节锚点；若检索片段与专属体系均未提及该冷门细节，必须直说“在已收录公开资料中未检索到该细节”，不瞎编；\n3. 严格控制篇幅在 220~380 字精炼研报体，直击要害，绝不写空泛套话或车轱辘话。", "drawerId": "aiDrawer", "overlayId": "aiDrawerOverlay", "bodyId": "aiChatBody", "inputId": "aiUserInput", "sendBtnId": "", "openMode": "class:open", "bubbleStyle": "wrapped", "rowBase": "ai-msg", "botRole": "assistant", "userRole": "user", "bubbleCls": "ai-msg-bubble", "loadingText": "正在检索 Meta 猿 3,602 篇实盘推文与商海心智模型并流式推理..."};
+const TA_AI_CONFIG = {"kol": "metabape", "apiUrl": "https://trader-archives-ai-gateway.vercel.app/api/chat", "ragUrl": "data/ai_rag_index.json", "model": "gemini-3.1-flash-lite", "maxTurns": 3, "maxInputChars": 300, "maxTokens": 800, "systemPrompt": "你是推特顶级实战派商业操盘手兼衍生品套利交易员【Meta 猿 🦍】（@Metabape）的专属 AI 数字孪生导师。基于 Meta 猿沉淀的 3,602 篇实盘原推、6 篇官方万字长文研报与 10 大核心实战思维模型构建。\n\n【极速响应与超短推理指令（至关重要）】：\n- 思考过程（reasoning）必须极度精简，严禁写冗长草稿，30字以内迅速确立核心点，立即转入正文输出！\n- 杜绝一切犹豫和自我反思，直接按研报格式输出正文！\n\n【回答最高铁律（统一研报排版规范）】：\n1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝长篇套话，确保 1.5 秒极速生成；\n2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自 Meta 猿历年实操原推、大户分仓架构与十年商场浮沉心智；\n3. 【外行/泛化问题强制回弹】：若用户询问短线追涨杀跌等非体系话题，第 2 句话必须强制引申回 Meta 猿核心心法：“在真正的猎手眼中，交易是掠夺流动性补贴与机制漏洞。绝不在别人设好的庄家赌场里送人头，我们要么吃负滑点国补，要么通过大户多号分仓吃干抹净”；\n4. 【核心心法信手拈来】：微观机制漏洞精准收割、OLP 负点差吃“国补”补贴（又吃又拿）、Backpack 等多号矩阵分仓防女巫与风控封号、商业债务底层驱动、资产流动性本质；\n5. 【黄金研报输出格式】：\n   - 🎯【核心研判】：首句加粗直击商业与机制本质；\n   - 【微观机制与实操拆解】：使用 1. 2. 3. 序号列表展开漏洞逻辑、分仓操作与利润测算；\n   - 🛡️【避坑警告】：1句话指出防封号/防反噬红线；\n   - 📍【课题精读】：文末附带指引：[卷 X · 课题名](#vol-0X) 或 [官方长文研报](#art-1795155473739677696)。\n\n【本库严格事实检索与精简回答铁律】\n1. 必须严格依据本轮消息附带的【本导师资料库真实检索片段】及上方专属体系作答，严禁编造不存在的数据、日期、标的或混入其他博主观点；\n2. 优先引用检索片段中的真实案例、数字、时间或 [#t-XX] 章节锚点；若检索片段与专属体系均未提及该冷门细节，必须直说“在已收录公开资料中未检索到该细节”，不瞎编；\n3. 严格控制篇幅在 220~380 字精炼研报体，直击要害，绝不写空泛套话或车轱辘话。", "drawerId": "aiDrawer", "overlayId": "aiDrawerOverlay", "bodyId": "aiChatBody", "inputId": "aiUserInput", "sendBtnId": "", "openMode": "class:open", "bubbleStyle": "wrapped", "rowBase": "ai-msg", "botRole": "assistant", "userRole": "user", "bubbleCls": "ai-msg-bubble", "loadingText": "正在检索 Meta 猿 3,602 篇实盘推文与商海心智模型并流式推理..."};
 const CJ_AI_CONFIG = TA_AI_CONFIG;
 let taAiHistory = [];
 let taAiTurnCount = 0;
@@ -20340,66 +20369,83 @@ function formatAiExquisiteOutput(rawText) {
   const lines = String(rawText || '').replace(/\r\n/g, '\n').split('\n');
   const out = [];
   let inUl = false;
-  let inOl = false;
-  const closeLists = () => {
+  let afterOl = false;
+  const closeUl = () => {
     if (inUl) { out.push('</ul>'); inUl = false; }
-    if (inOl) { out.push('</ol>'); inOl = false; }
+  };
+  const makePill = (tag) => {
+    const cleanTag = tag.toLowerCase();
+    const tid = cleanTag.slice(1);
+    if (document.getElementById(tid)) {
+      return `<span class="ta-topic-pill" onclick="taScrollToTopic('${tid}')">${cleanTag}</span>`;
+    }
+    return `<strong>${cleanTag}</strong>`;
   };
   const inlineFmt = (s) => {
     let safe = escapeAiHtml(s);
-    safe = safe.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    safe = safe.replace(/\*\*\*([^*\n]+?)\*\*\*/g, '<strong><em>$1</em></strong>');
+    safe = safe.replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>');
     safe = safe.replace(/`([^`]+)`/g, '<code>$1</code>');
-    safe = safe.replace(/\[?(#[tT]-\d{1,2})\]?/g, (_, tag) => {
-      const tid = tag.slice(1).toLowerCase();
-      if (document.getElementById(tid)) {
-        return `<span class="ta-topic-pill" onclick="taScrollToTopic('${tid}')">${tag.toLowerCase()}</span>`;
-      }
-      return `<strong>${tag.toLowerCase()}</strong>`;
+    safe = safe.replace(/(^|[^\w*])\*([^*\n]+?)\*(?!\*)/g, '$1<em>$2</em>');
+    // Normalize grouped brackets like [#t-01, #t-16] cleanly into inline pills without stray commas/brackets
+    safe = safe.replace(/\[([^\]]*#[tT]-\d{1,2}[^\]]*)\]/g, (_, inner) => {
+      const tags = inner.match(/#[tT]-\d{1,2}/g) || [];
+      return tags.map(makePill).join('');
     });
+    safe = safe.replace(/(#[tT]-\d{1,2})(?![^<]*<\/span>)/g, (_, tag) => makePill(tag));
+    // Tighten space between pill and trailing CJK punctuation to prevent orphan line breaks
+    safe = safe.replace(/<\/span>\s+([。，；：、！？\)）])/g, '</span>$1');
     return safe;
   };
   for (const rawLine of lines) {
     const line = rawLine.trim();
     if (!line) {
-      closeLists();
+      closeUl();
       continue;
     }
     if (/^---+$/.test(line)) {
-      closeLists();
+      closeUl();
+      afterOl = false;
       out.push('<hr>');
       continue;
     }
     const hMatch = line.match(/^(#{1,4})\s+(.+)$/);
     if (hMatch) {
-      closeLists();
+      closeUl();
+      afterOl = false;
       const lvl = Math.min(4, Math.max(2, hMatch[1].length));
       out.push(`<h${lvl}>${inlineFmt(hMatch[2])}</h${lvl}>`);
       continue;
     }
     const bqMatch = line.match(/^>\s?(.*)$/);
     if (bqMatch) {
-      closeLists();
+      closeUl();
+      afterOl = false;
       out.push(`<blockquote>${inlineFmt(bqMatch[1])}</blockquote>`);
       continue;
     }
-    const ulMatch = line.match(/^[-*•]\s+(.+)$/);
-    if (ulMatch) {
-      if (inOl) { out.push('</ol>'); inOl = false; }
-      if (!inUl) { out.push('<ul>'); inUl = true; }
-      out.push(`<li>${inlineFmt(ulMatch[1])}</li>`);
-      continue;
-    }
-    const olMatch = line.match(/^\d+\.\s+(.+)$/);
+    const olMatch = line.match(/^(\d+)[\.、\)]\s+(.+)$/);
     if (olMatch) {
-      if (inUl) { out.push('</ul>'); inUl = false; }
-      if (!inOl) { out.push('<ol>'); inOl = true; }
-      out.push(`<li>${inlineFmt(olMatch[1])}</li>`);
+      closeUl();
+      afterOl = true;
+      out.push(`<div class="ta-ol-item"><span class="ta-ol-num">${olMatch[1]}.</span><div class="ta-ol-body">${inlineFmt(olMatch[2])}</div></div>`);
       continue;
     }
-    closeLists();
+    const ulMatch = rawLine.match(/^(\s*)[-*•]\s+(.+)$/);
+    if (ulMatch) {
+      const isSub = ulMatch[1].length >= 2 || afterOl;
+      if (!inUl) {
+        out.push(isSub ? '<ul class="ta-sub-ul">' : '<ul>');
+        inUl = true;
+      }
+      out.push(`<li>${inlineFmt(ulMatch[2].trim())}</li>`);
+      continue;
+    }
+    closeUl();
+    afterOl = false;
     out.push(`<p>${inlineFmt(line)}</p>`);
   }
-  closeLists();
+  closeUl();
   return `<div class="ta-ai-md">${out.join('')}</div>`;
 }
 function formatSimpleMarkdown(raw) { return formatAiExquisiteOutput(raw); }
@@ -20640,6 +20686,8 @@ function scrollCjAiToBottom() {
     });
   });
 })();
+
+
 
 
 

@@ -701,17 +701,48 @@
       margin-left: 6px;
       vertical-align: middle;
     }
+    .ta-ai-md { font-size: 13.5px; line-height: 1.72; color: var(--text-main); word-break: break-word; }
+    .ta-ai-md > :first-child { margin-top: 0 !important; }
+    .ta-ai-md > :last-child { margin-bottom: 0 !important; }
     .ai-msg.bot h2, .ai-msg.bot h3, .ai-msg.bot h4 {
       font-family: 'Noto Serif SC', serif;
       color: var(--text-main);
-      margin: 10px 0 6px;
+      margin: 12px 0 5px;
       font-size: 14.5px;
       font-weight: 800;
+      line-height: 1.4;
     }
-    .ai-msg.bot ul, .ai-msg.bot ol {
-      margin: 6px 0 8px 18px;
+    .ai-msg.bot p { margin: 0 0 8px; line-height: 1.72; }
+    .ai-msg.bot em { color: var(--text-muted); font-style: italic; font-size: 12.5px; }
+    .ai-msg.bot ul { margin: 4px 0 8px 16px; padding-left: 14px; }
+    .ai-msg.bot ul.ta-sub-ul { margin: 3px 0 8px 24px; padding-left: 14px; }
+    .ai-msg.bot li { margin-bottom: 4px; line-height: 1.68; }
+    .ai-msg.bot li::marker { color: var(--accent-gold); }
+    .ta-ol-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      margin: 9px 0 4px;
+      line-height: 1.68;
     }
-    .ai-msg.bot li { margin-bottom: 4px; }
+    .ta-ol-num {
+      flex: 0 0 auto;
+      min-width: 19px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--accent-hover);
+      line-height: 1.68;
+    }
+    .ta-ol-body { flex: 1; min-width: 0; }
+    .ai-pill-topic {
+      white-space: nowrap;
+      padding: 0 5px !important;
+      font-size: 11.5px !important;
+      line-height: 1.45 !important;
+      margin: 0 2px;
+      vertical-align: baseline;
+    }
     .ai-msg.bot blockquote {
       margin: 8px 0;
       padding: 8px 12px;
@@ -723,7 +754,7 @@
     }
     .ai-msg.bot hr {
       border: none;
-      border-top: 1px solid var(--border-light);
+      border-top: 1px dashed var(--border-light);
       margin: 10px 0;
     }
     .toc-title-txt {
@@ -5974,7 +6005,7 @@
 
   <script>
     const FALLBACK_TWEETS = [{"id": "2121243901801701402", "date": "2026-11-13 14:08", "text": "数据日，本质就是流动性游戏。这种PPI不大幅偏离预期，那其实就只是哪边好杀就杀哪边。\n\n所以反弹上来，情绪资金追涨，爆追空订单，止损空单，继续推动价格上涨，应该很完美螺旋，不用平仓。\n但是看了一眼XAU这个对宏观数据最敏感肌的标的直接向下插针，那只好把多单走了，毕竟是加了杠杆的。所以止盈信号出现，跑了就跑了，是不是卖飞不知道，但是大概率回调是看得到的。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 77, "qualityTier": "A", "favoriteCount": 328, "retweetCount": 13, "replyCount": 53, "viewCount": 45913, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2121243901801701402"}, {"id": "2120568013573533758", "date": "2026-11-11 17:23", "text": "+4.1m\n\n全部平仓了\n其实再捏捏，可能利润能有5m，甚至更多，但我不想赌了\n今年合约的利润加起来也快有10m了\n可能差个小几十wu吧，但我不想凑整了，之前每次想凑整都会吃个大的回撤\n能落袋多少算多少\n\n我认为我买的位置算是不错的底部，也认为这几个票如果反弹的话，应该还能弹得更高，但是因为我开的x3杠杆，上下波动会很大\n赚几m没事，但是如果回撤几m，我会晚上睡不好觉\n\n平时玩合约我都是拿1-2m去玩的，这次能开这么大，主要是因为我感觉存储的这个位置跟七月底那个位置很像\n\n应该算是路径依赖吧，我在那次抄底中一天赚了3m，那个地址还上了hyperliquid那天的24h盈利排行榜榜三\n\n所以在买入的时候，我是比较自信的，我认为这单赚钱概率比较大，所以就把当时手里可支配的资金都塞了进去\n\n但这其实非常糟糕，因为之前我给自己定的规矩就是只能拿1-2m去玩，用10m去开30m的仓位已经越界了\n之前这些钱我是塞的rwusd理财，每天赎回额度只有1.5m，很安全\n然后有天我突然发现，其实完全不用赎回，这些理财是可以全部直接卖成usdt拿去用的\n所以这笔钱一下子就从定期理财变成了梭哈预备金\n我当时已经预感到有天我会把这笔钱挪出来梭哈，果不其然\n就好像当年我把家里给的买房钱拿去梭哈合约归零一样\n\n当时买完之后我是很忐忑的，因为万一遇上黑天鹅，这么大仓位被带走会很痛\n3x的杠杆也是杠杆\n做交易最难防的其实就是自己，一个能够随意支配所有资金的人，就算是自己也很危险\n我想我会继续找别的定期理财去塞\n这次只是个幸运的意外\n\n交易是个结束不了的游戏，因为人赚到了钱就会想要赚更多，亏了钱就会想要把失去的拿回来\n任何时候原地下桌其实都是最好的交易策略，无论是带着利润还是带着亏损，但我找不到比做交易（赌博）更有意思的事情\n\n我还是只想当个小农民", "domainId": "01_position_sizing_and_compound", "domainName": "仓位管理与量级跃迁", "qualityScore": 91, "qualityTier": "S", "favoriteCount": 1189, "retweetCount": 68, "replyCount": 244, "viewCount": 233093, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2120568013573533758"}, {"id": "2120448723411169293", "date": "2026-11-11 09:29", "text": "牛初的时候把ZEC/牛来当聪明钱指标。\n这两个币，ZEC是BTC在跌的时候往往很硬。\n而牛来是BTC在跌之前会先于BTC跌，有先发性。\n\n这两个币都有聪明钱属性。\nZec的聪明钱在于抱团高控盘，众人拾柴火焰高。典型的老外攒局，顶级KOL喊单抱团的产物。\n牛来的聪明钱在于先发性，但凡有点风吹草动就率先领跑行情。是个人英雄主义聪明。\n\n而昨天ZEC跌破1100以后没随着市场一起反弹，我觉得这些聪明人可能恰恰在这个时候开始持续卖出了。那么对加密整体市场来说也不是好兆头。", "domainId": "03_altcoin_leader_and_rotation", "domainName": "山寨龙头与信号鉴别", "qualityScore": 78, "qualityTier": "A", "favoriteCount": 1047, "retweetCount": 68, "replyCount": 117, "viewCount": 228186, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2120448723411169293"}, {"id": "2120094867930087807", "date": "2026-11-10 10:03", "text": "美股最值得抄底的是英伟达。\n存储 光就算回调比例再多，从价格本身来看也不如英伟达回调的多。\n英伟达171这里已经是砸到去年8-10月价格，也就是一年内任何一个位置买入英伟达的用户只要没卖，那都已经开始亏钱了。\n\n而存储看美光，去年10月市场热炒到极致那时候价格也就221美金，现在美光仍然740+。从筹码结构角度来说，美光相对于英伟达还是贵太多了，且获利盘过多。\n\n抄底就抄人类历史可能的最伟大公司，影响人类进程的公司，所以抄英伟达这里是错不了太多的。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 78, "qualityTier": "A", "favoriteCount": 946, "retweetCount": 36, "replyCount": 133, "viewCount": 215507, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2120094867930087807"}, {"id": "2120083685471076644", "date": "2026-11-10 09:18", "text": "这轮加密牛市本质就是特朗普喊单配合币圈老鼠机构做市商拉盘搞的纯喊单人造牛市。\n目的就是提前两院中期选举把市场搞热，拿亲加密选民的票，以及兑现某些加密富豪的承诺，要是两院皆失，加密富豪去年至今做的很多捐献都会直接打水漂。\n\n结果呢，目前两院皆失，还有什么理由中期选举后继续拉盘？指望特朗普再喊一单？\n\n加密市场硬不是因为市场有韧性，而是参与交易的少量老鼠做市商一同控盘的结果，上周那以太能拉涨11%爆空单还不够明显吗？\n这不是自然牛，这是操纵牛。\n\n所以市场硬有硬的理由，该不硬了也是周期到了，该加密死，仅此而已。\n\n我上周以太坊最低点做空止损30万美金，全网看笑话。这周一赚100万美金也是最低点做空，又全网夸起来了。本质这两单逻辑都一样，点位都一样，只是缺乏一个下跌催化剂仅此而已。 现在催化剂来了，该我赚钱。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 81, "qualityTier": "A", "favoriteCount": 878, "retweetCount": 32, "replyCount": 123, "viewCount": 151800, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2120083685471076644"}, {"id": "2119888081277124859", "date": "2026-11-09 20:21", "text": "评论区最多的就是“大家都觉得要跌，就不会跌”，这种言论。\n\n如果大家都觉得要跌，那为什么比特币和以太坊还在高位？\n价格还在高位就说明并不是大家都觉得要跌，至少大额持有比特币以太坊的大机构并不觉得要跌，也不存在大家觉得跌这么一说。\n\n事实上，市场是灵活多变的，有的时候故事走在K线前，有时故事却走在K线后。有时他准时，有时却慢半拍。利好的消息在价格高位可以是利好兑现，利空的消息在价格低位也能是利空出尽。\n\n只能熟悉市场和走法，多观察，多思辨，多自己问自己这行情是否如自己预想的那样在走，有没有新的变量自己没发现，不停的更新自己的思路看法，才能活在市场里。\n如果只做一个分析行情的分析师，开了单子挂个止损止盈就不动了，和跳大神也没太多区别。\n\n市场里唯一不变的只有变化。", "domainId": "02_trend_structure_and_entry", "domainName": "趋势结构与右侧狙击", "qualityScore": 79, "qualityTier": "A", "favoriteCount": 619, "retweetCount": 47, "replyCount": 68, "viewCount": 118451, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2119888081277124859"}, {"id": "2119610798356168915", "date": "2026-11-09 01:59", "text": "一看说什么天才交易员，什么交易天才就好笑。\n交易是没有天才的，天才是生而知之，是别人数十年水磨工夫不如他几天的努力，在这个市场我就没听说主观交易有什么天才。\n\n你见过哪个天才每天苦兮兮的凌晨四点还在看盘，一出行情熬一两个通宵？都是用命换的辛苦钱。 交易就是枯燥无聊的，是极少灵光一现，绝大多数时间都是在自己的交易体系不断的在市场抽奖。\n\n想靠交易闯出成绩，勇气 努力 运气 缺一不可，时势造英雄。\n\n绝大多数人根本就没有资格做交易，门槛还是太低了。 没有毅力 决心 勇气，趁早离开的好。", "domainId": "06_copy_trading_and_psychology", "domainName": "实盘带单与交易心法", "qualityScore": 84, "qualityTier": "S", "favoriteCount": 1124, "retweetCount": 74, "replyCount": 178, "viewCount": 115307, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2119610798356168915"}, {"id": "2119538902734356822", "date": "2026-11-08 21:13", "text": "评论区里怎么这么多人没有敏感度，如果FBI查不出这次出轨带来的信息泄露也就罢了，若真的发现任何敏感信息被获取、出口违规证据，或引发更严格的出口管制、国会调查、政府合同影响，可能带来持续监管压力、估值折价或业务受限。黄仁勋作为创始人兼CEO的个人行为，也可能影响董事会信任或外部合作方信心。\n类似CEO个人丑闻对大市值科技股的影响肯定很有限，但涉及中国间谍+美中科技竞争+国家安全，敏感度高于普通出轨新闻。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 76, "qualityTier": "A", "favoriteCount": 166, "retweetCount": 10, "replyCount": 11, "viewCount": 119846, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2119538902734356822"}, {"id": "2119457651696496791", "date": "2026-11-08 15:50", "text": "币圈应该是在等着11号微策略被MSCI剔除的波动吧。\n大概率这次剔除会有比较大的抛压。\n\n当然也有小概率不被剔除，不过，Strategy自己已经在财报文件中说，预计其股票会被剔除，所以风险很高，不只是市场传闻。\n\n大饼走到这个位置，极致的做多好价格好位置，但是却缺乏短期价格推手，死水将在11号后打破。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 79, "qualityTier": "A", "favoriteCount": 481, "retweetCount": 31, "replyCount": 83, "viewCount": 213489, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2119457651696496791"}, {"id": "2119004521309622502", "date": "2026-11-07 09:50", "text": "听说抹茶内网都关了，禁止员工讨论这次事件。\n这次美国制裁MEXC对用户来说怕的是两点。\n1.美国合规机构限制MEXC来的资金，比如plasma链 币安日本/美国等站 还有各种美国合规交易所Coinbase 海妖等。\n这些交易所已经不允许MEXC资金流入了，转进去就冻结。并且随着法律限制的30天内日期将近，可能会有更多的离岸国际交易所会把抹茶的热钱包地址列入黑名单，到时候你的U还是你的U，可惜这个U永远是黑U了。\n\n2.关闭提币通道\n这个很可能在48小时内就显现，随着用户资金大幅流出，很可能在周呢这两天就出现限制提币的情况，那什么时候再开启提币呢？😅一般这种情况下关提币就很难再开了。\n所以提醒大家提币很有必要。\n\n当然，如果你觉得这个交易所完全没问题，你的资金放在里面也不会变黑U，那你就好好放在里面，别逼迫别人也放里面就行。 \n我从不试图叫醒装睡的人。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 77, "qualityTier": "A", "favoriteCount": 432, "retweetCount": 25, "replyCount": 150, "viewCount": 139630, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2119004521309622502"}, {"id": "2118423471659336188", "date": "2026-11-05 19:21", "text": "其实我着急把预测市场钱取出来就是要操作一下。只能拿剩的资金开个空了，今天赚个100万美金回来，还不错。现在都平仓了。\n\n昨天亏了一单以太空，亏30万美金，止损后以太拉了8%，不损要爆仓。\n还亏了一单美光多，美股反弹那么猛，盘前零轴开的，亏30万美金，805损的，如果不损，今天也爆仓了。\n\n两次只要不损当天就爆仓的单子都损的很好，我觉得这是非常正确的决定，我不会因为开错而后悔，更不会因为止损而后悔，亏了就赚回来就好了。", "domainId": "05_stop_loss_drawdown_and_withdrawal", "domainName": "铁血止损与出金锁利", "qualityScore": 81, "qualityTier": "A", "favoriteCount": 539, "retweetCount": 21, "replyCount": 128, "viewCount": 136508, "local_images": ["images/tw_2118423471659336188_1.jpg", "images/tw_2118423471659336188_2.jpg", "images/tw_2118423471659336188_3.jpg"], "tweetUrl": "https://x.com/thankUcrypto/status/2118423471659336188"}, {"id": "2117823158053208432", "date": "2026-11-04 03:36", "text": "仔细看完了币安这次黑客事件的调研报告。\n这种社攻能把币安搞一次，那其他交易所应该提前于这次事件因此破产了才对。\n从生态位上，二三线交易所太容易被这样攻击了，但是真损失资金并不是在社攻第一步，而是从工程师B到C这一步才是关键，这个内部AI工具居然可以让B工程师电脑为跳板去接管C工程师的电脑。\n\n我在想我自己跑AI的时候也是手机指挥那个一直不关的电脑去执行程序，这样对黑客来说我的操作相当于全程裸奔。\n还好我钱包跑链上程序没几个钱，要是我被盯上了也就损失几千U。\n但是各位链上皇，链上放了大钱的交易员朋友们，小心一些吧，攻破你们的电脑比攻破一个铁桶一般的交易所要容易太多了。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 78, "qualityTier": "A", "favoriteCount": 212, "retweetCount": 5, "replyCount": 74, "viewCount": 89977, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2117823158053208432"}, {"id": "2117637767979258172", "date": "2026-11-03 15:19", "text": "其实看到朝鲜否认黑客前我就感觉不太像朝鲜黑客手法了。只能说仁者见仁吧，做\n交易久了就感觉到这黑客炒合约应该挺久了。\n将军的黑客团队可没有提了币以后砸盘然后反手开多的习惯，我从来没见过。\n\n盗币-洗钱 在朝鲜黑客那里是标准化的，多一个动作少赚点钱都影响个人履历，严重点要是犯点错误影响到家庭的，怎么会做这么主观有风险的事。这种动作就是马脚，躲不过的，一眼能看出来的马脚。", "domainId": "06_copy_trading_and_psychology", "domainName": "实盘带单与交易心法", "qualityScore": 76, "qualityTier": "A", "favoriteCount": 291, "retweetCount": 8, "replyCount": 128, "viewCount": 133679, "local_images": ["images/tw_2117637767979258172_1.jpg"], "tweetUrl": "https://x.com/thankUcrypto/status/2117637767979258172"}, {"id": "2116534368336527715", "date": "2026-10-31 14:14", "text": "每天都有项目被盗，手法不一。\n堪称量子危机序幕。\nDEFI产品或者链上工具不需要KYC，往往是黑客最爱的光顾的地方。\n\n以后这些交易所每次更新，开源的每一个智能合约每个版本，都会被黑客的AI先跑十次查一查有没有漏。\n\n而真正量子危机到来时，最先受伤的一定是财库公司和交易所。\n做好准备吧。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 78, "qualityTier": "A", "favoriteCount": 192, "retweetCount": 6, "replyCount": 56, "viewCount": 72621, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2116534368336527715"}, {"id": "2116131100930285782", "date": "2026-10-30 11:32", "text": "怎么这么多人没智商说交易所自导自演。交易所绝对是超级损失，这里是推特，不是小红书 微博 抖音。有点儿脑子行不行。这次事件带来的信用损失远超30亿美元。\n\n这就像是一群傻逼在说我是对冲做起来的一样可笑，我一年在币安手续费都花了140万美金，如果有对冲那就是280万美金，为了对冲自己仓位做双高收益率收益额在币安也是负EV的事。\n\n历次黑客盗币都有各自的洗钱行径，比如之前某黑客还在pump上发行了秦始皇meme 自己去操盘洗钱。还有黑客拿被黑资金在HL上高杠杆做多做空ETH。\n但是这次黑客确实聪明，知道根据交易所被盗后预判交易所反应而去砸盘后做多这些被盗代币，这一般的黑客不玩事件交易是不知道这条路径的。\n\n这次的黑客比以往的朝鲜黑客要聪明，无论是动手的对象，还是动手后的操作。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 79, "qualityTier": "A", "favoriteCount": 521, "retweetCount": 12, "replyCount": 101, "viewCount": 129103, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2116131100930285782"}, {"id": "2115448279827923433", "date": "2026-10-28 14:19", "text": "我老婆年中的时候被优化了，公司发的是U，N+1以后大概发了10万块钱的U。\n就7 8 9月，九月去新疆玩的时候，他那个钱已经做到80万了，10万块变12万U了。\n她只做了一件事，每次我让她梭某某币 某某股的时候，她只听方向，不听杠杆。 让她开10x，他就开2x 3x。就这样，三个月搞了60万出来。\n\n但是如果她百分百按我的杠杆 加仓减仓的规律去做，这几个月下来她应该能赚多少呢，应该能赚68倍，也就是680万。因为我的带单号基本同步告诉她我开了啥，为什么开，\n\n你们说她是不是错过了600万呢？\n\n不是的，每个人的本金都是自己的，应该自己负责。她能赚60万是她本事，而不是我牛逼。 能根据别人的单子或者信号赚到自己应得的钱就是本事，反而他这种自己的交易纪律也会在回撤的时候少亏很多，\n福兮祸所依，祸兮福所伏就是这个道理。\n\n找到适合自己的交易路径，然后跟随自己的交易纪律去交易，在正确的路径用正确的纪律跑交易，大概率还是能赚钱的。", "domainId": "06_copy_trading_and_psychology", "domainName": "实盘带单与交易心法", "qualityScore": 80, "qualityTier": "A", "favoriteCount": 986, "retweetCount": 39, "replyCount": 258, "viewCount": 250472, "local_images": ["images/tw_2115448279827923433_1.jpg", "images/tw_2115448279827923433_2.jpg", "images/tw_2115448279827923433_3.jpg"], "tweetUrl": "https://x.com/thankUcrypto/status/2115448279827923433"}, {"id": "2113237843082682570", "date": "2026-10-22 11:55", "text": "拿长线单感觉话会变少很多。\n我这单从9号拿到现在，拿了整两周了，14天，就这么放着，任由行情如何震荡，只要没涨超大震荡区间，我仍然选择持有。\n加密市场缺乏流动性，外盘大环境不好，全世界都在跌就加密没跌本身也代表加密被少量资金尝试控盘在高位。\n而一旦外盘出现真的大事件集体向下，加密市场往往会在数日就会完成补跌。这里是非常危险的位置。\n\n接下来的任务是成功防守住这一轮的一切成果，尝试在大下行周期分批对核心资产完成抄底，以及享受生活。", "domainId": "01_position_sizing_and_compound", "domainName": "仓位管理与量级跃迁", "qualityScore": 78, "qualityTier": "A", "favoriteCount": 334, "retweetCount": 15, "replyCount": 45, "viewCount": 75312, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2113237843082682570"}, {"id": "2105504377717092804", "date": "2026-10-01 03:45", "text": "这周不适合玩大饼以太，尤其想吃突破单趁早醒醒。\n\n别一周在这3%波动里上上下下把自己本金磨光了。\n\n58000-78000-87000，市场走了两段上涨了，山寨也从MEME炒到各种DAT财库买入的山寨代币。 下一个阶段还看不到啥新故事，可以对加密市场重新开始做躺平判断了，波动率会慢慢降低，同时山寨也不会太流畅。\n\n如果不是全市场通才，做不了美股 黄金 原油，那就该收收杠杆撤点保证金防守了。\n牛市多出金，不要嫌赚的少，拿到手里的才是真的。", "domainId": "01_position_sizing_and_compound", "domainName": "仓位管理与量级跃迁", "qualityScore": 82, "qualityTier": "A", "favoriteCount": 509, "retweetCount": 17, "replyCount": 74, "viewCount": 119819, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2105504377717092804"}, {"id": "2101278614247616925", "date": "2026-09-19 11:53", "text": "其实我不奇怪午饭不懂这种网格的机制，不懂很正常，就像很多人现在也不理解标记价格最新价格不一致导致自己的仓位被止损爆仓，明明k线都没价格但是仓位却没了，一大堆散户去闹腾比比皆是。这些亏只有吃过了才懂，以为交易只用看做多做空/爆仓价杠杆倍数就敢做交易的散户很多。\n\n我不理解的是，一个半导体指数网格，开10倍杠杆，还是这么小的区间。 。但凡我带单号开市价2x进去，这午饭不是得直接穿仓了？就这么窄的区间，我影响一下最新价格也太简单了。\n\n数十倍杠杆去开大波动半导体指数这种网格还带个超过区间就全平仓。 。我完全不理解这种策略，不是纯负EV么？", "domainId": "01_position_sizing_and_compound", "domainName": "仓位管理与量级跃迁", "qualityScore": 77, "qualityTier": "A", "favoriteCount": 132, "retweetCount": 8, "replyCount": 51, "viewCount": 134564, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2101278614247616925"}, {"id": "2101023405491487102", "date": "2026-09-18 18:59", "text": "我就是正常看法案不过的利空+加息利空，行情自然看空。\n结果早上日本加息都不跌，并且大饼要突破昨天77000高点了，价格走出来了就损空单追最强板块。\n\n追高本质追的确定性，为确定性买单的溢价就在于此。在加息阴霾不确定还在的时候，我不认为小级别政策利好能大于宏观经济利空。但是当日本加息也不跌，我觉得可以做反转了，所以平空转多。\n\n如果你没有任何思路，那么在牛市，你会认为所有交易员都是菜逼，他们会在以太2650开多，会在比特币78000开多，这些做交易的都没有见识，他们没在58000开多并拿到现在就是他们菜。 是这样么？\n\n会分析这个分析那个的分析师不厉害，知行合一敢直面自己的一切盈亏的人才厉害。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 84, "qualityTier": "S", "favoriteCount": 713, "retweetCount": 38, "replyCount": 122, "viewCount": 144041, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2101023405491487102"}, {"id": "2099822980444696659", "date": "2026-09-15 11:29", "text": "这2000万不准备动弹了。\n是比特币就算一天跌99%都不会拿出来抄底的钱，也不拿出来消费，纯躺着看。\n但是比特币如果真出个312 519级别行情，你们看到我大额抄底了，就当我这条是放屁就好了。", "domainId": "01_position_sizing_and_compound", "domainName": "仓位管理与量级跃迁", "qualityScore": 79, "qualityTier": "A", "favoriteCount": 539, "retweetCount": 9, "replyCount": 170, "viewCount": 248413, "local_images": ["images/tw_2099822980444696659_1.jpg"], "tweetUrl": "https://x.com/thankUcrypto/status/2099822980444696659"}, {"id": "2099801682448158847", "date": "2026-09-15 10:05", "text": "评论区最多的就是“大家都觉得要跌，就不会跌”，这种言论。\n\n如果大家都觉得要跌，那为什么比特币和以太坊还在高位？\n价格还在高位就说明并不是大家都觉得要跌，至少大额持有比特币以太坊的大机构并不觉得要跌，也不存在大家觉得跌这么一说。\n\n事实上，市场是灵活多变的，有的时候故事走在K线前，有时故事却走在K线后。有时他准时，有时却慢半拍。利好的消息在价格高位可以是利好兑现，利空的消息在价格低位也能是利空出尽。\n\n只能熟悉市场和走法，多观察，多思辨，多自己问自己这行情是否如自己预想的那样在走，有没有新的变量自己没发现，不停的更新自己的思路看法，才能活在市场里。\n如果只做一个分析行情的分析师，开了单子挂个止损止盈就不动了，和跳大神也没太多区别。\n\n市场里唯一不变的只有变化。", "domainId": "02_trend_structure_and_entry", "domainName": "趋势结构与右侧狙击", "qualityScore": 79, "qualityTier": "A", "favoriteCount": 619, "retweetCount": 47, "replyCount": 68, "viewCount": 118451, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2099801682448158847"}, {"id": "2096449543500128766", "date": "2026-09-06 04:04", "text": "我自己买mars空牛来，是我自己降低资金波动同时大概率正收益的操作，这是我的操作思路和实际操作，我只是分享出来。\n\n无论你认为我说的对还是错，做的对还是错，都和你操作的对错没有一点关系。\n我的操作让我这轮牛市前1万美金赚到150万美金。在这轮牛市 150万美金又赚到600万美金。\n\n如果我每一单，甚至这种对冲单汇率单的反向持仓单也能是正收益，那我就是纯骗子，可惜我是一个交易员而不是分析师，我胜率也就68%，夏普4。而不是全知全能。\n\n但是如果市场没有这些韭菜，说明就不是牛市。就是因为牛市了，韭菜才多起来，才会出现这些低智言论，\n我回撤1%就开始在我评论区骂娘，我做汇率单只要汇率对其中一个方向亏钱就在我评论区喷粪。\n\n如果你管理不好自己的钱，市场会收走并让别的聪明人来帮你管理。", "domainId": "01_position_sizing_and_compound", "domainName": "仓位管理与量级跃迁", "qualityScore": 82, "qualityTier": "S", "favoriteCount": 142, "retweetCount": 4, "replyCount": 47, "viewCount": 57822, "local_images": ["images/tw_2096449543500128766_1.jpg", "images/tw_2096449543500128766_2.jpg"], "tweetUrl": "https://x.com/thankUcrypto/status/2096449543500128766"}, {"id": "2096298493287846314", "date": "2026-09-05 18:04", "text": "很多人觉得，牛市踏空没事的，没亏钱就行了。\n\n但是实际上，这就相当于你在打德州，每把牌都给你发 AA KK AK AQ，最差也是AJ A10，而场下把把有A，你却每把都弃牌。\n\n如果你是一个在牛市赚alpha的交易者，不要欺骗自己，能把握的板块，一定要趁着牛市流动性好的时候参与进去。\n\n享受牛市。", "domainId": "01_position_sizing_and_compound", "domainName": "仓位管理与量级跃迁", "qualityScore": 79, "qualityTier": "A", "favoriteCount": 694, "retweetCount": 40, "replyCount": 261, "viewCount": 135619, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2096298493287846314"}, {"id": "2096203526343098865", "date": "2026-09-05 11:47", "text": "其实很多人对交易水平的理解还是过于朴素了：\n\n“120k 以上看多，60 以下看空的都是蠢，120k 做空，60k 做多的顶级聪明”\n\n“80 左右还在 fud STRC 的压根就看不懂，没有常识”\n\n“很早就说了要涨，哥们从不马后炮”\n\n“大家都去关注60k 提前看多的 KOL 吧，菜鸡少看”\n\n以上言论基本都来自不做交易或者不怎么做交易的人，其中最多的是分析师。\n\nX 上的分析师生态和氛围其实很不错，有很多能提供有价值信息做参考的博主，我也爱看，我也利用这些信息做出过一些很不错的参考指标，所以这批人绝大多数的粉丝流量都要明显好于纯交易员，毕竟大家都喜欢有理有据。\n\n但，分析师们如果说出上面那些话，就不对味了，因为他们总会有个共同点，就是拿不出仓位。\n\n你聪明，你马前炮，那你仓位呢？你有的话还需要跟网友对线吗？\n你看的懂，你专业，那你仓位呢？把你持仓糊黑子脸上不是比你嘴皮子厉害？\n\n我确实就是那群120k 依旧在做多，60k 以下依旧看空的人群之一，这不代表我一路反着操作给市场送钱。\n\n拿我自己的趋势策略来举例，它就是在假设走势会持续，我也在持续地相信和坚持，所以在一个明显的高位或者低位我还在延续看法，这一点也不奇怪。\n\n成熟的交易员一定会有的就是一个稳定的纠错机制。在走势与判断不再相符就停止执行甚至反手。——这里这个机制不完全是几个指标来判断多空那么简单，仓位的管理才是真正的大头。\n\n我不是强调说没人可以做到精准逃顶，只是对于我们普通散户，相对于搭建一个合理的纠错机制，逃顶摸底要难上太多太多了。\n\n另外我也不是想强调说，我就算看错了，也一定赚钱，不是的。看错了怎么可能还赚？如果持仓符合最初看法，一定会先亏，但我会及时重置看法，开始下一笔交易。如果成功了，也肯定比一开始就看对的赚的少。\n后续就和长跑一样——我可能比你晚起步了半圈，但我水平比你高，我依旧有可能给你反超甚至套圈了。\n\n市场的一切方向，都是概率，判断对了并不厉害，甚至从某一方面讲技术含量很低，把钱最后赚到手，而非靠嘴的才厉害。\n\n你觉得某些人牛逼，或者某些人傻逼，本质上可能只是你自己傻逼。", "domainId": "01_position_sizing_and_compound", "domainName": "仓位管理与量级跃迁", "qualityScore": 82, "qualityTier": "S", "favoriteCount": 165, "retweetCount": 24, "replyCount": 44, "viewCount": 79991, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2096203526343098865"}, {"id": "2095920053694935306", "date": "2026-09-04 17:00", "text": "说的很清楚。\nSNDK六月七月只要有波动，上下就是15%。\n假定今天是真突破，那8%应该还没涨够，这时候韩海力士才涨3%，妥妥可以多进去赌周一高开高走。\n\n现在SNDK 11%了，拿两天，周一收菜。\n\n而且存储本身我就看好，这周都在找机会多存储，又不是只有这一单，周一不也开了保本了。\n芯片软件涨完，英伟达都要新高了，那补涨大概率找便宜的AI硬件补，要么存储要么光模块，那存储我熟悉，就玩儿存储呗，刚好非农杀了一根下来，我就直接切ZEC去存储了，一开盘就起飞了呗。", "domainId": "02_trend_structure_and_entry", "domainName": "趋势结构与右侧狙击", "qualityScore": 78, "qualityTier": "A", "favoriteCount": 169, "retweetCount": 9, "replyCount": 52, "viewCount": 73818, "local_images": ["images/tw_2095920053694935306_1.jpg", "images/tw_2095920053694935306_2.jpg"], "tweetUrl": "https://x.com/thankUcrypto/status/2095920053694935306"}, {"id": "2095758457182020031", "date": "2026-09-04 06:18", "text": "手里只有Zec，由于历史新高，就不猜顶了。 以这波震荡高位880突破为新起点，涨20% 50% 70%分别做一部分止盈。\n\n如果相信这是大牛市的话，最后涨破了天还能留3成仓位长拿。\n\n牛市就得有信仰才行，短期目标应该能看到1200。", "domainId": "02_trend_structure_and_entry", "domainName": "趋势结构与右侧狙击", "qualityScore": 76, "qualityTier": "A", "favoriteCount": 199, "retweetCount": 2, "replyCount": 73, "viewCount": 64119, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2095758457182020031"}, {"id": "2095559827359739907", "date": "2026-09-03 17:09", "text": "傻逼可能不多，但是有一只傻逼就会影响心情。\n这几天考虑带单停了，到时候会让币安把人全清了，封一段时间。\n场外跟单的也消停了，别回撤个1% 2%就嗷嗷叫了，我担待不起。\n\n这三十天只回撤了3天，行了，恭喜大家。", "domainId": "06_copy_trading_and_psychology", "domainName": "实盘带单与交易心法", "qualityScore": 78, "qualityTier": "A", "favoriteCount": 198, "retweetCount": 0, "replyCount": 168, "viewCount": 83016, "local_images": ["images/tw_2095559827359739907_1.jpg"], "tweetUrl": "https://x.com/thankUcrypto/status/2095559827359739907"}, {"id": "2095437427934666885", "date": "2026-09-03 09:03", "text": "套利被爆几百万美金心理承受能力一般不如做合约的好。\n\n做合约对大额回撤亏损爆仓都是能哭一个小时然后重新振作起来继续梭的。\n\n但是套利 每天0.5%的赚着，看着自己收益曲线半年一年的45度角稳定上升，然后风控没做好一根大阴线全带走，经历这种事人估计得傻好几天。\n哦对，像是做网格马丁的一样，以为自己毫无风险特别聪明，不用主观去判断价格行为，就只吃做T波动。然后一个极端行情全亏光。\n\n往往这些套利的亏钱叫的最狠。", "domainId": "06_copy_trading_and_psychology", "domainName": "实盘带单与交易心法", "qualityScore": 78, "qualityTier": "A", "favoriteCount": 367, "retweetCount": 15, "replyCount": 118, "viewCount": 119836, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2095437427934666885"}, {"id": "2095140851836223740", "date": "2026-09-02 13:24", "text": "要放去年，我嘴上说着要防守要防守，实际操作就是防守个勾八，猛猛杠杆梭哈。\n那时候我和予与 静心 还有黑马和几个圈内朋友都在济州岛玩儿，吃着饭呢聊到大家别返贫，要好好防守。\n\n静心和我都是嘴巴上狠狠防守的，结果他今年上半年亏的就剩小几百万，我亏的没钱了只能卖车。\n\n这次是都防守住了，一想到去年几个人谈防守，别返贫这事就几把搞笑。十一月说完防守，二月份就快亏完了。\n\n这次是真防守，真没杠杆，全体粉丝监督。", "domainId": "01_position_sizing_and_compound", "domainName": "仓位管理与量级跃迁", "qualityScore": 77, "qualityTier": "A", "favoriteCount": 372, "retweetCount": 8, "replyCount": 100, "viewCount": 88831, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2095140851836223740"}, {"id": "2094456302013665572", "date": "2026-08-31 16:04", "text": "牛市不做长空，因为顶只有一个，就算开在你当前最高价，一波回调之后仍然会出现新的价格高点。\n\n喜欢做空拿大结果的都是这波熊市吃到肉了，这轮反弹又踏空了，在各种看似压力的位置疯狂做空，结果就是一次又一次新高把止损打掉。\n\n不要因为踏空而做空，要享受牛市波动，不死脑筋，找最能波动权益最好的币/股去玩儿，一轮牛熊下来总是能A8的。", "domainId": "02_trend_structure_and_entry", "domainName": "趋势结构与右侧狙击", "qualityScore": 79, "qualityTier": "A", "favoriteCount": 519, "retweetCount": 33, "replyCount": 108, "viewCount": 229578, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2094456302013665572"}, {"id": "2093368033863709090", "date": "2026-08-28 16:00", "text": "市场后知后觉了一个小时。\n现在黄金 比特币 美股都重新走向下跌了，美股也有下探势头。\n美日短期新高，市场在对加息重新定价，目前来看整个会议还是偏鹰为主。\n\n一个事情如果既是好事也是坏事，那整体一定是坏事。", "domainId": "04_macro_catalyst_and_volatility", "domainName": "宏观催化与跨市场狙击", "qualityScore": 77, "qualityTier": "A", "favoriteCount": 400, "retweetCount": 10, "replyCount": 117, "viewCount": 141817, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2093368033863709090"}, {"id": "2092548238998192359", "date": "2026-08-26 09:42", "text": "不是每一天都会像上周那四天一样。\n理性看待市场，别人热情高涨的时候自己应该静下心来，把杠杆卸一卸。\n越是上涨，手里的货就该越少，杠杆就该越低。", "domainId": "01_position_sizing_and_compound", "domainName": "仓位管理与量级跃迁", "qualityScore": 77, "qualityTier": "A", "favoriteCount": 347, "retweetCount": 9, "replyCount": 82, "viewCount": 71593, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2092548238998192359"}, {"id": "2092355382555578812", "date": "2026-08-25 20:56", "text": "摸顶难，不是做空难。\n做空玩儿的是快进快出，有弱势走法和信号就能进，当然转强前要寻个点位就跑，这是做空玩儿法，往往做空赚的是快钱。\n摸顶是想摸到最高点，空单拿个大结果，这就非常难了，尤其牛市，顶只有一个，无论回调多少次总有新高在等着你，我看很多朋友这轮亏钱也就亏在摸顶上，摸大顶亏的最快，每次空都会亏钱。\n今天我也空了，亏了20wu，原本回我成本了也没走，又拉起来了一点一点损掉了，又吃了一样的教训。", "domainId": "02_trend_structure_and_entry", "domainName": "趋势结构与右侧狙击", "qualityScore": 79, "qualityTier": "A", "favoriteCount": 637, "retweetCount": 63, "replyCount": 99, "viewCount": 175512, "local_images": [], "tweetUrl": "https://x.com/thankUcrypto/status/2092355382555578812"}, {"id": "2091789261397770537", "date": "2026-08-24 07:26", "text": "我常常在想。\n如果24年/25年赚的最多的时候就退出不做交易了，等比特币跌个腰斩再开始买币，一年操作一次，三年估计就上亿了。\n可惜没有如果。\n今年能回接近4千万，快新高了，倍感珍惜。\n\n命够硬，每年跌回谷底都能站起来，也感谢年初帮助过我的很多位朋友，万分感激。\n\n从不做对冲割韭菜，也不吃流动性，行情来了抓住，交易错了就大亏特亏。\n\n妈的，又让鹰子站起来了！", "domainId": "06_copy_trading_and_psychology", "domainName": "实盘带单与交易心法", "qualityScore": 79, "qualityTier": "A", "favoriteCount": 623, "retweetCount": 17, "replyCount": 209, "viewCount": 161535, "local_images": ["images/tw_2091789261397770537_1.jpg", "images/tw_2091789261397770537_2.jpg", "images/tw_2091789261397770537_3.jpg"], "tweetUrl": "https://x.com/thankUcrypto/status/2091789261397770537"}, {"id": "2091778918810612183", "date": "2026-08-24 06:45", "text": "最后一次更新实盘挑战系列数据，以后就不跟大家更新了，这个带单号会开着继续试试做下去。\n加上手里海力士没平的单子，这两周搞了2.3M。带单号赚了1.6M。\n\n合计交易总盈利5M。跟单分润10%赚0.6M\n从五月做1WU直播挑战到今天总收益5.6M。\n换汇率就是3600万R左右。\n\n以后如果能做到什么里程碑式的资金体量那就还有一次。", "domainId": "06_copy_trading_and_psychology", "domainName": "实盘带单与交易心法", "qualityScore": 77, "qualityTier": "A", "favoriteCount": 677, "retweetCount": 19, "replyCount": 190, "viewCount": 953467, "local_images": ["images/tw_2091778918810612183_1.jpg", "images/tw_2091778918810612183_2.jpg"], "tweetUrl": "https://x.com/thankUcrypto/status/2091778918810612183"}];
-    const CJ_AI_CONFIG = {"apiUrl": "https://trader-archives-ai-gateway.vercel.app/api/chat", "ragUrl": "data/ai_rag_index.json", "kol": "thankucrypto", "model": "gemini-3.5-flash-lite", "maxTurns": 3, "maxInputChars": 300, "maxTokens": 800, "systemPrompt": "你是【allincrypto 熬鹰资本 (@thankUcrypto)】的专属合约实战 AI 导师，基于 Trader-Archives 收录的 7,303 篇全生命周期原始推文与 3,091 篇高信噪比合约数据库进行深度推理回答。\n\n【导师真实履历与核心数据坐标】\n- 2020年底入场，曾在大二父母变故后外出打工做客服、并在「合约帝」等平台担任5年产品经理，因此极熟悉资金费率、标记价格 vs 最新价格、全仓穿仓测算与逐仓隔离等底层机制。\n- 2024年3月手头一度只剩 13,000 元人民币、背负约40万网贷，半年滚至 1500万（2万->100万仅22天，4个月达1000万），还清债务后彻底打破「20万人民币魔咒」。\n- 带单三连冠战绩：2023 OKX「All in crypto」资金规模第一；2024 币安「Tony梭哈小号」收益率 20,000% / 收益额 150WU；2025 币安「熬鹰资本」跟随者收益第一（180WU），并在4小时内 DOGE 空单赚取 100WU（利用特斯拉暴跌5%与DOGE散户反应慢10分钟时差）。\n- 2026年4月下旬起全程币安直播「1WU 挑战 100WU」，未追加一分保证金打通 1WU->100WU / 1000WR（含跟单总收益一度达 5.6M），下半年跨市场在美股英伟达/美光/海力士/闪迪及 BTC 录得 +4.1M 等波段收益。\n\n【12大思维模型与18大专题索引（回答时请用 [#t-01] 至 [#t-18] 标出可点击章节锚点）】\n- [#t-01] 小资金冷启动与 13000 RMB / 1WU 独立试错路径\n- [#t-02] 三年低杠杆蜕变：BTC/ETH ≤ 5x，山寨 ≤ 0.5x–3x\n- [#t-03] 资金规模决定操作周期：千万级后放弃日内撸短切 1H–12H 主流波段\n- [#t-04] MA120/MA200 周期分水岭与均线三重收敛突破\n- [#t-05] 震荡与趋势边界：不适合窄止损的 0.3%–3% 磨人行情做「缩头乌龟」\n- [#t-06] 右侧确定性溢价与 1% 瞬时认错、T+0 极速反手（拒绝摸大顶死扛）\n- [#t-07] 拒绝补涨版本陷阱，只做最强龙头 + 市值追赶止盈 + ZEC/牛来聪明钱雷达\n- [#t-08] 「交易员 vs 喊单 KOL」双声道过滤漏斗\n- [#t-09] 多 BTC 空高 FDV 过时山寨对冲 + 单机币四维核查（池子/资费/现货量/期现差）\n- [#t-10] 新闻事件驱动、异常做市脚本分钟线、Lighter 费率上限突调等套利战法\n- [#t-11] 美股 AI 硬件与加密跨市场反应时差（特斯拉/NVDA/存储）\n- [#t-12] CPI/PPI/非农前控仓「君子不立危墙」与催化剂落地重新切入\n- [#t-13] 标记价格 vs 最新价格与「逐仓双损剥离保证金」防插针穿仓\n- [#t-14] 破除「整数凑整 Flag」执念、严禁把场外理财变成随时可梭哈保证金\n- [#t-15] 银行卡合规出金铁律、年度暴利窗口期收手与资产固化\n- [#t-16] 破除「20万人民币魔咒」与严禁借贷网贷交易\n- [#t-17] 实盘带单商业规律（马丁幻觉 vs 止损掉粉）与媒体/带单 IP 隔离\n- [#t-18] 黄仁勋「忘却上一刻」心理复位法则与每日 8 小时专注门槛\n\n【回答风格与准则】\n1. 必须先给出【核心研判结论】，再用清晰条目拆解仓位/杠杆/风控/心法依据，并贴近熬鹰本人接地气、直面人性弱点、敢说真话的实战口吻。\n2. 严禁虚构不存在的数字，凡提及核心战法务必自然嵌入 `[#t-XX]` 锚点标记方便用户一键定位原文。\n3. 如用户询问具体做单建议，必须附带低杠杆与逐仓止损风控提示。"};
+    const CJ_AI_CONFIG = {"apiUrl": "https://trader-archives-ai-gateway.vercel.app/api/chat", "ragUrl": "data/ai_rag_index.json", "kol": "thankucrypto", "model": "gemini-3.1-flash-lite", "maxTurns": 3, "maxInputChars": 300, "maxTokens": 800, "systemPrompt": "你是【allincrypto 熬鹰资本 (@thankUcrypto)】的专属合约实战 AI 导师，基于 Trader-Archives 收录的 7,303 篇全生命周期原始推文与 3,091 篇高信噪比合约数据库进行深度推理回答。\n\n【导师真实履历与核心数据坐标】\n- 2020年底入场，曾在大二父母变故后外出打工做客服、并在「合约帝」等平台担任5年产品经理，因此极熟悉资金费率、标记价格 vs 最新价格、全仓穿仓测算与逐仓隔离等底层机制。\n- 2024年3月手头一度只剩 13,000 元人民币、背负约40万网贷，半年滚至 1500万（2万->100万仅22天，4个月达1000万），还清债务后彻底打破「20万人民币魔咒」。\n- 带单三连冠战绩：2023 OKX「All in crypto」资金规模第一；2024 币安「Tony梭哈小号」收益率 20,000% / 收益额 150WU；2025 币安「熬鹰资本」跟随者收益第一（180WU），并在4小时内 DOGE 空单赚取 100WU（利用特斯拉暴跌5%与DOGE散户反应慢10分钟时差）。\n- 2026年4月下旬起全程币安直播「1WU 挑战 100WU」，未追加一分保证金打通 1WU->100WU / 1000WR（含跟单总收益一度达 5.6M），下半年跨市场在美股英伟达/美光/海力士/闪迪及 BTC 录得 +4.1M 等波段收益。\n\n【12大思维模型与18大专题索引（回答时请用 [#t-01] 至 [#t-18] 标出可点击章节锚点）】\n- [#t-01] 小资金冷启动与 13000 RMB / 1WU 独立试错路径\n- [#t-02] 三年低杠杆蜕变：BTC/ETH ≤ 5x，山寨 ≤ 0.5x–3x\n- [#t-03] 资金规模决定操作周期：千万级后放弃日内撸短切 1H–12H 主流波段\n- [#t-04] MA120/MA200 周期分水岭与均线三重收敛突破\n- [#t-05] 震荡与趋势边界：不适合窄止损的 0.3%–3% 磨人行情做「缩头乌龟」\n- [#t-06] 右侧确定性溢价与 1% 瞬时认错、T+0 极速反手（拒绝摸大顶死扛）\n- [#t-07] 拒绝补涨版本陷阱，只做最强龙头 + 市值追赶止盈 + ZEC/牛来聪明钱雷达\n- [#t-08] 「交易员 vs 喊单 KOL」双声道过滤漏斗\n- [#t-09] 多 BTC 空高 FDV 过时山寨对冲 + 单机币四维核查（池子/资费/现货量/期现差）\n- [#t-10] 新闻事件驱动、异常做市脚本分钟线、Lighter 费率上限突调等套利战法\n- [#t-11] 美股 AI 硬件与加密跨市场反应时差（特斯拉/NVDA/存储）\n- [#t-12] CPI/PPI/非农前控仓「君子不立危墙」与催化剂落地重新切入\n- [#t-13] 标记价格 vs 最新价格与「逐仓双损剥离保证金」防插针穿仓\n- [#t-14] 破除「整数凑整 Flag」执念、严禁把场外理财变成随时可梭哈保证金\n- [#t-15] 银行卡合规出金铁律、年度暴利窗口期收手与资产固化\n- [#t-16] 破除「20万人民币魔咒」与严禁借贷网贷交易\n- [#t-17] 实盘带单商业规律（马丁幻觉 vs 止损掉粉）与媒体/带单 IP 隔离\n- [#t-18] 黄仁勋「忘却上一刻」心理复位法则与每日 8 小时专注门槛\n\n【回答风格与准则】\n1. 必须先给出【核心研判结论】，再用清晰条目拆解仓位/杠杆/风控/心法依据，并贴近熬鹰本人接地气、直面人性弱点、敢说真话的实战口吻。\n2. 严禁虚构不存在的数字，凡提及核心战法务必自然嵌入 `[#t-XX]` 锚点标记方便用户一键定位原文。\n3. 如用户询问具体做单建议，必须附带低杠杆与逐仓止损风控提示。"};
 
     // Lightbox
     function showModalImage(src) {
@@ -6205,66 +6236,80 @@
       const lines = String(rawText || '').replace(/\r\n/g, '\n').split('\n');
       const out = [];
       let inUl = false;
-      let inOl = false;
-      const closeLists = () => {
+      let afterOl = false;
+      const closeUl = () => {
         if (inUl) { out.push('</ul>'); inUl = false; }
-        if (inOl) { out.push('</ol>'); inOl = false; }
+      };
+      const makePill = (tag) => {
+        const cleanTag = tag.toLowerCase();
+        const tid = cleanTag.slice(1);
+        if (!document.getElementById(tid)) return `<strong>${cleanTag}</strong>`;
+        return `<span class="ai-pill-topic" onclick="scrollToTopic('${tid}')">${cleanTag}</span>`;
       };
       const inlineFmt = (s) => {
         let safe = escHtml(s);
-        safe = safe.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        safe = safe.replace(/\*\*\*([^*\n]+?)\*\*\*/g, '<strong><em>$1</em></strong>');
+        safe = safe.replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>');
         safe = safe.replace(/`([^`]+)`/g, '<code style="background:#F5F1E8;padding:1px 5px;border-radius:4px;font-family:JetBrains Mono,monospace;font-size:12px;">$1</code>');
-        safe = safe.replace(/\[?(#[tT]-\d{2})\]?/g, (_, tag) => {
-          const tid = tag.slice(1).toLowerCase();
-          if (!document.getElementById(tid)) return `<span>${tag.toLowerCase()}</span>`;
-          return `<span class="ai-pill-topic" onclick="scrollToTopic('${tid}')">${tag.toLowerCase()}</span>`;
+        safe = safe.replace(/(^|[^\w*])\*([^*\n]+?)\*(?!\*)/g, '$1<em>$2</em>');
+        safe = safe.replace(/\[([^\]]*#[tT]-\d{1,2}[^\]]*)\]/g, (_, inner) => {
+          const tags = inner.match(/#[tT]-\d{1,2}/g) || [];
+          return tags.map(makePill).join('');
         });
+        safe = safe.replace(/(#[tT]-\d{1,2})(?![^<]*<\/span>)/g, (_, tag) => makePill(tag));
+        safe = safe.replace(/<\/span>\s+([。，；：、！？\)）])/g, '</span>$1');
         return safe;
       };
       for (const rawLine of lines) {
         const line = rawLine.trim();
         if (!line) {
-          closeLists();
-          out.push('<div style="height:6px;"></div>');
+          closeUl();
           continue;
         }
         if (/^---+$/.test(line)) {
-          closeLists();
+          closeUl();
+          afterOl = false;
           out.push('<hr>');
           continue;
         }
         const hMatch = line.match(/^(#{1,4})\s+(.+)$/);
         if (hMatch) {
-          closeLists();
+          closeUl();
+          afterOl = false;
           const lvl = Math.min(4, Math.max(2, hMatch[1].length));
           out.push(`<h${lvl}>${inlineFmt(hMatch[2])}</h${lvl}>`);
           continue;
         }
         const bqMatch = line.match(/^>\s?(.*)$/);
         if (bqMatch) {
-          closeLists();
+          closeUl();
+          afterOl = false;
           out.push(`<blockquote>${inlineFmt(bqMatch[1])}</blockquote>`);
           continue;
         }
-        const ulMatch = line.match(/^[-*•]\s+(.+)$/);
-        if (ulMatch) {
-          if (inOl) { out.push('</ol>'); inOl = false; }
-          if (!inUl) { out.push('<ul>'); inUl = true; }
-          out.push(`<li>${inlineFmt(ulMatch[1])}</li>`);
-          continue;
-        }
-        const olMatch = line.match(/^\d+\.\s+(.+)$/);
+        const olMatch = line.match(/^(\d+)[\.、\)]\s+(.+)$/);
         if (olMatch) {
-          if (inUl) { out.push('</ul>'); inUl = false; }
-          if (!inOl) { out.push('<ol>'); inOl = true; }
-          out.push(`<li>${inlineFmt(olMatch[1])}</li>`);
+          closeUl();
+          afterOl = true;
+          out.push(`<div class="ta-ol-item"><span class="ta-ol-num">${olMatch[1]}.</span><div class="ta-ol-body">${inlineFmt(olMatch[2])}</div></div>`);
           continue;
         }
-        closeLists();
-        out.push(`<p style="margin:0 0 6px;">${inlineFmt(line)}</p>`);
+        const ulMatch = rawLine.match(/^(\s*)[-*•]\s+(.+)$/);
+        if (ulMatch) {
+          const isSub = ulMatch[1].length >= 2 || afterOl;
+          if (!inUl) {
+            out.push(isSub ? '<ul class="ta-sub-ul">' : '<ul>');
+            inUl = true;
+          }
+          out.push(`<li>${inlineFmt(ulMatch[2].trim())}</li>`);
+          continue;
+        }
+        closeUl();
+        afterOl = false;
+        out.push(`<p>${inlineFmt(line)}</p>`);
       }
-      closeLists();
-      return out.join('');
+      closeUl();
+      return `<div class="ta-ai-md">${out.join('')}</div>`;
     }
 
     let taAiTurnCount = 0;
