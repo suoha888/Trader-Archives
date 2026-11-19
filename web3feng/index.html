@@ -803,6 +803,121 @@
             .ai-drawer { width: 100%; right: -100%; }
         }
     </style>
+<style>
+/* === Trader-Archives Unified AI Typography & Mobile Responsive Safeguard === */
+.ta-ai-md h2, .ta-ai-md h3, .ta-ai-md h4 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #1C1917;
+  margin: 10px 0 6px;
+}
+.ta-ai-md p { margin: 0 0 7px; line-height: 1.68; }
+.ta-ai-md ul, .ta-ai-md ol { margin: 6px 0 8px 18px; padding: 0; }
+.ta-ai-md li { margin-bottom: 4px; line-height: 1.65; }
+.ta-ai-md blockquote {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-left: 3px solid #D97706;
+  background: #FFFBEB;
+  border-radius: 0 8px 8px 0;
+  color: #44403C;
+  font-size: 13px;
+}
+.ta-ai-md hr { border: none; border-top: 1px solid #E7E0D3; margin: 10px 0; }
+.ta-ai-md code {
+  background: #F5F1E8;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+}
+.ta-topic-pill {
+  display: inline-block;
+  background: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #F59E0B;
+  border-radius: 6px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0 2px;
+  text-decoration: none;
+}
+.ta-topic-pill:hover { background: #FDE68A; }
+.ta-back-hub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  justify-content: center;
+  padding: 9px 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #FEF3C7;
+  border: 1px solid #F59E0B;
+  color: #92400E !important;
+  font-size: 12.5px;
+  font-weight: 800;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+.ta-back-hub-link:hover { background: #FDE68A; }
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+  }
+  .layout, .page-layout, .app-layout, .container, .main-wrapper, .page-wrapper, .shell, .app-shell, .wrapper {
+    display: block !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+  }
+  aside, .sidebar, .left-sidebar, .nav-sidebar {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    border-right: none !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+  main, .main, .main-content, .content, .content-area {
+    margin-left: 0 !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    box-sizing: border-box !important;
+  }
+  .stats-grid, .stats-strip, .kpi-grid, .models-grid, .dl-grid, .cards-grid, .grid-2, .grid-3, .metric-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .ai-drawer, .cj-ai-modal, #aiDrawer, #cjAiModal, #aiModal {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    left: auto !important;
+    right: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .ai-drawer:not(.open):not(.active), #aiDrawer:not(.open):not(.active) {
+    right: -105vw !important;
+  }
+  pre, table, code, .tweet-card, .tw-card, .topic-card, .article-card, .hero, .hero-card {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+    box-sizing: border-box !important;
+  }
+  img { max-width: 100% !important; height: auto; }
+}
+</style>
 </head>
 <body>
 
@@ -916,7 +1031,7 @@
                     </div>
                     <div class="meta-cell">
                         <span class="meta-lbl">AI 导师引擎</span>
-                        <span class="meta-val">Atria-Dawn-Preview 导师引擎</span>
+                        <span class="meta-val">Vercel Edge 流式 AI 导师</span>
                     </div>
                     <div class="meta-cell">
                         <span class="meta-lbl">开源发布日期</span>
@@ -1403,7 +1518,7 @@
                     <strong>251</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>1,546,604</strong>
                 </span>
             </div>
@@ -1463,7 +1578,7 @@
                     <strong>81</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>354,928</strong>
                 </span>
             </div>
@@ -1531,7 +1646,7 @@
                     <strong>27</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>62,809</strong>
                 </span>
             </div>
@@ -1603,7 +1718,7 @@
                     <strong>92</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>80,385</strong>
                 </span>
             </div>
@@ -1669,7 +1784,7 @@
                     <strong>16</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>45,888</strong>
                 </span>
             </div>
@@ -1749,7 +1864,7 @@
                     <strong>3</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>16,666</strong>
                 </span>
             </div>
@@ -1814,7 +1929,7 @@
                     <strong>108</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>234,560</strong>
                 </span>
             </div>
@@ -1880,7 +1995,7 @@
                     <strong>77</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>84,711</strong>
                 </span>
             </div>
@@ -1941,7 +2056,7 @@
                     <strong>9</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>15,353</strong>
                 </span>
             </div>
@@ -2007,7 +2122,7 @@
                     <strong>22</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>43,975</strong>
                 </span>
             </div>
@@ -2071,7 +2186,7 @@
                     <strong>46</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>68,854</strong>
                 </span>
             </div>
@@ -2137,7 +2252,7 @@
                     <strong>11</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>41,381</strong>
                 </span>
             </div>
@@ -2292,7 +2407,7 @@
                     <strong>114</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>184,015</strong>
                 </span>
             </div>
@@ -2368,7 +2483,7 @@
                     <strong>134</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>235,593</strong>
                 </span>
             </div>
@@ -2458,7 +2573,7 @@
                     <strong>142</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>355,748</strong>
                 </span>
             </div>
@@ -2531,7 +2646,7 @@
                     <strong>58</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>255,054</strong>
                 </span>
             </div>
@@ -2606,7 +2721,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>175,450</strong>
                 </span>
             </div>
@@ -2757,7 +2872,7 @@
                     <strong>97</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>115,059</strong>
                 </span>
             </div>
@@ -2826,7 +2941,7 @@
                     <strong>71</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>175,018</strong>
                 </span>
             </div>
@@ -2892,7 +3007,7 @@
                     <strong>103</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>176,724</strong>
                 </span>
             </div>
@@ -2955,7 +3070,7 @@
                     <strong>133</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>147,349</strong>
                 </span>
             </div>
@@ -3026,7 +3141,7 @@
                     <strong>56</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>95,722</strong>
                 </span>
             </div>
@@ -3090,7 +3205,7 @@
                     <strong>51</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>95,300</strong>
                 </span>
             </div>
@@ -3159,7 +3274,7 @@
                     <strong>54</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>118,720</strong>
                 </span>
             </div>
@@ -3290,7 +3405,7 @@
                     <strong>76</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>214,421</strong>
                 </span>
             </div>
@@ -3351,7 +3466,7 @@
                     <strong>73</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>115,802</strong>
                 </span>
             </div>
@@ -3419,7 +3534,7 @@
                     <strong>102</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>111,753</strong>
                 </span>
             </div>
@@ -3483,7 +3598,7 @@
                     <strong>51</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>95,300</strong>
                 </span>
             </div>
@@ -3560,7 +3675,7 @@
                     <strong>90</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>212,497</strong>
                 </span>
             </div>
@@ -3629,7 +3744,7 @@
                     <strong>54</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>118,720</strong>
                 </span>
             </div>
@@ -3697,7 +3812,7 @@
                     <strong>78</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>124,264</strong>
                 </span>
             </div>
@@ -3766,7 +3881,7 @@
                     <strong>93</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>38,951</strong>
                 </span>
             </div>
@@ -3840,7 +3955,7 @@
                     <strong>43</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>78,043</strong>
                 </span>
             </div>
@@ -3920,7 +4035,7 @@
                     <strong>34</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>67,312</strong>
                 </span>
             </div>
@@ -3987,7 +4102,7 @@
                     <strong>74</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>49,424</strong>
                 </span>
             </div>
@@ -4055,7 +4170,7 @@
                     <strong>33</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>63,560</strong>
                 </span>
             </div>
@@ -4210,7 +4325,7 @@
                     <strong>114</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>184,015</strong>
                 </span>
             </div>
@@ -4282,7 +4397,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>38,053</strong>
                 </span>
             </div>
@@ -4346,7 +4461,7 @@
                     <strong>73</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>115,802</strong>
                 </span>
             </div>
@@ -4433,7 +4548,7 @@
                     <strong>142</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>355,748</strong>
                 </span>
             </div>
@@ -4506,7 +4621,7 @@
                     <strong>58</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>255,054</strong>
                 </span>
             </div>
@@ -4581,7 +4696,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>175,450</strong>
                 </span>
             </div>
@@ -4665,7 +4780,7 @@
                     <strong>75</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>70,423</strong>
                 </span>
             </div>
@@ -4734,7 +4849,7 @@
                     <strong>71</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>175,018</strong>
                 </span>
             </div>
@@ -4805,7 +4920,7 @@
                     <strong>56</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>95,722</strong>
                 </span>
             </div>
@@ -4869,7 +4984,7 @@
                     <strong>51</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>95,300</strong>
                 </span>
             </div>
@@ -4942,7 +5057,7 @@
                     <strong>31</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>43,463</strong>
                 </span>
             </div>
@@ -5005,7 +5120,7 @@
                     <strong>46</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>56,331</strong>
                 </span>
             </div>
@@ -5170,7 +5285,7 @@
                     <strong>114</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>184,015</strong>
                 </span>
             </div>
@@ -5242,7 +5357,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>38,053</strong>
                 </span>
             </div>
@@ -5310,7 +5425,7 @@
                     <strong>102</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>111,753</strong>
                 </span>
             </div>
@@ -5383,7 +5498,7 @@
                     <strong>58</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>255,054</strong>
                 </span>
             </div>
@@ -5450,7 +5565,7 @@
                     <strong>93</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>94,944</strong>
                 </span>
             </div>
@@ -5521,7 +5636,7 @@
                     <strong>56</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>95,722</strong>
                 </span>
             </div>
@@ -5585,7 +5700,7 @@
                     <strong>51</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>95,300</strong>
                 </span>
             </div>
@@ -5657,7 +5772,7 @@
                     <strong>49</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>139,658</strong>
                 </span>
             </div>
@@ -5723,7 +5838,7 @@
                     <strong>81</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>90,912</strong>
                 </span>
             </div>
@@ -5787,7 +5902,7 @@
                     <strong>63</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>108,362</strong>
                 </span>
             </div>
@@ -5858,7 +5973,7 @@
                     <strong>48</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>100,309</strong>
                 </span>
             </div>
@@ -5929,7 +6044,7 @@
                     <strong>44</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>106,830</strong>
                 </span>
             </div>
@@ -6062,7 +6177,7 @@
                     <strong>110</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>106,597</strong>
                 </span>
             </div>
@@ -6162,7 +6277,7 @@
                     <strong>114</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>184,015</strong>
                 </span>
             </div>
@@ -6241,7 +6356,7 @@
                     <strong>134</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>235,593</strong>
                 </span>
             </div>
@@ -6307,7 +6422,7 @@
                     <strong>76</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>214,421</strong>
                 </span>
             </div>
@@ -6368,7 +6483,7 @@
                     <strong>73</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>115,802</strong>
                 </span>
             </div>
@@ -6455,7 +6570,7 @@
                     <strong>142</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>355,748</strong>
                 </span>
             </div>
@@ -6520,7 +6635,7 @@
                     <strong>102</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>111,753</strong>
                 </span>
             </div>
@@ -6595,7 +6710,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>175,450</strong>
                 </span>
             </div>
@@ -6662,7 +6777,7 @@
                     <strong>93</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>94,944</strong>
                 </span>
             </div>
@@ -6813,7 +6928,7 @@
                     <strong>97</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>115,059</strong>
                 </span>
             </div>
@@ -6882,7 +6997,7 @@
                     <strong>71</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>175,018</strong>
                 </span>
             </div>
@@ -6948,7 +7063,7 @@
                     <strong>103</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>176,724</strong>
                 </span>
             </div>
@@ -7085,7 +7200,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>38,053</strong>
                 </span>
             </div>
@@ -7146,7 +7261,7 @@
                     <strong>73</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>115,802</strong>
                 </span>
             </div>
@@ -7216,7 +7331,7 @@
                     <strong>93</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>94,944</strong>
                 </span>
             </div>
@@ -7283,7 +7398,7 @@
                     <strong>120</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>120,270</strong>
                 </span>
             </div>
@@ -7350,7 +7465,7 @@
                     <strong>60</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>138,719</strong>
                 </span>
             </div>
@@ -7412,7 +7527,7 @@
                     <strong>28</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>63,522</strong>
                 </span>
             </div>
@@ -7474,7 +7589,7 @@
                     <strong>47</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>33,609</strong>
                 </span>
             </div>
@@ -7541,7 +7656,7 @@
                     <strong>22</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>40,150</strong>
                 </span>
             </div>
@@ -7605,7 +7720,7 @@
                     <strong>41</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>46,974</strong>
                 </span>
             </div>
@@ -7673,7 +7788,7 @@
                     <strong>67</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>40,744</strong>
                 </span>
             </div>
@@ -7735,7 +7850,7 @@
                     <strong>12</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>27,745</strong>
                 </span>
             </div>
@@ -7796,7 +7911,7 @@
                     <strong>13</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>28,968</strong>
                 </span>
             </div>
@@ -7948,7 +8063,7 @@
                     <strong>433</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>331,761</strong>
                 </span>
             </div>
@@ -8023,7 +8138,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>175,450</strong>
                 </span>
             </div>
@@ -8110,7 +8225,7 @@
                     <strong>75</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>70,423</strong>
                 </span>
             </div>
@@ -8261,7 +8376,7 @@
                     <strong>97</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>115,059</strong>
                 </span>
             </div>
@@ -8324,7 +8439,7 @@
                     <strong>133</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>147,349</strong>
                 </span>
             </div>
@@ -8386,7 +8501,7 @@
                     <strong>86</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>85,094</strong>
                 </span>
             </div>
@@ -8457,7 +8572,7 @@
                     <strong>56</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>95,722</strong>
                 </span>
             </div>
@@ -8534,7 +8649,7 @@
                     <strong>90</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>212,497</strong>
                 </span>
             </div>
@@ -8610,7 +8725,7 @@
                     <strong>159</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>116,678</strong>
                 </span>
             </div>
@@ -8701,7 +8816,7 @@
                     <strong>77</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>93,965</strong>
                 </span>
             </div>
@@ -8764,7 +8879,7 @@
                     <strong>218</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>136,314</strong>
                 </span>
             </div>
@@ -8832,7 +8947,7 @@
                     <strong>30</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>46,953</strong>
                 </span>
             </div>
@@ -8974,7 +9089,7 @@
                     <strong>433</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>331,761</strong>
                 </span>
             </div>
@@ -9058,7 +9173,7 @@
                     <strong>75</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>70,423</strong>
                 </span>
             </div>
@@ -9123,7 +9238,7 @@
                     <strong>86</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>85,094</strong>
                 </span>
             </div>
@@ -9192,7 +9307,7 @@
                     <strong>93</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>38,951</strong>
                 </span>
             </div>
@@ -9272,7 +9387,7 @@
                     <strong>34</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>67,312</strong>
                 </span>
             </div>
@@ -9347,7 +9462,7 @@
                     <strong>57</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>78,171</strong>
                 </span>
             </div>
@@ -9423,7 +9538,7 @@
                     <strong>20</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>99,135</strong>
                 </span>
             </div>
@@ -9490,7 +9605,7 @@
                     <strong>22</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>40,150</strong>
                 </span>
             </div>
@@ -9552,7 +9667,7 @@
                     <strong>44</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>26,684</strong>
                 </span>
             </div>
@@ -9617,7 +9732,7 @@
                     <strong>25</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>21,653</strong>
                 </span>
             </div>
@@ -9682,7 +9797,7 @@
                     <strong>10</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>11,638</strong>
                 </span>
             </div>
@@ -9746,7 +9861,7 @@
                     <strong>19</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>7,557</strong>
                 </span>
             </div>
@@ -9889,7 +10004,7 @@
                     <strong>110</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>106,597</strong>
                 </span>
             </div>
@@ -9989,7 +10104,7 @@
                     <strong>114</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>184,015</strong>
                 </span>
             </div>
@@ -10068,7 +10183,7 @@
                     <strong>134</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>235,593</strong>
                 </span>
             </div>
@@ -10127,7 +10242,7 @@
                     <strong>184</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>161,324</strong>
                 </span>
             </div>
@@ -10199,7 +10314,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>38,053</strong>
                 </span>
             </div>
@@ -10286,7 +10401,7 @@
                     <strong>142</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>355,748</strong>
                 </span>
             </div>
@@ -10359,7 +10474,7 @@
                     <strong>58</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>255,054</strong>
                 </span>
             </div>
@@ -10434,7 +10549,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>175,450</strong>
                 </span>
             </div>
@@ -10501,7 +10616,7 @@
                     <strong>120</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>120,270</strong>
                 </span>
             </div>
@@ -10567,7 +10682,7 @@
                     <strong>103</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>176,724</strong>
                 </span>
             </div>
@@ -10638,7 +10753,7 @@
                     <strong>56</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>95,722</strong>
                 </span>
             </div>
@@ -10707,7 +10822,7 @@
                     <strong>54</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>118,720</strong>
                 </span>
             </div>
@@ -10862,7 +10977,7 @@
                     <strong>114</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>184,015</strong>
                 </span>
             </div>
@@ -10934,7 +11049,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>38,053</strong>
                 </span>
             </div>
@@ -11010,7 +11125,7 @@
                     <strong>58</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>255,054</strong>
                 </span>
             </div>
@@ -11084,7 +11199,7 @@
                     <strong>88</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>115,616</strong>
                 </span>
             </div>
@@ -11168,7 +11283,7 @@
                     <strong>75</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>70,423</strong>
                 </span>
             </div>
@@ -11242,7 +11357,7 @@
                     <strong>60</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>42,253</strong>
                 </span>
             </div>
@@ -11313,7 +11428,7 @@
                     <strong>62</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>191,313</strong>
                 </span>
             </div>
@@ -11383,7 +11498,7 @@
                     <strong>69</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>197,542</strong>
                 </span>
             </div>
@@ -11458,7 +11573,7 @@
                     <strong>57</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>78,171</strong>
                 </span>
             </div>
@@ -11520,7 +11635,7 @@
                     <strong>33</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>49,983</strong>
                 </span>
             </div>
@@ -11596,7 +11711,7 @@
                     <strong>20</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>99,135</strong>
                 </span>
             </div>
@@ -11663,7 +11778,7 @@
                     <strong>25</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>47,499</strong>
                 </span>
             </div>
@@ -11796,7 +11911,7 @@
                     <strong>110</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>106,597</strong>
                 </span>
             </div>
@@ -11896,7 +12011,7 @@
                     <strong>114</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>184,015</strong>
                 </span>
             </div>
@@ -11958,7 +12073,7 @@
                     <strong>184</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>161,324</strong>
                 </span>
             </div>
@@ -12030,7 +12145,7 @@
                     <strong>29</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>38,053</strong>
                 </span>
             </div>
@@ -12117,7 +12232,7 @@
                     <strong>142</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>355,748</strong>
                 </span>
             </div>
@@ -12182,7 +12297,7 @@
                     <strong>102</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>111,753</strong>
                 </span>
             </div>
@@ -12256,7 +12371,7 @@
                     <strong>88</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>115,616</strong>
                 </span>
             </div>
@@ -12327,7 +12442,7 @@
                     <strong>173</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>189,380</strong>
                 </span>
             </div>
@@ -12396,7 +12511,7 @@
                     <strong>71</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>175,018</strong>
                 </span>
             </div>
@@ -12462,7 +12577,7 @@
                     <strong>103</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>176,724</strong>
                 </span>
             </div>
@@ -12533,7 +12648,7 @@
                     <strong>56</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>95,722</strong>
                 </span>
             </div>
@@ -12607,7 +12722,7 @@
                     <strong>22</strong>
                 </span>
                 <span class="tw-stat-item" title="浏览量">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     <strong>162,083</strong>
                 </span>
             </div>
@@ -12708,7 +12823,7 @@
 
             <!-- 底部版权 -->
             <footer style="margin-top: 80px; padding-top: 30px; border-top: 1px solid var(--border-main); text-align: center; font-size: 13px; color: var(--text-muted);">
-                <p style="margin-bottom: 8px;">🏛️ 《Trader-Archives》全球顶级实战派交易员知识开源大典 · MIT 开源许可</p>
+                <p style="margin-bottom: 8px;">🏛️ 《Trader-Archives》全球顶级实战派交易员知识开源大典 · MIT 开源许可 · 由 <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener" style="color:#B45309;font-weight:700;">梭哈.AI (@SUOHA_AI)</a> 编纂归档</p>
                 <p>本站内容基于推特博主 @Web3Feng 公开发布内容进行体系化整理收录与学术研究，不构成任何投资建议，请 DYOR。</p>
             </footer>
 
@@ -12753,7 +12868,7 @@
 
     <!-- 模态放大图 -->
     <div class="modal-overlay" id="modalOverlay" onclick="closeModalImage()">
-        <img src="" alt="放大实盘" class="modal-img" id="modalImage">
+        <img alt="放大实盘" class="modal-img" id="modalImage">
     </div>
 
     <!-- 研报全文阅读模态框 -->
@@ -12827,7 +12942,7 @@
         function closeModalImage() {
             const overlay = document.getElementById('modalOverlay');
             if (overlay) overlay.style.display = 'none';
-        }
+         ['modalImg','modalImage','lightboxImg','imgModalTarget'].forEach(function(id){var im=document.getElementById(id);if(im)im.removeAttribute('src');}); }
 
         // AI 导师抽屉切换
         function toggleAiDrawer() {
@@ -12835,130 +12950,330 @@
             if (drawer) drawer.classList.toggle('open');
         }
 
-        // 高可用轮转 Atria 配置
-        const CJ_AI_CONFIG = {
-            apiUrl: 'https://trader-archives-ai-gateway.vercel.app/api/chat',
-            model: 'Atria-Dawn-Preview',
-            keys: [
-                'atr_4KCkb-G1ueWHh_FdvRU4dcNLaDnBHMnV',
-                'atr_M7r-GEFgLx5Ir29ZCNAp5FSSV8GSUx4d',
-                'atr_XEsZzQZ56upLNGCyGcrBeO1IamTbFsCS',
-                'atr_eLaCRAQiID8gcCIpG5ILduGyNeHqRs8z',
-                'atr_FBUVCpNZ3DRQoBSVm4fCefZt7OspUDf9',
-                'atr_nnVppYvV1n3hofvc5bEYSi8kE1a3kaJC',
-                'atr_ukvkiQ0jOsBMDXKfi0opMpLgvQO1b-ZR',
-                'atr_-TpmSHCCaJW9d5s5gGTO53eEV_nJV0Oj',
-                'atr_Rhn_JLO027LZcWMVqxZBXrFq_38qfIR2',
-                'atr_Z7elfMAJm0ToK9LmU8juIdMSh9qeUui4',
-                'atr_zUzYh2CFcpzA9ygYAZHhmUvCMXpElJUp',
-                'atr_btx_XUCZUPzvCWZph4NHv5T75-9scHKg',
-                'atr_4qdUmd7dCTVIyPkbO5k7yCLR7b1Rbz2c',
-                'atr_gdB8sYnLaEvkbrOrMGLKakbyP7fIns5P',
-                'atr_HG4lxOTfc5GRYox--0p9wTfnAnz6jOtb',
-                'atr_jlG17natxoywaLwuC58C15eH5EmxD4DS',
-                'atr_ZobajhyKOPVRENJkPGrK1OkLNtLBXjk5',
-                'atr_o2tuf1I9RJq4N3iz5Ft-9GqJtJ-ChYex',
-                'atr_cGSwiQj2nALI9wxL80C578X8izLd8S1T',
-                'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
-                'atr__I_zVBtTtpXcpnZ610CUeqImHFmotp3d',
-                'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
-                'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK'
-            ],
-            temperature: 0.25,
-            maxTokens: 2500,
-            systemPrompt: `你是【风无向🦅】（推特 @Web3Feng）的专属 AI 数字孪生导师。
-你的核心知识库基于风无向公开沉淀的全部实战思维模型、量化心法与推文全集。
-面对用户的任何提问，严格遵循以下风格与结构回答：
-1. 语言干练、接地气、直击要害，恪守“梭哈不是鲁莽，而是精心策划的辉煌”的核心交易哲学；
-2. 杜绝空洞的大道理与说教腔调，直给具体的商业逻辑、赔率计算、量化长尾套利规则与风控底牌；
-3. 输出采用专业研报结构：
-   - 🎯【核心研判与第一性原理】
-   - 🔍【底层机制推演】
-   - ⚡【实操执行法则】（1. 2. 3. 落地纪律）
-   - 🛡️【避坑铁律与仓位警告】`
-        };
+        
 
-        let currentKeyIdx = Math.floor(Math.random() * CJ_AI_CONFIG.keys.length);
-        function getNextApiKey() {
-            const k = CJ_AI_CONFIG.keys[currentKeyIdx];
-            currentKeyIdx = (currentKeyIdx + 1) % CJ_AI_CONFIG.keys.length;
-            return k;
-        }
+// === Unified Vercel Edge Streaming AI Mentor (Zero Client Keys) ===
+const TA_AI_CONFIG = {"apiUrl": "https://trader-archives-ai-gateway.vercel.app/api/chat", "model": "google/gemini-2.5-flash", "systemPrompt": "你是【风无向🦅】（推特 @Web3Feng）的专属 AI 数字孪生导师。\n你的核心知识库基于风无向公开沉淀的全部实战思维模型、量化心法与推文全集。\n面对用户的任何提问，严格遵循以下风格与结构回答：\n1. 语言干练、接地气、直击要害，恪守“梭哈不是鲁莽，而是精心策划的辉煌”的核心交易哲学；\n2. 杜绝空洞的大道理与说教腔调，直给具体的商业逻辑、赔率计算、量化长尾套利规则与风控底牌；\n3. 输出采用专业研报结构：\n   - 🎯【核心研判与第一性原理】\n   - 🔍【底层机制推演】\n   - ⚡【实操执行法则】（1. 2. 3. 落地纪律）\n   - 🛡️【避坑铁律与仓位警告】", "drawerId": "aiDrawer", "overlayId": "", "bodyId": "aiChatBody", "inputId": "aiInput", "sendBtnId": "", "openMode": "class:open", "bubbleStyle": "flat_split", "rowBase": "ai-msg", "botRole": "ai-msg-bot", "userRole": "ai-msg-user", "bubbleCls": "", "loadingText": "正在检索 Web3Feng 5,287 篇实战推文并流式推理..."};
+const CJ_AI_CONFIG = TA_AI_CONFIG;
+let taAiHistory = [];
+let taAiBusy = false;
+let taAiMsgSeq = 0;
 
-        const chatHistory = [
-            { role: "system", content: CJ_AI_CONFIG.systemPrompt }
-        ];
+function escapeAiHtml(str) {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+function htmlEscape(str) { return escapeAiHtml(str); }
 
-        function sendQuickPrompt(txt) {
-            const input = document.getElementById('aiInput');
-            if (input) {
-                input.value = txt;
-                sendAiMessage();
+function taSetDrawerOpen(shouldOpen) {
+  const d = document.getElementById(TA_AI_CONFIG.drawerId);
+  const ov = TA_AI_CONFIG.overlayId ? document.getElementById(TA_AI_CONFIG.overlayId) : null;
+  if (!d) return;
+  const mode = TA_AI_CONFIG.openMode;
+  if (mode === 'display:flex') {
+    d.style.display = shouldOpen ? 'flex' : 'none';
+  } else if (mode === 'class:active') {
+    d.classList.toggle('active', shouldOpen);
+    d.classList.toggle('open', shouldOpen);
+    if (ov) { ov.classList.toggle('active', shouldOpen); ov.classList.toggle('open', shouldOpen); }
+  } else if (mode === 'class:open+overlay_display') {
+    d.classList.toggle('open', shouldOpen);
+    if (ov) ov.style.display = shouldOpen ? 'block' : 'none';
+  } else {
+    d.classList.toggle('open', shouldOpen);
+    d.classList.toggle('active', shouldOpen);
+    if (ov) { ov.classList.toggle('open', shouldOpen); ov.classList.toggle('active', shouldOpen); }
+  }
+  if (shouldOpen) {
+    setTimeout(() => {
+      const inp = document.getElementById(TA_AI_CONFIG.inputId);
+      if (inp) inp.focus();
+    }, 80);
+  }
+}
+
+function taIsDrawerOpen() {
+  const d = document.getElementById(TA_AI_CONFIG.drawerId);
+  if (!d) return false;
+  if (TA_AI_CONFIG.openMode === 'display:flex') return d.style.display === 'flex';
+  return d.classList.contains('open') || d.classList.contains('active');
+}
+
+function openAiDrawer() { taSetDrawerOpen(true); }
+function closeAiDrawer() { taSetDrawerOpen(false); }
+function toggleAiDrawer(force) { taSetDrawerOpen(typeof force === 'boolean' ? force : !taIsDrawerOpen()); }
+function toggleAIDrawer(force) { toggleAiDrawer(force); }
+function toggleAiModal(force) { toggleAiDrawer(force); }
+function toggleCjAiModal(force) { toggleAiDrawer(force); }
+
+function taScrollToTopic(tid) {
+  const cleanId = String(tid || '').replace(/^#/, '');
+  const el = document.getElementById(cleanId) || document.getElementById(cleanId.toLowerCase());
+  if (el) {
+    taSetDrawerOpen(false);
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+function scrollToTopic(tid) { taScrollToTopic(tid); }
+function handleAiTopicJump(event, hash) {
+  if (event && event.preventDefault) event.preventDefault();
+  taScrollToTopic(hash);
+}
+
+function formatAiExquisiteOutput(rawText) {
+  const lines = String(rawText || '').replace(/\r\n/g, '\n').split('\n');
+  const out = [];
+  let inUl = false;
+  let inOl = false;
+  const closeLists = () => {
+    if (inUl) { out.push('</ul>'); inUl = false; }
+    if (inOl) { out.push('</ol>'); inOl = false; }
+  };
+  const inlineFmt = (s) => {
+    let safe = escapeAiHtml(s);
+    safe = safe.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    safe = safe.replace(/`([^`]+)`/g, '<code>$1</code>');
+    safe = safe.replace(/\[?(#[tT]-\d{1,2})\]?/g, (_, tag) => {
+      const tid = tag.slice(1).toLowerCase();
+      if (document.getElementById(tid)) {
+        return `<span class="ta-topic-pill" onclick="taScrollToTopic('${tid}')">${tag.toLowerCase()}</span>`;
+      }
+      return `<strong>${tag.toLowerCase()}</strong>`;
+    });
+    return safe;
+  };
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line) {
+      closeLists();
+      continue;
+    }
+    if (/^---+$/.test(line)) {
+      closeLists();
+      out.push('<hr>');
+      continue;
+    }
+    const hMatch = line.match(/^(#{1,4})\s+(.+)$/);
+    if (hMatch) {
+      closeLists();
+      const lvl = Math.min(4, Math.max(2, hMatch[1].length));
+      out.push(`<h${lvl}>${inlineFmt(hMatch[2])}</h${lvl}>`);
+      continue;
+    }
+    const bqMatch = line.match(/^>\s?(.*)$/);
+    if (bqMatch) {
+      closeLists();
+      out.push(`<blockquote>${inlineFmt(bqMatch[1])}</blockquote>`);
+      continue;
+    }
+    const ulMatch = line.match(/^[-*•]\s+(.+)$/);
+    if (ulMatch) {
+      if (inOl) { out.push('</ol>'); inOl = false; }
+      if (!inUl) { out.push('<ul>'); inUl = true; }
+      out.push(`<li>${inlineFmt(ulMatch[1])}</li>`);
+      continue;
+    }
+    const olMatch = line.match(/^\d+\.\s+(.+)$/);
+    if (olMatch) {
+      if (inUl) { out.push('</ul>'); inUl = false; }
+      if (!inOl) { out.push('<ol>'); inOl = true; }
+      out.push(`<li>${inlineFmt(olMatch[1])}</li>`);
+      continue;
+    }
+    closeLists();
+    out.push(`<p>${inlineFmt(line)}</p>`);
+  }
+  closeLists();
+  return `<div class="ta-ai-md">${out.join('')}</div>`;
+}
+function formatSimpleMarkdown(raw) { return formatAiExquisiteOutput(raw); }
+function renderSimpleMarkdown(raw) { return formatAiExquisiteOutput(raw); }
+function formatMarkdown(raw) { return formatAiExquisiteOutput(raw); }
+
+function taCreateMsgBubble(role, initialText) {
+  const box = document.getElementById(TA_AI_CONFIG.bodyId);
+  if (!box) return null;
+  const seqId = `ta-ai-msg-${role}-${++taAiMsgSeq}`;
+  const row = document.createElement('div');
+  row.id = seqId;
+  const isUser = role === 'user';
+  const roleCls = isUser ? TA_AI_CONFIG.userRole : TA_AI_CONFIG.botRole;
+  row.className = `${TA_AI_CONFIG.rowBase} ${roleCls}`.trim();
+
+  let targetEl = row;
+  if (TA_AI_CONFIG.bubbleStyle === 'wrapped' && TA_AI_CONFIG.bubbleCls) {
+    const inner = document.createElement('div');
+    inner.className = TA_AI_CONFIG.bubbleCls;
+    row.appendChild(inner);
+    targetEl = inner;
+  }
+
+  if (isUser) {
+    targetEl.textContent = initialText;
+  } else {
+    targetEl.innerHTML = `<span style="color:#78716C;">⚡ ${escapeAiHtml(initialText)}</span>`;
+  }
+
+  box.appendChild(row);
+  box.scrollTop = box.scrollHeight;
+  return targetEl;
+}
+
+async function sendAiMessage(presetOverride) {
+  if (taAiBusy) return;
+  const inp = document.getElementById(TA_AI_CONFIG.inputId);
+  const q = (typeof presetOverride === 'string' ? presetOverride : (inp ? inp.value : '')).trim();
+  if (!q) return;
+  if (inp && typeof presetOverride !== 'string') inp.value = '';
+
+  const box = document.getElementById(TA_AI_CONFIG.bodyId);
+  const quickPills = document.getElementById('cjQuickPills');
+  if (quickPills) quickPills.style.display = 'none';
+
+  taCreateMsgBubble('user', q);
+  const botEl = taCreateMsgBubble('assistant', TA_AI_CONFIG.loadingText);
+  if (!botEl) return;
+
+  taAiHistory.push({ role: 'user', content: q });
+  taAiBusy = true;
+  const sendBtn = TA_AI_CONFIG.sendBtnId
+    ? document.getElementById(TA_AI_CONFIG.sendBtnId)
+    : (inp && inp.parentElement ? inp.parentElement.querySelector('button') : null);
+  if (sendBtn) sendBtn.disabled = true;
+
+  let fullReply = '';
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 45000);
+  const startedAt = Date.now();
+  const tickId = setInterval(() => {
+    if (!fullReply && botEl) {
+      const sec = Math.max(1, Math.floor((Date.now() - startedAt) / 1000));
+      botEl.innerHTML = `<span style="color:#78716C;">⚡ ${escapeAiHtml(TA_AI_CONFIG.loadingText)} (${sec}s)</span>`;
+    }
+  }, 1000);
+
+  try {
+    const resp = await fetch(TA_AI_CONFIG.apiUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      signal: controller.signal,
+      body: JSON.stringify({
+        model: TA_AI_CONFIG.model,
+        temperature: 0.25,
+        max_tokens: 2048,
+        stream: true,
+        messages: [
+          { role: 'system', content: TA_AI_CONFIG.systemPrompt },
+          ...taAiHistory.slice(-8)
+        ]
+      })
+    });
+
+    if (!resp.ok) {
+      throw new Error(`HTTP ${resp.status}`);
+    }
+
+    const ctype = resp.headers.get('content-type') || '';
+    if (ctype.includes('text/event-stream') && resp.body) {
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder('utf-8');
+      let buffer = '';
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+        for (const line of lines) {
+          const trimmed = line.trim();
+          if (!trimmed.startsWith('data:')) continue;
+          const payload = trimmed.slice(5).trim();
+          if (!payload || payload === '[DONE]') continue;
+          try {
+            const parsed = JSON.parse(payload);
+            const delta = parsed.choices?.[0]?.delta?.content || '';
+            if (delta) {
+              fullReply += delta;
+              botEl.innerHTML = formatAiExquisiteOutput(fullReply);
+              if (box) box.scrollTop = box.scrollHeight;
             }
+          } catch (_) {}
         }
+      }
+    } else {
+      const data = await resp.json();
+      fullReply = data.choices?.[0]?.message?.content || '';
+      botEl.innerHTML = formatAiExquisiteOutput(fullReply);
+    }
 
-        async function sendAiMessage() {
-            const input = document.getElementById('aiInput');
-            const chatBody = document.getElementById('aiChatBody');
-            const question = input.value.trim();
-            if (!question) return;
+    if (!fullReply) {
+      botEl.innerHTML = '<span style="color:#B91C1C;">未收到有效模型响应，请重试。</span>';
+    } else {
+      taAiHistory.push({ role: 'assistant', content: fullReply });
+    }
+  } catch (err) {
+    const msg = err && err.name === 'AbortError' ? '响应超时（45秒），请简化问题重试' : (err ? err.message : '网络异常');
+    botEl.innerHTML = `<span style="color:#B91C1C;">AI 导师网关调用异常（${escapeAiHtml(msg)}），请稍后重试。</span>`;
+  } finally {
+    clearInterval(tickId);
+    clearTimeout(timeoutId);
+    taAiBusy = false;
+    if (sendBtn) sendBtn.disabled = false;
+    if (box) box.scrollTop = box.scrollHeight;
+  }
+}
 
-            // 用户消息上屏
-            const userMsgDiv = document.createElement('div');
-            userMsgDiv.className = 'ai-msg ai-msg-user';
-            userMsgDiv.textContent = question;
-            chatBody.appendChild(userMsgDiv);
-            input.value = '';
-            chatBody.scrollTop = chatBody.scrollHeight;
+function sendCjAiMessage() { return sendAiMessage(); }
+function sendAiQuestion() { return sendAiMessage(); }
+function sendQuickPrompt(txt) { taSetDrawerOpen(true); return sendAiMessage(txt); }
+function askPreset(txt) { return sendQuickPrompt(txt); }
+function askAiPrompt(txt) { return sendQuickPrompt(txt); }
+function askAiQuestion(txt) { return sendQuickPrompt(txt); }
+function usePrompt(txt) { return sendQuickPrompt(txt); }
+function useQuickPrompt(txt) { return sendQuickPrompt(txt); }
+function applyAiPrompt(txt) { return sendQuickPrompt(txt); }
+function handleAiInputKey(e) {
+  if (e && e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendAiMessage();
+  }
+}
+function onCjAiKeyDown(e) { handleAiInputKey(e); }
+function scrollCjAiToBottom() {
+  const box = document.getElementById(TA_AI_CONFIG.bodyId);
+  if (box) box.scrollTop = box.scrollHeight;
+}
 
-            chatHistory.push({ role: "user", content: question });
 
-            // Bot 消息加载占位
-            const botMsgDiv = document.createElement('div');
-            botMsgDiv.className = 'ai-msg ai-msg-bot';
-            botMsgDiv.innerHTML = '<span style="color:var(--text-muted);">风总 AI 正在推演底层逻辑...</span>';
-            chatBody.appendChild(botMsgDiv);
-            chatBody.scrollTop = chatBody.scrollHeight;
+// Unified Escape handler for all Lightbox modals & AI drawers
+(function bindTaGlobalEscape() {
+  if (window.__taGlobalEscBound) return;
+  window.__taGlobalEscBound = true;
+  document.addEventListener('keydown', function(e) {
+    if (e.key !== 'Escape') return;
+    try { if (typeof closeModalImage === 'function') closeModalImage(); } catch(_) {}
+    try { if (typeof closeLightbox === 'function') closeLightbox(); } catch(_) {}
+    try { if (typeof closeImgModal === 'function') closeImgModal(); } catch(_) {}
+    try { if (typeof closeArticleModal === 'function') closeArticleModal(); } catch(_) {}
+    try { taSetDrawerOpen(false); } catch(_) {}
+    ['modalOverlay', 'imageModal', 'imgModal', 'lightboxModal'].forEach(function(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.remove('open', 'active', 'show');
+        if (el.style.display === 'flex' || el.style.display === 'block') el.style.display = 'none';
+      }
+    });
+    ['modalImg', 'modalImage', 'lightboxImg', 'imgModalTarget'].forEach(function(id) {
+      const im = document.getElementById(id);
+      if (im) im.removeAttribute('src');
+    });
+  });
+})();
 
-            let success = false;
-            let retryCount = 0;
-
-            while (!success && retryCount < 4) {
-                const key = getNextApiKey();
-                try {
-                    const resp = await fetch(CJ_AI_CONFIG.apiUrl, {
-                        method: 'POST',
-                        headers: {
-                            'Authorization': 'Bearer ' + key,
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            model: CJ_AI_CONFIG.model,
-                            messages: chatHistory,
-                            temperature: CJ_AI_CONFIG.temperature,
-                            max_tokens: CJ_AI_CONFIG.maxTokens
-                        })
-                    });
-
-                    if (resp.ok) {
-                        const data = await resp.json();
-                        const answer = data.choices[0]?.message?.content || "风总正在盘面上写代码，请稍后再试。";
-                        botMsgDiv.innerHTML = answer.replace(/\n/g, '<br>');
-                        chatHistory.push({ role: "assistant", content: answer });
-                        success = true;
-                    } else {
-                        retryCount++;
-                    }
-                } catch (e) {
-                    retryCount++;
-                }
-            }
-
-            if (!success) {
-                botMsgDiv.innerHTML = '<span style="color:#DC2626;">网络高并发拥堵，请稍后再次点击发送。</span>';
-            }
-            chatBody.scrollTop = chatBody.scrollHeight;
-        }
-    </script>
+</script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yourQuantGuy《Perp DEX 量化做市、跨所统一保证金与高频套利全书》| 顶级交易员开源大典 · Trader-Archives</title>
-    <meta name="description" content="推特顶级对冲基金量化交易员 @yourQuantGuy 知识工程化全集：从 edgeX 帕拉梅拉 200k 战役、Derive 550k 期权风控博弈到六大 Perp DEX 开源脚本、CrossEx 跨所统一保证金与麦穗择取算法，搭载 Atria 30-Key 专属 AI 实战导师。">
+    <meta name="description" content="推特顶级对冲基金量化交易员 @yourQuantGuy 知识工程化全集：从 edgeX 帕拉梅拉 200k 战役、Derive 550k 期权风控博弈到六大 Perp DEX 开源脚本、CrossEx 跨所统一保证金与麦穗择取算法，搭载 Vercel Edge 流式 专属 AI 实战导师。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700;900&display=swap" rel="stylesheet">
@@ -1416,6 +1416,121 @@
 }
 </style>
 
+<style>
+/* === Trader-Archives Unified AI Typography & Mobile Responsive Safeguard === */
+.ta-ai-md h2, .ta-ai-md h3, .ta-ai-md h4 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #1C1917;
+  margin: 10px 0 6px;
+}
+.ta-ai-md p { margin: 0 0 7px; line-height: 1.68; }
+.ta-ai-md ul, .ta-ai-md ol { margin: 6px 0 8px 18px; padding: 0; }
+.ta-ai-md li { margin-bottom: 4px; line-height: 1.65; }
+.ta-ai-md blockquote {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-left: 3px solid #D97706;
+  background: #FFFBEB;
+  border-radius: 0 8px 8px 0;
+  color: #44403C;
+  font-size: 13px;
+}
+.ta-ai-md hr { border: none; border-top: 1px solid #E7E0D3; margin: 10px 0; }
+.ta-ai-md code {
+  background: #F5F1E8;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+}
+.ta-topic-pill {
+  display: inline-block;
+  background: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #F59E0B;
+  border-radius: 6px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0 2px;
+  text-decoration: none;
+}
+.ta-topic-pill:hover { background: #FDE68A; }
+.ta-back-hub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  justify-content: center;
+  padding: 9px 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #FEF3C7;
+  border: 1px solid #F59E0B;
+  color: #92400E !important;
+  font-size: 12.5px;
+  font-weight: 800;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+.ta-back-hub-link:hover { background: #FDE68A; }
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+  }
+  .layout, .page-layout, .app-layout, .container, .main-wrapper, .page-wrapper, .shell, .app-shell, .wrapper {
+    display: block !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+  }
+  aside, .sidebar, .left-sidebar, .nav-sidebar {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    border-right: none !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+  main, .main, .main-content, .content, .content-area {
+    margin-left: 0 !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    box-sizing: border-box !important;
+  }
+  .stats-grid, .stats-strip, .kpi-grid, .models-grid, .dl-grid, .cards-grid, .grid-2, .grid-3, .metric-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .ai-drawer, .cj-ai-modal, #aiDrawer, #cjAiModal, #aiModal {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    left: auto !important;
+    right: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .ai-drawer:not(.open):not(.active), #aiDrawer:not(.open):not(.active) {
+    right: -105vw !important;
+  }
+  pre, table, code, .tweet-card, .tw-card, .topic-card, .article-card, .hero, .hero-card {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+    box-sizing: border-box !important;
+  }
+  img { max-width: 100% !important; height: auto; }
+}
+</style>
 </head>
 <body>
 
@@ -24922,7 +25037,7 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
         <div class="ai-drawer-header">
             <div class="ai-drawer-title">
                 <span>🤖</span> yourQuantGuy AI 量化实战数字孪生导师
-                <span style="font-size: 10px; font-weight: normal; background: var(--brand-amber-light); color: var(--brand-amber-hover); padding: 2px 6px; border-radius: 4px; margin-left: 6px;">Atria 满血集群</span>
+                <span style="font-size: 10px; font-weight: normal; background: var(--brand-amber-light); color: var(--brand-amber-hover); padding: 2px 6px; border-radius: 4px; margin-left: 6px;">Vercel Edge 流式</span>
             </div>
             <button class="btn-close-drawer" onclick="closeAiDrawer()">✕</button>
         </div>
@@ -24958,7 +25073,7 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
     <!-- 图片全屏查看 Lightbox 模态框 (对标麦总/川沐) -->
     <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
         <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-        <img src="" alt="大图" id="lightboxImg" class="lightbox-img" onclick="event.stopPropagation()">
+        <img alt="大图" id="lightboxImg" class="lightbox-img" onclick="event.stopPropagation()">
     </div>
 
     <!-- Toast 复制成功提示条 (对标麦总/川沐) -->
@@ -24967,7 +25082,7 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
         <span id="toastMsg">推文复制成功</span>
     </div>
 
-    <!-- 交互脚本与 30-Key Atria 集群 -->
+    <!-- 交互脚本与 Vercel Edge 流式 AI 导师 -->
     <script>
     // 1. 抽屉打开关闭
     function openAiDrawer() {
@@ -24993,7 +25108,7 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
     function closeLightbox() {
         const modal = document.getElementById('lightboxModal');
         if (modal) modal.classList.remove('active');
-    }
+     ['modalImg','modalImage','lightboxImg','imgModalTarget'].forEach(function(id){var im=document.getElementById(id);if(im)im.removeAttribute('src');}); }
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeLightbox();
     });
@@ -25004,7 +25119,7 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
     }
     function closeModalImage() {
         closeLightbox();
-    }
+     ['modalImg','modalImage','lightboxImg','imgModalTarget'].forEach(function(id){var im=document.getElementById(id);if(im)im.removeAttribute('src');}); }
 
     // 3. 复制推文内容与 Toast 提示
     function showToast(msg) {
@@ -25239,340 +25354,331 @@ pre-ipo的风险，除了你投的公司本身以外，最大的风险就是SPV�
         container.innerHTML = h;
     }
 
-    // 6. Atria 30-Key 轮转客户端与 GlobalKeyScheduler
-    const CJ_AI_CONFIG = {
-        apiUrl: 'https://trader-archives-ai-gateway.vercel.app/api/chat',
-        model: 'Atria-Dawn-Preview',
-        temperature: 0.1,
-        maxTokens: 750,
-        keys: [
-            'atr_HG4lxOTfc5GRYox--0p9wTfnAnz6jOtb',
-            'atr_nrGCvvljawQnxxhjoTuiMlmytgg5tfBh',
-            'atr_ZobajhyKOPVRENJkPGrK1OkLNtLBXjk5',
-            'atr_VvWa_1jtSCaI1NWor29sjiw9ivFEt1RN',
-            'atr_gdB8sYnLaEvkbrOrMGLKakbyP7fIns5P',
-            'atr_zUzYh2CFcpzA9ygYAZHhmUvCMXpElJUp',
-            'atr_btx_XUCZUPzvCWZph4NHv5T75-9scHKg',
-            'atr_4qdUmd7dCTVIyPkbO5k7yCLR7b1Rbz2c',
-            'atr_ZITpU9Yonl5MmCFg1Kvg90UyxupgaAuK',
-            'atr_QTMwWfc169DeHUtENtmrBc_qG8-Md-KN',
-            'atr_jXxhTfYwXMdvdZ-jgCmDdOKk_pxQ9xvx',
-            'atr_eLaCRAQiID8gcCIpG5ILduGyNeHqRs8z',
-            'atr_Rw20tkMZYGb_2gTMv6PDjMfuS7DuGBnw',
-            'atr_XEsZzQZ56upLNGCyGcrBeO1IamTbFsCS',
-            'atr_o2tuf1I9RJq4N3iz5Ft-9GqJtJ-ChYex',
-            'atr_FBUVCpNZ3DRQoBSVm4fCefZt7OspUDf9',
-            'atr_BDCofqyfuD11Kxr7uebduie25fYhFKiU',
-            'atr_M7r-GEFgLx5Ir29ZCNAp5FSSV8GSUx4d',
-            'atr_nnVppYvV1n3hofvc5bEYSi8kE1a3kaJC',
-            'atr__I_zVBtTtpXcpnZ610CUeqImHFmotp3d',
-            'atr_Z7elfMAJm0ToK9LmU8juIdMSh9qeUui4',
-            'atr_Rhn_JLO027LZcWMVqxZBXrFq_38qfIR2',
-            'atr_jlG17natxoywaLwuC58C15eH5EmxD4DS',
-            'atr_cGSwiQj2nALI9wxL80C578X8izLd8S1T'
-        ],
-        systemPrompt: `你是推特著名实战派量化做市商兼对冲基金交易员【yourQuantGuy】（@yourQuantGuy）的 AI 数字孪生导师。基于 yourQuantGuy 历年沉淀的 670 篇公开推文与《Perp DEX 量化做市、跨所统一保证金与高频套利全书》6大卷 24 个精研课题构建。
+    
 
-【极速响应与超短推理指令（至关重要）】：
-- 思考过程（reasoning）必须极度精简，严禁写冗长草稿，30字以内迅速确立核心点，立即转入正文输出！
-- 杜绝一切犹豫和自我反思，直接按研报格式输出正文！
+// === Unified Vercel Edge Streaming AI Mentor (Zero Client Keys) ===
+const TA_AI_CONFIG = {"apiUrl": "https://trader-archives-ai-gateway.vercel.app/api/chat", "model": "google/gemini-2.5-flash", "systemPrompt": "你是推特著名实战派量化做市商兼对冲基金交易员【yourQuantGuy】（@yourQuantGuy）的 AI 数字孪生导师。基于 yourQuantGuy 历年沉淀的 670 篇公开推文与《Perp DEX 量化做市、跨所统一保证金与高频套利全书》6大卷 24 个精研课题构建。\n\n【极速响应与超短推理指令（至关重要）】：\n- 思考过程（reasoning）必须极度精简，严禁写冗长草稿，30字以内迅速确立核心点，立即转入正文输出！\n- 杜绝一切犹豫和自我反思，直接按研报格式输出正文！\n\n【回答最高铁律（统一研报排版规范）】：\n1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝废话长文，确保 1.5 秒极速生成；\n2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自 yourQuantGuy 历年实操推文、Perp DEX 做市撮合架构与跨所套利认知底座；\n3. 【外行/泛化问题强制回弹】：若用户询问买哪个土狗暴富等非量化话题，第 2 句话必须强制引申回 yourQuantGuy 核心心法：“在量化套利者眼中，从不预测单边方向，只赚取确定性的微观摩擦差价。资金永不暴露在无保护裸敞口下，只依靠 Delta 绝对中性对冲与资金费套利持续复利”；\n4. 【核心心法信手拈来】：跨所统一保证金第一性原理（CrossEx级联清算）、edgeX 帕拉梅拉 200k 战役（Maker 负费率与挂单返佣）、Derive 550k 期权风控（防范 DEX 伪去中心化冻结）、麦穗择取开平仓算法、负滑点吃补贴；\n5. 【黄金研报输出格式】：\n   - 🎯【核心研判】：首句加粗直击订单薄本质；\n   - 【微观机制与实操拆解】：使用 1. 2. 3. 序号列表展开具体公式、价差与对冲指令；\n   - 🛡️【避坑警告】：1句话指出穿仓或冻结红线；\n   - 📍【课题精读】：文末附带指引：[第 XX 卷：课题名](#t-XX)。", "drawerId": "aiDrawer", "overlayId": "aiDrawerOverlay", "bodyId": "aiChatBody", "inputId": "aiUserInput", "sendBtnId": "", "openMode": "class:open", "bubbleStyle": "wrapped", "rowBase": "ai-msg", "botRole": "assistant", "userRole": "user", "bubbleCls": "ai-msg-bubble", "loadingText": "正在检索 yourQuantGuy 670 篇量化做市实盘并流式推理..."};
+const CJ_AI_CONFIG = TA_AI_CONFIG;
+let taAiHistory = [];
+let taAiBusy = false;
+let taAiMsgSeq = 0;
 
-【回答最高铁律（统一研报排版规范）】：
-1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝废话长文，确保 1.5 秒极速生成；
-2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自 yourQuantGuy 历年实操推文、Perp DEX 做市撮合架构与跨所套利认知底座；
-3. 【外行/泛化问题强制回弹】：若用户询问买哪个土狗暴富等非量化话题，第 2 句话必须强制引申回 yourQuantGuy 核心心法：“在量化套利者眼中，从不预测单边方向，只赚取确定性的微观摩擦差价。资金永不暴露在无保护裸敞口下，只依靠 Delta 绝对中性对冲与资金费套利持续复利”；
-4. 【核心心法信手拈来】：跨所统一保证金第一性原理（CrossEx级联清算）、edgeX 帕拉梅拉 200k 战役（Maker 负费率与挂单返佣）、Derive 550k 期权风控（防范 DEX 伪去中心化冻结）、麦穗择取开平仓算法、负滑点吃补贴；
-5. 【黄金研报输出格式】：
-   - 🎯【核心研判】：首句加粗直击订单薄本质；
-   - 【微观机制与实操拆解】：使用 1. 2. 3. 序号列表展开具体公式、价差与对冲指令；
-   - 🛡️【避坑警告】：1句话指出穿仓或冻结红线；
-   - 📍【课题精读】：文末附带指引：[第 XX 卷：课题名](#t-XX)。`
-    };
+function escapeAiHtml(str) {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+function htmlEscape(str) { return escapeAiHtml(str); }
 
-    const GlobalKeyScheduler = {
-        CURSOR_KEY: 'trader_archives_ai_cursor',
-        COOLDOWN_KEY: 'trader_archives_ai_cooldowns',
+function taSetDrawerOpen(shouldOpen) {
+  const d = document.getElementById(TA_AI_CONFIG.drawerId);
+  const ov = TA_AI_CONFIG.overlayId ? document.getElementById(TA_AI_CONFIG.overlayId) : null;
+  if (!d) return;
+  const mode = TA_AI_CONFIG.openMode;
+  if (mode === 'display:flex') {
+    d.style.display = shouldOpen ? 'flex' : 'none';
+  } else if (mode === 'class:active') {
+    d.classList.toggle('active', shouldOpen);
+    d.classList.toggle('open', shouldOpen);
+    if (ov) { ov.classList.toggle('active', shouldOpen); ov.classList.toggle('open', shouldOpen); }
+  } else if (mode === 'class:open+overlay_display') {
+    d.classList.toggle('open', shouldOpen);
+    if (ov) ov.style.display = shouldOpen ? 'block' : 'none';
+  } else {
+    d.classList.toggle('open', shouldOpen);
+    d.classList.toggle('active', shouldOpen);
+    if (ov) { ov.classList.toggle('open', shouldOpen); ov.classList.toggle('active', shouldOpen); }
+  }
+  if (shouldOpen) {
+    setTimeout(() => {
+      const inp = document.getElementById(TA_AI_CONFIG.inputId);
+      if (inp) inp.focus();
+    }, 80);
+  }
+}
 
-        getCooldowns() {
-            try {
-                return JSON.parse(localStorage.getItem(this.COOLDOWN_KEY) || '{}');
-            } catch(e) { return {}; }
-        },
+function taIsDrawerOpen() {
+  const d = document.getElementById(TA_AI_CONFIG.drawerId);
+  if (!d) return false;
+  if (TA_AI_CONFIG.openMode === 'display:flex') return d.style.display === 'flex';
+  return d.classList.contains('open') || d.classList.contains('active');
+}
 
-        setCooldown(key, durationMs = 45000) {
-            try {
-                const cds = this.getCooldowns();
-                cds[key] = Date.now() + durationMs;
-                localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
-            } catch(e) {}
-        },
+function openAiDrawer() { taSetDrawerOpen(true); }
+function closeAiDrawer() { taSetDrawerOpen(false); }
+function toggleAiDrawer(force) { taSetDrawerOpen(typeof force === 'boolean' ? force : !taIsDrawerOpen()); }
+function toggleAIDrawer(force) { toggleAiDrawer(force); }
+function toggleAiModal(force) { toggleAiDrawer(force); }
+function toggleCjAiModal(force) { toggleAiDrawer(force); }
 
-        clearCooldown(key) {
-            try {
-                const cds = this.getCooldowns();
-                if (cds[key]) {
-                    delete cds[key];
-                    localStorage.setItem(this.COOLDOWN_KEY, JSON.stringify(cds));
-                }
-            } catch(e) {}
-        },
+function taScrollToTopic(tid) {
+  const cleanId = String(tid || '').replace(/^#/, '');
+  const el = document.getElementById(cleanId) || document.getElementById(cleanId.toLowerCase());
+  if (el) {
+    taSetDrawerOpen(false);
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+function scrollToTopic(tid) { taScrollToTopic(tid); }
+function handleAiTopicJump(event, hash) {
+  if (event && event.preventDefault) event.preventDefault();
+  taScrollToTopic(hash);
+}
 
-        getNextHealthyKey(keys) {
-            if (!keys || !keys.length) return '';
-            const now = Date.now();
-            const cds = this.getCooldowns();
-            
-            let cursor = 0;
-            try {
-                cursor = parseInt(localStorage.getItem(this.CURSOR_KEY) || '0', 10);
-                if (isNaN(cursor)) cursor = 0;
-            } catch(e) { cursor = 0; }
+function formatAiExquisiteOutput(rawText) {
+  const lines = String(rawText || '').replace(/\r\n/g, '\n').split('\n');
+  const out = [];
+  let inUl = false;
+  let inOl = false;
+  const closeLists = () => {
+    if (inUl) { out.push('</ul>'); inUl = false; }
+    if (inOl) { out.push('</ol>'); inOl = false; }
+  };
+  const inlineFmt = (s) => {
+    let safe = escapeAiHtml(s);
+    safe = safe.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    safe = safe.replace(/`([^`]+)`/g, '<code>$1</code>');
+    safe = safe.replace(/\[?(#[tT]-\d{1,2})\]?/g, (_, tag) => {
+      const tid = tag.slice(1).toLowerCase();
+      if (document.getElementById(tid)) {
+        return `<span class="ta-topic-pill" onclick="taScrollToTopic('${tid}')">${tag.toLowerCase()}</span>`;
+      }
+      return `<strong>${tag.toLowerCase()}</strong>`;
+    });
+    return safe;
+  };
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line) {
+      closeLists();
+      continue;
+    }
+    if (/^---+$/.test(line)) {
+      closeLists();
+      out.push('<hr>');
+      continue;
+    }
+    const hMatch = line.match(/^(#{1,4})\s+(.+)$/);
+    if (hMatch) {
+      closeLists();
+      const lvl = Math.min(4, Math.max(2, hMatch[1].length));
+      out.push(`<h${lvl}>${inlineFmt(hMatch[2])}</h${lvl}>`);
+      continue;
+    }
+    const bqMatch = line.match(/^>\s?(.*)$/);
+    if (bqMatch) {
+      closeLists();
+      out.push(`<blockquote>${inlineFmt(bqMatch[1])}</blockquote>`);
+      continue;
+    }
+    const ulMatch = line.match(/^[-*•]\s+(.+)$/);
+    if (ulMatch) {
+      if (inOl) { out.push('</ol>'); inOl = false; }
+      if (!inUl) { out.push('<ul>'); inUl = true; }
+      out.push(`<li>${inlineFmt(ulMatch[1])}</li>`);
+      continue;
+    }
+    const olMatch = line.match(/^\d+\.\s+(.+)$/);
+    if (olMatch) {
+      if (inUl) { out.push('</ul>'); inUl = false; }
+      if (!inOl) { out.push('<ol>'); inOl = true; }
+      out.push(`<li>${inlineFmt(olMatch[1])}</li>`);
+      continue;
+    }
+    closeLists();
+    out.push(`<p>${inlineFmt(line)}</p>`);
+  }
+  closeLists();
+  return `<div class="ta-ai-md">${out.join('')}</div>`;
+}
+function formatSimpleMarkdown(raw) { return formatAiExquisiteOutput(raw); }
+function renderSimpleMarkdown(raw) { return formatAiExquisiteOutput(raw); }
+function formatMarkdown(raw) { return formatAiExquisiteOutput(raw); }
 
-            let chosenKey = '';
-            for (let i = 0; i < keys.length; i++) {
-                const idx = (cursor + i) % keys.length;
-                const candidate = keys[idx];
-                const cooldownUntil = cds[candidate] || 0;
-                if (now >= cooldownUntil) {
-                    chosenKey = candidate;
-                    try {
-                        localStorage.setItem(this.CURSOR_KEY, ((idx + 1) % keys.length).toString());
-                    } catch(e) {}
-                    break;
-                }
+function taCreateMsgBubble(role, initialText) {
+  const box = document.getElementById(TA_AI_CONFIG.bodyId);
+  if (!box) return null;
+  const seqId = `ta-ai-msg-${role}-${++taAiMsgSeq}`;
+  const row = document.createElement('div');
+  row.id = seqId;
+  const isUser = role === 'user';
+  const roleCls = isUser ? TA_AI_CONFIG.userRole : TA_AI_CONFIG.botRole;
+  row.className = `${TA_AI_CONFIG.rowBase} ${roleCls}`.trim();
+
+  let targetEl = row;
+  if (TA_AI_CONFIG.bubbleStyle === 'wrapped' && TA_AI_CONFIG.bubbleCls) {
+    const inner = document.createElement('div');
+    inner.className = TA_AI_CONFIG.bubbleCls;
+    row.appendChild(inner);
+    targetEl = inner;
+  }
+
+  if (isUser) {
+    targetEl.textContent = initialText;
+  } else {
+    targetEl.innerHTML = `<span style="color:#78716C;">⚡ ${escapeAiHtml(initialText)}</span>`;
+  }
+
+  box.appendChild(row);
+  box.scrollTop = box.scrollHeight;
+  return targetEl;
+}
+
+async function sendAiMessage(presetOverride) {
+  if (taAiBusy) return;
+  const inp = document.getElementById(TA_AI_CONFIG.inputId);
+  const q = (typeof presetOverride === 'string' ? presetOverride : (inp ? inp.value : '')).trim();
+  if (!q) return;
+  if (inp && typeof presetOverride !== 'string') inp.value = '';
+
+  const box = document.getElementById(TA_AI_CONFIG.bodyId);
+  const quickPills = document.getElementById('cjQuickPills');
+  if (quickPills) quickPills.style.display = 'none';
+
+  taCreateMsgBubble('user', q);
+  const botEl = taCreateMsgBubble('assistant', TA_AI_CONFIG.loadingText);
+  if (!botEl) return;
+
+  taAiHistory.push({ role: 'user', content: q });
+  taAiBusy = true;
+  const sendBtn = TA_AI_CONFIG.sendBtnId
+    ? document.getElementById(TA_AI_CONFIG.sendBtnId)
+    : (inp && inp.parentElement ? inp.parentElement.querySelector('button') : null);
+  if (sendBtn) sendBtn.disabled = true;
+
+  let fullReply = '';
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 45000);
+  const startedAt = Date.now();
+  const tickId = setInterval(() => {
+    if (!fullReply && botEl) {
+      const sec = Math.max(1, Math.floor((Date.now() - startedAt) / 1000));
+      botEl.innerHTML = `<span style="color:#78716C;">⚡ ${escapeAiHtml(TA_AI_CONFIG.loadingText)} (${sec}s)</span>`;
+    }
+  }, 1000);
+
+  try {
+    const resp = await fetch(TA_AI_CONFIG.apiUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      signal: controller.signal,
+      body: JSON.stringify({
+        model: TA_AI_CONFIG.model,
+        temperature: 0.25,
+        max_tokens: 2048,
+        stream: true,
+        messages: [
+          { role: 'system', content: TA_AI_CONFIG.systemPrompt },
+          ...taAiHistory.slice(-8)
+        ]
+      })
+    });
+
+    if (!resp.ok) {
+      throw new Error(`HTTP ${resp.status}`);
+    }
+
+    const ctype = resp.headers.get('content-type') || '';
+    if (ctype.includes('text/event-stream') && resp.body) {
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder('utf-8');
+      let buffer = '';
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+        for (const line of lines) {
+          const trimmed = line.trim();
+          if (!trimmed.startsWith('data:')) continue;
+          const payload = trimmed.slice(5).trim();
+          if (!payload || payload === '[DONE]') continue;
+          try {
+            const parsed = JSON.parse(payload);
+            const delta = parsed.choices?.[0]?.delta?.content || '';
+            if (delta) {
+              fullReply += delta;
+              botEl.innerHTML = formatAiExquisiteOutput(fullReply);
+              if (box) box.scrollTop = box.scrollHeight;
             }
-
-            if (!chosenKey) {
-                chosenKey = keys[cursor % keys.length];
-                try {
-                    localStorage.setItem(this.CURSOR_KEY, ((cursor + 1) % keys.length).toString());
-                } catch(e) {}
-            }
-
-            return chosenKey;
+          } catch (_) {}
         }
-    };
-
-    function getNextKey() {
-        return GlobalKeyScheduler.getNextHealthyKey(CJ_AI_CONFIG.keys);
+      }
+    } else {
+      const data = await resp.json();
+      fullReply = data.choices?.[0]?.message?.content || '';
+      botEl.innerHTML = formatAiExquisiteOutput(fullReply);
     }
 
-    let chatHistory = [];
-
-    function handleAiInputKey(e) {
-        if (e.key === 'Enter' && !e.shiftKey) {
-            e.preventDefault();
-            sendAiMessage();
-        }
+    if (!fullReply) {
+      botEl.innerHTML = '<span style="color:#B91C1C;">未收到有效模型响应，请重试。</span>';
+    } else {
+      taAiHistory.push({ role: 'assistant', content: fullReply });
     }
+  } catch (err) {
+    const msg = err && err.name === 'AbortError' ? '响应超时（45秒），请简化问题重试' : (err ? err.message : '网络异常');
+    botEl.innerHTML = `<span style="color:#B91C1C;">AI 导师网关调用异常（${escapeAiHtml(msg)}），请稍后重试。</span>`;
+  } finally {
+    clearInterval(tickId);
+    clearTimeout(timeoutId);
+    taAiBusy = false;
+    if (sendBtn) sendBtn.disabled = false;
+    if (box) box.scrollTop = box.scrollHeight;
+  }
+}
 
-    function sendQuickPrompt(txt) {
-        document.getElementById('aiUserInput').value = txt;
-        sendAiMessage();
-    }
+function sendCjAiMessage() { return sendAiMessage(); }
+function sendAiQuestion() { return sendAiMessage(); }
+function sendQuickPrompt(txt) { taSetDrawerOpen(true); return sendAiMessage(txt); }
+function askPreset(txt) { return sendQuickPrompt(txt); }
+function askAiPrompt(txt) { return sendQuickPrompt(txt); }
+function askAiQuestion(txt) { return sendQuickPrompt(txt); }
+function usePrompt(txt) { return sendQuickPrompt(txt); }
+function useQuickPrompt(txt) { return sendQuickPrompt(txt); }
+function applyAiPrompt(txt) { return sendQuickPrompt(txt); }
+function handleAiInputKey(e) {
+  if (e && e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendAiMessage();
+  }
+}
+function onCjAiKeyDown(e) { handleAiInputKey(e); }
+function scrollCjAiToBottom() {
+  const box = document.getElementById(TA_AI_CONFIG.bodyId);
+  if (box) box.scrollTop = box.scrollHeight;
+}
 
-    function sendAiMessage() {
-        const input = document.getElementById('aiUserInput');
-        const text = input.value.trim();
-        if (!text) return;
-        input.value = '';
 
-        appendAiMsg('user', text);
-        chatHistory.push({ role: 'user', content: text });
+// Unified Escape handler for all Lightbox modals & AI drawers
+(function bindTaGlobalEscape() {
+  if (window.__taGlobalEscBound) return;
+  window.__taGlobalEscBound = true;
+  document.addEventListener('keydown', function(e) {
+    if (e.key !== 'Escape') return;
+    try { if (typeof closeModalImage === 'function') closeModalImage(); } catch(_) {}
+    try { if (typeof closeLightbox === 'function') closeLightbox(); } catch(_) {}
+    try { if (typeof closeImgModal === 'function') closeImgModal(); } catch(_) {}
+    try { if (typeof closeArticleModal === 'function') closeArticleModal(); } catch(_) {}
+    try { taSetDrawerOpen(false); } catch(_) {}
+    ['modalOverlay', 'imageModal', 'imgModal', 'lightboxModal'].forEach(function(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.remove('open', 'active', 'show');
+        if (el.style.display === 'flex' || el.style.display === 'block') el.style.display = 'none';
+      }
+    });
+    ['modalImg', 'modalImage', 'lightboxImg', 'imgModalTarget'].forEach(function(id) {
+      const im = document.getElementById(id);
+      if (im) im.removeAttribute('src');
+    });
+  });
+})();
 
-        const loadingId = appendAiMsg('assistant', '<span class="ai-live-status">⚡ 正在调取 670 篇量化推文与研报库... (1s)</span>');
-
-        callAtriaApi(chatHistory, loadingId);
-    }
-
-    function appendAiMsg(role, content) {
-        const body = document.getElementById('aiChatBody');
-        const msgDiv = document.createElement('div');
-        msgDiv.className = 'ai-msg ' + role;
-        const msgId = 'msg-' + Date.now();
-        msgDiv.id = msgId;
-
-        let parsed = content.replace(/\n/g, '<br>')
-                            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                            .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" onclick="closeAiDrawer()" style="color:var(--brand-amber);font-weight:700;">$1</a>');
-
-        msgDiv.innerHTML = `<div class="ai-msg-bubble">${parsed}</div>`;
-        body.appendChild(msgDiv);
-        body.scrollTop = body.scrollHeight;
-        return msgId;
-    }
-
-    function escapeAiHtml(str) {
-        return (str || '')
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;');
-    }
-
-    function formatSimpleMarkdown(text) {
-        return formatAiExquisiteOutput(text);
-        if (!text) return '';
-        return text.replace(/\n/g, '<br>')
-                   .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                   .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" onclick="closeAiDrawer()" style="color:var(--brand-amber);font-weight:700;text-decoration:underline;">$1</a>');
-    }
-
-    async function callAtriaApi(messages, targetMsgId) {
-        const targetEl = document.getElementById(targetMsgId);
-        if (!targetEl) return;
-        const bubble = targetEl.querySelector('.ai-msg-bubble');
-        if (!bubble) return;
-
-        let fullReasoning = '';
-        let fullAiResponse = '';
-
-        function updateBubbleDisplay(isFinal = false) {
-            let outHtml = '';
-            if (fullReasoning.trim()) {
-                const hasStartedAnswer = Boolean(fullAiResponse.trim()) || isFinal;
-                outHtml += `
-                <details class="ai-reasoning-box" ${hasStartedAnswer ? '' : 'open'}>
-                    <summary class="ai-reasoning-summary">
-                        <span style="display:flex; align-items:center; gap:6px;">
-                            <span>${hasStartedAnswer ? '💡' : '🧠'}</span>
-                            <span>${hasStartedAnswer ? '已完成深度推演 (点击展开/折叠)' : 'yourQuantGuy 正在深度推演量化数学模型...'}</span>
-                        </span>
-                        ${!hasStartedAnswer ? '<span class="ai-reasoning-pulse-dot"></span>' : '<span style="font-size:10px; opacity:0.7;">▼</span>'}
-                    </summary>
-                    <div class="ai-reasoning-content" style="padding: 10px 12px; font-size: 12px; color: #78350F; line-height: 1.6; white-space: pre-wrap; background: rgba(255,255,255,0.7);">${escapeAiHtml(fullReasoning)}</div>
-                </details>`;
-            }
-            if (fullAiResponse.trim()) {
-                outHtml += `<div class="ai-answer-content">${formatSimpleMarkdown(fullAiResponse)}</div>`;
-            }
-            bubble.innerHTML = outHtml;
-            const chatBody = document.getElementById('aiChatBody');
-            if (chatBody) chatBody.scrollTop = chatBody.scrollHeight;
-        }
-
-        const maxAttempts = 3;
-        let success = false;
-        let waitTimer = 1;
-
-        const progressInterval = setInterval(() => {
-            waitTimer++;
-            const statusSpan = bubble.querySelector('.ai-live-status');
-            if (statusSpan) {
-                if (waitTimer < 4) {
-                    statusSpan.textContent = `⚡ 正在检索 670 篇跨所套利与订单簿实战... (${waitTimer}s)`;
-                } else if (waitTimer < 8) {
-                    statusSpan.textContent = `🧠 yourQuantGuy 正在推演做市商与清算博弈机制... (${waitTimer}s)`;
-                } else {
-                    statusSpan.textContent = `📊 正在生成量化推演与执行报告... (${waitTimer}s)`;
-                }
-            }
-        }, 1000);
-
-        for (let attempt = 0; attempt < maxAttempts; attempt++) {
-            const currentKey = getNextKey();
-            const controller = new AbortController();
-            let hasReceivedChunk = false;
-
-            const timeoutId = setTimeout(() => {
-                if (!hasReceivedChunk) {
-                    console.warn(`[AI-YQG] Attempt ${attempt+1} 16s timeout, aborting to next key...`);
-                    GlobalKeyScheduler.setCooldown(currentKey, 45000);
-                    controller.abort();
-                }
-            }, 16000);
-
-            try {
-                const resp = await fetch(CJ_AI_CONFIG.apiUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${currentKey}`,
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        model: CJ_AI_CONFIG.model,
-                        temperature: CJ_AI_CONFIG.temperature,
-                        max_tokens: CJ_AI_CONFIG.maxTokens,
-                        stream: true,
-                        messages: [
-                            { role: 'system', content: CJ_AI_CONFIG.systemPrompt },
-                            ...messages.slice(-6)
-                        ]
-                    }),
-                    signal: controller.signal
-                });
-
-                if (!resp.ok) {
-                    clearTimeout(timeoutId);
-                    if (resp.status === 429) GlobalKeyScheduler.setCooldown(currentKey, 45000);
-                    console.warn(`[AI-YQG] Attempt ${attempt+1} HTTP ${resp.status}, fast retry`);
-                    continue;
-                }
-
-                const reader = resp.body.getReader();
-                const decoder = new TextDecoder('utf-8');
-                let buffer = '';
-
-                while (true) {
-                    const { done, value } = await reader.read();
-                    if (done) break;
-
-                    if (!hasReceivedChunk) {
-                        hasReceivedChunk = true;
-                        clearInterval(progressInterval);
-                        clearTimeout(timeoutId);
-                    }
-
-                    buffer += decoder.decode(value, { stream: true });
-                    const lines = buffer.split('\n');
-                    buffer = lines.pop();
-
-                    for (const line of lines) {
-                        const trimmed = line.trim();
-                        if (trimmed.startsWith('data: ') && trimmed !== 'data: [DONE]') {
-                            try {
-                                const chunk = JSON.parse(trimmed.slice(6));
-                                const deltaObj = chunk.choices?.[0]?.delta || {};
-                                const deltaReasoning = deltaObj.reasoning_content || '';
-                                const deltaContent = deltaObj.content || '';
-
-                                if (deltaReasoning) {
-                                    fullReasoning += deltaReasoning;
-                                    updateBubbleDisplay(false);
-                                }
-
-                                if (deltaContent) {
-                                    fullAiResponse += deltaContent;
-                                    updateBubbleDisplay(false);
-                                }
-                            } catch (e) {}
-                        }
-                    }
-                }
-
-                clearTimeout(timeoutId);
-
-                if (fullAiResponse.trim() || fullReasoning.trim()) {
-                    updateBubbleDisplay(true);
-                    chatHistory.push({ role: 'assistant', content: fullAiResponse || fullReasoning });
-                    GlobalKeyScheduler.clearCooldown(currentKey);
-                    success = true;
-                    break;
-                }
-
-            } catch (fetchErr) {
-                clearTimeout(timeoutId);
-                console.warn(`[AI-YQG] Attempt ${attempt+1} error:`, fetchErr.name === 'AbortError' ? '16s Timeout' : fetchErr.message);
-            }
-        }
-
-        clearInterval(progressInterval);
-
-        if (!success) {
-            bubble.innerHTML = '<span style="color: #B91C1C;">⚠️ 网络调度中，所有节点暂时繁忙，请稍等 5 秒后重试。</span>';
-        }
-    }
-    </script>
+</script>
 <script>
 
 // ===== 梭哈.AI 原生超轻量精美研报 Markdown 渲染引擎 =====
