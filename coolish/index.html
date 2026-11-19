@@ -1721,6 +1721,44 @@
   box-sizing: border-box;
 }
 .ta-back-hub-link:hover { background: #FDE68A; }
+.ta-rag-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: #78716C;
+  background: #FAF8F3;
+  border: 1px solid #E7E0D3;
+  border-radius: 7px;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+}
+.ta-turn-limit-box {
+  margin: 10px 0 4px;
+  padding: 10px 12px;
+  background: #FFFBEB;
+  border: 1px solid #F59E0B;
+  border-radius: 10px;
+  color: #78350F;
+  font-size: 12.5px;
+  line-height: 1.55;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ta-reset-btn {
+  align-self: flex-start;
+  background: #FFFFFF;
+  color: #92400E;
+  border: 1px solid #F59E0B;
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.ta-reset-btn:hover { background: #FEF3C7; }
 @media (max-width: 768px) {
   html, body {
     overflow-x: hidden !important;
@@ -14142,12 +14180,19 @@ Crypto+Agentic Payment/Commerce（以下简称AP）
 
 
 
-// === Unified Vercel Edge Streaming AI Mentor (Zero Client Keys) ===
-const TA_AI_CONFIG = {"apiUrl": "https://trader-archives-ai-gateway.vercel.app/api/chat", "model": "gemini-3.5-flash-lite", "systemPrompt": "你是交易员 paulwei（推特 @coolish）的专属 AI 数字孪生导师。\n你的核心知识库基于 paulwei 沉淀的近 6 年 4 万条 Bitmex 实盘订单开源数据、“交易时光机”复盘心法、杠铃策略、高低频同构跃迁模型、健商补剂调度以及 Vibe Coding 个人杠杆放大心法。\n面对用户的任何提问，严格遵循以下风格与结构回答：\n1. 恪守 paulwei 的真实交易风格、核心战法与风险偏好（重视第一性原理，破除刻板教条，推崇极简自律与杠铃策略）；\n2. 杜绝空洞的大道理与泛泛之谈，直给具体的数据、公式、仓位风控规则与逻辑底牌；\n3. 输出采用专业研报结构：\n   - 🎯【核心研判与第一性原理】\n   - 🔍【底层机制推演】\n   - ⚡【实操执行法则】（1. 2. 3. 落地纪律）\n   - 🛡️【避坑铁律与仓位警告】", "drawerId": "aiDrawer", "overlayId": "aiDrawerOverlay", "bodyId": "aiChatBody", "inputId": "aiUserInput", "sendBtnId": "", "openMode": "class:active", "bubbleStyle": "wrapped", "rowBase": "ai-msg", "botRole": "assistant", "userRole": "user", "bubbleCls": "ai-msg-bubble", "loadingText": "正在检索 Wei Paul 2,579 篇实盘原推与时光机模型并流式推理..."};
+
+
+
+
+// === Unified Vercel Edge Streaming AI Mentor + Per-KOL Local RAG + 3-Turn Cap ===
+const TA_AI_CONFIG = {"kol": "coolish", "apiUrl": "https://trader-archives-ai-gateway.vercel.app/api/chat", "ragUrl": "data/ai_rag_index.json", "model": "gemini-3.5-flash-lite", "maxTurns": 3, "maxInputChars": 300, "maxTokens": 800, "systemPrompt": "你是交易员 paulwei（推特 @coolish）的专属 AI 数字孪生导师。\n你的核心知识库基于 paulwei 沉淀的近 6 年 4 万条 Bitmex 实盘订单开源数据、“交易时光机”复盘心法、杠铃策略、高低频同构跃迁模型、健商补剂调度以及 Vibe Coding 个人杠杆放大心法。\n面对用户的任何提问，严格遵循以下风格与结构回答：\n1. 恪守 paulwei 的真实交易风格、核心战法与风险偏好（重视第一性原理，破除刻板教条，推崇极简自律与杠铃策略）；\n2. 杜绝空洞的大道理与泛泛之谈，直给具体的数据、公式、仓位风控规则与逻辑底牌；\n3. 输出采用专业研报结构：\n   - 🎯【核心研判与第一性原理】\n   - 🔍【底层机制推演】\n   - ⚡【实操执行法则】（1. 2. 3. 落地纪律）\n   - 🛡️【避坑铁律与仓位警告】\n\n【本库严格事实检索与精简回答铁律】\n1. 必须严格依据本轮消息附带的【本导师资料库真实检索片段】及上方专属体系作答，严禁编造不存在的数据、日期、标的或混入其他博主观点；\n2. 优先引用检索片段中的真实文章标题、具体数字、时间与核心论断（请勿编造 #t-XX 编号）；若检索片段与专属体系均未提及该冷门细节，必须直说“在已收录公开资料中未检索到该细节”，不瞎编；\n3. 严格控制篇幅在 220~380 字精炼研报体，直击要害，绝不写空泛套话或车轱辘话。", "drawerId": "aiDrawer", "overlayId": "aiDrawerOverlay", "bodyId": "aiChatBody", "inputId": "aiUserInput", "sendBtnId": "", "openMode": "class:active", "bubbleStyle": "wrapped", "rowBase": "ai-msg", "botRole": "assistant", "userRole": "user", "bubbleCls": "ai-msg-bubble", "loadingText": "正在检索 Wei Paul 2,579 篇实盘原推与时光机模型并流式推理..."};
 const CJ_AI_CONFIG = TA_AI_CONFIG;
 let taAiHistory = [];
+let taAiTurnCount = 0;
 let taAiBusy = false;
 let taAiMsgSeq = 0;
+let taRagDocs = null;
+let taRagLoading = null;
 
 function escapeAiHtml(str) {
   return String(str || '')
@@ -14158,6 +14203,173 @@ function escapeAiHtml(str) {
     .replace(/'/g, '&#39;');
 }
 function htmlEscape(str) { return escapeAiHtml(str); }
+
+async function taLoadRagIndex() {
+  if (Array.isArray(taRagDocs)) return taRagDocs;
+  if (taRagLoading) return taRagLoading;
+  taRagLoading = fetch(TA_AI_CONFIG.ragUrl || 'data/ai_rag_index.json')
+    .then((r) => (r.ok ? r.json() : null))
+    .then((d) => {
+      taRagDocs = d && Array.isArray(d.docs) ? d.docs : [];
+      return taRagDocs;
+    })
+    .catch(() => {
+      taRagDocs = [];
+      return taRagDocs;
+    });
+  return taRagLoading;
+}
+
+function taExtractQueryTerms(query) {
+  const q = String(query || '').trim();
+  const terms = [];
+  const seen = new Set();
+  const addTerm = (tok, weight) => {
+    const k = tok.toLowerCase();
+    if (!k || seen.has(k)) return;
+    seen.add(k);
+    terms.push({ k, w: weight });
+  };
+
+  const enMatches = q.match(/[a-zA-Z0-9$][a-zA-Z0-9._-]{1,20}/g) || [];
+  for (const raw of enMatches) {
+    const clean = raw.replace(/^\$/, '');
+    if (clean.length >= 2) addTerm(clean, 3.2);
+  }
+
+  const stopRe = /(请问|如何|怎么|怎样|什么|为什么|一下|老师|导师|能否|可以|帮我|总结|分析|介绍|讲讲|说说|关于|这个|那个|我们|你们|自己|核心|观点|建议|一下|有哪些|是不是|到底|应该)/g;
+  const zhOnly = q.replace(stopRe, ' ').match(/[\u4e00-\u9fff]+/g) || [];
+  for (const seg of zhOnly) {
+    if (seg.length === 1) {
+      addTerm(seg, 0.9);
+      continue;
+    }
+    if (seg.length >= 2 && seg.length <= 4) addTerm(seg, 3.0);
+    for (let i = 0; i <= seg.length - 2; i++) addTerm(seg.slice(i, i + 2), 2.2);
+    for (let i = 0; i <= seg.length - 3; i++) addTerm(seg.slice(i, i + 3), 2.8);
+  }
+  return terms;
+}
+
+async function taRetrieveRagContext(query, topK = 5, maxChars = 1550) {
+  const docs = await taLoadRagIndex();
+  if (!docs || !docs.length) return { block: '', count: 0 };
+
+  const terms = taExtractQueryTerms(query);
+  const scored = [];
+
+  for (let i = 0; i < docs.length; i++) {
+    const d = docs[i];
+    const titleL = String(d.t || '').toLowerCase();
+    const bodyL = String(d.x || '').toLowerCase();
+    let score = 0;
+    let matchedTerms = 0;
+
+    for (let j = 0; j < terms.length; j++) {
+      const tk = terms[j].k;
+      const tw = terms[j].w;
+      const inTitle = titleL && titleL.indexOf(tk) !== -1;
+      const inBody = bodyL && bodyL.indexOf(tk) !== -1;
+      if (inTitle || inBody) {
+        matchedTerms++;
+        score += tw * (inTitle ? 2.1 : 1.0);
+      }
+    }
+
+    if (score > 0) {
+      const lenNorm = 1 / (0.75 + 0.25 * (Math.max(40, bodyL.length) / 260));
+      const baseW = Number(d.w) || 1.0;
+      const finalScore = (score + Math.min(matchedTerms, 5) * 0.6) * baseW * lenNorm;
+      scored.push({ d, s: finalScore });
+    }
+  }
+
+  scored.sort((a, b) => b.s - a.s);
+  let picked = scored.slice(0, topK).map((x) => x.d);
+
+  // Fallback for broad overview prompts: pick top mental models / handbook topics of THIS KOL
+  if (!picked.length) {
+    picked = docs.filter((d) => d.k === 'M' || d.k === 'H').slice(0, 4);
+    if (!picked.length) picked = docs.slice(0, 4);
+  }
+
+  const kindMap = { M: '思维模型', H: '专题精研', A: '深度长文', T: '实盘原推' };
+  const lines = [];
+  let used = 0;
+  let kept = 0;
+  for (let i = 0; i < picked.length; i++) {
+    const d = picked[i];
+    const tag = kindMap[d.k] || '资料';
+    const head = `[${i + 1}][${tag}${d.id ? ' ' + d.id : ''}${d.d ? ' | ' + d.d : ''}${d.t ? ' | ' + d.t : ''}]`;
+    const remain = maxChars - used - head.length - 4;
+    if (remain < 70) break;
+    const body = String(d.x || '').slice(0, remain);
+    const entry = `${head} ${body}`;
+    lines.push(entry);
+    used += entry.length + 1;
+    kept++;
+  }
+
+  return { block: lines.join('\n'), count: kept };
+}
+
+function taGetCacheKey(q) {
+  const norm = String(q || '').trim().toLowerCase().replace(/\s+/g, ' ');
+  return `ta_rag_v1:${TA_AI_CONFIG.kol}:${norm}`;
+}
+
+function taSyncInputState() {
+  const inp = document.getElementById(TA_AI_CONFIG.inputId);
+  const sendBtn = TA_AI_CONFIG.sendBtnId
+    ? document.getElementById(TA_AI_CONFIG.sendBtnId)
+    : (inp && inp.parentElement ? inp.parentElement.querySelector('button') : null);
+  const maxTurns = TA_AI_CONFIG.maxTurns || 3;
+  const exhausted = taAiTurnCount >= maxTurns;
+  if (inp) {
+    inp.maxLength = TA_AI_CONFIG.maxInputChars || 300;
+    inp.disabled = taAiBusy || exhausted;
+    if (exhausted) {
+      inp.placeholder = `本轮已完成 ${maxTurns}/${maxTurns} 轮对话，请点击上方「开启新对话」重置`;
+    } else {
+      inp.placeholder = `输入你的问题（最多 ${TA_AI_CONFIG.maxInputChars || 300} 字 · 第 ${taAiTurnCount + 1}/${maxTurns} 轮）...`;
+    }
+  }
+  if (sendBtn) sendBtn.disabled = taAiBusy || exhausted;
+}
+
+function taRenderTurnLimitNotice() {
+  const box = document.getElementById(TA_AI_CONFIG.bodyId);
+  if (!box) return;
+  const old = box.querySelector('.ta-turn-limit-box');
+  if (old) old.remove();
+  const maxTurns = TA_AI_CONFIG.maxTurns || 3;
+  const div = document.createElement('div');
+  div.className = 'ta-turn-limit-box';
+  div.innerHTML = `
+    <div>🛡️ 为节省公益算力并保持检索精准，单次对话上限为 <strong>${maxTurns} 轮</strong>（已完成 ${maxTurns}/${maxTurns} 轮）。可点击上方章节锚点深读原推，或清空上下文开启新话题。</div>
+    <button type="button" class="ta-reset-btn" onclick="taResetAiConversation()">🔄 开启新对话（清空历史）</button>
+  `;
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+}
+
+function taResetAiConversation() {
+  taAiHistory = [];
+  taAiTurnCount = 0;
+  const box = document.getElementById(TA_AI_CONFIG.bodyId);
+  if (box) {
+    const notices = box.querySelectorAll('.ta-turn-limit-box');
+    notices.forEach((n) => n.remove());
+    const sep = document.createElement('div');
+    sep.className = 'ta-rag-meta';
+    sep.innerHTML = '<span>✨ 已开启新对话（上下文已清零 · 第 1/3 轮）</span>';
+    box.appendChild(sep);
+    box.scrollTop = box.scrollHeight;
+  }
+  taSyncInputState();
+  const inp = document.getElementById(TA_AI_CONFIG.inputId);
+  if (inp) inp.focus();
+}
 
 function taSetDrawerOpen(shouldOpen) {
   const d = document.getElementById(TA_AI_CONFIG.drawerId);
@@ -14179,9 +14391,11 @@ function taSetDrawerOpen(shouldOpen) {
     if (ov) { ov.classList.toggle('open', shouldOpen); ov.classList.toggle('active', shouldOpen); }
   }
   if (shouldOpen) {
+    taLoadRagIndex();
+    taSyncInputState();
     setTimeout(() => {
       const inp = document.getElementById(TA_AI_CONFIG.inputId);
-      if (inp) inp.focus();
+      if (inp && !inp.disabled) inp.focus();
     }, 80);
   }
 }
@@ -14315,8 +14529,15 @@ function taCreateMsgBubble(role, initialText) {
 
 async function sendAiMessage(presetOverride) {
   if (taAiBusy) return;
+  const maxTurns = TA_AI_CONFIG.maxTurns || 3;
+  if (taAiTurnCount >= maxTurns) {
+    taRenderTurnLimitNotice();
+    taSyncInputState();
+    return;
+  }
   const inp = document.getElementById(TA_AI_CONFIG.inputId);
-  const q = (typeof presetOverride === 'string' ? presetOverride : (inp ? inp.value : '')).trim();
+  const rawQ = typeof presetOverride === 'string' ? presetOverride : (inp ? inp.value : '');
+  const q = String(rawQ || '').trim().slice(0, TA_AI_CONFIG.maxInputChars || 300);
   if (!q) return;
   if (inp && typeof presetOverride !== 'string') inp.value = '';
 
@@ -14328,12 +14549,30 @@ async function sendAiMessage(presetOverride) {
   const botEl = taCreateMsgBubble('assistant', TA_AI_CONFIG.loadingText);
   if (!botEl) return;
 
-  taAiHistory.push({ role: 'user', content: q });
+  const turnNum = taAiTurnCount + 1;
+
+  // Turn-1 zero-token cache hit for identical repeated queries in same session
+  if (taAiTurnCount === 0) {
+    try {
+      const cachedRaw = sessionStorage.getItem(taGetCacheKey(q));
+      if (cachedRaw) {
+        const cached = JSON.parse(cachedRaw);
+        if (cached && cached.reply) {
+          const metaBar = `<div class="ta-rag-meta"><span>⚡ 命中本导师缓存（0 Token）· 检索 ${cached.ragCount || 0} 条资料</span><span>第 ${turnNum}/${maxTurns} 轮</span></div>`;
+          botEl.innerHTML = metaBar + formatAiExquisiteOutput(cached.reply);
+          taAiHistory.push({ role: 'user', content: q });
+          taAiHistory.push({ role: 'assistant', content: cached.reply.slice(0, 550) });
+          taAiTurnCount += 1;
+          taSyncInputState();
+          if (box) box.scrollTop = box.scrollHeight;
+          return;
+        }
+      }
+    } catch (_) {}
+  }
+
   taAiBusy = true;
-  const sendBtn = TA_AI_CONFIG.sendBtnId
-    ? document.getElementById(TA_AI_CONFIG.sendBtnId)
-    : (inp && inp.parentElement ? inp.parentElement.querySelector('button') : null);
-  if (sendBtn) sendBtn.disabled = true;
+  taSyncInputState();
 
   let fullReply = '';
   const controller = new AbortController();
@@ -14347,23 +14586,42 @@ async function sendAiMessage(presetOverride) {
   }, 1000);
 
   try {
+    const rag = await taRetrieveRagContext(q, 5, 1550);
+    const metaBar = `<div class="ta-rag-meta"><span>📚 已检索本导师 ${rag.count} 条真实资料</span><span>第 ${turnNum}/${maxTurns} 轮</span></div>`;
+    const augmentedUser = rag.block
+      ? `【本导师资料库真实检索片段（仅限本轮作答依据）】\n${rag.block}\n\n【用户问题】\n${q}`
+      : `【本导师资料库未命中直接条目，请仅据专属体系谨慎作答，未提及处请直说】\n【用户问题】\n${q}`;
+
+    const priorMsgs = taAiHistory.slice(-4).map((m) => ({
+      role: m.role,
+      content: String(m.content || '').slice(0, 550),
+    }));
+
     const resp = await fetch(TA_AI_CONFIG.apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       signal: controller.signal,
       body: JSON.stringify({
         model: TA_AI_CONFIG.model,
-        temperature: 0.25,
-        max_tokens: 2048,
+        temperature: 0.2,
+        max_tokens: TA_AI_CONFIG.maxTokens || 800,
         stream: true,
         messages: [
           { role: 'system', content: TA_AI_CONFIG.systemPrompt },
-          ...taAiHistory.slice(-8)
+          ...priorMsgs,
+          { role: 'user', content: augmentedUser }
         ]
       })
     });
 
     if (!resp.ok) {
+      if (resp.status === 400) {
+        const errJson = await resp.json().catch(() => ({}));
+        if (errJson && errJson.code === 'MAX_TURNS_EXCEEDED') {
+          taAiTurnCount = maxTurns;
+          throw new Error('单次对话已达 3 轮上限，请点击开启新对话');
+        }
+      }
       throw new Error(`HTTP ${resp.status}`);
     }
 
@@ -14388,7 +14646,7 @@ async function sendAiMessage(presetOverride) {
             const delta = parsed.choices?.[0]?.delta?.content || '';
             if (delta) {
               fullReply += delta;
-              botEl.innerHTML = formatAiExquisiteOutput(fullReply);
+              botEl.innerHTML = metaBar + formatAiExquisiteOutput(fullReply);
               if (box) box.scrollTop = box.scrollHeight;
             }
           } catch (_) {}
@@ -14397,13 +14655,24 @@ async function sendAiMessage(presetOverride) {
     } else {
       const data = await resp.json();
       fullReply = data.choices?.[0]?.message?.content || '';
-      botEl.innerHTML = formatAiExquisiteOutput(fullReply);
+      botEl.innerHTML = metaBar + formatAiExquisiteOutput(fullReply);
     }
 
     if (!fullReply) {
       botEl.innerHTML = '<span style="color:#B91C1C;">未收到有效模型响应，请重试。</span>';
     } else {
-      taAiHistory.push({ role: 'assistant', content: fullReply });
+      // Persist ONLY raw question + concise answer in history (never duplicate RAG snippets!)
+      taAiHistory.push({ role: 'user', content: q });
+      taAiHistory.push({ role: 'assistant', content: fullReply.slice(0, 550) });
+      if (taAiTurnCount === 0) {
+        try {
+          sessionStorage.setItem(taGetCacheKey(q), JSON.stringify({ reply: fullReply, ragCount: rag.count }));
+        } catch (_) {}
+      }
+      taAiTurnCount += 1;
+      if (taAiTurnCount >= maxTurns) {
+        taRenderTurnLimitNotice();
+      }
     }
   } catch (err) {
     const msg = err && err.name === 'AbortError' ? '响应超时（45秒），请简化问题重试' : (err ? err.message : '网络异常');
@@ -14412,7 +14681,7 @@ async function sendAiMessage(presetOverride) {
     clearInterval(tickId);
     clearTimeout(timeoutId);
     taAiBusy = false;
-    if (sendBtn) sendBtn.disabled = false;
+    taSyncInputState();
     if (box) box.scrollTop = box.scrollHeight;
   }
 }
@@ -14463,6 +14732,10 @@ function scrollCjAiToBottom() {
     });
   });
 })();
+
+
+
+
 
 
 

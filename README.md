@@ -4,7 +4,7 @@
 > *让华语圈最顶级的实盘交易心法、做市套利算法与宏观周期认知，沉淀为可以被人类和 AI Agent 永久检索、复现的量化知识大厦。*
 
 🌐 **在线总门户（即刻沉浸式研读）**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)  
-🤖 **全站 AI 导师矩阵**：全站 **15 个导师子站** 均已统一接入 **Vercel Edge Serverless 流式 AI 导师网关**（`gemini-3.5-flash-lite` + SSE 实时流式推送，前端零硬编码密钥、服务端严格 Origin/Referer 校验 + IP 限流与故障自动降级），支持 7×24 小时在线合约、量化与交易策略咨询。
+🤖 **全站 AI 导师矩阵**：全站 **15 个导师子站** 均已统一接入 **一 KOL 一库本地 RAG 检索（`data/ai_rag_index.json`）+ Vercel Edge Serverless 流式 AI 导师网关**（`gemini-3.5-flash-lite` + SSE 实时流式推送，前端零硬编码密钥、服务端严格 Origin/Referer 校验、单次会话 3 轮硬上限、IP 限流、Token 精准控本与重复提问 0 Token 缓存），支持 7×24 小时精准基于对应导师原资料的策略咨询。
 
 ---
 
@@ -88,12 +88,12 @@ Trader-Archives/
 
 ---
 
-## 🤖 统一 Vercel Edge 流式 AI 导师架构
+## 🤖 统一本地 RAG + Vercel Edge 流式 AI 导师架构
 
-全站 15 个导师子站均已统一升级为无客户端密钥的安全流式架构：
-1. **前端零密钥安全架构**：彻底移除任何前端硬编码 API 密钥与 `Authorization` 请求头，核心凭证仅加密托管于 Vercel Edge Serverless 服务端环境变量；
-2. **严格 Origin / Referer 校验**：边缘网关仅放行官方站点 `https://suoha888.github.io` 及本地调试源，非法跨站或裸脚本调用一律返回 `403`；
-3. **实时 SSE 流式推理与富文本排版**：基于 `gemini-3.5-flash-lite` 毫秒级 Server-Sent Events 流式输出，统一支持标题/列表/引用/代码 Markdown 渲染、45 秒超时熔断、防连点锁、防 XSS 转义及 `#t-XX` 专题锚点一键跳转。
+全站 15 个导师子站均已统一升级为“**一 KOL 一独立资料索引 + 无客户端密钥流式控本**”架构：
+1. **15 份独立本地 RAG 索引（0 向量库/Embedding 费用）**：每位导师目录均独立生成 `data/ai_rag_index.json`（涵盖该导师专属思维模型、长文切片、专题精研与精选原推），打开抽屉按需懒加载，浏览器端 5ms 混合检索 Top-5 真实原资料并严格事实锚定作答、绝不跨 KOL 串台；
+2. **前后端双重 3 轮上限与极致控本**：单次会话硬限 **3 轮**（历史仅保留纯问答不重复携带前轮检索原文），服务端强制 `max_tokens <= 960`、单条输入 `<= 300` 字、角色白名单与单 IP 限流（`12 次/分钟`），首轮重复问题命中本地缓存实现 **0 Token 秒回**；
+3. **前端零密钥与实时 SSE 富文本排版**：彻底移除前端硬编码密钥，凭证加密托管于 Vercel Edge，严格校验 Origin/Referer（非本站一律 `403`），基于 `gemini-3.5-flash-lite` 毫秒级流式输出并支持 `#t-XX` 专题锚点一键跳转。
 
 ---
 
