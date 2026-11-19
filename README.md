@@ -4,15 +4,15 @@
 > *让华语圈最顶级的实盘交易心法、做市套利算法与宏观周期认知，沉淀为可以被人类和 AI Agent 永久检索、复现的量化知识大厦。*
 
 🌐 **在线总门户（即刻沉浸式研读）**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)  
-🤖 **全站 AI 导师矩阵**：全站 **15 个导师子站** 均已统一接入 **Vercel Edge Serverless 流式 AI 导师网关**（`google/gemini-2.5-flash` + SSE 实时流式推送，前端零硬编码密钥、服务端严格 Origin/Referer 校验），支持 7×24 小时在线合约、量化与交易策略咨询。
+🤖 **全站 AI 导师矩阵**：全站 **15 个导师子站** 均已统一接入 **Vercel Edge Serverless 流式 AI 导师网关**（`gemini-3.5-flash-lite` + SSE 实时流式推送，前端零硬编码密钥、服务端严格 Origin/Referer 校验 + IP 限流与故障自动降级），支持 7×24 小时在线合约、量化与交易策略咨询。
 
 ---
 
-## 📚 正式上线实战导师名录（已完整收录 15 位顶级高手 · 47,193 篇全量原推 / 43,173 篇清洗语料 · 880 个思维模型 · 5,421 张本地实盘图床）
+## 📚 正式上线实战导师名录（已完整收录 15 位顶级高手 · 47,193 篇全量原推 / 41,321 篇清洗语料 · 880 个思维模型 · 5,421 张本地实盘图床）
 
 | # | 导师 | Twitter Handle | 专属全书定位与大典称号 | 收录规模（清洗 / 原推） | 专属在线研报阅读站 | GitHub 全量开源数据湖 |
 | :-: | :--- | :--- | :--- | :---: | :---: | :---: |
-| 01 | **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 合约滚仓、龙头结构与高赔率实盘复盘 | **4,943 / 7,303** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data) |
+| 01 | **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 合约滚仓、龙头结构与高赔率实盘复盘 | **3,091 / 7,303** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data) |
 | 02 | **Wei Paul** | [@coolish](https://x.com/coolish) | BitMEX 时光机、杠铃博弈与逆向周期 | **2,579 / 2,581** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/coolish/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/coolish/data) |
 | 03 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 裸K战法与跨市场宏观博弈全书（含13篇长文） | **2,718 / 2,730** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/wallstreet0name/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data) |
 | 04 | **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 基差套利与量化做市实战大典（含4篇万字研报） | **670 / 673** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/yourquantguy/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data) |
@@ -34,7 +34,7 @@
 
 ### 1. 【最新重磅上线】allincrypto 熬鹰资本（[@thankUcrypto](https://x.com/thankUcrypto)）
 - **定位**：合约滚仓实战派导师 · `13,000 RMB → 1500W`、`PNL 120K—10M USD` 高赔率合约全书
-- **规模**：完整清洗收录 **7,303** 篇历史推文（4,943 篇高纯度核心合约数据，147 篇精选实盘复盘，6 大合约域切片，568 张真实图表）
+- **规模**：完整采录归档 **7,303** 篇历史原推（经 GPT 语义提纯沉淀 **3,091** 篇高信号核心交易语料、**303** 篇 S/A 级精选干货，6 大合约域切片，568 张真实图表）
 - **核心亮点**：
   - 提炼 **12 大合约实战思维模型** 与 **18 篇合约专题深析（`#t-01` ~ `#t-18`）**，覆盖小资金破障、低杠杆降维、结构突破、山寨龙头轮动、宏观波动率、逐仓双损止损出金与带单心智防御。
   - 原生复刻 Twitter 实盘推文卡片与真实图表 Lightbox（支持 ESC 关闭），支持实时目录过滤、按 6 大合约域与 S/A/B/C 分级检索全量数据湖。
@@ -69,7 +69,7 @@ Trader-Archives/
 ├── index.html                   # 🏛️ 全景大典总门户（数据看板 + 全部 15 位导师大典卡片）
 ├── README.md                    # 📖 全量开源项目总纲与跳转指引（当前文件）
 │
-├── thankucrypto/                # 🚀【最新上线】allincrypto 熬鹰资本合约实战与滚仓全书（4,943 / 7,303）
+├── thankucrypto/                # 🚀【最新上线】allincrypto 熬鹰资本合约实战与滚仓全书（3,091 / 7,303）
 ├── coolish/                     # Wei Paul 时光机法则与杠铃博弈全书（2,579 / 2,581）
 ├── wallstreet0name/             # 华尔街没有名字 裸K战法与跨市场宏观博弈（2,718 / 2,730 + 13长文）
 ├── yourquantguy/                # yourQuantGuy Perp DEX 量化套利大典（670 + 190模型）
@@ -93,7 +93,7 @@ Trader-Archives/
 全站 15 个导师子站均已统一升级为无客户端密钥的安全流式架构：
 1. **前端零密钥安全架构**：彻底移除任何前端硬编码 API 密钥与 `Authorization` 请求头，核心凭证仅加密托管于 Vercel Edge Serverless 服务端环境变量；
 2. **严格 Origin / Referer 校验**：边缘网关仅放行官方站点 `https://suoha888.github.io` 及本地调试源，非法跨站或裸脚本调用一律返回 `403`；
-3. **实时 SSE 流式推理与富文本排版**：基于 `google/gemini-2.5-flash` 毫秒级 Server-Sent Events 流式输出，统一支持标题/列表/引用/代码 Markdown 渲染、45 秒超时熔断、防连点锁、防 XSS 转义及 `#t-XX` 专题锚点一键跳转。
+3. **实时 SSE 流式推理与富文本排版**：基于 `gemini-3.5-flash-lite` 毫秒级 Server-Sent Events 流式输出，统一支持标题/列表/引用/代码 Markdown 渲染、45 秒超时熔断、防连点锁、防 XSS 转义及 `#t-XX` 专题锚点一键跳转。
 
 ---
 
