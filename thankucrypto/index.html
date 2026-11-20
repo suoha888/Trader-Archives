@@ -198,14 +198,47 @@
       margin-top: 14px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 10px;
       padding: 10px 12px;
       background: #FFFBEB;
       border: 1px solid #FDE68A;
       border-radius: var(--radius-md);
       font-size: 12px;
+      color: var(--text-main);
+      text-decoration: none;
+      transition: all .18s ease;
     }
-    .curator-box img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+    .curator-box:hover { background: #FEF3C7; border-color: #F59E0B; text-decoration: none; transform: translateY(-1px); }
+    .curator-left { display: flex; align-items: center; gap: 9px; min-width: 0; }
+    .curator-box img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1.5px solid #F59E0B; flex-shrink: 0; }
+    .curator-follow {
+      font-size: 11px;
+      font-weight: 700;
+      color: #FFFFFF;
+      background: #1C1917;
+      padding: 3px 8px;
+      border-radius: 999px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .curator-box:hover .curator-follow { background: var(--accent); }
+    .hero-owner-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 4px 12px 4px 5px;
+      background: #FFFFFF;
+      border: 1px solid #FCD34D;
+      border-radius: 999px;
+      color: var(--text-main);
+      font-size: 12.5px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all .18s ease;
+    }
+    .hero-owner-pill:hover { background: #FEF3C7; border-color: var(--accent); color: var(--accent-hover); text-decoration: none; }
+    .hero-owner-pill img { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; border: 1.5px solid #F59E0B; }
 
     /* Main */
     .main { flex: 1; min-width: 0; padding: 34px 44px 96px; }
@@ -566,21 +599,29 @@
         <a href="https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data" target="_blank" rel="noopener" class="dl-link">↗ GitHub 完整数据目录</a>
       </div>
 
-      <div class="curator-box">
-        <img src="images/suoha_avatar.jpg" alt="@SUOHA_AI">
-        <div>
-          <div style="font-weight:700; color:var(--text-main);">@SUOHA_AI 整理归档</div>
-          <div style="color:var(--text-muted); font-size:11px;">Trader-Archives 开源项目</div>
+      <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" class="curator-box" title="访问站主 梭哈.AI (@SUOHA_AI) X 主页">
+        <div class="curator-left">
+          <img src="images/suoha_avatar.jpg" alt="站主 梭哈.AI">
+          <div>
+            <div style="font-weight:800; color:var(--text-main);">站主 · 梭哈.AI</div>
+            <div style="color:var(--accent); font-size:11px; font-weight:700;">@SUOHA_AI</div>
+          </div>
         </div>
-      </div>
+        <span class="curator-follow">关注 ↗</span>
+      </a>
     </aside>
 
     <main class="main">
       <header class="hero">
         <div class="dual-avatars">
-          <img src="images/thankucrypto_avatar.jpg" alt="@thankUcrypto">
+          <a href="https://x.com/thankUcrypto" target="_blank" rel="noopener noreferrer" title="访问 @thankUcrypto 原推主页" style="display:inline-flex;">
+            <img src="images/thankucrypto_avatar.jpg" alt="@thankUcrypto">
+          </a>
           <span class="dual-x">×</span>
-          <img src="images/suoha_avatar.jpg" alt="@SUOHA_AI">
+          <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" class="hero-owner-pill" title="访问站主 梭哈.AI (@SUOHA_AI) X 主页">
+            <img src="images/suoha_avatar.jpg" alt="站主 梭哈.AI">
+            <span>站主：梭哈.AI @SUOHA_AI ↗</span>
+          </a>
           <span class="hero-badge">Trader-Archives · 交易员档案</span>
         </div>
         <h1>allincrypto 熬鹰资本：实盘交易推文整理</h1>
@@ -15927,16 +15968,17 @@
       </section>
 
       <footer class="site-footer">
-        <div>Trader-Archives 开源项目 · 由 <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener">梭哈.AI (@SUOHA_AI)</a> 整理归档 · 内容全部取材自 <a href="https://x.com/thankUcrypto" target="_blank" rel="noopener">@thankUcrypto</a> 公开原创推文 · 仅供学习复盘，非投资建议，请 DYOR。</div>
+        <div>Trader-Archives 开源项目 · 由站主 <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" style="font-weight:700;">梭哈.AI (@SUOHA_AI) ↗</a> 整理维护 · 本页内容取材自 <a href="https://x.com/thankUcrypto" target="_blank" rel="noopener noreferrer">@thankUcrypto</a> 公开原创推文 · 仅供学习复盘，非投资建议，请 DYOR。</div>
         <div class="footer-nav-links">
           <a href="../">🏛️ 返回总目录</a>
+          <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" style="font-weight:700;">👤 站主 梭哈.AI (@SUOHA_AI) ↗</a>
           <a href="../yourquantguy/">yourQuantGuy</a>
           <a href="../coolish/">Wei Paul</a>
           <a href="../wallstreet0name/">华尔街没有名字</a>
           <a href="../xiaomu/">川沐</a>
           <a href="../michael-liu/">憨厚的麦总</a>
           <a href="../cj/">CJ</a>
-          <a href="https://github.com/suoha888/Trader-Archives" target="_blank" rel="noopener">GitHub 源码</a>
+          <a href="https://github.com/suoha888/Trader-Archives" target="_blank" rel="noopener noreferrer">GitHub 源码</a>
         </div>
       </footer>
     </main>
@@ -15978,7 +16020,7 @@
 
     <div class="ai-messages" id="aiMessages">
       <div class="ai-msg bot">
-        你好，这里是 <strong>@thankUcrypto（熬鹰资本）</strong> 原创推文问答助手。<br>
+        你好，这里是 <strong>@thankUcrypto（熬鹰资本）</strong> 原创推文问答助手（由站主 <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer" style="font-weight:700;">梭哈.AI @SUOHA_AI ↗</a> 整理维护）。<br>
         你可以直接问仓位杠杆、1WU 挑战、MA120 与空仓、山寨龙头与 Meme 市值、美股与存储芯片、逐仓止损出金，或带单与心态问题。回答会自动附上对应小节锚点（如 <span class="ai-pill-topic" onclick="scrollToTopic('t-03')">#t-03</span>），点击直达原推。
       </div>
     </div>

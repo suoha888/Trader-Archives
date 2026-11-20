@@ -3,8 +3,9 @@
 > **告别碎片化噪音与信息遗忘。将推特顶级实战交易员与投资导师的数万篇真金白银实盘公开推文，体系化整理为可随查随用的在线研报阅读站与 GitHub 全量开源数据湖。持续收录更新中。**  
 > *让华语圈最顶级的实盘交易心法、做市套利算法与宏观周期认知，沉淀为可以被人类和 AI Agent 永久检索、复现的量化知识大厦。*
 
-🌐 **在线总门户（即刻沉浸式研读）**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)  
-🤖 **全站 AI 导师矩阵**：全站 **15 个导师子站** 均已统一接入 **一 KOL 一库本地 RAG 检索（`data/ai_rag_index.json`）+ Vercel Edge Serverless 流式 AI 导师网关**（`gemini-3.1-flash-lite` + SSE 实时流式推送，前端零硬编码密钥、服务端严格 Origin/Referer 校验、单次会话 3 轮硬上限、IP 限流、Token 精准控本与重复提问 0 Token 缓存），支持 7×24 小时精准基于对应导师原资料的策略咨询。
+🌐 **在线阅读总站**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)  
+👤 **站主与项目维护**：**梭哈.AI**（[@SUOHA_AI](https://x.com/SUOHA_AI)）· [关注站主 X 主页 ↗](https://x.com/SUOHA_AI)  
+🤖 **全站 AI 问答助手**：全站 **15 个交易员子站** 均已统一接入 **一 KOL 一库本地索引（`data/ai_rag_index.json`）+ Vercel Edge Serverless 流式网关**（`gemini-3.1-flash-lite` + SSE 实时流式推送，前端零硬编码密钥、单次会话 3 轮上限、单 IP 限流与重复提问缓存），支持 7×24 小时基于对应交易员原推的问答检索。
 
 ---
 
@@ -110,4 +111,4 @@ Trader-Archives/
 
 ---
 
-*由研究员梭哈.AI [@SUOHA_AI](https://x.com/SUOHA_AI) 独立体系化整理构建，全网全量开源，非投资建议，请 DYOR。*
+*本站与开源仓库由站主 **梭哈.AI**（[@SUOHA_AI](https://x.com/SUOHA_AI)）独立整理维护 · [访问站主 X 主页 ↗](https://x.com/SUOHA_AI) · 全网全量开源，非投资建议，请 DYOR。*
