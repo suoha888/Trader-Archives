@@ -16126,9 +16126,29 @@
           }
         }
         toggleAiDrawer(false);
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        el.scrollIntoView({ behavior: 'auto', block: 'start' });
+        // Re-align after lazy images shift layout heights above target
+        setTimeout(() => {
+          if (Math.abs(el.getBoundingClientRect().top) > 24) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 320);
+        setTimeout(() => {
+          if (Math.abs(el.getBoundingClientRect().top) > 36) {
+            el.scrollIntoView({ behavior: 'auto', block: 'start' });
+          }
+        }, 750);
       }
     }
+
+    document.querySelectorAll('.toc-link[data-tid], a.model-jump[href^="#t-"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const tid = a.getAttribute('data-tid') || a.getAttribute('href');
+        if (!tid) return;
+        e.preventDefault();
+        scrollToTopic(tid);
+      });
+    });
 
     function jumpToTopicArchive(topicId) {
       currentDomain = 'all';
@@ -16734,7 +16754,7 @@
     }
 
     function taGetCacheKey(q) {
-      return `ta_rag_v5:thankucrypto:${String(q || '').trim().toLowerCase().replace(/\s+/g, ' ')}`;
+      return `ta_rag_v6:thankucrypto:${String(q || '').trim().toLowerCase().replace(/\s+/g, ' ')}`;
     }
 
     function taSyncInputState() {
