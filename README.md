@@ -8,11 +8,11 @@
 
 ---
 
-## 📚 正式上线实战导师名录（已完整收录 15 位顶级高手 · 47,193 篇全量原推 / 41,557 篇清洗整理 · 874 个核心要点与模型 · 5,419 张本地实盘配图）
+## 📚 正式上线实战导师名录（已完整收录 15 位顶级高手 · 47,193 篇全量原推 / 41,650 篇清洗整理 · 874 个核心要点与模型 · 5,402 张本地实盘配图）
 
 | # | 导师 | Twitter Handle | 核心方向 | 收录规模（清洗 / 原推） | 在线阅读站 | GitHub 开源分类存档 |
 | :-: | :--- | :--- | :--- | :---: | :---: | :---: |
-| 01 | **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 实盘交易推文整理（6大实战板块 + 实盘记录归档） | **3,327 / 7,303** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 分类存档](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data/domains) |
+| 01 | **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 实盘交易推文整理（6大实战板块 + 实盘记录归档） | **3,420 / 7,303** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 分类存档](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data/domains) |
 | 02 | **Wei Paul** | [@coolish](https://x.com/coolish) | BitMEX 时光机、杠铃博弈与逆向周期 | **2,579 / 2,581** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/coolish/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/coolish/data) |
 | 03 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 裸K战法与跨市场宏观博弈全书（含13篇长文） | **2,718 / 2,730** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/wallstreet0name/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data) |
 | 04 | **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 基差套利与量化做市实战大典（含4篇万字研报） | **670 / 673** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/yourquantguy/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data) |
@@ -34,7 +34,7 @@
 
 ### 1. 【最新改版】allincrypto 熬鹰资本（[@thankUcrypto](https://x.com/thankUcrypto)）
 - **定位**：OKX / 币安实盘带单冠军 · 从 13,000 元起步做到千万实盘的公开推文整理
-- **规模**：从全周期 **7,303** 条历史记录中剔除转推他人内容与日常水回复，有序收录 **3,327** 篇本人原创推文（含 **832** 篇精选干货）与 **566** 张关联实盘配图
+- **规模**：从全周期 **7,303** 条历史记录中剔除转推他人内容与日常水回复，有序收录 **3,420** 篇本人原创推文（含 **1,100** 篇精选干货）与 **549** 张关联实盘配图
 - **目录结构（7 大有序分类，每个文件内按 1-2-3 逻辑排好序）**：
   - `01 仓位管理`（小资金怎么起步 / 怎么降杠杆 / 资金大了怎么换打法）
   - `02 行情与开单`（大周期与均线 / 趋势与震荡的取舍 / 右侧追突破与立刻认错）
@@ -74,7 +74,7 @@ Trader-Archives/
 ├── index.html                   # 🏛️ 全景大典总门户（数据看板 + 全部 15 位导师大典卡片）
 ├── README.md                    # 📖 全量开源项目总纲与跳转指引（当前文件）
 │
-├── thankucrypto/                # 🚀【最新改版】allincrypto 熬鹰资本实盘推文整理（3,327 原创 · 7 大板块）
+├── thankucrypto/                # 🚀【最新改版】allincrypto 熬鹰资本实盘推文整理（3,420 原创 · 7 大板块）
 ├── coolish/                     # Wei Paul 时光机法则与杠铃博弈全书（2,579 / 2,581）
 ├── wallstreet0name/             # 华尔街没有名字 裸K战法与跨市场宏观博弈（2,718 / 2,730 + 13长文）
 ├── yourquantguy/                # yourQuantGuy Perp DEX 量化套利大典（670 + 190模型）
