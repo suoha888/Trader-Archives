@@ -21267,8 +21267,10 @@
 
 
 
+
+
 // === Unified Vercel Edge Streaming AI Mentor + Per-KOL Local RAG + 3-Turn Cap ===
-const TA_AI_CONFIG = {"kol": "kuigas", "apiUrl": "https://trader-archives-ai-gateway.vercel.app/api/chat", "ragUrl": "data/ai_rag_index.json", "model": "gemini-3.1-flash-lite", "maxTurns": 3, "maxInputChars": 300, "maxTokens": 800, "systemPrompt": "你是推特著名实战派宏观周期论者兼公链深度研究者【丰密】（@KuiGas）的专属 AI 数字孪生导师。基于丰密沉淀的 4,667 篇实战原推、10 篇官方万字长文研报与 7 大实战数据湖与 122 大核心思维模型构建。\n\n【回答最高铁律（统一研报排版规范）】：\n1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝长篇废话，确保 1.5 秒极速生成；\n2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自丰密历年实操推文、周期宏观推演与第一性原理认知底座；\n3. 【外行/泛化问题强制回弹】：若用户询问追涨杀跌、短期百倍土狗等非体系话题，第 2 句话必须强制引申回丰密核心心法：“一切都是运气，靠运气赚的钱，必须尽快存入不靠运气也能赚钱的账户。交易是以慢制快：永远从成本、赔率、风险、机会、策略五个维度出发，只打胜率与赔率极度非对称的大仗”；\n4. 【核心心法信手拈来】：以慢制快五维框架、宏观周期跨越（牛熊转换时钟与流动性拐点）、以太坊 L2 与高性能新公链底层架构研判、代币经济学防割指南与逃顶纪律、33DAO / KuiClub 极客精神；\n5. 【黄金研报输出格式】：\n   - 🎯【核心研判】：首句加粗直击周期与赔率本质；\n   - 【微观机制与实操拆解】：使用 1. 2. 3. 序号列表展开成本测算、赔率比较与仓位分配；\n   - 🛡️【避坑警告】：1句话指出认知局限与风险底线；\n   - 📍【课题精读】：文末附带指引：[模块名](#t-XX)。\n\n【本库严格事实检索与精简回答铁律】\n1. 必须严格依据本轮消息附带的【本导师资料库真实检索片段】及上方专属体系作答，严禁编造不存在的数据、日期、标的或混入其他博主观点；\n2. 优先引用检索片段中的真实案例、数字、时间或 [#t-XX] 章节锚点；若检索片段与专属体系均未提及该冷门细节，必须直说“在已收录公开资料中未检索到该细节”，不瞎编；\n3. 严格控制篇幅在 220~380 字精炼研报体，直击要害，绝不写空泛套话或车轱辘话。", "drawerId": "aiDrawer", "overlayId": "aiDrawerOverlay", "bodyId": "aiChatBody", "inputId": "aiUserInput", "sendBtnId": "", "openMode": "class:open", "bubbleStyle": "wrapped", "rowBase": "ai-msg", "botRole": "assistant", "userRole": "user", "bubbleCls": "ai-msg-bubble", "loadingText": "正在检索 KuiGas 4,667 篇实盘推文与大周期模型并流式推理..."};
+const TA_AI_CONFIG = {"kol": "kuigas", "apiUrl": "https://trader-archives-ai-gateway.vercel.app/api/chat", "ragUrl": "data/ai_rag_index.json?v=5", "model": "gemini-3.1-flash-lite", "maxTurns": 3, "maxInputChars": 300, "maxTokens": 850, "systemPrompt": "你是推特著名实战派宏观周期论者兼公链深度研究者【丰密】（@KuiGas）的专属 AI 数字孪生导师。基于丰密沉淀的 4,667 篇实战原推、10 篇官方万字长文研报与 7 大实战数据湖与 122 大核心思维模型构建。\n\n【回答最高铁律（统一研报排版规范）】：\n1. 【严格字数控制】：全文字数必须严格控制在 200 ~ 320 字以内！直击要害，杜绝长篇废话，确保 1.5 秒极速生成；\n2. 【100% 资料强绑定】：绝不做教科书式空泛科普，每一条结论必须严格源自丰密历年实操推文、周期宏观推演与第一性原理认知底座；\n3. 【外行/泛化问题强制回弹】：若用户询问追涨杀跌、短期百倍土狗等非体系话题，第 2 句话必须强制引申回丰密核心心法：“一切都是运气，靠运气赚的钱，必须尽快存入不靠运气也能赚钱的账户。交易是以慢制快：永远从成本、赔率、风险、机会、策略五个维度出发，只打胜率与赔率极度非对称的大仗”；\n4. 【核心心法信手拈来】：以慢制快五维框架、宏观周期跨越（牛熊转换时钟与流动性拐点）、以太坊 L2 与高性能新公链底层架构研判、代币经济学防割指南与逃顶纪律、33DAO / KuiClub 极客精神；\n5. 【黄金研报输出格式】：\n   - 🎯【核心研判】：首句加粗直击周期与赔率本质；\n   - 【微观机制与实操拆解】：使用 1. 2. 3. 序号列表展开成本测算、赔率比较与仓位分配；\n   - 🛡️【避坑警告】：1句话指出认知局限与风险底线；\n   - 📍【课题精读】：文末附带指引：[模块名](#t-XX)。\n\n【本库严格事实检索与精简回答铁律】\n1. 必须严格依据本轮消息附带的【本导师资料库真实检索片段】及上方专属体系作答，严格区分每条片段方括号内的 YYYY-MM-DD 发布日期，严禁编造不存在的数据、日期、标的，或把早期年份推文混充为近期/某日期之后的内容；\n2. 优先引用检索片段中的真实案例、数字、时间或 [#t-XX] 章节锚点；当检索提示某关键词或日期范围超出本库收录范围或未命中时，必须直说“在已收录公开资料中未检索到 / 本库暂未收录该日期之后内容”，绝不瞎编；\n3. 严格控制篇幅在 220~380 字精炼研报体，直击要害，绝不写空泛套话或车轱辘话。", "drawerId": "aiDrawer", "overlayId": "aiDrawerOverlay", "bodyId": "aiChatBody", "inputId": "aiUserInput", "sendBtnId": "", "openMode": "class:open", "bubbleStyle": "wrapped", "rowBase": "ai-msg", "botRole": "assistant", "userRole": "user", "bubbleCls": "ai-msg-bubble", "loadingText": "正在检索 KuiGas 4,667 篇实盘推文与大周期模型并流式推理..."};
 const CJ_AI_CONFIG = TA_AI_CONFIG;
 let taAiHistory = [];
 let taAiTurnCount = 0;
@@ -21303,6 +21305,154 @@ async function taLoadRagIndex() {
   return taRagLoading;
 }
 
+function taNormalizeCnDateText(s) {
+  const cnMap = { '零': 0, '〇': 0, '一': 1, '二': 2, '两': 2, '三': 3, '四': 4, '五': 5, '六': 6, '七': 7, '八': 8, '九': 9 };
+  const cnToInt = (tok) => {
+    if (!tok) return NaN;
+    if (/^\d+$/.test(tok)) return parseInt(tok, 10);
+    if (tok === '十') return 10;
+    if (tok.startsWith('十') && tok.length === 2 && (tok[1] in cnMap)) return 10 + cnMap[tok[1]];
+    if (tok.length === 2 && tok[1] === '十' && (tok[0] in cnMap)) return cnMap[tok[0]] * 10;
+    if (tok.length === 3 && tok[1] === '十' && (tok[0] in cnMap) && (tok[2] in cnMap)) return cnMap[tok[0]] * 10 + cnMap[tok[2]];
+    if ([...tok].every((c) => c in cnMap)) return parseInt([...tok].map((c) => cnMap[c]).join(''), 10);
+    return NaN;
+  };
+  return String(s || '').replace(/([零〇一二两三四五六七八九十]+)(?=\s*(?:年|月|日|号))/g, (m) => {
+    const n = cnToInt(m);
+    return Number.isFinite(n) ? String(n) : m;
+  });
+}
+
+function taShiftDateStr(baseStr, daysDelta) {
+  const dt = new Date(`${baseStr}T00:00:00Z`);
+  if (Number.isNaN(dt.getTime())) return baseStr;
+  dt.setUTCDate(dt.getUTCDate() + daysDelta);
+  return dt.toISOString().slice(0, 10);
+}
+
+function taParseTimeIntent(query, maxD) {
+  const latestY = maxD ? parseInt(maxD.slice(0, 4), 10) : 2026;
+  const norm = taNormalizeCnDateText(query);
+  const pad2 = (n) => String(parseInt(n, 10)).padStart(2, '0');
+  const pickY = (relY, yStr) => {
+    if (yStr) { const y = parseInt(yStr, 10); return y < 100 ? y + 2000 : y; }
+    if (relY === '去年') return latestY - 1;
+    if (relY === '前年') return latestY - 2;
+    return latestY;
+  };
+
+  let minDate = null, maxDate = null, exactDate = null, preferRecent = false, label = '', stripped = norm;
+  const ymdPat = '(?:(去年|前年|今年)\\s*)?(?:(20\\d{2})\\s*([年./-])\\s*)?(\\d{1,2})\\s*([月./-])\\s*(\\d{1,2})\\s*([日号])?';
+  const rangeRe = new RegExp(ymdPat + '\\s*(?:到|至|~|—|-)\\s*' + ymdPat);
+  const mRange = norm.match(rangeRe);
+  if (mRange) {
+    const mo1 = parseInt(mRange[4], 10), da1 = parseInt(mRange[6], 10);
+    const mo2 = parseInt(mRange[11], 10), da2 = parseInt(mRange[13], 10);
+    const valid1 = mo1 >= 1 && mo1 <= 12 && da1 >= 1 && da1 <= 31 && (mRange[2] || mRange[5] === '月' || mRange[7]);
+    const valid2 = mo2 >= 1 && mo2 <= 12 && da2 >= 1 && da2 <= 31 && (mRange[9] || mRange[12] === '月' || mRange[14]);
+    if (valid1 && valid2) {
+      const y1 = pickY(mRange[1], mRange[2]);
+      const y2 = pickY(mRange[8] || mRange[1], mRange[9] || mRange[2]);
+      minDate = `${y1}-${pad2(mo1)}-${pad2(da1)}`;
+      maxDate = `${y2}-${pad2(mo2)}-${pad2(da2)}`;
+      label = `${minDate} 至 ${maxDate}`;
+      stripped = norm.slice(0, mRange.index) + ' ' + norm.slice(mRange.index + mRange[0].length);
+      return { minDate, maxDate, exactDate, preferRecent, label, stripped };
+    }
+  }
+
+  const oneRe = new RegExp(ymdPat);
+  const mOne = norm.match(oneRe);
+  if (mOne) {
+    const mo = parseInt(mOne[4], 10), da = parseInt(mOne[6], 10);
+    const idx = mOne.index;
+    const afterTail = norm.slice(idx + mOne[0].length, idx + mOne[0].length + 8);
+    const beforeHead = norm.slice(Math.max(0, idx - 4), idx);
+    const hasDirAfter = /^\s*(?:以|之)?(?:后|前|来|起|为止)/.test(afterTail);
+    const isDecimalUnit = /^\s*(?:%|x|X|倍|万|亿|u|U|m|M|k|K|元|块)/.test(afterTail);
+    const isDateSep = Boolean(mOne[2] || mOne[5] === '月' || mOne[7] || ((mOne[5] === '-' || mOne[5] === '/') && !isDecimalUnit) || (mOne[5] === '.' && hasDirAfter && !isDecimalUnit));
+    if (mo >= 1 && mo <= 12 && da >= 1 && da <= 31 && isDateSep) {
+      const y = pickY(mOne[1], mOne[2]);
+      const dtStr = `${y}-${pad2(mo)}-${pad2(da)}`;
+      if (/^\s*(?:以|之)?(?:后|来|起|开始)/.test(afterTail) || /(?:从|自)\s*$/.test(beforeHead)) {
+        minDate = dtStr;
+        label = `${dtStr} 及之后`;
+        stripped = norm.slice(0, idx) + ' ' + norm.slice(idx + mOne[0].length).replace(/^\s*(?:以|之)?(?:后|来|起|开始)(?:的)?/, ' ');
+      } else if (/^\s*(?:以|之)?(?:前|为止)/.test(afterTail)) {
+        maxDate = dtStr;
+        label = `${dtStr} 及之前`;
+        stripped = norm.slice(0, idx) + ' ' + norm.slice(idx + mOne[0].length).replace(/^\s*(?:以|之)?(?:前|为止)(?:的)?/, ' ');
+      } else {
+        exactDate = dtStr;
+        label = `${dtStr} 前后`;
+        stripped = norm.slice(0, idx) + ' ' + norm.slice(idx + mOne[0].length);
+      }
+      return { minDate, maxDate, exactDate, preferRecent, label, stripped };
+    }
+  }
+
+  const moRangeRe = /(?:(去年|前年|今年)\s*)?(?:(20\d{2})\s*年\s*)?(\d{1,2})\s*月(?:份)?\s*(?:到|至|和|与|、|~|-)\s*(?:(去年|前年|今年)\s*)?(?:(20\d{2})\s*年\s*)?(\d{1,2})\s*月(?:份)?/;
+  const mMoRange = norm.match(moRangeRe);
+  if (mMoRange && parseInt(mMoRange[3], 10) >= 1 && parseInt(mMoRange[3], 10) <= 12 && parseInt(mMoRange[6], 10) >= 1 && parseInt(mMoRange[6], 10) <= 12) {
+    const y1 = pickY(mMoRange[1], mMoRange[2]);
+    const y2 = pickY(mMoRange[4] || mMoRange[1], mMoRange[5] || mMoRange[2]);
+    minDate = `${y1}-${pad2(mMoRange[3])}-01`;
+    maxDate = `${y2}-${pad2(mMoRange[6])}-31`;
+    label = `${y1}年${mMoRange[3]}月 至 ${y2}年${mMoRange[6]}月`;
+    stripped = norm.slice(0, mMoRange.index) + ' ' + norm.slice(mMoRange.index + mMoRange[0].length);
+    return { minDate, maxDate, exactDate, preferRecent, label, stripped };
+  }
+
+  const moRe = /(?:(去年|前年|今年)\s*)?(?:(20\d{2})\s*年\s*)?(\d{1,2})\s*月(?:份)?(初|中旬|下旬|底)?/;
+  const mMo = norm.match(moRe);
+  if (mMo) {
+    const mo = parseInt(mMo[3], 10);
+    const beforeC = norm.slice(Math.max(0, mMo.index - 2), mMo.index);
+    if (mo >= 1 && mo <= 12 && !/个$/.test(beforeC)) {
+      const y = pickY(mMo[1], mMo[2]);
+      const tail = norm.slice(mMo.index + mMo[0].length, mMo.index + mMo[0].length + 6);
+      const sub = mMo[4] || '';
+      const ms = sub === '中旬' ? `${y}-${pad2(mo)}-11` : (sub === '下旬' || sub === '底' ? `${y}-${pad2(mo)}-21` : `${y}-${pad2(mo)}-01`);
+      const me = sub === '初' ? `${y}-${pad2(mo)}-10` : (sub === '中旬' ? `${y}-${pad2(mo)}-20` : `${y}-${pad2(mo)}-31`);
+      if (/^\s*(?:以|之)?(?:后|来|起|开始)/.test(tail)) {
+        minDate = ms;
+        label = `${y}-${pad2(mo)} 及之后`;
+        stripped = norm.slice(0, mMo.index) + ' ' + norm.slice(mMo.index + mMo[0].length).replace(/^\s*(?:以|之)?(?:后|来|起|开始)(?:的)?/, ' ');
+      } else if (/^\s*(?:以|之)?前/.test(tail)) {
+        maxDate = me;
+        label = `${y}-${pad2(mo)} 及之前`;
+        stripped = norm.slice(0, mMo.index) + ' ' + norm.slice(mMo.index + mMo[0].length).replace(/^\s*(?:以|之)?前(?:的)?/, ' ');
+      } else {
+        minDate = ms; maxDate = me;
+        label = `${y}年${mo}月${sub}`;
+        stripped = norm.slice(0, mMo.index) + ' ' + norm.slice(mMo.index + mMo[0].length);
+      }
+      return { minDate, maxDate, exactDate, preferRecent, label, stripped };
+    }
+  }
+
+  const mRel = norm.match(/(近半年|最近半年|近6个月|近[两2]个月|最近[两2]个月|近[一1]?个月|最近[一1]?个月|最近|近期|最新|这几天|前几天|这段时间|这阵子)/);
+  if (mRel && maxD) {
+    const days = /半年|6个月/.test(mRel[1]) ? 180 : (/2|两/.test(mRel[1]) ? 60 : 30);
+    minDate = taShiftDateStr(maxD, -days);
+    preferRecent = true;
+    label = `${mRel[1]}（${minDate} 至 ${maxD}）`;
+    stripped = norm.replace(mRel[0], ' ');
+    return { minDate, maxDate, exactDate, preferRecent, label, stripped };
+  }
+
+  const mYr = norm.match(/(?:(20\d{2})\s*年|(今年|去年|前年))(?:\s*(以|之)?([前后]))?/);
+  if (mYr) {
+    const y = mYr[1] ? parseInt(mYr[1], 10) : (mYr[2] === '去年' ? latestY - 1 : (mYr[2] === '前年' ? latestY - 2 : latestY));
+    const dir = mYr[4] || '';
+    if (dir === '后') { minDate = `${y}-01-01`; label = `${y}年及之后`; }
+    else if (dir === '前') { maxDate = `${y}-12-31`; label = `${y}年及之前`; }
+    else { minDate = `${y}-01-01`; maxDate = `${y}-12-31`; label = `${y}年`; }
+    stripped = norm.replace(mYr[0], ' ');
+  }
+  return { minDate, maxDate, exactDate, preferRecent, label, stripped };
+}
+
 function taExtractQueryTerms(query) {
   const q = String(query || '').trim();
   const terms = [];
@@ -21320,13 +21470,10 @@ function taExtractQueryTerms(query) {
     if (clean.length >= 2) addTerm(clean, 3.2);
   }
 
-  const stopRe = /(请问|如何|怎么|怎样|什么|为什么|一下|老师|导师|能否|可以|帮我|总结|分析|介绍|讲讲|说说|关于|这个|那个|我们|你们|自己|核心|观点|建议|一下|有哪些|是不是|到底|应该)/g;
+  const stopRe = /(请问|如何|怎么|怎样|什么|为什么|一下|老师|导师|能否|可以|帮我|总结|归纳|概括|梳理|分析|介绍|讲讲|说说|聊聊|关于|这个|那个|我们|你们|自己|核心|建议|有哪些|是不是|到底|应该|内容|推文|动态|发言|帖子|发了|写了|说过|讲过|聊了|提到|之后|以后|之前|以前|以来|至今|时候|期间|主要)/g;
   const zhOnly = q.replace(stopRe, ' ').match(/[\u4e00-\u9fff]+/g) || [];
   for (const seg of zhOnly) {
-    if (seg.length === 1) {
-      addTerm(seg, 0.9);
-      continue;
-    }
+    if (seg.length < 2) continue;
     if (seg.length >= 2 && seg.length <= 4) addTerm(seg, 3.0);
     for (let i = 0; i <= seg.length - 2; i++) addTerm(seg.slice(i, i + 2), 2.2);
     for (let i = 0; i <= seg.length - 3; i++) addTerm(seg.slice(i, i + 3), 2.8);
@@ -21334,46 +21481,159 @@ function taExtractQueryTerms(query) {
   return terms;
 }
 
-async function taRetrieveRagContext(query, topK = 5, maxChars = 1550) {
+function taPickChronologicalHighlights(cands, limit = 11) {
+  const ordered = cands.slice().sort((a, b) => String(a.d || '').localeCompare(String(b.d || '')) || String(a.id || '').localeCompare(String(b.id || '')));
+  if (ordered.length <= limit) return ordered;
+  const chosen = [];
+  const seen = new Set();
+  const splitIdx = Math.max(1, Math.floor(ordered.length * 0.9));
+  const headPool = ordered.slice(0, splitIdx);
+  const tailPool = ordered.slice(splitIdx);
+  const buckets = Math.max(1, limit - 2);
+  for (let b = 0; b < buckets; b++) {
+    const lo = Math.floor(b * headPool.length / buckets);
+    const hi = Math.max(lo + 1, Math.floor((b + 1) * headPool.length / buckets));
+    let best = headPool[lo];
+    for (let i = lo + 1; i < hi; i++) {
+      const cur = headPool[i];
+      const curScore = (Number(cur.w) || 1.0) * 100 + Math.min(String(cur.x || '').length, 220) * 0.1;
+      const bestScore = (Number(best.w) || 1.0) * 100 + Math.min(String(best.x || '').length, 220) * 0.1;
+      if (curScore > bestScore) best = cur;
+    }
+    if (best && !seen.has(best.id)) { chosen.push(best); seen.add(best.id); }
+  }
+  const tailRanked = tailPool.slice().sort((a, b) => (Number(b.w) || 1.0) - (Number(a.w) || 1.0) || String(b.d || '').localeCompare(String(a.d || '')));
+  for (const item of tailRanked) {
+    if (chosen.length >= limit) break;
+    if (!seen.has(item.id)) { chosen.push(item); seen.add(item.id); }
+  }
+  const lastD = ordered[ordered.length - 1].d;
+  if (lastD && !chosen.some((c) => c.d === lastD)) {
+    const lastDayTop = ordered.filter((c) => c.d === lastD).sort((a, b) => (Number(b.w) || 1.0) - (Number(a.w) || 1.0))[0];
+    if (lastDayTop) {
+      if (chosen.length >= limit) chosen[chosen.length - 1] = lastDayTop;
+      else chosen.push(lastDayTop);
+    }
+  }
+  chosen.sort((a, b) => String(a.d || '').localeCompare(String(b.d || '')) || String(a.id || '').localeCompare(String(b.id || '')));
+  return chosen;
+}
+
+async function taRetrieveRagContext(query, topK = 11, maxChars = 3000) {
   const docs = await taLoadRagIndex();
-  if (!docs || !docs.length) return { block: '', count: 0 };
+  if (!docs || !docs.length) return { block: '', count: 0, note: '' };
 
-  const terms = taExtractQueryTerms(query);
-  const scored = [];
+  const datedDocs = docs.filter((d) => (d.k === 'T' || d.k === 'A') && d.d && d.d >= '2015-01-01');
+  const sortedDates = datedDocs.map((d) => d.d).sort();
+  const minD = sortedDates[0] || '';
+  const maxD = sortedDates[sortedDates.length - 1] || '';
+  const ti = taParseTimeIntent(query, maxD);
+  const terms = taExtractQueryTerms(ti.stripped);
+  const hasTime = Boolean(ti.minDate || ti.maxDate || ti.exactDate || ti.preferRecent);
 
-  for (let i = 0; i < docs.length; i++) {
-    const d = docs[i];
-    const titleL = String(d.t || '').toLowerCase();
-    const bodyL = String(d.x || '').toLowerCase();
-    let score = 0;
-    let matchedTerms = 0;
+  if (ti.minDate && maxD && ti.minDate > maxD) {
+    return {
+      block: '',
+      count: 0,
+      note: `本导师资料库收录时间范围为 ${minD} 至 ${maxD}。用户询问的「${ti.label}」晚于本库最新收录日期 ${maxD}，库内确实没有该日期之后的新内容，请如实告知“本库最新仅收录到 ${maxD}”，绝不要拿早期旧推文充数或编造！`
+    };
+  }
 
-    for (let j = 0; j < terms.length; j++) {
-      const tk = terms[j].k;
-      const tw = terms[j].w;
-      const inTitle = titleL && titleL.indexOf(tk) !== -1;
-      const inBody = bodyL && bodyL.indexOf(tk) !== -1;
-      if (inTitle || inBody) {
-        matchedTerms++;
-        score += tw * (inTitle ? 2.1 : 1.0);
+  let picked = [];
+  let note = maxD ? `本库资料覆盖时间：${minD} 至 ${maxD}。` : '';
+  let perDocCap = 340;
+
+  if (hasTime && datedDocs.length) {
+    let inWin = [];
+    if (ti.exactDate) {
+      inWin = datedDocs.filter((d) => d.d === ti.exactDate);
+      if (!inWin.length) {
+        const lo = taShiftDateStr(ti.exactDate, -2);
+        const hi = taShiftDateStr(ti.exactDate, 2);
+        inWin = datedDocs.filter((d) => d.d >= lo && d.d <= hi);
+      }
+    } else {
+      inWin = datedDocs.filter((d) => (!ti.minDate || d.d >= ti.minDate) && (!ti.maxDate || d.d <= ti.maxDate));
+    }
+
+    if (!inWin.length) {
+      return {
+        block: '',
+        count: 0,
+        note: `本库收录范围为 ${minD} 至 ${maxD}，但在「${ti.label}」时段内未收录到相关资料，请如实说明，勿拿更早年份内容冒充。`
+      };
+    }
+
+    if (!terms.length) {
+      picked = taPickChronologicalHighlights(inWin, topK);
+      perDocCap = 225;
+      note = `本库收录周期 ${minD} 至 ${maxD}，时间筛选「${ti.label}」命中 ${inWin.length} 条资料，按时间线展示代表内容如下：`;
+    } else {
+      const scored = [];
+      for (const d of inWin) {
+        const titleL = String(d.t || '').toLowerCase();
+        const bodyL = String(d.x || '').toLowerCase();
+        let score = 0, matched = 0;
+        for (const t of terms) {
+          const inT = titleL && titleL.indexOf(t.k) !== -1;
+          const inB = bodyL && bodyL.indexOf(t.k) !== -1;
+          if (inT || inB) { matched++; score += t.w * (inT ? 2.0 : 1.0); }
+        }
+        if (score > 0) {
+          const lenNorm = 1 / (0.75 + 0.25 * (Math.max(40, bodyL.length) / 260));
+          scored.push({ d, s: (score + Math.min(matched, 5) * 0.6) * (Number(d.w) || 1.0) * lenNorm });
+        }
+      }
+      scored.sort((a, b) => b.s - a.s);
+      if (scored.length) {
+        picked = scored.slice(0, topK).map((x) => x.d);
+        picked.sort((a, b) => String(a.d || '').localeCompare(String(b.d || '')));
+        perDocCap = 250;
+        note = `时间范围「${ti.label}」（共 ${inWin.length} 条）内命中 ${scored.length} 条相关资料，按时间顺序展示最相关的 ${picked.length} 条：`;
+      } else {
+        picked = taPickChronologicalHighlights(inWin, 6);
+        perDocCap = 220;
+        note = `注意：在「${ti.label}」（共 ${inWin.length} 条）内未检索到直接包含该关键词的记录，以下仅展示该时段实际动态；请先如实说明该时段未直接提过该词，再客观介绍该时段真实内容，绝不拿早期内容混淆！`;
+      }
+    }
+  } else {
+    const scored = [];
+    for (let i = 0; i < docs.length; i++) {
+      const d = docs[i];
+      const titleL = String(d.t || '').toLowerCase();
+      const bodyL = String(d.x || '').toLowerCase();
+      const dateL = String(d.d || '').toLowerCase();
+      let score = 0;
+      let matchedTerms = 0;
+
+      for (let j = 0; j < terms.length; j++) {
+        const tk = terms[j].k;
+        const tw = terms[j].w;
+        const inTitle = titleL && titleL.indexOf(tk) !== -1;
+        const inBody = bodyL && bodyL.indexOf(tk) !== -1;
+        const inDate = tk.length >= 4 && dateL && dateL.indexOf(tk) !== -1;
+        if (inTitle || inBody || inDate) {
+          matchedTerms++;
+          score += tw * (inTitle ? 2.1 : 1.0);
+        }
+      }
+
+      if (score > 0) {
+        const lenNorm = 1 / (0.75 + 0.25 * (Math.max(40, bodyL.length) / 260));
+        const baseW = Number(d.w) || 1.0;
+        const finalScore = (score + Math.min(matchedTerms, 5) * 0.6) * baseW * lenNorm;
+        scored.push({ d, s: finalScore });
       }
     }
 
-    if (score > 0) {
-      const lenNorm = 1 / (0.75 + 0.25 * (Math.max(40, bodyL.length) / 260));
-      const baseW = Number(d.w) || 1.0;
-      const finalScore = (score + Math.min(matchedTerms, 5) * 0.6) * baseW * lenNorm;
-      scored.push({ d, s: finalScore });
+    scored.sort((a, b) => b.s - a.s);
+    picked = scored.slice(0, topK).map((x) => x.d);
+
+    if (!picked.length) {
+      picked = docs.filter((d) => d.k === 'M' || d.k === 'H').slice(0, 6);
+      if (!picked.length) picked = docs.slice(0, 6);
     }
-  }
-
-  scored.sort((a, b) => b.s - a.s);
-  let picked = scored.slice(0, topK).map((x) => x.d);
-
-  // Fallback for broad overview prompts: pick top mental models / handbook topics of THIS KOL
-  if (!picked.length) {
-    picked = docs.filter((d) => d.k === 'M' || d.k === 'H').slice(0, 4);
-    if (!picked.length) picked = docs.slice(0, 4);
+    perDocCap = 300;
   }
 
   const kindMap = { M: '思维模型', H: '专题精研', A: '深度长文', T: '实盘原推' };
@@ -21384,8 +21644,8 @@ async function taRetrieveRagContext(query, topK = 5, maxChars = 1550) {
     const d = picked[i];
     const tag = kindMap[d.k] || '资料';
     const head = `[${i + 1}][${tag}${d.id ? ' ' + d.id : ''}${d.d ? ' | ' + d.d : ''}${d.t ? ' | ' + d.t : ''}]`;
-    const remain = maxChars - used - head.length - 4;
-    if (remain < 70) break;
+    const remain = Math.min(perDocCap, maxChars - used - head.length - 4);
+    if (remain < 55) break;
     const body = String(d.x || '').slice(0, remain);
     const entry = `${head} ${body}`;
     lines.push(entry);
@@ -21393,12 +21653,12 @@ async function taRetrieveRagContext(query, topK = 5, maxChars = 1550) {
     kept++;
   }
 
-  return { block: lines.join('\n'), count: kept };
+  return { block: lines.join('\n'), count: kept, note };
 }
 
 function taGetCacheKey(q) {
   const norm = String(q || '').trim().toLowerCase().replace(/\s+/g, ' ');
-  return `ta_rag_v1:${TA_AI_CONFIG.kol}:${norm}`;
+  return `ta_rag_v5:${TA_AI_CONFIG.kol}:${norm}`;
 }
 
 function taSyncInputState() {
@@ -21686,11 +21946,11 @@ async function sendAiMessage(presetOverride) {
   }, 1000);
 
   try {
-    const rag = await taRetrieveRagContext(q, 5, 1550);
+    const rag = await taRetrieveRagContext(q, 11, 3000);
     const metaBar = `<div class="ta-rag-meta"><span>📚 已检索本导师 ${rag.count} 条真实资料</span><span>第 ${turnNum}/${maxTurns} 轮</span></div>`;
     const augmentedUser = rag.block
-      ? `【本导师资料库真实检索片段（仅限本轮作答依据）】\n${rag.block}\n\n【用户问题】\n${q}`
-      : `【本导师资料库未命中直接条目，请仅据专属体系谨慎作答，未提及处请直说】\n【用户问题】\n${q}`;
+      ? `【检索范围说明】${rag.note || ''}\n【本导师资料库真实检索片段（仅限本轮作答依据）】\n${rag.block}\n\n【用户问题】\n${q}`
+      : `【${rag.note || '本导师资料库未命中直接条目，请仅据专属体系谨慎作答，未提及处请直说'}】\n【用户问题】\n${q}`;
 
     const priorMsgs = taAiHistory.slice(-4).map((m) => ({
       role: m.role,
