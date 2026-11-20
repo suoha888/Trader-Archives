@@ -12,7 +12,7 @@
 
 | # | 导师 | Twitter Handle | 核心方向 | 收录规模（清洗 / 原推） | 在线阅读站 | GitHub 开源分类存档 |
 | :-: | :--- | :--- | :--- | :---: | :---: | :---: |
-| 01 | **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 实盘交易推文整理（6大实战板块 + 实盘记录归档） | **3,420 / 7,303** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 分类存档](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data/domains) |
+| 01 | **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 实盘交易推文整理（7大板块 · 28个自然小节） | **3,420 / 7,303** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 分类存档](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data/domains) |
 | 02 | **Wei Paul** | [@coolish](https://x.com/coolish) | BitMEX 时光机、杠铃博弈与逆向周期 | **2,579 / 2,581** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/coolish/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/coolish/data) |
 | 03 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 裸K战法与跨市场宏观博弈全书（含13篇长文） | **2,718 / 2,730** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/wallstreet0name/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data) |
 | 04 | **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 基差套利与量化做市实战大典（含4篇万字研报） | **670 / 673** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/yourquantguy/) | [📂 浏览数据湖](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data) |
@@ -35,14 +35,14 @@
 ### 1. 【最新改版】allincrypto 熬鹰资本（[@thankUcrypto](https://x.com/thankUcrypto)）
 - **定位**：OKX / 币安实盘带单冠军 · 从 13,000 元起步做到千万实盘的公开推文整理
 - **规模**：从全周期 **7,303** 条历史记录中剔除转推他人内容与日常水回复，有序收录 **3,420** 篇本人原创推文（含 **1,100** 篇精选干货）与 **549** 张关联实盘配图
-- **目录结构（7 大有序分类，每个文件内按 1-2-3 逻辑排好序）**：
-  - `01 仓位管理`（小资金怎么起步 / 怎么降杠杆 / 资金大了怎么换打法）
-  - `02 行情与开单`（大周期与均线 / 趋势与震荡的取舍 / 右侧追突破与立刻认错）
-  - `03 山寨与做空`（只做龙头，不做补涨 / 区分交易员和喊单 KOL / 做空山寨与避开庄币）
-  - `04 事件与美股`（事件驱动怎么抓 / 转战美股与跨市场 / 宏观数据与政策节点）
-  - `05 止损与出金`（合约底层风控 / 控回撤与止损纪律 / 出金落袋）
-  - `06 心态与带单`（20 万本金门槛与别借网贷 / 实盘带单真相 / 交易没天才，全靠熬和忘）
-  - `07 实盘记录与其他`（盘中开平仓动态、+100WU/-100WU/10M 里程碑与个人经历完整归档）
+- **目录结构（7 大板块 · 28 个自然小节，4 / 3 / 4 / 5 / 3 / 5 / 4，每个文件内按 1-2-3 逻辑排好序）**：
+  - `01 仓位管理`（4 节：小资金怎么起步 / 1WU 实盘直播挑战 / 怎么降杠杆与控仓位 / 资金大了怎么换打法）
+  - `02 行情与开单`（3 节：大周期与均线 / 趋势与震荡的取舍 / 右侧追突破与立刻认错）
+  - `03 山寨与做空`（4 节：只做龙头，不做补涨 / Meme 币与市值锚定 / 区分交易员和喊单 KOL / 做空山寨、多空比与避开庄币）
+  - `04 事件与美股`（5 节：事件驱动与热点打法 / 交易所上新与活动套利 / 美股 AI 与科技股 / 存储芯片与半导体周期 / 宏观数据、利率与大宗商品）
+  - `05 止损与出金`（3 节：合约底层风控 / 控回撤与止损纪律 / 出金落袋）
+  - `06 心态与带单`（5 节：20 万本金门槛与别借网贷 / OKX 与币安带单实录 / 跟单纪律、马丁真相与舆论应对 / 交易没天才，全靠熬和忘 / 反对伪理论与认清能力圈）
+  - `07 实盘记录与其他`（4 节：盈亏里程碑与交割晒单 / 个人经历与生活随笔 / 行业观察与圈内点评 / 盘中实时看盘记录）
 
 ### 2. Wei Paul（[@coolish](https://x.com/coolish)）
 > 🔗 [在线阅读](https://suoha888.github.io/Trader-Archives/coolish/) · 📂 [开源数据湖](https://github.com/suoha888/Trader-Archives/tree/main/coolish/data)
