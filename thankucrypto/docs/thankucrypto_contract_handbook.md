@@ -2,7 +2,7 @@
 
 > 👤 **站主与整理维护**：**梭哈.AI**（[@SUOHA_AI](https://x.com/SUOHA_AI)）· [关注站主 X 主页 ↗](https://x.com/SUOHA_AI) · 🌐 [在线阅读站](https://suoha888.github.io/Trader-Archives/thankucrypto/)
 > **X 原推收录说明**：从 @thankUcrypto 全周期 7,303 条历史记录中剔除转推他人内容与日常水回复，整理保留 **3,420 篇** 本人原创推文（含 S 级深度长推 290 篇、A 级高价值经验 810 篇），按内容密度自然分为 **7 大板块、28 个小节（4 / 3 / 4 / 5 / 3 / 5 / 4）**。
-> **跨平台扩展档案**：本仓库已同步新增 **890 篇早期微博独占时间轴**（[`../data/thankucrypto_weibo.csv`](../data/thankucrypto_weibo.csv)，`2022-05`–`2025-05`，已剥离转发并与 X 去重）及 **3 场一手深度专访与电台实录（共 40,841 字）**：
+> **跨平台扩展档案**：本仓库已同步新增 **943 篇早期微博独占时间轴**（[`../data/thankucrypto_weibo.csv`](../data/thankucrypto_weibo.csv)，`2022-05`–`2025-05`，含 42 篇《65 条经典长文》S 级补遗，已剥离转发并与 X 去重）及 **3 场一手深度专访与电台实录（共 40,841 字）**：
 > - [`interviews/01_okx_interview_20250624.md`](interviews/01_okx_interview_20250624.md) — OKX VIP《对话交易员》第一期（13,914 字）
 > - [`interviews/02_binance_radio_20250718.md`](interviews/02_binance_radio_20250718.md) — 币安华语加密电台专访（Odaily 官方精编 3,102 字 + 73.5 分钟直播原声完整逐字稿 19,778 字）
 > - [`interviews/03_okx_revisit_20251013.md`](interviews/03_okx_revisit_20251013.md) — OKX VIP《对话交易员》复采篇（4,047 字）
