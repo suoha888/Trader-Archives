@@ -391,6 +391,77 @@
             box-shadow: var(--shadow-card);
         }
 
+        /* Single-Piece Monograph / PDF Archive Section */
+        .monograph-section {
+            margin-bottom: 64px;
+        }
+        .monograph-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-main);
+            border-radius: 16px;
+            padding: 28px 30px;
+            box-shadow: var(--shadow-card);
+            transition: all 0.25s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+        }
+        .monograph-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--brand-amber);
+            box-shadow: var(--shadow-card-hover);
+        }
+        .monograph-main {
+            flex: 1;
+            min-width: 0;
+        }
+        .monograph-main .kol-book-title {
+            min-height: auto;
+            margin-bottom: 10px;
+        }
+        .monograph-main .kol-tags {
+            min-height: auto;
+            margin-bottom: 12px;
+        }
+        .monograph-main .kol-summary {
+            margin-bottom: 0;
+        }
+        .monograph-side {
+            width: 260px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-top: 24px;
+        }
+        .monograph-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            padding: 12px;
+            background: var(--bg-card-alt);
+            border-radius: 10px;
+            border: 1px solid var(--border-light);
+            text-align: center;
+        }
+        .monograph-side .btn {
+            width: 100%;
+        }
+        @media (max-width: 860px) {
+            .monograph-card {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 20px;
+                padding: 24px 20px;
+            }
+            .monograph-side {
+                width: 100%;
+                padding-top: 0;
+            }
+        }
+
         /* Footer */
         .footer {
             margin-top: auto;
@@ -1634,6 +1705,65 @@
             </div>
         </section>
 
+        <!-- 精选单篇典藏 · PDF 专刊 -->
+        <section class="monograph-section" id="monographs">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">
+                        <span>📜</span> 精选单篇典藏 · PDF 专刊
+                    </h2>
+                </div>
+                <div class="section-desc">
+                    实战派交易员经典单篇长文与高清重排版 PDF，点开即读，支持离线保存
+                </div>
+            </div>
+
+            <div class="monograph-card">
+                <div class="kol-card-ribbon">📄 单篇典藏 · 含 14 页高清 PDF</div>
+                <div class="monograph-main">
+                    <div class="kol-card-top" style="margin-bottom: 14px;">
+                        <img src="laoemo/images/laoemo_avatar.jpg" alt="老恶魔头像" class="kol-avatar" loading="lazy" decoding="async">
+                        <div class="kol-identity">
+                            <div class="kol-name-row">
+                                <span class="kol-name">老恶魔</span>
+                            </div>
+                            <div class="kol-handle">2025.03.28 原作分享 · 币圈八年合约实战经验回顾</div>
+                        </div>
+                    </div>
+
+                    <h3 class="kol-book-title">《老恶魔谈合约》完整典藏版</h3>
+
+                    <div class="kol-tags">
+                        <span class="kol-tag">资金管理</span>
+                        <span class="kol-tag">短线与中线</span>
+                        <span class="kol-tag">止盈止损与滚仓</span>
+                        <span class="kol-tag">35倍杠杆红线</span>
+                        <span class="kol-tag">出金与防磨损</span>
+                        <span class="kol-tag">6问核心答疑</span>
+                    </div>
+
+                    <p class="kol-summary">
+                        八年主流币合约实战方法复盘：系统拆解本金分份与利润落袋、短中线策略取舍、35 倍实际杠杆红线、浮盈滚仓纪律、手续费磨损控制、C2C 出金避坑与赛道反思，附 6 问核心答疑。点开即全端顺畅在线阅读，页面最底部提供 14 页 A4 高清重排版 PDF 免费下载。
+                    </p>
+                </div>
+
+                <div class="monograph-side">
+                    <div class="monograph-stats">
+                        <div>
+                            <div class="ks-val">9,555 字</div>
+                            <div class="ks-lbl">完整正文 + 6 问</div>
+                        </div>
+                        <div>
+                            <div class="ks-val">14 页 PDF</div>
+                            <div class="ks-lbl">高清重排版</div>
+                        </div>
+                    </div>
+                    <a href="laoemo/" class="btn btn-primary">📖 在线阅读全文 (laoemo/)</a>
+                    <a href="laoemo/laoemo-contracts.pdf" download="老恶魔谈合约_高清重排版.pdf" class="btn btn-secondary">⬇️ 下载高清 PDF</a>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <!-- 页脚 -->
@@ -1677,6 +1807,8 @@
                 <a href="agintender/">agintender 合约算法</a>
                 <span>·</span>
                 <a href="ztzzbtc/">ZTZZ 主观做市</a>
+                <span>·</span>
+                <a href="laoemo/">老恶魔谈合约</a>
                 <span>·</span>
                 <a href="https://github.com/suoha888/Trader-Archives" target="_blank" rel="noopener noreferrer">GitHub 源码仓库</a>
                 <span>·</span>

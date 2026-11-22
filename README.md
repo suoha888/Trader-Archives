@@ -31,6 +31,14 @@
 
 ---
 
+## 📜 精选单篇典藏 · PDF 专刊
+
+| # | 作品 | 作者 | 内容概要 | 规模 | 在线阅读 | 高清 PDF |
+| :-: | :--- | :--- | :--- | :---: | :---: | :---: |
+| 01 | **《老恶魔谈合约》完整典藏版** | 老恶魔（2025.03.28） | 八年主流币合约经验谈：资金管理、短中线、止盈止损、滚仓、杠杆红线、防磨损与出金，附 6 问核心答疑 | **9,555 字 · 14 页** | [📖 在线阅读](https://suoha888.github.io/Trader-Archives/laoemo/) | [⬇️ 下载 PDF](https://suoha888.github.io/Trader-Archives/laoemo/laoemo-contracts.pdf) |
+
+---
+
 ## 🌟 重点导师深度介绍
 
 ### 1. 【全平台扩充】allincrypto 熬鹰资本（[@thankUcrypto](https://x.com/thankUcrypto)）
@@ -92,7 +100,8 @@ Trader-Archives/
 ├── web3feng/                    # 风无向 工作室产业化与长尾量化全书（5,287 / 5,351）
 ├── 0xmagnolia/                  # magnolia 蓝筹 Alpha 与一级链上狂飙全书（1,237 / 1,249）
 ├── agintender/                  # danny 暗流博弈与二级合约算法大典（3,231 / 3,277 + 92长文）
-└── ztzzbtc/                     # ZTZZ 主观做市、空头绝杀与6.7万字生存指南（261 / 886）
+├── ztzzbtc/                     # ZTZZ 主观做市、空头绝杀与6.7万字生存指南（261 / 886）
+└── laoemo/                      # 📜【单篇典藏】《老恶魔谈合约》完整典藏版在线阅读页 + 14 页高清重排版 PDF
 ```
 
 ---

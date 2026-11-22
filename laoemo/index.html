@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《老恶魔谈合约》完整典藏版 | 在线阅读 &amp; 高清 PDF 下载 — Trader-Archives</title>
+  <meta name="description" content="《老恶魔谈合约》完整典藏版（约 9,555 字 + 6 问核心答疑）：老恶魔八年主流币合约实战经验回顾，涵盖资金管理、短中线策略、止盈止损、滚仓、杠杆红线、防磨损与出金方法。支持全端在线顺畅阅读与 14 页高清重排版 PDF 免费下载。">
+  <meta property="og:title" content="《老恶魔谈合约》完整典藏版 — Trader-Archives">
+  <meta property="og:description" content="老恶魔八年合约实战经验回顾（约 9,555 字 + 核心答疑），全端在线阅读，页面底部提供 14 页高清重排版 PDF 免费下载。">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon.png?v=suoha">
+  <link rel="shortcut icon" href="../favicon.ico?v=suoha">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png?v=suoha">
+  <style>
+    :root {
+      --bg-page: #FAF8F3;
+      --bg-page-deep: #F3EFE4;
+      --bg-paper: #FDFBF7;
+      --bg-card: #FFFFFF;
+      --bg-soft: #F3EFE6;
+      --bg-amber-soft: #FEF7E6;
+      --border-main: #EAE2D2;
+      --border-light: #F2ECE0;
+      --border-amber: #D97706;
+      --text-main: #1A1A1A;
+      --text-heading: #111827;
+      --text-sub: #4B5563;
+      --text-muted: #78716C;
+      --brand-amber: #B45309;
+      --brand-amber-hover: #92400E;
+      --brand-amber-light: #FEF3C7;
+      --shadow-paper: 0 6px 28px rgba(31, 27, 22, 0.055);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      line-height: 1.85;
+      font-size: 16.5px;
+      letter-spacing: 0.02em;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Sticky Top Navigation Bar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: linear-gradient(90deg, #92400E, #B45309, #D97706);
+      color: #FFFFFF;
+      box-shadow: 0 2px 10px rgba(31, 27, 22, 0.12);
+    }
+
+    .top-bar-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .top-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #FEF3C7;
+      text-decoration: none;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .top-back:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+
+    .top-title {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .top-download-jump {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 12.5px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .top-download-jump:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 2.5px;
+      background: rgba(255, 255, 255, 0.18);
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: #FEF3C7;
+      transition: width 0.08s linear;
+    }
+
+    /* Main Paper Container */
+    .page-wrap {
+      width: 100%;
+      max-width: 880px;
+      margin: 28px auto 48px;
+      padding: 0 16px;
+      flex: 1;
+    }
+
+    .paper-sheet {
+      background-color: var(--bg-paper);
+      border: 1px solid var(--border-main);
+      border-radius: 16px;
+      padding: 40px 44px 44px;
+      box-shadow: var(--shadow-paper);
+    }
+
+    /* Header Block */
+    .eyebrow-wrap {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .eyebrow-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 14px;
+      border-radius: 999px;
+      background: rgba(180, 83, 9, 0.08);
+      border: 1px solid rgba(180, 83, 9, 0.22);
+      color: var(--brand-amber);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      font-family: "Noto Serif SC", "PingFang SC", "Microsoft YaHei", serif;
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--text-heading);
+      text-align: center;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--border-amber);
+      margin-bottom: 16px;
+      letter-spacing: 0.04em;
+      line-height: 1.35;
+    }
+
+    .meta-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px 10px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+    }
+    .meta-strip span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      background: #F7F4EC;
+      border: 1px solid #EAE3D5;
+      border-radius: 999px;
+    }
+
+    /* Author Profile Banner */
+    .author-hero {
+      margin: 0 auto 18px;
+      text-align: center;
+    }
+
+    .author-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--brand-amber);
+      background-color: var(--brand-amber-light);
+      padding: 3px 13px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      letter-spacing: 0.05em;
+    }
+
+    .author-banner {
+      width: 100%;
+      max-width: 660px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 12px;
+      border: 1.5px solid #E2E8F0;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    }
+
+    /* Disclaimer & Editor Strip */
+    .disclaimer-box {
+      background-color: var(--bg-amber-soft);
+      border-left: 4px solid var(--border-amber);
+      padding: 13px 18px;
+      margin: 16px 0 12px;
+      color: #78350F;
+      font-size: 13.5px;
+      line-height: 1.75;
+      border-radius: 0 8px 8px 0;
+    }
+    .disclaimer-box strong {
+      color: #92400E;
+    }
+
+    .editor-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 14px;
+      margin-bottom: 24px;
+      background-color: #F7F4EC;
+      border: 1px solid #EAE3D5;
+      border-radius: 10px;
+    }
+
+    .editor-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .editor-avatar-sm {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid var(--border-amber);
+      flex-shrink: 0;
+    }
+
+    .editor-text {
+      font-size: 13.5px;
+      color: var(--text-sub);
+      line-height: 1.45;
+    }
+    .editor-text strong {
+      color: var(--text-heading);
+      font-weight: 700;
+    }
+    .editor-text a {
+      color: var(--brand-amber);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .editor-text a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mode Switcher & Quick TOC */
+    .toolbar-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-main);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 28px;
+    }
+
+    .mode-switch {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .mode-btn {
+      flex: 1;
+      min-width: 190px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 9px 14px;
+      border-radius: 9px;
+      border: 1px solid var(--border-main);
+      background: var(--bg-page);
+      color: var(--text-sub);
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .mode-btn:hover {
+      border-color: var(--border-amber);
+      color: var(--brand-amber);
+    }
+
+    .mode-btn.active {
+      background: var(--brand-amber);
+      border-color: var(--brand-amber);
+      color: #FFFFFF;
+      box-shadow: 0 2px 8px rgba(180, 83, 9, 0.22);
+    }
+
+    .toc-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border-main);
+    }
+
+    .toc-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-right: 4px;
+    }
+
+    .toc-pill {
+      display: inline-block;
+      padding: 3px 10px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #544D42;
+      background: var(--bg-page-deep);
+      border: 1px solid var(--border-main);
+      border-radius: 999px;
+      text-decoration: none;
+      transition: all 0.18s ease;
+    }
+    .toc-pill:hover {
+      background: var(--brand-amber-light);
+      border-color: rgba(180, 83, 9, 0.35);
+      color: var(--brand-amber);
+    }
+    .toc-pill.pill-pdf {
+      background: #FFFBEB;
+      border-color: #FCD34D;
+      color: var(--brand-amber);
+    }
+
+    /* Article Typography (1:1 faithful to finalized PDF) */
+    .article-body h2 {
+      font-family: "Noto Serif SC", "PingFang SC", "Microsoft YaHei", serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-heading);
+      border-left: 5px solid var(--border-amber);
+      padding-left: 12px;
+      margin-top: 28px;
+      margin-bottom: 18px;
+      line-height: 1.4;
+      scroll-margin-top: 72px;
+    }
+
+    .article-body h3 {
+      font-size: 18.5px;
+      font-weight: 700;
+      color: #1F2937;
+      background-color: var(--bg-soft);
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      line-height: 1.5;
+      scroll-margin-top: 72px;
+    }
+
+    .article-body h4 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--brand-amber);
+      margin-top: 22px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .article-body hr {
+      border: none;
+      border-top: 1px solid #E5E0D5;
+      margin: 32px 0;
+    }
+
+    .article-body p {
+      margin: 13px 0;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      word-break: break-word;
+    }
+
+    .article-body .list-item {
+      padding-left: 10px;
+      margin: 11px 0;
+    }
+
+    .article-body .signature {
+      text-align: right;
+      font-weight: 700;
+      color: var(--text-sub);
+      margin-top: 26px;
+      font-size: 16px;
+    }
+
+    /* Embedded PDF Preview Panel (Lazy Loaded on Click) */
+    .pdf-preview-panel {
+      display: none;
+      margin-top: 4px;
+    }
+    .pdf-preview-panel.active {
+      display: block;
+    }
+
+    .pdf-tip-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      background: var(--bg-amber-soft);
+      border: 1px solid #F3DFB4;
+      border-radius: 10px;
+      font-size: 13px;
+      color: #78350F;
+    }
+
+    .pdf-open-inline {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 7px;
+      background: var(--brand-amber);
+      color: #FFFFFF;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .pdf-open-inline:hover {
+      background: var(--brand-amber-hover);
+    }
+
+    .pdf-frame-wrap {
+      width: 100%;
+      height: 78vh;
+      min-height: 540px;
+      max-height: 920px;
+      border: 1px solid var(--border-main);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #F4EFE6;
+    }
+
+    .pdf-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* Bottom PDF Download Card */
+    .download-card {
+      margin-top: 40px;
+      padding: 26px 28px;
+      background: linear-gradient(180deg, #FFFDF8 0%, #FEF7E6 100%);
+      border: 1.5px solid #E5CFA3;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(180, 83, 9, 0.08);
+      scroll-margin-top: 72px;
+    }
+
+    .download-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .download-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: var(--brand-amber-light);
+      border: 1px solid rgba(180, 83, 9, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      flex-shrink: 0;
+    }
+
+    .download-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .download-title {
+      font-family: "Noto Serif SC", "PingFang SC", "Microsoft YaHei", serif;
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--text-heading);
+      margin-bottom: 6px;
+      line-height: 1.35;
+    }
+
+    .download-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .dl-badge {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #92400E;
+      background: rgba(254, 243, 199, 0.9);
+      border: 1px solid rgba(180, 83, 9, 0.2);
+      padding: 2px 9px;
+      border-radius: 6px;
+    }
+
+    .download-desc {
+      font-size: 13.5px;
+      color: #544D42;
+      line-height: 1.65;
+    }
+
+    .download-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn-dl-primary {
+      flex: 1;
+      min-width: 210px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 22px;
+      border-radius: 10px;
+      background: var(--brand-amber);
+      color: #FFFFFF;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 3px 12px rgba(180, 83, 9, 0.26);
+      transition: all 0.2s ease;
+    }
+    .btn-dl-primary:hover {
+      background: var(--brand-amber-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(180, 83, 9, 0.34);
+    }
+
+    .btn-dl-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 13px 20px;
+      border-radius: 10px;
+      background: #FFFFFF;
+      color: var(--brand-amber);
+      border: 1.5px solid #DFC592;
+      font-size: 14.5px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-dl-secondary:hover {
+      background: #FFFBEB;
+      border-color: var(--brand-amber);
+    }
+
+    .download-note {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border-main);
+      background: var(--bg-page-deep);
+      padding: 28px 16px;
+      text-align: center;
+      font-size: 13px;
+      color: #544D42;
+    }
+
+    .footer-sig {
+      font-weight: 700;
+      color: var(--brand-amber);
+      margin-bottom: 6px;
+    }
+    .footer-sig a {
+      color: var(--brand-amber);
+      text-decoration: underline;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      margin-top: 10px;
+    }
+    .footer-links a {
+      color: #544D42;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      color: var(--brand-amber);
+      text-decoration: underline;
+    }
+
+    /* Back to Top Floating Button */
+    .back-top {
+      position: fixed;
+      right: 20px;
+      bottom: 24px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      color: var(--brand-amber);
+      border: 1px solid #DFC592;
+      box-shadow: 0 4px 14px rgba(31, 27, 22, 0.12);
+      font-size: 18px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: all 0.22s ease;
+      z-index: 90;
+    }
+    .back-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    .back-top:hover {
+      background: var(--brand-amber);
+      color: #FFFFFF;
+      border-color: var(--brand-amber);
+    }
+
+    @media (max-width: 720px) {
+      body {
+        font-size: 16px;
+      }
+      .top-title {
+        display: none;
+      }
+      .top-bar-inner {
+        padding: 9px 14px;
+      }
+      .page-wrap {
+        margin: 16px auto 36px;
+        padding: 0 10px;
+      }
+      .paper-sheet {
+        padding: 24px 18px 28px;
+        border-radius: 12px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .article-body h2 {
+        font-size: 19.5px;
+      }
+      .article-body h3 {
+        font-size: 17px;
+        padding: 8px 12px;
+      }
+      .article-body p {
+        text-align: left;
+      }
+      .download-card {
+        padding: 20px 18px;
+      }
+      .download-top {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .btn-dl-primary, .btn-dl-secondary {
+        width: 100%;
+      }
+      .pdf-frame-wrap {
+        height: 68vh;
+        min-height: 440px;
+      }
+      .footer {
+        padding: 26px 16px 64px;
+      }
+      .back-top {
+        right: 14px;
+        bottom: 16px;
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部导航条 -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a class="top-back" href="../">← 返回 Trader-Archives 总站</a>
+      <span class="top-title">精选单篇典藏 · 《老恶魔谈合约》</span>
+      <a class="top-download-jump" href="#download-pdf">↓ 下载 PDF</a>
+    </div>
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-bar" id="readProgress"></div>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <article class="paper-sheet">
+
+      <div class="eyebrow-wrap">
+        <span class="eyebrow-pill">🏛️ Trader-Archives · 精选单篇典藏</span>
+      </div>
+
+      <h1>《老恶魔谈合约》完整典藏版</h1>
+
+      <div class="meta-strip">
+        <span>✍️ 原文作者：老恶魔</span>
+        <span>📅 2025.03.28 分享</span>
+        <span>📖 约 9,555 字 + 6 问速览</span>
+        <span>📄 配套 14 页高清 PDF</span>
+      </div>
+
+      <div class="author-hero">
+        <div class="author-label">原文作者档案 · 2025.03.28 分享</div>
+        <img class="author-banner" src="images/laoemo_profile.jpg" alt="老恶魔个人主页档案" width="1024" height="337" loading="eager">
+      </div>
+
+      <div class="disclaimer-box">
+        <strong>【整理说明与免责声明】</strong><br>
+        本文内容由 <strong>梭哈.AI（X: @SUOHA_AI）</strong> 基于公开材料整理、校对与排版，免费分享，旨在方便交易员学习交流与复盘归档。<br>
+        文中观点与仓位案例均属原作者个人主观经验，<strong>不构成任何投资或交易建议（NFA）</strong>，市场有风险，请独立思考并严格风控（DYOR）。
+      </div>
+
+      <div class="editor-strip">
+        <div class="editor-left">
+          <img class="editor-avatar-sm" src="../images/suoha_avatar.jpg" alt="梭哈.AI 头像" width="34" height="34" loading="lazy">
+          <div class="editor-text">
+            资料整理与排版：<strong>梭哈.AI</strong> ｜ X（Twitter）：<a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer">@SUOHA_AI ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 阅读模式切换 & 章节快速直达 -->
+      <nav class="toolbar-panel" aria-label="阅读模式与目录导航">
+        <div class="mode-switch" role="tablist">
+          <button type="button" class="mode-btn active" id="btnWebMode" role="tab" aria-selected="true">
+            📖 网页全文顺畅阅读（推荐）
+          </button>
+          <button type="button" class="mode-btn" id="btnPdfMode" role="tab" aria-selected="false">
+            📄 PDF 原件在线预览（14 页）
+          </button>
+        </div>
+
+        <div class="toc-row" id="tocRow">
+          <span class="toc-label">目录直达：</span>
+          <a class="toc-pill" href="#sec-1">一、资金管理</a>
+          <a class="toc-pill" href="#sec-2">二、技术层面</a>
+          <a class="toc-pill" href="#sec-3">三、杠杆·出金·本金</a>
+          <a class="toc-pill" href="#sec-4">四、心态与运气</a>
+          <a class="toc-pill" href="#sec-5">五、磨损与习惯</a>
+          <a class="toc-pill" href="#sec-6">六、剖析赛道</a>
+          <a class="toc-pill" href="#sec-faq">附：核心答疑</a>
+          <a class="toc-pill pill-pdf" href="#download-pdf">⬇️ 下载 PDF</a>
+        </div>
+      </nav>
+
+      <!-- 模式 A：默认全端适配原生网页全文阅读 -->
+      <section class="article-body" id="webReader">
+        <h2>正文：老恶魔八年合约经验谈</h2>
+<p>《老恶魔谈合约》，共 9,555 字。</p>
+<p>这个经验贴是我自己在币圈八年以来交易方法和经验的回顾，不是实盘教学，内容主观性较大，实际操盘风格比较激进，个人风格色彩浓厚，有一些内容存在争议，不适用于所有人。</p>
+<p>适合人群：已有一定合约经验、能理性筛选信息、有一定本金、杠杆在 5-20 倍，追求高收益且风险承受力强的玩家。</p>
+<p>慎用人群：新手、现货玩家、3 倍以下低杠杆低偏好者、依赖客观数据的量化、套利交易者。</p>
+<p>希望大家只做参考，不要轻易改变自己盈利的交易模式，取之所长，为之所用。</p>
+<p>本帖免费分享，请勿收费外传！</p>
+<h3 id="sec-1">第一点，也是我觉得最重要的一点，就是做好资金管理。</h3>
+<p>巧妇难为无米之炊，失去了本金的交易员也就失去了大部分希望。币圈能一波行情赚到大钱的人有很多，但又归零的也有很多，资金管理的重要性不言而喻。良好的资金管理方式，可以让你在这个市场更加长久地活下去，等待自己擅长的机会。就算杠杆较高，市场也很难一波杀死你，能有效防止踩中币圈黑天鹅事件。</p>
+<p>资金管理包括 3 方面：</p>
+<p class='list-item'>1、本金管理。核算一下自己能投入多少本金，然后均分成 5-10 份，等账户亏损到归零时，就可以充值下一份。例如本金 10 万，就划分成 2 万一次充值。切记不要在账户大幅浮亏情况下增加保证金扛单，大幅浮亏说明你的判断有误，遇到单边行情时，加保证金未必能扛回损失。加保证金扛单胜率的确很高，但只要有一次没抗住，之前所有的努力都会付诸东流，甚至一波极端行情本金和利润全部归零。</p>
+<p class='list-item'>2、利润管理。在某一次本金做到 3 倍或者更多以上时，必须及时提现。如果你管不住手，易上头，最好是换成 RMB，切断你本金账户与投资账户的联系。比如 1 万本金做到 5 万了，就提现 3 万放到支付宝。</p>
+<p class='list-item'>3、本金份额的重新划分。能做到几次本金大幅翻番的话，积累的提现利润就很可观了，接下来需要将自己本金和已提现利润重新划分：一是将其划分成更多的份额，降低全部归零风险二是增加单次充值金额，充分利用本金，实现利润的再突破例如：总本金 5w，一次充值 1w，做到本金+利润有 20w 时，单次充值金额重新划分成 2.5w,可充值的次数变成 8 次。</p>
+<h3 id="sec-2">第二点，关于自己技术层面的分享。</h3>
+<p>我并不觉得我有多么好的操盘技术，跟大部分人一样。我一直把我自己当成市场的韭菜，逆势扛单，浮盈拿不住，上头就高杠杆梭哈这种事，我也经常干。但是我确实做出了一定的成绩，所以我想分享一下我自己对于技术的看法。</p>
+<p>大部分情况下，我只做大饼以太等几个主流币，只做主流好处是流动性高，市场振幅较小，能满足自己激进的杠杆条件，另外老鼠仓和庄家控盘程度也少得多。山寨这个东西见仁见智，确实能短期实现巨额盈利，但是爆仓也是在一夜之间，因为庄家控盘太严重，大户进去很容易被监控，我把控不了，也玩不来，故而我选择放弃山寨币合约，下面的经验都是在做主流币的前提下。</p>
+<p>注意，以下经验都是我自己的交易模式，只做参考，不要盲信！</p>
+<h4>1、短线单</h4>
+<p>短线讲究的就是快狠准，一般持仓时间都是 24H 之内，也是大部分激进杠杆玩家用的最多的的类型。短线策略无非是追涨杀跌或者高空低多，所以，开单点位和时机很重要，在开单之前，你就要对你自己这单是做短线有一个明确的认知。</p>
+<p>放量阳柱，后续没有迅速下跌、行情在小碎步或者震荡上涨，且日线明显强势，上涨情况延续可能性较大，可以尝试追涨。</p>
+<p>放量大阴柱，后续几个小时，K 线反弹乏力，始终在底部徘徊时，日线承压，或者日线趋势已经掉头，可以尝试追空。</p>
+<p>市场快速下跌然后迅速拉回（插针），4H 线没有连阴，日线和 4H 线没有呈现极其弱势，底部点位呈现巨大支撑时，可以尝试抄底，杠杆极其激进的话，不建议抄底操作。</p>
+<p>市场拉升之后遇到阻力，多根 4H 线都且呈顶部阴线，日线不强势，甚至有掉头向下的趋势，可以考虑高空，同样超高杠杆不建议操作。</p>
+<p>回顾我历史交易，短线的单子，追涨杀跌胜率比高空低多成功率高得多。我的短线操作做的确实一般般，杠杆一般在 10-30 倍之间，经常为了做吃短线然后扛单，也做不到及时止损，经常导致本来想做个短线然后亏个大的，这也是很多人做短线的通病。</p>
+<p>如果这单你目标就是做短线单的，那么目标就放在 2%-6%的区间，自己乘以你的开仓点位计算止盈价格，不要把止盈价格放在支撑位下面或者阻力区上面，避免大的整数位止盈。同时，短线单子需要及时观察市场情绪，如果和自己开仓方向相反，比如延续下跌或者连续上涨，那么应该做到及时果断止损。短线一定是要带小止损的，止损尽量在 3 个点以内，不然因为盈利目标不高，扛单很容易会因小失大，那么就失去了短线的意义。</p>
+<p>短线单子我一般都是一单把仓位打满的，突出一个快字。选择比较有优势的开单点位挂单挂好，开单之后，到目标就止盈，不要幻想和留恋，既然选择做短线，就要放弃大趋势行情，做到快进快出。</p>
+<p>另外，在一单短线止盈之后，不要立即反手操作，短线能盈利说明趋势和你的方向一致，趋势的反转不是立刻的，非常不推荐短线止盈之后反手操作。</p>
+<p>短线止损之后的反手倒是可以考虑一下，成功率比止盈反手大得多。</p>
+<h4>2、中线单</h4>
+<p>中线单是我做的最频繁的，也是我比较擅长、盈利最多的交易类型，中线单只有两种，多或者空，不存在什么追涨杀跌、高抛低吸的说法。</p>
+<p>首先需要结合日线、4H 线，感受大盘的强弱，假使判断行情会延续或者会掉头，就就可以做中线单子，中线点位其实不是很重要，方向才是首位。</p>
+<p>真正能做成功的中线单子，基本上开进去没多久就是浮盈的，然后浮盈慢慢增加，过程中利润回撤是很正常的，要有波澜不惊的心态，告诉自己，只要没到止损位置，那么就坚定拿到止盈位置，不要一直打开账户去看盈利或者亏损的金额。</p>
+<p>判断自己是否做错，就看开单进去之后是不是盈利时间很少，如果浮盈变成浮亏，看浮亏是不是慢慢增加，直到本金亏损过半，这个时候大概率是方向做错了。</p>
+<p>但是，中线合约需要给自己一定的试错空间，杠杆不要太高，5-10 倍就够了，做中线扛单是必要的，要抱着接受一单亏损 80%的结果，才能收获成倍的利润。调整好心态，耐心等待市场的动作，当市场和自己开仓方向相同时，耐心持仓，挂好止盈等待成交就行，不要做多余的事情。</p>
+<p>做好中线合约，才能让利润迅速成倍地增加，与短线高倍相比，中线风险系数也更小，数学期望价值更高。这也是我经常大回撤之后能迅速赚回来的关键。</p>
+<h4>3、止盈止损</h4>
+<p>止盈止损是合约交易中很重要的一环，不管是中线、短线还是长线，都要学会取舍，既做到浮亏止损果断，也要做到盈利平仓坚决。</p>
+<p>每一单合约开完之后，必须先考虑止损位置。</p>
+<p>如果是做短线，我建议固定比例止损，不建议死扛，短线单子止损是必须的，保留本金才会有希望。</p>
+<p>如果中长线，建议最近三到五天的日线或者 4H 线前高/前低等压力位止损，也就是大止损。如果你还有本金和利润充值，心态能稳住，那么就直接抱着亏完的心态，在爆仓价格前面 1%-2%左右止损。有这种止损心态，才能拿住几倍的浮盈。</p>
+<p>止损最忌讳犹犹豫豫，当斩不斩，一直改止损价格。只有坚决的止损才是有效止损，不要做短线单子，然后损个大的。定好了止损位置，哪怕事后发现止损错误，我认为也是有效的。</p>
+<p>等待账面浮盈之后，才应该考虑止盈的事情。短线的话按照比例止盈就行，中线单子一定不是浮盈一点点就走。比如以太起码要求是 150 点，大饼 4000 点以上，换算成收益率的话是 100%以上。定好了止盈目标，同样也要做到止损一样坚决，达到止盈价，绝对不拖拉，不要贪心幻想着继续多拿多赚一点，会买也要会卖，盈利不是靠想象达成的。</p>
+<h4>4、滚仓</h4>
+<p>首先要明确滚仓的目标是为了提高资金使用效率，在单边行情中获得超额回报。所以，我的滚仓操作只会出现在中线单子中，且只有浮盈巨大我才会尝试，如果账户巨额亏损或者行情不明确，不建议进行任何滚仓。</p>
+<p>一般中线单来说，我在三笔委托内就会把仓位打满，然后躺平。如果这单浮亏，就不会动，保持观察，研究止损。</p>
+<p>若浮盈数额较大，我就会尝试滚仓，滚仓的金额一般是原持仓金额的一半以下，位置在止盈目标上方较大空间。滚仓之后，继续耐心持仓，一直拿到止盈点位。</p>
+<p>注意滚仓后的实际杠杆，不要超过开单时候的杠杆，滚仓是风险极其高的操作，即会拉高成本价，也会放大杠杆。如果没有丰富的滚仓经验，市场走向没有呈现单边走势，不建议滚仓，不然震荡行情很容易就一波亏完。</p>
+<h4>5、交易指标、消息面、资金面</h4>
+<p>这两方面我没有话语权，也没有什么很好的建议。</p>
+<p>我不看任何技术指标，看盘只看 K 线，不相信任何量化以及软件，开平仓很主观，有一种随心所欲的感觉。</p>
+<p>我极少关注消息面，尤其是一些繁杂且不重要的消息，比如什么币的利好、美国央行那些数据、以及交易所流入流出之类的。我认为币圈大部分消息面都是为了配合走势的，为了保持自己交易的纯粹性，所以我直接选择屏蔽所有消息面。当然这只是我个人交易习惯，有一些消息面还是会显著影响行情的，大家酌情判断。</p>
+<p>资金面我倒是会关注一下，比如美股 ETF 净流入，日线/4H 成交量，多空金额/人数比之类的，配合 K 线形态分析行情。</p>
+<h3 id="sec-3">第三点，谈谈杠杆率、出金、本金。</h3>
+<p>币圈相对于其他传统金融，优势在于合约这个东西，便捷地提供了不同杠杆，以及裸空裸多交易。这既是传统金融无法比拟的优势，也是虚拟货币是高风险的原因所在。我的观点是，主流币合理运用 5-20 倍全仓杠杆，以小资金博取大收益，性价比很高。</p>
+<p>（以下所说的杠杆都是实际仓位杠杆，不是自己设置的杠杆）。</p>
+<p>当然不是建议大家频繁使用高杠杆来回短线割自己，因为我是较激进的币圈选手，对于大饼和以太而言，我觉得 3 倍以下杠杆由于资金使用效率不高，就算做对了利润奔跑地也不够快，做错了的话由于爆仓价格非常远，极其容易迷惑自己做出扛单的行为，遇到一波大的单边行情，就会损失惨重，低杠杆重新把本金打回来是非常困难的。</p>
+<p>正常我每次充值本金后，起步仓位杠杆就是 10 倍，最高杠杆甚至会到 35倍（很少，市场振幅不大的话），综合下来我的杠杆率都是 10-20 倍全仓。随着浮盈增加，杠杆率会下降到 10 倍以下，乃至 3 到 5 倍。</p>
+<p>纵观我多年实盘可知，超过 35 倍杠杆的单子就像一颗炸弹，非常不可控，由于市场经常插针以及 V 反，很容易导致止损或者爆仓在最高点/最低点，会直接把心态玩炸。具体可以参考我这个 OK6 实盘刚刚开始那几单，所以，这是我给大家的忠告：杠杆万万不能越过 35 倍这条红线。</p>
+<p>可能十几倍全仓的杠杆对于一些玩家来说有点高，我是比较激进的操盘手，在市场振幅不大的情况下，我认为是可行的。当市场振幅较大，比如大饼和以太日振幅超过十个点，应该适当降低杠杆到 5-10 倍。</p>
+<p>高杠杆抓住一波大的单边行情且拿住，利润就会非常可观。我在 2024 年做过两个 BTC 合约单子，本金 8 万 U，69000 空到 62800，账户到了 40 万 U；第二单反手 62000 多到 71000，账户变成了 100 万 U。两单做到本金十几倍，中间有过几次滚仓操作，但是杠杆都不超过 20 倍，这就是激进杠杆带来的超额回报，不需要你高杠杆来回做短线，抓住大行情，只要你做对了且拿住，利润都会很可观。</p>
+<p>我从来不相信“慢就是快”的交易理论。 在币圈这个不透明，没监管的市场，没有人能稳定做到每天都稳定收益。黑天鹅事件经常会发生，没有止损只会一味扛单的话，杠杠再低都会被清算，所以不要幻想大资金每天赚一点就收手。高杠杆操盘前提，一定是及时提现，不然高杠杆结局一定是亏完。</p>
+<p>讲到提现，我就说一下我出金的方法：</p>
+<p class='list-item'>1、出金渠道安全排行是支付宝＞微信＞银行卡，如果你资金量在 100 万以内，尽量避免银行卡出金的模式。</p>
+<p class='list-item'>2、不要用快捷买卖币功能，手动去找那些注册时间两年以上，专门搬砖赚取差价的商家，不要只看价格买卖，不要找那些月成交量快万笔的商家，看清楚他们在市场是不是挂了买单也挂了卖单，防止只收不卖的不良商家。</p>
+<p class='list-item'>3、加上一些靠谱商家的微信，尽量固定买卖交易对象，千万不要一直频繁换商家交易，非实名付款不管什么理由都不要收款。</p>
+<p>注意，市场 C2C 出金的模式存在一定的灰色性，上面的方法只能降低风险，无法规避，请大家出金，尤其是大额的时候一定要考虑到法律风险，千万不要乱出。</p>
+<p>我知道很多人都亏到贷款在币圈交易。我对贷款炒币持有中立态度，如果你有一份不错的工作，能产生一定的现金流，且做好了亏损老老实实打工的心理准备，可以尝试一下先息后本的银行贷款。这种贷款利率不高，还款压力不大，审批条件也不严苛，直接去银行网点咨询，基本上有社保就能贷。</p>
+<p>我不是富二代，大学毕业之后在银行工作，在币圈亏了工资积蓄之后，17/18年在银行贷款了 60 万，断断续续把贷款额度全部提款了，那会利息每个月都要还三千多，每次过本金都是求朋友帮忙，日子过的可谓捉襟见肘。后来 19 年那波大跌一路做空到 5000，大饼 4000 转做多，多到 14000，一点一点地把贷款亏的窟窿补上了。20 年之后，有了一些利润的话，心态也就更好了些，本金翻几倍就提现。在 21 年中旬，终于赚到了自己在币圈的第一个 100 万元。可能是行情或者运气比较好，又或者资金管理模式比较到位，后面再也没有经历过全部亏完，失去本金的情况了，而且资产也在曲折中提升。</p>
+<p>至于乱七八糟的网贷，我是持坚决反对的态度的。一方面是那个吃人的利息，年化能达到十几个点甚至几十个点，另外一方面是每个月都要陷入还款的压力之中，这种压力很难让人保持冷静进行交易，如果亏损了会导致自己极其沮丧，甚至陷入深深的怀疑之中，这些因素都会导致你无法上岸，甚至越陷越深。</p>
+<p>至于为什么我深有感触，是因为我大学时候贷了各种网贷快三四十万炒股、网赌，亏的一塌糊涂，每个月兼职连利息都还不上，只能拆东墙补西墙，最后扛不住了，找父母亲戚各种坦白贷，才补上这个窟窿。</p>
+<p>如果你已经贷款进入了合约，那么要明确交易失败的后果，千万不要做出冲动交易，对于收入不稳定、心态调整不好的人来说，负债的压力很可能是致命的！</p>
+<p>最好的本金，是亏完不影响生活的积蓄，或者是你已经积累下来的利润。回报与风险是成正比的，抱着暴富的心态来到合约这个市场，就要做好亏完的准备。不要到处借钱搞，做好资金规划之后再进场，不要把全部本金一把梭哈，让自己陷入绝境，这会对你交易心态有很大帮助。</p>
+<h3 id="sec-4">第四点，关于心态、运气的一些想法。</h3>
+<p>很多人问我，我是怎么做到心态那么好，面对浮盈不为所动，不到目标不平仓；面对亏损波澜不惊，耐心重新打回去？</p>
+<p>我的回答是：</p>
+<p>“首先我在币圈这个市场摸爬滚打很多年了，见证了很多币圈黑暗与光明时刻，交易的经验让我面对行情波动时候能平静地接受亏损和盈利，俗话就是什么大风大浪都见过了。</p>
+<p>然后，我保持心态良好的很大原因就是我大部分盈利，或者说资产都提现了，不是以虚拟货币方式存储的。良好的资金管理方式让我有底气面对每一波行情，就算一次两次都做错了，我也有试错机会。我深知，只需要我重新抓住一到两波行情，我就能重新站起来。</p>
+<p>还有，不要把交易的情绪带到生活上来。账户遭遇亏损，你喝一顿酒，砸一台电视并不能改变什么。保持谦逊，随和的生活态度，让自己的情绪始终处于平静的状态，这会对你的交易很有帮助。这也是一个合格的交易员需要保持的心态。”</p>
+<p>每次开单之前或者开单之后，我基本就定好了止盈和止损位置。</p>
+<p>如果做错了，遭遇账户浮亏，我的交易重心肯定是研究在哪里止损，我每个止损单几乎都不是以爆仓收尾，最坏的情况也剩下个零头。</p>
+<p>如果做对了，迅速脱离成本区，账户浮盈不断增加，那持仓对我来说就比较简单了，就算再波折，耐心拿到止盈点位就行了，中间还可以找机会滚下仓，就算浮盈回撤，只要不打到我的止损价，我都能拿下去。</p>
+<p>我 17 年入市，很快就把我工资积蓄当成学费交了，后面我和大多数人一样，选择贷款炒币。贷款炒币的心态是很难管理的，一方面还款的压力，另一方面是亏损的压力。那时候每一个持仓的夜晚都难熬的很，我无法言说清楚当时我是怎么做好心态管理的，我只记得，我不断告诉自己我能行，赚了就提现还到贷款里面，然后继续给自己的账户重新定个资金目标，做到了就提现，亏完了就重新贷款充值。虽然是贷款，但是我一直让自己保持着有本金的状态，不至于真的亏到身无分文，借无可借了。我想，给自己定一个可靠的盈利目标是关键，人总是需要一点信念的。</p>
+<p>很多人都觉得，一些交易员能做出成绩有很大运气成分，这个确实是这样，我很多单子也有一定的运气影响。币圈的机遇很多，靠运气赚到钱固然是好事，难点在于如何守住利润，都说运气赚到的钱都会靠运气亏回去，这话是有一定道理的。我们会遇到很多黑天鹅行情，比如 924、312、Luna 等暴跌黑天鹅行情，你如果顺利做空且拿住了，这就是强运在身。但是反过来想，如果做多爆仓了，是不是能称之为背时呢？我想不全是。浮盈拿住的前提是自己对于市场走势有一定认知，浮亏爆仓是风险控制不严格，单次投入过多，乱加保证金，没有止损导致的。没有良好的交易习惯和资金管理，运气也会转变成背时。</p>
+<p>同时，在日常生活中多做好事吧！保持谦虚，乐观，善良的生活态度，也许幸运女神下一次会眷顾到你。至少讨论这个充满玄学的话题时，我是这么想的。</p>
+<h3 id="sec-5">第五点，讲讲磨损，以及我的交易习惯。</h3>
+<p>我是一个非常介意交易磨损的人，甚至介意地有些病态。这里的磨损包括交易手续费、资金费、爆仓惩罚金、出入 U 差价以极其他磨损。</p>
+<p>如果你进圈时间较长，且开单频率较高，杠杆不低，你就知道交易所有多暴利，各种莫名其妙的费用扣得肉疼：单次资金费扣几千 U；账户亏损十万，手续费就交了三万；买 U 的时候 7.5，卖的时候 7.25 等等。</p>
+<p>币圈自带高杠杆，所以导致本金磨损程度相对于传统金融来说非常夸张。一万块开十倍合约，手续费是按照十万元来计算的，杠杆越高，开单频率越高，本金磨损就越夸张。</p>
+<p>一般来说：交易所挂单和吃单手续费相差 2-10 倍（不同手续费等级差额不等），如果单笔订单被爆仓或者强减，那么维持保证金的那部分本金就会被平台吃掉，爆仓/强减惩罚金=维持保证金率 × 被爆仓/强减仓位价值</p>
+<p>“只要盈利的单子手续费什么的都无所谓的”这种想法，在我看来是极其愚蠢的：一方面，我杠杆和频率比较高，费用不算少；另一方面，亏损单子也是要扣手续费等费用的。</p>
+<p>降低交易磨损是在我交易系统里面比较重要的一环，我做了很多应对方法，比如：严格挂单止盈止损、开通返佣账户专门交易、爆仓之前手动平仓、资金费居高不下时候减少反向持仓时间、尽量在行情大跌 U 价比较好的时候出金。</p>
+<p>这些操作显而易见地降低了我的交易成本，比如，2024-2025 我合约交易手续费扣除返佣之后只花了 15 万油，如果在一直吃单交易，在没有返佣情况下，手续费将会达到惊人的 120 万油（欧意 vip2 吃单手续费是挂单手续费的 4 倍），交易磨损是逐单节省的，但是长期积累，就等于一笔极其可观的收入。所以，这些交易习惯我以前、且以后都会一直坚持。</p>
+<p>我一般是用电脑看盘，手机下单，盯盘坚决不用我开单的那个账号，尽量减少打开已开单账户的频率，将交易账户的数字跳动物理隔绝。这对我耐心持仓到止盈点位很有帮助。</p>
+<p>看盘这个东西，不需要大眼瞪小眼一直盯着，电脑挂着去搞别的，时不时切屏看看就行了，并不是一直都有大波动的，一直死盯 K 线很容易把心态和身子都搞坏。开单之后就挂个止损，不耽误睡觉，更不用大半夜挂预警起来看盘。</p>
+<p>另外，我交易一般都是用的欧意，因为页面习惯了，有时候也用币安做现货，我从来没下载过野鸡所，本金安全以及更深的流动性是我对交易所的最大诉求。</p>
+<p>如果你是币圈新人，在国内尽量不要去以上两个以外的交易所。同时，不要相信任何带单老师，币圈带单老师十个九个骗。尤其是那种发盈利图引流，让你下载野鸡平台同步跟单的，100%是杀猪盘！还有币安广场和币 coin 论坛也是骗子居多。你要知道，真正能靠自己交易技术赚到大钱的人，都只会专注于交易，从来就不屑于去搞带单，更不会到处发广告。因为交易做出成绩的人都不缺本金，也不缺利润。在币圈要赚钱，还是只能靠自己，多学多看多研究，多问多搜多讨论，市场才是你最好的老师。</p>
+<h3 id="sec-6">第六点，剖析一下币圈这个赛道</h3>
+<p>币圈是一个能改变阶层的圈子，也是一个能家破人亡的圈子，甚至后者的概率大得多。在你进入合约这个圈子，并下定决心死磕、甚至贷款炒币的之前，你就必须有一个清晰的认知：你现在的生活是不是必须要靠合约交易逆天改命？你是否只是贪恋合约这种赌博性的刺激感？你是否能控制自己，不至于让自己和家庭走到山穷水尽的绝路？</p>
+<p>如果你现在生活稳定，上有老下有小，有点小事业，只不过在币圈亏了一些钱，不至于对生活影响很大，我非常不建议你死磕合约，及时止损也是很重要的。</p>
+<p>我在群里加过很多人，也和很多人深入聊过，我很难见到靠交易赚到大钱的人，但是亏几百万上千万的比比皆是，负债累累的更是数不胜数。这足以说明合约做成功的难度系数有多大。就算让我重新走一遍来时路，我也完全做不到。就目前来说，我也不敢说我继续交易下去的话能做到不归零，我在 2023-2024 年，短期回撤一千万以上的情况就出现了三次，几百万回撤的十几次。合约这个东西，不管你有多少资产，都是能亏完的。因为从概率统计学上来说，只要你一直做合约，从来不提现，还经常加保证金扛单，因为交易磨损和黑天鹅行情的存在，最后归零的比例无限接近于 100%。</p>
+<p>交易的成功有巨大的偶然性，也有一定的必然性。如果你入圈合约之后出现账户一直亏损，收益额呈现阶梯式下降，只充值不提现，经常一波亏损巨大，但是几乎很少短期实现过巨额盈利的情况，就说明你目前的交易模式完全是错误的。你要做的要么就是及时止损，放弃出局；要么斩钉截铁改变你的交易模式，推到从来。</p>
+<p>每个人都有自己要走的路，硬挤进去得路不一定走得通。这个市场需要胆识，但是不需要赌徒，很多人都沉浸在合约赌博性的刺激中无法自拔，对亏损会造成的后果缺视而不见。盈利一两单就沾沾自喜，没有居安思危的意识，亏损了就杞人忧天，惶惶不可终日，甚至盯盘魔怔的能做到废寝忘食。不要把合约当成赌博，没有良好的交易习惯，合约性价比并不高于赌博。</p>
+<p>行情走到 2025 年，回头再看，除了大饼之外的币圈确实慢慢地走向熊市了。参考历史 K 线，牛市的上涨都是快速且激烈，而熊市的下跌则是漫长又波折的过程，说明我们后面会有很长的一段震荡路要走，这就是我个人对于长线行情的看法。我只对比特币和一些我认为有价值的币有信仰和信心，一些暴跌 70%以上，明显没有资金介入，甚至跌回牛市起点的老山寨币是万万不能碰的，就算你做好了长期持有的准备，下一轮牛市也和他们大多数都无缘。</p>
+<p>另外，币圈并不等于合约，合约只是一种交易工具，2024 年大牛行情，我认识几个现货赚到 A8 的玩家。无一例外，他们都对虚拟货币，尤其是 BTC，具有着乌托邦式的信仰。币圈还有很多玩法，撸空投，冲土狗，搬砖套利，链上种菜以及很多我不熟悉也不了解的项目，机遇各种各样，耗费大量时间没有在合约做出成绩的话，没必要继续死磕。找到自己擅长的领域，并把它做大做强，同样可以带来巨额回报。</p>
+<p>不可否认的是，经过这十几年的发展，币圈项目割韭菜现象确实越来越严重，很多新项目都有空手套白狼的性质，老项目半死不活的更是遍地都是，散户投资者很难再做到白手起家。但是我相信，币圈一直都会有新的玩法和项目出来，所以千万别吊死在已经快慢性死亡的项目之中，积极了解和接纳新的东西，保持学习，带着包容性接受一些新的东西，也许，你也能踩中下一个币圈风口。</p>
+<p>写一篇自己的经验贴，分享给币圈合约赛道的交易员，是我一直都想做却没有做的事情。一方面是我觉得我自己的交易没有做到尽头，另外一方面是始终静不下心来写。写下这些东西并不是出于炫耀亦或者证明什么，我很抵触赚钱就装逼，然后瞎带单这种行为。熟悉我的人都知道，我是一个很懒散、低调、随和的人，全职交易的日常生活基本上都很枯燥，机缘巧合之下弄了社区，发现很多人都亏到麻木，对于行情没有完整的认知，更没有一个完备的交易系统，所以我督促自己写下了这篇帖子，虽然只是一堆密密麻麻的文字，但是却是我这么多年来一直坚持的东西，如果能改变和帮到一些人，那就最好不过了！</p>
+<p class='signature'>—— 老恶魔 2025.3.28</p>
+<hr/>
+<h2 id="sec-faq">附：核心问题答疑</h2>
+<h3>老恶魔是谁？</h3>
+<p>按他自己的说法：17 年入市，大学毕业后在银行工作，贷款炒币后翻身，21 年中旬赚到第一个 100 万元，现在全职交易，主要用欧意（原文自述，无法核实）。原文没有提他的真名，他形容自己是「一个很懒散、低调、随和的人」。</p>
+<h3>《老恶魔谈合约》讲了什么？</h3>
+<p>分六部分：资金管理；技术层面的短线单、中线单、止盈止损、滚仓、指标和消息面；杠杆率、出金和本金；心态和运气；磨损和交易习惯；对币圈赛道的看法。末尾署名「老恶魔 2025.3.28」。他自己说这不是实盘教学，而是八年交易方法的回顾。</p>
+<h3>老恶魔合约开多少倍杠杆？</h3>
+<p>起步 10 倍，综合下来 10 到 20 倍全仓，最高到过 35 倍，红线是不超过 35 倍；市场振幅大时降到 5 到 10 倍。这里说的都是实际仓位杠杆，不是交易所里设置的杠杆。他自己说这是激进打法，新手属于他写的慎用人群。</p>
+<h3>老恶魔怎么滚仓？</h3>
+<p>只在中线单、浮盈巨大的时候滚；滚仓金额一般是原持仓的一半以下，位置在止盈目标上方较大空间；滚完的实际杠杆不能超过开单时；行情不是单边就不滚。他提醒滚仓「即会拉高成本价，也会放大杠杆」。</p>
+<h3>老恶魔怎么看贷款炒币？</h3>
+<p>分两种。先息后本的银行贷款他持中立态度，前提是有一份能产生现金流的工作，做好亏完老老实实打工的准备；网贷坚决反对，利息年化十几甚至几十个点，还款压力会让人没法冷静交易。这两种他自己都贷过。</p>
+<h3>老恶魔怎么出金？</h3>
+<p>他排的安全顺序是支付宝、微信、银行卡，资金在 100 万以内尽量别走银行卡；不用快捷买卖，手动找注册两年以上、买单卖单都挂的搬砖商家，固定几个靠谱商家，非实名付款不收。他也提醒 C2C 出金有灰色性，这些方法只能降低风险，大额出金要考虑法律风险。</p>
+      </section>
+
+      <!-- 模式 B：按需加载的 PDF 原件内嵌预览 -->
+      <section class="pdf-preview-panel" id="pdfReader" aria-label="PDF 原件预览">
+        <div class="pdf-tip-bar">
+          <span>若微信或手机浏览器无法直接内嵌翻页，可点右侧新窗口打开，或切回「网页全文顺畅阅读」。</span>
+          <a class="pdf-open-inline" href="laoemo-contracts.pdf" target="_blank" rel="noopener noreferrer">↗ 新窗口打开 PDF</a>
+        </div>
+        <div class="pdf-frame-wrap">
+          <iframe class="pdf-frame" id="pdfFrame" title="《老恶魔谈合约》高清重排版 PDF 预览"></iframe>
+        </div>
+      </section>
+
+      <!-- 页面最底部：高清重排版 PDF 下载区 -->
+      <section class="download-card" id="download-pdf" aria-label="PDF 资料下载">
+        <div class="download-top">
+          <div class="download-icon" aria-hidden="true">📄</div>
+          <div class="download-info">
+            <h2 class="download-title">《老恶魔谈合约》高清重排版 PDF 下载</h2>
+            <div class="download-badges">
+              <span class="dl-badge">A4 高清重排版</span>
+              <span class="dl-badge">共 14 页</span>
+              <span class="dl-badge">约 755 KB</span>
+              <span class="dl-badge">免费分享</span>
+            </div>
+            <p class="download-desc">
+              完整收录正文 9,555 字与 6 问核心答疑，已按典藏版排版定稿，方便离线保存、平板批注、打印或分享给朋友。
+            </p>
+          </div>
+        </div>
+
+        <div class="download-actions">
+          <a class="btn-dl-primary" href="laoemo-contracts.pdf" download="老恶魔谈合约_高清重排版.pdf">
+            ⬇️ 立即下载 PDF（高清重排版）
+          </a>
+          <a class="btn-dl-secondary" href="laoemo-contracts.pdf" target="_blank" rel="noopener noreferrer">
+            👁️ 浏览器直接打开 PDF
+          </a>
+        </div>
+
+        <p class="download-note">
+          提示：若在微信、X 等 App 内置浏览器中点击下载无响应，请点右上角菜单选择「在默认浏览器中打开」即可顺利保存。
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-sig">
+      本站由站主 <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer">梭哈.AI (@SUOHA_AI) ↗</a> 独立整理维护 · 纯开源分享 · 非投资建议 · 请 DYOR
+    </p>
+    <div class="footer-links">
+      <a href="../">← 返回 Trader-Archives 总站</a>
+      <span>·</span>
+      <a href="https://x.com/SUOHA_AI" target="_blank" rel="noopener noreferrer">关注站主 @SUOHA_AI ↗</a>
+      <span>·</span>
+      <a href="https://github.com/suoha888/Trader-Archives" target="_blank" rel="noopener noreferrer">GitHub 源码仓库 ↗</a>
+    </div>
+  </footer>
+
+  <button type="button" class="back-top" id="backTop" aria-label="返回顶部" title="返回顶部">↑</button>
+
+  <script>
+    (function () {
+      var btnWeb = document.getElementById('btnWebMode');
+      var btnPdf = document.getElementById('btnPdfMode');
+      var webReader = document.getElementById('webReader');
+      var pdfReader = document.getElementById('pdfReader');
+      var tocRow = document.getElementById('tocRow');
+      var pdfFrame = document.getElementById('pdfFrame');
+      var progressBar = document.getElementById('readProgress');
+      var backTop = document.getElementById('backTop');
+      var pdfLoaded = false;
+
+      function setMode(mode) {
+        var isPdf = mode === 'pdf';
+        btnWeb.classList.toggle('active', !isPdf);
+        btnWeb.setAttribute('aria-selected', String(!isPdf));
+        btnPdf.classList.toggle('active', isPdf);
+        btnPdf.setAttribute('aria-selected', String(isPdf));
+        webReader.style.display = isPdf ? 'none' : 'block';
+        tocRow.style.display = isPdf ? 'none' : 'flex';
+        pdfReader.classList.toggle('active', isPdf);
+        if (isPdf && !pdfLoaded) {
+          pdfFrame.src = 'laoemo-contracts.pdf#view=FitH';
+          pdfLoaded = true;
+        }
+      }
+
+      btnWeb.addEventListener('click', function () { setMode('web'); });
+      btnPdf.addEventListener('click', function () { setMode('pdf'); });
+
+      window.addEventListener('scroll', function () {
+        var doc = document.documentElement;
+        var maxScroll = doc.scrollHeight - doc.clientHeight;
+        var pct = maxScroll > 0 ? Math.min(100, (window.scrollY / maxScroll) * 100) : 0;
+        progressBar.style.width = pct.toFixed(1) + '%';
+        backTop.classList.toggle('visible', window.scrollY > 480);
+      }, { passive: true });
+
+      backTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+</body>
+</html>
