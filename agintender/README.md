@@ -4,14 +4,16 @@
 > 👤 **整理维护**：站主 **梭哈.AI**（[@SUOHA_AI](https://x.com/SUOHA_AI)）
 
 ## 档案规模
-- **X 原创推文**：**2,519** 篇（已剥离他人转推与无意义寒暄，含 **1,221** 篇精选干货）
-- **结构体系**：**7 大板块 · 20 个自然小节**（每节按「核心原则 → 实盘案例 → 踩坑避坑」逻辑排序）
-- **核心原话/思维模型**：**6** 条
-- **深度长文专区**：共收录 **92** 篇（总计 670,786 字）
-- **AI 问答助手**：本地全量 RAG 索引（`data/ai_rag_index.json`）+ Vercel Edge 流式网关，支持时间段检索与 `#t-XX` 锚点直达
+- **主区 X 原创推文**：**1,295** 篇（已剥离他人转推与无意义寒暄，含 **413** 篇精选干货）
+- **结构体系**：**6 大板块 · 16 个自然小节**（每节按「核心原则 → 实战案例 → 复盘教训」逻辑排序）
+- **核心原话导读**：**6** 条
+- **深度长文专区**：共收录 **129** 篇（总计 846,872 字）
+- **早期时间轴专区**：独立收录 **509** 篇早期历史原推（不混入主干体系）
+- **AI 问答助手**：本地全量 RAG 索引（`data/ai_rag_index.json`）+ Vercel Edge 流式网关，支持时间段检索与 `#t-XX` / `#art-XX` 锚点直达
 
 ## 开源数据文件
-- [`data/agintender_tweets.csv`](data/agintender_tweets.csv) / [`.json`](data/agintender_tweets.json)：全量分类推文表
+- [`data/agintender_tweets.csv`](data/agintender_tweets.csv) / [`.json`](data/agintender_tweets.json)：主区分类推文表
 - [`data/agintender_featured.csv`](data/agintender_featured.csv) / [`.json`](data/agintender_featured.json)：S/A 级精选干货表
-- [`data/agintender_mental_models.csv`](data/agintender_mental_models.csv) / [`.json`](data/agintender_mental_models.json)：核心思维模型与原话
-- [`data/domains/`](data/domains/)：7 大板块独立切片（JSON + UTF-8-SIG CSV）
+- [`data/agintender_mental_models.csv`](data/agintender_mental_models.csv) / [`.json`](data/agintender_mental_models.json)：核心原话与导读
+- [`data/agintender_early_archive.csv`](data/agintender_early_archive.csv) / [`.json`](data/agintender_early_archive.json)：早期独立时间轴档案
+- [`data/domains/`](data/domains/)：6 大板块独立切片（JSON + UTF-8-SIG CSV）
