@@ -5,17 +5,17 @@
 
 🌐 **在线阅读总站**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)  
 👤 **站主与项目维护**：**梭哈.AI**（[@SUOHA_AI](https://x.com/SUOHA_AI)）· [关注站主 X 主页 ↗](https://x.com/SUOHA_AI)  
-🤖 **全站 AI 问答助手**：全站 **15 个交易员子站** 均已统一接入 **一 KOL 一库全量本地 RAG 索引（`data/ai_rag_index.json`，合计 33,904 条索引文档）+ Vercel Edge Serverless 流式网关**（`gemini-3.1-flash-lite` + SSE 实时流式推送，前端零硬编码密钥、支持日期段精准检索、`#t-XX` 专题锚点一键跳转、单次会话 3 轮上限与单 IP 限流）。
+🤖 **全站 AI 问答助手**：全站 **15 个交易员子站** 均已统一接入 **一 KOL 一库全量本地 RAG 索引（`data/ai_rag_index.json`，合计 34,317 条索引文档）+ Vercel Edge Serverless 流式网关**（`gemini-3.1-flash-lite` + SSE 实时流式推送，前端零硬编码密钥、支持日期段精准检索、`#t-XX` 专题锚点一键跳转、单次会话 3 轮上限与单 IP 限流）。
 
 ---
 
-## 📚 正式上线实战导师名录（已完整收录 15 位实战派 · 48,136 篇全量原推与微博 / 32,561 篇语义去噪精分 · 14,936 篇 S/A 精选 · 141 篇深度长文与专访 · 90 条核心思维模型 · 4,666 张本地实盘配图）
+## 📚 正式上线实战导师名录（已完整收录 15 位实战派 · 48,321 篇全量原推与微博 / 31,432 篇语义去噪精分 · 14,183 篇 S/A 精选 · 178 篇深度长文与专访 · 90 条核心思维模型 · 4,686 张本地实盘配图）
 
 | # | 导师 | Twitter Handle | 核心方向 | 收录规模（清洗 / 全量） | 在线阅读站 | GitHub 开源数据 |
 | :-: | :--- | :--- | :--- | :---: | :---: | :---: |
 | 01 | **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 实盘交易全平台档案（7板块28节 X 原推 + 943 早期微博独占 + 3场深度专访 40,841 字） | **4,363 篇 + 3 专访** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data) |
 | 02 | **Wei Paul** | [@coolish](https://x.com/coolish) | BitMEX 时光机、杠铃策略与逆向周期 | **1,909 / 2,581** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/coolish/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/coolish/data) |
-| 03 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 裸K多周期、贵金属存储战役与 13 篇分类长文 | **2,211 / 2,730** + 13 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/wallstreet0name/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data) |
+| 03 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 裸K多周期、贵金属战役与 13 篇深度长文 | **2,306 / 2,915** + 13 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/wallstreet0name/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data) |
 | 04 | **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 基差套利、微观做市与 4 篇深度长文 | **614 / 673** + 4 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/yourquantguy/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data) |
 | 05 | **Meta 猿 🦍** | [@Metabape](https://x.com/Metabape) | 微观机制套利、OLP 负滑点与 6 篇深度长文 | **2,348 / 3,625** + 6 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/metabape/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/metabape/data) |
 | 06 | **川沐｜Trumoo** | [@xiaomustock](https://x.com/xiaomustock) | 美股硬科技、加密大周期与盘口博弈 | **3,103 / 3,866** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/xiaomu/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/xiaomu/data) |
@@ -26,7 +26,7 @@
 | 11 | **丰密 · KuiGas** | [@KuiGas](https://x.com/KuiGas) | 大周期配置、以慢制快与 10 篇深度长文 | **3,669 / 5,299** + 10 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/kuigas/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/kuigas/data) |
 | 12 | **风无向** | [@Web3Feng](https://x.com/Web3Feng) | 工作室产业化、长尾确定性套利与 4 篇深度长文 | **4,020 / 5,351** + 4 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/web3feng/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/web3feng/data) |
 | 13 | **magnolia** | [@0xmagnolia](https://x.com/0xmagnolia) | 蓝筹 Alpha 波段与一级链上实战 | **781 / 1,249** + 1 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/0xmagnolia/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/0xmagnolia/data) |
-| 14 | **danny · agintender** | [@agintender](https://x.com/agintender) | 衍生品微观结构、合约风控与 92 篇深度长文 | **2,519 / 3,277** + 92 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/agintender/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/agintender/data) |
+| 14 | **danny · agintender** | [@agintender](https://x.com/agintender) | 合约算法镰刀、做市黑盒、潮汕钱庄与 129 篇深度长文（含早期英文独立区） | **1,295 / 3,277** + 129 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/agintender/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/agintender/data) |
 | 15 | **ZTZZ ₿** | [@ZTZZBTC](https://x.com/ZTZZBTC) | 主观做市、空头纪律与 6.7 万字《慢就是快》 | **715 / 886** + 1 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/ztzzbtc/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/ztzzbtc/data) |
 
 ---
@@ -58,7 +58,7 @@ Trader-Archives/
 │
 ├── thankucrypto/        # 【模范总档】allincrypto 熬鹰资本全档案（3,420 X 原推 + 943 早期微博 + 3 场专访 4.08 万字）
 ├── coolish/             # Wei Paul · BitMEX 时光机、杠铃策略与逆向周期（1,909 / 2,581 · 7 卷 20 节）
-├── wallstreet0name/     # 华尔街没有名字 · 裸K多周期、贵金属存储战役与 13 篇分类长文（2,211 / 2,730 + 13 长文 · 7 卷 16 节）
+├── wallstreet0name/     # 华尔街没有名字 · 裸K多周期、贵金属战役与 13 篇深度长文（2,306 / 2,915 + 13 长文 · 7 卷 16 节）
 ├── yourquantguy/        # yourQuantGuy · Perp DEX 基差套利、微观做市与 4 篇深度长文（614 / 673 + 4 长文 · 6 卷 16 节）
 ├── metabape/            # Meta 猿 🦍 · 微观机制套利、OLP 负滑点与 6 篇深度长文（2,348 / 3,625 + 6 长文 · 6 卷 17 节）
 ├── xiaomu/              # 川沐｜Trumoo · 美股硬科技、加密大周期与盘口博弈（3,103 / 3,866 · 6 卷 13 节）
@@ -69,7 +69,7 @@ Trader-Archives/
 ├── kuigas/              # 丰密 · KuiGas · 大周期配置、以慢制快与 10 篇深度长文（3,669 / 5,299 + 10 长文 · 7 卷 15 节）
 ├── web3feng/            # 风无向 · 工作室产业化、长尾确定性套利与 4 篇深度长文（4,020 / 5,351 + 4 长文 · 7 卷 17 节）
 ├── 0xmagnolia/          # magnolia · 蓝筹 Alpha 波段与一级链上实战（781 / 1,249 + 1 长文 · 6 卷 16 节）
-├── agintender/          # danny · agintender · 衍生品微观结构、合约风控与 92 篇深度长文（2,519 / 3,277 + 92 长文 · 7 卷 20 节）
+├── agintender/          # danny · agintender · 合约算法镰刀、做市黑盒、潮汕钱庄与 129 篇深度长文（含早期英文独立区）（1,295 / 3,277 + 129 长文 · 6 卷 16 节）
 ├── ztzzbtc/             # ZTZZ ₿ · 主观做市、空头纪律与 6.7 万字《慢就是快》（715 / 886 + 1 长文 · 6 卷 16 节）
 └── laoemo/              # 📜【单篇典藏】《老恶魔谈合约》完整典藏版在线阅读页 + 14 页高清重排版 PDF
 ```
