@@ -1,24 +1,18 @@
-# danny (@agintender) 知识工程化全量开源数据湖大典
+# danny · agintender（@agintender）开源数据目录说明
 
-> 沉淀顶级实战派交易员与二级合约解密大师 **danny (@agintender)** 自 2022 年至 2026 年的全部公开发表资产。
-> 包含 **92 篇 Twitter Article 原生万字长文研报（累计 670,786 字）** 与 **3,231 篇实战推文**。
+> 本目录收录 **2,519** 篇经语义分类与复核的本人原创推文（精选 S/A 干货 **1,221** 篇），按 **7 大板块 · 20 个自然小节** 互斥归档，JSON 与 UTF-8-SIG CSV 100% 一一对应。
 
----
+## 主表文件
+- [`agintender_tweets.json`](agintender_tweets.json) / [`agintender_tweets.csv`](agintender_tweets.csv)：全量分类推文（2,519 篇）
+- [`agintender_featured.json`](agintender_featured.json) / [`agintender_featured.csv`](agintender_featured.csv)：S/A 级精选干货（1,221 篇）
+- [`agintender_mental_models.json`](agintender_mental_models.json) / [`agintender_mental_models.csv`](agintender_mental_models.csv)：核心原话与思维模型（6 条）
+- [`ai_rag_index.json`](ai_rag_index.json)：本地全量 RAG 检索索引
 
-## 🗂️ 9 大核心专卷结构与全景切片
-
-| 专卷编号与主题 | 万字长文篇数 | 实战推文数 | 对应数据包下载 |
-|:---|:---:|:---:|:---|
-| **01. 《合约算法镰刀》全系专卷与收割档案** | 11 篇 | 52 条 | [JSON](domains/01_contracts_scythe_series.json) \| [CSV](domains/01_contracts_scythe_series.csv) |
-| **02. 清算引擎、ADL 穿仓保护与极端流动性** | 2 篇 | 144 条 | [JSON](domains/02_contracts_clearing_adl.json) \| [CSV](domains/02_contracts_clearing_adl.csv) |
-| **03. Oracle 预言机算法、周末定价权与跨市套利** | 2 篇 | 84 条 | [JSON](domains/03_contracts_oracle_pricing.json) \| [CSV](domains/03_contracts_oracle_pricing.csv) |
-| **04. Stock Perps 股票永续合约的跨界降维打击** | 2 篇 | 59 条 | [JSON](domains/04_contracts_stock_perps.json) \| [CSV](domains/04_contracts_stock_perps.csv) |
-| **05. 做市商 Token Loan 借币黑盒与虚假流动性** | 3 篇 | 407 条 | [JSON](domains/05_contracts_mm_token_loan.json) \| [CSV](domains/05_contracts_mm_token_loan.csv) |
-| **06. 山寨币卖空权正义与流动性自救机制** | 6 篇 | 53 条 | [JSON](domains/06_contracts_short_selling_phil.json) \| [CSV](domains/06_contracts_short_selling_phil.csv) |
-| **07. 上币机制、中间人博弈与说客权力学** | 4 篇 | 45 条 | [JSON](domains/07_listing_lobbying_power.json) \| [CSV](domains/07_listing_lobbying_power.csv) |
-| **08. 宏观大周期、第一性原理与商业本质** | 18 篇 | 157 条 | [JSON](domains/08_macro_first_principles.json) \| [CSV](domains/08_macro_first_principles.csv) |
-| **09. 交易员心智、风险哲学与人生随笔** | 44 篇 | 2230 条 | [JSON](domains/09_trader_mindset_essays.json) \| [CSV](domains/09_trader_mindset_essays.csv) |
-| **🌟 全量汇总大典（Full Archive）** | **92 篇** | **3,231 条** | [全量 CSV 数据总表 (Excel 兼容)](agintender_full_archive.csv) |
-
----
-*本数据湖由 Trader-Archives 体系化工程团队构建，全部数据均保留时间戳与原始度量指标。*
+## 分板块切片（`domains/`）
+- `01` **永续合约与清算算法**（190 篇）：[`domains/01_perp_contract_mechanics.json`](domains/01_perp_contract_mechanics.json) · [`domains/01_perp_contract_mechanics.csv`](domains/01_perp_contract_mechanics.csv)
+- `02` **美股 Perp 与衍生品创新**（265 篇）：[`domains/02_stock_perps_derivatives.json`](domains/02_stock_perps_derivatives.json) · [`domains/02_stock_perps_derivatives.csv`](domains/02_stock_perps_derivatives.csv)
+- `03` **做市商与庄家博弈**（229 篇）：[`domains/03_mm_and_token_loan.json`](domains/03_mm_and_token_loan.json) · [`domains/03_mm_and_token_loan.csv`](domains/03_mm_and_token_loan.csv)
+- `04` **上币暗流与金融网络**（251 篇）：[`domains/04_exchange_listing_power.json`](domains/04_exchange_listing_power.json) · [`domains/04_exchange_listing_power.csv`](domains/04_exchange_listing_power.csv)
+- `05` **宏观周期、AI 与商业洞察**（370 篇）：[`domains/05_macro_ai_business.json`](domains/05_macro_ai_business.json) · [`domains/05_macro_ai_business.csv`](domains/05_macro_ai_business.csv)
+- `06` **研究方法与杠杆风控**（268 篇）：[`domains/06_research_and_mindset.json`](domains/06_research_and_mindset.json) · [`domains/06_research_and_mindset.csv`](domains/06_research_and_mindset.csv)
+- `07` **行业观察与日常动态**（946 篇）：[`domains/07_industry_and_daily.json`](domains/07_industry_and_daily.json) · [`domains/07_industry_and_daily.csv`](domains/07_industry_and_daily.csv)
