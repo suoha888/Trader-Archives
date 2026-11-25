@@ -1,0 +1,48 @@
+title = "Trader-Archives Secret Scanning Configuration"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "atria-api-key"
+description = "Atria API Key (atr_*)"
+regex = '''atr_[A-Za-z0-9_-]{12,}'''
+keywords = ["atr_"]
+
+[[rules]]
+id = "generic-sk-api-key"
+description = "OpenAI / Proxy API Key (sk-*)"
+regex = '''sk-[A-Za-z0-9_-]{20,}'''
+keywords = ["sk-"]
+
+[[rules]]
+id = "google-api-key"
+description = "Google / Gemini API Key (AIza*)"
+regex = '''AIza[0-9A-Za-z_-]{30,}'''
+keywords = ["AIza"]
+
+[[rules]]
+id = "vercel-token"
+description = "Vercel Access / Gateway Token (vcp_ / vck_)"
+regex = '''vc[pk]_[A-Za-z0-9_-]{20,}'''
+keywords = ["vcp_", "vck_"]
+
+[[rules]]
+id = "jwt-bearer-token"
+description = "Hardcoded JWT Bearer Token"
+regex = '''eyJhbGci[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+'''
+keywords = ["eyJhbGci"]
+
+[allowlist]
+description = "Allow redacted placeholders and read-only historical raw backups"
+paths = [
+  '''^.*_ultra_raw\.json$''',
+  '''^SECURITY_AUDIT_REPORT\.md$''',
+  '''^SECURITY\.md$''',
+  '''^scripts/security_verify\.py$''',
+]
+regexes = [
+  '''\[REDACTED[_A-Z]*\]''',
+  '''atr_[A-Za-z0-9_-]{1,6}\.\.\.[A-Za-z0-9_-]{2,6}''',
+  '''sk-[A-Za-z0-9_-]{1,6}\.\.\.[A-Za-z0-9_-]{2,6}''',
+]

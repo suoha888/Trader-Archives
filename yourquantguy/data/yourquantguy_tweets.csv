@@ -2681,7 +2681,7 @@ ECDF + distribution charts attached.
 It would be more accurate if I could get the actual FILLED server time from lighter, but the WebSocket updates only include second-resolution timestamps, meaning timestamp, created_at, and updated_at all fall within the same second.
 
 @Lighter_xyz"
-2062106413267066941,2026-06-03 09:37,Perp DEX 做市与开源脚本,2.3,订单簿微观结构、API 排障与撮合细节,2,实盘案例,A,75,量化工具开发与排障记录,21,0,7,5920,https://x.com/yourQuantGuy/status/2062106413267066941,"- 修复了 Binance 经典账户和统一账户的问题
+2062106413267066941,2026-06-03 09:37,Perp DEX 做市与开源脚本,2.3,订单簿微观结构、API 排障与撮合细节,2,实盘案例,A,75,量化工具开发与排障记录,21,0,7,5920,https://x.com/yourQuantGuy/status/2062106413267066941,"'- 修复了 Binance 经典账户和统一账户的问题
 - 增加了对aptos链的支持
 - 增加了出入金的手动记录，这样就可以看真实的盈亏变化了，而不仅是总资产
 
