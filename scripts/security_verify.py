@@ -14,6 +14,7 @@ Verifies HTML/JS/data security invariants across the repository:
 """
 from __future__ import annotations
 
+import csv
 import json
 import re
 import shutil
@@ -170,10 +171,53 @@ console.log(`JS syntax OK across ${files.length} HTML files`);
         print(f"[PASS/JS] {proc.stdout.strip()}")
 
 
+def check_repo_security_files(errors: list[str]) -> None:
+    for rel in ("SECURITY.md", ".gitleaks.toml", ".github/CODEOWNERS", ".github/workflows/security-audit.yml"):
+        if not (REPO_ROOT / rel).is_file():
+            errors.append(f"Missing required security baseline file: {rel}")
+    wf = REPO_ROOT / ".github/workflows/security-audit.yml"
+    if wf.is_file():
+        for m in re.finditer(r"uses:\s*([^\s#]+)", wf.read_text(encoding="utf-8")):
+            ref = m.group(1)
+            if not re.search(r"@[0-9a-f]{40}$", ref):
+                errors.append(f"GitHub Action not pinned to full commit SHA: {ref}")
+
+
+def check_csv_formula_injection(errors: list[str]) -> None:
+    num_neg = re.compile(r"^-\d+(?:\.\d+)?%?$")
+    at_func = re.compile(r"^@[A-Za-z_][A-Za-z0-9_.]*\(")
+    checked = 0
+    for p in sorted(REPO_ROOT.rglob("*.csv")):
+        if any(part in {".git", ".github", "scripts"} for part in p.relative_to(REPO_ROOT).parts):
+            continue
+        if p.relative_to(REPO_ROOT).parts[0] in FROZEN_SLUGS:
+            continue
+        checked += 1
+        with p.open("r", encoding="utf-8-sig", newline="") as f:
+            for rno, row in enumerate(csv.reader(f), 1):
+                for cno, cell in enumerate(row):
+                    s = cell.lstrip(" ")
+                    if not s:
+                        continue
+                    c0 = s[0]
+                    bad = (
+                        c0 in ("=", "+", "\t", "\r")
+                        or (c0 == "-" and not num_neg.match(s))
+                        or (c0 == "@" and bool(at_func.match(s)))
+                    )
+                    if bad:
+                        errors.append(
+                            f"CWE-1236 unneutralized CSV formula cell in {p.relative_to(REPO_ROOT)}:{rno} col={cno}: {s[:40]!r}"
+                        )
+    print(f"[PASS/CSV] Checked {checked} non-frozen CSV files for CWE-1236 formula injection")
+
+
 def main() -> int:
     errors: list[str] = []
     check_gitignore(errors)
+    check_repo_security_files(errors)
     check_secrets(errors)
+    check_csv_formula_injection(errors)
     check_root_html(errors)
     check_subsites(errors)
     check_js_syntax(errors)

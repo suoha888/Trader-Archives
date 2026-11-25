@@ -1,156 +1,213 @@
-# Trader-Archives 全栈安全审计报告（5 层并行集群审计）
+# Trader-Archives 全栈六层安全审计报告（CSO Security Audit Report）
 
 > **审计日期**：2026-11-25  
-> **审计范围**：`d:\Codex\顶级 KOL数据` 全工作区（涵盖公开 GitHub 仓库 `suoha888/Trader-Archives` 全部 93 个历史提交与 18 个静态网页、Vercel Edge AI 网关、164 个 Python/JS 流水线脚本、Skills/HTML 模板库及 1,160+ 数据湖文件）  
-> **审计方式**：5 路专业安全审计集群并行全量只读取证（AST 静态分析 + 正则/熵值凭据考古 + Node.js V8 PoC 复现 + 跨层契约交叉核验）  
-> **脱敏声明**：本报告中所有发现的真实密钥、Token 与敏感凭据均已脱敏（仅展示前缀/末位与长度），严禁回显完整密钥。
+> **审计范围**：`d:\Codex\顶级 KOL数据` 全工作区（6 大架构层：公开前端与 17 个 KOL 子站、Vercel Edge AI 网关与云部署、6 阶段 Python 采集建站流水线、Agent Skills 与模板供应链、数据湖/导出包/RAG 索引、Git 历史考古与仓库安全）  
+> **审计架构**：12-Agent 并发集群（6 路专职领域安全审计 Agent + 6 路独立盲审交叉验证 Agent，严格执行 Pre-emit 代码引证门禁与误报过滤）  
+> **目标公开仓库**：[`suoha888/Trader-Archives`](https://github.com/suoha888/Trader-Archives)（Visibility: **PUBLIC**，默认分支 `main`，基准提交 `5e18e9a`）
 
 ---
 
 ## 一、执行摘要（Executive Summary）
 
-本次全栈 5 层安全审计累计检查 **18 个 HTML 页面、4 个 Serverless 网关文件、164 个流水线可执行脚本、17 个 Skill/模板与根目录治理文件、93 个 Git 历史提交（1,419 个文本 Blob，861.1 MB）及 1,179 个数据湖文本文件**。经跨层去重与人工逐行复核，确认 **34 项真实有效安全发现**（零误报），风险分布如下：
+本次集群审计共扫描工作区 **1,472+ 文本源码与配置文件**、**18 个静态 HTML 页面**、**180 个流水线/建站/审计脚本**、**13 个 Agent Skill 与模板文件**、**306 份 CSV / 16 份 RAG 索引（34,869 条文档）** 以及公开 GitHub 仓库全部 **93 个历史提交（1,390 个非媒体历史 blob）**。
 
-| 架构层 | 审计对象 | CRITICAL | HIGH | MEDIUM | LOW / INFO | 小计 |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Layer 1 · 前端与客户端 Web 层** | `01_Trader-Archives` 总站 + 17 子站 | 0 | 2 | 3 | 3 | **8** |
-| **Layer 2 · Serverless AI 网关层** | `05_AI_Mentor_Gateway_Vercel` | 0 | 3 | 3 | 2 | **8** |
-| **Layer 3 · 数据流水线与脚本层** | `04_Pipeline` + `01_` 本地工具脚本 | 2 | 4 | 4 | 2 | **12** |
-| **Layer 4 · Skills、模板与供应链层** | `03_KOL--ziliao` + `.agents/skills` | 1 | 3 | 4 | 1 | **9** |
-| **Layer 5 · Git 历史与数据湖考古层** | `01_/.git` 全历史 + `02_` + `06_` | 1 | 2 | 3 | 1 | **7** |
-| **去重后独立根因总计** | **全栈 5 层** | **4** | **11** | **13** | **6** | **34** |
+- **候选发现总数**：54 项（F01–F54）
+- **独立盲审结论**：`VERIFIED` 27 项、`DOWNGRADED` 25 项、`FALSE_POSITIVE` 2 项（F09、F38 已剔除）、`UNVERIFIED` 0 项
+- **合并去重后有效安全议题**：**20 项**（对应 52 条跨层独立验证记录）
 
-> *注：部分跨层关联问题（如 `FE-02`/`PL-08`/`GIT-02` 的 `wallstreet0name` 第三方 `sk-` 密钥入库、`FE-04`/`PL-05`/`GIT-03` 的 `<script>` 内联 JSON 未转义、`FE-01`/`GW-01`/`GW-02` 的 AI 网关信任边界、`TM-01`/`PL-02`/`GIT-01` 的历史 23–30 枚 `atr_` 密钥传播链）在各层均保留独立编号以明确对应代码修复落点，汇总表已按独立根因去重。*
+| 严重级别 | 跨层独立验证记录数 | 合并去重后核心议题数 | 核心风险焦点 |
+|---|---:|---:|---|
+| **CRITICAL** | 5 | **3** | 公开 Git 历史永久泄露 45 枚真实 LLM API Key；19 份本地模板/技能残留 30 枚明文 Key 且存在回流风险；Vercel 付费 AI 网关无鉴权且仅凭可伪造 `Origin`/`Referer` 放行 |
+| **HIGH** | 9 | **6** | 网关允许客户端任意替换 `system` 提示词（通用免费 AI 代理）；Edge 单实例内存限流可绕过；采集脚本硬编码无 `exp` 的生产 JWT；25 脚本跨项目收割 `mcp_config.json` 与 `cb-desk/.env`；Windows `shell=True` OS 命令注入；遗留技能指令 `git add -A && git push origin main` |
+| **MEDIUM** | 17 | **9** | 公开数据湖/RAG 再分发第三方明文 `sk-` 密钥；全站 16 子站 RAG 无隔离拼接存在实态提示词注入；建站器与前端多处 DOM XSS / 上下文逃逸汇点；图片下载 SSRF / `file://` 读取；`--slug` 路径穿越绕过冻结目录保护；上游 `fetch` 无超时与密钥同步漂移；`_probe_atria_new.py` 向动态爬取 URL 外发 Bearer Key；仓库缺失 `.gitignore` 规则/Gitleaks CI/`SECURITY.md`；Skill 供应链边界缺失 |
+| **LOW / INFO** | 21 | **2** | 缺失 CSP / 安全响应头 / `Referrer-Policy` / `noreferrer`；`sessionStorage` `cached.ragCount` 未转义；生产 CORS 放行 `localhost`；306 份 CSV 缺 CWE-1236 公式中和；`*_ultra_raw.json` 含第三方邮箱；`17zxhold_harvest_report.json` 泄露采集遥测；`xiaomu` 残留 `<p>` 碎片 |
 
-### 最紧迫的 4 项 CRITICAL 发现（需立即响应）
-1. **[GIT-01] 公开 GitHub 历史永久暴露 45+ 个真实生产 AI API Key**：`suoha888/Trader-Archives` 历史 66+ 个提交中保留了 15 枚 `api.b.ai` (`sk-*`) 与 30+ 枚 `api.atria-asi.ai` (`atr_*`) 真实高熵密钥；GitHub 默认 Secret Scanning 无法识别 `atr_` 前缀。
-2. **[PL-01] 采集脚本硬编码永久有效（无 `exp`）`ai.6551.io` HS256 JWT Token**：`collect_all_gch_arbitrage.py:10` 与 `harvest_gch_arbitrage.py:10` 明文写入 208 字符无过期时间 Bearer JWT。
-3. **[PL-02] 15 个遗留 Stage 4 建站脚本硬编码 30 枚 `atr_*` 密钥（349 处）**：任意误运行即向公开 `index.html` 二次泄露密钥。
-4. **[TM-01] `03_KOL--ziliao` 旧版 Skill 与即插即用 HTML 模板硬编码 23 枚 `atr_*` 密钥（65 处）且保持 `user-invocable: true`**，并与 `TM-03`（`git add -A` + 自动 `git push origin main`）形成高危误触发链路。
-
-### 其余高危（HIGH）核心风险
-- **Windows 平台 OS 命令注入（`PL-03`）**：现役 `harvest_kol_v5.py`、`classify_kol_llm_v5.py`、`incremental_harvest_ws0n.py` 使用 `subprocess.run(..., shell=(os.name == "nt"))` 拼接未校验的 `tid`/`handle`，上游数据投毒即可在开发机触发 `cmd.exe` 命令执行（RCE）。
-- **SSRF 与 `file://` 本地文件读取（`PL-06`）**：现役 v5/v6 脚本使用原生支持 `file://` 的 `urllib.request.urlopen()`，且仅用 `"pbs.twimg.com" in murl` 子串匹配、`av_url`/`bn_url` 零校验、读取无字节上限。
-- **AI 网关防滥用与提示词劫持缺口（`GW-01`, `GW-02`, `GW-03`, `FE-01`）**：可伪造 `Origin` + Edge 内存 `Map` 限流失效 + 客户端任意控制 `role: "system"` 导致可被当作免费通用 LLM 代理刷爆额度；部署脚本跨项目复用交易工程 `cb-desk/.env` 密钥并向 `preview`/`development` 下发、全局关闭 `ssoProtection`。
-- **模板与生成器二阶 XSS（`TM-02`, `PL-04`, `PL-05`, `FE-03`, `FE-04`, `GIT-03`）**：旧模板 `renderSimpleMarkdown()` 已在 Node.js V8 实测复现零交互 `@keyframes` `onanimationstart` DOM XSS；现役 v5/v6 生成器与 16 个子站存在 `escHtml` 漏转义单引号（`onclick="showModalImage('...')"` 逃逸）、`href` 缺 `https?://` 白名单、`cached.ragCount` 未数值化及 `<script>` 内联 JSON 未转义 `<`/`>`/`&`/`U+2028`。
-- **公开数据湖与 RAG 明文收录第三方 `sk-*` 密钥（`FE-02`, `PL-08`, `GIT-02`）**：`wallstreet0name/data/` 6 个文件（含 `ai_rag_index.json`）及 `02_` 镜像原样保留了推文中的 51 位真实格式 `sk-XPjnsaf****De37`。
+### 正向安全基线确认（Verified Positive Controls）
+1. 公开仓库 `HEAD`（`5e18e9a`）中全部 18 个 HTML 页面均已清除维护者自有前端硬编码 API Key，统一迁移至服务端 Vercel Edge 网关，且**零第三方 CDN JavaScript 依赖**。
+2. 全站 16 个活跃 AI 研报子站的 `formatAiExquisiteOutput()` 经实测已对 LLM 直接输出进行 HTML 转义，且锚点正则严格受限，无直接由 LLM Markdown 触发的 XSS。
+3. 现役 v5/v6 生成器已对内联 JSON 做 `.replace("</", "<\\/")` 处理，**在线上 18 个页面中无活跃 `</script>` 逃逸漏洞**（候选 F09 经独立盲审确认为误报）。
+4. 全工作区未检出 `os.system`、`os.popen`、`pickle.load`、`yaml.load` 或 `requests(..., verify=False)`。
 
 ---
 
-## 二、分层详细安全发现（Layer-by-Layer Findings）
+## 二、攻击面测绘（Attack Surface Map）
 
-### Layer 1：前端与客户端 Web 层（`01_Trader-Archives_14位KOL全量网站与数据湖`）
+```text
+ATTACK SURFACE MAP — Trader-Archives Full Stack
+══════════════════════════════════════════════════════════════════
+CODE & WEB SURFACE
+  Public static pages:      18 HTML (1 root hub + 17 KOL subsites, GitHub Pages)
+  Frozen benchmark sites:    2 (thankucrypto/, laoemo/ — strictly read-only per AGENTS.md)
+  Client-side DOM sinks:   172 innerHTML sites across 16 AI subsites; 32 sessionStorage ops
+  Unauthenticated APIs:      1 Vercel Edge endpoint (/api/chat) proxying paid LLM keys
+  Authenticated endpoints:   0
+  Local pipeline scripts:  180 Python/JS scripts (Stage 1–5 + ws0n_v6_rebuild + root utils)
+  Executable Agent Skills:  13 files (03_KOL--ziliao + .agents/skills/kol-archive-builder)
+  Published datasets:      306 CSVs + 16 ai_rag_index.json (34,869 docs) + 16 ultra_raw JSONs
 
-| 编号 | 级别 | CWE / OWASP | 位置与影响面 | 核心缺陷与复现说明 | 修复方案 |
-| :--- | :---: | :--- | :--- | :--- | :--- |
-| **FE-01** | **HIGH** | CWE-602 / LLM01 | 16/17 动态子站 `*/index.html`（含 `thankucrypto` 与未跟踪 `17zxhold`） | 前端构造并发送 `role: "system"`、`model`、`max_tokens`，3 轮对话/300 字上限仅在客户端 JS 校验；`rag.block` 与用户提问直接拼接无不可信边界标签。 | 网关层强制 `systemPrompt` SHA-256 白名单 + 服务端硬编码模型 + 服务端不可覆盖防注入声明；前端将 `rag.block` 包裹在 `<untrusted_archive_excerpts>` 中。 |
-| **FE-02** | **HIGH** | CWE-798 / CWE-200 | `wallstreet0name/data/` 6 个文件（含 `ai_rag_index.json`） | 推文 `2000843101716508867` 中自购中转站 API 密钥 `sk-XPjnsaf****De37`（51 chars）未经脱敏直接进入公开数据湖和 RAG 索引，AI 助手可直接检索复述。 | 立即脱敏全部派生公开文件（遵守 `AGENTS.md` 不修改 `*_ultra_raw.json` 原备）；流水线与 RAG 构建器新增统一出站 Secret Redactor。 |
-| **FE-03** | **MEDIUM** | CWE-79 / A03 | 16/17 动态子站 `*/index.html` | ① `escHtml()` 漏转义单引号 `'`，导致动态 `onclick="showModalImage('${escHtml(p)}')"` 存在属性内 JS 字符串逃逸；② 动态 `tweetUrl`/`sourceUrl` 未校验 `https?://`；③ `rCls` 未强转整数；④ `sessionStorage` 中的 `cached.ragCount` 未强转 `Number` 即写入 `innerHTML`（全 `suoha888.github.io` 同源共享风险）。 | 废弃动态 `onclick` 改为 `data-modal-src` + 事件委托；`escHtml` 补全 `'` 转义；新增 `safeHttpUrl()` 白名单校验；`rCls` 与 `cached.ragCount` 强制整数化。 |
-| **FE-04** | **MEDIUM** | CWE-79 / CWE-116 | 16/17 动态子站 `<script>`（5 站含原始 `<`，`yourquantguy` 含 `U+2028`） | 内联 `FALLBACK_TWEETS`、`EARLY_FALLBACK`、`CJ_AI_CONFIG` 未转义 `<`/`>`/`&`/`U+2028`/`U+2029`，一旦未来推文含 `</script>` 即触发零交互 Stored XSS。 | 统一使用 HTML-safe JSON 序列化（`<`→`\u003c`、`>`→`\u003e`、`&`→`\u0026`、转义 `\u2028`/`\u2029`）。 |
-| **FE-05** | **MEDIUM** | CWE-693 / A05 | 全部 18/18 HTML 页面 | GitHub Pages 不支持自定义 HTTP 头，且全部页面 `<head>` 均缺失 `<meta http-equiv="Content-Security-Policy">` 与 `<meta name="referrer">`。 | 为全部页面 `<head>` 部署 CSP 白名单（限定 `connect-src` 仅至自有网关，禁止 `object-src`/`form-action`）及 `strict-origin-when-cross-origin` Referrer 策略。 |
-| **FE-06** | **LOW** | CWE-1022 / A05 | 根 `index.html`（16 处外链 + 15 处 `onerror`） | 16 处 `target="_blank"` 缺失 `rel="noopener noreferrer"`；15 处头像 `onerror` 未置空 `this.onerror=null` 且回退第三方 `abs.twimg.com`（网络受限时形成无限报错死循环并泄露访客 IP）。 | 16 处外链补全 `rel="noopener noreferrer"`；15 处 `onerror` 改为 `this.onerror=null` + 本地轻量内联 SVG 占位图。 |
-| **FE-07** | **LOW** | CWE-353 / A08 | 18/18 HTML（Google Fonts）；`laoemo/index.html:965`（PDF iframe） | 第三方 Google Fonts 动态 CSS 无自托管/SRI；冻结站 `laoemo` PDF `<iframe>` 无 `sandbox`。 | 通过 CSP 严格收敛 `style-src`/`font-src` 白名单；后续版本可考虑自托管 WOFF2 字体；冻结站 `laoemo/` 保持只读不改。 |
-| **FE-08** | **LOW/INFO** | CWE-200 / CWE-538 | `01_` 根目录 4 个 `.gitignore` 忽略文件 | `analyze_kol_profiles.py`、`audit_all_subsites.py`、`full_audit_results.json` 含 `c:\Users\KALOS\Desktop\6551...` 及历史 23-Key 遥测，虽已被忽略未入库但滞留于公开仓库目录内。 | 建议迁出公开仓库目录或删除；同时修复 `.gitignore` 补全忽略规则防误加。 |
-
-> **Layer 1 洁净核验**：当前 18 个 HTML 均 **0 硬编码密钥**、**0 外部 JS CDN**、**0 `eval`/`document.write`/`postMessage`/`location.hash` 注入**；AI 输出 `formatAiExquisiteOutput` 先调用 `escHtml` 且无 Markdown 外链解析，锚点受正则白名单严格约束；冻结站 `laoemo/index.html` 高度洁净。
-
----
-
-### Layer 2：Serverless AI 网关层（`05_AI_Mentor_Gateway_Vercel`）
-
-| 编号 | 级别 | CWE / OWASP | 位置 | 核心缺陷与复现说明 | 修复方案 |
-| :--- | :---: | :--- | :--- | :--- | :--- |
-| **GW-01** | **HIGH** | CWE-306 / API4 | `api/chat.js:1,16-66,95-137` | 仅校验可由 `curl` 伪造的 `Origin`/`Referer`；Edge Runtime 多 Isolate 内存 `IP_BUCKETS` 跨实例/冷启动失效，且 IPv6 未按 `/64` 归一化，可被脚本绕过限流耗尽付费额度。 | ① IPv6 `/64` 归一化 + 有界内存桶降级；② 内置 Upstash Redis REST 分布式滑动窗口限流支持（环境变量零入侵启用）；③ 建议在 Vercel Dashboard 开启 Edge Firewall WAF 限流与上游硬消费封顶；④ 二阶段接入 Cloudflare Turnstile。 |
-| **GW-02** | **HIGH** | CWE-20 / LLM01 | `api/chat.js:176-218` | 透传客户端任意 `role: "system"`（最高 2,600 字符），允许将垂类网关劫持为通用免费 LLM 代理；未强制 `nonSystemAll.length >= 1` 与最后一条必须为 `user`；3,400 字符硬截断会误截合法 `augmentedUser`（最大 ~3,560 字符）。 | 利用 Web Crypto API 实施 **16 子站 `systemPrompt` SHA-256 加密白名单**（含冻结 `thankucrypto` 与 `17zxhold`，100% 零破坏兼容），服务端前置不可覆盖防越狱指令，强校验末条为 `user`，当前 `user` 上限微调至 `3800`。 |
-| **GW-03** | **HIGH** | CWE-798 / CWE-522 | `deploy_gateway.py:9-36,68-94` | 硬编码读取 `C:\Users\KALOS\.gemini\config\mcp_config.json` 与无关交易工程 `cb-desk/.env` 跨边界复用密钥；密钥下发至 `["production","preview","development"]` 且全局关闭 `ssoProtection: None` 导致 Preview 公网裸奔。 | 改为仅读取专属环境变量 `VERCEL_TOKEN`、`TRADER_ARCHIVES_AI_GATEWAY_KEY`、`TRADER_ARCHIVES_GEMINI_KEY`；目标收窄为 `["production"]`；改为 `{"ssoProtection": {"deploymentType": "preview"}}`；立即轮换解耦 `cb-desk` 密钥。 |
-| **GW-04** | **MEDIUM** | CWE-400 / API4 | `api/chat.js:50-56,151-218` | `req.json()` 无字节上限（可达 4 MB）；`rawMessages.length` 未封顶（可发送 5 万条 `system` 触发 3 次 $O(N)$ 扫描）；`String(m.content)` 内存放大；`IP_BUCKETS` 超 1000 键后无上限且每笔全表扫描。 | `Content-Length` + 流式读取双层 `32 KB` 硬上限（超限返回 `413`）；强校验 `messages.length <= 6` 与 `typeof m.content === 'string'`；`IP_BUCKETS` 设 `2000` 容量硬顶与 10 秒最小清理间隔。 |
-| **GW-05** | **MEDIUM** | CWE-400 / CWE-1088 | `api/chat.js:68-89,226-278` | 上游 `fetch` 缺 `AbortController` 超时且未透传 `req.signal`（客户端断开仍空烧 960 tokens）；同密钥 `401`/`403` 无效重试；对外泄露 `402` 欠费状态码。 | 组合 `req.signal` 与 15s TTFB 超时至 `AbortController`；单请求内按 Provider 短路 `401`/`403`；对外将 `402` 统一映射为 `503`。 |
-| **GW-06** | **MEDIUM** | CWE-942 / API8 | `api/chat.js:3,10,18-26` | 生产环境无条件放行全球任意 `http://localhost:*`/`127.0.0.1:*` 跨域调用；CORS 冗余放行未使用的 `Authorization` 请求头。 | 将 `ALLOWED_LOCALHOST_RE` 收敛至 `process.env.ALLOW_LOCALHOST_ORIGINS === 'true'` 开关（生产默认关闭）；`Access-Control-Allow-Headers` 收紧为 `'Content-Type'`。 |
-| **GW-07** | **LOW** | CWE-693 / API8 | `vercel.json:1-3`, `api/chat.js:96-306` | `vercel.json` 仅空壳配置；API 响应缺 `X-Content-Type-Options`、`X-Frame-Options`、`Referrer-Policy`、`CSP`、`HSTS`、`Cache-Control: no-store` 及 405 `Allow` 头。 | 在 `api/chat.js` 与 `vercel.json` 补齐全部安全响应头与 `Cache-Control: no-store`。 |
-| **GW-08** | **LOW** | CWE-209 / CWE-532 | `deploy_gateway.py:57-149` | 异常直接打印未脱敏原始 Vercel HTTP 响应体与完整 deployment JSON；写 `gateway_endpoint.txt` 前未校验生产域名。 | 封装脱敏报错函数过滤凭据与超长响应体；校验 `best_domain == f"{PROJECT_NAME}.vercel.app"`。 |
-
-> **Layer 2 洁净核验**：网关文件零硬编码密钥、无 `.env`/`.vercel` 残留；上游 URL 与模型硬编码无 SSRF/路径注入；上游鉴权用 `Bearer` 头而非查询参数；不向客户端泄露堆栈或上游错误文本。
+INFRASTRUCTURE & REPO SURFACE
+  Git repository:            1 PUBLIC repo (suoha888/Trader-Archives, 93 commits)
+  CI/CD workflows:           0 (missing secret scanning & security gates)
+  Security policy / hooks:   0 (no SECURITY.md, .gitleaks.toml, CODEOWNERS, git hooks)
+  Cloud deploy targets:      2 (GitHub Pages + Vercel Edge Functions)
+  Secret management:         Mixed (Vercel env vars + cross-project .env + mcp_config.json + legacy hardcoded pools)
+```
 
 ---
 
-### Layer 3：Python 数据流水线与自动化脚本层（`04_Pipeline` + `01_` 脚本）
+## 三、全层合并安全发现详单（20 项核心议题，映射 F01–F54）
 
-| 编号 | 级别 | CWE / OWASP | 位置与数量 | 核心缺陷与复现说明 | 修复方案 |
-| :--- | :---: | :--- | :--- | :--- | :--- |
-| **PL-01** | **CRITICAL** | CWE-798 / A07 | `Stage1_2/collect_all_gch_arbitrage.py:10`, `harvest_gch_arbitrage.py:10`（2 文件） | 硬编码 208 字符 `ai.6551.io` HS256 JWT（`eyJhbGci****...`），Claims 无 `exp` 过期字段，为永久生产凭据。 | 立即前往 `ai.6551.io` 吊销轮换；删除明文 Token 改为仅从 `os.environ["TWITTER_TOKEN"]` 读取。 |
-| **PL-02** | **CRITICAL** | CWE-798 / A02 | 15 个遗留 Stage 4 生成器（349 处，30 枚唯一 `atr_*` Key） | 旧版独立建站脚本保留 14–30 枚明文 `atr_*` 密钥，任意误执行即向公开 HTML 二次泄密。 | 吊销全部 30 枚 `atr_*` Key；清零 15 个脚本中的全部密钥并植入废弃熔断守卫，强制收敛至 `build_kol_site_v5.py`。 |
-| **PL-03** | **HIGH** | CWE-78 / A03 | **现役 3 个主力脚本**：`harvest_kol_v5.py`、`classify_kol_llm_v5.py`、`incremental_harvest_ws0n.py`（6 处调用） | Windows 宿主机下 `subprocess.run(["tinyfish", "fetch", url], ..., shell=(os.name == "nt"))` 将未校验的 `tid`/`handle` 交给 `cmd.exe /c`，`&`/`|`/`%VAR%` 直接触发本地 RCE。 | 彻底移除 `shell=(os.name == "nt")`，固定 `shell=False`（自动解析 `.cmd` 为直接执行 `node <cli.js>` 并阻断 Shell 元字符）；严格正则校验 `tid`（纯数字）与 `handle`（`[A-Za-z0-9_]{1,15}`）。 |
-| **PL-04** | **HIGH** | CWE-79 / CWE-116 | 16 个遗留 Stage 4 生成器 | 原始 `json.dumps` 嵌入 `<script>` 未转义；推文与 AI 响应零转义写入 `innerHTML`；Markdown 链接允许 `javascript:` 与双引号属性逃逸。 | 全部遗留脚本植入废弃熔断守卫（与 PL-02 同步收口），禁止再生成页面。 |
-| **PL-05** | **HIGH** | CWE-79 / CWE-83 | **现役旗舰生成器**：`build_kol_site_v5.py`、`build_ws0n_site_v6.py`、`build_thankucrypto_site_v5.py`、`unify_all_14_legacy_subsites.py` | 服务端与前端内联 `onclick="showModalImage(...)"` / `onclick="askPreset(...)"` 存在引号逃逸；外链 `href` 缺 `https?://` 白名单；JSON 仅 `.replace("</", "<\\/")` 未转义 `<`/`>`/`&`/`U+2028`。 | 接入统一 `security_utils.py`：`safe_json_for_script()`、`safe_http_url()`、全面改用 `data-*` + 事件委托、补全 `escHtml` 单引号转义与 CSP `<meta>`。 |
-| **PL-06** | **HIGH** | CWE-918 / A10 | **现役 3 脚本**（`harvest_kol_v5.py`、`classify_kol_llm_v5.py`、`incremental_harvest_ws0n.py`）+ 10 旧下载器 | `urllib.request.urlopen()` 原生支持 `file://`；仅用 `"pbs.twimg.com" in murl` 子串绕过；`av_url`/`bn_url` 零校验；自动跟随重定向且 `r.read()` 无字节上限。 | 封装统一 `safe_download_twimg()`：强制 `urlparse` 校验 `https` + 精确域名白名单（`pbs.twimg.com`/`abs.twimg.com`），改用 `requests` `allow_redirects=False` + `stream=True` + 15 MB 硬上限。 |
-| **PL-07** | **MEDIUM** | CWE-22 / A01 | `harvest_kol_v5.py`、`build_kol_site_v5.py`、`build_kol_rag_v5.py`、`classify_kol_llm_v5.py` + 6 旧下载器 | `--slug ./thankucrypto` 可绕过 `slug in FROZEN_SLUGS` 精确字符串检查；`local_images` 的 `images/../../` 绕过前缀检查；`tid` 未校验拼接路径。 | 强制 `validate_slug()`/`validate_tid()`，基于 `Path.resolve().is_relative_to()` 校验所有目录边界与冻结守卫。 |
-| **PL-08** | **MEDIUM** | CWE-200 / A02 | `classify_kol_llm_v5.py`、`build_kol_rag_v5.py`、`build_ws0n_rag_v9.py`、`audit_kol_v5.py` | 清洗与 RAG 管线无出站密钥脱敏导致 `wallstreet0name` `sk-*` 进入公开数据湖；审计脚本仅扫 HTML 漏检 `data/*.json`。 | 在清洗与 RAG 管线接入 `redact_secrets()`；扩展 `audit_kol_v5.py` 扫描全部 `data/*.json`/`*.csv` 与 Web 安全门禁。 |
-| **PL-09** | **MEDIUM** | CWE-200 / CWE-522 | `Stage5/_probe_atria_new.py` & `_probe_atria.py` | 爬取外部 JS 中任意含 `/v1` 的 URL 并直接附带明文 `Authorization: Bearer <atr_key>` 发起 POST。 | 清空并废弃两份一次性探活脚本。 |
-| **PL-10** | **MEDIUM** | CWE-547 / CWE-200 | 73/164 脚本（含 3 现役核心脚本跨项目读 `.env`、`build_skill.py` 写 C 盘） | 现役 `classify_kol_llm_v5.py`、`run_track_a_tweets.py`、`run_track_b_articles.py` 硬编码读取外部实验目录 `.env`；`_check_ai_billing.py` 跨读 `cb-desk/.env` 与 `C:\Users\KALOS\.gemini\config\mcp_config.json`。 | 现役脚本移除跨项目硬编码 `.env` 路径，仅读环境变量或显式 `PIPELINE_ENV_FILE`；废弃 C 盘写入脚本与跨读凭据探活脚本。 |
-| **PL-11** | **LOW** | CWE-1022 / A05 | `sync_global_hub_v5.py:472` 及旧版 Hub/生成器脚本 | 总站卡片生成模板中 `target="_blank"` 缺失 `rel="noopener noreferrer"`。 | `sync_global_hub_v5.py:472` 补齐 `rel="noopener noreferrer"`，并纳入 `audit_kol_v5.py` 自动断言。 |
-| **PL-12** | **LOW** | CWE-434 / CWE-377 | 8 旧图片下载器；`unify_all_14_legacy_subsites.py:1452` | 旧下载器缺 `PIL.Image.verify()` 与原子写入；`unify_all_14_legacy_subsites.py` 写入固定路径 `_verify_vm_scripts.js` 未清理。 | `unify_all_14_legacy_subsites.py` 改用 `tempfile.TemporaryDirectory()` 校验并自动销毁；清理残留 `_verify_vm_scripts.js`。 |
+> [!CAUTION]
+> 为遵循最小泄露原则，下文中所有真实密钥、JWT 令牌及敏感凭据均已脱敏（仅保留前缀与末 4 位）。
 
-> **Layer 3 洁净核验**：163 个 `.py` AST 扫描确认 **0 `eval`/`exec`/`pickle`/`yaml.load`/`os.system`**、**0 `verify=False` TLS 绕过**、**0 `git add -A`/`--force`**；全部 15 个 `kol_profiles/*.json` 洁净；现役 v5/v6 生成器本身 0 硬编码密钥。
+### 3.1 CRITICAL（P0 — 立即处置）
 
----
+#### SEC-01：`suoha888/Trader-Archives` 公开 Git 历史永久暴露 45 枚真实 LLM API 密钥
+- **严重程度**：CRITICAL ｜ **独立验证置信度**：10/10（VERIFIED）｜ **集群映射**：`F01`, `F02`, `F47`
+- **位置**：公开仓库 `01_Trader-Archives_14位KOL全量网站与数据湖` 历史提交 `0fddd45382`..`9355f712a8`（如 `452aed79e6:metabape/index.html:18168`、`09623fcbd2:index.html:6535`、`9355f71^:kuigas/index.html:21087`）
+- **实证代码摘录（已脱敏）**：
+  ```js
+  // commit 452aed79e6: metabape/index.html L18167-18176 (30 枚真实 atr_* 密钥)
+  const ATRIA_CONFIG = {
+      apiUrl: 'https://api.atria-asi.ai/v1/chat/completions',
+      keys: ['atr_4KCk...HMnV', 'atr_M7r-...Ux4d', 'atr_XEsZ...FsCS', ...]
+  };
+  // commit 09623fcbd2: index.html L6591-6609 (15 枚真实 sk-* 密钥)
+  const CJ_AI_CONFIG = {
+      apiUrl: 'https://api.b.ai/v1/chat/completions',
+      keys: ['sk-1q7t0...ml09', 'sk-1q6lh...2scv', ...]
+  };
+  ```
+- **利用场景**：攻击者克隆公开仓库 `https://github.com/suoha888/Trader-Archives.git` 或通过 GitHub API 遍历历史 commit，一键提取全部 30 枚真实 Atria `atr_*` 密钥（波及 15 个 HTML 文件、51 个快照提交）与 15 枚 `api.b.ai` `sk-*` 密钥（波及 15 个快照提交），批量用于未授权 LLM 推理代理并耗尽配额/产生账单。
+- **事件响应剧本（Incident Response Playbook — 需仓库所有者手动执行）**：
+  1. **立即吊销（Revoke）**：在 `api.atria-asi.ai` 与 `api.b.ai` 控制台撤销全部 45 枚已暴露密钥（不可依赖“余额已用完”）；
+  2. **轮换（Rotate）**：若仍需使用对应供应商，重新生成独立密钥并仅存服务端环境变量；
+  3. **清洗历史（Scrub History）**：使用 `git filter-repo --replace-text` 清除历史提交中的密钥（因涉及强推重写公开 `main` 历史，需所有者审批执行）；
+  4. **清除远端缓存**：联系 GitHub Support 清除远端悬空对象缓存；
+  5. **防回流**：在仓库启用 GitHub Secret Scanning + Push Protection，并落地 `.gitleaks.toml` 与 CI 门禁（本 PR 实现）。
 
-### Layer 4：Skills、模板库与供应链层（`03_KOL--ziliao` + `.agents/skills`）
+#### SEC-02：遗留 `KOL--ziliao` 可调用技能与 19 个本地模板/脚本残留 30 枚明文 Atria 密钥
+- **严重程度**：CRITICAL ｜ **独立验证置信度**：10/10（VERIFIED）｜ **集群映射**：`F04`, `F27`, `F39`
+- **位置**：`03_KOL--ziliao_核心Skill与模板库/KOL--ziliao/SKILL.md:370`、`SKILL_v1_单站初版备份.md:211`、`templates/ai_mentor_module.html:436`、`templates/handbook_skeleton.html:946`；`04_Pipeline/Stage4_象牙白研报子站生成/` 下 15 个遗留脚本（合计 351 处）；及全局激活副本 `C:\Users\KALOS\.gemini\config\skills\KOL--ziliao\SKILL.md`
+- **利用场景**：AI Agent 或维护者一旦误调用旧版 `KOL--ziliao` Skill 或运行任意遗留 `build_*_site.py`，就会将 14–30 枚明文 `atr_*` 密钥重新注入前端 `index.html` 并推回公开仓库。
+- **修复策略**：彻底清除工作区 `03_` 与 `04_` 全部 19 个文件中的明文密钥数组并切换为无密钥网关模板；同步提醒用户卸载 C 盘全局 `C:\Users\KALOS\.gemini\config\skills\KOL--ziliao`（遵守 C 盘净空规范，不擅自修改 C 盘）。
 
-| 编号 | 级别 | CWE / OWASP | 位置 | 核心缺陷与复现说明 | 修复方案 |
-| :--- | :---: | :--- | :--- | :--- | :--- |
-| **TM-01** | **CRITICAL** | CWE-798 / A02 | `03_/KOL--ziliao/` 4 个文件（`SKILL.md`、`SKILL_v1`、`ai_mentor_module.html`、`handbook_skeleton.html`，共 65 处 / 23 枚唯一 `atr_*`） | 明文硬编码 23 枚 `atr_*` Key，模板前端携带 `Authorization: Bearer` 直连并在 `console.log` 打印前缀。 | 立即吊销 23 枚 Key；彻底清除 4 文件全部明文密钥，模板迁至零密钥 Vercel 网关。 |
-| **TM-02** | **HIGH** | CWE-79 / A03 | `templates/ai_mentor_module.html:599,616`、`handbook_skeleton.html:1098,1115`、`SKILL_v1:401,413` | `renderSimpleMarkdown()` 未转义 `"` 与 `'` 且外链正则 `[^\)]+` 放行双引号；**已在 Node.js V8 实测复现**利用 CSS `@keyframes fadeInMsg` 的 `onanimationstart` 零点击 DOM XSS。 | 补全 `"`/`'` 转义、收紧外链正则 `https?:\/\/[^\s"'<>()]+` 并用 `new URL()` 严格校验协议为 `https:`/`http:`。 |
-| **TM-03** | **HIGH** | CWE-250 / LLM06 | `03_/KOL--ziliao/SKILL.md:4,366,483-484` & `SKILL_v1:4,435-440` | 已废弃旧版 Skill 仍设为 `user-invocable: true`，且指令 Agent 执行 `git add -A` + 无授权 `git push origin main` + 23-Key 注入，直接违背 `AGENTS.md`。 | 将工作区内两份旧 Skill 设为 `user-invocable: false` 并删除危险指令（另提示用户同步清理 C 盘全局同名技能 `C:\Users\KALOS\.gemini\config\skills\KOL--ziliao\SKILL.md`）。 |
-| **TM-04** | **HIGH** | LLM01 / CWE-918 | `.agents/skills/kol-archive-builder/SKILL.md`、`methodology_v2.md`、`handbook_skeleton.html:970` | 特权 Agent 通读原始推文/外链缺失 Prompt Injection 不可信数据隔离规范；`t.co` 短链探活无目标域名与公网 IP 白名单；旧模板提示词写明“严禁拒绝回答”。 | 在 `kol-archive-builder` 及 `methodology_v2.md` 写入不可信语料隔离铁律与 `t.co` 重定向白名单；清除旧模板“严禁拒绝回答”条款。 |
-| **TM-05** | **MEDIUM** | CWE-1333 | `templates/ai_mentor_module.html:593-594`, `SKILL_v1:259` | 防复述正则 `(?:\s*|\d+[\.、]\s*|\*+\s*)*` 存在嵌套可空量词，**已在 Node.js V8 实测复现 $O(2^n)$ 指数 ReDoS**（24 字符 258 ms，30 字符单次约 16.5 秒），流式每片触发 2 次可令页面永久卡死。 | 重写为线性无回溯正则 `^\s*(?:(?:\d+[\.、]|\*+)\s*)*(?:...)[^\n]*(?:\n+|$)`（移除内部 `\s*` 与冗余 `/g`）。 |
-| **TM-06** | **MEDIUM** | CWE-693 / CWE-1022 | `templates/handbook_skeleton.html:10-20,789-863`、`ai_mentor_module.html`、`SKILL.md:229` | 缺 CSP/Referrer-Policy；残留无关第三方 `https://api.b.ai` 预连接；4 处 `_blank` 缺 `rel="noopener noreferrer"`；L20 `@import` 前藏 UTF-8 BOM 破坏首行样式。 | 移除 `api.b.ai` 预连接与隐藏 BOM；补齐 CSP、`Referrer-Policy` 与 `rel="noopener noreferrer"`。 |
-| **TM-07** | **MEDIUM** | CWE-1104 / A06 | `opentwitter/package.json`；`04_Pipeline` 全目录 | 全工作区 160 个 Python 脚本 0 依赖锁文件（解析 4,892 张不可信图片与网页的 `Pillow`/`requests`/`playwright` 未锁版本）；`opentwitter/package.json` 用顶级名 `"twitter"` 且缺 `"private": true`。 | 为 `04_Pipeline` 新增锁定版本的 `requirements.txt`；`opentwitter/package.json` 改为 `"private": true` 及作用域包名 `"@trader-archives/opentwitter-skill"`。 |
-| **TM-08** | **MEDIUM** | CWE-598 / CWE-214 | `opentwitter/SKILL.md:51-514,269-315` | WebSocket `?token=` URL 查询参数传递；19 处 `curl -H "Authorization: Bearer $TWITTER_TOKEN"` 暴露于进程命令行；远程写/删监控接口缺二次确认标注。 | 更新示例改用 `curl -K -` stdin / Python `os.environ`；标注 WebSocket 日志脱敏及写操作人工确认要求。 |
-| **TM-09** | **LOW** | CWE-693 / A04 | `.agents/skills/kol-archive-builder/references/audit_checklist.md:23,41-51` | 凭据扫描正则漏检 `ghp_`、`github_pat_`、`eyJ` JWT、`Bearer`；验收清单缺少 XSS/CSP/外链 `rel` 安全回归项。 | 补全密钥正则集合并新增 Web 安全自动化验收门禁清单。 |
-
----
-
-### Layer 5：Git 历史、数据湖与凭据考古层（`01_/.git` + `02_` + `06_`）
-
-| 编号 | 级别 | CWE / OWASP | 位置 | 核心缺陷与复现说明 | 修复方案 |
-| :--- | :---: | :--- | :--- | :--- | :--- |
-| **GIT-01** | **CRITICAL** | CWE-798 / CWE-312 | `01_/.git` 66+ 历史提交（`0fddd45` ~ `475da30`） | 公开 Git 历史永久暴露 **15 枚 `api.b.ai` (`sk-*`) + 30~31 枚真实高熵 `api.atria-asi.ai` (`atr_*`) 密钥**（另含 22 枚规律合成 `atr_` 串）；`HEAD` 已清零但任意 `git clone` 仍可一键全量提取。 | **P0 立即吊销全部 45+ 枚历史密钥**；经确认后使用 `git-filter-repo` 清洗历史并联系 GitHub 清理缓存；PR 中新增 GitHub Actions 自动凭据扫描工作流（显式覆盖 `atr_`）。 |
-| **GIT-02** | **HIGH** | CWE-200 / CWE-312 | `wallstreet0name/data/` 6 文件 + `02_` 6 镜像文件 | 同 `FE-02`/`PL-08`：公开数据湖与 RAG 索引中现网残留 `sk-XPjnsaf****De37`（自 `ea2bd68` 跨 49 个提交）。 | 脱敏全部 10 份派生数据文件（`01_` 与 `02_` 各 5 份，保留只读 `*_ultra_raw.json`）；建议业主后续评估是否剥离公开仓库中的 `*_ultra_raw.json`。 |
-| **GIT-03** | **HIGH** | CWE-79 / A03 | 16 个子站 `*/index.html` 内联 JSON | 同 `FE-04`：16 个子站 `FALLBACK_TWEETS` 未做 `\u003c` 转义，5 站已出现原始 `<`；`xiaomu` 语料已实证外部 `<p>`/`<br>` 标签会进入数据湖。 | 全部 14 个非冻结跟踪子站及现役生成器统一转为 HTML-safe JSON 序列化。 |
-| **GIT-04** | **MEDIUM** | CWE-200 / CWE-359 | 15 个已追踪 + 1 个未追踪 `*_tweets_ultra_raw.json`（43.5 MB） | 公开仓库纳入全量原始未过滤备份，包含 26,000+ 条回复、320 条嵌套第三方原推及逾万名非目标推友 ID/显示名（含第三方邮箱）。 | 遵守 `AGENTS.md` 不修改/删除存量 `*_ultra_raw.json`，先在 `.gitignore` 加入 `*_ultra_raw.json` 阻断未来增量入库，并供业主决定是否将存量从公开 Git 仓库剥离至本地私密目录。 |
-| **GIT-05** | **MEDIUM** | CWE-200 / CWE-538 | `01_/.gitignore`、`17zxhold/data/17zxhold_harvest_report.json` | `.gitignore` 含 UTF-8 BOM 导致首条 `.DS_Store` 规则失效且缺关键安全忽略项；未跟踪 `17zxhold/data/` 混入内部采集遥测报告（暴露 6551/OpenCLI 状态）。 | 重写 `.gitignore` 为无 BOM UTF-8 (LF) 并加入 `*_harvest_report.json`、`*_ultra_raw.json`、`*.key`/`*.pem`/`*cookie*`/`.env*` 等全面规则。 |
-| **GIT-06** | **MEDIUM** | LLM01 / CWE-77 | 16 子站 `*/index.html` + `ai_rag_index.json` | 外部抓取语料直接以纯中文括号拼入 `user` 消息，未做不可信边界定界隔离（`17zxhold` 更将其置于提问之后高权重位置）。 | 前端与生成器统一以 `<untrusted_archive_excerpts>` 包裹并过滤闭合标签，配合网关防越狱指令协同生效。 |
-| **GIT-07** | **LOW/INFO** | CWE-200 | `ztzzbtc/data/*`（公开招聘邮箱）、`xiaomu/data/*`（72 处 `<p>`/`<br>`） | 推文转述残留 HTML 标签与 KOL 公开招聘邮箱（已核验无 XSS 触发）。 | 建议后续清洗剥离残留 HTML 标签并在 README 提供数据更正/删除联络方式。 |
-
-> **Layer 5 洁净核验**：全历史 93 个 commits 与 `01_`/`02_`/`06_` 数据湖中 **0 处** `AIza*`、`ghp_`/`gho_`/`github_pat_`、`AKIA*`、PEM 私钥、Twitter/微博 Cookie、钱包私钥/助记词或真实 XSS/CSV 注入/Prompt Injection 载荷；`.git/config` 无嵌入 Token；提交历史中无本机路径 `KALOS` 泄露。
+#### SEC-03：Vercel Edge 付费 AI 网关无有效鉴权，仅依赖可伪造 `Origin`/`Referer` 且关闭 `ssoProtection`
+- **严重程度**：CRITICAL ｜ **独立验证置信度**：10/10（VERIFIED）｜ **集群映射**：`F16`
+- **位置**：`05_AI_Mentor_Gateway_Vercel/api/chat.js:16-31, 95-106`、`deploy_gateway.py:86-94`
+- **利用场景**：攻击者用 `curl`/`Python` 伪造 `Origin: https://suoha888.github.io` 即可绕过 `isAllowedOrigin()`，直接消耗站主付费的 `GEMINI_API_KEY` 与 `AI_GATEWAY_API_KEY`；且 `deploy_gateway.py` 将 `ssoProtection` 设为 `None`（连 Preview 部署也公网裸奔）。
+- **修复策略**：将 `ssoProtection` 收紧为仅开放 production（保护 preview）；网关层引入可选 Cloudflare Turnstile / 共享客户端签名校验开关 + 服务端固定提示词校验 + 分布式限流与全站日配额硬熔断，并建议在 Vercel / Gemini 控制台配置硬性月消费上限。
 
 ---
 
-## 三、修复范围、边界与人工动作清单（Remediation Scope & Owner Actions）
+### 3.2 HIGH（P1 — 高优先修复）
 
-### 3.1 自动化代码修复清单（本次直接落地并验证）
-1. **公开仓库 PR（分支 `security/full-stack-audit-remediation` -> `main`）**：
-   - 修复 `.gitignore`（去 BOM + 补全敏感/遥测/原始备份忽略规则）；
-   - 加固根 `index.html`（CSP + Referrer-Policy + 16 处 `rel="noopener noreferrer"` + 15 处离线 SVG `onerror`）；
-   - 加固全部 **14 个非冻结已追踪 KOL 子站**（CSP + Referrer-Policy + `escHtml` 补单引号 + `data-modal-src` 事件委托去内联 `onclick` + `safeHttpUrl()` + `rCls`/`cached.ragCount` 强整数化 + HTML-safe `<script>` JSON 转义 + `<untrusted_archive_excerpts>` RAG 边界隔离）；
-   - 脱敏 `wallstreet0name/data/` 全部 5 份派生数据文件（`tweets.json/.csv`、`domains/07_*.json/.csv`、`ai_rag_index.json`）；
-   - 新增自动化安全回归门禁脚本 `scripts/security_verify.py`、GitHub Actions 工作流 `.github/workflows/security-audit.yml` 与本审计报告 `SECURITY_AUDIT_REPORT.md`。
-2. **工作区非 Git 层全量加固（直接落地并验证）**：
-   - **Layer 2 (`05_AI_Mentor_Gateway_Vercel/`)**：全面加固 `api/chat.js`（16 子站 `systemPrompt` SHA-256 白名单 + 32 KB 请求体上限 + `messages.length<=6` + IPv6 `/64` 与 Upstash Redis 限流接口 + `AbortController`/`req.signal` + 生产关闭 `localhost` CORS + 全套安全响应头）、`vercel.json`、`deploy_gateway.py`（解耦 `cb-desk/.env` 与 C 盘路径、收窄 `production` Env、恢复 Preview `ssoProtection`、报错脱敏与域名校验）。
-   - **Layer 3 (`04_Pipeline/`)**：新增公共安全模块 `security_utils.py`；清除 `PL-01` 永久 JWT 与 `PL-02` 349 处 `atr_*` 密钥并熔断废弃旧脚本；修复现役 v5/v6 脚本 `PL-03` OS 命令注入、`PL-05` 二阶 XSS、`PL-06` SSRF/`file://`、`PL-07` 路径遍历与冻结守卫绕过、`PL-08` 密钥脱敏与审计扩展、`PL-10` 跨项目 `.env` 硬编码、`PL-11`/`PL-12` 并新增版本锁定 `requirements.txt`。
-   - **Layer 4 (`03_KOL--ziliao` & `.agents/skills/kol-archive-builder/`)**：禁用旧版 `KOL--ziliao`（`user-invocable: false`）、清除 65 处 `atr_*` 密钥及 `git add -A`/`git push` 指令；修复旧模板 `TM-02` DOM XSS 与 `TM-05` ReDoS；移除 `api.b.ai` 与 BOM；加固 `kol-archive-builder` Prompt Injection 隔离规则、`t.co` 重定向白名单与审计清单；加固 `opentwitter/package.json` 与 `SKILL.md`。
-   - **Layer 5 (`02_14位KOL纯享数据包/`)**：同步脱敏 `02_华尔街没有名字_WallStreet0Name/data/` 5 份派生镜像文件。
+#### SEC-04：Edge AI 网关信任并透传客户端任意 `system` 提示词（通用免费 AI 代理滥用）
+- **严重程度**：HIGH ｜ **独立验证置信度**：9/10（DOWNGRADED from CRIT）｜ **集群映射**：`F17`（关联 `F13`）
+- **位置**：`05_AI_Mentor_Gateway_Vercel/api/chat.js:189, 205-209` + 16 个前端子站
+- **利用场景**：结合 SEC-03，攻击者可将 `messages[0]` 替换为任意 `system` 指令，将专用 KOL 研报问答代理变成免费通用 LLM API，放大盗刷与上游合规封号风险。
+- **修复策略**：在 `api/chat.js` 建立 16 个合法子站 `systemPrompt` 的 SHA-256 哈希白名单（兼顾向后兼容冻结站 `thankucrypto`）并前置不可覆盖的服务端安全护栏 `SERVER_SECURITY_GUARD`，拒绝任何未经认证的自由 `system` 提示词。
 
-### 3.2 严格遵守工作区红线未自动修改的项 & 需业主手动执行的云端操作
-以下操作受限于工作区只读规范、C 盘净空规范或需云端控制台授权，已保留原状并在下方给出精确指令：
-1. **【P0 云端必做】密钥吊销与轮换**：
-   - `api.b.ai`：吊销历史上泄露的 15 枚 `sk-*` 密钥（`GIT-01`）；
-   - `api.atria-asi.ai`：吊销历史上泄露的 30+ 枚 `atr_*` 密钥（`GIT-01` / `PL-02` / `TM-01`）；
-   - `ai.6551.io`：吊销硬编码的永久 JWT Token 并签发新 Token 写入环境变量 `TWITTER_TOKEN`（`PL-01`）；
-   - Vercel / `cb-desk`：为 `trader-archives-ai-gateway` 签发独立带预算封顶的 `TRADER_ARCHIVES_AI_GATEWAY_KEY` / `TRADER_ARCHIVES_GEMINI_KEY`，轮换原共享的 `cb-desk` 密钥，并重新执行 `deploy_gateway.py` 部署加固后的网关（`GW-03`）；同步在 Vercel Dashboard 开启 Edge Firewall Rate Limiting（`GW-01`）。
-2. **【P1 历史清理】公开 Git 历史重写与 `*_ultra_raw.json` 处理**：
-   - 按 `AGENTS.md` 第 3 条，本次严禁修改或删除任何 `*_ultra_raw.json` 原始备份。若需从公开仓库彻底消除 `wallstreet0name_tweets_ultra_raw.json` 及历史 66+ 个提交中的明文密钥，请在完整备份后执行 `git filter-repo` 替换密钥并从公开历史剥离 `*_ultra_raw.json`，强制推送后联系 GitHub 清理缓存。
-3. **【P1 冻结标杆站】`thankucrypto/` 与 `laoemo/`**：
-   - 按 `AGENTS.md` 第 3 条，本次保持两座冻结模范站零改动；`thankucrypto` 的 AI 网关已通过服务端 SHA-256 白名单完成保护。若后续决定解冻同步前端 CSP 与 `escHtml` 补丁，可直接运行本 PR 附带的加固脚本对其执行一键同步。
-4. **【P1 本机 C 盘旧 Skill】**：
-   - 按 C 盘净空规则，本次未触碰 `C:\Users\KALOS\.gemini\config\skills\KOL--ziliao\SKILL.md`，请手动将其设为 `user-invocable: false` 或删除，防止宿主环境误触发旧版 23-Key 技能。
+#### SEC-05：Edge 单 Isolate 内存限流易被绕过，存在 `x-forwarded-for` 回退伪造与全局 `'unknown'` 桶碰撞
+- **严重程度**：HIGH ｜ **独立验证置信度**：9/10（VERIFIED）｜ **集群映射**：`F18`
+- **位置**：`05_AI_Mentor_Gateway_Vercel/api/chat.js:33-66`
+- **修复策略**：集成分布式限流（Upstash Redis REST API 可选配置）+ 全站硬性日请求上限；生产环境优先且严格信任 `x-vercel-forwarded-for`（移除无界 `x-forwarded-for` 伪造回退）；对 IPv6 归并至 `/64` 子网；为内存兜底 Map 设置容量硬上限。
+
+#### SEC-06：Stage1_2 遗留采集脚本明文硬编码无过期时间（No `exp`）的 `ai.6551.io` 生产 JWT
+- **严重程度**：HIGH ｜ **独立验证置信度**：10/10（VERIFIED）｜ **集群映射**：`F03`, `F26`
+- **位置**：`04_Pipeline/Stage1_2_推文与长文全量抓取/collect_all_gch_arbitrage.py:10`、`harvest_gch_arbitrage.py:10`
+- **说明**：解码 Payload 显示含 `user` 与 `jti=19727dd2-ca88-4a16-bab1-afb4b6e2fd91`，**无 `exp` 声明**（永久有效）。
+- **修复策略**：立即在 `ai.6551.io` 后台吊销/轮换该 JWT；源码彻底移除硬编码改为读取环境变量 `API_6551_TOKEN` / `TWITTER_TOKEN`。
+
+#### SEC-07：部署与 25 个流水线脚本跨项目硬编码读取 C 盘 `mcp_config.json` 与无关交易项目 `cb-desk/.env`
+- **严重程度**：HIGH ｜ **独立验证置信度**：9/10（VERIFIED）｜ **集群映射**：`F19`, `F05`, `F34`
+- **位置**：`05_AI_Mentor_Gateway_Vercel/deploy_gateway.py:9-36`、`Stage5/_check_ai_billing.py:8,24`、`Stage4/build_skill.py:183` 及 20+ 流水线脚本
+- **利用场景**：公网免费网关一旦被盗刷，爆炸半径直接冲击无关链上量化项目 `cb-desk` 的同一 `AI_GATEWAY_API_KEY`；且自动化脚本直接读取个人全局 `mcp_config.json` 账号级 `VERCEL_TOKEN`，违背最小权限与凭据隔离。
+- **修复策略**：彻底清除跨项目 `.env` 与 `C:\Users\KALOS\.gemini\config\mcp_config.json` 硬编码读取逻辑，统一改由当前进程环境变量注入专属隔离凭据；禁用 `build_skill.py` 向 C 盘全局目录的硬编码写入。
+
+#### SEC-08：现役 v5/v6 脚本在 Windows 下启用 `shell=True` 拼接未校验推文 ID / Handle 导致 OS 命令注入（CWE-78）
+- **严重程度**：HIGH ｜ **独立验证置信度**：9/10（VERIFIED）｜ **集群映射**：`F28`
+- **位置**：`Stage3/classify_kol_llm_v5.py:1165`、`Stage1_2/harvest_kol_v5.py:224,248,643`、`ws0n_v6_rebuild/incremental_harvest_ws0n.py:179,396`
+- **利用场景**：Windows `subprocess.run(list, shell=True)` 将参数交由 `cmd.exe /c` 解析且不转义 `& | ^ %VAR% >`。当外部抓取 JSON 中的 `tid` 或 `--handle` 包含 Shell 元字符时可触发任意命令执行。
+- **修复策略**：全面移除 `shell=(os.name == "nt")`，改为 `shutil.which(...)` 解析可执行文件并以 `shell=False` 列表调用；强制正则校验 `handle` (`^[A-Za-z0-9_]{1,15}$`) 与 `tid` (`^\d{15,22}$`)。
+
+#### SEC-09：遗留 `KOL--ziliao` 技能保留 `user-invocable: true` 并指令 Agent 免确认 `git add -A && git push origin main`
+- **严重程度**：HIGH ｜ **独立验证置信度**：10/10（VERIFIED）｜ **集群映射**：`F41`
+- **位置**：`03_KOL--ziliao_核心Skill与模板库/KOL--ziliao/SKILL.md:4,483`、`SKILL_v1_单站初版备份.md:4,436`（含全局副本 `C:\Users\KALOS\.gemini\config\skills\KOL--ziliao\SKILL.md`）
+- **修复策略**：将工作区遗留副本设为 `user-invocable: false` 并标注 DEPRECATED，彻底删除 `git add -A` 与自动 `git push origin main` 指令；同时提醒用户移除 C 盘全局旧技能副本。
+
+---
+
+### 3.3 MEDIUM（P2 — 架构与防御纵深加固）
+
+| 编号 | 映射 ID | 置信度 | 漏洞描述与受影响范围 | 修复方案 |
+|---|---|---:|---|---|
+| **SEC-10** | `F06`, `F48` | 9/10 | **公开数据湖与 RAG 索引再分发第三方明文密钥**：`wallstreet0name` 推文 `2000843101716508867` 所含第三方密钥 `sk-XPj...De37` 被原样镜像至公开库 5 个衍生文件（含 `ai_rag_index.json`）及纯享包，且现有审计门禁仅扫描 HTML 未扫 `data/` | 对 `wallstreet0name` 衍生 JSON/CSV/RAG 文件执行 `[REDACTED_SECRET]` 脱敏（保持 `*_ultra_raw.json` 只读不变）；在清洗/RAG 脚本中加入自动密钥脱敏器，并扩展审计门禁扫描全部文本资产 |
+| **SEC-11** | `F49` | 9/10 | **全站 16 子站 RAG 上下文无隔离拼接（间接提示词注入 OWASP LLM01）**：`wallstreet0name/data/ai_rag_index.json` 中已存在实态角色劫持/指令覆盖文本，前端直接以中文方括号拼入 `user` 消息且 `systemPrompt` 缺失边界防御 | 用 `<retrieved_context>...</retrieved_context>` 包裹检索语料并转义闭合标签；在所有非冻结子站与 v5/v6 模板 `systemPrompt` 及网关服务端护栏加入明确的反间接提示词注入指令 |
+| **SEC-12** | `F10`, `F29`, `F30`, `F31`, `F40`, `F51` | 9/10 | **前端渲染与静态站生成器多处 XSS / 上下文逃逸汇点**：1) `escHtml()` 漏转义单引号 `'` 导致 `onclick="showModalImage('${escHtml(p)}')"` 逃逸；2) `href="${escHtml(t.tweetUrl)}"` 与 `art['url']` 未做 `https?://` 协议白名单校验；3) `t.roleOrder` 未强转整数直接拼入 `class` 属性；4) `preset_prompts` 漏转义双引号；5) 现役 v5/v6 内联 JSON 漏转义 `<!--`/`<`/`\u2028`/`\u2029`，5 个遗留脚本完全零转义；6) 遗留 `ai_mentor_module.html` `renderSimpleMarkdown()` 双引号逃逸 & 11 个遗留 Stage4 生成器零转义 `innerHTML` | 统一补全 `escHtml` 单引号转义、`safeHttpUrl()` 协议白名单、事件委托 `data-modal-src` 替代内联 `onclick`、`Number(t.roleOrder)` 强转、`safe_json_for_script()` 完整转义，修复全部非冻结子站、v5/v6 生成器、`sync_global_hub_v5.py` 及 03/04 模板脚本 |
+| **SEC-13** | `F32` | 9/10 | **图片下载器缺乏 `https://` 精确域名白名单与体积上限（SSRF / `file://` 读取）**：`harvest_kol_v5.py`、`classify_kol_llm_v5.py`、`incremental_harvest_ws0n.py` 使用 `urllib.request.urlopen()` 且仅做 `"pbs.twimg.com" in murl` 子串校验，头像/横幅 URL 零校验 | 封装统一安全下载器：`urlparse` 严格校验 `scheme == "https"` + 精确主机白名单（`pbs.twimg.com`, `abs.twimg.com`）+ DNS 解析阻断私有/环回/链路本地 IP + 逐跳校验重定向 + 15 MB 流式上限 |
+| **SEC-14** | `F33` | 10/10 | **v5 流水线 `--slug` 与内部路径未校验边界（CWE-22）**：在 Windows NTFS 下传入 `./thankucrypto` 或 `ThankUCrypto` 可绕过 `FROZEN_SLUGS` 冻结保护，传入 `../` 可引发任意目录读写 | 所有 v5 入口统一加入 `validate_slug()`（正则 `^[a-z0-9][a-z0-9-]{0,40}$` + `.lower()` 校验 `FROZEN_SLUGS`）并对拼接路径强制 `.resolve().is_relative_to(base.resolve())` |
+| **SEC-15** | `F20`, `F23` | 9/10 | **Edge 网关上游 `fetch` 无超时/断连取消与 4 路回退放大；`deploy_gateway.py` 生产密钥越权下发至 `preview`/`development` 且漏同步 `GEMINI_API_KEY`** | 增加 `UPSTREAM_TTFB_TIMEOUT_MS = 15000`、`req.signal` 联动中止、同 Provider `401/402/403/429` 熔断；`deploy_gateway.py` 仅向 `production` 注入 `sensitive` 类型密钥并同步 `GEMINI_API_KEY` |
+| **SEC-16** | `F35` | 10/10 | **`_probe_atria_new.py` 向动态爬取的未校验外部 URL 自动发送 Bearer Key（CWE-200）** | 停用/中和 `_probe_atria_new.py` 与 `_probe_atria.py` 的外部动态爬取发 Key 逻辑，严格要求仅向硬编码官方 HTTPS 域名发请求 |
+| **SEC-17** | `F07` | 9/10 | **公开仓库安全基础设施缺失**：`.gitignore` 首行含 UTF-8 BOM 导致 `.DS_Store` 规则失效且缺失 `.env.*`/`*.pem`/`*.key`/`*_harvest_report.json`；完全缺失 `.github/workflows` Secret Scanning CI、`.gitleaks.toml`、`SECURITY.md` 与 `CODEOWNERS` | 修复 `.gitignore`（去 BOM + 补全规则），新增 `.gitleaks.toml`、`SECURITY.md`、`.github/CODEOWNERS`、`.github/workflows/security-audit.yml` 及 `scripts/security_verify.py` 自动化安全门禁 |
+| **SEC-18** | `F42`, `F43`, `F45`, `F46` | 8/10 | **Agent Skill 供应链与审核清单盲区**：`opentwitter/SKILL.md` 将通用 `TWITTER_TOKEN` 发往第三方域 `ai.6551.io`、存在 bash `curl` 单引号注入与 WebSocket URL 明文传 Token；`kol-archive-builder` 缺短链域名白名单、防提示词注入边界及过窄的发布前密钥审计规则 | 重构 `opentwitter/SKILL.md` 与 `package.json`（更名专属 `API_6551_TOKEN`、参数化安全调用、防注入边界、标注 WebSocket 凭据风险）；补齐 `kol-archive-builder/SKILL.md`、`methodology_v2.md` 与 `audit_checklist.md` 及 `audit_kol_v5.py` 全量安全门禁 |
+
+---
+
+### 3.4 LOW & INFO（P3 — 浏览器加固与数据卫生）
+
+- **SEC-19 [LOW, 8–9/10 VERIFIED]**（映射 `F11`, `F12`, `F14`, `F15`, `F21`, `F22`, `F24`, `F25`, `F36`, `F44`）：
+  1. 全站 18 页缺失 `<meta http-equiv="Content-Security-Policy">` 与 `<meta name="referrer" content="strict-origin-when-cross-origin">`（修复全部非冻结页面 + v5/v6 生成器；冻结站 `thankucrypto/`、`laoemo/` 记录在案待显式解冻授权）。
+  2. `sendAiQuestion()` 将 `sessionStorage` 反序列化的 `cached.ragCount` 未强转整数即拼入 `innerHTML`（改为 `Math.max(0, parseInt(cached.ragCount, 10) || 0)`）。
+  3. 总站 `index.html` 16 处 `target="_blank"` 完全缺失 `rel`，16 子站 5,878 处缺少 `noreferrer`；首页 15 处头像回退 `onerror` 缺 `this.onerror=null` 并外链 `abs.twimg.com`。
+  4. `api/chat.js` 生产环境无条件放行 `localhost` CORS、未校验 `Content-Type: application/json`、无请求体字节数上限（32 KB）及消息总数上限（6 条）、Referer 回退头不一致；`vercel.json` 与 `api/chat.js` 缺安全响应头（`nosniff`, `DENY`, `no-store`, `HSTS`）；`deploy_gateway.py` 与 `_check_ai_billing.py` 原始打印错误响应体。
+  5. `handbook_skeleton.html` 残留废弃第三方域 `api.b.ai` 预连接。
+- **SEC-20 [LOW/INFO, 8–9/10 VERIFIED]**（映射 `F37`, `F50`, `F52`, `F53`, `F54`, `F08`）：
+  1. 全部 24 个 CSV 导出脚本与 306 份公开 CSV 缺失 CWE-1236 公式中和（含 12 处 `- ` 与 42,054 处 `@` 前缀单元格）→ 在现役 CSV 导出函数增加 `sanitize_csv_cell()`，并对非冻结公开 CSV 做好中和策略评估（注：大规模重写 42,054 处 `@handle` 会影响纯享包可读性，对真正会触发 Excel 公式的 `=`, `+`, `-`, `\t`, `\r` 强制中和，并可按需对 `@` 做严格公式模式检测如 `@SUM(`/`@CMD` 或前置单引号，确保安全与数据可用性兼顾）。
+  2. 16 份 `*_ultra_raw.json`（43.45 MB）含第三方邮箱，遵循 `AGENTS.md` 只读红线不修改本地原始备份，在报告中建议后续归档至私有目录。
+  3. 未追踪待提交目录 `17zxhold/data/17zxhold_harvest_report.json` 泄露内部采集遥测通道名 → 已在 `.gitignore` 加入 `*_harvest_report.json` 阻断误提交。
+  4. `xiaomu` 12 份数据残留无害 `<p>`/`<br>` 碎片 → 在 `classify_kol_llm_v5.py` 文本规范化阶段补齐 HTML 碎片剥离。
+  5. 根工作目录 4 个已 gitignore 的旧调试脚本滞留 → 建议移出仓库工作目录。
+
+---
+
+## 四、STRIDE 威胁建模与数据分级（CSO Phases 10–11）
+
+### 4.1 核心组件 STRIDE 威胁矩阵
+| 组件 | Spoofing (仿冒) | Tampering (篡改) | Repudiation (抵赖) | Info Disclosure (信息泄露) | DoS / Cost Abuse (拒绝服务/成本放大) | Elevation of Privilege (越权) |
+|---|---|---|---|---|---|---|
+| **GitHub Pages 前端 (18 HTML)** | 低（无登录态） | 中（静态站 XSS 汇点 + 同源 `sessionStorage` 横向污染） | 低（只读静态页） | 中（第三方密钥镜像于 RAG/数据湖） | 低（GitHub CDN 抗压） | 中（同源 `suoha888.github.io` 跨仓库共享 Origin） |
+| **Vercel Edge AI 网关 (`api/chat.js`)** | **极高**（`Origin`/`Referer` 可伪造） | **高**（任意 `system` 提示词劫持） | 高（缺少审计日志与请求 ID） | 中（上游错误元数据、缓存头缺失） | **极高**（付费 API 盗刷 + 单 Isolate 内存限流绕过） | **高**（任意匿名调用付费代理与跨项目密钥） |
+| **本地采集与建站流水线 (`04_Pipeline`)** | 中（外部推文/短链源不可信） | **高**（Windows `shell=True` OS 命令注入 + SSRF） | 中（本地日志） | **高**（硬编码 JWT / 30 枚 Atria Key / 跨项目读取 `.env`） | 中（无体积上限图片下载） | **高**（`--slug` 路径穿越绕过冻结目录保护） |
+| **Agent Skills 供应链 (`03_` & `.agents/`)** | 高（旧 Skill 遮蔽新 Skill） | **高**（间接提示词注入通过抓取网页/推文进入 Agent） | 中（免确认 `git push`） | **极高**（硬编码 23-Key 与通用 `TWITTER_TOKEN` 碰撞） | 低 | **高**（免确认 `git add -A && git push origin main`） |
+
+### 4.2 数据资产分级（Data Classification）
+- **RESTRICTED（绝密 — 泄露即直接资金/账号损失）**：`VERCEL_TOKEN`、`AI_GATEWAY_API_KEY`、`GEMINI_API_KEY`、无 `exp` 的 `ai.6551.io` JWT、30 枚历史 `atr_*` 与 15 枚 `sk-*` 密钥。
+- **CONFIDENTIAL（机密 — 泄露影响内部架构与关联项目）**：宿主机 `mcp_config.json`、`cb-desk/.env`、内部采集通道遥测（`*_harvest_report.json`）。
+- **INTERNAL（内部）**：本地流水线检查点（`checkpoints/`）、本地只读原始备份（`*_ultra_raw.json`）、本地调试审计脚本。
+- **PUBLIC（公开）**：18 个静态研报网页、清洗后的公开数据湖与 `ai_rag_index.json`、公开 README 与文档。
+
+---
+
+## 五、边界与免责声明
+
+1. **只读与冻结红线遵循**：严格遵循 `AGENTS.md` 第 3 条，全部修复过程绝不修改或删除任何 `*_ultra_raw.json` 原始备份，绝不改动冻结模范站 `thankucrypto/` 与 `laoemo/`，且不触碰当前工作树未提交的 `17zxhold/` 与根目录本地未提交草稿。
+2. **人工必填闭环项（无法通过代码 PR 自动完成）**：
+   - 在供应商后台吊销已泄露的 **45 枚历史密钥（30 枚 Atria + 15 枚 `api.b.ai`）** 及 **1 枚无过期时间的 `ai.6551.io` JWT**；
+   - 轮换并隔离原与 `cb-desk` 共享的 `AI_GATEWAY_API_KEY`，重新部署加固后的 `05_AI_Mentor_Gateway_Vercel`；
+   - 审批并执行公开仓库 `git filter-repo` 历史清洗与强制推送；
+   - 手动删除 C 盘全局旧技能副本 `C:\Users\KALOS\.gemini\config\skills\KOL--ziliao`。
+3. **免责声明**：本报告基于自动化多 Agent 集群代码审计与静态/动态验证生成，不能替代具备资质的专业第三方渗透测试机构的全面人工红队评估。
+
+
+---
+
+## 六、修复实施与自动化验证记录（Remediation & Verification Log）
+
+| 架构层 | 实施修复项 | 自动化验证结果 |
+|---|---|---|
+| **Layer 1 · 公开前端与数据湖 (`01_Trader-Archives`)** | 全量 14 非冻结子站 + 根总站补齐 `<meta Content-Security-Policy>` 与 `Referrer-Policy`；修复 `escHtml` 单引号转义、`safeHttpUrl()` 协议白名单、`data-modal-src` 事件委托、`parseInt(t.roleOrder, 10)` 与 `Number(cached.ragCount)` 强转、`<script>` 内联 JSON 全量 `<`/`>`/`&`/` `/` ` 转义、`<untrusted_archive_excerpts>` RAG 边界隔离、全量 `rel="noopener noreferrer"`、首页移除 `abs.twimg.com` 外链循环；脱敏 `wallstreet0name` 衍生数据湖与 RAG 中的第三方明文 `sk-` 密钥；中和 `0xsun` 与 `yourquantguy` 6 份公开 CSV 及对应纯享包中的 CWE-1236 非数值 `-` 公式单元 | `scripts/security_verify.py` 全过（561 份公开文件 0 密钥、134 份 CSV 0 公式注入、15 份 HTML JS 语法 0 报错）；Playwright 实测 6 页 HTTP 200、0 console/page error、0 CSP violation、0 横向溢出、Lightbox 事件委托正常 |
+| **Layer 2 · Vercel Edge AI 网关 (`05_AI_Mentor_Gateway_Vercel`)** | `api/chat.js` 落地 16 子站 `systemPrompt` SHA-256 白名单 + 不可覆盖 `SERVER_SECURITY_GUARD`、Upstash 分布式限流（2.5s 超时）+ 全站日上限 + IPv6 `/64` 归并、Vercel 生产环境仅信 `x-vercel-forwarded-for`、`POST Content-Type: application/json` 强校验（415）、无 Origin 仅 Referer 场景 CORS 一致性与 `Vary: Origin, Referer`、32 KB 流式载荷上限（413）、15s TTFB 超时与 `req.signal` 断连中止、`401/402/403/429` 同供应商熔断、可选 Cloudflare Turnstile 人机校验钩子及全套安全响应头；`deploy_gateway.py` 彻底移除跨项目 `mcp_config.json`/`cb-desk/.env` 耦合、收紧 `ssoProtection` 保护 Preview、采用只写 `type: "sensitive"` 生产密钥并同步 `GEMINI_API_KEY` 与 `TURNSTILE_SECRET_KEY` | Node.js ESM 10 项对抗性安全单测全部 PASS（含 403 非法 Origin/提示词、415 MIME、413 超大包、200 合法哈希与护栏前置、429 熔断跳 provider、Turnstile 阻断、生产 XFF 伪造防护） |
+| **Layer 3 · 6 阶段 Python 流水线 (`04_Pipeline`)** | 新增共享模块 `security_utils.py`（密钥脱敏、安全 JSON、URL/Slug/ID 校验、DNS 公网 IP 解析防 SSRF 私有/环回地址、无 `shell=True` 的 `run_cli_safe`、CWE-1236 `sanitize_csv_row`、`strip_residual_html`）；全量移除 `shell=(os.name=="nt")` 与硬编码无 `exp` JWT；清除 22 个脚本的跨项目 `cb-desk/.env` 与宿主机 `C:\Users\KALOS` 路径；修复 6 个遗留 Stage4 生成器 `innerHTML`/`href="$2"` XSS；脱敏 `ws0n_v6_rebuild/r2_candidates.json` | 全部非 workflow `.py` 脚本 `py_compile` 0 语法错误；`security_utils.py` 全套安全单测 PASS；跨项目 `.env`/`KALOS` 活跃代码命中归零 |
+| **Layer 4 · Agent Skills 与模板 (`03_` & `.agents/`)** | 下线遗留 `KOL--ziliao`（设 `user-invocable: false`、清除 23-Key 明文池与免确认 `git add -A && git push` 指令）；修复 `ai_mentor_module.html` 与 `handbook_skeleton.html` 属性逃逸 XSS、移除 `api.b.ai` 预连接；重构 `opentwitter` 为专属 `API_6551_TOKEN` 与参数化安全调用；增强 `kol-archive-builder` 短链白名单、防提示词注入边界与 5 项前端安全回归门禁 | 03_ 与 `.agents/` 0 残留硬编码密钥 |
+| **Layer 5 & 6 · Git 仓库安全基建 (`01_Trader-Archives`)** | 修复 `.gitignore` UTF-8 BOM 并补齐 `.env.*`/`*.key`/`*.pem`/`*cookie*`/`*_ultra_raw.json`/`*_harvest_report.json`；新增 `SECURITY.md`、`.gitleaks.toml`、`.github/CODEOWNERS`；将 `.github/workflows/security-audit.yml` 全部 Actions 锁定至官方验证 40 位 Commit SHA，并升级 `scripts/security_verify.py` 门禁 | 冻结标杆站 `thankucrypto/`、`laoemo/` 与全部 `*_ultra_raw.json` 原始备份 0 改动 |
