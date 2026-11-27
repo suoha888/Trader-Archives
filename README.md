@@ -13,7 +13,7 @@
 
 | # | 导师 | Twitter Handle | 核心方向 | 收录规模（清洗 / 全量） | 在线阅读站 | GitHub 开源数据 |
 | :-: | :--- | :--- | :--- | :---: | :---: | :---: |
-| 01 | **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 实盘交易全平台档案（7板块28节 X 原推 + 943 早期微博独占 + 3场深度专访 40,841 字） | **4,363 篇 + 3 专访** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data) |
+| 01 | **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 四源物理隔离全档案（3,420 X 原推 + 943 早期微博 + 56 场币安直播 128 万字逐字稿与真实 K 线 + 3 场专访） | **4,363 篇 + 56 直播 + 3 专访** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 四源隔离仓](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data/platforms) |
 | 02 | **Wei Paul** | [@coolish](https://x.com/coolish) | BitMEX 时光机、杠铃策略与逆向周期 | **1,909 / 2,581** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/coolish/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/coolish/data) |
 | 03 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 裸K多周期、贵金属战役与 13 篇深度长文 | **2,306 / 2,915** + 13 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/wallstreet0name/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data) |
 | 04 | **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 基差套利、微观做市与 4 篇深度长文 | **614 / 673** + 4 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/yourquantguy/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data) |
@@ -43,9 +43,11 @@
 
 - **定位**：OKX / 币安实盘带单冠军 · 从 13,000 元起步做到千万实盘的全平台公开档案（全站 14 个子站均以本子站为视觉与功能标杆统一对齐）
 - **规模**：
-  - **X（Twitter）原创推文**：保留 **3,420** 篇本人原创推文与 **555** 张关联实盘/专访配图，按 7 大板块 · 28 个自然小节排好；
-  - **早期微博独占时间轴**：补齐 `2022-05` 至 `2025-05` 微博独占原创 **943** 篇（跨平台去重零重复）；
-  - **一手深度专访与电台实录**：收录 **3** 场深度专访共 **40,841** 字（OKX 两期专访 + 币安华语加密电台 73.5 分钟原声完整逐字稿）。
+  - **X（Twitter）原创推文**：保留 **3,420** 篇主表原推（+ **62** 篇长推线程补遗）与 **576** 张本地实盘/专访配图（正文卡片内嵌 555 张），按 7 大板块 · 28 个自然小节排好；
+  - **早期微博独占时间轴**：补齐 `2022-05` 至 `2025-05` 微博独占原创 **943** 篇（+ **13** 篇经典长文补遗，段落级零 X 重复，附独立 Markdown 全文包）；
+  - **一手深度专访与电台实录**：收录 **3** 场深度专访共 **40,841** 字（物理拆分 Odaily 媒体精编与 73.5 分钟电台原声逐字稿）；
+  - **币安广场实盘直播档案**：收录 **56** 场实质直播（`2026-04` 至 `2026-09`，**3,337** 段 / **1,280,026** 字完整校对逐字稿、**1,337** 条干货切片、**558** 组 / **52,838** 根币安历史 K 线及发言时刻价格锚点）；
+  - **外部 AI 全量直取**：提供 [`thankucrypto/llms.txt`](thankucrypto/llms.txt)、[`DATASET_MANIFEST.json`](thankucrypto/DATASET_MANIFEST.json) 与 [`data/platforms/01..04/`](thankucrypto/data/platforms/) 四源物理隔离无 BOM `.jsonl`。
 
 ---
 
@@ -56,7 +58,7 @@ Trader-Archives/
 ├── index.html           # 🏛️ 全景大典总门户（全局统计看板 + 全部 15 位导师大典卡片 + 单篇典藏）
 ├── README.md            # 📖 全量开源项目总纲与跳转指引（当前文件）
 │
-├── thankucrypto/        # 【模范总档】allincrypto 熬鹰资本全档案（3,420 X 原推 + 943 早期微博 + 3 场专访 4.08 万字）
+├── thankucrypto/        # 【模范总档】allincrypto 熬鹰资本四源隔离全档案（3,420 X 原推 + 943 微博 + 56 场币安直播 128 万字 + 3 专访）
 ├── coolish/             # Wei Paul · BitMEX 时光机、杠铃策略与逆向周期（1,909 / 2,581 · 7 卷 20 节）
 ├── wallstreet0name/     # 华尔街没有名字 · 裸K多周期、贵金属战役与 13 篇深度长文（2,306 / 2,915 + 13 长文 · 7 卷 16 节）
 ├── yourquantguy/        # yourQuantGuy · Perp DEX 基差套利、微观做市与 4 篇深度长文（614 / 673 + 4 长文 · 6 卷 16 节）

@@ -4,6 +4,8 @@
 > 🎙️ **来源**：OKX VIP《对话交易员》第一期（@mia_okx）  
 > 🔗 **原文链接**：https://x.com/mia_okx/article/1937440133642613066
 
+![封面](../../images/int_okx1_cover.jpg)
+
 ---
 
 ![配图](../../images/int_okx1_m1.jpg)

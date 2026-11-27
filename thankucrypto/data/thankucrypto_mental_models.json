@@ -15,7 +15,9 @@
       "1899301797225025701",
       "1911748883090456755",
       "2115448279827923433"
-    ]
+    ],
+    "source_platform": "x_twitter",
+    "content_kind": "curated_mental_model"
   },
   {
     "id": "P-02",
@@ -33,7 +35,9 @@
       "2083903687810834822",
       "2121067893916041341",
       "2101023405491487102"
-    ]
+    ],
+    "source_platform": "x_twitter",
+    "content_kind": "curated_mental_model"
   },
   {
     "id": "P-03",
@@ -51,7 +55,9 @@
       "1945864578501406966",
       "1981963353473118590",
       "1979424217964908641"
-    ]
+    ],
+    "source_platform": "x_twitter",
+    "content_kind": "curated_mental_model"
   },
   {
     "id": "P-04",
@@ -69,7 +75,9 @@
       "1930952003041296846",
       "2120094867930087807",
       "2120083685471076644"
-    ]
+    ],
+    "source_platform": "x_twitter",
+    "content_kind": "curated_mental_model"
   },
   {
     "id": "P-05",
@@ -87,7 +95,9 @@
       "1977265903944581288",
       "1814223448761397566",
       "1923025349534941360"
-    ]
+    ],
+    "source_platform": "x_twitter",
+    "content_kind": "curated_mental_model"
   },
   {
     "id": "P-06",
@@ -105,6 +115,8 @@
       "1933295253899100609",
       "1976344207850975383",
       "2119610798356168915"
-    ]
+    ],
+    "source_platform": "x_twitter",
+    "content_kind": "curated_mental_model"
   }
 ]
