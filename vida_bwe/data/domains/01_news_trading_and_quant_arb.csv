@@ -1,0 +1,720 @@
+﻿id,date,sourceLabel,volumeName,topicCode,topicTitle,roleOrder,roleLabel,qualityTier,dryScore,shortNote,favoriteCount,retweetCount,replyCount,viewCount,tweetUrl,text
+zh-158,2023-08-31 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,S,94,通过低延迟与新闻自动化交易稳步累积巨额资产,243,0,0,0,https://www.zhihu.com/pin/1680558442262237185,"身价突破7300万 | 在前天交易了Grayscale打赢官司新闻后，我的资产突破了7300万人民币其中97%是流动金融资产，大概是目前中文币圈最富有的00后了，过去2年我赚的90%的钱都来自于收割信息滞后的散户群体，这其中又有至少75%是来自全自动交易。身价是一个台阶一个台阶的稳步提升，而不是靠赌博或者是运气。
+我的交易理念：低延迟为王&信息为王&计算机自动交易为王
+在金融行业，掌握最快的信息=掌握了印钞机
+信息有两大方面：1. 新闻 2. 行情（orderbook&trade）
+这个市场上就是有一些新闻100%会驱动行情，比如马斯克发一条DOGE的推文，就是100%会驱动DOGE上涨的，比如X安上架一个新币，就是100%会驱动那个币上涨的，比如Grayscale/Ripple打赢与SEC的官司，就是100%会驱动全市场上涨的，就是比谁先获取到并先下单。有一些突发新闻是需要人手动去下单操作，而大部分新闻则是可以全自动交易。
+这注定不是一个凡人能驾驭的游戏，如果是一个体，要在我所在的领域做到拔尖，需要：1. 计算机特别好 2. 英文特别好 3. 对信息的敏感度 4. 大量的时间观察市场"
+zh-224,2022-10-16 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,S,94,掌握这四个特征抓住消息面交易机会,88,0,0,0,https://www.zhihu.com/pin/1565103430380527616,"论消息面交易的感悟：
+一条消息出现时，是否会影响市场/对市场影响程度的大小，有以下几个因素：
+1. 这条消息是否会对标的基本面或流动性产生重大影响
+153
+2. 这条消息在社交媒体上的传播速度快慢
+3. 是否有足够多的人有兴趣为这条消息而上头接盘买单（也受第二点的影响）
+4. 是否有内幕知情者提前买入之后抛售
+当消息出现时判断是否值得买入，一定要满足其中一个或多个特征：
+1. 及时性：距离第一手消息源发布时间不超过60秒钟
+2. 这条消息必须是突发事件，出乎大部分人的意料
+3. 这条消息发生在市场的短期“人气龙头”上，能吸引很多潜在接盘者的目光
+4. 盘面没有明显的内幕交易
+消息面交易，说白了就是front running
+人们愿意接盘是因为觉得买了你的货之后他们还有的赚。
+消息面交易之所以行得通是因为：
+1. 市场上大部分人获取财经信息的渠道是缓慢的，以国内最快的金10数据而言，推送马斯克推文的速度会慢几十秒钟、推送cpi数据会慢2秒钟左右。而像金色财经，任何消息都会延迟至少1分钟才推送给客户端。
+2. 散户之间传播一条消息往是靠im软件口相传，或者是看到大V发了之后才会知道
+3. 市场上大部分交易者不会关注消息面，直到有一天他们突然听到一则消息时才会突发奇想的去上头接盘。"
+1716865472053063702,2023-10-24 17:13,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,S,91,新闻交易核心：卖在预期止损1%,22,2,3,14369,https://x.com/Vida_BWE/status/1716865472053063702,"Just realized that some people followed this trade and still holding it because I forgot to post the info that I’ve already closed just a couple minutes after the trade.
+
+Sorry for your loss, but here’s the tip:
+
+- If you are doing a news trade, trade the expectation, close when the expectation is hyped and momentum loses (trend reversal)
+
+ - news trade with a stop loss (SL) based on price, usually with a 1% Stop Loss tolerance. If your SL price is reached then it means market don’t wanna buy your bag at all, you should then exit ASAP. As I mentioned in the tweet, my SL for the trade was 30000.
+
+- all my trades posted on twitter will be closed within 5 hours, I don’t trade trends or macro stuff, I only trade the news, usually I close the trade in minutes interval.
+
+I closed the 1.3m short trade on fake news 10-20minutes after I posted on twitter, but I currently still holds my 12 BTC spot hedge at 29000."
+zh-207,2023-12-22 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,S,87,BTC ETF通过后的行情推演,109,0,0,0,https://www.zhihu.com/pin/1721580175505059841,"如果BTC现货ETF在1月份被通过 | 如果BTC现货ETF在1月份被通过
+我的预测是市场会先在几小时里涨10%-15%，然后开始连绵多日的暴跌（-20%）。因为现货ETF是过去几个月里支撑市场的叙事，已经有很多人提前买入埋伏，且都知道通过的窗口期大概率是2024年1月份，这种公开的被预期的事件往结局是sell the news。
+当它被通过的时候，首先是觉得“马上会有后知后觉的人民群众买入所以我要比他们先买入”的新闻交易员们买入，然后是“这是利好 我要买入”的后知后觉的人民群众会买入，这两批买入力量会推动BTC涨个10%-15%左右，然后就会有很多提前埋伏这个事件的人开始出货。
+在ETF被通过之后已经没有其他宏大的叙事来支撑市场，在ETF开始交易之后人们也会意识到ETF其实不会像他们想象中的那样在短期内带来源不断的美国便宜钱。这个叙事的炒作到此结束，市场开始为期数月的盘整。"
+zh-295,2021-08-25 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,A,84,量化交易的核心是收割散户情绪,55,0,0,0,https://www.zhihu.com/pin/1413881033100525568,"我想之所以很多个人投资者做量化交易、程序化交易不赚钱，是因为他们选错了目标：他们想从各种技术指标里找到可以盈利的策略———想收割机构我做程序化交易几乎不用复杂的技术指标，因为我的目标是收割散户，我更多的精力是研究：到底什么能够点燃散户们想买入的热情、市场最近在炒作什么热点、信号出现后多少分钟会被散户买到顶、其他机器人多少秒买入和卖出，然后把这些情绪引爆信号开发成自动买卖程序。
+专门收割散户策略的缺点也很明显，就是；
+当市场情绪不好时就没得钱赚。原因是散户们都是只喜欢在不断上涨行情、赚钱效应好的行情中追涨。一旦市场转跌萎靡，就没有人来接货，策略就会不赚钱甚至亏损。"
+zh-358,2021-08-27 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,A,84,美国经济数据波动套利规律,37,0,0,0,https://www.zhihu.com/pin/1414710363661606912,"分享一个一般人都用不上的规律：
+最近几个月每次美国公布重要经济数据（就业率、非农就业人数、CPI）的那一天，比特币的价格往都会被压制，然后在数据公布的一瞬间都会有超大幅的波动但数据公布后的10分钟大概率会上涨。
+我猜测原因是有很多对冲基金会预判数据然后提前做空比特币，即使数据真的构成利空，他们也需要买入平空，所以会导致币价短时间内上涨。
+有量化分析能力的人可以去统计一下今年每一次美国公布就业、非农、CPI之后的10分钟内的BTC涨跌幅，做多胜率应该是挺高的。而数据公布之前2小时开始做空的胜率应该是挺高的。"
+zh-212,2023-04-09 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,A,82,供需关系预测优于价格预测,101,0,0,0,https://www.zhihu.com/pin/1628338162693984256,"投资不做价格的预测，而是做供需关系的预测 | 很多人有一个习惯：在长期投资中非要预测一个目标价格我做长期投资时很少去看价格，唯独遇到我无法把握的标的时，我会用1周、1月的supertrend指标去止盈止损。
+价格不决定顶和底，决定顶底的因素是供需关系，而决定供需关系的是：宏观和市场情绪，宏观不是看当下的数据，而得看未来6-18个月的预测。
+情绪则要分析当下的数据，币圈最佳的择时指标就是把情绪给量化，例如资金费率、交割期货升水apy、交易所app下载量等。这类数据的核心是统计一个关键点。"
+zh-134,2024-08-19 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,A,80,主观交易：平时管住手，等待大机会,374,0,0,0,https://www.zhihu.com/pin/1809006867113975808,"关于近期的加密市场主观交易 | 给主观交易者的建议：
+你不需要天都去参与市场交易，但是你必须保持关注市场的讯息以确保自己了解最近市场的叙事是什么。1-2个月就会出现一次突发事件，平时管住自己不要去赌博，只等待大机会就完事了。
+最近一个月市场的两次主观交易大机会：
+1. 8月5日全市场大暴跌》抄底爽赚
+2. 8月8日XRP官司取得重大进展》驱动XRP暴涨28%
+如果你每2个月能抓住一次类似的机会，你就会吊打大部分追涨杀跌 求仙问道 搞哲学的交易员了"
+1969364151232577625,2025-09-20 11:32,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,A,76,获取廉价筹码的路径,123,13,1,16622,https://x.com/Vida_BWE/status/1969364151232577625,"获取廉价筹码并不一定需要你会编程，打比方
+1. 有影响力的KOL轮也能参与APX早期的融资轮获得廉价筹码
+2. 如果你和内部人士关系好，你提早就知道APX ASTER会1:1换币 那你也可以提前获取筹码
+3. 你即使不认识内部人士，你通过链上追踪一批内部人士的人的钱包，看到他们下重注了，你也能行动的更好
+
+条条大路通罗马，技术并不是唯一方法。"
+zh-15,2021-05-17 12:00,X · 知乎想法 同步,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,A,75,马斯克推文的影响力循环,532,0,0,0,https://www.zhihu.com/answer/1890847298,"【知乎问答：如何评价马斯克近期搅动币圈的系列举动？反映了哪些问题？】
+先说结论：马斯克对于币圈的影响力并不会像很多人认为的那样会“因为马斯克失信而渐减弱”，相反的，我认为会越来越强现在每个人都发现了马斯克发利好推文就会拉盘、发利空推文就会砸盘，这会导致越来越多的人遵照马斯克的推文指示去追涨杀跌。
+随着跟风追涨杀跌的资金量越来越多，马斯克的推文对于币价的影响力会越来越被放大，然后又吸引更多的资金加入追涨杀跌的行列，形成一个正向循环。
+除非马斯克被禁止发表关于加密货币的推文，否则他的影响力会一直存在。哦对了，推特的创始人Jack Dorsey是马斯克的好朋友，马斯克不可能像特朗普一样被封号。
+只能等待SEC出手了"
+zh-29,2025-01-03 12:00,知乎回答,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,A,75,Meme快打的商业思维,357,0,0,0,https://www.zhihu.com/answer/70841615472,"【知乎问答：如何评价「马斯克改网名引爆 Meme 币市场」？】
+没有商业思维的人只会抱怨“马斯克操纵市场”、“马斯克玩弄人民群众”
+有商业思维的人会思考：人民群众那么喜欢买和马斯克有关的概念，那我怎么样在下一次马斯克改名或者发好玩的meme的时候，31在第一时间（1分钟内）发现并去发行一个meme币或者第一时间去交易已有的meme币。然后抛售给后知后觉买进来的韭菜，把那群笨的家伙的钱收割到自己的口袋里"
+1662200377411002369,2023-05-26 20:53,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,A,75,利用低延迟优势赚取短线效率,6,0,1,1738,https://x.com/Vida_BWE/status/1662200377411002369,"Therefore, my strategy is to minimize long-term investments in the Crypto market, instead, using my low latency edge to profit from short-term inefficiency and then allocating profit to traditional financial markets."
+zh-355,2021-07-01 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,A,73,利好落地即利空的出货逻辑,38,0,0,0,https://www.zhihu.com/pin/1393957884779196416,很多人期待的今天建党节中国股市会有一波“建党行情” 结果并没有和大家预期的一样发生 反而三大股指皆绿这就和之前的4月20号dogeday、5月8号SNL上狗币暴跌一样，都是因为这种公开的利好有很多人提前就埋伏了，然后等到利好实际落地的时候就是提前埋伏的人出货的时候。
+1463475016855482374,2021-11-24 11:50,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,70,复盘短线泵点以实现机器人抢跑,7,1,1,0,https://x.com/Vida_BWE/status/1463475016855482374,"I care about short term market moves. I always find the reason for a short term token pump or dump so that next time, when the event happen, I can front-run it with my bots."
+zh-319,2023-03-09 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,69,,46,0,0,0,https://www.zhihu.com/pin/1617173797592842240,"谈消息面交易 | 还记得两年以前，在cryoto领域，我每次和别人提及“消息面交易”，别人会觉得“真假的？这还能赚钱吗？”而当时的消息面交易也是绝对绝对的alpha策略，包括我在内的头部玩家有好多个都做到7、8figs（美元计价）。
+现在，消息面交易已经成为了一个public thing，并且未来的趋势就是它会越来越public，市场无效性所带来的alpha会不断的衰弱。
+手动交易者将毫无优势。"
+1698823642766074263,2023-09-04 22:21,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,69,,19,1,0,10611,https://x.com/Vida_BWE/status/1698823642766074263,"During the 2022 bear, I've kept sharpening my latency edge, at the time my goal for myself is ""grind in the winter, then harvest from spring and summer"". I grind 10 hours on average building new bots and optimizing latency and trade a few big events like FTX-Binance acquisition."
+1587522092740005888,2022-11-01 19:08,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,69,暴涨行情的四种常见成因,8,1,0,0,https://x.com/Vida_BWE/status/1587522092740005888,"Just my personal pov:
+Moon candles are usually caused by:
+
+1. News that impacts market participants’ sentiment or perception of a token’s value.
+
+2. Trader’s fat finger.
+
+3. Market manipulators like p&d groups or Chinese trading firms.
+
+4. Hackers trying to launder money out."
+1602382089038360576,2022-12-12 19:17,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,68,构建高壁垒的交易护城河,3,2,2,0,https://x.com/Vida_BWE/status/1602382089038360576,"The fading of alpha makes me worry, that's why I believe it is more important to focus on things that have a higher barrier, like [ ] [ ], and need to form a somewhat monopoly to prevent other players enter the same play."
+zh-353,2021-11-07 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,67,细分领域赚钱无惧竞争,38,0,0,0,https://www.zhihu.com/pin/1440702342950219776,很多人（例如江卓尔这种囤币党）听到我的交易方式都会被刺到G点感到反感，我认为这是一件好事：因为这证明我正在一个没有多少竞争对手的细分领域赚钱，而这个领域内的蛋糕都是我的我即使把我的一些策略在知乎上说出来，这个市场上99.99%的人也没有能力来复制。
+1902105280453972316,2025-03-18 21:10,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,66,新闻交易对散户的不友好性,24,4,4,6998,https://x.com/Vida_BWE/status/1902105280453972316,"@trading__horse The speed of pricing an event is super fast and efficient nowadays with more bots/AI/traders join the race. Indeed, its very unfriendly for new blood and non-tech retails."
+1602382087234801664,2022-12-12 19:17,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,65,,4,2,1,0,https://x.com/Vida_BWE/status/1602382087234801664,"Some people may argue that more people joining news trading will be beneficial because news gonna be more effective than before, but in reminding that news traders are making money from uninformed&slow reacting retail, not from other news traders (unless you are fast as hyuk )."
+zh-17,2023-09-05 12:00,知乎回答,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,64,散户接盘的开仓条件,503,0,0,0,https://www.zhihu.com/answer/3197310484,"【知乎问答：您能说出自己的开仓条件吗？】
+正好酒后吐一下真言：
+首先要找到一个市场里的散户韭菜们100%愿意接盘的事件，然后狙击这个事件的发生，在发生的一瞬间买进去，然后抛给接盘韭菜"
+zh-351,2021-08-26 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,64,,38,0,0,0,https://www.zhihu.com/pin/1414207833260474368,"不承担市场风险赚中等收益的钱是最爽的事情。
+我看空下半年的币圈所以我没有选择持有现货，但是我带领团队开发了多款舆情监控和自动交易程序，币圈现在牛市回暖，即使我不持有任何仓位也可以赚到很不错的收益。
+我持仓每次都是以秒为单位计算非常短时间的买卖，不用承担任何大盘的风险，刀光剑影内收割一波就立马换成USDT。"
+1568523517733502976,2022-09-10 08:55,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,64,量化投机的本质是博弈,12,0,0,0,https://x.com/Vida_BWE/status/1568523517733502976,量化投机客不创造价值，我们所做的是在一个充满投机的市场里，凭计算机技术赚到其他投机客的钱。
+1602382083514519552,2022-12-12 19:17,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,63,,32,7,2,0,https://x.com/Vida_BWE/status/1602382083514519552,"In my vision: In the next bull run, news trading will be a very common&popualar thing, and everyone in the market can easily participate in it. Meaning? The more popular it is, the more unprofitable it will become."
+1580826797075496960,2022-10-14 07:44,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,63,,13,1,0,0,https://x.com/Vida_BWE/status/1580826797075496960,"Tree is like the phd of news trading.
+I believe that ever trader needs to find their own edge, for me personally, my trading edge is that I can buy faster than other traders over stable formatting news like Binance listings/Upbit listings."
+1602382092771287046,2022-12-12 19:17,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,61,新闻交易的难度演变,3,0,1,0,https://x.com/Vida_BWE/status/1602382092771287046,"A final clarification: I'm not saying news trading will be dead, you can still capitalize on it but the difficulty will be much less than before<< And I'll ensure this will happen."
+1962041124098593095,2025-08-31 06:33,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,57,自动化捕捉单次机会的思考,55,2,1,11203,https://x.com/Vida_BWE/status/1962041124098593095,"@eijiito97 那比如市场上出现一个机会，
+买卖一次就赚一笔 或 一个号一个名额
+你是否能把这个机会自动化？"
+zh-313,2021-12-14 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,55,,47,0,0,0,https://www.zhihu.com/pin/1454147582917894145,这个市场上99.99%的人都在追求把握市场长期的有效性，我想走一条很少人走的路：如何把握市场分钟、秒甚至毫秒级的无效性
+zh-479,2021-11-02 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,53,,19,0,0,0,https://www.zhihu.com/pin/1438927404185702400,"因为市场上有很多人相信技术分析
+所以当ETH突破4467.89的时候理论上又会吸引一堆人去追多，这时候只需要一个简单的突破价格后买入的程序就可以收割到他们了"
+zh-204,2022-03-29 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,B,51,,113,0,0,0,https://www.zhihu.com/pin/1491998106829406209,我现在的交易哲学很简单，总结一下就是：想办法比别人更先获知情报，并比别人先下单买入。然后等后面别人想买进来的时候，抛给他们。
+zh-341,2021-12-19 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,C,49,赚钱的三大核心路径,41,0,0,0,https://www.zhihu.com/pin/1455751835717484544,"To make money you either be first, be smarter or cheat."
+1461646421187129350,2021-11-19 10:43,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,1,核心原则,C,42,,6,0,1,0,https://x.com/Vida_BWE/status/1461646421187129350,只有建设一套监控币圈公众舆情的体系才能够把握“共识行情”
+zh-119,2025-01-18 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,S,93,TRUMP热点：获取廉价筹码的逻辑,716,0,0,0,https://www.zhihu.com/pin/1863978711478579201,"Trump meme上很多人发财了 | 早期介入TRUMP获取廉价筹码的信息精英们
+要么是和0xsun一样监控着Moonshot上新
+要么是监控着0xsun等聪明钱包地址的操作
+要么是看到方程式新闻的报道（有一个粉丝私信我说靠方程式新闻这波A8了）
+要么是监控着Sol链上meme价格异动
+我自己一觉醒来都已经市值100亿刀了晚了，就肯定是不会买的，只要是我无法获取廉价筹码的机会我就不会参与。
+——————————————————
+其实对于信息精英们来说在crypto赚钱就是那么容易：努力+技术，监控着各种信息，第一时间识别散户们100%会接盘的机会，买入，等价格涨上去之后抛售给散户们，把他们的钱收割到自己的口袋。
+各种乱七八糟的量化策略都不如这么简单的事情好使，很多高学历高技术的量化团队因为太孤傲看不上这种机会反而他们赚不了这种钱。所以给了草莽英雄们成为信息精英的机会。
+我不会现在买
+并且如果你现在还想着去买，那么你就是人民群众的一员。要想办法获取早期的廉价筹码，这次错过了就下次努力，而不是涨了几十倍之后你再去接盘。
+———————————————
+最后恭喜今天发财的人，你们的成功来自勤奋、智慧、认知、勇气，你们值得今天的胜利"
+zh-273,2022-09-28 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,A,82,年度复盘：转型全自动新闻交易,62,0,0,0,https://www.zhihu.com/pin/1558479435766071296,"复盘2021-2022，
+做对了：
+1. 预测了2022年全球金融市场的萧条，留了大量美元现金。
+2. 成功由择时手动交易向全自动新闻交易&延迟套利转型，在部分领域的速度天下第1/2快，跻身食物链上一个层次。
+做错了：
+1. 2021年初过早对市场悲观而撤退，错过大半年的狂暴牛市beta。
+2. 前大半个2021年贪图玩乐，没有花更多精力在研发上。
+3. 在确定性的机会上押注总是很胆小，不敢持仓超过15分钟。一方面是胆量的问题，一方面对于市场的叙事研究投入时间不够多、不够了解散户的喜好。"
+zh-187,2024-05-24 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,A,81,ETH ETF获批时的三步操作,144,0,0,0,https://www.zhihu.com/pin/1777205999701032960,"ETH ETF获批 | 我在5分钟里的战果
+第一笔交易：在获知etf获利后程序全自动开仓做多
+第二笔交易：正式的获批应该有一份pdf文件，而当时没有任何一个source公布了这份文件。所以我手动做空了。
+第三笔交易：朋友发给了我正式获批的pdf文件，可以100%确定消息为真了，故此平仓空单，改为做多。最后 迅速的平仓 因为知道这会是一个sell the news event。"
+zh-265,2023-10-31 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,A,80,美债市场的新闻交易实战思考,69,0,0,0,https://www.zhihu.com/pin/1702580088447541248,"美股Update | 目前账户浮亏20万刀
+股票持仓基本没变化：越南etf、中概etf、arkk arkw、SP500占了大头
+区别是最近一段时间我加仓了很多10年期的美债，因为现在利率实在是香，而且我判断这样的高利率不会持久《—— 求你了美联储别再打脸我的判断了有一个促使我买入更多bond的事件是华尔街大佬Bill Ackman的一条推文，他在前几天的时候发文“我们已经平仓了所有美债的做空头寸，因为现在做空美债已经不具备性价比”，在他的这条推文之后的几小时里10年期美债利率从5.1%下降到了4.8%，直白的来说就是让美债票面价值上升了差不多2-3%。
+这也让我开始思考：连十万亿级别的美国债市场上都是可以做News Trading，还有几乎无限的资金容量，又发现了一个日后的发展方向。"
+zh-231,2023-01-31 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,A,78,关注英文圈TIC叙事掌控权,85,0,0,0,https://www.zhihu.com/pin/1603712495226413057,"让我现在超级羡慕的是加密市场有一个非常小的英文圈子叫TIC，全称The Inner Circle，经过几个月的发展现在他们几乎掌控了整个市场的叙事权，想让市场引爆哪个板块就集体发推+去推销某一个narritive，是加密市场的一股特色游资力量。
+例如前段时间ChatGPT大火之后，在加密市场也掀起一股AI叙事浪潮，而这个题材最先介入的就是TIC，先是集体买入，然后集体发推销。
+有一些TIC的交易员值得在twitter关注
+@NachoTrades
+@PC_PR1NCIPAL
+@DarkCryptoLord"
+zh-245,2023-06-06 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,A,75,利用瑞波官司胜诉预期进行消息面交易,75,0,0,0,https://www.zhihu.com/pin/1649514039888834560,"接下来加密市场最重要的新闻 | 加密市场新闻交易，接下来最重要的事件就是看Ripple能不能打赢和SEC的官司，如果打赢，在SEC最近起诉全市场里各个公司的背景下，Ripple一旦打赢官司则会极大的提振市场的信心。我预计这个事件会在几小时里驱动整个加密市场暴涨超过5%，以及驱动XRP暴涨超过15%。
+如果你看我发了那么一段话 就想去囤币或者去买XRP，那么说明你是韭菜的一员。
+正确的做法是等待—》在事件刚发生的第一分钟里去下单，然后等着卖给后面后知后觉的人。"
+zh-437,2021-10-17 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,A,74,突破前高的自动化收割策略,23,0,0,0,https://www.zhihu.com/pin/1432913177176244224,"未来一个月最确定的程序自动交易方案：现在几乎所有人对于比特币ATH非常有信心，所以一旦BTC突破前高则未来的数分钟内应该会快速上涨1-3%。
+只需要写一个程序每0.1s获取一次BTC现货ticker，在突破65000时快速下单做多，然后几分钟后平仓，应该就能收割到fomo追多韭了。"
+zh-548,2021-11-07 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,A,74,跌破关键支撑位的自动化做空,9,0,0,0,https://www.zhihu.com/pin/1440516374552125440,"下一个很有确定性的程序自动交易方案：
+目前市场上很多BTC多头与技术分析者的心理防线都是在57800，一旦跌破这个价格，则短期会让很多人恐慌抛售止损、顺势做空。
+所以，又是一样：可以开发个简单的程序当监测到币安BTC现货价格跌破57800时自动做空，然后在1-2分钟内快速平仓收割这些恐慌盘。"
+zh-255,2022-09-15 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,A,73,抓准消息面暴涨梭哈翻倍案例,70,0,0,0,https://www.zhihu.com/pin/1553894446797877248,"关于我怎么把8天里把3.1个BTC变成了6.6个BTC：
+图一9.8的时候梭哈了PHB
+图二9.15的时候梭哈了VIB
+两次因为消息面引起的几分钟内的暴涨我都抓住了"
+1698823633031045185,2023-09-04 22:21,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,70,,20,1,2,11616,https://x.com/Vida_BWE/status/1698823633031045185,"I did a few successful shots but later realized that I have to automatically trade the event to be competitive, so in April 2021 my dev guy made an auto-trade dogecoin bot based on Elon's tweets for me. It was a great success, I made at least 500k from that bot."
+1698823634910155103,2023-09-04 22:21,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,69,,25,0,0,11167,https://x.com/Vida_BWE/status/1698823634910155103,"Through 2021, I buy Dogecoin whenever Elon tweets then dump it on retail investors after a few minutes, also buy manually on some tweets that mention another coin like $SHIB and $PEOPLE, made at least 1.5m from Elon alone, thank you by the way @ elonmusk."
+1995914052057661728,2025-12-02 17:52,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,66,API更新与现货上币预判,128,0,5,18048,https://x.com/Vida_BWE/status/1995914052057661728,"@0xMextrel API既然增加了UTF-8支持
+很大概率是会最近一个月内上现货的
+二段接力也是大概率在上现货之后发生"
+1698823631114272789,2023-09-04 22:21,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,65,,19,0,2,11878,https://x.com/Vida_BWE/status/1698823631114272789,"I take my chance in March 2021, at that time, whenever Elon tweets about Doge or dog keyword, Dogecoin's price will rally. At that time I let my dev guy develop a monitor bot to track every Elon's tweet. Then I buy manually when the Doge is tweeted."
+zh-237,2023-09-09 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,63,,80,0,0,0,https://www.zhihu.com/pin/1683846684797407232,"接下来我会狙击的2个事件 | 首先是10月17号sec会再次审核5支BTC现货ETF，如果有任何一支通过=会驱动全市场在12小时里暴涨10%然后是如果Blackrock申请ETH现货ETF，则会驱动ETH在几小时里暴涨2-4%。市场参与者们对于ETH ETF可能已经麻木了，但是如果是Blackrock去申请的，那就不一样。
+方程式新闻@BWEnews依然会第一线的报道。"
+1594248398231994368,2022-11-20 08:36,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,63,跟单逻辑与市场情绪博弈,5,0,3,0,https://x.com/Vida_BWE/status/1594248398231994368,"Entered AMB following Nacho,
+because people who missed the play will be despaired to look for the next SNM, and people who gain huge profits from SNM will aim for making more on other coins."
+1589126531636670464,2022-11-06 05:24,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,63,马斯克推特机器人回测细节,1,0,1,0,https://x.com/Vida_BWE/status/1589126531636670464,"@arb8020 You should backtest with a Elon’s actual “tweet”, like the ones sent in May 27th or June 14th. The one you are illustrating is a reply and reply is not often botted."
+1582816408580550656,2022-10-19 19:30,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,61,马斯克推文与DOGE联动,4,1,0,0,https://x.com/Vida_BWE/status/1582816408580550656,The time Elon send this tweet is picky. There are probability that $TSLA will add dogecoin in their balance sheet in the upcoming fiscal report needs few hours. That’s why DOGE is moving. NFA. in the next hour or two the truth will reveal.
+1637813184227856385,2023-03-20 13:47,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,60,SuperTrend指标与牛市判断,7,0,0,4577,https://x.com/Vida_BWE/status/1637813184227856385,"'- 1h SuperTrend Indicator is in the sell zone
+
+The funding rate for both BTC and altcoins aren't high tho, I expect there will be a little pullback and the music chair play will keep going.
+
+The top for this 2019 Deja Vu bull hasn't shown up yet imo. NFA"
+1666103777416605703,2023-06-06 15:24,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,59,,24,1,5,20378,https://x.com/Vida_BWE/status/1666103777416605703,"The recent SEC actions make the Ripple case juicier for news traders since it's the frontier of the crypto vs. sec battle now. If Ripple wins the case, it will boost the overall sentiment, and the entire market gonna rally alone with the mega pump of XRP."
+tg-269,2026-11-12 10:12,TG 投机之路,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,59,英伟达突发消息手动快打,0,0,0,0,,"先平了一半@160.3，剩下的一半继续拿拿 赌一波美股开盘反转, 逻辑挺简单：市场已经为【黄仁勋出轨】定价的太厉害了，且不说人家不一定被开除
+主要败笔是我看到手机监控响了到开仓耗时太久，下次考虑自动化这种操作"
+1513366211085893633,2022-04-11 03:59,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,58,推特股价随马斯克消息的波动,0,0,1,0,https://x.com/Vida_BWE/status/1513366211085893633,"Second, $TWTR has pumped for 5% after the news that Elon wants to join board, but now the reason for that pump doesn’t exists anymore. Would cause some people to panic sell."
+1594279467442393088,2022-11-20 10:40,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,56,跟随高胜率交易员操作,4,1,1,0,https://x.com/Vida_BWE/status/1594279467442393088,"dumped all my AMB following Crypto Dark Lady.
+I'm not good at doing narrative/FOMO trades, so I simply follow traders who are good and it"
+zh-306,2023-10-24 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,55,做空假新闻导致的定价错误,50,0,0,0,https://www.zhihu.com/pin/1700151222265520128,接上一条想法附上开平仓信息 | 当时的逻辑就是做空因为假新闻而暴涨产生的定价错误，而不是搞什么长期看空市场。开平仓就一会时间，所以千万别随便跟我的单。
+zh-333,2021-05-17 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,2,实盘案例,B,55,马斯克对BTC牛市的影响,42,0,0,0,https://www.zhihu.com/pin/1377608652786970624,"有点被马斯克这一波圈粉了
+我很欣赏那种逆着舆论做自己想做的事情的风格，很喜欢那种可以无惧权威随心所欲的感觉。
+更重要的是他凭一己之力提前终结了比特币牛市，帮我赚到很多钱"
+1613767002627375105,2023-01-13 05:16,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,3,复盘教训,B,68,叙事交易不顺，回归量化,15,0,3,5410,https://x.com/Vida_BWE/status/1613767002627375105,"Lost another $2000 by trying Narrative trading. Feels like it just doesn’t fit me cuz I’m a hustler that cannot hold speculative position for long, also I cannot tolerate a position lose more than 2%. Will focus more on bot trading in the future."
+zh-385,2022-01-18 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,3,复盘教训,B,64,戒掉手动交易，拥抱程序化,32,0,0,0,https://www.zhihu.com/pin/1466806878981902336,我复盘了一下，最近三个月95%的亏损都来自手动交易。以后要控制住自己蠢欲动的手，尽可能全都交给程序自动交易或者半自动辅助
+zh-476,2021-10-31 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,3,复盘教训,B,63,,20,0,0,0,https://www.zhihu.com/pin/1438075002470379520,"卖飞之后天看它涨真的难受爆了
+但我的交易规则就是如果消息爆出后10分钟内市场没有立刻反应就会抛售下次再遇到这种重磅消息我应该反应的更快，且买入后等待数小时主力吸足筹码启动行情。
+MANA的行情启动不是在facebook改名META后瞬间启动的，而是在Barry Silbert发了推文后才启动，所以还得把Billy Silbert的推特监控上。"
+1582183689496453121,2022-10-18 01:36,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,3,复盘教训,B,61,买错币却赚钱的新闻交易趣事,10,0,6,0,https://x.com/Vida_BWE/status/1582183689496453121,Feels great that I bought the wrong $APT token but still made 15% profit. Regret as fuck later seeing it pumped 10x in a few minutes after I sold. https://t.co/bWzOGiwte0
+1524409938508148741,2022-05-11 15:23,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,3,复盘教训,B,59,新闻交易中的网页与推特延迟,1,0,0,0,https://x.com/Vida_BWE/status/1524409938508148741,@etheraltog @CoinDesk @stablekwon @BasisCash @skesslr @realDannyNelson @tier10k That’s because coindesk always publish stories on their website before the tweet
+zh-296,2022-02-28 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,3,复盘教训,B,57,后悔没早点死磕低延迟交易技术,54,0,0,0,https://www.zhihu.com/pin/1481756682108268544,"离成为巨富真的就只差了几个月
+如果提早几个月研发出现在的低延迟技术… damn… 好后悔以前没有再多卷"
+1880180646917849487,2025-01-17 09:09,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,3,复盘教训,B,53,辟谣大V推文操纵价格论,8,0,4,3594,https://x.com/Vida_BWE/status/1880180646917849487,"@CaptainMeow123 He shills own bag for sure every influencer does that,  but people are accusing him for pumping the price in few seconds before/after his tweet. And that’s not true."
+1894968397345235272,2025-02-27 04:30,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,A,78,交易员的日常与工具优化,162,11,9,37664,https://x.com/Vida_BWE/status/1894968397345235272,"As a USD extractor and a PVP focused player in the market, I don’t touch much grass when the market is trash. Still, I average about 6-8 hours of work per day.
+
+I grind on my tools, my company’s product @bwenews, and optimizing trading bots on both CEX and DEX. There’s just so much to do—especially with AI’s help.
+
+There’s always room for optimization to improve trading performance. You need the right tools, skills and knowledge to prepare for the next round of whatever frenzy its gonna be.
+
+The market will come back someday. When it does, make sure you are prepared."
+1856918237109522773,2024-11-14 04:33,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,B,69,,27,0,2,4522,https://x.com/Vida_BWE/status/1856918237109522773,"你看方程式新闻什么时候有说让你买入XXX币了吗？有预测新闻的涨跌吗？
+我们只发布公开的新闻，没有喊单，没有接过付费发新闻稿，从合规的角度看比很多媒体运营者做的更好
+
+ToS也有明着写：“请注意，BWEnews报道的所有新闻标题仅作为信息参考。它们不应被视为财务建议。任何人不应该把BWEnews当作投资工具，我们的目标是提供及时+相关+准确的信息。对于信息的解读应当由读者进行自己的研究，并就财务决策咨询专业意见。”
+
+另外，按我的资金量买进去了，价格就不会跌，这是事实"
+1896258947251839375,2025-03-02 17:58,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,B,64,,192,24,13,96906,https://x.com/Vida_BWE/status/1896258947251839375,"我不是顶级[手动]新闻交易员， @definalist   才是。
+他的风格类似 @dotyyds1234  且已经赚超过$100M了。
+
+你可以说我是顶级全自动新闻交易员
+我的宗旨是能全自动的就全自动，如果我无法使用bot获取到最低的价格优势，我就不敢手动做二段了。这也是我的缺点，今天这种大事件我的bot出了点问题只做多了很小的仓位，只能我手动又开了点然后赚了接近40万刀就走了。属于非常非常差劲的表现，毁了我今天一天的心情。
+
+今天让我感到开心的是：今天方程式新闻是全网最快报道此事件的媒体，比其他媒体都快了最少十几秒。要多多关注和支持呀
+https://t.co/3OFd3xNqxC"
+1864372397379604673,2024-12-04 18:13,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,B,57,,59,7,6,64874,https://x.com/Vida_BWE/status/1864372397379604673,"Bull market brings the great transfer of wealth,
+from uninformed to informed traders
+from normies to elites
+from slow hands to fast hands
+
+Congrats on the news trader homies that caught this play
+Viva la great transfer of wealth https://t.co/ljFjXnXTEd"
+zh-356,2021-10-17 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,B,56,,37,0,0,0,https://www.zhihu.com/pin/1433185763941277696,"在币圈，我无法像很多基本面投资、一级市场投资的大V一样把自己的赚钱策略分享出来，因为我的每一个赚钱策略的设计初衷就是为了收割下单手速的钱或者短期市场情绪的钱，这些策略都是含有高Alpha但是很小的资金容量，一旦我公开其Alpha就会严重降低。
+也许过个一年牛市结束或者当下的策略彻底失效之后我才会公开说点例子。"
+zh-397,2021-12-07 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,B,54,,29,0,0,0,https://www.zhihu.com/pin/1451625855672217600,"12月10号晚上9点30又20秒
+美国公布CPI数据如果超过预期：
+让黄金、道指期货瞬时大涨
+那么我会试看“凉兮战法”
+一下梭20万美元做多ETH-PERP
+然后在15分钟内分批平仓
+这个操作很危险
+只有数据超预期我才会这么做"
+1875594327583551825,2025-01-04 17:25,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,B,52,新闻交易领域的领先地位,17,1,6,3172,https://x.com/Vida_BWE/status/1875594327583551825,"@SigmaSquared_ @edgesizer If launching a coin isn't illegal in China, I would launch $BWE already since BWEnews is already a leading force in News Trading.
+
+The fortune rewards those who are both bold and smart."
+1602382090913611776,2022-12-12 19:17,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,C,49,,4,1,1,0,https://x.com/Vida_BWE/status/1602382090913611776,"Why do I think so zero-sum way? Because despite my age, I've been in so many internet businesses and witnessed the gold-rush style business cycle repeat many times."
+zh-214,2023-05-19 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,C,48,,99,0,0,0,https://www.zhihu.com/pin/1642700881052270592,"春风得意马蹄疾 | 开了一年多的X安大号实盘收益率突破400%，盈利超过2000万。
+这个账户的70%收益都来源于我的硬实力：低延迟优势以及信息优势，20%来自关注行情了解散户的喜好所付出的汗水，9%来自宏观行情，1%来自幸运。"
+1464661733218283521,2021-11-27 18:25,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,C,48,,2,0,0,0,https://x.com/Vida_BWE/status/1464661733218283521,He bought the literal dip precisely for many times. Looks like either the big players behind market take advantage with his tweet to pump the market or the market manipulator tells him to send the tweet.
+1864015111691940018,2024-12-03 18:33,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,C,47,,18,0,8,5369,https://x.com/Vida_BWE/status/1864015111691940018,"@corleonefnf @bwenews - Paul Atkins的SEC主席任免和“不愿接受工作”均自动转发自ZOOMER和DB，他们的英文评论区里也全是谩骂的😂这口锅我们不背
+
+- GCR的确说卖了他的RSR，但是在方程式新闻发布之后有很多在同一个discord的人让我不要泄露GCR的话，所以删除
+
+之后方程式新闻不会再发布关于任何交易员个人的话以防引起争议"
+1821279463822516549,2024-08-07 20:17,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,C,44,,45,3,7,29722,https://x.com/Vida_BWE/status/1821279463822516549,"Just did a news trade on XRP, but I sold too soon, so I decided to enter a bag of $XLM since its XRP's beta. Last time XLM did a 100% pump after the case win"
+zh-277,2022-06-26 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,C,40,,61,0,0,0,https://www.zhihu.com/pin/1524240787273785344,马斯克已经三天没有发任何推文或者回复，非常非常的反常。所以我决定建立一些TSLA的空头寸，等到他再出现再平仓。
+zh-404,2021-06-04 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,C,38,,27,0,0,0,https://www.zhihu.com/pin/1384144651323092992,"比特币本来可以突破的
+没想到马斯克突然发推补刀，几小时跌了将近10%
+一切技术分析或者基本面分析，在马斯克面前皆无效"
+1864017384593666539,2024-12-03 18:42,X,新闻交易、低延迟系统与量化套利,1.1,全自动新闻交易与毫秒延迟对抗,4,日常记录,C,32,,1,0,1,2895,https://x.com/Vida_BWE/status/1864017384593666539,"@Berry03311 @corleonefnf @bwenews 今天的新闻总结：
+- Paul接受到特朗普政府发来的担任SEC主席邀请，
+- 但是他对是否接任这份工作依然犹豫不决
+
+你可以测试拿Google翻译去翻译DB和ZOOMER的那段话 https://t.co/ccEAfEuHoM"
+1969361370048315767,2025-09-20 11:21,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,S,96,科技套利党靠廉价筹码与量化指标拿住利润,808,117,67,198781,https://x.com/Vida_BWE/status/1969361370048315767,"感同身受的是我也是这么多年一直在“捡小钱” 我也超羡慕那种能买一个XXX币然后拿住然后一下子拿大结果的人，但对我这种没有信仰没有念力的科技套利党来说太难了。
+
+我现在的财富是靠几千次手动交易、几万次程序自动交易一点点积累的。赚的最多的几次交易也就单笔交易让我财富提升10%左右（2023年狙击的ORDI、2024年狙击的ACT）
+
+我总结一下经验，对于科技党、套利人来说最需要打磨的优势是：
+- “提高你拿廉价筹码”的能力，因为你虽然没有信仰，但你的成本很低很低你就更容易拿住。比如像这次Aster：1. 通过批量交互刷成交量可以获取廉价筹码 2. 有一些链上追踪专家通过蛛丝马迹追踪内幕人士也在半年前就囤积了APX 3. 做好投资研究和监控，Aster宣布可以APX 1:1换币的时候也能立马去拿到廉价筹码。 4. 有影响力的人可以参与各种KOL轮 
+拿的筹码成本够低，你就会非常有心理优势，更容易做到“没信仰但能格局”
+
+- 通过各种方式拿到廉价筹码之后，若是真的行情启动，用某种量化指标来把握趋势，比你自己“觉得涨的太多所以要卖”会更好。我做新闻交易一般会用supertrend这个技术分析指标不同的周期来决定退场。你无法预测市场会多疯狂，技术分析是一种可以把市场行为量化的方法。你当然也可以选择其他量化方法，比如：如果社交媒体热度趋势下降则退出、如果监测到币充进交易所数量超过XXX个则退出等等指标。
+
+这一切的目标是为了让一名理性、没有信仰能够通过数据的形式来拿住自己早期获取到的廉价筹码，直到你定义的那个标准达到之后再退出。这样你会有更大的概率卖在一个好价格。"
+zh-219,2023-05-20 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,S,85,盘点币圈稳赚不赔的七大加密油田,94,0,0,0,https://www.zhihu.com/pin/1643315609206140928,"谈“加密油田” | 在crypto市场，有一些机会是100%赚钱，我管这种类型的机会叫做“加密油田”。
+加密油田存在于世，这背后的逻辑就是：大部分来到这个市场的人都怀有一种期待暴富的心态并且是一窍不通的小白。他们愿意在一些特定的机会上去冒高风险，以期满足自己暴富的美梦。韭菜也知道一个机会他们很可能亏钱，但是为了渺茫的希望他们愿意付出代价：
+这就给了抢劫者们很好的发挥空间，有一万种方式从90%的韭菜们的钱包里抢劫财富。
+目前已知的加密油田有：
+反佣（稳吃手续费钱）
+卖课（稳吃入门小白的钱）
+链上MEV（稳吃滑点的钱）
+套利（稳吃错误定价的钱）
+新闻交易（稳吃信息差的钱）
+撸空投、launchpad套利、一级市场打新（稳吃二级市场接盘韭的钱）
+黑客（稳撸所有人的钱）"
+zh-194,2024-04-14 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,A,78,我的U本位套利进化论,130,0,0,0,https://www.zhihu.com/pin/1762932716272738305,"很多人总是问我对后市的看法 | 但是事实是现在的我也无法预测。
+因为我不依靠囤币或者赌方向来赚钱，所以已经退化掉了择时的能力。
+我的主营策略是一系列的U本位套利策略
+市场好=我赚的多
+市场坏=我赚的少
+市场的涨跌与我的PnL无关，在这个市场纯的就是为了抽水的。
+2022年初时我的资产在1800万左右，而现在我有1.3亿。在这个过程中我的总回撤一直控制在4%以内，主打一个稳字。按照我现在的资金体量 只需要追求年化50%的增长水平就能过很舒适的生活，我的进化也会继续朝着套利的方向发展。"
+1660277115902898178,2023-05-21 13:31,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,A,73,寻找加密市场中稳赚不赔的稳定油田机会,50,17,3,12961,https://x.com/Vida_BWE/status/1660277115902898178,"A thread about my crypto oil fields theory:
+Besides gambling, in this market, there're some opportunities that 100%ly make you money, and I call them ""crypto oil fields""."
+zh-354,2021-08-01 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,A,72,币圈不囤币也有高回报的偏门玩法,38,0,0,0,https://www.zhihu.com/pin/1405199796169175040,"币圈不一定要囤币才能赚钱，事实上我觉得囤币是这个市场最没有门槛的操作。囤币只能让你获得和其他人一样的beta收益，而且还要承担市场潜在的风险。
+举几个在币圈不用付出任何风险也能赚取暴利的例子：
+1. Coinlist养几百个号打新币
+2. 空投科学家
+3. 高频做市套利
+这些低风险赚取高回报的方式都有一个共同特点：1. 有技术门槛，普通人做不了
+2. 必须要市场情绪狂热的时候收益率才高
+不想囤币承担市场的风险，但又想分一杯羹，就可以找这种另类偏门的赚钱路子"
+1959562437700808964,2025-08-24 10:24,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,71,,267,25,9,37998,https://x.com/Vida_BWE/status/1959562437700808964,"'- 新闻交易
+- 资费套利
+- 参与Pump、Plasma这种交易所白送钱但需抢活动
+
+对于《管自己的钱》的大资金玩家来说一年整个portfolio以0%回撤增长30%的性价比高于以最大20%的回撤增长50%。
+
+对于像strategy、sbet这种《管别人钱》的大资金玩家则反之，他们不怕亏，反正亏的不是自己的钱，赚的是aum，所以他们对于回撤什么的就不怎么在意，不看价格就是买"
+1660277120852168711,2023-05-21 13:31,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,70,,6,1,1,1691,https://x.com/Vida_BWE/status/1660277120852168711,"This provides skilled oil farmers good opportunities to harvest that greediness with minimal risk, there are some known oil fields I can name:
+
+1. Exchange Affiliation (Harvest from gamblers)
+2. Sell paid Lessons/Paid group memberships (Harvest from newbies)"
+zh-230,2023-12-22 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,69,,86,0,0,0,https://www.zhihu.com/pin/1721560602537840640,"币圈的核心战略 | 我的币圈核心战略策略：
+熊市囤币
+牛市套利，撸/挖提卖套利
+现在是2023年12月22日，BTC现报价43800。都涨成这样了你还要问我现在是不是牛市吗？
+我们早已身处牛市之中，甚至市场现阶段已经暂时过热。OKX USDT年化借贷利率高达40%、BTCUSDT永续合约资金费率年化已经超过30%当下最好的策略是挖提卖套利，不是囤币。
+如果你现在想着囤币，那么你亏钱的概率会很大。"
+1660277122940928002,2023-05-21 13:31,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,69,,4,2,1,1750,https://x.com/Vida_BWE/status/1660277122940928002,"3. Open Pump&Dump groups (Harvest from low iq apes)
+4. On Chain MEV (Harvest from people's willingness of paying slippage fee)
+5. Arbitraging on dex/cex (Harvest from mispricing)
+6. News Trading (Harvest from whom are less informative)"
+1660277125004546048,2023-05-21 13:31,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,68,多维度收割市场策略,3,2,1,4710,https://x.com/Vida_BWE/status/1660277125004546048,"7. Airdrop sibling, Launchpad sibling, whitelist sibling(Harvest from retails that buy bags on exchanges)
+8. Hackers (Harvest from the coding mistakes of the entire market)"
+1460975154545135621,2021-11-17 14:16,X · 知乎想法 同步,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,67,,35,7,0,0,https://x.com/Vida_BWE/status/1460975154545135621,"我还是更喜欢：跨期套利、资金费率套利、USDT-USD-RMB汇率差套利、链游外挂/人工打金、链上链下科学打新、dex/cex套利、人工/科学撸空投这些个能够不用承担持币风险又能把币卖给接盘侠，把美金给赚到手里的活动。
+因为我是打心眼里不认为那一串代码和社区共识配得上当下的估值。"
+1459964193998708738,2021-11-14 19:19,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,66,FTX借贷利率作为情绪指标,5,0,1,0,https://x.com/Vida_BWE/status/1459964193998708738,"FTX USD lending rate is the annualized interest that a lender can collect from a borrower. Since FTX is an exchange that gathers many traders, this indicator basically shows the sentiment or attitude of the smart money in the crypto market. https://t.co/MvkMbczsyF"
+1660277127269470209,2023-05-21 13:31,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,65,,5,1,1,4451,https://x.com/Vida_BWE/status/1660277127269470209,"If you don't wanna gamble but wanna consistently squeeze money off this market, chose one of the oil fields and stick to it, be the raider that raids gold miners, be the oil drilling machine on people's greed&mistakes."
+tg-79,2025-09-28 15:30,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,65,多号KYC绕过公平分配机制,0,0,0,0,,"我比较讨厌这点，就是币圈的大部分项目都爱搞共产主义公平分配。往往需要通过多号多kyc来绕过这一道公平分配机制。你搞了，大户照样可以去买kyc做多号策略解决，就是麻烦了很多
+
+就不能学学Plasma/Hyperliquid搞资本主义吗？
+
+当然，这也是实打实的给很多散户的机会"
+1651329239826980864,2023-04-26 20:55,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,60,榨取市场低效带来的利润,10,0,0,6976,https://x.com/Vida_BWE/status/1651329239826980864,embrace the inefficiency &wild westness out there and squeeze as much $ as possible before they're gone.
+1912245807363026978,2025-04-15 20:45,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,59,套利的本质是利用市场错误,52,4,2,7056,https://x.com/Vida_BWE/status/1912245807363026978,@rnmumu3 👍套利套的是别人（市场）的错误
+zh-364,2021-07-19 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,59,震荡行情下的网格策略应用,36,0,0,0,https://www.zhihu.com/pin/1400251715300593664,"189
+现在的BTC震荡行情就非常适合网格策略
+策略配置好之后策马奔腾享受人世繁华不香吗？
+玩累了空闲的时候研究研究宏观、研究研究周期、研究研究择时因子、研究研究其他行业的新商机，愉快的日子就这么一天过去了"
+zh-442,2021-11-02 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,57,,23,0,0,0,https://www.zhihu.com/pin/1439001946174304256,现在持有现货但是又怕承担市场风险想获利了结的人，我建议你们可以把资金划转到币安币本位永续合约，然后开一个1倍做空，可以每8小时吃一次这离谱的资金费率。不会被强平，0风险。行情接下来的上涨下跌都和你没关系了，你已经把利润锁定。
+1660277118603870209,2023-05-21 13:31,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,55,,4,1,1,2026,https://x.com/Vida_BWE/status/1660277118603870209,"The existence of oil fields is because most people 
+ who come to this market have a greedy motivation of getting rich quick. People are willing to ape on high-risk opportunities in expectation to gain high returns."
+1913848234809983415,2025-04-20 06:52,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,1,核心原则,B,53,,15,0,1,2209,https://x.com/Vida_BWE/status/1913848234809983415,@white_world_ten @DujunX 买一揽子正费率的币的现货，当作统一账户的保证金，做空永续合约
+zh-164,2024-04-14 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,S,89,暴跌捡尸：PAXG溢价套利实操,218,0,0,0,https://www.zhihu.com/pin/1762880829959950337,"暴跌往是捡尸体的好时候 | 我自己有一个提醒，当BTC在4小时内下跌超过7%时会触发我一部用不关机的手机的铃声。
+然后我就会迅速做到电脑面前去操作，昨天的操作：
+1. 平掉了所有0628 BTC跨期套利的仓位，此仓位已经实现大部分利润。然后把BTC现货换成了FDUSD，用来挖Launchpool。
+2. 昨天PAXG（一款和黄金挂钩的稳定币）因为伊朗发射火箭的消息影响，很多币圈不懂黄金的散户乱冲产生溢价，PAXG昨晚的交易价格一度比周五黄金收盘价高了20%。我看到之后立马去看PAXG是否有合约，发现在Bybit上有合约之后做空了65万刀的PAXG成本2633左右，这部分仓位目前还没有平仓，我会等到周一国际黄金市场开盘了再平仓。
+大跌往就是捡免费钱的好时候，因为这种时候散户会恐慌、做市商为了防范库存风险会减少挂单导致流动性紧缺，两者一结合就出现了很多“捡尸”的机会。"
+zh-156,2024-11-11 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,S,87,利用统一账户持仓山寨币现货做空合约吃费率,246,0,0,0,https://www.zhihu.com/pin/1839128187851915264,"我是如何管理我的加密闲钱的 | 我有大概700万刀的闲钱，少部分在Kraken和Bitfinex理财，其他大部分都在币安用来搞资金费率套利币安正常情况下是无法用meme币当保证金的，但是使用统一保证金账户的模式，则可以用PEPE这种meme币的现货当保证金，来做空合约。1:1对冲达成资金费率套利的目的。
+- 会爆仓吗？PEPE作为保证金其抵押率为80%，除非PEPE合约的标记价格比PEPE现货高4倍，否则不会爆仓。能出这种情况除非币安暴雷
+- 看着亏很多？那是因为我用的PEPE现货作为抵押物，做空合约，你看到的亏损只是合约亏损按照现在的市场火爆行情 我每天光靠我总计750万刀的资金费率套利仓位就可以赚接近1万美元 不过这种好行情不怎么可持续就对了。
+之后等次季交割合约利率apy超过20%时，我会从永续合约套利调仓至交割合约套利。"
+zh-199,2024-01-03 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,A,83,当前市场不宜囤币但适合做套利,122,0,0,0,https://www.zhihu.com/pin/1725669960435863555,"现在看来几天前我对市场的判断错了 | 市场比我想象的更加坚挺。
+当时为什么做出这个判断呢，
+因为：
+- 全市场的资金费率达到了历史上较高的水平
+- 次季合约期货升水（相当于币圈的无风险利率标杆）达到了历史上较高的水平
+- 铭文这个板块出现了动物园的场面（BONK，ORDI，SATS，RATS等）
+我对于价格的预测是错误的，但是我对市场的看法依然不变：现在不是囤币的好时候，而是搞套利的好时候。
+最近我参与了某安2期的launchpool，质押FDUSD7天利率大概是1.5-2%，相当于年化70-90%的水平了。
+另外我今天还建仓了次季合约套利的仓位：买入BTC现货，划转至币本位合约，做空等量数额的BTC 0628交割合约，现在的年化利率大概在18%左右，而且后面只要遇到市场暴跌就能立马实现利息。原理有些类似国债。"
+zh-283,2022-11-04 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,A,83,火币GALA价差套利实战记录,58,0,0,0,https://www.zhihu.com/pin/1571787271748935680,"折腾了一晚上没睡，净赚6w刀：
+6:40的时候我看到有一个外国交易员在一个私密群里发GALA在火币上现货与币安有10倍的价差。
+当时没多想立马就在火币买了4.5万刀的GALA平均成本0.0022，平均在0.005左右出掉了，直接净赚6.2万刀，最后为了防止火币回滚交易我直接把账户里全部的USDT从火币提到币安了。profit secured然后又是一个经典的流程：在我卖完之后火币上的GALA开始暴涨，目前已经0.008很好奇是不是我一觉睡起来能让我拍断腿目前火币上的GALA起伏就看有多少散户被喊单fomo了参与其中去买，最终价格应该不会恢复锚定，但是散户们会幻想它是下一个LUNC。等中国时区的散户们起床揭晓答案吧～"
+zh-200,2024-02-27 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,A,78,加密市场即将迎来暴跌洗清多头,121,0,0,0,https://www.zhihu.com/pin/1745800721658941440,"加密市场即将迎来10-20%回调 | 当前BTC价格为55900，加密市场在1-2周内即将迎来一天10-20%回调，洗刷掉很多杠杆多头。
+判断理由是：
+- 今日BTC次季合约升水 APY（无风险利率）已经摸到19%的水平，超过2021年11月份的水平。
+- BTC当前资金费率为0.1%折合年化80%的样子
+多头们正在尽可能多的借钱来做多，全市场已经处于极度贪婪的状态。
+当前我的战略是做0628次季交割合约的套利，持有到2024.6.28能无风险的拿6%的利息，而如果市场发生暴跌，导致升水下降，我可以提前实现大部分利息。"
+1961327381559611479,2025-08-29 07:17,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,A,74,币安XPL多号抢额套利实战,531,41,56,328749,https://x.com/Vida_BWE/status/1961327381559611479,"昨天我熬夜加了100个号
+今天起来正好遇到币安把单号额度增加到了5万一个😂 然后统统都塞满了
+
+存10000U可以拿1000XPL，1XPL=1刀
+币安这波操作相当于在街上撒了1亿美元红包
+
+好多时候人生中的机会就是这样，你提前准备了，机会来了，你狠狠的把机会塞满了"
+zh-414,2021-09-27 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,A,74,利用周末银行停摆套利USDT,26,0,0,0,https://www.zhihu.com/pin/1425694854710554624,"今天在HB买了120万人民币的usdt
+平均成本在6.11左右
+之所以U价现在这么低是因为有来自中国投资者们的恐慌性抛售+海外银行周末不上班导致搬砖者的资金周转不过来这周内U价就会恢复正常水平，我就可以在几天内白赚5.8%的收益 白捡的钱不要白不要"
+2006616369119515093,2026-01-01 06:39,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,A,73,复盘：做市商与套利者的博弈,56,0,4,7966,https://x.com/Vida_BWE/status/2006616369119515093,"@JiuWhile 因为那1小时的交易对手盘太复杂，我不是“唯一一个赚钱的人/机构”
+
+起码几百个散户撸到了、一堆算法交易策略路到了，且它现货合约价差那么大的情况下任何在之前就持有对冲资费套利头寸的做市商都会和当时的我一样选择获利了结（做市商们也都赚了）"
+tg-227,2026-04-16 16:32,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,A,72,跨所Spread套利实战,0,0,0,0,,"最近不活跃那么久，是因为：
+1. 在打游戏&旅游&好好生活 ———— 我意识到我的“美好青春年华”这个不可增值资产只剩几年了，所以在好好的花费它
+2. vibe coding ———— 自己天天用claude code和codex写东西&试东西&全自动化公司审计和资费套利，就是因为现在claude code和codex用的多了，导致我发现业务还有大量多可优化之处，现在天天优化各个地方打补丁&开拓新领域，没有时间写东西
+
+这几天的无风险套利最多的机会就是交易所之间的spread套利了，像：
+- 这几天RAVE作妖，OKX合约经常因为大户爆仓所以比币安合约溢价超过8%以上，这种情况出现了3-4次，自己随便vibe写了个套spread的程序也手动撸了几万U。
+- ARIA前几天暴跌的时候现货相较合约负溢价最大有-5%左右，后面过了几小时就变成正溢价+10%，又撸到1万多U
+
+我撸的都不多，所以也不好意思炫耀，但是通过技术从庄身上无风险撸到利润真的是太上瘾了，“成为市场摩擦者从庄家身上撸钱”有一种无形的爽感"
+zh-331,2022-10-13 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,70,BUSD新交易对套利,42,0,0,0,https://www.zhihu.com/pin/1563848382233391104,今天靠狙击SNT和AGIX，把我的6.6个BTC变成了8.9个BTC。这次的两个上架BUSD交易对的币种市值都很大，散户们的喜好程度没有那么多，所以我选择早的就卖掉，但愿不要由又又卖飞
+1856113293896888624,2024-11-11 23:14,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,70,,22,0,2,25318,https://x.com/Vida_BWE/status/1856113293896888624,"3. Binance BTC delivery next-quarter perp
+It is the indicator that shows how much yield are market participant willing to pay in locked form to long BTC. Historically, above 25% apy = dangerous level, but could be wrong this cycle because some new players like Ethena arb the risk-free yield.
+https://t.co/qa88V8oASk"
+tg-61,2025-08-29 18:25,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,67,币安多号撸起袖子捡钱,0,0,0,0,,"昨天做这批账户的时候，真已经很累很困了
+当时一个号只有1万U额度，但是我一想到做一个号=800-1000美元，就打起精神。
+结果今天下午币安把单号额度改成5万刀了，这样的话存一个号=4-5千刀利润，我把我120个号都塞满了
+
+人生中真的每隔一段时间就会随机发生一次“天上掉馅饼”的好事，但是等那个时刻来临时，你得撸起袖子加油干加油捡
+
+https://x.com/Vida_BWE/status/1961327381559611479"
+1961328928133693743,2025-08-29 07:23,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,66,币安子账户申购技巧,148,11,11,60262,https://x.com/Vida_BWE/status/1961328928133693743,"补充信息：币安vip4可以创建50子账户，vip3可以创建40子账户，vip2可以创建30子账户，vip1 20个
+
+子账户也是可以申购的"
+1970458570564214983,2025-09-23 12:01,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,66,批量账户刷Aster积分策略,90,5,5,17056,https://x.com/Vida_BWE/status/1970458570564214983,"@daidaibtc 我也准备搞几百个账户刷Aster成交量points了，就是不知道会不会被女巫🤣
+
+两种思路：
+A. 几个账户刷
+B. 几百个账户刷（可撸单号reward补贴) https://t.co/F7ibGmsRqZ"
+1649161662510022656,2023-04-20 21:22,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,65,Coinbase的无风险套利逻辑,5,0,0,889,https://x.com/Vida_BWE/status/1649161662510022656,@CoinDesk @MakerDAO @coinbase @sndr_krisztian That’s literal risk-free arbitrage for Coinbase. Receive 500M USDC > redeems to USD > purchase 1 year US treasury and gets 4.75% yield
+zh-419,2021-10-21 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,64,,26,0,0,0,https://www.zhihu.com/pin/1434617193464385536,"刚币安上又一次出现了dump money溢价
+币安上FTT的价格比FTX上溢价了0.7%左右，于是我又加仓了套利单。这样可以直接锁定0.7%左右的差价利润+每8小时可以收0.2%的利息。
+现在这24万美元大概每8小时就能套利480美元。"
+2016651453415481815,2026-01-28 23:15,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,63,利用USD1进行资费套利,77,0,1,26188,https://x.com/Vida_BWE/status/2016651453415481815,"'- 我踏马来了是个对冲资费套利仓位，不是做空😂
+- 合约上开是因为可以用USD1当保证金撸币安的USD1活动节省资费
+- 非财务建议 + 我只用了很少的钱瞎几把赌博玩玩，亏了别找我维权"
+1635698560279928832,2023-03-14 17:45,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,63,基于资费与宏观的对冲策略,8,0,2,5090,https://x.com/Vida_BWE/status/1635698560279928832,shorted and hedged half of my Bitcoin holding here given the reason that the Russian-Ukraine war intensify concern and also the BTC funding rate&contango are rallying.
+zh-233,2023-03-13 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,62,币安年度300%且低回撤实盘,84,0,0,0,https://www.zhihu.com/pin/1618541895092862976,"X安大号年度收益率突破300% | 不是我不想晒亏损，是真的没怎么亏过
+一年来最大回撤只有不到5%"
+zh-347,2022-02-24 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,62,,39,0,0,0,https://www.zhihu.com/pin/1480261465471414272,加密市场与黄金挂钩的PAXG现在相较外盘有1.6%的溢价，做空PAXG-PERP，做多黄金现货/期货可以无风险套利1.6%。Free Money
+1635734136576151552,2023-03-14 20:06,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,61,尝试配对交易策略,15,3,0,7558,https://x.com/Vida_BWE/status/1635734136576151552,Entered a bag of $GALA 10k long and $BTC 10k short to test my pair trading strategy following the vulture.
+1460593202256232455,2021-11-16 12:58,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,61,通过资费与持仓判断回调性质,0,0,0,0,https://x.com/Vida_BWE/status/1460593202256232455,@FTX_Benson The difference between today’s correction and the September one is that there’s no hike of funding rate or Openinterest.
+zh-275,2022-02-27 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,60,卢布脱锚创造的极端套利商机,62,0,0,0,https://www.zhihu.com/pin/1481178724451745792,"往这种局部混乱就会创造出很多商机
+例如俄罗斯卢布兑换USDT 100%会有高昂的溢价
+一些机会 一辈子把握一次就够了"
+tg-234,2026-04-19 23:10,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,59,Bitget现货溢价套利操作,0,0,0,0,,"我的最新操作是在bitget交易所买了现货-币安交易所空了合约形成对冲。
+
+还是一样赌现货溢价之后会变高（目前现货比合约便宜0.5%）
+
+后续庄家如果真的想继续操盘，那就会把bitget现货价格拉的比合约高一大截，我就可以撸到它。
+
+庄家如果不操盘，留着这个仓位吃吃资费也挺爽"
+1620917269646962689,2023-02-01 22:49,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,58,币安多资产模式抵押技巧,6,0,1,6325,https://x.com/Vida_BWE/status/1620917269646962689,"In case you don’t know, you can enable multi-assets mode in Binance perp and then use spot BTC as collateral to trade."
+tg-77,2025-09-28 15:25,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,58,,0,0,0,0,,"最近最确定的机会就是在Aster上刷量，我在这上面计划烧70万美元手续费
+无论采用何种算法，按照当前币价，回报率都至少有2倍。
+唯一的风险就是被官方查女巫，所以我现在用1号1ip，用了上百个号在BTCUSDT上随机对刷
+这要是还女巫，那么Aster官方就惹怒了人民群众的汪洋大海》口碑直接烂了。
+
+当然，现在还不能提前庆祝。我也不会在推特上发
+等到空投实打实拿到手，再开香槟"
+tg-87,2025-10-10 23:30,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,58,,0,0,0,0,,"我的Aster最终情况：
+投入94万U，回报大约100万U
+
+之所以我没亏钱是因为：
+1. 我在均价2套保了一部分
+2. 我有跑一组alpha套利组，一组100号集群刷量。套利组整体赚钱连吃带拿，100号集群整体亏钱。
+
+我会选择套利组claim Aster，100号集群退费。"
+tg-179,2026-02-02 22:55,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,B,56,白银对冲与资费套利实战,0,0,0,0,,"已在币安合约上完成对冲，开始吃资费收利息。
+白银并没有我想象中的类似10.11事件时的快速反弹（或者说在cme开盘时段已经出现过但我没把握好），所以我要撤退了。毕竟这是我不熟悉的领域，不敢太恋战。
+最终利润只有刚刚scalping赚的十几万美元"
+tg-228,2026-04-16 16:33,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,C,48,,0,0,0,0,,"目前我还开着gate现货多45000个RAVE，币安合约空45000个RAVE 》 赌现货溢价扩大
+ 
+ rave庄家弃盘》合约溢价=吃资费
+rave庄家继续发力》现货溢价=吃spread
+唯一的风险就是如果庄家跑路跑太快，比如几分钟里砸50%+则交易所可能会adl我的仓位，所以我也写了监控adl队列+自动减仓程序"
+tg-82,2025-10-05 21:49,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,C,45,,0,0,0,0,,"已把紧急我的farm程序停机
+按照Aster目前新规则，只能拿到一半的空投
+
+我目前为止刷了90万U手续费进去，
+我的这次投机预计会+-10万U 收益/损失
+
+等过几天告知具体分配量就能知道结果
+
+https://t.me/BWEnews/15268"
+tg-106,2025-10-14 15:23,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,C,45,,0,0,0,0,,"Aster前段时间在人们集体维权之后又改了分配，额外加了10-20%分配，所以我最终情况：
+投入94万美元，获利23万美元
+这样的话这次理财收益还算是中规中矩吧"
+tg-78,2025-09-28 15:28,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,2,实盘案例,C,40,,0,0,0,0,,"btw，我这70万美元投入就是小虾米。认识的一些其他人都是m起步
+leaderboard上成交量刷了几亿十几几十亿刀亿刀且PnL波动低于20万美元的，基本上都是刷量了。"
+zh-191,2023-05-20 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,3,复盘教训,A,78,韭菜为什么总是在亏钱,131,0,0,0,https://www.zhihu.com/pin/1643324516205117440,"骂一骂韭菜 | 不知道为啥我虽然一直在二级市场赚着韭菜的钱，但是我又想骂他们，因为一些行为实在是智商低的没下限。列举一些我认为韭菜智商低到我赚得很爽，但是想破口大骂他们蠢的例子：
+1. ICP、BICO、ENS、APT、ARB、SUI这类“明星”项目刚上线交易所时就去接盘买入套在山顶，给VC、撸空头者们大把大把送钱
+2. 各种币上架X安—》等到开放交易后再去买了接盘套在山顶
+3. 买了NFT、假域名还觉得有它长期价值的人，在NFT、假域名上搞价值投资。
+4. 没有任何信息优势，纯靠“盘感”或者“裸K”开10倍以上杠杆去做单的人，完全是闲着自己钱多给交易所、做市商和知情交易者送钱。
+这种类型的例子还有很多很多，本质上韭菜们做这些行为都是满足自己心中的来到这个市场的目的：短时间快速致富然而就是他们的这种心态再加上认知浅薄让他们最终90%的人都得亏钱了走。"
+tg-80,2025-09-28 16:25,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,3,复盘教训,B,60,Aster刷量风险提示与觉悟,0,0,0,0,,"70万美元对我来说是一个可以接受100%损失了也没事的金额，任何在aster刷量的人都应该有被查女巫导致损失全部投入的心理觉悟
+
+不要盲目的FOMO进来"
+tg-81,2025-09-28 18:03,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,3,复盘教训,C,47,,0,0,0,0,,"还有一个潜在的风险就是ASTER如果之后币价崩盘，那么预期的收益率会骤降。
+
+我预期我能拿140万美元的ASTER空投的情况下，对冲了40万美元的币。
+
+没有全对冲，毕竟1有女巫风险拿不到币 2有币价不受控暴涨风险"
+tg-88,2025-10-10 23:30,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,3,复盘教训,C,43,,0,0,0,0,,"搞这个狗日的Aster项目虽然我账面赚钱，但是我投入了大量大量的时间成本，并且我承担了风险来套保，我投入的这些时间精力和机会成本在这个牛市里价值太多钱了。
+
+所以算时间成本的话，我也被反撸了"
+zh-221,2023-07-09 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,4,日常记录,B,69,2025年赚到1亿的目标,91,0,0,0,https://www.zhihu.com/pin/1661425676992294912,"bio已改 立个志 | 2025年之前要赚到1亿
+目前我的资产在6000万左右，其中95%是金融资产。
+我掌控着三条主要的业务线，其中有十几条细分的业务线，不过万变不离其宗：通过计算机技术优势，从对手盘的交易亏损中来赚钱。"
+zh-344,2021-08-10 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,4,日常记录,B,65,量化团队组建与农场挖矿,39,0,0,0,https://www.zhihu.com/pin/1408283235000954880,"184
+近况：
+由于疫情被迫宅家
+1. 组建了一个加密货币市场的Quant小团队，找到了多个alpha因子，有一堆交易程序正在开发中。
+每天花我1-2小时，找因子+布置好开发任务
+2. 心潮澎湃的又想开一个好玩的Minecraft服务器
+每天花我6-8小时，从基层做起折腾一堆乱七八糟的配置文件策划宣传策划文案制作网页做SEO招聘人员优化游戏体验找地图建设地图制作npc开设虚拟机配置端口转发配置防火墙策略研究同行研究硬件研究java优化币安上面的流动性挖矿利率太低，我已经把资金移到pancakeswap上的农场，那边usd币对年化利率还有9%+。"
+1856407067235627091,2024-11-12 18:41,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,4,日常记录,B,64,,166,14,16,42226,https://x.com/Vida_BWE/status/1856407067235627091,"To news traders & botters & arbitragers & market makers and referral links farmers: If you don't grind hard in such a good market condition, you are gonna regret it for another 4 years. Take advantage of the condition of rich liquidity, capitalize, and squeeze as much $USD as possible. Viva la Great Transfer of Wealth."
+1969378266265108739,2025-09-20 12:29,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,4,日常记录,B,58,,129,6,6,32360,https://x.com/Vida_BWE/status/1969378266265108739,"@Mou_zaisi 这个分类有点问题 太低估龙王了
+龙王、带带其实也是套利科学家😂而不是靠做趋势赚钱。PUMPFUN、XPL这种打钱盘很多拼速度抢购的场景他们做的非常好
+
+龙王很低调 不怎么炫耀但是他应该是目前中文ct最有钱的还活跃的交易员了"
+zh-387,2023-02-07 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,4,日常记录,B,57,,31,0,0,0,https://www.zhihu.com/pin/1606350631785959425,从$AGIX 和 $FET的资金费率来看，币圈的ChatGPT概念已经有点过火到fomo的程度了，我建议持仓者可以先获利了结一部分，长期持现货者可以先卖一部分过段时间再买回来。
+1762434177985822902,2024-02-27 11:07,X,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,4,日常记录,B,52,,11,1,2,8782,https://x.com/Vida_BWE/status/1762434177985822902,"@0xENAS You can do delivery perp arb/funding arb probably, farm the yield from willing leverage buyers. Have a nice holiday and waiting for market to flush."
+zh-393,2021-10-22 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,4,日常记录,C,39,,30,0,0,0,https://www.zhihu.com/pin/1434853709368553472,比起交易或投资，我其实更喜欢套利、薅羊毛这种无风险的赚钱活动喜欢稳的赚取暴利的感觉
+tg-33,2025-05-29 00:00,TG 投机之路,新闻交易、低延迟系统与量化套利,1.2,资金费率、跨所价差与确定性套利,4,日常记录,C,28,,0,0,0,0,,"CCXT大概是这个星球上最最完美最最暴利的套利生意之一。无本万利且暴利，合法合规还低调。疯狂的印钞机器
+
+https://x.com/sunlc_crypto/status/1927230902142181806"
+tg-14,2025-04-28 23:10,TG 投机之路,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,S,85,利用做市商跟单特性进行跨所延迟套利操作,0,0,0,0,,"这篇隐学文章只有搞quant做量化尤其是做低延迟套利、做市的人能看懂
+
+发现一个好玩的策略，现在市场里做市商们都很鸡贼，为了防御或者说是跟单“信息知情交易者”，当他们监测到币安现货/币安合约市场出现一个大单直接把价格拉升超过大概3%的水平且bid1还挂着几十-几百万刀买单后，他们会
+1. 跟着买入部分金额
+2. 把订单簿大幅调薄
+你下大概3%滑点的订单最终能驱动价格上涨个6%+
+
+知道他们这个特性就可以故意找一个市值比较小且在多个交易所有合约的币这么操作，先提前大概5毫秒在其他交易所下单，5毫秒之后在币安现货和合约同一时间下单建仓。
+
+然后大概1-2毫秒后有币安特殊低延迟做市api的mm就能探测到你下的大单与订单簿的变动了，他们就会进行上述的“跟随潜在的知情交易者”的操作。
+
+再等待5-10秒等待订单簿变的正常一些，然后这时候再重复类似之前的步骤（先在其他交易所同一毫秒下单退出，延迟5毫秒后在币安退出），你会发现反而还能赚点钱🤣（利润来自尝试跟单你的做市商）
+
+之所以币安每次进和出都要延迟5毫秒是因为币安的api是东京区域延迟最低的，只要1-2毫秒做市商就能探测到订单簿和大单。而做市商可能在其他交易所也有特殊低延迟下单通道以及微波跨洋低延迟线路，导致他把你在其他交易所的订单给frontrun。"
+1950566387749142564,2025-07-30 14:37,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,A,83,做市商防范新闻交易者毒流的几种应对手段,203,19,13,27234,https://x.com/Vida_BWE/status/1950566387749142564,"😂有好几个很大的做市机构最近2年跑来研究新闻交易，都是因为新闻交易者创造的“toxic taker flow”搞的他们总是在一些大事件发生时单边亏太多，而不得不开始研究
+
+做市商目前的防御手段有：
+1. 检测到短时间内大量同方向大单成交或bid1挂着超大额买单时撤流动性，有的还会干脆跟单交易
+2.像Hyperliquid这种自营做市的会让用户订单延迟800-1000ms再撮合，中间它如果探测到其他cex价格变动了可以撤回自己这边的挂单
+3. 一些自营做市的三线cex会直接冻结、没收任何在他们所玩延迟套利/信息套利的对手盘账户"
+1958600213419241503,2025-08-21 18:40,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,A,78,利用地理网络延迟差在不同交易所优先下单,27,1,1,7914,https://x.com/Vida_BWE/status/1958600213419241503,"以马斯克推文为例，信息从美国拿到，同时发往东京｜香港｜新加坡
+
+美国到香港
+美国到新加坡
+
+都是没有直连线路的，网络流量都是要绕一下东京的
+
+所以我的交易bot只要是这类美国来的知情信息源，都必然会先触发东京区下单，而做市商就能在基础设施最好的币安交易所探测到我的大单》跑去okx和bybit尝试跟单"
+zh-423,2021-09-20 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,A,78,量化择时捕捉市场极端点,25,0,0,0,https://www.zhihu.com/pin/1423357859082399744,"趋势交易的优势：只要有一段持久的趋势，就可以滚仓翻数倍甚至上百倍
+趋势交易的劣势：市场上大部分时间都没有趋势的存在，而是以震荡为主，所以在震荡行情容易频繁开单产生磨损我现在有一个猜想等待以后会去实践验证：
+用量化分析去精准择时找到市场的极端点：逆着趋势反向开单，然后等行情如预期的反转后再用趋势交易的心态去拿着那一单交易频率会特别低，基本上几个月才能蹲到一次市场极端兴奋或者极端悲观"
+1977013763950715376,2025-10-11 14:09,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,A,76,交易所撮合风控与极端行情赔付,715,45,221,350971,https://x.com/Vida_BWE/status/1977013763950715376,"我又要来给币安免费发广告了：大资金用币安就完事，没有任何一个Dex Perp会在这种极端行情下给你赔付，也没有任何其他一个CEX能在这种级别的清算后为自己用户赔付。
+
+Hyperliquid前段时间XPL连环爆仓事件一个人都没赔付，留下一句“系统本来就这么设计的，是你们自己的问题”
+
+而像我和我朋友们今天的操作（大额抄底折扣BWETH、BNSOL赚钱）放到任何其他小交易所估计都会被“回滚”“利润没收”，但币安从来没有这么做过。"
+1717279367414595759,2023-10-25 20:38,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,A,76,固定大小和间隔的TWAP容易被做市商,52,10,7,29124,https://x.com/Vida_BWE/status/1717279367414595759,"The worst way to enter/exit a position in short intervals: TWAP in a constant size + constant interval. The market maker will be able to detect your intention of getting in/out by analyzing transactions, and they know you have the willingness to pay high trade slippage. https://t.co/3TUqNfAsZB"
+1915338835208139061,2025-04-24 09:35,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,A,74,链上高胜率钱包跟单逻辑,69,12,1,7519,https://x.com/Vida_BWE/status/1915338835208139061,"@kaizigeyyd99786 比如批量跟单一些高胜率sol土狗钱包就是100%赚钱的事情，比如Hyperliquid跟单一揽子高胜率账户就是100%赚钱的事情，比如在一个德高望重p元帅发一个ca之后能一瞬间买入就是100%能赚钱的事情
+
+链上也有很多100%赚钱的事情，比的就是谁技术更高超、谁infra烧钱多"
+zh-307,2022-06-29 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,A,74,个人量化赚钱靠技术硬实力,50,0,0,0,https://www.zhihu.com/pin/1525339916115959808,"我发现一个好玩的现象：
+在币圈，
+在满是专业Quant的微信群里，越是聊各种高大上的指标/因子/策略，做量化能赚大钱的【个人】反而很少。【个人】赚钱多的，往往是策略没那么高大上，但是很拼技术实力的科学家。
+可能是圈子的原因？但是我目前认识的靠程序自动交易赚超过A8、A9的，大多数是做纯拼技术实力的策略，而非比拼交易算法的。"
+tg-126,2025-11-21 20:43,TG 投机之路,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,A,74,利用订单簿反向挂单诱导做市商抬高价格退出,0,0,0,0,,"现在最JB烦的就是那种跑订单簿预测类型的MM：
+他们会检测币安合约上的bid变动 》如果你在一个超小市值的币上挂一个大金额单在bid1》他们会立马把价格推高1-2%》迫使你以更高的价格重新挂单去尝试成交
+
+不过这种王八也有利用价值：当你要退出一个小市值币的仓位的时候，你可以先挂高在当前价格的0.3-0.4%的位置
+然后再去bid1上挂一个超大额单，把这种王八MM给下一跳》让他们抬价格正好hit到你之前挂的limit价格"
+1717279371906695443,2023-10-25 20:38,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,A,72,多所同时同毫秒下单能防止被做市商利用滑点,25,1,2,13990,https://x.com/Vida_BWE/status/1717279371906695443,"The best way to enter/exit a position in a short period of time: Execute your trade in one shot on all the exchanges that are available, on both spot and perp, with the same price limit on the same millisecond. Leave no opportunity for market makers to take advantage of. https://t.co/KogrJyLfIr"
+1520097956611117056,2022-04-29 17:49,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,65,为什么我偏爱币安交易,4,1,0,0,https://x.com/Vida_BWE/status/1520097956611117056,"@heyibinance 喜欢币安的点
+1. 赚钱效应好，新币新ieo等总是会比其他交易所涨的多
+2. UI设计的便于使用
+3. 有大量对外开放的API可以调用，数据透明度比其他交易所高
+4. 对世界上每一个国家的用户都很包容，包括中国"
+tg-57,2025-08-16 03:50,TG 投机之路,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,63,,0,0,0,0,,"最后一段话为什么我这么说呢？因为我是深有体会，是全过程的见证者：打个比方
+2021-2023中旬期间MEXC这种类型的自营做市交易所那是压根就没有“风控”这个东西的，随便撸，随便赚。任何套利策略都能在它们上面框框赚。
+
+然后呢？套利的人多了、toxic flow多了、就开始有了风控。再后来到2023年末Mexc直接对部分套利类型的账户杀无赦直接没收，其他自营做市交易所也都开始跟进风控措施
+
+一艘零和博弈的船上的人太多了那么就会沉，这是亘古不变的道理。套利显然是一个零和博弈的船"
+tg-98,2025-10-11 18:15,TG 投机之路,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,62,不敬畏市场，只找系统漏洞,0,0,0,0,,"我又要说政治不正确的话了，并不是我“飘了”，而是我一直以来的观点：
+
+我从来不敬畏市场
+
+因为市场本身是由人设计的，人设计的系统就会存在漏洞/BUG。隔三差五市场先生就失灵一下，创造不对等的机会
+
+我会一直致力于做抓市场先生漏洞的人"
+1933910753284960602,2025-06-14 15:33,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,61,,10,0,2,4222,https://x.com/Vida_BWE/status/1933910753284960602,"@Sentinel_CY To market makers(which is MEXC themself in this case), elite scalper and news traders are ""Toxic Flow"", will cause them lose money constantly."
+1961333000907506163,2025-08-29 07:40,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,60,大资金首选币安的理由,212,5,12,66791,https://x.com/Vida_BWE/status/1961333000907506163,"这条没有任何广告费，就是自发地帮币安打个广告
+
+币安是所有CEX里最善良、最大方、对待用户最好、对待VIP最好、对待自己平台币holder最好、API基础设施最好的交易所
+
+大资金无脑选币安就完事"
+1561361694232031234,2022-08-21 14:36,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,60,交易所撮合引擎的开发语言建议,0,1,0,0,https://x.com/Vida_BWE/status/1561361694232031234,"@quant_arb @SBF_FTX @BidenPepe @cz_binance yeah that’s what I’m trying to point out initially. FTX should improve their matching engine, probably need to use C++ or RUST as code."
+zh-365,2021-09-22 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,59,,36,0,0,0,https://www.zhihu.com/pin/1424049528542101504,自从当上了币圈科学家，我终于知道为什么优化每1毫秒的延迟都很重要、为什么有一些做市商要花超高的成本去租用专线了。因为无论是在DEX还是中心化交易所，下单的慢了，别人就会抢在你前面抢到更低成本的筹码。
+1585518509656006659,2022-10-27 06:27,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,57,,5,3,1,0,https://x.com/Vida_BWE/status/1585518509656006659,"Low EQ: We are the front runners
+High EQ: We are the mid-man of the crypto, and our customers are the retail traders that buys manually. Our mission is to provide our customers intended trading liquidity at a better quote price."
+tg-19,2025-05-03 22:27,TG 投机之路,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,57,,0,0,0,0,,"在有高Open Interest的小市值山寨币上使用高滑点买入也容易触发一些做市商的“跟单知情交易者/跟庄策略”，从而驱动价格快速上涨。
+这也就是为什么很多鲸鱼交易员感觉自己在一个币上开仓明明没买多少，价格就上涨很多的原因。都是做市商把这钱吃了"
+zh-56,2023-01-11 12:00,知乎回答,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,56,,116,0,0,0,https://www.zhihu.com/answer/2840308500,"【知乎问答：高频交易最看重什么？】
+延迟。只要延迟足够低，低过全部的对手盘，不愁没钱赚。
+再好的算法策略没有足够低延迟的执行框架也赚不到钱，再差的算法策略有了最低的执行延迟也能赚钱。"
+1717279369977311724,2023-10-25 20:38,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,55,,13,3,1,13815,https://x.com/Vida_BWE/status/1717279369977311724,You'll end up paying much higher slippage with market makers thinner the book and stat arb guys front run your incoming predictable orders.
+1462160491107651584,2021-11-20 20:46,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,54,FTX的流动性与撮合缺陷,2,0,0,0,https://x.com/Vida_BWE/status/1462160491107651584,Love all the parts of FTX except the liquidity and availability of spot market.
+zh-216,2021-12-09 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,52,,96,0,0,0,https://www.zhihu.com/pin/1452300537794916352,在一场博弈游戏里，不应该去和别人公平竞争，而是要想各种办法去作弊。
+zh-327,2022-03-12 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,B,52,,44,0,0,0,https://www.zhihu.com/pin/1486007939923750912,"我最近在高频实战中发现：
+涉及到Maker（做市商）的策略往需要很多复杂数学计算等，而Taker策略（套利型）只需要和别人比拼整个流程的延迟就可以了。"
+tg-206,2026-02-08 00:53,TG 投机之路,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,1,核心原则,C,41,,0,0,0,0,,"不过Bybit是不自做市的。币安 OKX Bybit都不自做市
+所以即使亏 理论上也是亏的第三方做市商的钱"
+zh-130,2024-12-21 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,S,97,寻找去中心化交易所与自营做市机制中的漏洞,392,0,0,0,https://www.zhihu.com/pin/1853867858330800128,"如果我是一名野生quant | 如果我是一名技术高超的单兵quant
+我现在一定会去挖掘Hyperliquid上的套利机会（漏洞），懂的人知道我在说什么并且肯定会闷声发大财，这种自己做市的交易所一定会有某个机制可以薅钱。
+- 2022年FTX的otc desk取的是10秒内市场平均价格来报价，所以只要价格发生大幅波动就有延迟价差可以套利
+- 2022年FTX出现过强平引擎的漏洞，可以通过两个账户同时多空开仓，赚到强平补贴基金的钱
+- 2023年Mexc出现过资金费率结算漏洞，在一个币资金费率异常高的时候去开100倍杠杆做多空，等资金费率一结算，仓位会爆掉，但是收到的资金费率能高于爆仓成本
+- 2023年Mexc和某所都在搞超低费率和高超反佣的活动，可以通过做市策略刷量薅maker补贴这样的漏洞很多，我现在公布的也都是已经失效了的策略，依然有效的策略当然是闷声发大财。
+Hyperliquid自己做市和用户对赌 但是它必须假装自己是一个去中心化交易所，所以你赚钱他也不会冻结你的账户，找到这样的漏洞狠赚就完事了。"
+1960555481233285459,2025-08-27 04:10,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,S,85,永续合约采用现货标记价存在被操纵爆仓漏洞,192,19,25,120601,https://x.com/Vida_BWE/status/1960555481233285459,"My Chinese friend got liquidated for $720k on Hyperliquid hedging his $XPL shares
+
+Price wicked to 1.8 on Hyperliquid and it’s pretty insane that Hyperliquid pre-market perps use current perp price as mark price for premarket perps.
+
+If so, theoretically anyone can manipulate price in seconds interval and target hedgers👀 If you don’t patch this mechanism , next time someone else will do it again.
+
+Hyperliquidated."
+1899758149676286315,2025-03-12 09:43,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,A,77,Hyperliquid漏洞挖掘复盘,39,6,2,7737,https://x.com/Vida_BWE/status/1899758149676286315,"@shilifu2529 @dotyyds1234 川沐这里有解析
+整体而言Hyperliquid允许300万刀保证金开50倍1.5亿刀的仓位是非常离谱的
+
+被人发出来之后估计jeff很快就会堵住这个漏洞了。
+
+不过Hyperliquid肯定还存在其他的漏洞的，就看聪明人自己发掘了。"
+1958597983907586196,2025-08-21 18:32,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,A,76,做市商依靠超低延迟跨洋线路抢跑其他交易所,46,3,5,17508,https://x.com/Vida_BWE/status/1958597983907586196,"@isb123456 不，还是为了解决这个头疼的问题。
+现在币安的基础设施做的太好了，做市商现货1ms左右能探测到公共成交/orderbook，合约1.5-2ms左右能探测到。
+
+然后他们又有更快的跨洋线路能够单程32ms左右把信息发到新加坡，导致我在Bybit交易所（新加坡）的很多份额被吃了"
+1591372269393424384,2022-11-12 10:08,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,A,76,利用做市商缺陷进行套利,4,0,1,0,https://x.com/Vida_BWE/status/1591372269393424384,"My trading strategy was also arbitraging,  and the strategy basically makes money from the lost of market makers.  The strategy on multiple different exchanges and the profit generates on FTX is greater than any other ones, probably because Alameda was the stupid market maker."
+1560969597053833216,2022-08-20 12:38,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,A,76,高频发送大量订单更容易优先获得撮合交易,2,0,2,0,https://x.com/Vida_BWE/status/1560969597053833216,"@SBF_FTX @BidenPepe @cz_binance There's a problem with FTX's order matching engine. 
+In the scenario when there are two users sending the same order.
+User 1 sends 1 order
+User 2 sends 10 orders 5ms later
+
+The User 2 who floods the most amount of orders will have a higher probability of getting filled first."
+1561336977441505281,2022-08-21 12:58,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,A,76,FTX与币安API延迟实测对比,0,0,2,0,https://x.com/Vida_BWE/status/1561336977441505281,"@quant_arb @SBF_FTX @BidenPepe @cz_binance If you work with FTX API, you'll see that their order HTTP response speed highly fluctuates even if you use AWS Tokyo-D&optimized code&network settings. The roundtrip is between 40-150ms, which is much higher than Binance's 6-15ms."
+1561339219028484100,2022-08-21 13:07,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,A,74,币安撮合引擎的稳定性优势,0,0,2,0,https://x.com/Vida_BWE/status/1561339219028484100,"@quant_arb @SBF_FTX @BidenPepe @cz_binance In comparison, on Binance, the avg roundtrip is about 8-15ms per order. It fluctuates too, but it's only fluctuating within a few milliseconds. Flooding might work too, but it isn't such unequal like FTX does."
+1591371056513978368,2022-11-12 10:03,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,A,73,利用FTX OTC延迟进行套利,6,1,1,0,https://x.com/Vida_BWE/status/1591371056513978368,"For instance, a friend of mine saying FTX used to have a leak that it’s OTC service(https://t.co/Dzx3mxcjgB) has 10 seconds delay to the market price. He does arbitrage from trading back and forth and made a tons of money& withdrew out."
+2006618009037856781,2026-01-01 06:46,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,A,72,手动观察订单簿的实战细节,52,5,2,16266,https://x.com/Vida_BWE/status/2006618009037856781,"@tiger_web3 手动看的，分一个屏幕打开binance网页 broccoli714usdt现货交易对，把订单簿精度调成最大档位
+
+交易程序展示的是实际成交数量而不是委托数量，我其实设置的是单笔委托8万美元金额"
+zh-262,2022-02-18 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,B,68,利用交易所漏洞内幕交易案例,69,0,0,0,https://www.zhihu.com/pin/1478051236088352770,"最近不怎么看知乎是因为我认识了一个法国的同行，在过去的一年多先靠消息面交易赚了几百万美元，又在最近几个月靠Coinbase交易所的技术漏洞做内幕交易赚了上千万美元。
+搞得现在的我非常焦虑非常fomo，拼尽全力蹲下一个一飞冲天的机会"
+1560970430386647040,2022-08-20 12:42,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,B,67,,1,0,1,0,https://x.com/Vida_BWE/status/1560970430386647040,"@SBF_FTX @BidenPepe @cz_binance It looks like the matching engine of FTX is batch exciting the orders received in a certain period, while Binance or other exchanges match them one by one. 
+
+User1 will get filled first on Binance or OKX in the same senerio.
+
+Why is this unfair for small traders? ↓"
+1955216549691932930,2025-08-12 10:35,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,B,66,推测做市商行情获取延迟,30,0,2,13414,https://x.com/Vida_BWE/status/1955216549691932930,"@bellypig66 其实能从公共成交信息推测他们的时间的，可以100%确定做市商能在1-2ms左右获取到公共行情信息。
+
+只是我好奇具体这个数值大概是多少🙃1ms和1.5ms的差别是很大的"
+zh-467,2021-09-09 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,B,66,FTX生态拉盘的造势逻辑,20,0,0,0,https://www.zhihu.com/pin/1419265825961996288,"最近FTX概念币实在是太牛了
+我认为背后的庄家是Alameda Research，资金实力雄厚且有强大的做市能力。
+拉盘也不像是为了割韭菜，而像是在下一盘更大的棋：让整个FTX生态都产生巨大的赚钱效应，为其造势，吸引大量新用户的注册。"
+1560970981962764290,2022-08-20 12:44,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,B,64,,1,0,2,0,https://x.com/Vida_BWE/status/1560970981962764290,"@SBF_FTX @BidenPepe @cz_binance FTX API has a limit over the user tier.
+
+Big players like Market Makers can post multiple orders flooding the matching engine and front-running small players in competition for the same trading opportunity."
+1561337861000925184,2022-08-21 13:02,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,B,64,,0,0,2,0,https://x.com/Vida_BWE/status/1561337861000925184,"@quant_arb @SBF_FTX @BidenPepe @cz_binance A small player sends only 1 order, and it took 40-150ms to be matched.
+
+A big player floods 10 orders, some orders might be matched in 40ms, and some may match in 150ms. The probability of some orders be filled quickly will be higher.
+
+On both rest and FIX api"
+1718975109808136301,2023-10-30 12:56,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,B,60,,2,0,1,961,https://x.com/Vida_BWE/status/1718975109808136301,"@Cryptookpas @MrMr1247 @bgopik_ @Glimmerycoin @TheVultureTrade @mexc_global @MEXC_CEO MEXC trade against the user, that’s a fact with obvious orderbook.
+
+“Abnormal trading activity” = profit too much and made the market making department loses money"
+1955219616252432803,2025-08-12 10:47,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,B,55,,35,1,2,13517,https://x.com/Vida_BWE/status/1955219616252432803,"@0xKenwayx0 我们公司全是知情taker类型的策略呀，都是基于有优势信息的情况下在新闻发生时刻买入。
+
+所以反而达不到申请这类maker才有的低延迟通道的级别，真要烧钱框框刷量当然也可以- - 但能不花钱白嫖到数据是最好的
+
+https://t.co/nU774kH3T8"
+1527324329461002240,2022-05-19 16:24,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,B,53,Coinbase上币效应的流动性差异,5,0,0,0,https://x.com/Vida_BWE/status/1527324329461002240,"Coinbase ngmi🤣
+
+Coinbase Listing Announcement = 5M volume on Binance.
+
+ Coinbase Listing = 0.2M volume on Coinbase. https://t.co/PZ6q0Mm7Ea"
+tg-17,2025-05-03 22:24,TG 投机之路,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,B,50,,0,0,0,0,,有一些交易所的internal trading desk会偷偷的跟单我这种超高胜率账户（同时也有做市商在运行“尝试跟单知情者”的探测orderbook和order flow的策略），刚刚在BR上测试了一下，用2%滑点买入，我把价格驱动上涨了11%
+tg-205,2026-02-08 00:51,TG 投机之路,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,2,实盘案例,C,45,,0,0,0,0,,"为什么暂时判断是Bybit上的做市商出错，
+1. 其他交易所当时合约成交量都是几十亿，而Bybit是190亿
+2. Bybit插针波动的范围比其他几个所更大（3-5%）"
+1935543780624806059,2025-06-19 03:42,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,A,84,链上DEX套利竞争激烈且透明度缺乏护城河,133,6,10,22183,https://x.com/Vida_BWE/status/1935543780624806059,"今天之所以出现这个事故是因为为了追求极致的速度而使用了本地Jupiter报价而价格冲击估算则使用的官方API。本地路由提供的结果不正确，买到小池子了
+
+整体而言不是很喜欢链上交易，之后会缩减DEX上的份额，因为：
+
+- 其他不知情玩家也可以通过探测CEX价格变动也能几到几十毫秒内获知并在DEX上进行套利交易，导致很多时候变成了gas war/bribe war
+
+- 链上整体而言太公开透明且没有任何门槛，不存在“护城河”这个东西。区块延迟又高，导致任何有利润的东西都竞争激烈"
+zh-167,2023-12-23 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,A,83,MEXC冻结利润的应对与反击,200,0,0,0,https://www.zhihu.com/pin/1721924418429943809,"MEXC交易所恶意冻结交易利润 | 最近有一个叫MEXC的交易所冻结并没收了我的9.2万美元交易利润。MEXC交易所是什么个情况呢？它自己作为做市商，和用户进行对赌交易。用户赚钱=它赔钱，用户赔钱=它赚钱。MEXC伪造了虚假的流动性，但是你实际上的确可以在上面成交。然而，一旦你赚了太多钱，他们就会冻结你的账户 也有时候直接没收你的资金。
+要是换成普通人，估计被冻结没收了就伸冤无门叫天不应 叫地不灵了，但是这在我这里行不通。
+我写了两篇很长的推文，中文+英文各一份，来揭发MEXC交易所的恶行，再让很多外国的交易员们帮我扩散，然后又直接动用了方程式新闻来帮我传播。
+英文版本获得了72万次查看
+中文版本获得了13万次查看
+这种传播力度已经能对这家交易所构成威胁，预计他们会为此损失很多新客户和现有的客户。
+所以这个时代的粉丝经济真的很重要，在遇到冲突时媒体就是个人捍卫自己权益的兵戈。"
+zh-220,2024-05-05 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,A,81,交易所冻结是唯一的黑天鹅,94,0,0,0,https://www.zhihu.com/pin/1770273857976709120,"我的策略的唯一黑天鹅就是交易所冻结 | 我的消息面策略基本上不存在回撤，最大的风险皆来自交易所。
+目前自己做市与用户对赌的2个交易所Mexc交易所冻结我8.8万USDT，Bitget冻结我9.6万USDT。
+像Mexc和Bitget这种靠自营做市和用户对赌的交易所把我给冻结 我还是挺能理解的 因为我赚的本质上都是交易所的钱。
+而以前只乖赚手续费的Gate交易所不知道最近发什么神经，冻结我2个账户总计64万USDT。
+算上2022年FTX暴雷让我卡在里面19万刀、2023年时被Mexc没收了15万刀，各个交易所已经冻结了我超过100万美元"
+1738243112517144685,2023-12-22 17:00,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,A,77,交易所风控与流动性陷阱,191,13,4,114308,https://x.com/Vida_BWE/status/1738243112517144685,"If you check their order book you'll notice that their book is much thinner than other exchanges, even thicker than Binance. Those liquidities are forged, but you can actually get fill on that. However, if you profited too much from one position in a short period of time, you'll trigger the risk control & be banned from the trade & sometimes entire account's balance wiped out."
+1485964119757180932,2022-01-25 13:13,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,A,76,FTX与币安API响应速度对比,2,1,0,0,https://x.com/Vida_BWE/status/1485964119757180932,"@SBF_FTX When could FTX improve the http response speed when placing orders? For now, it take 70-130ms for FTX's server backend to process an order and reponse the http request. In comparasion, it only took Binance 8-15ms, OKEX 10-15ms, Huobi 10-20ms to excute an order."
+1904897961227936256,2025-03-26 14:07,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,A,74,Hyperliquid撮合漏洞解决方案,84,8,5,64962,https://x.com/Vida_BWE/status/1904897961227936256,"solution for @HyperliquidX @chameleon_jeff is simple:
+Take over the current users' position and do the clearance at a previous market price. You can control the damage under $5m.
+
+Of course, it hurts your reputation as a ""DEX"", but it's known that Hyperliquid aren't fully a dex"
+zh-286,2021-07-16 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,B,71,警惕交易所员工内幕上币盘,57,0,0,0,https://www.zhihu.com/pin/1399200431915134976,"最近听说的一个故事：
+之前币圈牛市最疯狂的时候，币安交易所要上线的任何币都会在上线的第一小时暴涨百分之几十。
+于是有人买通了币安在新加坡的一个员工，在上架某个币之前的几小时就提前买入埋伏，再转入币安交易所等待上架后的一瞬间暴涨中出货。
+这大概就是市场上最轻松的赚钱方式———创造不公平竞争"
+1591371489655558144,2022-11-12 10:05,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,B,68,FTX因配置错误导致被攻击,2,0,1,0,https://x.com/Vida_BWE/status/1591371489655558144,"One month ago, FTX was exploited and lost millions from the $XEN gas mining attack because of its mid-configuration on Ethereum gas. They didn’t fix the bug even after 12 hours since exploits started."
+1560972211669704704,2022-08-20 12:49,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,B,64,FTX撮合机制的不公平性,4,0,3,0,https://x.com/Vida_BWE/status/1560972211669704704,"@SBF_FTX @BidenPepe @cz_binance I've consulted FTX API support, and she told me ""This is normal; the market is unfair naturally. You can do flooding too to get your orders to fill faster""
+
+Well..."
+1910729336359199076,2025-04-11 16:19,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,B,62,链上暴利策略的透明度陷阱,44,4,4,9469,https://x.com/Vida_BWE/status/1910729336359199076,@SteinAmour 比较讨厌链上的一点就是：任何收益都是透明的而且链上太公平人人都能做，导致任何暴利策略都会吸引很多人模仿。
+1915660799114351063,2025-04-25 06:55,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,B,62,交易所合约上币的竞争策略,28,2,6,13410,https://x.com/Vida_BWE/status/1915660799114351063,"@star_okx 别光顾着dex而把cex业务忽视了呀
+
+币安和Bybit最近半年都已经开启新币大战了，OKX不想同步跟进的话至少把【币安合约+Bybit合约同时有的币】的永续合约也上线到OKX上
+
+让零售用户想对某个热门币的价格做交易的时候至少可以选择用OKX"
+1569808471549157378,2022-09-13 22:01,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,B,60,币安API延迟下的系统韧性,3,0,1,0,https://x.com/Vida_BWE/status/1569808471549157378,@KazuoVR @ltrd_ The maximum websocket push delay on Binance was above 500ms today but the system holds and still functions.
+tg-127,2025-11-21 20:46,TG 投机之路,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,B,60,警惕小市值币种的跟庄MM,0,0,0,0,,"这也就是很多大户在超小市值的币上下单时感觉：为什么我明明没成交多少金额，订单簿就在我挂了单之后又抬升了那么多的原因
+就是因为这些狗日的跟庄MM在跑这种类型的策略"
+1569807962788569091,2022-09-13 21:59,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,B,54,高波动下的自动停机风控,0,0,1,0,https://x.com/Vida_BWE/status/1569807962788569091,@ltrd_ @kingfisher_btc Why don’t you automatically stop trading program when detect high volatility?
+1718178852089012484,2023-10-28 08:12,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,3,复盘教训,C,49,三线交易所风控与备选方案,0,0,2,769,https://x.com/Vida_BWE/status/1718178852089012484,"@MrMr1247 @bgopik_ @Glimmerycoin @TheVultureTrade @mexc_global @MEXC_CEO Your futures trading could be permanently banned, but you’ll still be able to trade spot. Why not try some other exchanges like Binance Bybit Okx"
+1955214966187045276,2025-08-12 10:29,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,4,日常记录,A,77,顶级做市商用超低延迟吞噬知情交易员收入,448,47,52,170314,https://x.com/Vida_BWE/status/1955214966187045276,"有没有粉丝在大型做市机构工作且公司有fapi-mm.binance和api-mm.binance的访问权限的？好奇现在做市商获取币安现货和币安合约的公共行情变动/订单簿/交易订单流现在能压缩到多少时间了，有没有在wintermute/jump/gsr/pulsar之类的大做市商里做infra搭建的粉丝有benchmark结果。（可以偷偷开个小号留言）
+
+实战中感受是现在顶级做市商1毫秒左右就能探测到币安现货的大单或者是订单簿——》跑去其他有特殊低延迟通道/跨洋低延迟线路的交易所去下单做延迟套利
+
+😂感觉我们这种做知情taker的起码1/4的收入都被这种币安有超低延迟获取公共行情通道的做市商给吞了。但是这个行业里的人都是把延迟当成保密数值，很少有人交流"
+zh-205,2024-11-01 12:00,知乎想法,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,4,日常记录,B,61,,111,0,0,0,https://www.zhihu.com/pin/1835767081381019648,"第五次收到币安风控部门发的调查通知 | 冷知识：币安有一个负责价格监测的风控部门，专门监测异常交易行为。只要你下一个超大单+把价格拉上去超过X%他们后台就会收到自动警报。
+这是我第五次收到这样的通知，又又一次怀疑我操纵市场，但是实际上我是基于公开新闻进入的交易，而且在TROY上只获利了2万U。"
+1590728672062763008,2022-11-10 15:30,X,新闻交易、低延迟系统与量化套利,1.3,交易所撮合机制、做市商与风控博弈,4,日常记录,C,36,,4,0,2,0,https://x.com/Vida_BWE/status/1590728672062763008,"build by the Alameda traders, for the Alameda traders"

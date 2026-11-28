@@ -1,21 +1,21 @@
 # 🏛️ Trader-Archives | 推特实战交易员与投资导师分类归档大典
 
-> **告别碎片化噪音与信息遗忘。将推特 15 位实战交易员与投资导师的数万篇公开推文与深度长文，按统一标准去噪精分、整理为可随查随用的在线研报阅读站与 GitHub 全量开源数据湖。持续收录更新中。**  
-> *所有子站统一采用象牙暖白古典研报排版、本地全量 RAG 检索与 Vercel Edge 流式 AI 导师，既适合人类顺着目录系统精读，也适合直接喂给 AI Agent 做投研复盘。*
+> **告别碎片化噪音与信息遗忘。将推特 17 位实战交易员与投研作者的数万篇公开推文与深度长文，按统一标准去噪精分、整理为可随查随用的在线研报阅读站与 GitHub 全量开源数据湖。持续收录更新中。**  
+> *所有子站统一采用象牙暖白古典研报排版、本地全量 RAG 检索与 Vercel Edge 流式 AI 助手，既适合人类顺着目录系统精读，也适合直接喂给 AI Agent 做投研复盘。*
 
 🌐 **在线阅读总站**：[https://suoha888.github.io/Trader-Archives/](https://suoha888.github.io/Trader-Archives/)  
 👤 **站主与项目维护**：**梭哈.AI**（[@SUOHA_AI](https://x.com/SUOHA_AI)）· [关注站主 X 主页 ↗](https://x.com/SUOHA_AI)  
-🤖 **全站 AI 问答助手**：全站 **15 个交易员子站** 均已统一接入 **一 KOL 一库全量本地 RAG 索引（`data/ai_rag_index.json`，合计 34,317 条索引文档）+ Vercel Edge Serverless 流式网关**（`gemini-3.1-flash-lite` + SSE 实时流式推送，前端零硬编码密钥、支持日期段精准检索、`#t-XX` 专题锚点一键跳转、单次会话 3 轮上限与单 IP 限流）。
+🤖 **全站 AI 问答助手**：全站 **17 个子站** 均已统一接入 **一 KOL 一库全量本地 RAG 索引（`data/ai_rag_index.json`，合计 37,535 条索引文档）+ Vercel Edge Serverless 流式网关**（`gemini-3.1-flash-lite` + SSE 实时流式推送，前端零硬编码密钥、支持日期段精准检索、`#t-XX` / `#art-XX` 专题锚点一键跳转、单次会话 3 轮上限与单 IP 限流）。
 
 ---
 
-## 📚 正式上线实战导师名录（已完整收录 15 位实战派 · 48,321 篇全量原推与微博 / 31,432 篇语义去噪精分 · 14,183 篇 S/A 精选 · 178 篇深度长文与专访 · 90 条核心思维模型 · 4,686 张本地实盘配图）
+## 📚 正式上线实战作者名录（已完整收录 17 位实战派 · 51,973 篇全量原推与微博 / 32,874 篇语义去噪精分 · 14,465 篇 S/A 精选 · 248 篇深度长文与专访 · 102 条核心原话模型 · 5,009 张本地实盘配图）
 
 | # | 导师 | Twitter Handle | 核心方向 | 收录规模（清洗 / 全量） | 在线阅读站 | GitHub 开源数据 |
 | :-: | :--- | :--- | :--- | :---: | :---: | :---: |
 | 01 | **allincrypto 熬鹰资本** | [@thankUcrypto](https://x.com/thankUcrypto) | 四源物理隔离全档案（3,420 X 原推 + 943 早期微博 + 56 场币安直播 128 万字逐字稿与真实 K 线 + 3 场专访） | **4,363 篇 + 56 直播 + 3 专访** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/thankucrypto/) | [📂 四源隔离仓](https://github.com/suoha888/Trader-Archives/tree/main/thankucrypto/data/platforms) |
 | 02 | **Wei Paul** | [@coolish](https://x.com/coolish) | BitMEX 时光机、杠铃策略与逆向周期 | **1,909 / 2,581** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/coolish/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/coolish/data) |
-| 03 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 裸K多周期、贵金属战役与 13 篇深度长文 | **2,306 / 2,915** + 13 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/wallstreet0name/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data) |
+| 03 | **华尔街没有名字** | [@WallStreet0Name](https://x.com/WallStreet0Name) | 裸K多周期、贵金属战役、存储与 13 篇 5 分类长文 | **2,306 / 2,915** + 13 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/wallstreet0name/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/wallstreet0name/data) |
 | 04 | **yourQuantGuy** | [@yourQuantGuy](https://x.com/yourQuantGuy) | Perp DEX 基差套利、微观做市与 4 篇深度长文 | **614 / 673** + 4 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/yourquantguy/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/yourquantguy/data) |
 | 05 | **Meta 猿 🦍** | [@Metabape](https://x.com/Metabape) | 微观机制套利、OLP 负滑点与 6 篇深度长文 | **2,348 / 3,625** + 6 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/metabape/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/metabape/data) |
 | 06 | **川沐｜Trumoo** | [@xiaomustock](https://x.com/xiaomustock) | 美股硬科技、加密大周期与盘口博弈 | **3,103 / 3,866** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/xiaomu/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/xiaomu/data) |
@@ -28,6 +28,8 @@
 | 13 | **magnolia** | [@0xmagnolia](https://x.com/0xmagnolia) | 蓝筹 Alpha 波段与一级链上实战 | **781 / 1,249** + 1 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/0xmagnolia/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/0xmagnolia/data) |
 | 14 | **danny · agintender** | [@agintender](https://x.com/agintender) | 合约算法镰刀、做市黑盒、潮汕钱庄与 129 篇深度长文（含早期英文独立区） | **1,295 / 3,277** + 129 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/agintender/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/agintender/data) |
 | 15 | **ZTZZ ₿** | [@ZTZZBTC](https://x.com/ZTZZBTC) | 主观做市、空头纪律与 6.7 万字《慢就是快》 | **715 / 886** + 1 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/ztzzbtc/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/ztzzbtc/data) |
+| 16 | **5块的糖** | [@17zxhold](https://x.com/17zxhold) | 小资金山寨滚仓、强庄识别、止损保命与提现守财 | **535 / 2,324** | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/17zxhold/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/17zxhold/data) |
+| 17 | **Vida · 方程式新闻** | [@Vida_BWE](https://x.com/Vida_BWE) | 新闻交易、量化套利、TG 投机之路实盘、知乎专栏与真实 K 线复盘 | **907 / 1,328** + 70 长文 | [📖 进入阅读](https://suoha888.github.io/Trader-Archives/vida_bwe/) | [📂 开源数据](https://github.com/suoha888/Trader-Archives/tree/main/vida_bwe/data) |
 
 ---
 
@@ -41,7 +43,7 @@
 
 ## 🌟 模范基准子站：allincrypto 熬鹰资本（[@thankUcrypto](https://x.com/thankUcrypto)）
 
-- **定位**：OKX / 币安实盘带单冠军 · 从 13,000 元起步做到千万实盘的全平台公开档案（全站 14 个子站均以本子站为视觉与功能标杆统一对齐）
+- **定位**：OKX / 币安实盘带单冠军 · 从 13,000 元起步做到千万实盘的全平台公开档案（全站其余 16 个子站均以本子站为视觉与功能标杆统一对齐）
 - **规模**：
   - **X（Twitter）原创推文**：保留 **3,420** 篇主表原推（+ **62** 篇长推线程补遗）与 **576** 张本地实盘/专访配图（正文卡片内嵌 555 张），按 7 大板块 · 28 个自然小节排好；
   - **早期微博独占时间轴**：补齐 `2022-05` 至 `2025-05` 微博独占原创 **943** 篇（+ **13** 篇经典长文补遗，段落级零 X 重复，附独立 Markdown 全文包）；
@@ -55,12 +57,12 @@
 
 ```text
 Trader-Archives/
-├── index.html           # 🏛️ 全景大典总门户（全局统计看板 + 全部 15 位导师大典卡片 + 单篇典藏）
+├── index.html           # 🏛️ 全景大典总门户（全局统计看板 + 全部 17 位作者卡片 + 单篇典藏）
 ├── README.md            # 📖 全量开源项目总纲与跳转指引（当前文件）
 │
 ├── thankucrypto/        # 【模范总档】allincrypto 熬鹰资本四源隔离全档案（3,420 X 原推 + 943 微博 + 56 场币安直播 128 万字 + 3 专访）
 ├── coolish/             # Wei Paul · BitMEX 时光机、杠铃策略与逆向周期（1,909 / 2,581 · 7 卷 20 节）
-├── wallstreet0name/     # 华尔街没有名字 · 裸K多周期、贵金属战役与 13 篇深度长文（2,306 / 2,915 + 13 长文 · 7 卷 16 节）
+├── wallstreet0name/     # 华尔街没有名字 · 裸K多周期、贵金属战役、存储与 13 篇 5 分类长文（2,306 / 2,915 + 13 长文 · 7 卷 16 节）
 ├── yourquantguy/        # yourQuantGuy · Perp DEX 基差套利、微观做市与 4 篇深度长文（614 / 673 + 4 长文 · 6 卷 16 节）
 ├── metabape/            # Meta 猿 🦍 · 微观机制套利、OLP 负滑点与 6 篇深度长文（2,348 / 3,625 + 6 长文 · 6 卷 17 节）
 ├── xiaomu/              # 川沐｜Trumoo · 美股硬科技、加密大周期与盘口博弈（3,103 / 3,866 · 6 卷 13 节）
@@ -73,27 +75,29 @@ Trader-Archives/
 ├── 0xmagnolia/          # magnolia · 蓝筹 Alpha 波段与一级链上实战（781 / 1,249 + 1 长文 · 6 卷 16 节）
 ├── agintender/          # danny · agintender · 合约算法镰刀、做市黑盒、潮汕钱庄与 129 篇深度长文（含早期英文独立区）（1,295 / 3,277 + 129 长文 · 6 卷 16 节）
 ├── ztzzbtc/             # ZTZZ ₿ · 主观做市、空头纪律与 6.7 万字《慢就是快》（715 / 886 + 1 长文 · 6 卷 16 节）
+├── 17zxhold/            # 5块的糖 · 小资金山寨滚仓、强庄识别、止损保命与提现守财（535 / 2,324 · 5 卷 11 节）
+├── vida_bwe/            # Vida · 方程式新闻 · 新闻交易、量化套利、TG 投机之路实盘、知乎专栏与真实 K 线复盘（907 / 1,328 + 70 长文 · 6 卷 14 节）
 └── laoemo/              # 📜【单篇典藏】《老恶魔谈合约》完整典藏版在线阅读页 + 14 页高清重排版 PDF
 ```
 
 ---
 
-## 🤖 统一本地全量 RAG + Vercel Edge 流式 AI 导师架构
+## 🤖 统一本地全量 RAG + Vercel Edge 流式 AI 助手架构
 
-全站 15 个导师子站均已统一为“**一 KOL 一独立全量索引 + 无客户端密钥流式控本**”架构：
-1. **15 份独立全量本地 RAG 索引（0 向量库/Embedding 费用）**：每位导师目录均独立生成 `data/ai_rag_index.json`（覆盖 100% 清洗后原推、6 条核心思维模型、全部分类小节与深度长文分段切片），打开抽屉按需懒加载，浏览器端毫秒级混合检索真实原文并支持指定年月精准查询，严格事实锚定、绝不跨 KOL 串台；
+全站 17 个子站均已统一为“**一 KOL 一独立全量索引 + 无客户端密钥流式控本**”架构：
+1. **17 份独立全量本地 RAG 索引（0 向量库/Embedding 费用）**：每位作者目录均独立生成 `data/ai_rag_index.json`（覆盖 100% 清洗后原推、核心原话模型、全部分类小节与深度长文分段切片），打开抽屉按需懒加载，浏览器端毫秒级混合检索真实原文并支持指定年月精准查询，严格事实锚定、绝不跨 KOL 串台；
 2. **前后端双重 3 轮上限与控本机制**：单次会话硬限 **3 轮**（历史仅保留纯问答不重复携带前轮检索原文），服务端强制 `max_tokens <= 960`、单条输入 `<= 300` 字、角色白名单与单 IP 限流（`12 次/分钟`），首轮重复问题命中本地缓存实现 **0 Token 秒回**；
-3. **前端零密钥与实时 SSE 富文本排版**：彻底移除前端硬编码密钥，凭证托管于 Vercel Edge，严格校验 Origin/Referer（非本站一律 `403`），基于 `gemini-3.1-flash-lite` 流式输出并支持 `#t-XX` 专题锚点一键跳转。
+3. **前端零密钥与实时 SSE 富文本排版**：彻底移除前端硬编码密钥，凭证托管于 Vercel Edge，严格校验 Origin/Referer（非本站一律 `403`），基于 `gemini-3.1-flash-lite` 流式输出并支持 `#t-XX` / `#art-XX` 锚点一键跳转。
 
 ---
 
 ## 📊 数据湖标准化格式（AI Agent 喂料友好）
 
-每个导师目录下的 `data/` 文件夹均遵循统一标准结构：
+每个作者目录下的 `data/` 文件夹均遵循统一标准结构：
 * **`<slug>_tweets.json` / `.csv`**：全量语义分类原创推文表（含时间、板块、小节、逻辑排序角色、S/A/B 分级、简明导读、互动数据、本地配图路径与原推链接）；
 * **`<slug>_featured.json` / `.csv`**：S/A 级高密度精选干货；
-* **`<slug>_mental_models.json` / `.csv`**：6 条提炼自真实原推的核心思维模型与证据推文 ID；
-* **`<slug>_articles_full.json`**（如有深度长文）：清洗后的完整正文、发布日期、原文链接与核心要点；
+* **`<slug>_mental_models.json` / `.csv`**：提炼自真实原推的核心原话模型与证据推文 ID；
+* **`<slug>_articles_full.json`**（如有深度长文）：清洗后的完整正文、发布日期、署名来源、原文链接与核心要点；
 * **`domains/01_..0N_.json` / `.csv`**：按大板块 100% 互斥切片的独立数据湖（CSV 均采用 **UTF-8-SIG 编码**，Excel / Numbers 直接双击打开无乱码）；
 * **`<slug>_tweets_ultra_raw.json`**：未经删减的原始采集备份，保障全流程 100% 可回溯复核。
 
